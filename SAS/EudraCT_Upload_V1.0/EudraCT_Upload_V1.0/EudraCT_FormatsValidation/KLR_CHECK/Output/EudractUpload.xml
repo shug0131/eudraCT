@@ -1,0 +1,586 @@
+<aev:adverseEvents xmlns:aev="http://eudract.ema.europa.eu/schema/clinical_trial_result/adverse_events" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <reportingGroups>
+           <reportingGroup id="ReportingGroup-1">
+             <title>Group 1</title>
+             <description>Those randomised to x</description>
+             <subjectsAffectedByNonSeriousAdverseEvents>5</subjectsAffectedByNonSeriousAdverseEvents>
+             <subjectsAffectedBySeriousAdverseEvents>7</subjectsAffectedBySeriousAdverseEvents>
+             <subjectsExposed>3</subjectsExposed>
+             <deathsAllCauses>9</deathsAllCauses>
+             <deathsResultingFromAdverseEvents>11</deathsResultingFromAdverseEvents>
+           </reportingGroup>
+           <reportingGroup id="ReportingGroup-2">
+             <title>Group 2</title>
+             <description>Those randomised to y</description>
+             <subjectsAffectedByNonSeriousAdverseEvents>6</subjectsAffectedByNonSeriousAdverseEvents>
+             <subjectsAffectedBySeriousAdverseEvents>8</subjectsAffectedBySeriousAdverseEvents>
+             <subjectsExposed>4</subjectsExposed>
+             <deathsAllCauses>10</deathsAllCauses>
+             <deathsResultingFromAdverseEvents>12</deathsResultingFromAdverseEvents>
+           </reportingGroup>
+          </reportingGroups>
+        <nonSeriousAdverseEvents>
+            <nonSeriousAdverseEvent>
+                <term>Anorectal infection</term>
+                <organSystem>
+                    <eutctId>100000004862</eutctId>
+                    <version>21</version>
+                </organSystem>
+                <assessmentMethod>
+                    <value>ADV_EVT_ASSESS_TYPE.systematic</value>
+                </assessmentMethod>
+                <dictionaryOverridden>false</dictionaryOverridden>
+                <values>
+                    <value reportingGroupId="ReportingGroup-1">
+                        <occurrences>135</occurrences>
+                        <subjectsAffected>115</subjectsAffected>
+                        <subjectsExposed>3</subjectsExposed>
+                    </value>
+                    <value reportingGroupId="ReportingGroup-2">
+                        <occurrences>145</occurrences>
+                        <subjectsAffected>125</subjectsAffected>
+                        <subjectsExposed>4</subjectsExposed>
+                    </value>
+                </values>
+            </nonSeriousAdverseEvent>
+            <nonSeriousAdverseEvent>
+                <term>Bullous dermatitis</term>
+                <organSystem>
+                    <eutctId>100000004858</eutctId>
+                    <version>21</version>
+                </organSystem>
+                <assessmentMethod>
+                    <value>ADV_EVT_ASSESS_TYPE.systematic</value>
+                </assessmentMethod>
+                <dictionaryOverridden>false</dictionaryOverridden>
+                <values>
+                    <value reportingGroupId="ReportingGroup-1">
+                        <occurrences>141</occurrences>
+                        <subjectsAffected>121</subjectsAffected>
+                        <subjectsExposed>3</subjectsExposed>
+                    </value>
+                    <value reportingGroupId="ReportingGroup-2">
+                        <occurrences>151</occurrences>
+                        <subjectsAffected>131</subjectsAffected>
+                        <subjectsExposed>4</subjectsExposed>
+                    </value>
+                </values>
+            </nonSeriousAdverseEvent>
+            <nonSeriousAdverseEvent>
+                <term>Capillary leak syndrome</term>
+                <organSystem>
+                    <eutctId>100000004866</eutctId>
+                    <version>21</version>
+                </organSystem>
+                <assessmentMethod>
+                    <value>ADV_EVT_ASSESS_TYPE.systematic</value>
+                </assessmentMethod>
+                <dictionaryOverridden>false</dictionaryOverridden>
+                <values>
+                    <value reportingGroupId="ReportingGroup-1">
+                        <occurrences>142</occurrences>
+                        <subjectsAffected>122</subjectsAffected>
+                        <subjectsExposed>3</subjectsExposed>
+                    </value>
+                    <value reportingGroupId="ReportingGroup-2">
+                        <occurrences>152</occurrences>
+                        <subjectsAffected>132</subjectsAffected>
+                        <subjectsExposed>4</subjectsExposed>
+                    </value>
+                </values>
+            </nonSeriousAdverseEvent>
+            <nonSeriousAdverseEvent>
+                <term>Enterocolitis infectious</term>
+                <organSystem>
+                    <eutctId>100000004862</eutctId>
+                    <version>21</version>
+                </organSystem>
+                <assessmentMethod>
+                    <value>ADV_EVT_ASSESS_TYPE.systematic</value>
+                </assessmentMethod>
+                <dictionaryOverridden>false</dictionaryOverridden>
+                <values>
+                    <value reportingGroupId="ReportingGroup-1">
+                        <occurrences>136</occurrences>
+                        <subjectsAffected>116</subjectsAffected>
+                        <subjectsExposed>3</subjectsExposed>
+                    </value>
+                    <value reportingGroupId="ReportingGroup-2">
+                        <occurrences>146</occurrences>
+                        <subjectsAffected>126</subjectsAffected>
+                        <subjectsExposed>4</subjectsExposed>
+                    </value>
+                </values>
+            </nonSeriousAdverseEvent>
+            <nonSeriousAdverseEvent>
+                <term>Esophageal fistula</term>
+                <organSystem>
+                    <eutctId>100000004856</eutctId>
+                    <version>21</version>
+                </organSystem>
+                <assessmentMethod>
+                    <value>ADV_EVT_ASSESS_TYPE.systematic</value>
+                </assessmentMethod>
+                <dictionaryOverridden>false</dictionaryOverridden>
+                <values>
+                    <value reportingGroupId="ReportingGroup-1">
+                        <occurrences>134</occurrences>
+                        <subjectsAffected>114</subjectsAffected>
+                        <subjectsExposed>3</subjectsExposed>
+                    </value>
+                    <value reportingGroupId="ReportingGroup-2">
+                        <occurrences>144</occurrences>
+                        <subjectsAffected>124</subjectsAffected>
+                        <subjectsExposed>4</subjectsExposed>
+                    </value>
+                </values>
+            </nonSeriousAdverseEvent>
+            <nonSeriousAdverseEvent>
+                <term>Hearing impaired</term>
+                <organSystem>
+                    <eutctId>100000004854</eutctId>
+                    <version>21</version>
+                </organSystem>
+                <assessmentMethod>
+                    <value>ADV_EVT_ASSESS_TYPE.systematic</value>
+                </assessmentMethod>
+                <dictionaryOverridden>false</dictionaryOverridden>
+                <values>
+                    <value reportingGroupId="ReportingGroup-1">
+                        <occurrences>133</occurrences>
+                        <subjectsAffected>113</subjectsAffected>
+                        <subjectsExposed>3</subjectsExposed>
+                    </value>
+                    <value reportingGroupId="ReportingGroup-2">
+                        <occurrences>143</occurrences>
+                        <subjectsAffected>123</subjectsAffected>
+                        <subjectsExposed>4</subjectsExposed>
+                    </value>
+                </values>
+            </nonSeriousAdverseEvent>
+            <nonSeriousAdverseEvent>
+                <term>IVth nerve disorder</term>
+                <organSystem>
+                    <eutctId>100000004852</eutctId>
+                    <version>21</version>
+                </organSystem>
+                <assessmentMethod>
+                    <value>ADV_EVT_ASSESS_TYPE.systematic</value>
+                </assessmentMethod>
+                <dictionaryOverridden>false</dictionaryOverridden>
+                <values>
+                    <value reportingGroupId="ReportingGroup-1">
+                        <occurrences>138</occurrences>
+                        <subjectsAffected>118</subjectsAffected>
+                        <subjectsExposed>3</subjectsExposed>
+                    </value>
+                    <value reportingGroupId="ReportingGroup-2">
+                        <occurrences>148</occurrences>
+                        <subjectsAffected>128</subjectsAffected>
+                        <subjectsExposed>4</subjectsExposed>
+                    </value>
+                </values>
+            </nonSeriousAdverseEvent>
+            <nonSeriousAdverseEvent>
+                <term>Lung infection</term>
+                <organSystem>
+                    <eutctId>100000004862</eutctId>
+                    <version>21</version>
+                </organSystem>
+                <assessmentMethod>
+                    <value>ADV_EVT_ASSESS_TYPE.systematic</value>
+                </assessmentMethod>
+                <dictionaryOverridden>false</dictionaryOverridden>
+                <values>
+                    <value reportingGroupId="ReportingGroup-1">
+                        <occurrences>137</occurrences>
+                        <subjectsAffected>117</subjectsAffected>
+                        <subjectsExposed>3</subjectsExposed>
+                    </value>
+                    <value reportingGroupId="ReportingGroup-2">
+                        <occurrences>147</occurrences>
+                        <subjectsAffected>127</subjectsAffected>
+                        <subjectsExposed>4</subjectsExposed>
+                    </value>
+                </values>
+            </nonSeriousAdverseEvent>
+            <nonSeriousAdverseEvent>
+                <term>Nipple deformity</term>
+                <organSystem>
+                    <eutctId>100000004872</eutctId>
+                    <version>21</version>
+                </organSystem>
+                <assessmentMethod>
+                    <value>ADV_EVT_ASSESS_TYPE.systematic</value>
+                </assessmentMethod>
+                <dictionaryOverridden>false</dictionaryOverridden>
+                <values>
+                    <value reportingGroupId="ReportingGroup-1">
+                        <occurrences>140</occurrences>
+                        <subjectsAffected>120</subjectsAffected>
+                        <subjectsExposed>3</subjectsExposed>
+                    </value>
+                    <value reportingGroupId="ReportingGroup-2">
+                        <occurrences>150</occurrences>
+                        <subjectsAffected>130</subjectsAffected>
+                        <subjectsExposed>4</subjectsExposed>
+                    </value>
+                </values>
+            </nonSeriousAdverseEvent>
+            <nonSeriousAdverseEvent>
+                <term>Urinary tract pain</term>
+                <organSystem>
+                    <eutctId>100000004857</eutctId>
+                    <version>21</version>
+                </organSystem>
+                <assessmentMethod>
+                    <value>ADV_EVT_ASSESS_TYPE.systematic</value>
+                </assessmentMethod>
+                <dictionaryOverridden>false</dictionaryOverridden>
+                <values>
+                    <value reportingGroupId="ReportingGroup-1">
+                        <occurrences>139</occurrences>
+                        <subjectsAffected>119</subjectsAffected>
+                        <subjectsExposed>3</subjectsExposed>
+                    </value>
+                    <value reportingGroupId="ReportingGroup-2">
+                        <occurrences>149</occurrences>
+                        <subjectsAffected>129</subjectsAffected>
+                        <subjectsExposed>4</subjectsExposed>
+                    </value>
+                </values>
+            </nonSeriousAdverseEvent>
+        </nonSeriousAdverseEvents>
+        <seriousAdverseEvents>
+            <seriousAdverseEvent>
+                <term>Agitation</term>
+                <organSystem>
+                    <eutctId>100000004873</eutctId>
+                    <version>21</version>
+                </organSystem>
+                <assessmentMethod>
+                    <value>ADV_EVT_ASSESS_TYPE.systematic</value>
+                </assessmentMethod>
+                <dictionaryOverridden>false</dictionaryOverridden>
+                <values>
+                    <value reportingGroupId="ReportingGroup-1">
+                        <occurrences>40</occurrences>
+                        <subjectsAffected>20</subjectsAffected>
+                        <subjectsExposed>3</subjectsExposed>
+                        <occurrencesCausallyRelatedToTreatment>60</occurrencesCausallyRelatedToTreatment>
+                        <fatalities>
+                            <deaths>80</deaths>
+                            <deathsCausallyRelatedToTreatment>100</deathsCausallyRelatedToTreatment>
+                        </fatalities>
+                    </value>
+                    <value reportingGroupId="ReportingGroup-2">
+                        <occurrences>50</occurrences>
+                        <subjectsAffected>30</subjectsAffected>
+                        <subjectsExposed>4</subjectsExposed>
+                        <occurrencesCausallyRelatedToTreatment>70</occurrencesCausallyRelatedToTreatment>
+                        <fatalities>
+                            <deaths>90</deaths>
+                            <deathsCausallyRelatedToTreatment>110</deathsCausallyRelatedToTreatment>
+                        </fatalities>
+                    </value>
+                </values>
+            </seriousAdverseEvent>
+            <seriousAdverseEvent>
+                <term>Chronic kidney disease</term>
+                <organSystem>
+                    <eutctId>100000004857</eutctId>
+                    <version>21</version>
+                </organSystem>
+                <assessmentMethod>
+                    <value>ADV_EVT_ASSESS_TYPE.systematic</value>
+                </assessmentMethod>
+                <dictionaryOverridden>false</dictionaryOverridden>
+                <values>
+                    <value reportingGroupId="ReportingGroup-1">
+                        <occurrences>41</occurrences>
+                        <subjectsAffected>21</subjectsAffected>
+                        <subjectsExposed>3</subjectsExposed>
+                        <occurrencesCausallyRelatedToTreatment>61</occurrencesCausallyRelatedToTreatment>
+                        <fatalities>
+                            <deaths>81</deaths>
+                            <deathsCausallyRelatedToTreatment>101</deathsCausallyRelatedToTreatment>
+                        </fatalities>
+                    </value>
+                    <value reportingGroupId="ReportingGroup-2">
+                        <occurrences>51</occurrences>
+                        <subjectsAffected>31</subjectsAffected>
+                        <subjectsExposed>4</subjectsExposed>
+                        <occurrencesCausallyRelatedToTreatment>71</occurrencesCausallyRelatedToTreatment>
+                        <fatalities>
+                            <deaths>91</deaths>
+                            <deathsCausallyRelatedToTreatment>111</deathsCausallyRelatedToTreatment>
+                        </fatalities>
+                    </value>
+                </values>
+            </seriousAdverseEvent>
+            <seriousAdverseEvent>
+                <term>Dysgeusia</term>
+                <organSystem>
+                    <eutctId>100000004852</eutctId>
+                    <version>21</version>
+                </organSystem>
+                <assessmentMethod>
+                    <value>ADV_EVT_ASSESS_TYPE.systematic</value>
+                </assessmentMethod>
+                <dictionaryOverridden>false</dictionaryOverridden>
+                <values>
+                    <value reportingGroupId="ReportingGroup-1">
+                        <occurrences>39</occurrences>
+                        <subjectsAffected>19</subjectsAffected>
+                        <subjectsExposed>3</subjectsExposed>
+                        <occurrencesCausallyRelatedToTreatment>59</occurrencesCausallyRelatedToTreatment>
+                        <fatalities>
+                            <deaths>79</deaths>
+                            <deathsCausallyRelatedToTreatment>99</deathsCausallyRelatedToTreatment>
+                        </fatalities>
+                    </value>
+                    <value reportingGroupId="ReportingGroup-2">
+                        <occurrences>49</occurrences>
+                        <subjectsAffected>29</subjectsAffected>
+                        <subjectsExposed>4</subjectsExposed>
+                        <occurrencesCausallyRelatedToTreatment>69</occurrencesCausallyRelatedToTreatment>
+                        <fatalities>
+                            <deaths>89</deaths>
+                            <deathsCausallyRelatedToTreatment>109</deathsCausallyRelatedToTreatment>
+                        </fatalities>
+                    </value>
+                </values>
+            </seriousAdverseEvent>
+            <seriousAdverseEvent>
+                <term>Fall</term>
+                <organSystem>
+                    <eutctId>100000004863</eutctId>
+                    <version>21</version>
+                </organSystem>
+                <assessmentMethod>
+                    <value>ADV_EVT_ASSESS_TYPE.systematic</value>
+                </assessmentMethod>
+                <dictionaryOverridden>false</dictionaryOverridden>
+                <values>
+                    <value reportingGroupId="ReportingGroup-1">
+                        <occurrences>35</occurrences>
+                        <subjectsAffected>15</subjectsAffected>
+                        <subjectsExposed>3</subjectsExposed>
+                        <occurrencesCausallyRelatedToTreatment>55</occurrencesCausallyRelatedToTreatment>
+                        <fatalities>
+                            <deaths>75</deaths>
+                            <deathsCausallyRelatedToTreatment>95</deathsCausallyRelatedToTreatment>
+                        </fatalities>
+                    </value>
+                    <value reportingGroupId="ReportingGroup-2">
+                        <occurrences>45</occurrences>
+                        <subjectsAffected>25</subjectsAffected>
+                        <subjectsExposed>4</subjectsExposed>
+                        <occurrencesCausallyRelatedToTreatment>65</occurrencesCausallyRelatedToTreatment>
+                        <fatalities>
+                            <deaths>85</deaths>
+                            <deathsCausallyRelatedToTreatment>105</deathsCausallyRelatedToTreatment>
+                        </fatalities>
+                    </value>
+                </values>
+            </seriousAdverseEvent>
+            <seriousAdverseEvent>
+                <term>Glucose intolerance</term>
+                <organSystem>
+                    <eutctId>100000004861</eutctId>
+                    <version>21</version>
+                </organSystem>
+                <assessmentMethod>
+                    <value>ADV_EVT_ASSESS_TYPE.systematic</value>
+                </assessmentMethod>
+                <dictionaryOverridden>false</dictionaryOverridden>
+                <values>
+                    <value reportingGroupId="ReportingGroup-1">
+                        <occurrences>38</occurrences>
+                        <subjectsAffected>18</subjectsAffected>
+                        <subjectsExposed>3</subjectsExposed>
+                        <occurrencesCausallyRelatedToTreatment>58</occurrencesCausallyRelatedToTreatment>
+                        <fatalities>
+                            <deaths>78</deaths>
+                            <deathsCausallyRelatedToTreatment>98</deathsCausallyRelatedToTreatment>
+                        </fatalities>
+                    </value>
+                    <value reportingGroupId="ReportingGroup-2">
+                        <occurrences>48</occurrences>
+                        <subjectsAffected>28</subjectsAffected>
+                        <subjectsExposed>4</subjectsExposed>
+                        <occurrencesCausallyRelatedToTreatment>68</occurrencesCausallyRelatedToTreatment>
+                        <fatalities>
+                            <deaths>88</deaths>
+                            <deathsCausallyRelatedToTreatment>108</deathsCausallyRelatedToTreatment>
+                        </fatalities>
+                    </value>
+                </values>
+            </seriousAdverseEvent>
+            <seriousAdverseEvent>
+                <term>Hemorrhoids</term>
+                <organSystem>
+                    <eutctId>100000004856</eutctId>
+                    <version>21</version>
+                </organSystem>
+                <assessmentMethod>
+                    <value>ADV_EVT_ASSESS_TYPE.systematic</value>
+                </assessmentMethod>
+                <dictionaryOverridden>false</dictionaryOverridden>
+                <values>
+                    <value reportingGroupId="ReportingGroup-1">
+                        <occurrences>33</occurrences>
+                        <subjectsAffected>13</subjectsAffected>
+                        <subjectsExposed>3</subjectsExposed>
+                        <occurrencesCausallyRelatedToTreatment>53</occurrencesCausallyRelatedToTreatment>
+                        <fatalities>
+                            <deaths>73</deaths>
+                            <deathsCausallyRelatedToTreatment>93</deathsCausallyRelatedToTreatment>
+                        </fatalities>
+                    </value>
+                    <value reportingGroupId="ReportingGroup-2">
+                        <occurrences>43</occurrences>
+                        <subjectsAffected>23</subjectsAffected>
+                        <subjectsExposed>4</subjectsExposed>
+                        <occurrencesCausallyRelatedToTreatment>63</occurrencesCausallyRelatedToTreatment>
+                        <fatalities>
+                            <deaths>83</deaths>
+                            <deathsCausallyRelatedToTreatment>103</deathsCausallyRelatedToTreatment>
+                        </fatalities>
+                    </value>
+                </values>
+            </seriousAdverseEvent>
+            <seriousAdverseEvent>
+                <term>Injury to inferior vena cava</term>
+                <organSystem>
+                    <eutctId>100000004863</eutctId>
+                    <version>21</version>
+                </organSystem>
+                <assessmentMethod>
+                    <value>ADV_EVT_ASSESS_TYPE.systematic</value>
+                </assessmentMethod>
+                <dictionaryOverridden>false</dictionaryOverridden>
+                <values>
+                    <value reportingGroupId="ReportingGroup-1">
+                        <occurrences>36</occurrences>
+                        <subjectsAffected>16</subjectsAffected>
+                        <subjectsExposed>3</subjectsExposed>
+                        <occurrencesCausallyRelatedToTreatment>56</occurrencesCausallyRelatedToTreatment>
+                        <fatalities>
+                            <deaths>76</deaths>
+                            <deathsCausallyRelatedToTreatment>96</deathsCausallyRelatedToTreatment>
+                        </fatalities>
+                    </value>
+                    <value reportingGroupId="ReportingGroup-2">
+                        <occurrences>46</occurrences>
+                        <subjectsAffected>26</subjectsAffected>
+                        <subjectsExposed>4</subjectsExposed>
+                        <occurrencesCausallyRelatedToTreatment>66</occurrencesCausallyRelatedToTreatment>
+                        <fatalities>
+                            <deaths>86</deaths>
+                            <deathsCausallyRelatedToTreatment>106</deathsCausallyRelatedToTreatment>
+                        </fatalities>
+                    </value>
+                </values>
+            </seriousAdverseEvent>
+            <seriousAdverseEvent>
+                <term>Intra-abdominal hemorrhage</term>
+                <organSystem>
+                    <eutctId>100000004856</eutctId>
+                    <version>21</version>
+                </organSystem>
+                <assessmentMethod>
+                    <value>ADV_EVT_ASSESS_TYPE.systematic</value>
+                </assessmentMethod>
+                <dictionaryOverridden>false</dictionaryOverridden>
+                <values>
+                    <value reportingGroupId="ReportingGroup-1">
+                        <occurrences>34</occurrences>
+                        <subjectsAffected>14</subjectsAffected>
+                        <subjectsExposed>3</subjectsExposed>
+                        <occurrencesCausallyRelatedToTreatment>54</occurrencesCausallyRelatedToTreatment>
+                        <fatalities>
+                            <deaths>74</deaths>
+                            <deathsCausallyRelatedToTreatment>94</deathsCausallyRelatedToTreatment>
+                        </fatalities>
+                    </value>
+                    <value reportingGroupId="ReportingGroup-2">
+                        <occurrences>44</occurrences>
+                        <subjectsAffected>24</subjectsAffected>
+                        <subjectsExposed>4</subjectsExposed>
+                        <occurrencesCausallyRelatedToTreatment>64</occurrencesCausallyRelatedToTreatment>
+                        <fatalities>
+                            <deaths>84</deaths>
+                            <deathsCausallyRelatedToTreatment>104</deathsCausallyRelatedToTreatment>
+                        </fatalities>
+                    </value>
+                </values>
+            </seriousAdverseEvent>
+            <seriousAdverseEvent>
+                <term>Ovarian hemorrhage</term>
+                <organSystem>
+                    <eutctId>100000004872</eutctId>
+                    <version>21</version>
+                </organSystem>
+                <assessmentMethod>
+                    <value>ADV_EVT_ASSESS_TYPE.systematic</value>
+                </assessmentMethod>
+                <dictionaryOverridden>false</dictionaryOverridden>
+                <values>
+                    <value reportingGroupId="ReportingGroup-1">
+                        <occurrences>42</occurrences>
+                        <subjectsAffected>22</subjectsAffected>
+                        <subjectsExposed>3</subjectsExposed>
+                        <occurrencesCausallyRelatedToTreatment>62</occurrencesCausallyRelatedToTreatment>
+                        <fatalities>
+                            <deaths>82</deaths>
+                            <deathsCausallyRelatedToTreatment>102</deathsCausallyRelatedToTreatment>
+                        </fatalities>
+                    </value>
+                    <value reportingGroupId="ReportingGroup-2">
+                        <occurrences>52</occurrences>
+                        <subjectsAffected>32</subjectsAffected>
+                        <subjectsExposed>4</subjectsExposed>
+                        <occurrencesCausallyRelatedToTreatment>72</occurrencesCausallyRelatedToTreatment>
+                        <fatalities>
+                            <deaths>92</deaths>
+                            <deathsCausallyRelatedToTreatment>112</deathsCausallyRelatedToTreatment>
+                        </fatalities>
+                    </value>
+                </values>
+            </seriousAdverseEvent>
+            <seriousAdverseEvent>
+                <term>Stenosis of gastrointestinal stoma</term>
+                <organSystem>
+                    <eutctId>100000004863</eutctId>
+                    <version>21</version>
+                </organSystem>
+                <assessmentMethod>
+                    <value>ADV_EVT_ASSESS_TYPE.systematic</value>
+                </assessmentMethod>
+                <dictionaryOverridden>false</dictionaryOverridden>
+                <values>
+                    <value reportingGroupId="ReportingGroup-1">
+                        <occurrences>37</occurrences>
+                        <subjectsAffected>17</subjectsAffected>
+                        <subjectsExposed>3</subjectsExposed>
+                        <occurrencesCausallyRelatedToTreatment>57</occurrencesCausallyRelatedToTreatment>
+                        <fatalities>
+                            <deaths>77</deaths>
+                            <deathsCausallyRelatedToTreatment>97</deathsCausallyRelatedToTreatment>
+                        </fatalities>
+                    </value>
+                    <value reportingGroupId="ReportingGroup-2">
+                        <occurrences>47</occurrences>
+                        <subjectsAffected>27</subjectsAffected>
+                        <subjectsExposed>4</subjectsExposed>
+                        <occurrencesCausallyRelatedToTreatment>67</occurrencesCausallyRelatedToTreatment>
+                        <fatalities>
+                            <deaths>87</deaths>
+                            <deathsCausallyRelatedToTreatment>107</deathsCausallyRelatedToTreatment>
+                        </fatalities>
+                    </value>
+                </values>
+            </seriousAdverseEvent>
+        </seriousAdverseEvents>
+</aev:adverseEvents>

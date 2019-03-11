@@ -1,0 +1,87 @@
+"group","term_long","subjectsAffected","occurrences","occurrencesCausallyRelatedToTreatment","deaths","deathsCausallyRelatedToTreatment","pt","term","eutctId","deathsResultingFromAdverseEvents","subjectsAffectedBySeriousAdverseEvents","subjectsAffectedByNonSeriousAdverseEvents","subjectsExposed","deathsAllCauses"
+"Control","10000081_Abdominal pain_100000004856",1,1,0,0,0,10000081,"Abdominal pain",100000004856,9,15,15,99,12
+"Control","10008190_Cerebrovascular accident_100000004852",1,1,0,1,0,10008190,"Cerebrovascular accident",100000004852,9,15,15,99,12
+"Control","10002916_Aortic valve replacement_100000004865",1,1,0,0,0,10002916,"Aortic valve replacement",100000004865,9,15,15,99,12
+"Control","10008614_Cholecystitis acute_100000004871",1,1,0,0,0,10008614,"Cholecystitis acute",100000004871,9,15,15,99,12
+"Control","10003899_B-cell lymphoma_100000004851",1,1,0,0,0,10003899,"B-cell lymphoma",100000004851,9,15,15,99,12
+"Control","10008611_Cholecystectomy_100000004865",NA,NA,NA,NA,NA,10008611,"Cholecystectomy",100000004865,9,15,15,99,12
+"Control","10005064_Bladder papilloma_100000004864",NA,NA,NA,NA,NA,10005064,"Bladder papilloma",100000004864,9,15,15,99,12
+"Control","10017903_Gastroenteritis Escherichia coli_100000004862",NA,NA,NA,NA,NA,10017903,"Gastroenteritis Escherichia coli",100000004862,9,15,15,99,12
+"Control","10007882_Cellulitis_100000004862",NA,NA,NA,NA,NA,10007882,"Cellulitis",100000004862,9,15,15,99,12
+"Control","10007515_Cardiac arrest_100000004849",1,1,0,1,0,10007515,"Cardiac arrest",100000004849,9,15,15,99,12
+"Control","10007559_Cardiac failure congestive_100000004849",NA,NA,NA,NA,NA,10007559,"Cardiac failure congestive",100000004849,9,15,15,99,12
+"Control","10017955_Gastrointestinal haemorrhage_100000004856",NA,NA,NA,NA,NA,10017955,"Gastrointestinal haemorrhage",100000004856,9,15,15,99,12
+"Control","10030184_Oesophageal spasm_100000004856",NA,NA,NA,NA,NA,10030184,"Oesophageal spasm",100000004856,9,15,15,99,12
+"Control","10016173_Fall_100000004863",NA,NA,NA,NA,NA,10016173,"Fall",100000004863,9,15,15,99,12
+"Control","10022000_Influenza_100000004862",NA,NA,NA,NA,NA,10022000,"Influenza",100000004862,9,15,15,99,12
+"Control","10020635_Hyperglycaemia_100000004861",1,1,0,1,0,10020635,"Hyperglycaemia",100000004861,9,15,15,99,12
+"Control","10035734_Pneumonia staphylococcal_100000004855",NA,NA,NA,NA,NA,10035734,"Pneumonia staphylococcal",100000004855,9,15,15,99,12
+"Control","10008479_Chest pain_100000004867",NA,NA,NA,NA,NA,10008479,"Chest pain",100000004867,9,15,15,99,12
+"Control","10024968_Lower respiratory tract infection_100000004862",1,1,1,1,1,10024968,"Lower respiratory tract infection",100000004862,9,15,15,99,12
+"Control","10040979_Sleep apnoea syndrome_100000004852",1,1,0,1,0,10040979,"Sleep apnoea syndrome",100000004852,9,15,15,99,12
+"Control","10037032_Proteinuria_100000004857",NA,NA,NA,NA,NA,10037032,"Proteinuria",100000004857,9,15,15,99,12
+"Control","10011847_Dacryocystorhinostomy_100000004865",NA,NA,NA,NA,NA,10011847,"Dacryocystorhinostomy",100000004865,9,15,15,99,12
+"Control","10010893_Conversion disorder_100000004873",NA,NA,NA,NA,NA,10010893,"Conversion disorder",100000004873,9,15,15,99,12
+"Control","10046571_Urinary tract infection_100000004862",NA,NA,NA,NA,NA,10046571,"Urinary tract infection",100000004862,9,15,15,99,12
+"Control","10037377_Pulmonary embolism_100000004866",1,1,0,0,0,10037377,"Pulmonary embolism",100000004866,9,15,15,99,12
+"Control","10047115_Vasculitis_100000004870",1,1,0,1,0,10047115,"Vasculitis",100000004870,9,15,15,99,12
+"Control","10035717_Pneumonia klebsiella_100000004855",NA,NA,NA,NA,NA,10035717,"Pneumonia klebsiella",100000004855,9,15,15,99,12
+"Control","10020096_Hip arthroplasty_100000004865",1,1,0,1,0,10020096,"Hip arthroplasty",100000004865,9,15,15,99,12
+"Control","10030216_Oesophagitis_100000004856",NA,NA,NA,NA,NA,10030216,"Oesophagitis",100000004856,9,15,15,99,12
+"Control","10053047_Medical observation_100000004848",NA,NA,NA,NA,NA,10053047,"Medical observation",100000004848,9,15,15,99,12
+"Control","10017918_Gastroenteritis viral_100000004856",NA,NA,NA,NA,NA,10017918,"Gastroenteritis viral",100000004856,9,15,15,99,12
+"Control","10052238_Escherichia urinary tract infection_100000004862",1,1,0,1,0,10052238,"Escherichia urinary tract infection",100000004862,9,15,15,99,12
+"Control","10035737_Pneumonia viral_100000004855",1,1,0,1,0,10035737,"Pneumonia viral",100000004855,9,15,15,99,12
+"Control","10062352_Respiratory tract infection_100000004862",NA,NA,NA,NA,NA,10062352,"Respiratory tract infection",100000004862,9,15,15,99,12
+"Control","10020646_Hyperkalaemia_100000004861",NA,NA,NA,NA,NA,10020646,"Hyperkalaemia",100000004861,9,15,15,99,12
+"Control","10023862_Laryngeal stenosis_100000004855",NA,NA,NA,NA,NA,10023862,"Laryngeal stenosis",100000004855,9,15,15,99,12
+"Control","10037457_Pulmonary vasculitis_100000004870",1,1,0,0,0,10037457,"Pulmonary vasculitis",100000004870,9,15,15,99,12
+"Control","10037377_Pulmonary embolism_100000004855",NA,NA,NA,NA,NA,10037377,"Pulmonary embolism",100000004855,9,15,15,99,12
+"Control","10050184_Pneumomediastinum_100000004855",NA,NA,NA,NA,NA,10050184,"Pneumomediastinum",100000004855,9,15,15,99,12
+"Control","10035664_Pneumonia_100000004862",NA,NA,NA,NA,NA,10035664,"Pneumonia",100000004862,9,15,15,99,12
+"Control","10041105_Small intestinal resection_100000004865",NA,NA,NA,NA,NA,10041105,"Small intestinal resection",100000004865,9,15,15,99,12
+"Control","10058046_Post procedural complication_100000004863",NA,NA,NA,NA,NA,10058046,"Post procedural complication",100000004863,9,15,15,99,12
+"Control","10051055_Deep vein thrombosis_100000004866",1,1,0,1,0,10051055,"Deep vein thrombosis",100000004866,9,15,15,99,12
+"Experimental","10007515_Cardiac arrest_100000004849",NA,NA,NA,NA,NA,10007515,"Cardiac arrest",100000004849,22,33,24,101,27
+"Experimental","10002916_Aortic valve replacement_100000004865",NA,NA,NA,NA,NA,10002916,"Aortic valve replacement",100000004865,22,33,24,101,27
+"Experimental","10008479_Chest pain_100000004867",1,1,0,0,0,10008479,"Chest pain",100000004867,22,33,24,101,27
+"Experimental","10020096_Hip arthroplasty_100000004865",2,2,0,2,0,10020096,"Hip arthroplasty",100000004865,22,33,24,101,27
+"Experimental","10007559_Cardiac failure congestive_100000004849",1,1,0,0,0,10007559,"Cardiac failure congestive",100000004849,22,33,24,101,27
+"Experimental","10011847_Dacryocystorhinostomy_100000004865",1,1,0,0,0,10011847,"Dacryocystorhinostomy",100000004865,22,33,24,101,27
+"Experimental","10008614_Cholecystitis acute_100000004871",1,1,0,0,0,10008614,"Cholecystitis acute",100000004871,22,33,24,101,27
+"Experimental","10023862_Laryngeal stenosis_100000004855",2,4,0,1,0,10023862,"Laryngeal stenosis",100000004855,22,33,24,101,27
+"Experimental","10030184_Oesophageal spasm_100000004856",1,1,0,1,0,10030184,"Oesophageal spasm",100000004856,22,33,24,101,27
+"Experimental","10000081_Abdominal pain_100000004856",NA,NA,NA,NA,NA,10000081,"Abdominal pain",100000004856,22,33,24,101,27
+"Experimental","10017903_Gastroenteritis Escherichia coli_100000004862",1,1,0,1,0,10017903,"Gastroenteritis Escherichia coli",100000004862,22,33,24,101,27
+"Experimental","10005064_Bladder papilloma_100000004864",1,1,0,0,0,10005064,"Bladder papilloma",100000004864,22,33,24,101,27
+"Experimental","10035734_Pneumonia staphylococcal_100000004855",1,1,1,1,1,10035734,"Pneumonia staphylococcal",100000004855,22,33,24,101,27
+"Experimental","10003899_B-cell lymphoma_100000004851",NA,NA,NA,NA,NA,10003899,"B-cell lymphoma",100000004851,22,33,24,101,27
+"Experimental","10020635_Hyperglycaemia_100000004861",NA,NA,NA,NA,NA,10020635,"Hyperglycaemia",100000004861,22,33,24,101,27
+"Experimental","10035664_Pneumonia_100000004862",3,3,3,1,1,10035664,"Pneumonia",100000004862,22,33,24,101,27
+"Experimental","10017955_Gastrointestinal haemorrhage_100000004856",1,1,0,1,0,10017955,"Gastrointestinal haemorrhage",100000004856,22,33,24,101,27
+"Experimental","10007882_Cellulitis_100000004862",1,1,1,1,1,10007882,"Cellulitis",100000004862,22,33,24,101,27
+"Experimental","10010893_Conversion disorder_100000004873",1,1,1,1,1,10010893,"Conversion disorder",100000004873,22,33,24,101,27
+"Experimental","10008190_Cerebrovascular accident_100000004852",NA,NA,NA,NA,NA,10008190,"Cerebrovascular accident",100000004852,22,33,24,101,27
+"Experimental","10037377_Pulmonary embolism_100000004866",1,1,0,1,0,10037377,"Pulmonary embolism",100000004866,22,33,24,101,27
+"Experimental","10037377_Pulmonary embolism_100000004855",1,1,0,0,0,10037377,"Pulmonary embolism",100000004855,22,33,24,101,27
+"Experimental","10016173_Fall_100000004863",1,1,0,0,0,10016173,"Fall",100000004863,22,33,24,101,27
+"Experimental","10008611_Cholecystectomy_100000004865",1,1,0,0,0,10008611,"Cholecystectomy",100000004865,22,33,24,101,27
+"Experimental","10022000_Influenza_100000004862",1,1,0,1,0,10022000,"Influenza",100000004862,22,33,24,101,27
+"Experimental","10041105_Small intestinal resection_100000004865",1,1,0,1,0,10041105,"Small intestinal resection",100000004865,22,33,24,101,27
+"Experimental","10017918_Gastroenteritis viral_100000004856",1,1,0,1,0,10017918,"Gastroenteritis viral",100000004856,22,33,24,101,27
+"Experimental","10030216_Oesophagitis_100000004856",1,1,0,0,0,10030216,"Oesophagitis",100000004856,22,33,24,101,27
+"Experimental","10024968_Lower respiratory tract infection_100000004862",NA,NA,NA,NA,NA,10024968,"Lower respiratory tract infection",100000004862,22,33,24,101,27
+"Experimental","10037032_Proteinuria_100000004857",1,1,0,0,0,10037032,"Proteinuria",100000004857,22,33,24,101,27
+"Experimental","10020646_Hyperkalaemia_100000004861",1,1,0,0,0,10020646,"Hyperkalaemia",100000004861,22,33,24,101,27
+"Experimental","10035717_Pneumonia klebsiella_100000004855",1,1,1,1,1,10035717,"Pneumonia klebsiella",100000004855,22,33,24,101,27
+"Experimental","10050184_Pneumomediastinum_100000004855",1,1,0,0,0,10050184,"Pneumomediastinum",100000004855,22,33,24,101,27
+"Experimental","10051055_Deep vein thrombosis_100000004866",3,3,0,2,0,10051055,"Deep vein thrombosis",100000004866,22,33,24,101,27
+"Experimental","10047115_Vasculitis_100000004870",2,2,0,2,0,10047115,"Vasculitis",100000004870,22,33,24,101,27
+"Experimental","10035737_Pneumonia viral_100000004855",NA,NA,NA,NA,NA,10035737,"Pneumonia viral",100000004855,22,33,24,101,27
+"Experimental","10052238_Escherichia urinary tract infection_100000004862",NA,NA,NA,NA,NA,10052238,"Escherichia urinary tract infection",100000004862,22,33,24,101,27
+"Experimental","10040979_Sleep apnoea syndrome_100000004852",NA,NA,NA,NA,NA,10040979,"Sleep apnoea syndrome",100000004852,22,33,24,101,27
+"Experimental","10053047_Medical observation_100000004848",1,1,0,1,0,10053047,"Medical observation",100000004848,22,33,24,101,27
+"Experimental","10037457_Pulmonary vasculitis_100000004870",NA,NA,NA,NA,NA,10037457,"Pulmonary vasculitis",100000004870,22,33,24,101,27
+"Experimental","10058046_Post procedural complication_100000004863",1,1,0,1,0,10058046,"Post procedural complication",100000004863,22,33,24,101,27
+"Experimental","10046571_Urinary tract infection_100000004862",1,2,1,1,1,10046571,"Urinary tract infection",100000004862,22,33,24,101,27
+"Experimental","10062352_Respiratory tract infection_100000004862",2,2,1,2,1,10062352,"Respiratory tract infection",100000004862,22,33,24,101,27

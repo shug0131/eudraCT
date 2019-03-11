@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="US-ASCII" standalone="yes"?>
+<dta>
+	<header>
+		<ds_format>113</ds_format>
+		<byteorder>LOHI</byteorder>
+		<filetype>1</filetype>
+		<nvar>14</nvar>
+		<nobs>28</nobs>
+		<data_label></data_label>
+		<time_stamp>6 Feb 2019 12:26</time_stamp>
+	</header>
+	<descriptors>
+		<typelist>
+			<type varname='group'>str12</type>
+			<type varname='term_long'>str55</type>
+			<type varname='subjectsaffected'>str2</type>
+			<type varname='occurrences'>str2</type>
+			<type varname='occurrencescausallyrelatedtotrea'>str2</type>
+			<type varname='pt'>long</type>
+			<type varname='term'>str33</type>
+			<type varname='eutctid'>double</type>
+			<type varname='deathsresultingfromadverseevents'>byte</type>
+			<type varname='subjectsaffectedbyseriousadverse'>byte</type>
+			<type varname='subjectsaffectedbynonseriousadve'>byte</type>
+			<type varname='subjectsexposed'>int</type>
+			<type varname='deathsallcauses'>byte</type>
+			<type varname='rate'>str16</type>
+		</typelist>
+		<varlist>
+			<variable varname='group'/>
+			<variable varname='term_long'/>
+			<variable varname='subjectsaffected'/>
+			<variable varname='occurrences'/>
+			<variable varname='occurrencescausallyrelatedtotrea'/>
+			<variable varname='pt'/>
+			<variable varname='term'/>
+			<variable varname='eutctid'/>
+			<variable varname='deathsresultingfromadverseevents'/>
+			<variable varname='subjectsaffectedbyseriousadverse'/>
+			<variable varname='subjectsaffectedbynonseriousadve'/>
+			<variable varname='subjectsexposed'/>
+			<variable varname='deathsallcauses'/>
+			<variable varname='rate'/>
+		</varlist>
+		<srtlist>
+		</srtlist>
+		<fmtlist>
+			<fmt varname='group'>%12s</fmt>
+			<fmt varname='term_long'>%55s</fmt>
+			<fmt varname='subjectsaffected'>%9s</fmt>
+			<fmt varname='occurrences'>%9s</fmt>
+			<fmt varname='occurrencescausallyrelatedtotrea'>%9s</fmt>
+			<fmt varname='pt'>%12.0g</fmt>
+			<fmt varname='term'>%33s</fmt>
+			<fmt varname='eutctid'>%10.0g</fmt>
+			<fmt varname='deathsresultingfromadverseevents'>%8.0g</fmt>
+			<fmt varname='subjectsaffectedbyseriousadverse'>%8.0g</fmt>
+			<fmt varname='subjectsaffectedbynonseriousadve'>%8.0g</fmt>
+			<fmt varname='subjectsexposed'>%8.0g</fmt>
+			<fmt varname='deathsallcauses'>%8.0g</fmt>
+			<fmt varname='rate'>%16s</fmt>
+		</fmtlist>
+		<lbllist>
+			<lblname varname='group'></lblname>
+			<lblname varname='term_long'></lblname>
+			<lblname varname='subjectsaffected'></lblname>
+			<lblname varname='occurrences'></lblname>
+			<lblname varname='occurrencescausallyrelatedtotrea'></lblname>
+			<lblname varname='pt'></lblname>
+			<lblname varname='term'></lblname>
+			<lblname varname='eutctid'></lblname>
+			<lblname varname='deathsresultingfromadverseevents'></lblname>
+			<lblname varname='subjectsaffectedbyseriousadverse'></lblname>
+			<lblname varname='subjectsaffectedbynonseriousadve'></lblname>
+			<lblname varname='subjectsexposed'></lblname>
+			<lblname varname='deathsallcauses'></lblname>
+			<lblname varname='rate'></lblname>
+		</lbllist>
+	</descriptors>
+	<variable_labels>
+		<vlabel varname='group'></vlabel>
+		<vlabel varname='term_long'></vlabel>
+		<vlabel varname='subjectsaffected'>subjectsAffected</vlabel>
+		<vlabel varname='occurrences'></vlabel>
+		<vlabel varname='occurrencescausallyrelatedtotrea'>occurrencesCausallyRelatedToTreatment</vlabel>
+		<vlabel varname='pt'></vlabel>
+		<vlabel varname='term'></vlabel>
+		<vlabel varname='eutctid'>eutctId</vlabel>
+		<vlabel varname='deathsresultingfromadverseevents'>deathsResultingFromAdverseEvents</vlabel>
+		<vlabel varname='subjectsaffectedbyseriousadverse'>subjectsAffectedBySeriousAdverseEvents</vlabel>
+		<vlabel varname='subjectsaffectedbynonseriousadve'>subjectsAffectedByNonSeriousAdverseEvents</vlabel>
+		<vlabel varname='subjectsexposed'>subjectsExposed</vlabel>
+		<vlabel varname='deathsallcauses'>deathsAllCauses</vlabel>
+		<vlabel varname='rate'></vlabel>
+	</variable_labels>
+	<expansion>
+	</expansion>
+	<data>
+		<o num='1'>
+			<v varname='group'>Control</v>
+			<v varname='term_long'>10035664_Pneumonia_100000004855</v>
+			<v varname='subjectsaffected'>1</v>
+			<v varname='occurrences'>1</v>
+			<v varname='occurrencescausallyrelatedtotrea'>1</v>
+			<v varname='pt'>10035664</v>
+			<v varname='term'>Pneumonia</v>
+			<v varname='eutctid'>100000004855.0000000000000000000000000</v>
+			<v varname='deathsresultingfromadverseevents'>9</v>
+			<v varname='subjectsaffectedbyseriousadverse'>15</v>
+			<v varname='subjectsaffectedbynonseriousadve'>15</v>
+			<v varname='subjectsexposed'>99</v>
+			<v varname='deathsallcauses'>12</v>
+			<v varname='rate'>1.01010101010101</v>
+		</o>
+		<o num='2'>
+			<v varname='group'>Control</v>
+			<v varname='term_long'>10024968_Lower respiratory tract infection_100000004855</v>
+			<v varname='subjectsaffected'>1</v>
+			<v varname='occurrences'>1</v>
+			<v varname='occurrencescausallyrelatedtotrea'>1</v>
+			<v varname='pt'>10024968</v>
+			<v varname='term'>Lower respiratory tract infection</v>
+			<v varname='eutctid'>100000004855.0000000000000000000000000</v>
+			<v varname='deathsresultingfromadverseevents'>9</v>
+			<v varname='subjectsaffectedbyseriousadverse'>15</v>
+			<v varname='subjectsaffectedbynonseriousadve'>15</v>
+			<v varname='subjectsexposed'>99</v>
+			<v varname='deathsallcauses'>12</v>
+			<v varname='rate'>1.01010101010101</v>
+		</o>
+		<o num='3'>
+			<v varname='group'>Control</v>
+			<v varname='term_long'>10022694_Intestinal perforation_100000004856</v>
+			<v varname='subjectsaffected'>1</v>
+			<v varname='occurrences'>1</v>
+			<v varname='occurrencescausallyrelatedtotrea'>0</v>
+			<v varname='pt'>10022694</v>
+			<v varname='term'>Intestinal perforation</v>
+			<v varname='eutctid'>100000004856.0000000000000000000000000</v>
+			<v varname='deathsresultingfromadverseevents'>9</v>
+			<v varname='subjectsaffectedbyseriousadverse'>15</v>
+			<v varname='subjectsaffectedbynonseriousadve'>15</v>
+			<v varname='subjectsexposed'>99</v>
+			<v varname='deathsallcauses'>12</v>
+			<v varname='rate'>1.01010101010101</v>
+		</o>
+		<o num='4'>
+			<v varname='group'>Control</v>
+			<v varname='term_long'>10023862_Laryngeal stenosis_100000004855</v>
+			<v varname='subjectsaffected'>1</v>
+			<v varname='occurrences'>1</v>
+			<v varname='occurrencescausallyrelatedtotrea'>0</v>
+			<v varname='pt'>10023862</v>
+			<v varname='term'>Laryngeal stenosis</v>
+			<v varname='eutctid'>100000004855.0000000000000000000000000</v>
+			<v varname='deathsresultingfromadverseevents'>9</v>
+			<v varname='subjectsaffectedbyseriousadverse'>15</v>
+			<v varname='subjectsaffectedbynonseriousadve'>15</v>
+			<v varname='subjectsexposed'>99</v>
+			<v varname='deathsallcauses'>12</v>
+			<v varname='rate'>1.01010101010101</v>
+		</o>
+		<o num='5'>
+			<v varname='group'>Control</v>
+			<v varname='term_long'>10041823_Squamous cell carcinoma_100000004864</v>
+			<v varname='subjectsaffected'>1</v>
+			<v varname='occurrences'>1</v>
+			<v varname='occurrencescausallyrelatedtotrea'>0</v>
+			<v varname='pt'>10041823</v>
+			<v varname='term'>Squamous cell carcinoma</v>
+			<v varname='eutctid'>100000004864.0000000000000000000000000</v>
+			<v varname='deathsresultingfromadverseevents'>9</v>
+			<v varname='subjectsaffectedbyseriousadverse'>15</v>
+			<v varname='subjectsaffectedbynonseriousadve'>15</v>
+			<v varname='subjectsexposed'>99</v>
+			<v varname='deathsallcauses'>12</v>
+			<v varname='rate'>1.01010101010101</v>
+		</o>
+		<o num='6'>
+			<v varname='group'>Control</v>
+			<v varname='term_long'>10035742_Pneumonitis_100000004855</v>
+			<v varname='subjectsaffected'>1</v>
+			<v varname='occurrences'>1</v>
+			<v varname='occurrencescausallyrelatedtotrea'>0</v>
+			<v varname='pt'>10035742</v>
+			<v varname='term'>Pneumonitis</v>
+			<v varname='eutctid'>100000004855.0000000000000000000000000</v>
+			<v varname='deathsresultingfromadverseevents'>9</v>
+			<v varname='subjectsaffectedbyseriousadverse'>15</v>
+			<v varname='subjectsaffectedbynonseriousadve'>15</v>
+			<v varname='subjectsexposed'>99</v>
+			<v varname='deathsallcauses'>12</v>
+			<v varname='rate'>1.01010101010101</v>
+		</o>
+		<o num='7'>
+			<v varname='group'>Control</v>
+			<v varname='term_long'>10025031_Lung adenocarcinoma_100000004855</v>
+			<v varname='subjectsaffected'>1</v>
+			<v varname='occurrences'>1</v>
+			<v varname='occurrencescausallyrelatedtotrea'>0</v>
+			<v varname='pt'>10025031</v>
+			<v varname='term'>Lung adenocarcinoma</v>
+			<v varname='eutctid'>100000004855.0000000000000000000000000</v>
+			<v varname='deathsresultingfromadverseevents'>9</v>
+			<v varname='subjectsaffectedbyseriousadverse'>15</v>
+			<v varname='subjectsaffectedbynonseriousadve'>15</v>
+			<v varname='subjectsexposed'>99</v>
+			<v varname='deathsallcauses'>12</v>
+			<v varname='rate'>1.01010101010101</v>
+		</o>
+		<o num='8'>
+			<v varname='group'>Control</v>
+			<v varname='term_long'>10040979_Sleep apnoea syndrome_100000004852</v>
+			<v varname='subjectsaffected'>1</v>
+			<v varname='occurrences'>2</v>
+			<v varname='occurrencescausallyrelatedtotrea'>0</v>
+			<v varname='pt'>10040979</v>
+			<v varname='term'>Sleep apnoea syndrome</v>
+			<v varname='eutctid'>100000004852.0000000000000000000000000</v>
+			<v varname='deathsresultingfromadverseevents'>9</v>
+			<v varname='subjectsaffectedbyseriousadverse'>15</v>
+			<v varname='subjectsaffectedbynonseriousadve'>15</v>
+			<v varname='subjectsexposed'>99</v>
+			<v varname='deathsallcauses'>12</v>
+			<v varname='rate'>2.02020202020202</v>
+		</o>
+		<o num='9'>
+			<v varname='group'>Control</v>
+			<v varname='term_long'>10035664_Pneumonia_100000004862</v>
+			<v varname='subjectsaffected'>2</v>
+			<v varname='occurrences'>2</v>
+			<v varname='occurrencescausallyrelatedtotrea'>1</v>
+			<v varname='pt'>10035664</v>
+			<v varname='term'>Pneumonia</v>
+			<v varname='eutctid'>100000004862.0000000000000000000000000</v>
+			<v varname='deathsresultingfromadverseevents'>9</v>
+			<v varname='subjectsaffectedbyseriousadverse'>15</v>
+			<v varname='subjectsaffectedbynonseriousadve'>15</v>
+			<v varname='subjectsexposed'>99</v>
+			<v varname='deathsallcauses'>12</v>
+			<v varname='rate'>2.02020202020202</v>
+		</o>
+		<o num='10'>
+			<v varname='group'>Control</v>
+			<v varname='term_long'>10062352_Respiratory tract infection_100000004862</v>
+			<v varname='subjectsaffected'>2</v>
+			<v varname='occurrences'>2</v>
+			<v varname='occurrencescausallyrelatedtotrea'>1</v>
+			<v varname='pt'>10062352</v>
+			<v varname='term'>Respiratory tract infection</v>
+			<v varname='eutctid'>100000004862.0000000000000000000000000</v>
+			<v varname='deathsresultingfromadverseevents'>9</v>
+			<v varname='subjectsaffectedbyseriousadverse'>15</v>
+			<v varname='subjectsaffectedbynonseriousadve'>15</v>
+			<v varname='subjectsexposed'>99</v>
+			<v varname='deathsallcauses'>12</v>
+			<v varname='rate'>2.02020202020202</v>
+		</o>
+		<o num='11'>
+			<v varname='group'>Control</v>
+			<v varname='term_long'>10062237_Renal impairment_100000004857</v>
+			<v varname='subjectsaffected'>1</v>
+			<v varname='occurrences'>1</v>
+			<v varname='occurrencescausallyrelatedtotrea'>0</v>
+			<v varname='pt'>10062237</v>
+			<v varname='term'>Renal impairment</v>
+			<v varname='eutctid'>100000004857.0000000000000000000000000</v>
+			<v varname='deathsresultingfromadverseevents'>9</v>
+			<v varname='subjectsaffectedbyseriousadverse'>15</v>
+			<v varname='subjectsaffectedbynonseriousadve'>15</v>
+			<v varname='subjectsexposed'>99</v>
+			<v varname='deathsallcauses'>12</v>
+			<v varname='rate'>1.01010101010101</v>
+		</o>
+		<o num='12'>
+			<v varname='group'>Control</v>
+			<v varname='term_long'>10037660_Pyrexia_100000004867</v>
+			<v varname='subjectsaffected'>1</v>
+			<v varname='occurrences'>1</v>
+			<v varname='occurrencescausallyrelatedtotrea'>0</v>
+			<v varname='pt'>10037660</v>
+			<v varname='term'>Pyrexia</v>
+			<v varname='eutctid'>100000004867.0000000000000000000000000</v>
+			<v varname='deathsresultingfromadverseevents'>9</v>
+			<v varname='subjectsaffectedbyseriousadverse'>15</v>
+			<v varname='subjectsaffectedbynonseriousadve'>15</v>
+			<v varname='subjectsexposed'>99</v>
+			<v varname='deathsallcauses'>12</v>
+			<v varname='rate'>1.01010101010101</v>
+		</o>
+		<o num='13'>
+			<v varname='group'>Control</v>
+			<v varname='term_long'>10047115_Vasculitis_100000004870</v>
+			<v varname='subjectsaffected'>3</v>
+			<v varname='occurrences'>4</v>
+			<v varname='occurrencescausallyrelatedtotrea'>0</v>
+			<v varname='pt'>10047115</v>
+			<v varname='term'>Vasculitis</v>
+			<v varname='eutctid'>100000004870.0000000000000000000000000</v>
+			<v varname='deathsresultingfromadverseevents'>9</v>
+			<v varname='subjectsaffectedbyseriousadverse'>15</v>
+			<v varname='subjectsaffectedbynonseriousadve'>15</v>
+			<v varname='subjectsexposed'>99</v>
+			<v varname='deathsallcauses'>12</v>
+			<v varname='rate'>4.04040404040404</v>
+		</o>
+		<o num='14'>
+			<v varname='group'>Control</v>
+			<v varname='term_long'>10051592_Acute coronary syndrome_100000004849</v>
+			<v varname='subjectsaffected'>1</v>
+			<v varname='occurrences'>1</v>
+			<v varname='occurrencescausallyrelatedtotrea'>0</v>
+			<v varname='pt'>10051592</v>
+			<v varname='term'>Acute coronary syndrome</v>
+			<v varname='eutctid'>100000004849.0000000000000000000000000</v>
+			<v varname='deathsresultingfromadverseevents'>9</v>
+			<v varname='subjectsaffectedbyseriousadverse'>15</v>
+			<v varname='subjectsaffectedbynonseriousadve'>15</v>
+			<v varname='subjectsexposed'>99</v>
+			<v varname='deathsallcauses'>12</v>
+			<v varname='rate'>1.01010101010101</v>
+		</o>
+		<o num='15'>
+			<v varname='group'>Experimental</v>
+			<v varname='term_long'>10023862_Laryngeal stenosis_100000004855</v>
+			<v varname='subjectsaffected'>1</v>
+			<v varname='occurrences'>1</v>
+			<v varname='occurrencescausallyrelatedtotrea'>0</v>
+			<v varname='pt'>10023862</v>
+			<v varname='term'>Laryngeal stenosis</v>
+			<v varname='eutctid'>100000004855.0000000000000000000000000</v>
+			<v varname='deathsresultingfromadverseevents'>22</v>
+			<v varname='subjectsaffectedbyseriousadverse'>33</v>
+			<v varname='subjectsaffectedbynonseriousadve'>24</v>
+			<v varname='subjectsexposed'>101</v>
+			<v varname='deathsallcauses'>27</v>
+			<v varname='rate'>0.99009900990099</v>
+		</o>
+		<o num='16'>
+			<v varname='group'>Experimental</v>
+			<v varname='term_long'>10025031_Lung adenocarcinoma_100000004855</v>
+			<v varname='subjectsaffected'>NA</v>
+			<v varname='occurrences'>NA</v>
+			<v varname='occurrencescausallyrelatedtotrea'>NA</v>
+			<v varname='pt'>10025031</v>
+			<v varname='term'>Lung adenocarcinoma</v>
+			<v varname='eutctid'>100000004855.0000000000000000000000000</v>
+			<v varname='deathsresultingfromadverseevents'>22</v>
+			<v varname='subjectsaffectedbyseriousadverse'>33</v>
+			<v varname='subjectsaffectedbynonseriousadve'>24</v>
+			<v varname='subjectsexposed'>101</v>
+			<v varname='deathsallcauses'>27</v>
+			<v varname='rate'>NA</v>
+		</o>
+		<o num='17'>
+			<v varname='group'>Experimental</v>
+			<v varname='term_long'>10035664_Pneumonia_100000004862</v>
+			<v varname='subjectsaffected'>3</v>
+			<v varname='occurrences'>4</v>
+			<v varname='occurrencescausallyrelatedtotrea'>4</v>
+			<v varname='pt'>10035664</v>
+			<v varname='term'>Pneumonia</v>
+			<v varname='eutctid'>100000004862.0000000000000000000000000</v>
+			<v varname='deathsresultingfromadverseevents'>22</v>
+			<v varname='subjectsaffectedbyseriousadverse'>33</v>
+			<v varname='subjectsaffectedbynonseriousadve'>24</v>
+			<v varname='subjectsexposed'>101</v>
+			<v varname='deathsallcauses'>27</v>
+			<v varname='rate'>3.96039603960396</v>
+		</o>
+		<o num='18'>
+			<v varname='group'>Experimental</v>
+			<v varname='term_long'>10035664_Pneumonia_100000004855</v>
+			<v varname='subjectsaffected'>NA</v>
+			<v varname='occurrences'>NA</v>
+			<v varname='occurrencescausallyrelatedtotrea'>NA</v>
+			<v varname='pt'>10035664</v>
+			<v varname='term'>Pneumonia</v>
+			<v varname='eutctid'>100000004855.0000000000000000000000000</v>
+			<v varname='deathsresultingfromadverseevents'>22</v>
+			<v varname='subjectsaffectedbyseriousadverse'>33</v>
+			<v varname='subjectsaffectedbynonseriousadve'>24</v>
+			<v varname='subjectsexposed'>101</v>
+			<v varname='deathsallcauses'>27</v>
+			<v varname='rate'>NA</v>
+		</o>
+		<o num='19'>
+			<v varname='group'>Experimental</v>
+			<v varname='term_long'>10022694_Intestinal perforation_100000004856</v>
+			<v varname='subjectsaffected'>NA</v>
+			<v varname='occurrences'>NA</v>
+			<v varname='occurrencescausallyrelatedtotrea'>NA</v>
+			<v varname='pt'>10022694</v>
+			<v varname='term'>Intestinal perforation</v>
+			<v varname='eutctid'>100000004856.0000000000000000000000000</v>
+			<v varname='deathsresultingfromadverseevents'>22</v>
+			<v varname='subjectsaffectedbyseriousadverse'>33</v>
+			<v varname='subjectsaffectedbynonseriousadve'>24</v>
+			<v varname='subjectsexposed'>101</v>
+			<v varname='deathsallcauses'>27</v>
+			<v varname='rate'>NA</v>
+		</o>
+		<o num='20'>
+			<v varname='group'>Experimental</v>
+			<v varname='term_long'>10037660_Pyrexia_100000004867</v>
+			<v varname='subjectsaffected'>1</v>
+			<v varname='occurrences'>1</v>
+			<v varname='occurrencescausallyrelatedtotrea'>0</v>
+			<v varname='pt'>10037660</v>
+			<v varname='term'>Pyrexia</v>
+			<v varname='eutctid'>100000004867.0000000000000000000000000</v>
+			<v varname='deathsresultingfromadverseevents'>22</v>
+			<v varname='subjectsaffectedbyseriousadverse'>33</v>
+			<v varname='subjectsaffectedbynonseriousadve'>24</v>
+			<v varname='subjectsexposed'>101</v>
+			<v varname='deathsallcauses'>27</v>
+			<v varname='rate'>0.99009900990099</v>
+		</o>
+		<o num='21'>
+			<v varname='group'>Experimental</v>
+			<v varname='term_long'>10024968_Lower respiratory tract infection_100000004855</v>
+			<v varname='subjectsaffected'>NA</v>
+			<v varname='occurrences'>NA</v>
+			<v varname='occurrencescausallyrelatedtotrea'>NA</v>
+			<v varname='pt'>10024968</v>
+			<v varname='term'>Lower respiratory tract infection</v>
+			<v varname='eutctid'>100000004855.0000000000000000000000000</v>
+			<v varname='deathsresultingfromadverseevents'>22</v>
+			<v varname='subjectsaffectedbyseriousadverse'>33</v>
+			<v varname='subjectsaffectedbynonseriousadve'>24</v>
+			<v varname='subjectsexposed'>101</v>
+			<v varname='deathsallcauses'>27</v>
+			<v varname='rate'>NA</v>
+		</o>
+		<o num='22'>
+			<v varname='group'>Experimental</v>
+			<v varname='term_long'>10035742_Pneumonitis_100000004855</v>
+			<v varname='subjectsaffected'>NA</v>
+			<v varname='occurrences'>NA</v>
+			<v varname='occurrencescausallyrelatedtotrea'>NA</v>
+			<v varname='pt'>10035742</v>
+			<v varname='term'>Pneumonitis</v>
+			<v varname='eutctid'>100000004855.0000000000000000000000000</v>
+			<v varname='deathsresultingfromadverseevents'>22</v>
+			<v varname='subjectsaffectedbyseriousadverse'>33</v>
+			<v varname='subjectsaffectedbynonseriousadve'>24</v>
+			<v varname='subjectsexposed'>101</v>
+			<v varname='deathsallcauses'>27</v>
+			<v varname='rate'>NA</v>
+		</o>
+		<o num='23'>
+			<v varname='group'>Experimental</v>
+			<v varname='term_long'>10040979_Sleep apnoea syndrome_100000004852</v>
+			<v varname='subjectsaffected'>NA</v>
+			<v varname='occurrences'>NA</v>
+			<v varname='occurrencescausallyrelatedtotrea'>NA</v>
+			<v varname='pt'>10040979</v>
+			<v varname='term'>Sleep apnoea syndrome</v>
+			<v varname='eutctid'>100000004852.0000000000000000000000000</v>
+			<v varname='deathsresultingfromadverseevents'>22</v>
+			<v varname='subjectsaffectedbyseriousadverse'>33</v>
+			<v varname='subjectsaffectedbynonseriousadve'>24</v>
+			<v varname='subjectsexposed'>101</v>
+			<v varname='deathsallcauses'>27</v>
+			<v varname='rate'>NA</v>
+		</o>
+		<o num='24'>
+			<v varname='group'>Experimental</v>
+			<v varname='term_long'>10041823_Squamous cell carcinoma_100000004864</v>
+			<v varname='subjectsaffected'>NA</v>
+			<v varname='occurrences'>NA</v>
+			<v varname='occurrencescausallyrelatedtotrea'>NA</v>
+			<v varname='pt'>10041823</v>
+			<v varname='term'>Squamous cell carcinoma</v>
+			<v varname='eutctid'>100000004864.0000000000000000000000000</v>
+			<v varname='deathsresultingfromadverseevents'>22</v>
+			<v varname='subjectsaffectedbyseriousadverse'>33</v>
+			<v varname='subjectsaffectedbynonseriousadve'>24</v>
+			<v varname='subjectsexposed'>101</v>
+			<v varname='deathsallcauses'>27</v>
+			<v varname='rate'>NA</v>
+		</o>
+		<o num='25'>
+			<v varname='group'>Experimental</v>
+			<v varname='term_long'>10051592_Acute coronary syndrome_100000004849</v>
+			<v varname='subjectsaffected'>NA</v>
+			<v varname='occurrences'>NA</v>
+			<v varname='occurrencescausallyrelatedtotrea'>NA</v>
+			<v varname='pt'>10051592</v>
+			<v varname='term'>Acute coronary syndrome</v>
+			<v varname='eutctid'>100000004849.0000000000000000000000000</v>
+			<v varname='deathsresultingfromadverseevents'>22</v>
+			<v varname='subjectsaffectedbyseriousadverse'>33</v>
+			<v varname='subjectsaffectedbynonseriousadve'>24</v>
+			<v varname='subjectsexposed'>101</v>
+			<v varname='deathsallcauses'>27</v>
+			<v varname='rate'>NA</v>
+		</o>
+		<o num='26'>
+			<v varname='group'>Experimental</v>
+			<v varname='term_long'>10047115_Vasculitis_100000004870</v>
+			<v varname='subjectsaffected'>3</v>
+			<v varname='occurrences'>3</v>
+			<v varname='occurrencescausallyrelatedtotrea'>1</v>
+			<v varname='pt'>10047115</v>
+			<v varname='term'>Vasculitis</v>
+			<v varname='eutctid'>100000004870.0000000000000000000000000</v>
+			<v varname='deathsresultingfromadverseevents'>22</v>
+			<v varname='subjectsaffectedbyseriousadverse'>33</v>
+			<v varname='subjectsaffectedbynonseriousadve'>24</v>
+			<v varname='subjectsexposed'>101</v>
+			<v varname='deathsallcauses'>27</v>
+			<v varname='rate'>2.97029702970297</v>
+		</o>
+		<o num='27'>
+			<v varname='group'>Experimental</v>
+			<v varname='term_long'>10062237_Renal impairment_100000004857</v>
+			<v varname='subjectsaffected'>NA</v>
+			<v varname='occurrences'>NA</v>
+			<v varname='occurrencescausallyrelatedtotrea'>NA</v>
+			<v varname='pt'>10062237</v>
+			<v varname='term'>Renal impairment</v>
+			<v varname='eutctid'>100000004857.0000000000000000000000000</v>
+			<v varname='deathsresultingfromadverseevents'>22</v>
+			<v varname='subjectsaffectedbyseriousadverse'>33</v>
+			<v varname='subjectsaffectedbynonseriousadve'>24</v>
+			<v varname='subjectsexposed'>101</v>
+			<v varname='deathsallcauses'>27</v>
+			<v varname='rate'>NA</v>
+		</o>
+		<o num='28'>
+			<v varname='group'>Experimental</v>
+			<v varname='term_long'>10062352_Respiratory tract infection_100000004862</v>
+			<v varname='subjectsaffected'>1</v>
+			<v varname='occurrences'>1</v>
+			<v varname='occurrencescausallyrelatedtotrea'>1</v>
+			<v varname='pt'>10062352</v>
+			<v varname='term'>Respiratory tract infection</v>
+			<v varname='eutctid'>100000004862.0000000000000000000000000</v>
+			<v varname='deathsresultingfromadverseevents'>22</v>
+			<v varname='subjectsaffectedbyseriousadverse'>33</v>
+			<v varname='subjectsaffectedbynonseriousadve'>24</v>
+			<v varname='subjectsexposed'>101</v>
+			<v varname='deathsallcauses'>27</v>
+			<v varname='rate'>0.99009900990099</v>
+		</o>
+	</data>
+	<value_labels>
+	</value_labels>
+</dta>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="US-ASCII" standalone="yes"?>
+<dta>
+	<header>
+		<ds_format>113</ds_format>
+		<byteorder>LOHI</byteorder>
+		<filetype>1</filetype>
+		<nvar>6</nvar>
+		<nobs>2</nobs>
+		<data_label></data_label>
+		<time_stamp>6 Feb 2019 12:26</time_stamp>
+	</header>
+	<descriptors>
+		<typelist>
+			<type varname='title'>str12</type>
+			<type varname='deathsresultingfromadverseevents'>byte</type>
+			<type varname='subjectsaffectedbyseriousadverse'>byte</type>
+			<type varname='subjectsaffectedbynonseriousadve'>byte</type>
+			<type varname='subjectsexposed'>int</type>
+			<type varname='deathsallcauses'>byte</type>
+		</typelist>
+		<varlist>
+			<variable varname='title'/>
+			<variable varname='deathsresultingfromadverseevents'/>
+			<variable varname='subjectsaffectedbyseriousadverse'/>
+			<variable varname='subjectsaffectedbynonseriousadve'/>
+			<variable varname='subjectsexposed'/>
+			<variable varname='deathsallcauses'/>
+		</varlist>
+		<srtlist>
+		</srtlist>
+		<fmtlist>
+			<fmt varname='title'>%12s</fmt>
+			<fmt varname='deathsresultingfromadverseevents'>%8.0g</fmt>
+			<fmt varname='subjectsaffectedbyseriousadverse'>%8.0g</fmt>
+			<fmt varname='subjectsaffectedbynonseriousadve'>%8.0g</fmt>
+			<fmt varname='subjectsexposed'>%8.0g</fmt>
+			<fmt varname='deathsallcauses'>%8.0g</fmt>
+		</fmtlist>
+		<lbllist>
+			<lblname varname='title'></lblname>
+			<lblname varname='deathsresultingfromadverseevents'></lblname>
+			<lblname varname='subjectsaffectedbyseriousadverse'></lblname>
+			<lblname varname='subjectsaffectedbynonseriousadve'></lblname>
+			<lblname varname='subjectsexposed'></lblname>
+			<lblname varname='deathsallcauses'></lblname>
+		</lbllist>
+	</descriptors>
+	<variable_labels>
+		<vlabel varname='title'></vlabel>
+		<vlabel varname='deathsresultingfromadverseevents'>deathsResultingFromAdverseEvents</vlabel>
+		<vlabel varname='subjectsaffectedbyseriousadverse'>subjectsAffectedBySeriousAdverseEvents</vlabel>
+		<vlabel varname='subjectsaffectedbynonseriousadve'>subjectsAffectedByNonSeriousAdverseEvents</vlabel>
+		<vlabel varname='subjectsexposed'>subjectsExposed</vlabel>
+		<vlabel varname='deathsallcauses'>deathsAllCauses</vlabel>
+	</variable_labels>
+	<expansion>
+	</expansion>
+	<data>
+		<o num='1'>
+			<v varname='title'>Control</v>
+			<v varname='deathsresultingfromadverseevents'>9</v>
+			<v varname='subjectsaffectedbyseriousadverse'>15</v>
+			<v varname='subjectsaffectedbynonseriousadve'>15</v>
+			<v varname='subjectsexposed'>99</v>
+			<v varname='deathsallcauses'>12</v>
+		</o>
+		<o num='2'>
+			<v varname='title'>Experimental</v>
+			<v varname='deathsresultingfromadverseevents'>22</v>
+			<v varname='subjectsaffectedbyseriousadverse'>33</v>
+			<v varname='subjectsaffectedbynonseriousadve'>24</v>
+			<v varname='subjectsexposed'>101</v>
+			<v varname='deathsallcauses'>27</v>
+		</o>
+	</data>
+	<value_labels>
+	</value_labels>
+</dta>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GROUP>
+	<title>Control</title>
+	<deathsResultingFromAdverseEvents>9</deathsResultingFromAdverseEvents>
+	<subjectsAffectedBySeriousAdverseEvents>15</subjectsAffectedBySeriousAdverseEvents>
+	<subjectsAffectedByNonSeriousAdverseEvents>15</subjectsAffectedByNonSeriousAdverseEvents>
+	<subjectsExposed>99</subjectsExposed>
+	<deathsAllCauses>12</deathsAllCauses>
+</GROUP>
+<GROUP>
+	<title>Experimental</title>
+	<deathsResultingFromAdverseEvents>22</deathsResultingFromAdverseEvents>
+	<subjectsAffectedBySeriousAdverseEvents>33</subjectsAffectedBySeriousAdverseEvents>
+	<subjectsAffectedByNonSeriousAdverseEvents>24</subjectsAffectedByNonSeriousAdverseEvents>
+	<subjectsExposed>101</subjectsExposed>
+	<deathsAllCauses>27</deathsAllCauses>
+</GROUP>

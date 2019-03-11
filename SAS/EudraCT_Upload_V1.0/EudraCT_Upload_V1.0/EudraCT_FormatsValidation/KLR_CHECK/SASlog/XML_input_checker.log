@@ -1,0 +1,744 @@
+1    /* Clear log and output. */
+2    dm 'log; clear; output; clear;';
+3
+4    /* UPDATE to Study Directory. */
+5    %let dir=P:\CTRU\Stats\Programming\SAS\Eudract\EudraCT_FormatsValidation\KLR_CHECK;
+6
+7    /* Defining program name */
+8    %let progname=XML_input_checker;
+9
+10   **--------------------------------------------------------------------------------;
+11   **||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||;
+12   **--------------------------------------------------------------------------------;
+13   **                                                                                ;
+14   **Filename..........XML_input_checker                                             ;
+15   **                                                                                ;
+16   **Date created......09/02/2017                                                    ;
+17   **                                                                                ;
+18   **Last amended......                                                              ;
+19   **                                                                                ;
+20   **Trial.............                                                              ;
+21   **                                                                                ;
+22   **Analysis..........                                                              ;
+23   **                                                                                ;
+24   **Program purpose...Check input datasets are in the correct format                ;
+25   **                                                                                ;
+26   **Directory.........&dir above                                                    ;
+27   **                                                                                ;
+28   **Statistician...... Andrew Hall                                                  ;
+29   **                                                                                ;
+30   **SAS version.......9.4                                                           ;
+31   **                                                                                ;
+32   **Datasets created..None                                                          ;
+33   **                                                                                ;
+34   **Output files......None                                                          ;
+35   **                                                                                ;
+36   **Reviewed by....... Kara-Louise Royle                                            ;
+37   **                                                                                ;
+38   **Date reviewed..... 02/08/2017                                                   ;
+39   **                                                                                ;
+40   **--------------------------------------------------------------------------------;
+41   **||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||;
+42   **--------------------------------------------------------------------------------;
+43
+44   /**************/
+45   /* Data steps */
+46   /**************/
+47   title "XML_input_checker";
+48   footnote;
+49
+50   /* UPDATE the library to be where the SOC formats library is. */
+51   libname library "&dir.\SASformats";
+NOTE: Libref LIBRARY was successfully assigned as follows:
+      Engine:        V9
+      Physical Name:
+      P:\CTRU\Stats\Programming\SAS\Eudract\EudraCT_FormatsValidation\KLR_CHECK\SASformats
+52
+53   /* UPDATE the folder name to be where study-specific managed data are stored. */
+54   libname m "&dir.\SASdata";
+NOTE: Libref M was successfully assigned as follows:
+      Engine:        V9
+      Physical Name:
+      P:\CTRU\Stats\Programming\SAS\Eudract\EudraCT_FormatsValidation\KLR_CHECK\SASdata
+55
+56   %macro open1(dataset);
+57    data &dataset;
+58     set m.&dataset;
+59   run;
+60   %mend open1;
+61
+62   %open1(EudractGrps);
+
+NOTE: There were 2 observations read from the data set M.EUDRACTGRPS.
+NOTE: The data set WORK.EUDRACTGRPS has 2 observations and 8 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.02 seconds
+      cpu time            0.01 seconds
+
+
+63   %open1(EudractAE);
+
+NOTE: There were 20 observations read from the data set M.EUDRACTAE.
+NOTE: The data set WORK.EUDRACTAE has 20 observations and 7 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.01 seconds
+
+
+64   %open1(EudractSAE);
+
+NOTE: There were 20 observations read from the data set M.EUDRACTSAE.
+NOTE: The data set WORK.EUDRACTSAE has 20 observations and 10 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.01 seconds
+
+
+65
+66   /*********************************************************************/
+67   /* Check the System organ class terms and version number are correct */
+68   /*********************************************************************/
+69
+70   proc format library=library cntlout=formatsout;
+71   run;
+
+NOTE: PROCEDURE FORMAT used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.01 seconds
+
+NOTE: The data set WORK.FORMATSOUT has 27 observations and 21 variables.
+
+72
+73   /* print out the formats to check they have loaded correctly. */
+74   proc sql;
+75       select distinct fmtname, start, label
+76       from formatsout
+77       order by fmtname, start;
+NOTE: Writing HTML Body file: sashtml.htm
+78   quit;
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.49 seconds
+      cpu time            0.34 seconds
+
+
+79
+80
+81   /*****************************************************************/
+82   /* Check to see if Eudractgrps has the correct dataset structure */
+83   /*****************************************************************/
+84
+85   /* This is the correct structure */
+86   data EudractGrpsformat;
+87   length id $62 desc $999;
+88   call missing(idn,id,desc,patn,patae,patsae,death,deathae);
+89   if _N_ = 0 then output;
+90   stop;
+91   run;
+
+NOTE: The data set WORK.EUDRACTGRPSFORMAT has 0 observations and 8 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.01 seconds
+
+
+92
+93   /* Create datasets of variable names variable types, length and format. */
+94
+95   proc contents data=EudractGrpsformat out=cont1(keep = name type length format label) noprint;
+96   run;
+
+NOTE: The data set WORK.CONT1 has 8 observations and 5 variables.
+NOTE: PROCEDURE CONTENTS used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.01 seconds
+
+
+97
+98   proc contents data=EudractGrps out=cont2(keep = name type length format label) noprint;
+99   run;
+
+NOTE: The data set WORK.CONT2 has 8 observations and 5 variables.
+NOTE: PROCEDURE CONTENTS used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+
+
+100
+101  /* Variables can be defined in upper and lower case this shouldn't be a warning. */
+102
+103  data cont1;
+104  set cont1;
+105  name=upcase(name);
+106  run;
+
+NOTE: There were 8 observations read from the data set WORK.CONT1.
+NOTE: The data set WORK.CONT1 has 8 observations and 5 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.00 seconds
+
+
+107  data cont2;
+108  set cont2;
+109  name=upcase(name);
+110  run;
+
+NOTE: There were 8 observations read from the data set WORK.CONT2.
+NOTE: The data set WORK.CONT2 has 8 observations and 5 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.00 seconds
+
+
+111
+112  proc sort data=cont1;
+113     by name;
+114  run;
+
+NOTE: There were 8 observations read from the data set WORK.CONT1.
+NOTE: The data set WORK.CONT1 has 8 observations and 5 variables.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+
+
+115
+116  proc sort data=cont2;
+117      by name;
+118  run;
+
+NOTE: There were 8 observations read from the data set WORK.CONT2.
+NOTE: The data set WORK.CONT2 has 8 observations and 5 variables.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+
+
+119
+120  proc compare listvar
+121    base=cont1
+122    compare=cont2 error;
+123  run;
+
+NOTE: Non-portable document will be produced. The current settings of FORMCHAR use nonstandard
+      line-drawing characters and the resulting output file will not render correctly unless all
+      readers of the document have the SAS Monospace font installed. To make your document
+      portable, issue the following command:
+      OPTIONS FORMCHAR="|----|+|---+=|-/\<>*";
+
+NOTE: There were 8 observations read from the data set WORK.CONT1.
+NOTE: There were 8 observations read from the data set WORK.CONT2.
+NOTE: PROCEDURE COMPARE used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.00 seconds
+
+
+124  /* If errors exist look at the report to see why or open up the two datasets cont1 and cont2
+124! to compare - cont 1 is the correct format. */
+125
+126
+127  /********************************************************/
+128  /* Check to see if EudractSAE has the correct structure */
+129  /********************************************************/
+130
+131  data EudractSAEformat;
+132  length soc $100 term $100 desc $250;
+133  call missing(idn,soc,term,desc,Asstype,patsn,occur,Occurtrt,death,deathtrt);
+134  if _N_ = 0 then output;
+135  stop;
+136  run;
+
+NOTE: The data set WORK.EUDRACTSAEFORMAT has 0 observations and 10 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.00 seconds
+
+
+137
+138  proc contents data=EudractSAEformat out=cont3(keep = name type length format label) noprint;
+139  run;
+
+NOTE: The data set WORK.CONT3 has 10 observations and 5 variables.
+NOTE: PROCEDURE CONTENTS used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+
+
+140
+141  proc contents data=EudractSAE out=cont4(keep = name type length format label) noprint;
+142  run;
+
+NOTE: The data set WORK.CONT4 has 10 observations and 5 variables.
+NOTE: PROCEDURE CONTENTS used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+
+
+143
+144  /* Variables can be defined in upper and lower case this shouldn't be an error. */
+145  data cont3;
+146  set cont3;
+147  name=upcase(name);
+148  run;
+
+NOTE: There were 10 observations read from the data set WORK.CONT3.
+NOTE: The data set WORK.CONT3 has 10 observations and 5 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.00 seconds
+
+
+149  data cont4;
+150  set cont4;
+151  name=upcase(name);
+152  run;
+
+NOTE: There were 10 observations read from the data set WORK.CONT4.
+NOTE: The data set WORK.CONT4 has 10 observations and 5 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.00 seconds
+
+
+153
+154  proc sort data=cont3;
+155     by name;
+156  run;
+
+NOTE: There were 10 observations read from the data set WORK.CONT3.
+NOTE: The data set WORK.CONT3 has 10 observations and 5 variables.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+
+
+157
+158  proc sort data=cont4;
+159      by name;
+160  run;
+
+NOTE: There were 10 observations read from the data set WORK.CONT4.
+NOTE: The data set WORK.CONT4 has 10 observations and 5 variables.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+
+
+161
+162  proc compare listvar
+163    base=cont3
+164    compare=cont4 error;
+165  run;
+
+NOTE: There were 10 observations read from the data set WORK.CONT3.
+NOTE: There were 10 observations read from the data set WORK.CONT4.
+NOTE: PROCEDURE COMPARE used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.00 seconds
+
+
+166
+167  /* If errors exist look at the report to see why or open up the two datasets cont5 and cont6
+167! to compare where structures are differnt cont 3 is the correct format. */
+168
+169  /*******************************************************/
+170  /* Check to see if EudractAE has the correct structure */
+171  /*******************************************************/
+172
+173  data EudractAEformat;
+174  length soc $100 term $100 desc $250;
+175  call missing(idn,soc,term,desc,Asstype,patsn,occur);
+176  if _N_ = 0 then output;
+177  stop;
+178  run;
+
+NOTE: The data set WORK.EUDRACTAEFORMAT has 0 observations and 7 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.01 seconds
+
+
+179
+180  proc contents data=EudractAEformat out=cont5(keep = name type length format label) noprint;
+181  run;
+
+NOTE: The data set WORK.CONT5 has 7 observations and 5 variables.
+NOTE: PROCEDURE CONTENTS used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+
+
+182
+183  proc contents data=EudractAE out=cont6(keep = name type length format label) noprint;
+184  run;
+
+NOTE: The data set WORK.CONT6 has 7 observations and 5 variables.
+NOTE: PROCEDURE CONTENTS used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+
+
+185
+186  /* Variables can be defined in upper and lower case this shouldn't be an error. */
+187  data cont5;
+188  set cont5;
+189  name=upcase(name);
+190  run;
+
+NOTE: There were 7 observations read from the data set WORK.CONT5.
+NOTE: The data set WORK.CONT5 has 7 observations and 5 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.01 seconds
+
+
+191  data cont6;
+192  set cont6;
+193  name=upcase(name);
+194  run;
+
+NOTE: There were 7 observations read from the data set WORK.CONT6.
+NOTE: The data set WORK.CONT6 has 7 observations and 5 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.01 seconds
+
+
+195
+196  proc sort data=cont5;
+197     by name;
+198  run;
+
+NOTE: There were 7 observations read from the data set WORK.CONT5.
+NOTE: The data set WORK.CONT5 has 7 observations and 5 variables.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+
+
+199
+200  proc sort data=cont6;
+201      by name;
+202  run;
+
+NOTE: There were 7 observations read from the data set WORK.CONT6.
+NOTE: The data set WORK.CONT6 has 7 observations and 5 variables.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+
+
+203
+204  proc compare listvar
+205    base=cont5
+206    compare=cont6 error ;
+207  run;
+
+NOTE: There were 7 observations read from the data set WORK.CONT5.
+NOTE: There were 7 observations read from the data set WORK.CONT6.
+NOTE: PROCEDURE COMPARE used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.01 seconds
+
+
+208  /* If errors exist look at the report to see why or open up the two datasets cont5 and cont6
+208! to compare where structures are different cont5 is the correct format. */
+209
+210  /*****************************************************/
+211  /* Check to see if Eudractgrps has no missing values */
+212  /*****************************************************/
+213
+214  data _null_;
+215     set EudractGrps;
+216     if missing(idn) then put "ERR" "OR: variable IDN has missing values in the EudractGrps
+216! dataset";
+217     if missing(id) then put "ERR" "OR: variable ID has missing values in the EudractGrps
+217! dataset";
+218     if missing(patn) then put "ERR" "OR: variable PATN has missing values in the EudractGrps
+218! dataset";
+219     if missing(patae) then put "ERR" "OR: variable PATAE has missing values in the EudractGrps
+219!  dataset";
+220     if missing(patsae) then put "ERR" "OR: variable PATSAE has missing values in the
+220! EudractGrps dataset";
+221     if missing(death) then put "ERR" "OR: variable DEATH has missing values in the EudractGrps
+221!  dataset";
+222  run;
+
+NOTE: There were 2 observations read from the data set WORK.EUDRACTGRPS.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+
+
+223
+224  /****************************************************/
+225  /* Check to see if EudractSAE has no missing values */
+226  /****************************************************/
+227
+228  data _null_;
+229     set EudractSAE;
+230     if missing(idn) then put "ERR" "OR: variable IDN has missing values in the EudractSAE
+230! dataset";
+231     if missing(soc) then put "ERR" "OR: variable SOC has missing values in the EudractSAE
+231! dataset";
+232     if missing(term) then put "ERR" "OR: variable TERM has missing values in the EudractSAE
+232! dataset";
+233     if missing(Asstype) then put "ERR" "OR: variable ASSTYPE has missing values in the
+233! EudractSAE dataset";
+234     if missing(patsn) then put "ERR" "OR: variable PATSN has missing values in the EudractSAE
+234! dataset";
+235     if missing(occur) then put "ERR" "OR: variable OCCUR has missing values in the EudractSAE
+235! dataset";
+236     if missing(occurtrt) then put "ERR" "OR: variable OCCURTRT has missing values in the
+236! EudractSAE dataset";
+237     if missing(death) then put "ERR" "OR: variable DEATH has missing values in the EudractSAE
+237! dataset";
+238     if missing(deathtrt) then put "ERR" "OR: variable DEATHTRT has missing values in the
+238! EudractSAE dataset";
+239  run;
+
+NOTE: There were 20 observations read from the data set WORK.EUDRACTSAE.
+NOTE: DATA statement used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.01 seconds
+
+
+240
+241  /***************************************************/
+242  /* Check to see if EudractAE has no missing values */
+243  /***************************************************/
+244
+245  data _null_;
+246     set EudractAE;
+247     if missing(idn) then put "ERR" "OR: variable IDN has missing values in the EudractAE
+247! dataset";
+248     if missing(soc) then put "ERR" "OR: variable SOC has missing values in the EudractAE
+248! dataset";
+249     if missing(term) then put "ERR" "OR: variable TERM has missing values in the EudractAE
+249! dataset";
+250     if missing(Asstype) then put "ERR" "OR: variable ASSTYPE has missing values in the
+250! EudractAE dataset";
+251     if missing(patsn) then put "ERR" "OR: variable PATSN has missing values in the EudractAE
+251! dataset";
+252     if missing(occur) then put "ERR" "OR: variable OCCUR has missing values in the EudractAE
+252! dataset";
+253  run;
+
+NOTE: There were 20 observations read from the data set WORK.EUDRACTAE.
+NOTE: DATA statement used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.01 seconds
+
+
+254
+255  /*******************************************************/
+256  /* Check to see if EudractSAE has matched SOC properly */
+257  /*******************************************************/
+258
+259  data _null_;
+260      set EudractSAE;
+261      if missing(input(soc,soc.)) then put "ERR" "OR:" SOC +(-1)" hasn't matched, check the
+261! format or input dataset";
+262  run;
+
+NOTE: There were 20 observations read from the data set WORK.EUDRACTSAE.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+
+
+263
+264  /******************************************************/
+265  /* Check to see if EudractAE has matched SOC properly */
+266  /******************************************************/
+267
+268  data _null_;
+269      set EudractAE;
+270      if missing(input(soc,soc.)) then put "ERR" "OR:" SOC +(-1)" hasn't matched, check the
+270! format or input dataset";
+271  run;
+
+NOTE: There were 20 observations read from the data set WORK.EUDRACTAE.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+
+
+272
+273  /*********************************************/
+274  /* Check to see idn is unique in EudractGrps */
+275  /*********************************************/
+276
+277  proc sql;
+278      create table check1 as
+279      select distinct idn, count(*) as total, count(distinct idn) as totalidn
+280      from EudractGrps
+281      order by idn;
+NOTE: The query requires remerging summary statistics back with the original data.
+NOTE: Table WORK.CHECK1 created, with 2 rows and 3 columns.
+
+282  quit;
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.01 seconds
+
+
+283
+284  data _null_;
+285      set check1 end=a;
+286      if total ne totalidn then put "ERR" "OR: variable IDN in the EudractGrps dataset isn't
+286! unique";
+287  run;
+
+NOTE: There were 2 observations read from the data set WORK.CHECK1.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+
+
+288
+289  /*****************************************************************************************/
+290  /* Check to see all entries of IDN in AEs and SAEs match to those in the reporting group */
+291  /*****************************************************************************************/
+292
+293  proc sort data=EudractSAE out=check2(keep= idn) nodupkey; by idn; run;
+
+NOTE: There were 20 observations read from the data set WORK.EUDRACTSAE.
+NOTE: 18 observations with duplicate key values were deleted.
+NOTE: The data set WORK.CHECK2 has 2 observations and 1 variables.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+
+
+294  proc sort data=EudractAE out=check3(keep= idn) nodupkey; by idn; run;
+
+NOTE: There were 20 observations read from the data set WORK.EUDRACTAE.
+NOTE: 18 observations with duplicate key values were deleted.
+NOTE: The data set WORK.CHECK3 has 2 observations and 1 variables.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+
+
+295
+296  /**************/
+297  /* EudractSAE */
+298  /**************/
+299
+300  data _null_;
+301      merge check1(in=a) check2(in=b) ;
+302      by idn;
+303      if a and not b then put "ERR" "OR: variable with IDN=" idn +(-1)" is in the EudractGrps
+303! dataset but not in the EudractSAE dataset";
+304      if b and not a then put "ERR" "OR: variable with IDN=" idn +(-1)" is in the EudractSAE
+304! dataset but not defined in the EudractGrps dataset";
+305  run;
+
+NOTE: There were 2 observations read from the data set WORK.CHECK1.
+NOTE: There were 2 observations read from the data set WORK.CHECK2.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+
+
+306
+307  /*************/
+308  /* EudractAE */
+309  /*************/
+310
+311  /* Code to count number of observations in AEs dataset to make sure errors don't fire if AEs
+311! dataset is empty. */
+312  proc sql noprint;
+313   select count(*) into :nobs from check3;
+314  quit;
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+
+
+315
+316  data _null_;
+317      merge check1(in=a) check3(in=b);
+318      by idn;
+319      nobs=compress("&nobs.");
+320      if nobs ne "0" and a and not b then put "ERR" "OR: variable with IDN=" idn +(-1)" is in
+320! the EudractGrps dataset but not in the EudractAE dataset";
+321      if b and not a then put "ERR" "OR: variable with IDN=" idn +(-1)" is in the EudractAE
+321! dataset but not defined in the EudractGrps dataset";
+322  run;
+
+NOTE: There were 2 observations read from the data set WORK.CHECK1.
+NOTE: There were 2 observations read from the data set WORK.CHECK3.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+
+
+323
+324  /********************************************************************************************
+324! ***************************/
+325  /* Check to see that there are the correct number of entries for each term & that assessment
+325! type is correctly defined */
+326  /********************************************************************************************
+326! ***************************/
+327
+328  data SAE_AE;
+329      set EudractSAE(in=a) EudractAE(in=b);
+330      if a then dset='EudractSAE';
+331      if b then dset='EudractAE';
+332
+333      /* Add a check for assessment type as it needs to be 1 or 2. */
+334      if asstype not in (1,2) then put "ERR" "OR: Asstype in dataset=" dset +(-1)" has entries
+334! that are not 1 or 2";
+335  run;
+
+NOTE: There were 20 observations read from the data set WORK.EUDRACTSAE.
+NOTE: There were 20 observations read from the data set WORK.EUDRACTAE.
+NOTE: The data set WORK.SAE_AE has 40 observations and 11 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.00 seconds
+
+
+336
+337  proc sql;
+338  /* Count number of groups and merge back to all entries. */
+339      create table check4 as
+340      select *, count(distinct idn) as ngroups
+341      from sae_AE;
+NOTE: The query requires remerging summary statistics back with the original data.
+NOTE: Table WORK.CHECK4 created, with 40 rows and 12 columns.
+
+342  /* Count number of entries for each term. */
+343      create table check5 as
+344      select distinct dset, term, ngroups, count(distinct idn) as numidn, count(*) as nentries
+345      from check4
+346      group by dset, term;
+NOTE: The query requires remerging summary statistics back with the original data.
+NOTE: Table WORK.CHECK5 created, with 20 rows and 5 columns.
+
+347  quit;
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.02 seconds
+      cpu time            0.01 seconds
+
+
+348
+349  data _null_;
+350      merge check5;
+351      if ngroups>numidn then put "ERR" "OR: term=" term +(-1) "in dataset=" dset +(-1)" has
+351! missing groups";
+352      if nentries>numidn then put "ERR" "OR: term=" term +(-1) "in dataset=" dset +(-1)" has
+352! duplicate entries";
+353  run;
+
+NOTE: There were 20 observations read from the data set WORK.CHECK5.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+
+
+354
+355  /* Output log and output. */
+356  dm 'output; file "&dir.\SASout\&progname..lst" replace;';

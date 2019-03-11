@@ -1,0 +1,29 @@
+"group","term_long","subjectsAffected","occurrences","occurrencesCausallyRelatedToTreatment","pt","term","eutctId","deathsResultingFromAdverseEvents","subjectsAffectedBySeriousAdverseEvents","subjectsAffectedByNonSeriousAdverseEvents","subjectsExposed","deathsAllCauses","rate"
+"Control","10035664_Pneumonia_100000004855",1,1,1,10035664,"Pneumonia",100000004855,9,15,15,99,12,1.01010101010101
+"Control","10024968_Lower respiratory tract infection_100000004855",1,1,1,10024968,"Lower respiratory tract infection",100000004855,9,15,15,99,12,1.01010101010101
+"Control","10022694_Intestinal perforation_100000004856",1,1,0,10022694,"Intestinal perforation",100000004856,9,15,15,99,12,1.01010101010101
+"Control","10023862_Laryngeal stenosis_100000004855",1,1,0,10023862,"Laryngeal stenosis",100000004855,9,15,15,99,12,1.01010101010101
+"Control","10041823_Squamous cell carcinoma_100000004864",1,1,0,10041823,"Squamous cell carcinoma",100000004864,9,15,15,99,12,1.01010101010101
+"Control","10035742_Pneumonitis_100000004855",1,1,0,10035742,"Pneumonitis",100000004855,9,15,15,99,12,1.01010101010101
+"Control","10025031_Lung adenocarcinoma_100000004855",1,1,0,10025031,"Lung adenocarcinoma",100000004855,9,15,15,99,12,1.01010101010101
+"Control","10040979_Sleep apnoea syndrome_100000004852",1,2,0,10040979,"Sleep apnoea syndrome",100000004852,9,15,15,99,12,2.02020202020202
+"Control","10035664_Pneumonia_100000004862",2,2,1,10035664,"Pneumonia",100000004862,9,15,15,99,12,2.02020202020202
+"Control","10062352_Respiratory tract infection_100000004862",2,2,1,10062352,"Respiratory tract infection",100000004862,9,15,15,99,12,2.02020202020202
+"Control","10062237_Renal impairment_100000004857",1,1,0,10062237,"Renal impairment",100000004857,9,15,15,99,12,1.01010101010101
+"Control","10037660_Pyrexia_100000004867",1,1,0,10037660,"Pyrexia",100000004867,9,15,15,99,12,1.01010101010101
+"Control","10047115_Vasculitis_100000004870",3,4,0,10047115,"Vasculitis",100000004870,9,15,15,99,12,4.04040404040404
+"Control","10051592_Acute coronary syndrome_100000004849",1,1,0,10051592,"Acute coronary syndrome",100000004849,9,15,15,99,12,1.01010101010101
+"Experimental","10023862_Laryngeal stenosis_100000004855",1,1,0,10023862,"Laryngeal stenosis",100000004855,22,33,24,101,27,0.99009900990099
+"Experimental","10025031_Lung adenocarcinoma_100000004855",NA,NA,NA,10025031,"Lung adenocarcinoma",100000004855,22,33,24,101,27,NA
+"Experimental","10035664_Pneumonia_100000004862",3,4,4,10035664,"Pneumonia",100000004862,22,33,24,101,27,3.96039603960396
+"Experimental","10035664_Pneumonia_100000004855",NA,NA,NA,10035664,"Pneumonia",100000004855,22,33,24,101,27,NA
+"Experimental","10022694_Intestinal perforation_100000004856",NA,NA,NA,10022694,"Intestinal perforation",100000004856,22,33,24,101,27,NA
+"Experimental","10037660_Pyrexia_100000004867",1,1,0,10037660,"Pyrexia",100000004867,22,33,24,101,27,0.99009900990099
+"Experimental","10024968_Lower respiratory tract infection_100000004855",NA,NA,NA,10024968,"Lower respiratory tract infection",100000004855,22,33,24,101,27,NA
+"Experimental","10035742_Pneumonitis_100000004855",NA,NA,NA,10035742,"Pneumonitis",100000004855,22,33,24,101,27,NA
+"Experimental","10040979_Sleep apnoea syndrome_100000004852",NA,NA,NA,10040979,"Sleep apnoea syndrome",100000004852,22,33,24,101,27,NA
+"Experimental","10041823_Squamous cell carcinoma_100000004864",NA,NA,NA,10041823,"Squamous cell carcinoma",100000004864,22,33,24,101,27,NA
+"Experimental","10051592_Acute coronary syndrome_100000004849",NA,NA,NA,10051592,"Acute coronary syndrome",100000004849,22,33,24,101,27,NA
+"Experimental","10047115_Vasculitis_100000004870",3,3,1,10047115,"Vasculitis",100000004870,22,33,24,101,27,2.97029702970297
+"Experimental","10062237_Renal impairment_100000004857",NA,NA,NA,10062237,"Renal impairment",100000004857,22,33,24,101,27,NA
+"Experimental","10062352_Respiratory tract infection_100000004862",1,1,1,10062352,"Respiratory tract infection",100000004862,22,33,24,101,27,0.99009900990099

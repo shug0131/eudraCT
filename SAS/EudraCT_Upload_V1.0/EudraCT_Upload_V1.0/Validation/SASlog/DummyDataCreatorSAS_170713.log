@@ -1,0 +1,1069 @@
+1    dm 'log; clear; output; clear;'; /* clear log and output */
+2    /*
+3    ___________________________________________________________________________
+4
+5        Filename                :   DummyDataCreator.SAS
+6
+7        Date created            :   11/07/2017
+8
+9        Last amended            :   13/07/2017 ( To add additional scenarios for the validation
+9  ! of the creator prog - the other data will not be affected just re-saved)
+10
+11       Trial                   :   N/A
+12
+13       Analysis                :   N/A
+14
+15       Purpose Of Program      :   To create dummy data for the EudraCT validation process
+16
+17       Directory               :   P:\CTRU\Stats\Programming\SAS\Eudract\Validation\SASprogs
+18
+19       Statistician            :   Kara-Louise Royle
+20
+21       SAS version             :
+22
+23       Datasets created        :
+24
+25       Output files            :
+26
+27       Reviewed by             :
+28
+29       Date reviewed           :
+30   ___________________________________________________________________________
+31   */
+32
+33   * Specifying different librarys for the different dummy datasets so they can all be tracked;
+34   libname Dummy "P:\CTRU\Stats\Programming\SAS\Eudract\Validation\SASdata\Dummy";
+NOTE: Libref DUMMY was successfully assigned as follows:
+      Engine:        V9
+      Physical Name: P:\CTRU\Stats\Programming\SAS\Eudract\Validation\SASdata\Dummy
+35   libname A "P:\CTRU\Stats\Programming\SAS\Eudract\Validation\SASdata\ScenarioA";
+NOTE: Libref A was successfully assigned as follows:
+      Engine:        V9
+      Physical Name: P:\CTRU\Stats\Programming\SAS\Eudract\Validation\SASdata\ScenarioA
+36   libname B "P:\CTRU\Stats\Programming\SAS\Eudract\Validation\SASdata\ScenarioB";
+NOTE: Libref B was successfully assigned as follows:
+      Engine:        V9
+      Physical Name: P:\CTRU\Stats\Programming\SAS\Eudract\Validation\SASdata\ScenarioB
+37   libname C "P:\CTRU\Stats\Programming\SAS\Eudract\Validation\SASdata\ScenarioC";
+NOTE: Libref C was successfully assigned as follows:
+      Engine:        V9
+      Physical Name: P:\CTRU\Stats\Programming\SAS\Eudract\Validation\SASdata\ScenarioC
+38   libname D "P:\CTRU\Stats\Programming\SAS\Eudract\Validation\SASdata\ScenarioD";
+NOTE: Libref D was successfully assigned as follows:
+      Engine:        V9
+      Physical Name: P:\CTRU\Stats\Programming\SAS\Eudract\Validation\SASdata\ScenarioD
+39   libname E "P:\CTRU\Stats\Programming\SAS\Eudract\Validation\SASdata\ScenarioE";
+NOTE: Libref E was successfully assigned as follows:
+      Engine:        V9
+      Physical Name: P:\CTRU\Stats\Programming\SAS\Eudract\Validation\SASdata\ScenarioE
+40   libname F "P:\CTRU\Stats\Programming\SAS\Eudract\Validation\SASdata\ScenarioF";
+NOTE: Libref F was successfully assigned as follows:
+      Engine:        V9
+      Physical Name: P:\CTRU\Stats\Programming\SAS\Eudract\Validation\SASdata\ScenarioF
+41   libname G "P:\CTRU\Stats\Programming\SAS\Eudract\Validation\SASdata\ScenarioG";
+NOTE: Libref G was successfully assigned as follows:
+      Engine:        V9
+      Physical Name: P:\CTRU\Stats\Programming\SAS\Eudract\Validation\SASdata\ScenarioG
+42   libname H "P:\CTRU\Stats\Programming\SAS\Eudract\Validation\SASdata\ScenarioH";
+NOTE: Libref H was successfully assigned as follows:
+      Engine:        V9
+      Physical Name: P:\CTRU\Stats\Programming\SAS\Eudract\Validation\SASdata\ScenarioH
+43   libname Upload "P:\CTRU\Stats\Programming\SAS\Eudract\Validation\SASdata\Upload";
+NOTE: Libref UPLOAD was successfully assigned as follows:
+      Engine:        V9
+      Physical Name: P:\CTRU\Stats\Programming\SAS\Eudract\Validation\SASdata\Upload
+44   libname Upload2 "P:\CTRU\Stats\Programming\SAS\Eudract\Validation\SASdata\Upload2";
+NOTE: Libref UPLOAD2 was successfully assigned as follows:
+      Engine:        V9
+      Physical Name: P:\CTRU\Stats\Programming\SAS\Eudract\Validation\SASdata\Upload2
+45   libname Upload3 "P:\CTRU\Stats\Programming\SAS\Eudract\Validation\SASdata\Upload3";
+NOTE: Libref UPLOAD3 was successfully assigned as follows:
+      Engine:        V9
+      Physical Name: P:\CTRU\Stats\Programming\SAS\Eudract\Validation\SASdata\Upload3
+46
+47   /* Creating the different datasets */
+48
+49   /* Obtaining master CTCAE so we have correct terms for AE and SAE datasets */
+50   proc import out= WORK.ctcae
+51               datafile="P:\CTRU\Stats\Programming\SAS\Eudract\Validation\Rdata\CTCAE_4.03_2010-
+51 ! 06-14.xlsx"
+52               dbms=XLSX REPLACE;
+53               getnames=yes;
+54   RUN;
+
+NOTE:    Variable Name Change.  MedDRA v12.0 Code -> MedDRA_v12_0_Code
+NOTE:    Variable Name Change.  CTCAE v4.0 SOC -> CTCAE_v4_0_SOC
+NOTE:    Variable Name Change.  CTCAE v4.0 Term -> CTCAE_v4_0_Term
+NOTE:    Variable Name Change.  Grade 1    -> Grade_1___
+NOTE:    Variable Name Change.  Grade 2    -> Grade_2___
+NOTE:    Variable Name Change.  Grade 3    -> Grade_3___
+NOTE:    Variable Name Change.  Grade 4    -> Grade_4___
+NOTE:    Variable Name Change.  Grade 5    -> Grade_5___
+NOTE:    Variable Name Change.  CTCAE v4.0 AE Term Definition -> CTCAE_v4_0_AE_Term_Definition
+NOTE: The import data set has 790 observations and 10 variables.
+NOTE: WORK.CTCAE data set was successfully created.
+NOTE: PROCEDURE IMPORT used (Total process time):
+      real time           0.12 seconds
+      cpu time            0.07 seconds
+
+
+55
+56   /* Randomly choosing ten events for both the AE and SAE dataset */
+57
+58   proc surveyselect data = ctcae method = SRS rep = 1
+59     sampsize = 10 seed = 1707111 out = sae_dummy(rename=(CTCAE_v4_0_SOC=SOC
+59 ! CTCAE_v4_0_Term=term) drop=replicate);
+60     id CTCAE_v4_0_SOC CTCAE_v4_0_Term;
+61   run;
+
+NOTE: Writing HTML Body file: sashtml.htm
+NOTE: The data set WORK.SAE_DUMMY has 10 observations and 2 variables.
+NOTE: PROCEDURE SURVEYSELECT used (Total process time):
+      real time           0.51 seconds
+      cpu time            0.32 seconds
+
+
+62
+63   proc surveyselect data = ctcae method = SRS rep = 1
+64     sampsize = 10 seed = 1707112 out = ae_dummy(rename=(CTCAE_v4_0_SOC=SOC
+64 ! CTCAE_v4_0_Term=term) drop=replicate);
+65     id CTCAE_v4_0_SOC CTCAE_v4_0_Term;
+66   run;
+
+NOTE: The data set WORK.AE_DUMMY has 10 observations and 2 variables.
+NOTE: PROCEDURE SURVEYSELECT used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.00 seconds
+
+
+67
+68   proc print data=sae_dummy noobs;
+69       run;
+
+NOTE: There were 10 observations read from the data set WORK.SAE_DUMMY.
+NOTE: PROCEDURE PRINT used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.01 seconds
+
+
+70
+71   proc print data=ae_dummy noobs;
+72       run;
+
+NOTE: There were 10 observations read from the data set WORK.AE_DUMMY.
+NOTE: PROCEDURE PRINT used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.00 seconds
+
+
+73
+74   /* Choosing 26 distinct SOC */
+75   proc sort data=ctcae out=SOC_all;
+76       by CTCAE_v4_0_SOC;
+77   run;
+
+NOTE: There were 790 observations read from the data set WORK.CTCAE.
+NOTE: The data set WORK.SOC_ALL has 790 observations and 10 variables.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.01 seconds
+
+
+78
+79   data SOC_distinct(keep=CTCAE_v4_0_SOC CTCAE_v4_0_Term);
+80       set SOC_all;
+81       by CTCAE_v4_0_SOC;
+82       if first.CTCAE_v4_0_SOC;
+83   run;
+
+NOTE: There were 790 observations read from the data set WORK.SOC_ALL.
+NOTE: The data set WORK.SOC_DISTINCT has 26 observations and 2 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.01 seconds
+
+
+84
+85   proc print data=SOC_distinct noobs;
+86       run;
+
+NOTE: There were 26 observations read from the data set WORK.SOC_DISTINCT.
+NOTE: PROCEDURE PRINT used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.01 seconds
+
+
+87
+88
+89   /* Importing the Dummy data */
+90
+91   /* EudraCT Groups */
+92   proc import out=work.EudractGrpsPre
+93               datafile="P:\CTRU\Stats\Programming\SAS\Eudract\Validation\Rdata\DummyCorrect.xls
+93 ! x"
+94               dbms=XLSX REPLACE;
+95               getnames=yes;
+96               sheet = "EudractGrps";
+97   run;
+
+NOTE: The import data set has 2 observations and 8 variables.
+NOTE: WORK.EUDRACTGRPSPRE data set was successfully created.
+NOTE: PROCEDURE IMPORT used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.01 seconds
+
+
+98   *Correcting the lengths;
+99   data EudractGrps;
+100      length id $ 62 desc $ 999;
+101      set EudractGrpsPre;
+102  run;
+
+NOTE: There were 2 observations read from the data set WORK.EUDRACTGRPSPRE.
+NOTE: The data set WORK.EUDRACTGRPS has 2 observations and 8 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.01 seconds
+
+
+103
+104  /* EudraCT SAE */
+105  proc import out=work.EudractSAEPre
+106              datafile="P:\CTRU\Stats\Programming\SAS\Eudract\Validation\Rdata\DummyCorrect.xls
+106! x"
+107              dbms=XLSX REPLACE;
+108              getnames=yes;
+109              sheet = "EudractSAE";
+110  run;
+
+NOTE: The import data set has 20 observations and 10 variables.
+NOTE: WORK.EUDRACTSAEPRE data set was successfully created.
+NOTE: PROCEDURE IMPORT used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.00 seconds
+
+
+111  *Correcting the lengths;
+112  data EudractSAE;
+113      length SOC $ 100 term $ 100 desc $ 250;
+114      set EudractSAEPre;
+115  run;
+
+NOTE: There were 20 observations read from the data set WORK.EUDRACTSAEPRE.
+NOTE: The data set WORK.EUDRACTSAE has 20 observations and 10 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.01 seconds
+
+
+116  /* EudraCT AE */
+117  proc import out=work.EudractAEPre
+118              datafile="P:\CTRU\Stats\Programming\SAS\Eudract\Validation\Rdata\DummyCorrect.xls
+118! x"
+119              dbms=XLSX REPLACE;
+120              getnames=yes;
+121              sheet = "EudractAE";
+122  run;
+
+NOTE: The import data set has 20 observations and 7 variables.
+NOTE: WORK.EUDRACTAEPRE data set was successfully created.
+NOTE: PROCEDURE IMPORT used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.01 seconds
+
+
+123  *Correcting the lengths;
+124  data EudractAE;
+125      length SOC $ 100 term $ 100 desc $ 250;
+126      set EudractAEPre;
+127  run;
+
+NOTE: There were 20 observations read from the data set WORK.EUDRACTAEPRE.
+NOTE: The data set WORK.EUDRACTAE has 20 observations and 7 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.01 seconds
+
+
+128
+129  /* Checking the data is in the right form as per guideline */
+130  proc contents data=EudractGrps;
+131      run;
+
+NOTE: PROCEDURE CONTENTS used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.00 seconds
+
+
+132
+133  proc contents data=EudractSAE;
+134      run;
+
+NOTE: PROCEDURE CONTENTS used (Total process time):
+      real time           0.03 seconds
+      cpu time            0.01 seconds
+
+
+135
+136  proc contents data=EudractAE;
+137      run;
+
+NOTE: PROCEDURE CONTENTS used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.01 seconds
+
+
+138
+139  /* Removing the formats & labels which were made as a result of importing data from excel */
+140  proc datasets lib=work;
+                                            Directory
+
+    Libref         WORK
+    Engine         V9
+    Physical Name  C:\Users\medkroy\AppData\Local\Temp\SAS Temporary Files\_TD8812_CTU-PC109_
+    Filename       C:\Users\medkroy\AppData\Local\Temp\SAS Temporary Files\_TD8812_CTU-PC109_
+
+
+                                  Member
+               #  Name            Type       File Size  Last Modified
+
+               1  AE_DUMMY        DATA           128KB  13/07/2017 11:30:19
+               2  CTCAE           DATA             2MB  13/07/2017 11:30:18
+               3  EUDRACTAE       DATA           128KB  13/07/2017 11:30:19
+               4  EUDRACTAEPRE    DATA           128KB  13/07/2017 11:30:19
+               5  EUDRACTGRPS     DATA           176KB  13/07/2017 11:30:19
+               6  EUDRACTGRPSPRE  DATA           128KB  13/07/2017 11:30:19
+               7  EUDRACTSAE      DATA           128KB  13/07/2017 11:30:19
+               8  EUDRACTSAEPRE   DATA           128KB  13/07/2017 11:30:19
+               9  SAE_DUMMY       DATA           128KB  13/07/2017 11:30:19
+              10  SOC_ALL         DATA             2MB  13/07/2017 11:30:19
+              11  SOC_DISTINCT    DATA           128KB  13/07/2017 11:30:19
+141  modify EudractGrps;
+NOTE: MODIFY was successful for WORK.EUDRACTGRPS.DATA.
+142  format _all_;
+143  informat _all_;
+144  attrib _all_ label='';
+145  modify EudractAE;
+NOTE: MODIFY was successful for WORK.EUDRACTAE.DATA.
+146  format _all_;
+147  informat _all_;
+148  attrib _all_ label='';
+149  modify EudractSAE;
+150  format _all_;
+151  informat _all_;
+152  attrib _all_ label='';
+153  run;
+
+NOTE: MODIFY was successful for WORK.EUDRACTSAE.DATA.
+154  quit;
+
+NOTE: PROCEDURE DATASETS used (Total process time):
+      real time           0.03 seconds
+      cpu time            0.03 seconds
+
+
+155
+156  /* Saving the correct dummy data */
+157  data dummy.EudractGrps;
+158      set EudractGrps;
+159  run;
+
+NOTE: There were 2 observations read from the data set WORK.EUDRACTGRPS.
+NOTE: The data set DUMMY.EUDRACTGRPS has 2 observations and 8 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.04 seconds
+      cpu time            0.01 seconds
+
+
+160  data dummy.EudractSAE;
+161      set EudractSAE;
+162  run;
+
+NOTE: There were 20 observations read from the data set WORK.EUDRACTSAE.
+NOTE: The data set DUMMY.EUDRACTSAE has 20 observations and 10 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.06 seconds
+      cpu time            0.03 seconds
+
+
+163  data dummy.EudractAE;
+164      set EudractAE;
+165  run;
+
+NOTE: There were 20 observations read from the data set WORK.EUDRACTAE.
+NOTE: The data set DUMMY.EUDRACTAE has 20 observations and 7 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.06 seconds
+      cpu time            0.00 seconds
+
+
+166
+167  /* Removing datasets so we don't get confused calling things the same name */
+168  proc datasets nolist memtype=data lib=work kill;
+NOTE: Deleting WORK.AE_DUMMY (memtype=DATA).
+NOTE: Deleting WORK.CTCAE (memtype=DATA).
+NOTE: Deleting WORK.EUDRACTAE (memtype=DATA).
+NOTE: Deleting WORK.EUDRACTAEPRE (memtype=DATA).
+NOTE: Deleting WORK.EUDRACTGRPS (memtype=DATA).
+NOTE: Deleting WORK.EUDRACTGRPSPRE (memtype=DATA).
+NOTE: Deleting WORK.EUDRACTSAE (memtype=DATA).
+NOTE: Deleting WORK.EUDRACTSAEPRE (memtype=DATA).
+NOTE: Deleting WORK.SAE_DUMMY (memtype=DATA).
+NOTE: Deleting WORK.SOC_ALL (memtype=DATA).
+NOTE: Deleting WORK.SOC_DISTINCT (memtype=DATA).
+169  run;
+
+170  quit;
+
+NOTE: PROCEDURE DATASETS used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.01 seconds
+
+
+171
+172  /* Scenario A - Each dataset contains only variables with the correct names, variable types,
+172! lengths and formats as specified in documentation " */
+173
+174  data A.EudractGrps(drop=x);
+175      *length is supposed to be 62;
+176      length id $ 500;
+177      set dummy.EudractGrps(rename=(deathae=x));
+178      *idn is correct term;
+179      rename idn=ifn;
+180      *deathae is supposed to be numeric;
+181      deathae = put(x, 8.);
+182      *No formats should be on the data;
+183      format death best4.;
+184      *No labels should be on the data;
+185      label patn = "Number of patients in safety population";
+186  run;
+
+NOTE: There were 2 observations read from the data set DUMMY.EUDRACTGRPS.
+NOTE: The data set A.EUDRACTGRPS has 2 observations and 8 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.06 seconds
+      cpu time            0.01 seconds
+
+
+187
+188  data A.EudractAE(drop=z);
+189      *length is supposed to be 250.;
+190      length desc $ 10;
+191      set dummy.EudractAE(rename=(Asstype=z));
+192      *patsn is correct term;
+193      rename patsn = patn;
+194      *Asstype is supposed to be numeric;
+195      Asstype = put(z,3.);
+196      *No variable is supposed to have a format;
+197      format term $100.;
+198      *No variable should have a label;
+199      label occur="Number of occurences";
+200  run;
+
+WARNING: Multiple lengths were specified for the variable desc by input data set(s). This can
+         cause truncation of data.
+NOTE: There were 20 observations read from the data set DUMMY.EUDRACTAE.
+NOTE: The data set A.EUDRACTAE has 20 observations and 7 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.17 seconds
+      cpu time            0.04 seconds
+
+
+201
+202  data A.EudractSAE(drop=y);
+203      *length is supposed to be 100.;
+204      length SOC $ 50;
+205      set dummy.EudractSAE(rename=(patsn=y));
+206      *occur is the correct term;
+207      rename occur = occurance;
+208      *patsn is supposed to be numeric;
+209      patsn=put(y,5.);
+210      *No variable should have a format;
+211      format SOC $100.;
+212      *No variable should have a label;
+213      label Asstype="Assessment Type";
+214  run;
+
+WARNING: Multiple lengths were specified for the variable SOC by input data set(s). This can
+         cause truncation of data.
+NOTE: There were 20 observations read from the data set DUMMY.EUDRACTSAE.
+NOTE: The data set A.EUDRACTSAE has 20 observations and 10 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.09 seconds
+      cpu time            0.03 seconds
+
+
+215
+216  /* Scenario B: For required fields in the Eudract system each dataset contains no missing
+216! data. */
+217
+218  data B.EudractGrps;
+219      set dummy.EudractGrps;
+220      *Changing all the required values to have a missing value;
+221      if idn = 1 then idn = . ;
+222      if id="Group 2" then id = "";
+223      if idn=2 then patn = .;
+224      if id="Group 1" then patae = . ;
+225      if idn = 2 then patsae = .;
+226      if id="Group 1" then death = .;
+227  run;
+
+NOTE: There were 2 observations read from the data set DUMMY.EUDRACTGRPS.
+NOTE: The data set B.EUDRACTGRPS has 2 observations and 8 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.06 seconds
+      cpu time            0.01 seconds
+
+
+228
+229  data B.EudractAE;
+230      set dummy.EudractAE;
+231      *Changing all the required values to have a missing value;
+232      if idn = 1 and patsn = 113 then idn = .;
+233      if SOC = "Nervous system disorders" then SOC = "";
+234      if term = "Lung infection" then term="";
+235      if idn = 2 and patsn = 130 then Asstype = .;
+236      if patsn = 115 then patsn = .;
+237      if occur = 152 then occur = .;
+238  run;
+
+NOTE: There were 20 observations read from the data set DUMMY.EUDRACTAE.
+NOTE: The data set B.EUDRACTAE has 20 observations and 7 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.09 seconds
+      cpu time            0.03 seconds
+
+
+239
+240  data B.EudractSAE;
+241      set dummy.EudractSAE;
+242      *Changing all required values to have a missing value;
+243      if idn = 2 and patsn=30 then idn = .;
+244      if SOC = "Psychiatric disorders" then SOC = "";
+245      if term = "Fall" then term = "";
+246      if idn = 1 and patsn=15 then Asstype = .;
+247      if patsn = 22 then patsn = .;
+248      if occur =43 then occur=.;
+249      if Occurtrt = 66then occurtrt=.;
+250      if death = 73then death=.;
+251      if deathtrt = 96 then deathtrt=.;
+252  run;
+
+NOTE: There were 20 observations read from the data set DUMMY.EUDRACTSAE.
+NOTE: The data set B.EUDRACTSAE has 20 observations and 10 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.10 seconds
+      cpu time            0.04 seconds
+
+
+253
+254  /* Scenario C: Each SOC entry in the EudractAE and EudractSAE maps to a EUTTC number   */
+255  data C.EudractGrps;
+256      set Dummy.EudractGrps;
+257  run;
+
+NOTE: There were 2 observations read from the data set DUMMY.EUDRACTGRPS.
+NOTE: The data set C.EUDRACTGRPS has 2 observations and 8 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.06 seconds
+      cpu time            0.01 seconds
+
+
+258
+259  data C.EudractAE;
+260      set Dummy.EudractAE;
+261      *Adding a typo so they won't match up;
+262      if SOC="Ear and labyrinth disorders" then SOC = "Ear and labirinth disorders";
+263  run;
+
+NOTE: There were 20 observations read from the data set DUMMY.EUDRACTAE.
+NOTE: The data set C.EUDRACTAE has 20 observations and 7 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.10 seconds
+      cpu time            0.01 seconds
+
+
+264
+265  data C.EudractSAE;
+266      set Dummy.EudractSAE;
+267      *Adding a typo so they won't match up;
+268      if SOC = "Renal and urinary disorders" then SOC = "Renel and urinary disorders";
+269  run;
+
+NOTE: There were 20 observations read from the data set DUMMY.EUDRACTSAE.
+NOTE: The data set C.EUDRACTSAE has 20 observations and 10 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.07 seconds
+      cpu time            0.04 seconds
+
+
+270
+271  /* Scenario D: A unique IDN is specified for each entry in the EudractGrps dataset */
+272  data D.EudractGrps;
+273      set Dummy.EudractGrps;
+274      *Making IDN the same for both groups;
+275      IDN = 3;
+276  run;
+
+NOTE: There were 2 observations read from the data set DUMMY.EUDRACTGRPS.
+NOTE: The data set D.EUDRACTGRPS has 2 observations and 8 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.07 seconds
+      cpu time            0.04 seconds
+
+
+277
+278  data D.EudractAE;
+279      set Dummy.EudractAE;
+280  run;
+
+NOTE: There were 20 observations read from the data set DUMMY.EUDRACTAE.
+NOTE: The data set D.EUDRACTAE has 20 observations and 7 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.09 seconds
+      cpu time            0.03 seconds
+
+
+281
+282  data D.EudractSAE;
+283      set Dummy.EudractSAE;
+284  run;
+
+NOTE: There were 20 observations read from the data set DUMMY.EUDRACTSAE.
+NOTE: The data set D.EUDRACTSAE has 20 observations and 10 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.09 seconds
+      cpu time            0.04 seconds
+
+
+285
+286  /* Scenario E: Check to see that the IDN terms defined in the EudractGrps are in both AE and
+286! SAE datasets */
+287  data E.EudractGrps;
+288      set Dummy.EudractGrps;
+289  run;
+
+NOTE: There were 2 observations read from the data set DUMMY.EUDRACTGRPS.
+NOTE: The data set E.EUDRACTGRPS has 2 observations and 8 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.06 seconds
+      cpu time            0.03 seconds
+
+
+290
+291  data E.EudractAE;
+292      set Dummy.EudractAE;
+293      *Setting a defined IDN to missing a renaming an IDN to something not defined. ;
+294      if IDN = 2 then IDN = .;
+295      if IDN = 1 and patsn = 121 then IDN = 3;
+296  run;
+
+NOTE: There were 20 observations read from the data set DUMMY.EUDRACTAE.
+NOTE: The data set E.EUDRACTAE has 20 observations and 7 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.10 seconds
+      cpu time            0.04 seconds
+
+
+297
+298  data E.EudractSAE;
+299      set Dummy.EudractSAE;
+300      *Setting a defined IDN to missing a renaming an IDN to something not defined. ;
+301      if IDN = 2 then IDN = .;
+302      if IDN = 1 and patsn = 20 then IDN = 3;
+303  run;
+
+NOTE: There were 20 observations read from the data set DUMMY.EUDRACTSAE.
+NOTE: The data set E.EUDRACTSAE has 20 observations and 10 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.09 seconds
+      cpu time            0.01 seconds
+
+
+304
+305  /* Scenario F: Each unique event term in EudractAE and EudractSAE datasets has one entry for
+305! each of the groups defined in the EudractGrps dataset */
+306  data F.EudractGrps;
+307      set Dummy.EudractGrps;
+308  run;
+
+NOTE: There were 2 observations read from the data set DUMMY.EUDRACTGRPS.
+NOTE: The data set F.EUDRACTGRPS has 2 observations and 8 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.07 seconds
+      cpu time            0.03 seconds
+
+
+309
+310  data F.EudractAE;
+311      set Dummy.EudractAE;
+312      *Removing one AE term row from the second group and adding a duplicate;
+313      if term="Anorectal infection" and idn=2 then do;
+314              term="Capillary leak syndrome";
+315              SOC = "Vascular disorders";
+316          end;
+317  run;
+
+NOTE: There were 20 observations read from the data set DUMMY.EUDRACTAE.
+NOTE: The data set F.EUDRACTAE has 20 observations and 7 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.10 seconds
+      cpu time            0.04 seconds
+
+
+318
+319  data F.EudractSAE;
+320      set Dummy.EudractSAE;
+321      *Removing one SAE term row from the first group and adding a duplicate;
+322      if term="Dysgeusia" and idn=1 then do;
+323          term="Hemorrhoids";
+324          SOC="Gastrointestinal disorders";
+325      end;
+326  run;
+
+NOTE: There were 20 observations read from the data set DUMMY.EUDRACTSAE.
+NOTE: The data set F.EUDRACTSAE has 20 observations and 10 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.10 seconds
+      cpu time            0.06 seconds
+
+
+327
+328  /* Scenario G: Each Asstype entry in the EudractAE and EudractSAE datasets is either 1 or 2
+328! */
+329  data G.EudractGrps;
+330      set Dummy.EudractGrps;
+331  run;
+
+NOTE: There were 2 observations read from the data set DUMMY.EUDRACTGRPS.
+NOTE: The data set G.EUDRACTGRPS has 2 observations and 8 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.07 seconds
+      cpu time            0.03 seconds
+
+
+332
+333  data G.EudractAE;
+334      set Dummy.EudractAE;
+335      *Changing one Asstype to not be 1 or 2;
+336      if term="Anorectal infection" and idn=2 then AssType=3;
+337  run;
+
+NOTE: There were 20 observations read from the data set DUMMY.EUDRACTAE.
+NOTE: The data set G.EUDRACTAE has 20 observations and 7 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.14 seconds
+      cpu time            0.07 seconds
+
+
+338
+339  data G.EudractSAE;
+340      set Dummy.EudractSAE;
+341      *Changing one Asstype to not be 1 or 2;
+342      if term="Dysgeusia" and idn=1 then AssType=-1;
+343  run;
+
+NOTE: There were 20 observations read from the data set DUMMY.EUDRACTSAE.
+NOTE: The data set G.EUDRACTSAE has 20 observations and 10 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.09 seconds
+      cpu time            0.03 seconds
+
+
+344
+345  /* Scenario H: Are no warnings fired if the AE dataset is empty? */
+346  data H.EudractGrps;
+347      set Dummy.EudractGrps;
+348  run;
+
+NOTE: There were 2 observations read from the data set DUMMY.EUDRACTGRPS.
+NOTE: The data set H.EUDRACTGRPS has 2 observations and 8 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.10 seconds
+      cpu time            0.06 seconds
+
+
+349  *Creating an empty AE dataset;
+350  data H.EudractAE;
+351  length soc $100 term $100 desc $250;
+352  call missing(idn,soc,term,desc,Asstype,patsn,occur);
+353  if _N_ = 0 then output;
+354  stop;
+355  run;
+
+NOTE: The data set H.EUDRACTAE has 0 observations and 7 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.21 seconds
+      cpu time            0.03 seconds
+
+
+356
+357  data H.EudractSAE;
+358      set Dummy.EudractSAE;
+359  run;
+
+NOTE: There were 20 observations read from the data set DUMMY.EUDRACTSAE.
+NOTE: The data set H.EUDRACTSAE has 20 observations and 10 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.26 seconds
+      cpu time            0.04 seconds
+
+
+360
+361  /* Upload: If present are all the SOC numbers matched accross correctly? */
+362  data Upload.EudractGrps;
+363      set Dummy.EudractGrps;
+364  run;
+
+NOTE: There were 2 observations read from the data set DUMMY.EUDRACTGRPS.
+NOTE: The data set UPLOAD.EUDRACTGRPS has 2 observations and 8 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.12 seconds
+      cpu time            0.04 seconds
+
+
+365  data Upload.EudractAE;
+366      set Dummy.EudractAE;
+367  run;
+
+NOTE: There were 20 observations read from the data set DUMMY.EUDRACTAE.
+NOTE: The data set UPLOAD.EUDRACTAE has 20 observations and 7 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.09 seconds
+      cpu time            0.03 seconds
+
+
+368  proc import out=work.EudractSAEPre
+369              datafile="P:\CTRU\Stats\Programming\SAS\Eudract\Validation\Rdata\SOCDistinct.xlsx
+369! "
+370              dbms=XLSX REPLACE;
+371              getnames=yes;
+372  run;
+
+NOTE: The import data set has 52 observations and 10 variables.
+NOTE: WORK.EUDRACTSAEPRE data set was successfully created.
+NOTE: PROCEDURE IMPORT used (Total process time):
+      real time           0.04 seconds
+      cpu time            0.03 seconds
+
+
+373  *Correcting the lengths;
+374  data EudractSAE;
+375      length SOC $ 100 term $ 100 desc $ 250;
+376      set EudractSAEPre;
+377  run;
+
+NOTE: There were 52 observations read from the data set WORK.EUDRACTSAEPRE.
+NOTE: The data set WORK.EUDRACTSAE has 52 observations and 10 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.01 seconds
+
+
+378  proc datasets lib=work;
+                                            Directory
+
+    Libref         WORK
+    Engine         V9
+    Physical Name  C:\Users\medkroy\AppData\Local\Temp\SAS Temporary Files\_TD8812_CTU-PC109_
+    Filename       C:\Users\medkroy\AppData\Local\Temp\SAS Temporary Files\_TD8812_CTU-PC109_
+
+
+                                 Member
+               #  Name           Type       File Size  Last Modified
+
+               1  EUDRACTSAE     DATA           128KB  13/07/2017 11:30:23
+               2  EUDRACTSAEPRE  DATA           128KB  13/07/2017 11:30:23
+379  modify EudractSAE;
+380  format _all_;
+381  informat _all_;
+382  attrib _all_ label='';
+383  run;
+
+NOTE: MODIFY was successful for WORK.EUDRACTSAE.DATA.
+384  quit;
+
+NOTE: PROCEDURE DATASETS used (Total process time):
+      real time           0.03 seconds
+      cpu time            0.03 seconds
+
+
+385
+386  data Upload.EudractSAE;
+387      set EudractSAE;
+388  run;
+
+NOTE: There were 52 observations read from the data set WORK.EUDRACTSAE.
+NOTE: The data set UPLOAD.EUDRACTSAE has 52 observations and 10 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.09 seconds
+      cpu time            0.06 seconds
+
+
+389
+390  /* Upload2: Data uploads correctly in the presence of asstype=2 */
+391  data Upload2.EudractGrps;
+392      set Dummy.EudractGrps;
+393  run;
+
+NOTE: There were 2 observations read from the data set DUMMY.EUDRACTGRPS.
+NOTE: The data set UPLOAD2.EUDRACTGRPS has 2 observations and 8 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.07 seconds
+      cpu time            0.03 seconds
+
+
+394
+395  data Upload2.EudractAE;
+396      set Dummy.EudractAE;
+397      if term="Urinary tract pain" then asstype=2;
+398  run;
+
+NOTE: There were 20 observations read from the data set DUMMY.EUDRACTAE.
+NOTE: The data set UPLOAD2.EUDRACTAE has 20 observations and 7 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.07 seconds
+      cpu time            0.01 seconds
+
+
+399
+400  data Upload2.EudractSAE;
+401      set Dummy.EudractSAE;
+402      if term="Fall" then asstype=2;
+403  run;
+
+NOTE: There were 20 observations read from the data set DUMMY.EUDRACTSAE.
+NOTE: The data set UPLOAD2.EUDRACTSAE has 20 observations and 10 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.06 seconds
+      cpu time            0.01 seconds
+
+
+404
+405  /* Upload3: Data uploads sucessfully if there are a lot of AEs/SAEs */
+406  data Upload3.EudractGrps;
+407      set Dummy.EudractGrps;
+408  run;
+
+NOTE: There were 2 observations read from the data set DUMMY.EUDRACTGRPS.
+NOTE: The data set UPLOAD3.EUDRACTGRPS has 2 observations and 8 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.06 seconds
+      cpu time            0.03 seconds
+
+
+409
+410  /* Obtaining master CTCAE so we have correct terms for AE and SAE datasets */
+411  proc import out= WORK.ctcae
+412              datafile="P:\CTRU\Stats\Programming\SAS\Eudract\Validation\Rdata\CTCAE_4.03_2010-
+412! 06-14.xlsx"
+413              dbms=XLSX REPLACE;
+414              getnames=yes;
+415  RUN;
+
+NOTE:    Variable Name Change.  MedDRA v12.0 Code -> MedDRA_v12_0_Code
+NOTE:    Variable Name Change.  CTCAE v4.0 SOC -> CTCAE_v4_0_SOC
+NOTE:    Variable Name Change.  CTCAE v4.0 Term -> CTCAE_v4_0_Term
+NOTE:    Variable Name Change.  Grade 1    -> Grade_1___
+NOTE:    Variable Name Change.  Grade 2    -> Grade_2___
+NOTE:    Variable Name Change.  Grade 3    -> Grade_3___
+NOTE:    Variable Name Change.  Grade 4    -> Grade_4___
+NOTE:    Variable Name Change.  Grade 5    -> Grade_5___
+NOTE:    Variable Name Change.  CTCAE v4.0 AE Term Definition -> CTCAE_v4_0_AE_Term_Definition
+NOTE: The import data set has 790 observations and 10 variables.
+NOTE: WORK.CTCAE data set was successfully created.
+NOTE: PROCEDURE IMPORT used (Total process time):
+      real time           0.07 seconds
+      cpu time            0.07 seconds
+
+
+416
+417  data ctcaepre;
+418      set ctcae;
+419      keep CTCAE_v4_0_SOC CTCAE_v4_0_Term;
+420  run;
+
+NOTE: There were 790 observations read from the data set WORK.CTCAE.
+NOTE: The data set WORK.CTCAEPRE has 790 observations and 2 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+
+
+421
+422  proc datasets lib=work;
+                                            Directory
+
+    Libref         WORK
+    Engine         V9
+    Physical Name  C:\Users\medkroy\AppData\Local\Temp\SAS Temporary Files\_TD8812_CTU-PC109_
+    Filename       C:\Users\medkroy\AppData\Local\Temp\SAS Temporary Files\_TD8812_CTU-PC109_
+
+
+                                 Member
+               #  Name           Type       File Size  Last Modified
+
+               1  CTCAE          DATA             2MB  13/07/2017 11:30:23
+               2  CTCAEPRE       DATA           192KB  13/07/2017 11:30:23
+               3  EUDRACTSAE     DATA           128KB  13/07/2017 11:30:23
+               4  EUDRACTSAEPRE  DATA           128KB  13/07/2017 11:30:23
+423  modify ctcaepre;
+424  format _all_;
+425  informat _all_;
+426  attrib _all_ label='';
+427  run;
+
+NOTE: MODIFY was successful for WORK.CTCAEPRE.DATA.
+428  quit;
+
+NOTE: PROCEDURE DATASETS used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.01 seconds
+
+
+429
+430  data Upload3.EudractAE;
+431     attrib soc length=$100 term length=$100 desc length=$250;
+432      set ctcaepre(rename=(CTCAE_v4_0_SOC=SOC CTCAE_v4_0_Term=term));
+433      asstype=1;
+434      do idn=1 to 2;
+435      occur = 0;
+436      patsn = 0;
+437      output;
+438      end;
+439  run;
+
+NOTE: Variable desc is uninitialized.
+NOTE: There were 790 observations read from the data set WORK.CTCAEPRE.
+NOTE: The data set UPLOAD3.EUDRACTAE has 1580 observations and 7 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.06 seconds
+      cpu time            0.01 seconds
+
+
+440
+441  data Upload3.EudractSAE;
+442     attrib soc length=$100 term length=$100 desc length=$250;
+443      set ctcaepre(rename=(CTCAE_v4_0_SOC=SOC CTCAE_v4_0_Term=term));
+444      asstype=1;
+445      do idn=1 to 2;
+446      occur = 0;
+447      patsn = 0;
+448      occurtrt= 0;
+449      death= 0;
+450      deathtrt = 0;
+451      output;
+452      end;
+453  run;
+
+NOTE: Variable desc is uninitialized.
+NOTE: There were 790 observations read from the data set WORK.CTCAEPRE.
+NOTE: The data set UPLOAD3.EUDRACTSAE has 1580 observations and 10 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.07 seconds
+      cpu time            0.01 seconds
+
+
+454
+455  /* End of Program */
+

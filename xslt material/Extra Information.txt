@@ -1,0 +1,44 @@
+raw_safety.csv is the original data.
+soc_code.csv gives the system organ class codes 
+
+
+subjectsExposed <- c(99,101)
+#count of deaths not in the Safety data. Could be c(0,0)
+deathsExternal <- c(3,5)
+#to be used to filter out events that are rarer than this threshold (%)
+nonSeriousEventFrequencyThreshold <- 1
+
+Is extra information needed to produce the summary statistics needed:
+
+group.csv, non-serious.csv, and serious.csv, give the summary frequency tables that will be produced by a stats package.
+
+input.xml puts these three data sets into one "simple" xml file, and will be the starting point that an xslt uses as input. I have spotted that there are some counts with NA. This happens when an adverse event term is only observd in one arm, and not the other; so it ought to be converted to 0s within the stats package...
+
+
+adverseEvents.xsd is teh schema file
+
+safety_upload.xml is an example of a successfull finished product that can be uploaded into Eudract and produced the ct_result....pdf  file. 
+
+
+
+
+
+https://www.w3schools.com/xml/ is good for training.
+
+https://en.wikipedia.org/wiki/XSLT/Muenchian_grouping  for the grouping reference.
+
+
+Do have a good poke around within the eudract website itself
+
+https://eudract.ema.europa.eu/technical.html  has doucmentations from Eudract
+
+https://eudract.ema.europa.eu/result.html
+
+There is a training environment we should probably use for testing and development
+
+https://eudract-training.ema.europa.eu/   
+
+EudractCT_Results_XML_Schemas.zip has further documentation and guidance
+
+
+

@@ -1,0 +1,398 @@
+1    dm 'log; clear; output; clear;'; /* clear log and output */
+2
+3    /*Update to Study Directory*/
+4    %let dir=P:\CTRU\Stats\Programming\SAS\Eudract\Validation;
+5
+6
+7    %let progname=XML_creator;
+8
+9    /*
+10   ___________________________________________________________________________
+11
+12       Filename                :   XML_creator_Upload2.sas
+13
+14       Date created            :   25/01/2017
+15
+16       Last amended            :   13/07/2017 (Updating directories for validation)
+17
+18       Trial                   :   NA
+19
+20       Analysis                :   NA
+21       Purpose Of Program      :   To process a standard dataset to output to xml for upload to
+21 ! Eudract system
+22
+23       Directory               :   &dir directory above
+24
+25       Statistician            :   Andrew Hall
+26
+27       SAS version             :   9.4
+28
+29       Datasets created        :   NA
+30
+31       Output files            :   EudractUpload.xml
+32
+33       Reviewed by             :  Kara-Louise Royle
+34
+35       Date reviewed           :  13/07/2017
+36
+37
+38       Amended by              :
+39   ___________________________________________________________________________*/
+40
+41
+42   **********;
+43   *Data steps;
+44   **********;
+45   title "Eudract XML creator";
+46   footnote;
+47
+48   /*Define library required to recode SOC*/
+49   libname library "&dir.\SASformats";
+NOTE: Libref LIBRARY was successfully assigned as follows:
+      Engine:        V9
+      Physical Name: P:\CTRU\Stats\Programming\SAS\Eudract\Validation\SASformats
+50
+51
+52
+53   *enter the folder name where study-specific managed data are stored ;
+54   libname m "&dir.\SASdata\Upload2";
+NOTE: Libref M was successfully assigned as follows:
+      Engine:        V9
+      Physical Name: P:\CTRU\Stats\Programming\SAS\Eudract\Validation\SASdata\Upload2
+55
+56   %macro open1(dataset);
+57    data &dataset;
+58     set m.&dataset;
+59   run;
+60   %mend open1;
+61
+62   %open1(EudractGrps);
+
+NOTE: There were 2 observations read from the data set M.EUDRACTGRPS.
+NOTE: The data set WORK.EUDRACTGRPS has 2 observations and 8 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.00 seconds
+
+
+63   %open1(EudractAE);
+
+NOTE: There were 20 observations read from the data set M.EUDRACTAE.
+NOTE: The data set WORK.EUDRACTAE has 20 observations and 7 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.00 seconds
+
+
+64   %open1(EudractSAE);
+
+NOTE: There were 20 observations read from the data set M.EUDRACTSAE.
+NOTE: The data set WORK.EUDRACTSAE has 20 observations and 10 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.01 seconds
+
+
+65
+66
+67   /***************************************************************************************/
+68   /*Merge numbers exposed from groups dataset and add SOC EUTCT numbers*/
+69   /***************************************************************************************/
+70   /*AEs*/
+71   proc sql;
+72       create table AEs as
+73       select a.*, b.patn, input('VersionNumber',version.) as version, input(a.soc,soc.) as
+73 ! eutctId
+74       from EudractAE as a left join EudractGrps as b on a.idn=b.idn
+75       order by a.term, a.idn;
+NOTE: Table WORK.AES created, with 20 rows and 10 columns.
+
+76   quit;
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.04 seconds
+      cpu time            0.03 seconds
+
+
+77
+78   /*SAEs*/
+79   proc sql;
+80       create table SAEs as
+81       select a.*, b.patn, input('VersionNumber',version.) as version, input(a.soc,soc.) as
+81 ! eutctId
+82       from EudractSAE as a left join EudractGrps as b on a.idn=b.idn
+83       order by a.term, a.idn;
+NOTE: Table WORK.SAES created, with 20 rows and 13 columns.
+
+84   quit;
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.03 seconds
+      cpu time            0.03 seconds
+
+
+85
+86
+87
+88   /***************************************************************************************/
+89   /*Write the XML file*/
+90   /***************************************************************************************/
+91
+92   /*Specify output file*/
+93   %let file=&dir.\output\Upload2\EudractUpload.xml;
+94
+95
+96   /*opening tagset*/
+97   data _null_;
+98       file "&file";
+99
+100      /*note no 'MOD' in line above this will create a new file*/
+101      put '<aev:adverseEvents
+101! xmlns:aev="http://eudract.ema.europa.eu/schema/clinical_trial_result/adverse_events"
+101! xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">';
+102  run;
+
+NOTE: The file
+      "P:\CTRU\Stats\Programming\SAS\Eudract\Validation\output\Upload2\EudractUpload.xml" is:
+      Filename=P:\CTRU\Stats\Programming\SAS\Eudract\Validation\output\Upload2\EudractUpload.xml,
+      RECFM=V,LRECL=32767,File Size (bytes)=0,
+      Last Modified=13 July 2017 11:49:59 o'clock,
+      Create Time=13 July 2017 11:25:18 o'clock
+
+NOTE: 1 record was written to the file
+      "P:\CTRU\Stats\Programming\SAS\Eudract\Validation\output\Upload2\EudractUpload.xml".
+      The minimum record length was 158.
+      The maximum record length was 158.
+NOTE: DATA statement used (Total process time):
+      real time           0.03 seconds
+      cpu time            0.01 seconds
+
+
+103
+104  /*reporting groups output*/
+105  data _null_;
+106      file "&file" mod;
+107      set EudractGrps end=eof;
+108
+109      /*opening tagset*/
+110      if _n_=1 then
+111          put '          <reportingGroups>';
+112
+113      /*tagset for each observation*/
+114      put '           <reportingGroup id="ReportingGroup-' idn +(-1)'">';
+115      put '             <title>' id  +(-1)'</title>';
+116
+117      if not missing(desc) then
+118          put '             <description>' desc +(-1)'</description>';
+119      put '             <subjectsAffectedByNonSeriousAdverseEvents>' patae
+119! +(-1)'</subjectsAffectedByNonSeriousAdverseEvents>';
+120      put '             <subjectsAffectedBySeriousAdverseEvents>' patsae
+120! +(-1)'</subjectsAffectedBySeriousAdverseEvents>';
+121      put '             <subjectsExposed>' patn +(-1)'</subjectsExposed>';
+122      put '             <deathsAllCauses>' death +(-1)'</deathsAllCauses>';
+123
+124      if not missing(deathae) then
+125          put '             <deathsResultingFromAdverseEvents>' deathae
+125! +(-1)'</deathsResultingFromAdverseEvents>';
+126      put '           </reportingGroup>';
+127
+128      /*closing tagset*/
+129      if eof then
+130          put '          </reportingGroups>';
+131  run;
+
+NOTE: The file
+      "P:\CTRU\Stats\Programming\SAS\Eudract\Validation\output\Upload2\EudractUpload.xml" is:
+      Filename=P:\CTRU\Stats\Programming\SAS\Eudract\Validation\output\Upload2\EudractUpload.xml,
+      RECFM=V,LRECL=32767,File Size (bytes)=160,
+      Last Modified=13 July 2017 11:49:59 o'clock,
+      Create Time=13 July 2017 11:25:18 o'clock
+
+NOTE: 20 records were written to the file
+      "P:\CTRU\Stats\Programming\SAS\Eudract\Validation\output\Upload2\EudractUpload.xml".
+      The minimum record length was 27.
+      The maximum record length was 101.
+NOTE: There were 2 observations read from the data set WORK.EUDRACTGRPS.
+NOTE: DATA statement used (Total process time):
+      real time           0.03 seconds
+      cpu time            0.03 seconds
+
+
+132
+133  /*non seriousadverse events or AEs output*/
+134  data _null_;
+135      file "&file" mod;
+136      set AEs end=eof;
+137      by term;
+138
+139      /*opening tagset for all AEs*/
+140      if _n_=1 then
+141          put '        <nonSeriousAdverseEvents>';
+142
+143      /*opening tagset for each AE*/
+144      if first.term then
+145          do;
+146              put '            <nonSeriousAdverseEvent>';
+147
+148              if not missing(desc) then
+149                  put '                <description>' desc +(-1)'</description>';
+150              put '                <term>' term +(-1)'</term>';
+151              put '                <organSystem>';
+152              put '                    <eutctId>' eutctId +(-1)'</eutctId>';
+153              put '                    <version>' version +(-1)'</version>';
+154              put '                </organSystem>';
+155              put '                <assessmentMethod>';
+156
+157              if asstype=1 then
+158                  put '                    <value>ADV_EVT_ASSESS_TYPE.systematic</value>';
+159              else put '                    <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>';
+160              put '                </assessmentMethod>';
+161              put '                <dictionaryOverridden>false</dictionaryOverridden>';
+162              put '                <values>';
+163          end;
+164
+165      /*tagsets for each arm*/
+166      put '                    <value reportingGroupId="ReportingGroup-' idn +(-1)'">';
+167      if not missing(occur) then
+168      put '                        <occurrences>' occur +(-1)'</occurrences>';
+169      put '                        <subjectsAffected>' patsn +(-1)'</subjectsAffected>';
+170      put '                        <subjectsExposed>' patn +(-1)'</subjectsExposed>';
+171      put '                    </value>';
+172
+173      /*closing tagset for each AE*/
+174      if last.term then
+175          do;
+176              put '                </values>';
+177              put '            </nonSeriousAdverseEvent>';
+178          end;
+179
+180      /*closing tagset for all AEs*/
+181      if eof then
+182          put '        </nonSeriousAdverseEvents>';
+183  run;
+
+NOTE: The file
+      "P:\CTRU\Stats\Programming\SAS\Eudract\Validation\output\Upload2\EudractUpload.xml" is:
+      Filename=P:\CTRU\Stats\Programming\SAS\Eudract\Validation\output\Upload2\EudractUpload.xml,
+      RECFM=V,LRECL=32767,File Size (bytes)=1358,
+      Last Modified=13 July 2017 11:49:59 o'clock,
+      Create Time=13 July 2017 11:25:18 o'clock
+
+NOTE: 232 records were written to the file
+      "P:\CTRU\Stats\Programming\SAS\Eudract\Validation\output\Upload2\EudractUpload.xml".
+      The minimum record length was 24.
+      The maximum record length was 69.
+NOTE: There were 20 observations read from the data set WORK.AES.
+NOTE: DATA statement used (Total process time):
+      real time           0.03 seconds
+      cpu time            0.01 seconds
+
+
+184
+185
+186  /*SAEs output*/
+187  data _null_;
+188      file "&file" mod;
+189      set SAEs end=eof;
+190      by term;
+191
+192      /*opening tagset for all SAEs*/
+193      if _n_=1 then
+194          put '        <seriousAdverseEvents>';
+195
+196      /*opening tagset for each SAE*/
+197      if first.term then
+198          do;
+199              put '            <seriousAdverseEvent>';
+200
+201              if not missing(desc) then
+202                  put '                <description>' desc +(-1)'</description>';
+203              put '                <term>' term +(-1)'</term>';
+204              put '                <organSystem>';
+205              put '                    <eutctId>' eutctId +(-1)'</eutctId>';
+206              put '                    <version>' version +(-1)'</version>';
+207              put '                </organSystem>';
+208              put '                <assessmentMethod>';
+209
+210              if asstype=1 then
+211                  put '                    <value>ADV_EVT_ASSESS_TYPE.systematic</value>';
+212              else put '                    <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>';
+213              put '                </assessmentMethod>';
+214              put '                <dictionaryOverridden>false</dictionaryOverridden>';
+215              put '                <values>';
+216          end;
+217
+218      /*tagsets for each arm*/
+219      put '                    <value reportingGroupId="ReportingGroup-' idn +(-1)'">';
+220      put '                        <occurrences>' occur +(-1)'</occurrences>';
+221      put '                        <subjectsAffected>' patsn +(-1)'</subjectsAffected>';
+222      put '                        <subjectsExposed>' patn +(-1)'</subjectsExposed>';
+223      put '                        <occurrencesCausallyRelatedToTreatment>' Occurtrt
+223! +(-1)'</occurrencesCausallyRelatedToTreatment>';
+224      put '                        <fatalities>';
+225      put '                            <deaths>' death +(-1)'</deaths>';
+226      put '                            <deathsCausallyRelatedToTreatment>'  deathtrt
+226! +(-1)'</deathsCausallyRelatedToTreatment>';
+227      put '                        </fatalities>';
+228      put '                    </value>';
+229
+230      /*closing tagset for each SAE*/
+231      if last.term then
+232          do;
+233              put '                </values>';
+234              put '            </seriousAdverseEvent>';
+235          end;
+236
+237      /*closing tagset for all AEs*/
+238      if eof then
+239          put '        </seriousAdverseEvents>';
+240  run;
+
+NOTE: The file
+      "P:\CTRU\Stats\Programming\SAS\Eudract\Validation\output\Upload2\EudractUpload.xml" is:
+      Filename=P:\CTRU\Stats\Programming\SAS\Eudract\Validation\output\Upload2\EudractUpload.xml,
+      RECFM=V,LRECL=32767,File Size (bytes)=12478,
+      Last Modified=13 July 2017 11:49:59 o'clock,
+      Create Time=13 July 2017 11:25:18 o'clock
+
+NOTE: 332 records were written to the file
+      "P:\CTRU\Stats\Programming\SAS\Eudract\Validation\output\Upload2\EudractUpload.xml".
+      The minimum record length was 24.
+      The maximum record length was 105.
+NOTE: There were 20 observations read from the data set WORK.SAES.
+NOTE: DATA statement used (Total process time):
+      real time           0.03 seconds
+      cpu time            0.03 seconds
+
+
+241
+242
+243  /*closing tagset*/
+244  DATA _NULL_;
+245      FILE "&file" MOD;
+246      put '</aev:adverseEvents>';
+247  run;
+
+NOTE: The file
+      "P:\CTRU\Stats\Programming\SAS\Eudract\Validation\output\Upload2\EudractUpload.xml" is:
+      Filename=P:\CTRU\Stats\Programming\SAS\Eudract\Validation\output\Upload2\EudractUpload.xml,
+      RECFM=V,LRECL=32767,File Size (bytes)=30180,
+      Last Modified=13 July 2017 11:49:59 o'clock,
+      Create Time=13 July 2017 11:25:18 o'clock
+
+NOTE: 1 record was written to the file
+      "P:\CTRU\Stats\Programming\SAS\Eudract\Validation\output\Upload2\EudractUpload.xml".
+      The minimum record length was 20.
+      The maximum record length was 20.
+NOTE: DATA statement used (Total process time):
+      real time           0.03 seconds
+      cpu time            0.01 seconds
+
+
+248
+249
+250  /*proc datasets nolist memtype=data lib=work kill;*/
+251  /*run;*/
+252  /*quit;*/
+253
+254
+255  /*output log and output*/
+256  dm 'output; file "&dir.\SASout\Upload2\&progname..lst" replace;';
