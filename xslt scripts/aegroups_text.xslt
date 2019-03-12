@@ -71,11 +71,11 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 <xsl:template name="value">
 	<value>
 		<xsl:attribute name="reportingGroupId">
-			<xsl:value-of select="generate-id( key('group_id',  ./group) )"/>
+			<xsl:value-of select="generate-id( key('group_id',  ./groupTitle) )"/>
 		</xsl:attribute> 
 		<occurrences> <xsl:value-of select="occurrences"/></occurrences>
 		<subjectsAffected><xsl:value-of select="subjectsAffected"/></subjectsAffected>
-		<subjectsExposed><xsl:value-of select="subjectsExposed"/></subjectsExposed>
+		<subjectsExposed><xsl:value-of select="key('group_id',./groupTitle)/../subjectsExposed"/></subjectsExposed>
 		<xsl:apply-templates select="."/>
 	</value>
 </xsl:template>
