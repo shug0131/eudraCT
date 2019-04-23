@@ -17,8 +17,8 @@ title: EudraCT Tool
 email: simon.bond@addenbrookes.nhs.uk
 description: >- # this means to ignore newlines until "baseurl:"
   This site contains resources associated with the EudraCT project by Cambrdge CTU and funded by NIHR
-#baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://www.eudract-tool.medschl.cam.ac.uk" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/shug0131/eudraCT" # the subpath of your site, e.g. /blog
+#url: "https://www.eudract-tool.medschl.cam.ac.uk" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 #github_username:  jekyll
 
