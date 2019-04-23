@@ -6,7 +6,8 @@ layout: home
 title: Home
 ---
 
-<h1>{{ "Hello World!" | downcase }}</h1>
+<h1>{{ "Welcome" | downcase }}</h1>
 
 
-[link to specs]( {{ site.baseurl }}/Specification/Eudract%20Tool%20Specification%20V0.3.docx )
+
+[link to specs]( {{ site.ghpath }}/Specification/Eudract%20Tool%20Specification%20V0.3.docx?raw=true )
