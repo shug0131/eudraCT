@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<NON_SERIOUS>
+	<groupTitle>Control</groupTitle>
+	<subjectsAffected>1</subjectsAffected>
+	<occurrences>1</occurrences>
+	<term>Pneumonia</term>
+	<eutctId>100000004855</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Control</groupTitle>
+	<subjectsAffected>1</subjectsAffected>
+	<occurrences>1</occurrences>
+	<term>Lower respiratory tract infection</term>
+	<eutctId>100000004855</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Control</groupTitle>
+	<subjectsAffected>1</subjectsAffected>
+	<occurrences>1</occurrences>
+	<term>Intestinal perforation</term>
+	<eutctId>100000004856</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Control</groupTitle>
+	<subjectsAffected>1</subjectsAffected>
+	<occurrences>1</occurrences>
+	<term>Laryngeal stenosis</term>
+	<eutctId>100000004855</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Control</groupTitle>
+	<subjectsAffected>1</subjectsAffected>
+	<occurrences>1</occurrences>
+	<term>Squamous cell carcinoma</term>
+	<eutctId>100000004864</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Control</groupTitle>
+	<subjectsAffected>1</subjectsAffected>
+	<occurrences>1</occurrences>
+	<term>Pneumonitis</term>
+	<eutctId>100000004855</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Control</groupTitle>
+	<subjectsAffected>1</subjectsAffected>
+	<occurrences>1</occurrences>
+	<term>Lung adenocarcinoma</term>
+	<eutctId>100000004855</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Control</groupTitle>
+	<subjectsAffected>1</subjectsAffected>
+	<occurrences>2</occurrences>
+	<term>Sleep apnoea syndrome</term>
+	<eutctId>100000004852</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Control</groupTitle>
+	<subjectsAffected>2</subjectsAffected>
+	<occurrences>2</occurrences>
+	<term>Pneumonia</term>
+	<eutctId>100000004862</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Control</groupTitle>
+	<subjectsAffected>2</subjectsAffected>
+	<occurrences>2</occurrences>
+	<term>Respiratory tract infection</term>
+	<eutctId>100000004862</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Control</groupTitle>
+	<subjectsAffected>1</subjectsAffected>
+	<occurrences>1</occurrences>
+	<term>Renal impairment</term>
+	<eutctId>100000004857</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Control</groupTitle>
+	<subjectsAffected>1</subjectsAffected>
+	<occurrences>1</occurrences>
+	<term>Pyrexia</term>
+	<eutctId>100000004867</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Control</groupTitle>
+	<subjectsAffected>3</subjectsAffected>
+	<occurrences>4</occurrences>
+	<term>Vasculitis</term>
+	<eutctId>100000004870</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Control</groupTitle>
+	<subjectsAffected>1</subjectsAffected>
+	<occurrences>1</occurrences>
+	<term>Acute coronary syndrome</term>
+	<eutctId>100000004849</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Experimental</groupTitle>
+	<subjectsAffected>1</subjectsAffected>
+	<occurrences>1</occurrences>
+	<term>Laryngeal stenosis</term>
+	<eutctId>100000004855</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Experimental</groupTitle>
+	<subjectsAffected/>
+	<occurrences/>
+	<term>Lung adenocarcinoma</term>
+	<eutctId>100000004855</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Experimental</groupTitle>
+	<subjectsAffected>3</subjectsAffected>
+	<occurrences>4</occurrences>
+	<term>Pneumonia</term>
+	<eutctId>100000004862</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Experimental</groupTitle>
+	<subjectsAffected/>
+	<occurrences/>
+	<term>Pneumonia</term>
+	<eutctId>100000004855</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Experimental</groupTitle>
+	<subjectsAffected/>
+	<occurrences/>
+	<term>Intestinal perforation</term>
+	<eutctId>100000004856</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Experimental</groupTitle>
+	<subjectsAffected>1</subjectsAffected>
+	<occurrences>1</occurrences>
+	<term>Pyrexia</term>
+	<eutctId>100000004867</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Experimental</groupTitle>
+	<subjectsAffected/>
+	<occurrences/>
+	<term>Lower respiratory tract infection</term>
+	<eutctId>100000004855</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Experimental</groupTitle>
+	<subjectsAffected/>
+	<occurrences/>
+	<term>Pneumonitis</term>
+	<eutctId>100000004855</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Experimental</groupTitle>
+	<subjectsAffected/>
+	<occurrences/>
+	<term>Sleep apnoea syndrome</term>
+	<eutctId>100000004852</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Experimental</groupTitle>
+	<subjectsAffected/>
+	<occurrences/>
+	<term>Squamous cell carcinoma</term>
+	<eutctId>100000004864</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Experimental</groupTitle>
+	<subjectsAffected/>
+	<occurrences/>
+	<term>Acute coronary syndrome</term>
+	<eutctId>100000004849</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Experimental</groupTitle>
+	<subjectsAffected>3</subjectsAffected>
+	<occurrences>3</occurrences>
+	<term>Vasculitis</term>
+	<eutctId>100000004870</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Experimental</groupTitle>
+	<subjectsAffected/>
+	<occurrences/>
+	<term>Renal impairment</term>
+	<eutctId>100000004857</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Experimental</groupTitle>
+	<subjectsAffected>1</subjectsAffected>
+	<occurrences>1</occurrences>
+	<term>Respiratory tract infection</term>
+	<eutctId>100000004862</eutctId>
+</NON_SERIOUS>

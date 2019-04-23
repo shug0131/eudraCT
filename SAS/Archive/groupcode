@@ -1,0 +1,25 @@
+* Written by R;
+*  write.foreign(safety_statistics$GROUP, datafile = "../SAS/groupdata",  ;
+
+PROC FORMAT;
+value title 
+     1 = "Control" 
+     2 = "Experimental" 
+;
+
+DATA  group ;
+INFILE  "../SAS/groupdata" 
+     DSD 
+     LRECL= 20 ;
+INPUT
+ title
+ subjectsAffectedBySersAdvrsEvnts
+ subjectsAffectdByNnSrsAdvrsEvnts
+ deathsResultingFromAdverseEvents
+ subjectsExposed
+ deathsAllCauses
+;
+LABEL  subjectsAffectedBySersAdvrsEvnts = "subjectsAffectedBySeriousAdverseEvents" ;
+LABEL  subjectsAffectdByNnSrsAdvrsEvnts = "subjectsAffectedByNonSeriousAdverseEvents" ;
+FORMAT title title. ;
+RUN;

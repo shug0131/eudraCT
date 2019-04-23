@@ -1,0 +1,19 @@
+<?xml version="1.0" ?>
+<SXLEMAP  version="2.1"> 
+<OUTPUT> 
+<HEADING>
+ <ATTRIBUTE name="serious" value="SAE Information" /> 
+</HEADING>
+<TABLEREF name="SERIOUS" />
+ </OUTPUT>
+ <TABLE name="SERIOUS">
+ <TABLE-PATH syntax="XPath">/TABLE/SERIOUS</TABLE-PATH>
+ <COLUMN name="group">
+	<PATH syntax="XPath">/TABLE/SERIOUS/groupTitle</PATH>
+	<TYPE>character</TYPE>
+	<DATATYPE>string</DATATYPE>
+	<LENGTH>20</LENGTH>
+ </COLUMN>
+ 
+ </TABLE>
+ </SXLEMAP>
