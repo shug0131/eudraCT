@@ -1,5 +1,30 @@
 <?xml version="1.0" encoding="windows-1252" ?>
 <TABLE>
+<rename>
+<old>subjectsAffectedBySeriousAdvers</old>
+<new>subjectsAffectedBySeriousAdverseEvents</new>	
+</rename>
+  <rename>
+    <old>thing</old>
+    <new>gamibob</new>
+  </rename>
+<rename>
+<old>subjectsAffectedByNonSeriousAdv</old>
+<new>subjectsAffectedByNonSeriousAdverseEvents</new>	
+</rename>
+<rename>
+<old>occurrencesCausallyRelatedToTre</old>
+<new>occurrencesCausallyRelatedToTreatment</new>
+</rename>
+<rename>
+<old>deathsCausallyRelatedToTreatmen</old>
+<new>deathsCausallyRelatedToTreatment</new>
+</rename>
+<rename>
+<old>deathsResultingFromAdverseEvent</old>
+<new>deathsResultingFromAdverseEvents</new>
+</rename>
+
    <GROUP>
       <title> Control </title>
       <deathsResultingFromAdverseEvent> 9 </deathsResultingFromAdverseEvent>
