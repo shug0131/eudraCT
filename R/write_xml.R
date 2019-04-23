@@ -44,10 +44,7 @@ append_xml <- function(data, file_connection){
 
 
 
-eudract_input <- function(x, file){
-  GROUP <- x$GROUP
-  NON_SERIOUS <- x$NON_SERIOUS
-  SERIOUS <- x$SERIOUS
+eudract_input <- function(GROUP, NON_SERIOUS, SERIOUS, file){
   file_connection <- file(file, open="w")
   writeChar('<?xml version="1.0" encoding="UTF-8"?>',con=file_connection, eos=NULL)
   writeChar('\n<TABLE>',con=file_connection, eos=NULL)
