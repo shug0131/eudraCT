@@ -26,6 +26,4 @@ The project is under development and aims to be completed by autumn 2019. No gua
 ---
 # News
 
-Below will appear announcements and news as the project develops in a Blog format.
-
-[link to specs]( {{ site.ghpath }}/Specification/Eudract%20Tool%20Specification%20V0.3.docx?raw=true )
+Below will appear announcements and news as the project develops in a blog format.

@@ -10,7 +10,6 @@ This web-page is simply a front-end to a [github repository](https://github.com/
 This is a document giving the specification for the project and will be used to perform testing against. It is finalised.
 
  * [Specification]( {{ site.ghpath }}/Specification/Eudract%20Tool%20Specification%20V0.3.docx?raw=true )
- * accessed
 
 # Software Tools
 
