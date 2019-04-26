@@ -6,4 +6,10 @@ SOPs/
 EudractAEs.lnk
 .Rhistory
 docs/_site
+R/eudract.Rcheck/
+R/eudract/.Rproj.user
+R/eudract/.Rhistory
+R/eudract/.RData
+R/eudract/.Ruserdata
 .Rproj.user
+
