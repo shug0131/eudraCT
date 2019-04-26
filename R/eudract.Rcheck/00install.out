@@ -1,0 +1,11 @@
+* installing *source* package 'eudract' ...
+** R
+** data
+*** moving datasets to lazyload DB
+** inst
+** byte-compile and prepare package for lazy loading
+Error in loadNamespace(j <- i[[1L]], c(lib.loc, .libPaths()), versionCheck = vI[[j]]) : 
+  there is no package called 'dplyr'
+ERROR: lazy loading failed for package 'eudract'
+* removing 'V:/STATISTICS/NON STUDY FOLDER/Academic Research/Eudract Tool/R/eudract.Rcheck/eudract'
+In R CMD INSTALL
