@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Downloads
+toc: true
 ---
 
 This web-page is simply a front-end to a [github repository](https://github.com/shug0131/eudraCT) . Hence the links below can be accessed via directory navigation. I've added further explanation as to the final objectives, but please be aware that this currently simply a partial  mirror of the local directory hosting the project with Cambridge CTU: No guarantees
