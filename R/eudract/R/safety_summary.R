@@ -20,16 +20,6 @@
 #' simple_safety_xml(safety_statistics, "simple.xml")
 #' eudract_convert(input="simple.xml", output="table_eudract.xml")
 
-if(getRversion() >= "2.15.1"){
-  utils::globalVariables(
-    c("deaths", "deathsAllCauses", "deathsCausallyRelatedToTreatment",
-      "deathsResultingFromAdverseEvents" ,"eutctId" ,"fatal", "groupTitle" ,
-      "nonserious" ,"occurrences", "occurrencesCausallyRelatedToTreatment", "rate",
-      "related" ,"soc", "soc_code" ,"subjectsAffected",
-      "subjectsAffectedByNonSeriousAdverseEvents",
-      "subjectsAffectedBySeriousAdverseEvents", "subjectsExposed", "subjid", "term"))
-}
-
 
 
 safety_summary <- function(data, exposed, excess_deaths=0, freq_threshold=0, soc_index=c("meddra","soc_term")){
@@ -157,6 +147,7 @@ df_to_char <- function(df){
 
 #' print method for safety summary object
 #' @param x a safety_summary object
+#' @param ... extra arguments for the generic print method
 #' @export
 #' @importFrom utils head
 
@@ -205,6 +196,17 @@ create.safety_summary <- function(group,non_serious, serious){
   ans <- lapply(ans, df_to_char)
   class(ans)="safety_summary"
   ans
+}
+
+
+if(getRversion() >= "2.15.1"){
+  utils::globalVariables(
+    c("deaths", "deathsAllCauses", "deathsCausallyRelatedToTreatment",
+      "deathsResultingFromAdverseEvents" ,"eutctId" ,"fatal", "groupTitle" ,
+      "nonserious" ,"occurrences", "occurrencesCausallyRelatedToTreatment", "rate",
+      "related" ,"soc", "soc_code" ,"subjectsAffected",
+      "subjectsAffectedByNonSeriousAdverseEvents",
+      "subjectsAffectedBySeriousAdverseEvents", "subjectsExposed", "subjid", "term"))
 }
 
 
