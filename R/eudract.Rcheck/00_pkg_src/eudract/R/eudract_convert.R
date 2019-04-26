@@ -6,13 +6,13 @@
 #' @param schema_output a character string giving the file path to the schema. A copy was downloaded and is provided in this package as the default.
 #'
 #' @return the output from the validation against the schema. A new file is created as a side-effect, which is suitable to upload into eudraCT.
+#' @seealso \code{\link{safety_summary}} \code{\link{simple_safety_xml}}
 #'
 #' @export
 #' @examples
-#'safety_statistics <- safety_summary(safety, exposed=c("Experimental"=60,"Control"=67))
-#'simple_safety_xml(safety_statistics, "simple.xml")
-#'eudract_convert(input="simple.xml", output="table_eudract.xml")
-
+#' safety_statistics <- safety_summary(safety, exposed=c("Experimental"=60,"Control"=67))
+#' simple_safety_xml(safety_statistics, "simple.xml")
+#' eudract_convert(input="simple.xml", output="table_eudract.xml")
 
 
 eudract_convert <- function(input, output="table_eudract.xml",

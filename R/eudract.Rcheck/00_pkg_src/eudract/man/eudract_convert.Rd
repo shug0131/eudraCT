@@ -29,3 +29,6 @@ safety_statistics <- safety_summary(safety, exposed=c("Experimental"=60,"Control
 simple_safety_xml(safety_statistics, "simple.xml")
 eudract_convert(input="simple.xml", output="table_eudract.xml")
 }
+\seealso{
+\code{\link{safety_summary}} \code{\link{simple_safety_xml}}
+}

@@ -6,6 +6,7 @@
 #' @param schema_output a character string giving the file path to the schema. A copy was downloaded and is provided in this package as the default.
 #'
 #' @return the output from the validation against the schema. A new file is created as a side-effect, which is suitable to upload into eudraCT.
+#' @seealso \code{\link{safety_summary}} \code{\link{simple_safety_xml}}
 #'
 #' @export
 #' @examples

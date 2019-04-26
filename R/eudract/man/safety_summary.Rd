@@ -33,5 +33,5 @@ simple_safety_xml(safety_statistics, "simple.xml")
 eudract_convert(input="simple.xml", output="table_eudract.xml")
 }
 \seealso{
-eudract_input
+\code{\link{eudract_convert}} \code{\link{simple_safety_xml}}
 }

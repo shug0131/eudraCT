@@ -4,13 +4,14 @@
 #' @param file a character string name the file to be created
 #'
 #' @return no output is returned, but a file is created as a side-effect.
+#' @seealso \code{\link{eudract_convert}} \code{\link{safety_summary}}
 #'
 #' @export
 #'
-#'@examples
-#'safety_statistics <- safety_summary(safety, exposed=c("Experimental"=60,"Control"=67))
-#'simple_safety_xml(safety_statistics, "simple.xml")
-#'eudract_convert(input="simple.xml", output="table_eudract.xml")
+#' @examples
+#' safety_statistics <- safety_summary(safety, exposed=c("Experimental"=60,"Control"=67))
+#' simple_safety_xml(safety_statistics, "simple.xml")
+#' eudract_convert(input="simple.xml", output="table_eudract.xml")
 
 simple_safety_xml <- function(x, file){
   if(!inherits(x, "safety_summary")){stop(paste(deparse(substitute(x)), "is not a safety_summary object"))}

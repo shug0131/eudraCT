@@ -10,7 +10,7 @@
 #' @param soc_index a character vector either "meddra" or "soc_term", which is used to identify if the soc variable in data gives the numerical meddra code or the description in English.
 #' @return a list of three dataframes: GROUP, SERIOUS, NON_SERIOUS. Each contains the summary statistics required by EudraCT, and is suitable for export.
 #'
-#' @seealso eudract_input
+#' @seealso \code{\link{eudract_convert}} \code{\link{simple_safety_xml}}
 #'
 #' @export
 #' @importFrom dplyr group_by summarise left_join mutate select rename ungroup %>%
@@ -135,9 +135,17 @@ safety_summary <- function(data, exposed, excess_deaths=0, freq_threshold=0, soc
   ans
 }
 
+#' function to make a data frame be entirely character vectors
+#'
+#' @param df a data frame
+#' @keywords internal
 df_to_char <- function(df){
   df <- as.data.frame(lapply(df, as.character), stringsAsFactors = FALSE)
 }
+
+#' print method for safety summary object
+#' @param x a safety_summary object
+#' @export
 
 print.safety_summary <- function(x){
   old_scipen <- options("scipen")
@@ -151,6 +159,12 @@ print.safety_summary <- function(x){
   on.exit( options(scipen=old_scipen))
 }
 
+#' function that creates a safety_summary object from individual data.frames
+#' @param group a data frame that contains the group-level statistics
+#' @param non_serious a data frame that contains the non-serious term-group level statistics
+#' @param serious a data frame that containts the serious term-group level statistics
+#' @return  a safety_summary object
+#' @export
 
 create.safety_summary <- function(group,non_serious, serious){
   group_names <- c("title","subjectsAffectedBySeriousAdverseEvents",

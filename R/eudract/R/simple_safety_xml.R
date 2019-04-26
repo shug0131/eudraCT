@@ -4,6 +4,7 @@
 #' @param file a character string name the file to be created
 #'
 #' @return no output is returned, but a file is created as a side-effect.
+#' @seealso \code{\link{eudract_convert}} \code{\link{safety_summary}}
 #'
 #' @export
 #'
