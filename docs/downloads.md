@@ -24,12 +24,12 @@ There is now an R package in development that can be installed directly from git
 ~~~~
 devtool::install_github("shug0131/eudraCT/R/eudract")
 ~~~~
-for directly installing from github,  and from CRAN in the longer term after testing is completed
+for directly installing from github,  and from CRAN in the longer term future after testing is completed
 ~~~
 install.packages("eudract")
 ~~~
 
-However, currently it really is just a bunch of code files. A worked example is given here
+A worked example is given here
 ~~~
 library(eudract)
 safety_statistics <- safety_summary(safety, exposed=c("Experimental"=60,"Control"=67))
@@ -37,7 +37,7 @@ safety_statistics
 simple_safety_xml(safety_statistics, "simple.xml")
 eudract_convert(input="simple.xml", output="table_eudract.xml")
 ~~~
-and tow files, simple.xml & table_eudract.xml will have been created, the latter being suitable to upload into EudraCT.
+and two files, simple.xml & table_eudract.xml will have been created, the latter being suitable to upload into EudraCT.
 
 
 ## SAS
