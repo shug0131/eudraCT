@@ -1,7 +1,7 @@
 #' applies a conversion using xslt from a simple xml file to a eudract compatible file, and checks against the schema
 #'
 #' @param input a character string giving the file path to the simple xml file
-#' @param ouput a character string naming the output file
+#' @param output a character string naming the output file
 #' @param xslt a character string giving the file path to the xslt script. Defaults to the script provided in this package
 #' @param schema_output a character string giving the file path to the schema. A copy was downloaded and is provided in this package as the default.
 #'

@@ -4,7 +4,7 @@
 \alias{print.safety_summary}
 \title{print method for safety summary object}
 \usage{
-\method{print}{safety_summary}(x)
+\method{print}{safety_summary}(x, ...)
 }
 \arguments{
 \item{x}{a safety_summary object}

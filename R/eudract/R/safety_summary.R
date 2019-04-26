@@ -6,7 +6,7 @@
 #' ensure that the data$group is an ordered factor, or relying on alphabetical ordering of the values in
 #' \code{data$group}
 #' @param excess_deaths a numeric vector giving the number of extra deaths not reporting within \code{data}. Defaults to 0.
-#' @param filter a value on a percentage scale at which to remove events if the incidence falls below. Defaults to 0
+#' @param freq_threshold a value on a percentage scale at which to remove events if the incidence falls below. Defaults to 0
 #' @param soc_index a character vector either "meddra" or "soc_term", which is used to identify if the soc variable in data gives the numerical meddra code or the description in English.
 #' @return a list of three dataframes: GROUP, SERIOUS, NON_SERIOUS. Each contains the summary statistics required by EudraCT, and is suitable for export.
 #'
@@ -14,10 +14,22 @@
 #'
 #' @export
 #' @importFrom dplyr group_by summarise left_join mutate select rename ungroup %>%
+#' @importFrom magrittr %<>%
 #' @examples
 #' safety_statistics <- safety_summary(safety, exposed=c("Experimental"=60,"Control"=67))
 #' simple_safety_xml(safety_statistics, "simple.xml")
 #' eudract_convert(input="simple.xml", output="table_eudract.xml")
+
+if(getRversion() >= "2.15.1"){
+  utils::globalVariables(
+    c("deaths", "deathsAllCauses", "deathsCausallyRelatedToTreatment",
+      "deathsResultingFromAdverseEvents" ,"eutctId" ,"fatal", "groupTitle" ,
+      "nonserious" ,"occurrences", "occurrencesCausallyRelatedToTreatment", "rate",
+      "related" ,"soc", "soc_code" ,"subjectsAffected",
+      "subjectsAffectedByNonSeriousAdverseEvents",
+      "subjectsAffectedBySeriousAdverseEvents", "subjectsExposed", "subjid", "term"))
+}
+
 
 
 safety_summary <- function(data, exposed, excess_deaths=0, freq_threshold=0, soc_index=c("meddra","soc_term")){
@@ -86,7 +98,7 @@ safety_summary <- function(data, exposed, excess_deaths=0, freq_threshold=0, soc
   non_serious <- data %>% dplyr::filter(!serious) %>%
     group_by(term, soc, group) %>%
     summarise(subjectsAffected=length(unique(subjid)),
-              occurrences=n()
+              occurrences=dplyr::n()
     ) %>%
     tidyr::complete(group, tidyr::nesting(term, soc), fill=list("subjectsAffected"=0, "occurrences"=0)) %>%
     rename("groupTitle"="group") %>%
@@ -105,7 +117,7 @@ safety_summary <- function(data, exposed, excess_deaths=0, freq_threshold=0, soc
   serious <- data %>% dplyr::filter(as.logical(serious)) %>%
     group_by(term, soc, group) %>%
     summarise(subjectsAffected=length(unique(subjid)),
-              occurrences=n(),
+              occurrences=dplyr::n(),
               occurrencesCausallyRelatedToTreatment=sum(related),
               deaths=sum(fatal),
               deathsCausallyRelatedToTreatment=sum(fatal*related)
@@ -146,8 +158,9 @@ df_to_char <- function(df){
 #' print method for safety summary object
 #' @param x a safety_summary object
 #' @export
+#' @importFrom utils head
 
-print.safety_summary <- function(x){
+print.safety_summary <- function(x,...){
   old_scipen <- options("scipen")
   options(scipen=999)
   cat("Group-Level Statistics\n\n")
