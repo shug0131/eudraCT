@@ -1,0 +1,20 @@
+Package: eudract
+Type: Package
+Title: Creates Safety Results Summary in XML to upload to EudraCT
+Date: 26-04-2019
+Version: 0.1.0
+Author: Simon Bond, Beatrice Pantaleo
+Maintainer: The package maintainer <simon.bond@addenbrookes.nhs.uk>
+Description: The remit of the European Clinical Trials Data Base (EudraCT) is to provide open access to summaries of all registered clinical trial results; thus aiming to prevent non-reporting of negative results and provide open-access to results to inform future research. The amount of information required and the format of the results, however, imposes a large extra workload at the end of studies on Clinical Trial Units. 
+    In particular, the adverse-event-reporting component requires entering: each unique combination of treatment group and safety event;for every such event above, a further 4 pieces of information (body system, number of occurrences, number of subjects, number exposed) for non-serious events, plus an extra three pieces of data for serious adverse events (numbers of causally related events, deaths, causally related deaths).
+    This package: prepares the required statistics needed by EudraCT; formats them into the precise requirements to directly upload an XML file into the web portal, with no further data entry by hand.
+License: GPL-2
+Encoding: UTF-8
+LazyData: true
+Imports:
+    tidyr,
+    xslt,
+    dplyr
+RoxygenNote: 6.1.1
+Suggests: 
+    testthat
