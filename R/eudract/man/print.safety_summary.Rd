@@ -8,6 +8,8 @@
 }
 \arguments{
 \item{x}{a safety_summary object}
+
+\item{...}{extra arguments for the generic print method}
 }
 \description{
 print method for safety summary object
