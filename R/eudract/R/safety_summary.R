@@ -63,13 +63,13 @@ safety_summary <- function(data, exposed, excess_deaths=0, freq_threshold=0, soc
 
   group <- data %>% group_by(subjid,group) %>%
     summarise(
-      serious=any(serious),
-      nonserious=any(!serious),
+      serious_any=any(serious),
+      nonserious_any=any(!serious),
       deaths=any(fatal)
     ) %>% group_by(group) %>%
     summarise(
-      subjectsAffectedBySeriousAdverseEvents = sum(serious),
-      subjectsAffectedByNonSeriousAdverseEvents = sum(nonserious),
+      subjectsAffectedBySeriousAdverseEvents = sum(serious_any),
+      subjectsAffectedByNonSeriousAdverseEvents = sum(nonserious_any),
       deathsResultingFromAdverseEvents = sum(deaths)
     ) %>%
     left_join(data.frame(subjectsExposed=exposed, group=names(exposed)), by="group") %>%

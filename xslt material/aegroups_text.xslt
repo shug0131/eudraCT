@@ -48,9 +48,7 @@
 
 
   <xsl:template name="event">
-    <description>
-      <xsl:value-of select ="term"/>
-    </description>
+    <description/>
     <term>
       <xsl:value-of select ="term"/>
     </term>
