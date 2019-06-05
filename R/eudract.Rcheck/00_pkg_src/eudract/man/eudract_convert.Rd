@@ -12,11 +12,11 @@ eudract_convert(input, output = "table_eudract.xml",
 \arguments{
 \item{input}{a character string giving the file path to the simple xml file}
 
+\item{output}{a character string naming the output file}
+
 \item{xslt}{a character string giving the file path to the xslt script. Defaults to the script provided in this package}
 
 \item{schema_output}{a character string giving the file path to the schema. A copy was downloaded and is provided in this package as the default.}
-
-\item{ouput}{a character string naming the output file}
 }
 \value{
 the output from the validation against the schema. A new file is created as a side-effect, which is suitable to upload into eudraCT.

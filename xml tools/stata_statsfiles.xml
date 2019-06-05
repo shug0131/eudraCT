@@ -1,0 +1,5 @@
+<statsfiles>
+  <file tag="GROUP">group.xml</file>
+  <file tag="SERIOUS">serious.xml</file>
+  <file tag="NON_SERIOUS">non_serious.xml</file>
+</statsfiles>

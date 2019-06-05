@@ -3,7 +3,7 @@
 <GROUP>
 	<title>Control</title>
 	<subjectsAffectedBySeriousAdverseEvents>15</subjectsAffectedBySeriousAdverseEvents>
-	<subjectsAffectedByNonSeriousAdverseEvents>8</subjectsAffectedByNonSeriousAdverseEvents>
+	<subjectsAffectedByNonSeriousAdverseEvents>15</subjectsAffectedByNonSeriousAdverseEvents>
 	<deathsResultingFromAdverseEvents>9</deathsResultingFromAdverseEvents>
 	<subjectsExposed>67</subjectsExposed>
 	<deathsAllCauses>9</deathsAllCauses>
@@ -11,7 +11,7 @@
 <GROUP>
 	<title>Experimental</title>
 	<subjectsAffectedBySeriousAdverseEvents>33</subjectsAffectedBySeriousAdverseEvents>
-	<subjectsAffectedByNonSeriousAdverseEvents>13</subjectsAffectedByNonSeriousAdverseEvents>
+	<subjectsAffectedByNonSeriousAdverseEvents>24</subjectsAffectedByNonSeriousAdverseEvents>
 	<deathsResultingFromAdverseEvents>22</deathsResultingFromAdverseEvents>
 	<subjectsExposed>60</subjectsExposed>
 	<deathsAllCauses>22</deathsAllCauses>

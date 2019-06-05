@@ -17,9 +17,9 @@ ensure that the data$group is an ordered factor, or relying on alphabetical orde
 
 \item{excess_deaths}{a numeric vector giving the number of extra deaths not reporting within \code{data}. Defaults to 0.}
 
-\item{soc_index}{a character vector either "meddra" or "soc_term", which is used to identify if the soc variable in data gives the numerical meddra code or the description in English.}
+\item{freq_threshold}{a value on a percentage scale at which to remove events if the incidence falls below. Defaults to 0}
 
-\item{filter}{a value on a percentage scale at which to remove events if the incidence falls below. Defaults to 0}
+\item{soc_index}{a character vector either "meddra" or "soc_term", which is used to identify if the soc variable in data gives the numerical meddra code or the description in English.}
 }
 \value{
 a list of three dataframes: GROUP, SERIOUS, NON_SERIOUS. Each contains the summary statistics required by EudraCT, and is suitable for export.
