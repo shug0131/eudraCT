@@ -11,7 +11,7 @@ Description: The remit of the European Clinical Trials Data Base (EudraCT) is to
 License: GPL-2
 Encoding: UTF-8
 LazyData: true
-Imports: tidyr, xslt, dplyr, xml2, utils,magrittr
+Imports: tidyr, xslt, dplyr, xml2, utils, magrittr
 Depends: R (>= 2.10)
 RoxygenNote: 6.1.1
 Suggests: testthat
