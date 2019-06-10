@@ -24,6 +24,9 @@ Command line, and got to the local folder V:\STATISTICS\NON STUDY FOLDER\Academi
 run "bundle exec jekyll build"
 open the html files within _site
 
+
+## Use this to test and leave the _config.yaml alone ##
+
 Local Server test
 
 As for the Github/External website but 
