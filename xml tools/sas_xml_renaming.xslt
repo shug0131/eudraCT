@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 	Author: Simon Bond
-	File: rename.xslt
-	Date: 4APR2019
+	File: renaming.xslt
+	Date: 10APR2019
 	Purpose: To rename xml tags when SAS has terminated the variable names
 -->
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   <xsl:output method="xml" indent="yes" encoding="utf-8"/>
-  <xsl:key name="rename" match="rename" use="old"/>		
+  <xsl:key name="rename" match="RENAME" use="normalize-space(old)"/>		
 <xsl:template match="/">
-<table>
+<TABLE>
 <xsl:apply-templates select="//GROUP | //SERIOUS | //NON_SERIOUS"/>		
-</table>
+</TABLE>
 </xsl:template>
 
 <xsl:template match="*" name="myelement">
@@ -27,7 +27,7 @@
 </xsl:variable>
 <xsl:element name="{$tagname}">
 <xsl:if test="count(child::*)=0"> 
-	<xsl:value-of select="."/>
+	<xsl:value-of select="normalize-space(.)"/>
 </xsl:if>
 <xsl:apply-templates select="*"/>
 </xsl:element>

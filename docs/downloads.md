@@ -42,11 +42,11 @@ install.packages("eudract")
 
 ## SAS
 
-SAS currently has no example code to produce the summary statistics. The example given simply reads in the dataframes that were generated within R and exported.
+There is now a fully worked and self-sufficient example using SAS in the directory. Start with the file "safety_summary.SAS" and see the comments and "README.txt" file.
 
 A limitation in SAS is that variable names cannot be more than 32 characters, but eudract wants longer names. A variable *can* have a label attached that has no such limitation.  The example creates an additional data set that contains the shorter variable names and the longer labels, which need to match to the eudraCT names.  We output the three summary statistics dataframes *plus* the naming data into a simple XML file. Then we use a preliminary XSLT transformation to give new, longer,  tag names as needed.  
 
-[SAS Example]( {{ site.ghpath }}/SAS/SAS%20Example)
+[SAS Example]( {{ site.ghpath }}/SAS)
 
 ## Stata
 

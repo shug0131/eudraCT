@@ -1,123 +1,245 @@
-%let PATH=V:\STATISTICS\NON STUDY FOLDER\Academic Research\Eudract Tool\xslt material ;
+/* EDIT THESE LINES*/
+/* Path to the folder you want to use */
+%let PATH=V:\STATISTICS\NON STUDY FOLDER\Academic Research\Eudract Tool\SAS;
+/* The count of numbers exposed by group, in the order resulting from PROC SORT applied to the group, i.e. alphabetical */
+%let exposed=60 67;
+/* Numbers of deaths not included in the data set, by group. Default is to leave blank if none */
+%let excess_deaths= ;
+/* A threshold on the % scale for a minimum rate to include non-serious AEs in the output */
+%let freq_threshold=0;
+/* which variable in the soc_code data is used to link to the SOC code. value must either be: meddra  soc_term . */
+%let soc_index=meddra;
+
 proc datasets library=WORK kill; run; quit;
 
+/* import or identify a dataset called ae with the variables:
+term soc subjid fatal related group serious */
 proc import file="&PATH\raw_safety.csv" out=ae dbms=csv replace; 
 run;
+data ae; set ae;
+keep term soc subjid fatal related group serious;
+run;
+/* EDIT completed  now leave the code alone */
 
+
+libname saswork "&PATH";
 proc sort data=ae;
 by group subjid;
 run;
 
+
 data ae2; set ae;
 by group subjid;
-retain 	serious_any nonserious_any fatal_any;
+retain 	serious_any non_serious_any fatal_any;
 if first.subjid then do;
 	serious_any=0;
-	nonserious_any=0;
+	non_serious_any=0;
 	fatal_any=0;
 end;
 if serious=1 then serious_any=1;
-if serious=0 then nonserious_any=1;
+if serious=0 then non_serious_any=1;
 if fatal=1 then fatal_any=1;
 if last.subjid then output;
 run;
 
 proc tabulate data=ae2 out=GROUP;
 class group;
-var serious_any nonserious_any fatal_any;
-table group, (serious_any nonserious_any fatal_any)*sum *f=10.0;
+var serious_any non_serious_any fatal_any;
+table group, (serious_any non_serious_any fatal_any)*sum *f=10.0;
 run;
+
+data GROUP; set GROUP;
+label 
+	group=title
+	serious_any_Sum=subjectsAffectedBySeriousEvents
+	non_serious_any_Sum=subjectsAffectedByNonSeriousEvents
+	fatal_any_Sum=deathsResultingFromAdverseEvents
+	exposed=subjectsExposed
+	deathsAllCauses=deathsAllCauses;
+exposed=scan("&exposed", _N_)+0;
+excess_deaths=scan("&excess_deaths", _N_)+0;
+if( excess_deaths=.) then excess_deaths=0;
+deathsAllCauses=fatal_any_sum+excess_deaths;
+drop _TYPE_ _PAGE_ _TABLE_ excess_deaths;
+run;
+
+
 
 /* Non serious */
 
-proc sort data=ae(where=(serious=0)) out=nonserious;
-by soc_term term group subjid;
+proc sort data=ae(where=(serious=0)) out=non_serious;
+by soc term group subjid;
 run;
 
-data nonserious_occ nonserious_subj; set nonserious;
-by soc_term term group subjid;
-if first.subjid then output nonserious_subj;
-output nonserious_occ;
+data non_serious_occ non_serious_subj; set non_serious;
+by soc term group subjid;
+if first.subjid then output non_serious_subj;
+output non_serious_occ;
 run;
 
-proc tabulate data=nonserious out=allcombs;
-class soc_term term group;
-table soc_term*term, all;
+proc tabulate data=non_serious out=allcombs;
+class soc term group;
+table soc*term, all;
 run;
 
 
 title "Occurences";
 
-proc tabulate data=nonserious_occ out=occ  missing;
-class soc_term term group;
-table soc_term*term, group/  printmiss;
+proc tabulate data=non_serious_occ out=occ  missing;
+class soc term group;
+table soc*term, group/  printmiss;
 run;
 
-data occ; merge allcombs(in=_a keep=soc_term term) occ;
-by soc_term term;
+data occ; merge allcombs(in=_a keep=soc term) occ;
+by soc term;
 if N=. then N=0;
 if _a then output;
 drop _TYPE_ _PAGE_ _TABLE_;
 run;
 
 title "Patient count";
-proc tabulate data=nonserious_subj out=subj;
-class soc_term term group;
-table soc_term*term, group/ printmiss;
+proc tabulate data=non_serious_subj out=subj;
+class soc term group;
+table soc*term, group/ printmiss;
 run;
-data subj; merge allcombs(in=_a keep=soc_term term) subj;
-by soc_term term;
+data subj; merge allcombs(in=_a keep=soc term) subj;
+by soc term;
 if N=. then N=0;
 if _a then output;
 drop _TYPE_ _PAGE_ _TABLE_;
 run;
 
+/* merge together occurrrences and subject counts */
+data non_serious; merge occ(rename=(N=occurrences)) subj(rename=(N=subjectsAffected));
+by soc term;
+run;
+
+proc sort data=saswork.soc_code;
+by &soc_index;
+run;
+
+data non_serious; merge non_serious(in=_a_) saswork.soc_code(rename=(&soc_index=soc));
+by soc;
+if _a_ then output;
+run;
+
+/* Filtering by rate */
+proc sort data=non_serious out=filter;
+by group;
+run;
+
+data filter;  merge filter group;
+by group;
+rate=subjectsAffected/exposed*100;
+run;
+proc tabulate data=filter out=filter;
+class soc term;
+var rate;
+table soc*term,rate*max;
+run;
+
+data non_serious; merge  non_serious filter;
+by soc term;
+if  &freq_threshold <= rate_max then output;
+drop _TYPE_ _PAGE_ _TABLE_ soc soc_term rate_max;
+rename group=groupTitle;
+run;
+
+
 /* Serious */
 
 proc sort data=ae(where=(serious=1)) out=serious;
-by soc_term term group subjid;
+by soc term group subjid;
+run;
+
+data serious_occ serious_subj; set serious;
+by soc term group subjid;
+if first.subjid then output serious_subj;
+output serious_occ;
+run;
+
+proc tabulate data=serious_occ out=allcombs;
+class soc term group;
+table soc*term, all;
+run;
+
+data serious_occ; set serious_occ;
+deaths_related=related*fatal;
 run;
 
 
-proc tabulate data=serious out=allcombs;
-class soc_term term group;
-table soc_term*term, all;
+proc tabulate data=serious_occ out=ser_occ  missing;
+class soc term group;
+var related fatal deaths_related;
+table soc*term*group, All related fatal deaths_related/  printmiss;
 run;
 
-data serious; set serious(rename=(related=related_char));
-if related_char="TRUE" then  
-		related=0;
-else 	related=1;
-death_related=related*fatal;
-run;
-
-
-proc tabulate data=serious out=ser_occ  missing;
-class soc_term term group;
-var related fatal death_related;
-table soc_term*term*group, all related fatal death_related/  printmiss;
-run;
-
-data ser_occ; merge allcombs(in=_a keep=soc_term term) ser_occ;
-by soc_term term;
+data ser_occ; merge allcombs(in=_a keep=soc term) ser_occ;
+by soc term;
 if N=. then do;
 	N=0;
 	related_sum=0;
 	fatal_sum=0;
-	death_related_sum=0;
+	deaths_related_sum=0;
 end;
 if _a then output;
 drop _TYPE_ _PAGE_ _TABLE_;
 run;
+proc tabulate data=serious_subj out=ser_subj;
+class soc term group;
+table soc*term, group/ printmiss;
+run;
+data ser_subj; merge allcombs(in=_a keep=soc term) ser_subj;
+by soc term;
+if N=. then N=0;
+if _a then output;
+drop _TYPE_ _PAGE_ _TABLE_;
+run;
 
-/*
-TODO list  
-merge the data sets
-include EutctID coding for SOC
-give EudraCT var labels
-add in extra data (exposed, extra deaths)
-do filtering by AE rate
-apply previous work to export to XML,
-maybe turn into macro
-add in comments
-*/
+
+
+/* merge together occurrrences and subject counts */
+data serious; merge ser_occ(rename=(N=occurrences)) ser_subj(rename=(N=subjectsAffected));
+by soc term;
+rename group=groupTitle;
+run;
+
+proc sort data=saswork.soc_code;
+by &soc_index;
+run;
+
+data serious; merge serious(in=_a_) saswork.soc_code(rename=(&soc_index=soc));
+label 
+	related_Sum=occurrencesCausallyRelatedToTreatment
+	fatal_Sum=deaths
+	deaths_related_Sum=deathsCausallyRelatedToTreatment;
+by soc;
+if _a_ then output;
+drop soc soc_term;
+run;
+
+
+/* All three data sets produced. Now convert to XML */
+
+proc contents data=group noprint out=groupvars; run;
+proc contents data=serious noprint out=seriousvars; run;
+proc contents data=non_serious noprint out=non_seriousvars; run;
+
+data rename; set groupvars seriousvars non_seriousvars;
+if label^="" then output;
+keep name label;
+rename name=old label=new;
+run;
+/* save pre-version of the simple xml */
+libname simple0 xml "&PATH\simple0.xml" ;
+proc datasets nolist;
+  copy in=work out=simple0;
+    select group serious non_serious rename ;
+  run;
+quit;
+/*use xslt to rename within simple xml to get the correct tag or variable names*/
+proc xsl in="&PATH\simple0.xml" out="&PATH\simple.xml" xsl="&PATH\sas_xml_renaming.xslt";run;
+
+/*use xslt to transform into the format needed by EudraCT */
+proc xsl in="&PATH\simple.xml" out="&PATH\table_eudract.xml" xsl="&PATH\simpleToEudraCT.xslt";run;
+
