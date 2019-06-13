@@ -8,7 +8,7 @@ safety_summary(data, exposed, excess_deaths = 0, freq_threshold = 0,
   soc_index = c("meddra", "soc_term"))
 }
 \arguments{
-\item{data}{a data set containing the following columns: \code{subjid, pt, soc, serious, related, fatal, group}}
+\item{data}{a data set containing the following columns: \code{subjid, term, soc, serious, related, fatal, group}}
 
 \item{exposed}{a numeric vector giving the numbers of subjects exposed in each group.
 To ensure the ordering is correct either, name the vector with names matching the values in \code{data$group}, or

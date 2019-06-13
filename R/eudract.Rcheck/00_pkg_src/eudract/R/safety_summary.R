@@ -1,6 +1,6 @@
 #' Calculate frequency tables from a rectangular data frame with one row per subject-event
 #'
-#' @param data a data set containing the following columns: \code{subjid, pt, soc, serious, related, fatal, group}
+#' @param data a data set containing the following columns: \code{subjid, term, soc, serious, related, fatal, group}
 #' @param exposed a numeric vector giving the numbers of subjects exposed in each group.
 #' To ensure the ordering is correct either, name the vector with names matching the values in \code{data$group}, or
 #' ensure that the data$group is an ordered factor, or relying on alphabetical ordering of the values in
