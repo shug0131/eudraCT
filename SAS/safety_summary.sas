@@ -1,6 +1,8 @@
 /* EDIT THESE LINES*/
 /* Path to the folder you want to use */
 %let PATH=V:\STATISTICS\NON STUDY FOLDER\Academic Research\Eudract Tool\SAS;
+/*name of the SAS data set used as input, which needs to comply with the specification requirements.*/
+%let ae_data=ae;
 /* The count of numbers exposed by group, in the order resulting from PROC SORT applied to the group, i.e. alphabetical */
 %let exposed=60 67;
 /* Numbers of deaths not included in the data set, by group. Default is to leave blank if none */
@@ -8,6 +10,7 @@
 /* A threshold on the % scale for a minimum rate to include non-serious AEs in the output */
 %let freq_threshold=0;
 /* which variable in the soc_code data is used to link to the SOC code. value must either be: meddra  soc_term . */
+/*EXplain why this is needed better */
 %let soc_index=meddra;
 
 proc datasets library=WORK kill; run; quit;
@@ -16,19 +19,16 @@ proc datasets library=WORK kill; run; quit;
 term soc subjid fatal related group serious */
 proc import file="&PATH\raw_safety.csv" out=ae dbms=csv replace; 
 run;
-data ae; set ae;
-keep term soc subjid fatal related group serious;
-run;
-/* EDIT completed  now leave the code alone */
+/* EDIT completed. No further changes needed below this line. */
 
 
 libname saswork "&PATH";
-proc sort data=ae;
+proc sort data=&ae_data out=ae;
 by group subjid;
 run;
 
 
-data ae2; set ae;
+data ae_by_patient; set ae;
 by group subjid;
 retain 	serious_any non_serious_any fatal_any;
 if first.subjid then do;
@@ -42,7 +42,7 @@ if fatal=1 then fatal_any=1;
 if last.subjid then output;
 run;
 
-proc tabulate data=ae2 out=GROUP;
+proc tabulate data=ae_by_patient out=GROUP;
 class group;
 var serious_any non_serious_any fatal_any;
 table group, (serious_any non_serious_any fatal_any)*sum *f=10.0;
@@ -218,6 +218,18 @@ if _a_ then output;
 drop soc soc_term;
 run;
 
+/* Provide a document to check by eye.*/
+ods pdf file="&PATH/Safety Data.pdf";
+title "Group level data";
+proc print data=group label ;
+run;
+title "Serious group-term level data";
+proc print data=serious label ;
+run;
+title "Non-serious group-term level data";
+proc print data=non_serious label ;
+run;
+ods pdf close;
 
 /* All three data sets produced. Now convert to XML */
 
