@@ -2,16 +2,16 @@
 <TABLE>
    <GROUP>
       <title>Control</title>
-      <subjectsAffectedBySeriousEvents>15</subjectsAffectedBySeriousEvents>
-      <subjectsAffectedByNonSeriousEvents>15</subjectsAffectedByNonSeriousEvents>
+      <subjectsAffectedBySeriousAdverseEvents>15</subjectsAffectedBySeriousAdverseEvents>
+      <subjectsAffectedByNonSeriousAdverseEvents>15</subjectsAffectedByNonSeriousAdverseEvents>
       <deathsResultingFromAdverseEvents>9</deathsResultingFromAdverseEvents>
       <subjectsExposed>60</subjectsExposed>
       <deathsAllCauses>9</deathsAllCauses>
    </GROUP>
    <GROUP>
       <title>Experimental</title>
-      <subjectsAffectedBySeriousEvents>32</subjectsAffectedBySeriousEvents>
-      <subjectsAffectedByNonSeriousEvents>24</subjectsAffectedByNonSeriousEvents>
+      <subjectsAffectedBySeriousAdverseEvents>32</subjectsAffectedBySeriousAdverseEvents>
+      <subjectsAffectedByNonSeriousAdverseEvents>0</subjectsAffectedByNonSeriousAdverseEvents>
       <deathsResultingFromAdverseEvents>22</deathsResultingFromAdverseEvents>
       <subjectsExposed>67</subjectsExposed>
       <deathsAllCauses>22</deathsAllCauses>
@@ -877,20 +877,6 @@
       <eutctId>100000004866</eutctId>
    </SERIOUS>
    <NON_SERIOUS>
-      <term>Neutropenia</term>
-      <groupTitle>Control</groupTitle>
-      <occurrences>0</occurrences>
-      <subjectsAffected>0</subjectsAffected>
-      <eutctId>100000004851</eutctId>
-   </NON_SERIOUS>
-   <NON_SERIOUS>
-      <term>Neutropenia</term>
-      <groupTitle>Experimental</groupTitle>
-      <occurrences>1</occurrences>
-      <subjectsAffected>1</subjectsAffected>
-      <eutctId>100000004851</eutctId>
-   </NON_SERIOUS>
-   <NON_SERIOUS>
       <term>Acute coronary syndrome</term>
       <groupTitle>Control</groupTitle>
       <occurrences>1</occurrences>
@@ -903,90 +889,6 @@
       <occurrences>0</occurrences>
       <subjectsAffected>0</subjectsAffected>
       <eutctId>100000004849</eutctId>
-   </NON_SERIOUS>
-   <NON_SERIOUS>
-      <term>Acute myocardial infarction</term>
-      <groupTitle>Control</groupTitle>
-      <occurrences>0</occurrences>
-      <subjectsAffected>0</subjectsAffected>
-      <eutctId>100000004849</eutctId>
-   </NON_SERIOUS>
-   <NON_SERIOUS>
-      <term>Acute myocardial infarction</term>
-      <groupTitle>Experimental</groupTitle>
-      <occurrences>1</occurrences>
-      <subjectsAffected>1</subjectsAffected>
-      <eutctId>100000004849</eutctId>
-   </NON_SERIOUS>
-   <NON_SERIOUS>
-      <term>Angina pectoris</term>
-      <groupTitle>Control</groupTitle>
-      <occurrences>0</occurrences>
-      <subjectsAffected>0</subjectsAffected>
-      <eutctId>100000004849</eutctId>
-   </NON_SERIOUS>
-   <NON_SERIOUS>
-      <term>Angina pectoris</term>
-      <groupTitle>Experimental</groupTitle>
-      <occurrences>1</occurrences>
-      <subjectsAffected>1</subjectsAffected>
-      <eutctId>100000004849</eutctId>
-   </NON_SERIOUS>
-   <NON_SERIOUS>
-      <term>Atrial fibrillation</term>
-      <groupTitle>Control</groupTitle>
-      <occurrences>0</occurrences>
-      <subjectsAffected>0</subjectsAffected>
-      <eutctId>100000004849</eutctId>
-   </NON_SERIOUS>
-   <NON_SERIOUS>
-      <term>Atrial fibrillation</term>
-      <groupTitle>Experimental</groupTitle>
-      <occurrences>1</occurrences>
-      <subjectsAffected>1</subjectsAffected>
-      <eutctId>100000004849</eutctId>
-   </NON_SERIOUS>
-   <NON_SERIOUS>
-      <term>Atrioventricular block complete</term>
-      <groupTitle>Control</groupTitle>
-      <occurrences>0</occurrences>
-      <subjectsAffected>0</subjectsAffected>
-      <eutctId>100000004849</eutctId>
-   </NON_SERIOUS>
-   <NON_SERIOUS>
-      <term>Atrioventricular block complete</term>
-      <groupTitle>Experimental</groupTitle>
-      <occurrences>1</occurrences>
-      <subjectsAffected>1</subjectsAffected>
-      <eutctId>100000004849</eutctId>
-   </NON_SERIOUS>
-   <NON_SERIOUS>
-      <term>Abdominal pain</term>
-      <groupTitle>Control</groupTitle>
-      <occurrences>0</occurrences>
-      <subjectsAffected>0</subjectsAffected>
-      <eutctId>100000004856</eutctId>
-   </NON_SERIOUS>
-   <NON_SERIOUS>
-      <term>Abdominal pain</term>
-      <groupTitle>Experimental</groupTitle>
-      <occurrences>1</occurrences>
-      <subjectsAffected>1</subjectsAffected>
-      <eutctId>100000004856</eutctId>
-   </NON_SERIOUS>
-   <NON_SERIOUS>
-      <term>Duodenal ulcer</term>
-      <groupTitle>Control</groupTitle>
-      <occurrences>0</occurrences>
-      <subjectsAffected>0</subjectsAffected>
-      <eutctId>100000004856</eutctId>
-   </NON_SERIOUS>
-   <NON_SERIOUS>
-      <term>Duodenal ulcer</term>
-      <groupTitle>Experimental</groupTitle>
-      <occurrences>1</occurrences>
-      <subjectsAffected>1</subjectsAffected>
-      <eutctId>100000004856</eutctId>
    </NON_SERIOUS>
    <NON_SERIOUS>
       <term>Intestinal perforation</term>
@@ -1012,53 +914,11 @@
    <NON_SERIOUS>
       <term>Pyrexia</term>
       <groupTitle>Experimental</groupTitle>
-      <occurrences>1</occurrences>
-      <subjectsAffected>1</subjectsAffected>
+      <occurrences>0</occurrences>
+      <subjectsAffected>0</subjectsAffected>
       <eutctId>100000004867</eutctId>
    </NON_SERIOUS>
    <NON_SERIOUS>
-      <term>Cholecystitis</term>
-      <groupTitle>Control</groupTitle>
-      <occurrences>0</occurrences>
-      <subjectsAffected>0</subjectsAffected>
-      <eutctId>100000004871</eutctId>
-   </NON_SERIOUS>
-   <NON_SERIOUS>
-      <term>Cholecystitis</term>
-      <groupTitle>Experimental</groupTitle>
-      <occurrences>1</occurrences>
-      <subjectsAffected>1</subjectsAffected>
-      <eutctId>100000004871</eutctId>
-   </NON_SERIOUS>
-   <NON_SERIOUS>
-      <term>Drug hypersensitivity</term>
-      <groupTitle>Control</groupTitle>
-      <occurrences>0</occurrences>
-      <subjectsAffected>0</subjectsAffected>
-      <eutctId>100000004870</eutctId>
-   </NON_SERIOUS>
-   <NON_SERIOUS>
-      <term>Drug hypersensitivity</term>
-      <groupTitle>Experimental</groupTitle>
-      <occurrences>1</occurrences>
-      <subjectsAffected>1</subjectsAffected>
-      <eutctId>100000004870</eutctId>
-   </NON_SERIOUS>
-   <NON_SERIOUS>
-      <term>Hypersensitivity</term>
-      <groupTitle>Control</groupTitle>
-      <occurrences>0</occurrences>
-      <subjectsAffected>0</subjectsAffected>
-      <eutctId>100000004870</eutctId>
-   </NON_SERIOUS>
-   <NON_SERIOUS>
-      <term>Hypersensitivity</term>
-      <groupTitle>Experimental</groupTitle>
-      <occurrences>1</occurrences>
-      <subjectsAffected>1</subjectsAffected>
-      <eutctId>100000004870</eutctId>
-   </NON_SERIOUS>
-   <NON_SERIOUS>
       <term>Vasculitis</term>
       <groupTitle>Control</groupTitle>
       <occurrences>4</occurrences>
@@ -1068,37 +928,9 @@
    <NON_SERIOUS>
       <term>Vasculitis</term>
       <groupTitle>Experimental</groupTitle>
-      <occurrences>3</occurrences>
-      <subjectsAffected>3</subjectsAffected>
+      <occurrences>0</occurrences>
+      <subjectsAffected>0</subjectsAffected>
       <eutctId>100000004870</eutctId>
-   </NON_SERIOUS>
-   <NON_SERIOUS>
-      <term>Escherichia urinary tract infec</term>
-      <groupTitle>Control</groupTitle>
-      <occurrences>0</occurrences>
-      <subjectsAffected>0</subjectsAffected>
-      <eutctId>100000004862</eutctId>
-   </NON_SERIOUS>
-   <NON_SERIOUS>
-      <term>Escherichia urinary tract infec</term>
-      <groupTitle>Experimental</groupTitle>
-      <occurrences>1</occurrences>
-      <subjectsAffected>1</subjectsAffected>
-      <eutctId>100000004862</eutctId>
-   </NON_SERIOUS>
-   <NON_SERIOUS>
-      <term>Influenza</term>
-      <groupTitle>Control</groupTitle>
-      <occurrences>0</occurrences>
-      <subjectsAffected>0</subjectsAffected>
-      <eutctId>100000004862</eutctId>
-   </NON_SERIOUS>
-   <NON_SERIOUS>
-      <term>Influenza</term>
-      <groupTitle>Experimental</groupTitle>
-      <occurrences>1</occurrences>
-      <subjectsAffected>1</subjectsAffected>
-      <eutctId>100000004862</eutctId>
    </NON_SERIOUS>
    <NON_SERIOUS>
       <term>Pneumonia</term>
@@ -1110,22 +942,8 @@
    <NON_SERIOUS>
       <term>Pneumonia</term>
       <groupTitle>Experimental</groupTitle>
-      <occurrences>4</occurrences>
-      <subjectsAffected>3</subjectsAffected>
-      <eutctId>100000004862</eutctId>
-   </NON_SERIOUS>
-   <NON_SERIOUS>
-      <term>Pneumonia pseudomonal</term>
-      <groupTitle>Control</groupTitle>
       <occurrences>0</occurrences>
       <subjectsAffected>0</subjectsAffected>
-      <eutctId>100000004862</eutctId>
-   </NON_SERIOUS>
-   <NON_SERIOUS>
-      <term>Pneumonia pseudomonal</term>
-      <groupTitle>Experimental</groupTitle>
-      <occurrences>1</occurrences>
-      <subjectsAffected>1</subjectsAffected>
       <eutctId>100000004862</eutctId>
    </NON_SERIOUS>
    <NON_SERIOUS>
@@ -1138,93 +956,9 @@
    <NON_SERIOUS>
       <term>Respiratory tract infection</term>
       <groupTitle>Experimental</groupTitle>
-      <occurrences>1</occurrences>
-      <subjectsAffected>1</subjectsAffected>
-      <eutctId>100000004862</eutctId>
-   </NON_SERIOUS>
-   <NON_SERIOUS>
-      <term>Sinusitis</term>
-      <groupTitle>Control</groupTitle>
       <occurrences>0</occurrences>
       <subjectsAffected>0</subjectsAffected>
       <eutctId>100000004862</eutctId>
-   </NON_SERIOUS>
-   <NON_SERIOUS>
-      <term>Sinusitis</term>
-      <groupTitle>Experimental</groupTitle>
-      <occurrences>1</occurrences>
-      <subjectsAffected>1</subjectsAffected>
-      <eutctId>100000004862</eutctId>
-   </NON_SERIOUS>
-   <NON_SERIOUS>
-      <term>Urinary tract infection</term>
-      <groupTitle>Control</groupTitle>
-      <occurrences>0</occurrences>
-      <subjectsAffected>0</subjectsAffected>
-      <eutctId>100000004862</eutctId>
-   </NON_SERIOUS>
-   <NON_SERIOUS>
-      <term>Urinary tract infection</term>
-      <groupTitle>Experimental</groupTitle>
-      <occurrences>1</occurrences>
-      <subjectsAffected>1</subjectsAffected>
-      <eutctId>100000004862</eutctId>
-   </NON_SERIOUS>
-   <NON_SERIOUS>
-      <term>Wound dehiscence</term>
-      <groupTitle>Control</groupTitle>
-      <occurrences>0</occurrences>
-      <subjectsAffected>0</subjectsAffected>
-      <eutctId>100000004863</eutctId>
-   </NON_SERIOUS>
-   <NON_SERIOUS>
-      <term>Wound dehiscence</term>
-      <groupTitle>Experimental</groupTitle>
-      <occurrences>1</occurrences>
-      <subjectsAffected>1</subjectsAffected>
-      <eutctId>100000004863</eutctId>
-   </NON_SERIOUS>
-   <NON_SERIOUS>
-      <term>Dehydration</term>
-      <groupTitle>Control</groupTitle>
-      <occurrences>0</occurrences>
-      <subjectsAffected>0</subjectsAffected>
-      <eutctId>100000004861</eutctId>
-   </NON_SERIOUS>
-   <NON_SERIOUS>
-      <term>Dehydration</term>
-      <groupTitle>Experimental</groupTitle>
-      <occurrences>1</occurrences>
-      <subjectsAffected>1</subjectsAffected>
-      <eutctId>100000004861</eutctId>
-   </NON_SERIOUS>
-   <NON_SERIOUS>
-      <term>Osteoarthritis</term>
-      <groupTitle>Control</groupTitle>
-      <occurrences>0</occurrences>
-      <subjectsAffected>0</subjectsAffected>
-      <eutctId>100000004859</eutctId>
-   </NON_SERIOUS>
-   <NON_SERIOUS>
-      <term>Osteoarthritis</term>
-      <groupTitle>Experimental</groupTitle>
-      <occurrences>1</occurrences>
-      <subjectsAffected>1</subjectsAffected>
-      <eutctId>100000004859</eutctId>
-   </NON_SERIOUS>
-   <NON_SERIOUS>
-      <term>Anal squamous cell carcinoma</term>
-      <groupTitle>Control</groupTitle>
-      <occurrences>0</occurrences>
-      <subjectsAffected>0</subjectsAffected>
-      <eutctId>100000004864</eutctId>
-   </NON_SERIOUS>
-   <NON_SERIOUS>
-      <term>Anal squamous cell carcinoma</term>
-      <groupTitle>Experimental</groupTitle>
-      <occurrences>1</occurrences>
-      <subjectsAffected>1</subjectsAffected>
-      <eutctId>100000004864</eutctId>
    </NON_SERIOUS>
    <NON_SERIOUS>
       <term>Squamous cell carcinoma</term>
@@ -1255,20 +989,6 @@
       <eutctId>100000004852</eutctId>
    </NON_SERIOUS>
    <NON_SERIOUS>
-      <term>Enterovesical fistula</term>
-      <groupTitle>Control</groupTitle>
-      <occurrences>0</occurrences>
-      <subjectsAffected>0</subjectsAffected>
-      <eutctId>100000004857</eutctId>
-   </NON_SERIOUS>
-   <NON_SERIOUS>
-      <term>Enterovesical fistula</term>
-      <groupTitle>Experimental</groupTitle>
-      <occurrences>1</occurrences>
-      <subjectsAffected>1</subjectsAffected>
-      <eutctId>100000004857</eutctId>
-   </NON_SERIOUS>
-   <NON_SERIOUS>
       <term>Renal impairment</term>
       <groupTitle>Control</groupTitle>
       <occurrences>1</occurrences>
@@ -1283,34 +1003,6 @@
       <eutctId>100000004857</eutctId>
    </NON_SERIOUS>
    <NON_SERIOUS>
-      <term>Bronchospasm</term>
-      <groupTitle>Control</groupTitle>
-      <occurrences>0</occurrences>
-      <subjectsAffected>0</subjectsAffected>
-      <eutctId>100000004855</eutctId>
-   </NON_SERIOUS>
-   <NON_SERIOUS>
-      <term>Bronchospasm</term>
-      <groupTitle>Experimental</groupTitle>
-      <occurrences>1</occurrences>
-      <subjectsAffected>1</subjectsAffected>
-      <eutctId>100000004855</eutctId>
-   </NON_SERIOUS>
-   <NON_SERIOUS>
-      <term>Dyspnoea</term>
-      <groupTitle>Control</groupTitle>
-      <occurrences>0</occurrences>
-      <subjectsAffected>0</subjectsAffected>
-      <eutctId>100000004855</eutctId>
-   </NON_SERIOUS>
-   <NON_SERIOUS>
-      <term>Dyspnoea</term>
-      <groupTitle>Experimental</groupTitle>
-      <occurrences>1</occurrences>
-      <subjectsAffected>1</subjectsAffected>
-      <eutctId>100000004855</eutctId>
-   </NON_SERIOUS>
-   <NON_SERIOUS>
       <term>Laryngeal stenosis</term>
       <groupTitle>Control</groupTitle>
       <occurrences>1</occurrences>
@@ -1320,8 +1012,8 @@
    <NON_SERIOUS>
       <term>Laryngeal stenosis</term>
       <groupTitle>Experimental</groupTitle>
-      <occurrences>1</occurrences>
-      <subjectsAffected>1</subjectsAffected>
+      <occurrences>0</occurrences>
+      <subjectsAffected>0</subjectsAffected>
       <eutctId>100000004855</eutctId>
    </NON_SERIOUS>
    <NON_SERIOUS>
@@ -1367,20 +1059,6 @@
       <eutctId>100000004855</eutctId>
    </NON_SERIOUS>
    <NON_SERIOUS>
-      <term>Pneumonia streptococcal</term>
-      <groupTitle>Control</groupTitle>
-      <occurrences>0</occurrences>
-      <subjectsAffected>0</subjectsAffected>
-      <eutctId>100000004855</eutctId>
-   </NON_SERIOUS>
-   <NON_SERIOUS>
-      <term>Pneumonia streptococcal</term>
-      <groupTitle>Experimental</groupTitle>
-      <occurrences>1</occurrences>
-      <subjectsAffected>1</subjectsAffected>
-      <eutctId>100000004855</eutctId>
-   </NON_SERIOUS>
-   <NON_SERIOUS>
       <term>Pneumonitis</term>
       <groupTitle>Control</groupTitle>
       <occurrences>1</occurrences>
@@ -1393,61 +1071,5 @@
       <occurrences>0</occurrences>
       <subjectsAffected>0</subjectsAffected>
       <eutctId>100000004855</eutctId>
-   </NON_SERIOUS>
-   <NON_SERIOUS>
-      <term>Respiratory failure</term>
-      <groupTitle>Control</groupTitle>
-      <occurrences>0</occurrences>
-      <subjectsAffected>0</subjectsAffected>
-      <eutctId>100000004855</eutctId>
-   </NON_SERIOUS>
-   <NON_SERIOUS>
-      <term>Respiratory failure</term>
-      <groupTitle>Experimental</groupTitle>
-      <occurrences>1</occurrences>
-      <subjectsAffected>1</subjectsAffected>
-      <eutctId>100000004855</eutctId>
-   </NON_SERIOUS>
-   <NON_SERIOUS>
-      <term>Colostomy closure</term>
-      <groupTitle>Control</groupTitle>
-      <occurrences>0</occurrences>
-      <subjectsAffected>0</subjectsAffected>
-      <eutctId>100000004865</eutctId>
-   </NON_SERIOUS>
-   <NON_SERIOUS>
-      <term>Colostomy closure</term>
-      <groupTitle>Experimental</groupTitle>
-      <occurrences>1</occurrences>
-      <subjectsAffected>1</subjectsAffected>
-      <eutctId>100000004865</eutctId>
-   </NON_SERIOUS>
-   <NON_SERIOUS>
-      <term>Aortic dissection</term>
-      <groupTitle>Control</groupTitle>
-      <occurrences>0</occurrences>
-      <subjectsAffected>0</subjectsAffected>
-      <eutctId>100000004866</eutctId>
-   </NON_SERIOUS>
-   <NON_SERIOUS>
-      <term>Aortic dissection</term>
-      <groupTitle>Experimental</groupTitle>
-      <occurrences>1</occurrences>
-      <subjectsAffected>1</subjectsAffected>
-      <eutctId>100000004866</eutctId>
-   </NON_SERIOUS>
-   <NON_SERIOUS>
-      <term>Deep vein thrombosis</term>
-      <groupTitle>Control</groupTitle>
-      <occurrences>0</occurrences>
-      <subjectsAffected>0</subjectsAffected>
-      <eutctId>100000004866</eutctId>
-   </NON_SERIOUS>
-   <NON_SERIOUS>
-      <term>Deep vein thrombosis</term>
-      <groupTitle>Experimental</groupTitle>
-      <occurrences>1</occurrences>
-      <subjectsAffected>1</subjectsAffected>
-      <eutctId>100000004866</eutctId>
    </NON_SERIOUS>
 </TABLE>

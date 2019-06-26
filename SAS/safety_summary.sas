@@ -10,8 +10,8 @@
 /* A threshold on the % scale for a minimum rate to include non-serious AEs in the output */
 %let freq_threshold=0;
 /* which variable in the soc_code data is used to link to the SOC code. value must either be: meddra  soc_term . */
-/*EXplain why this is needed better */
 %let soc_index=meddra;
+
 
 proc datasets library=WORK kill; run; quit;
 
@@ -51,8 +51,8 @@ run;
 data GROUP; set GROUP;
 label 
 	group=title
-	serious_any_Sum=subjectsAffectedBySeriousEvents
-	non_serious_any_Sum=subjectsAffectedByNonSeriousEvents
+	serious_any_Sum=subjectsAffectedBySeriousAdverseEvents
+	non_serious_any_Sum=subjectsAffectedByNonSeriousAdverseEvents
 	fatal_any_Sum=deathsResultingFromAdverseEvents
 	exposed=subjectsExposed
 	deathsAllCauses=deathsAllCauses;
@@ -81,7 +81,13 @@ proc tabulate data=non_serious out=allcombs;
 class soc term group;
 table soc*term, all;
 run;
+/*needed in case one group has no AEs for example*/
+proc sql;
+create table allcombs as 
+select soc, term, group from allcombs, group;
+quit;
 
+proc sort data=allcombs; by soc term group; run;
 
 title "Occurences";
 
@@ -90,8 +96,8 @@ class soc term group;
 table soc*term, group/  printmiss;
 run;
 
-data occ; merge allcombs(in=_a keep=soc term) occ;
-by soc term;
+data occ; merge allcombs(in=_a keep=soc term group) occ;
+by soc term group;
 if N=. then N=0;
 if _a then output;
 drop _TYPE_ _PAGE_ _TABLE_;
@@ -102,8 +108,8 @@ proc tabulate data=non_serious_subj out=subj;
 class soc term group;
 table soc*term, group/ printmiss;
 run;
-data subj; merge allcombs(in=_a keep=soc term) subj;
-by soc term;
+data subj; merge allcombs(in=_a keep=soc term group) subj;
+by soc term group;
 if N=. then N=0;
 if _a then output;
 drop _TYPE_ _PAGE_ _TABLE_;
@@ -163,6 +169,15 @@ class soc term group;
 table soc*term, all;
 run;
 
+/*needed in case one group has no SAEs for example*/
+proc sql;
+create table allcombs as 
+select soc, term, group from allcombs, group;
+quit;
+
+proc sort data=allcombs; by soc term group; run;
+
+
 data serious_occ; set serious_occ;
 deaths_related=related*fatal;
 run;
@@ -174,8 +189,8 @@ var related fatal deaths_related;
 table soc*term*group, All related fatal deaths_related/  printmiss;
 run;
 
-data ser_occ; merge allcombs(in=_a keep=soc term) ser_occ;
-by soc term;
+data ser_occ; merge allcombs(in=_a keep=soc term group) ser_occ;
+by soc term group;
 if N=. then do;
 	N=0;
 	related_sum=0;
@@ -189,8 +204,8 @@ proc tabulate data=serious_subj out=ser_subj;
 class soc term group;
 table soc*term, group/ printmiss;
 run;
-data ser_subj; merge allcombs(in=_a keep=soc term) ser_subj;
-by soc term;
+data ser_subj; merge allcombs(in=_a keep=soc term group) ser_subj;
+by soc term group;
 if N=. then N=0;
 if _a then output;
 drop _TYPE_ _PAGE_ _TABLE_;

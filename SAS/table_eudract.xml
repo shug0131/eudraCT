@@ -15,50 +15,26 @@
       </name>
    </dictionary>
    <reportingGroups>
-      <reportingGroup id="d7e5">
+      <reportingGroup id="d27e5">
          <title>Control</title>
          <description xsi:nil="true"/>
-         <subjectsAffectedByNonSeriousAdverseEvents/>
-         <subjectsAffectedBySeriousAdverseEvents/>
+         <subjectsAffectedByNonSeriousAdverseEvents>15</subjectsAffectedByNonSeriousAdverseEvents>
+         <subjectsAffectedBySeriousAdverseEvents>15</subjectsAffectedBySeriousAdverseEvents>
          <subjectsExposed>60</subjectsExposed>
          <deathsAllCauses>9</deathsAllCauses>
          <deathsResultingFromAdverseEvents>9</deathsResultingFromAdverseEvents>
       </reportingGroup>
-      <reportingGroup id="d7e27">
+      <reportingGroup id="d27e27">
          <title>Experimental</title>
          <description xsi:nil="true"/>
-         <subjectsAffectedByNonSeriousAdverseEvents/>
-         <subjectsAffectedBySeriousAdverseEvents/>
+         <subjectsAffectedByNonSeriousAdverseEvents>0</subjectsAffectedByNonSeriousAdverseEvents>
+         <subjectsAffectedBySeriousAdverseEvents>32</subjectsAffectedBySeriousAdverseEvents>
          <subjectsExposed>67</subjectsExposed>
          <deathsAllCauses>22</deathsAllCauses>
          <deathsResultingFromAdverseEvents>22</deathsResultingFromAdverseEvents>
       </reportingGroup>
    </reportingGroups>
    <nonSeriousAdverseEvents>
-      <nonSeriousAdverseEvent>
-         <description/>
-         <term>Neutropenia</term>
-         <organSystem>
-            <eutctId>100000004851</eutctId>
-            <version>19</version>
-         </organSystem>
-         <assessmentMethod>
-            <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
-         </assessmentMethod>
-         <dictionaryOverridden>false</dictionaryOverridden>
-         <values>
-            <value reportingGroupId="d7e5">
-               <occurrences>0</occurrences>
-               <subjectsAffected>0</subjectsAffected>
-               <subjectsExposed>60</subjectsExposed>
-            </value>
-            <value reportingGroupId="d7e27">
-               <occurrences>1</occurrences>
-               <subjectsAffected>1</subjectsAffected>
-               <subjectsExposed>67</subjectsExposed>
-            </value>
-         </values>
-      </nonSeriousAdverseEvent>
       <nonSeriousAdverseEvent>
          <description/>
          <term>Acute coronary syndrome</term>
@@ -71,158 +47,14 @@
          </assessmentMethod>
          <dictionaryOverridden>false</dictionaryOverridden>
          <values>
-            <value reportingGroupId="d7e5">
+            <value reportingGroupId="d27e5">
                <occurrences>1</occurrences>
                <subjectsAffected>1</subjectsAffected>
                <subjectsExposed>60</subjectsExposed>
             </value>
-            <value reportingGroupId="d7e27">
+            <value reportingGroupId="d27e27">
                <occurrences>0</occurrences>
                <subjectsAffected>0</subjectsAffected>
-               <subjectsExposed>67</subjectsExposed>
-            </value>
-         </values>
-      </nonSeriousAdverseEvent>
-      <nonSeriousAdverseEvent>
-         <description/>
-         <term>Acute myocardial infarction</term>
-         <organSystem>
-            <eutctId>100000004849</eutctId>
-            <version>19</version>
-         </organSystem>
-         <assessmentMethod>
-            <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
-         </assessmentMethod>
-         <dictionaryOverridden>false</dictionaryOverridden>
-         <values>
-            <value reportingGroupId="d7e5">
-               <occurrences>0</occurrences>
-               <subjectsAffected>0</subjectsAffected>
-               <subjectsExposed>60</subjectsExposed>
-            </value>
-            <value reportingGroupId="d7e27">
-               <occurrences>1</occurrences>
-               <subjectsAffected>1</subjectsAffected>
-               <subjectsExposed>67</subjectsExposed>
-            </value>
-         </values>
-      </nonSeriousAdverseEvent>
-      <nonSeriousAdverseEvent>
-         <description/>
-         <term>Angina pectoris</term>
-         <organSystem>
-            <eutctId>100000004849</eutctId>
-            <version>19</version>
-         </organSystem>
-         <assessmentMethod>
-            <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
-         </assessmentMethod>
-         <dictionaryOverridden>false</dictionaryOverridden>
-         <values>
-            <value reportingGroupId="d7e5">
-               <occurrences>0</occurrences>
-               <subjectsAffected>0</subjectsAffected>
-               <subjectsExposed>60</subjectsExposed>
-            </value>
-            <value reportingGroupId="d7e27">
-               <occurrences>1</occurrences>
-               <subjectsAffected>1</subjectsAffected>
-               <subjectsExposed>67</subjectsExposed>
-            </value>
-         </values>
-      </nonSeriousAdverseEvent>
-      <nonSeriousAdverseEvent>
-         <description/>
-         <term>Atrial fibrillation</term>
-         <organSystem>
-            <eutctId>100000004849</eutctId>
-            <version>19</version>
-         </organSystem>
-         <assessmentMethod>
-            <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
-         </assessmentMethod>
-         <dictionaryOverridden>false</dictionaryOverridden>
-         <values>
-            <value reportingGroupId="d7e5">
-               <occurrences>0</occurrences>
-               <subjectsAffected>0</subjectsAffected>
-               <subjectsExposed>60</subjectsExposed>
-            </value>
-            <value reportingGroupId="d7e27">
-               <occurrences>1</occurrences>
-               <subjectsAffected>1</subjectsAffected>
-               <subjectsExposed>67</subjectsExposed>
-            </value>
-         </values>
-      </nonSeriousAdverseEvent>
-      <nonSeriousAdverseEvent>
-         <description/>
-         <term>Atrioventricular block complete</term>
-         <organSystem>
-            <eutctId>100000004849</eutctId>
-            <version>19</version>
-         </organSystem>
-         <assessmentMethod>
-            <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
-         </assessmentMethod>
-         <dictionaryOverridden>false</dictionaryOverridden>
-         <values>
-            <value reportingGroupId="d7e5">
-               <occurrences>0</occurrences>
-               <subjectsAffected>0</subjectsAffected>
-               <subjectsExposed>60</subjectsExposed>
-            </value>
-            <value reportingGroupId="d7e27">
-               <occurrences>1</occurrences>
-               <subjectsAffected>1</subjectsAffected>
-               <subjectsExposed>67</subjectsExposed>
-            </value>
-         </values>
-      </nonSeriousAdverseEvent>
-      <nonSeriousAdverseEvent>
-         <description/>
-         <term>Abdominal pain</term>
-         <organSystem>
-            <eutctId>100000004856</eutctId>
-            <version>19</version>
-         </organSystem>
-         <assessmentMethod>
-            <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
-         </assessmentMethod>
-         <dictionaryOverridden>false</dictionaryOverridden>
-         <values>
-            <value reportingGroupId="d7e5">
-               <occurrences>0</occurrences>
-               <subjectsAffected>0</subjectsAffected>
-               <subjectsExposed>60</subjectsExposed>
-            </value>
-            <value reportingGroupId="d7e27">
-               <occurrences>1</occurrences>
-               <subjectsAffected>1</subjectsAffected>
-               <subjectsExposed>67</subjectsExposed>
-            </value>
-         </values>
-      </nonSeriousAdverseEvent>
-      <nonSeriousAdverseEvent>
-         <description/>
-         <term>Duodenal ulcer</term>
-         <organSystem>
-            <eutctId>100000004856</eutctId>
-            <version>19</version>
-         </organSystem>
-         <assessmentMethod>
-            <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
-         </assessmentMethod>
-         <dictionaryOverridden>false</dictionaryOverridden>
-         <values>
-            <value reportingGroupId="d7e5">
-               <occurrences>0</occurrences>
-               <subjectsAffected>0</subjectsAffected>
-               <subjectsExposed>60</subjectsExposed>
-            </value>
-            <value reportingGroupId="d7e27">
-               <occurrences>1</occurrences>
-               <subjectsAffected>1</subjectsAffected>
                <subjectsExposed>67</subjectsExposed>
             </value>
          </values>
@@ -239,12 +71,12 @@
          </assessmentMethod>
          <dictionaryOverridden>false</dictionaryOverridden>
          <values>
-            <value reportingGroupId="d7e5">
+            <value reportingGroupId="d27e5">
                <occurrences>1</occurrences>
                <subjectsAffected>1</subjectsAffected>
                <subjectsExposed>60</subjectsExposed>
             </value>
-            <value reportingGroupId="d7e27">
+            <value reportingGroupId="d27e27">
                <occurrences>0</occurrences>
                <subjectsAffected>0</subjectsAffected>
                <subjectsExposed>67</subjectsExposed>
@@ -263,86 +95,14 @@
          </assessmentMethod>
          <dictionaryOverridden>false</dictionaryOverridden>
          <values>
-            <value reportingGroupId="d7e5">
+            <value reportingGroupId="d27e5">
                <occurrences>1</occurrences>
                <subjectsAffected>1</subjectsAffected>
                <subjectsExposed>60</subjectsExposed>
             </value>
-            <value reportingGroupId="d7e27">
-               <occurrences>1</occurrences>
-               <subjectsAffected>1</subjectsAffected>
-               <subjectsExposed>67</subjectsExposed>
-            </value>
-         </values>
-      </nonSeriousAdverseEvent>
-      <nonSeriousAdverseEvent>
-         <description/>
-         <term>Cholecystitis</term>
-         <organSystem>
-            <eutctId>100000004871</eutctId>
-            <version>19</version>
-         </organSystem>
-         <assessmentMethod>
-            <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
-         </assessmentMethod>
-         <dictionaryOverridden>false</dictionaryOverridden>
-         <values>
-            <value reportingGroupId="d7e5">
+            <value reportingGroupId="d27e27">
                <occurrences>0</occurrences>
                <subjectsAffected>0</subjectsAffected>
-               <subjectsExposed>60</subjectsExposed>
-            </value>
-            <value reportingGroupId="d7e27">
-               <occurrences>1</occurrences>
-               <subjectsAffected>1</subjectsAffected>
-               <subjectsExposed>67</subjectsExposed>
-            </value>
-         </values>
-      </nonSeriousAdverseEvent>
-      <nonSeriousAdverseEvent>
-         <description/>
-         <term>Drug hypersensitivity</term>
-         <organSystem>
-            <eutctId>100000004870</eutctId>
-            <version>19</version>
-         </organSystem>
-         <assessmentMethod>
-            <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
-         </assessmentMethod>
-         <dictionaryOverridden>false</dictionaryOverridden>
-         <values>
-            <value reportingGroupId="d7e5">
-               <occurrences>0</occurrences>
-               <subjectsAffected>0</subjectsAffected>
-               <subjectsExposed>60</subjectsExposed>
-            </value>
-            <value reportingGroupId="d7e27">
-               <occurrences>1</occurrences>
-               <subjectsAffected>1</subjectsAffected>
-               <subjectsExposed>67</subjectsExposed>
-            </value>
-         </values>
-      </nonSeriousAdverseEvent>
-      <nonSeriousAdverseEvent>
-         <description/>
-         <term>Hypersensitivity</term>
-         <organSystem>
-            <eutctId>100000004870</eutctId>
-            <version>19</version>
-         </organSystem>
-         <assessmentMethod>
-            <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
-         </assessmentMethod>
-         <dictionaryOverridden>false</dictionaryOverridden>
-         <values>
-            <value reportingGroupId="d7e5">
-               <occurrences>0</occurrences>
-               <subjectsAffected>0</subjectsAffected>
-               <subjectsExposed>60</subjectsExposed>
-            </value>
-            <value reportingGroupId="d7e27">
-               <occurrences>1</occurrences>
-               <subjectsAffected>1</subjectsAffected>
                <subjectsExposed>67</subjectsExposed>
             </value>
          </values>
@@ -359,62 +119,14 @@
          </assessmentMethod>
          <dictionaryOverridden>false</dictionaryOverridden>
          <values>
-            <value reportingGroupId="d7e5">
+            <value reportingGroupId="d27e5">
                <occurrences>4</occurrences>
                <subjectsAffected>3</subjectsAffected>
                <subjectsExposed>60</subjectsExposed>
             </value>
-            <value reportingGroupId="d7e27">
-               <occurrences>3</occurrences>
-               <subjectsAffected>3</subjectsAffected>
-               <subjectsExposed>67</subjectsExposed>
-            </value>
-         </values>
-      </nonSeriousAdverseEvent>
-      <nonSeriousAdverseEvent>
-         <description/>
-         <term>Escherichia urinary tract infec</term>
-         <organSystem>
-            <eutctId>100000004862</eutctId>
-            <version>19</version>
-         </organSystem>
-         <assessmentMethod>
-            <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
-         </assessmentMethod>
-         <dictionaryOverridden>false</dictionaryOverridden>
-         <values>
-            <value reportingGroupId="d7e5">
+            <value reportingGroupId="d27e27">
                <occurrences>0</occurrences>
                <subjectsAffected>0</subjectsAffected>
-               <subjectsExposed>60</subjectsExposed>
-            </value>
-            <value reportingGroupId="d7e27">
-               <occurrences>1</occurrences>
-               <subjectsAffected>1</subjectsAffected>
-               <subjectsExposed>67</subjectsExposed>
-            </value>
-         </values>
-      </nonSeriousAdverseEvent>
-      <nonSeriousAdverseEvent>
-         <description/>
-         <term>Influenza</term>
-         <organSystem>
-            <eutctId>100000004862</eutctId>
-            <version>19</version>
-         </organSystem>
-         <assessmentMethod>
-            <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
-         </assessmentMethod>
-         <dictionaryOverridden>false</dictionaryOverridden>
-         <values>
-            <value reportingGroupId="d7e5">
-               <occurrences>0</occurrences>
-               <subjectsAffected>0</subjectsAffected>
-               <subjectsExposed>60</subjectsExposed>
-            </value>
-            <value reportingGroupId="d7e27">
-               <occurrences>1</occurrences>
-               <subjectsAffected>1</subjectsAffected>
                <subjectsExposed>67</subjectsExposed>
             </value>
          </values>
@@ -431,38 +143,14 @@
          </assessmentMethod>
          <dictionaryOverridden>false</dictionaryOverridden>
          <values>
-            <value reportingGroupId="d7e5">
+            <value reportingGroupId="d27e5">
                <occurrences>2</occurrences>
                <subjectsAffected>2</subjectsAffected>
                <subjectsExposed>60</subjectsExposed>
             </value>
-            <value reportingGroupId="d7e27">
-               <occurrences>4</occurrences>
-               <subjectsAffected>3</subjectsAffected>
-               <subjectsExposed>67</subjectsExposed>
-            </value>
-         </values>
-      </nonSeriousAdverseEvent>
-      <nonSeriousAdverseEvent>
-         <description/>
-         <term>Pneumonia pseudomonal</term>
-         <organSystem>
-            <eutctId>100000004862</eutctId>
-            <version>19</version>
-         </organSystem>
-         <assessmentMethod>
-            <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
-         </assessmentMethod>
-         <dictionaryOverridden>false</dictionaryOverridden>
-         <values>
-            <value reportingGroupId="d7e5">
+            <value reportingGroupId="d27e27">
                <occurrences>0</occurrences>
                <subjectsAffected>0</subjectsAffected>
-               <subjectsExposed>60</subjectsExposed>
-            </value>
-            <value reportingGroupId="d7e27">
-               <occurrences>1</occurrences>
-               <subjectsAffected>1</subjectsAffected>
                <subjectsExposed>67</subjectsExposed>
             </value>
          </values>
@@ -479,158 +167,14 @@
          </assessmentMethod>
          <dictionaryOverridden>false</dictionaryOverridden>
          <values>
-            <value reportingGroupId="d7e5">
+            <value reportingGroupId="d27e5">
                <occurrences>2</occurrences>
                <subjectsAffected>2</subjectsAffected>
                <subjectsExposed>60</subjectsExposed>
             </value>
-            <value reportingGroupId="d7e27">
-               <occurrences>1</occurrences>
-               <subjectsAffected>1</subjectsAffected>
-               <subjectsExposed>67</subjectsExposed>
-            </value>
-         </values>
-      </nonSeriousAdverseEvent>
-      <nonSeriousAdverseEvent>
-         <description/>
-         <term>Sinusitis</term>
-         <organSystem>
-            <eutctId>100000004862</eutctId>
-            <version>19</version>
-         </organSystem>
-         <assessmentMethod>
-            <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
-         </assessmentMethod>
-         <dictionaryOverridden>false</dictionaryOverridden>
-         <values>
-            <value reportingGroupId="d7e5">
+            <value reportingGroupId="d27e27">
                <occurrences>0</occurrences>
                <subjectsAffected>0</subjectsAffected>
-               <subjectsExposed>60</subjectsExposed>
-            </value>
-            <value reportingGroupId="d7e27">
-               <occurrences>1</occurrences>
-               <subjectsAffected>1</subjectsAffected>
-               <subjectsExposed>67</subjectsExposed>
-            </value>
-         </values>
-      </nonSeriousAdverseEvent>
-      <nonSeriousAdverseEvent>
-         <description/>
-         <term>Urinary tract infection</term>
-         <organSystem>
-            <eutctId>100000004862</eutctId>
-            <version>19</version>
-         </organSystem>
-         <assessmentMethod>
-            <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
-         </assessmentMethod>
-         <dictionaryOverridden>false</dictionaryOverridden>
-         <values>
-            <value reportingGroupId="d7e5">
-               <occurrences>0</occurrences>
-               <subjectsAffected>0</subjectsAffected>
-               <subjectsExposed>60</subjectsExposed>
-            </value>
-            <value reportingGroupId="d7e27">
-               <occurrences>1</occurrences>
-               <subjectsAffected>1</subjectsAffected>
-               <subjectsExposed>67</subjectsExposed>
-            </value>
-         </values>
-      </nonSeriousAdverseEvent>
-      <nonSeriousAdverseEvent>
-         <description/>
-         <term>Wound dehiscence</term>
-         <organSystem>
-            <eutctId>100000004863</eutctId>
-            <version>19</version>
-         </organSystem>
-         <assessmentMethod>
-            <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
-         </assessmentMethod>
-         <dictionaryOverridden>false</dictionaryOverridden>
-         <values>
-            <value reportingGroupId="d7e5">
-               <occurrences>0</occurrences>
-               <subjectsAffected>0</subjectsAffected>
-               <subjectsExposed>60</subjectsExposed>
-            </value>
-            <value reportingGroupId="d7e27">
-               <occurrences>1</occurrences>
-               <subjectsAffected>1</subjectsAffected>
-               <subjectsExposed>67</subjectsExposed>
-            </value>
-         </values>
-      </nonSeriousAdverseEvent>
-      <nonSeriousAdverseEvent>
-         <description/>
-         <term>Dehydration</term>
-         <organSystem>
-            <eutctId>100000004861</eutctId>
-            <version>19</version>
-         </organSystem>
-         <assessmentMethod>
-            <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
-         </assessmentMethod>
-         <dictionaryOverridden>false</dictionaryOverridden>
-         <values>
-            <value reportingGroupId="d7e5">
-               <occurrences>0</occurrences>
-               <subjectsAffected>0</subjectsAffected>
-               <subjectsExposed>60</subjectsExposed>
-            </value>
-            <value reportingGroupId="d7e27">
-               <occurrences>1</occurrences>
-               <subjectsAffected>1</subjectsAffected>
-               <subjectsExposed>67</subjectsExposed>
-            </value>
-         </values>
-      </nonSeriousAdverseEvent>
-      <nonSeriousAdverseEvent>
-         <description/>
-         <term>Osteoarthritis</term>
-         <organSystem>
-            <eutctId>100000004859</eutctId>
-            <version>19</version>
-         </organSystem>
-         <assessmentMethod>
-            <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
-         </assessmentMethod>
-         <dictionaryOverridden>false</dictionaryOverridden>
-         <values>
-            <value reportingGroupId="d7e5">
-               <occurrences>0</occurrences>
-               <subjectsAffected>0</subjectsAffected>
-               <subjectsExposed>60</subjectsExposed>
-            </value>
-            <value reportingGroupId="d7e27">
-               <occurrences>1</occurrences>
-               <subjectsAffected>1</subjectsAffected>
-               <subjectsExposed>67</subjectsExposed>
-            </value>
-         </values>
-      </nonSeriousAdverseEvent>
-      <nonSeriousAdverseEvent>
-         <description/>
-         <term>Anal squamous cell carcinoma</term>
-         <organSystem>
-            <eutctId>100000004864</eutctId>
-            <version>19</version>
-         </organSystem>
-         <assessmentMethod>
-            <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
-         </assessmentMethod>
-         <dictionaryOverridden>false</dictionaryOverridden>
-         <values>
-            <value reportingGroupId="d7e5">
-               <occurrences>0</occurrences>
-               <subjectsAffected>0</subjectsAffected>
-               <subjectsExposed>60</subjectsExposed>
-            </value>
-            <value reportingGroupId="d7e27">
-               <occurrences>1</occurrences>
-               <subjectsAffected>1</subjectsAffected>
                <subjectsExposed>67</subjectsExposed>
             </value>
          </values>
@@ -647,12 +191,12 @@
          </assessmentMethod>
          <dictionaryOverridden>false</dictionaryOverridden>
          <values>
-            <value reportingGroupId="d7e5">
+            <value reportingGroupId="d27e5">
                <occurrences>1</occurrences>
                <subjectsAffected>1</subjectsAffected>
                <subjectsExposed>60</subjectsExposed>
             </value>
-            <value reportingGroupId="d7e27">
+            <value reportingGroupId="d27e27">
                <occurrences>0</occurrences>
                <subjectsAffected>0</subjectsAffected>
                <subjectsExposed>67</subjectsExposed>
@@ -671,38 +215,14 @@
          </assessmentMethod>
          <dictionaryOverridden>false</dictionaryOverridden>
          <values>
-            <value reportingGroupId="d7e5">
+            <value reportingGroupId="d27e5">
                <occurrences>2</occurrences>
                <subjectsAffected>1</subjectsAffected>
                <subjectsExposed>60</subjectsExposed>
             </value>
-            <value reportingGroupId="d7e27">
+            <value reportingGroupId="d27e27">
                <occurrences>0</occurrences>
                <subjectsAffected>0</subjectsAffected>
-               <subjectsExposed>67</subjectsExposed>
-            </value>
-         </values>
-      </nonSeriousAdverseEvent>
-      <nonSeriousAdverseEvent>
-         <description/>
-         <term>Enterovesical fistula</term>
-         <organSystem>
-            <eutctId>100000004857</eutctId>
-            <version>19</version>
-         </organSystem>
-         <assessmentMethod>
-            <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
-         </assessmentMethod>
-         <dictionaryOverridden>false</dictionaryOverridden>
-         <values>
-            <value reportingGroupId="d7e5">
-               <occurrences>0</occurrences>
-               <subjectsAffected>0</subjectsAffected>
-               <subjectsExposed>60</subjectsExposed>
-            </value>
-            <value reportingGroupId="d7e27">
-               <occurrences>1</occurrences>
-               <subjectsAffected>1</subjectsAffected>
                <subjectsExposed>67</subjectsExposed>
             </value>
          </values>
@@ -719,62 +239,14 @@
          </assessmentMethod>
          <dictionaryOverridden>false</dictionaryOverridden>
          <values>
-            <value reportingGroupId="d7e5">
+            <value reportingGroupId="d27e5">
                <occurrences>1</occurrences>
                <subjectsAffected>1</subjectsAffected>
                <subjectsExposed>60</subjectsExposed>
             </value>
-            <value reportingGroupId="d7e27">
+            <value reportingGroupId="d27e27">
                <occurrences>0</occurrences>
                <subjectsAffected>0</subjectsAffected>
-               <subjectsExposed>67</subjectsExposed>
-            </value>
-         </values>
-      </nonSeriousAdverseEvent>
-      <nonSeriousAdverseEvent>
-         <description/>
-         <term>Bronchospasm</term>
-         <organSystem>
-            <eutctId>100000004855</eutctId>
-            <version>19</version>
-         </organSystem>
-         <assessmentMethod>
-            <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
-         </assessmentMethod>
-         <dictionaryOverridden>false</dictionaryOverridden>
-         <values>
-            <value reportingGroupId="d7e5">
-               <occurrences>0</occurrences>
-               <subjectsAffected>0</subjectsAffected>
-               <subjectsExposed>60</subjectsExposed>
-            </value>
-            <value reportingGroupId="d7e27">
-               <occurrences>1</occurrences>
-               <subjectsAffected>1</subjectsAffected>
-               <subjectsExposed>67</subjectsExposed>
-            </value>
-         </values>
-      </nonSeriousAdverseEvent>
-      <nonSeriousAdverseEvent>
-         <description/>
-         <term>Dyspnoea</term>
-         <organSystem>
-            <eutctId>100000004855</eutctId>
-            <version>19</version>
-         </organSystem>
-         <assessmentMethod>
-            <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
-         </assessmentMethod>
-         <dictionaryOverridden>false</dictionaryOverridden>
-         <values>
-            <value reportingGroupId="d7e5">
-               <occurrences>0</occurrences>
-               <subjectsAffected>0</subjectsAffected>
-               <subjectsExposed>60</subjectsExposed>
-            </value>
-            <value reportingGroupId="d7e27">
-               <occurrences>1</occurrences>
-               <subjectsAffected>1</subjectsAffected>
                <subjectsExposed>67</subjectsExposed>
             </value>
          </values>
@@ -791,14 +263,14 @@
          </assessmentMethod>
          <dictionaryOverridden>false</dictionaryOverridden>
          <values>
-            <value reportingGroupId="d7e5">
+            <value reportingGroupId="d27e5">
                <occurrences>1</occurrences>
                <subjectsAffected>1</subjectsAffected>
                <subjectsExposed>60</subjectsExposed>
             </value>
-            <value reportingGroupId="d7e27">
-               <occurrences>1</occurrences>
-               <subjectsAffected>1</subjectsAffected>
+            <value reportingGroupId="d27e27">
+               <occurrences>0</occurrences>
+               <subjectsAffected>0</subjectsAffected>
                <subjectsExposed>67</subjectsExposed>
             </value>
          </values>
@@ -815,12 +287,12 @@
          </assessmentMethod>
          <dictionaryOverridden>false</dictionaryOverridden>
          <values>
-            <value reportingGroupId="d7e5">
+            <value reportingGroupId="d27e5">
                <occurrences>1</occurrences>
                <subjectsAffected>1</subjectsAffected>
                <subjectsExposed>60</subjectsExposed>
             </value>
-            <value reportingGroupId="d7e27">
+            <value reportingGroupId="d27e27">
                <occurrences>0</occurrences>
                <subjectsAffected>0</subjectsAffected>
                <subjectsExposed>67</subjectsExposed>
@@ -839,12 +311,12 @@
          </assessmentMethod>
          <dictionaryOverridden>false</dictionaryOverridden>
          <values>
-            <value reportingGroupId="d7e5">
+            <value reportingGroupId="d27e5">
                <occurrences>1</occurrences>
                <subjectsAffected>1</subjectsAffected>
                <subjectsExposed>60</subjectsExposed>
             </value>
-            <value reportingGroupId="d7e27">
+            <value reportingGroupId="d27e27">
                <occurrences>0</occurrences>
                <subjectsAffected>0</subjectsAffected>
                <subjectsExposed>67</subjectsExposed>
@@ -863,38 +335,14 @@
          </assessmentMethod>
          <dictionaryOverridden>false</dictionaryOverridden>
          <values>
-            <value reportingGroupId="d7e5">
+            <value reportingGroupId="d27e5">
                <occurrences>1</occurrences>
                <subjectsAffected>1</subjectsAffected>
                <subjectsExposed>60</subjectsExposed>
             </value>
-            <value reportingGroupId="d7e27">
+            <value reportingGroupId="d27e27">
                <occurrences>0</occurrences>
                <subjectsAffected>0</subjectsAffected>
-               <subjectsExposed>67</subjectsExposed>
-            </value>
-         </values>
-      </nonSeriousAdverseEvent>
-      <nonSeriousAdverseEvent>
-         <description/>
-         <term>Pneumonia streptococcal</term>
-         <organSystem>
-            <eutctId>100000004855</eutctId>
-            <version>19</version>
-         </organSystem>
-         <assessmentMethod>
-            <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
-         </assessmentMethod>
-         <dictionaryOverridden>false</dictionaryOverridden>
-         <values>
-            <value reportingGroupId="d7e5">
-               <occurrences>0</occurrences>
-               <subjectsAffected>0</subjectsAffected>
-               <subjectsExposed>60</subjectsExposed>
-            </value>
-            <value reportingGroupId="d7e27">
-               <occurrences>1</occurrences>
-               <subjectsAffected>1</subjectsAffected>
                <subjectsExposed>67</subjectsExposed>
             </value>
          </values>
@@ -911,110 +359,14 @@
          </assessmentMethod>
          <dictionaryOverridden>false</dictionaryOverridden>
          <values>
-            <value reportingGroupId="d7e5">
+            <value reportingGroupId="d27e5">
                <occurrences>1</occurrences>
                <subjectsAffected>1</subjectsAffected>
                <subjectsExposed>60</subjectsExposed>
             </value>
-            <value reportingGroupId="d7e27">
+            <value reportingGroupId="d27e27">
                <occurrences>0</occurrences>
                <subjectsAffected>0</subjectsAffected>
-               <subjectsExposed>67</subjectsExposed>
-            </value>
-         </values>
-      </nonSeriousAdverseEvent>
-      <nonSeriousAdverseEvent>
-         <description/>
-         <term>Respiratory failure</term>
-         <organSystem>
-            <eutctId>100000004855</eutctId>
-            <version>19</version>
-         </organSystem>
-         <assessmentMethod>
-            <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
-         </assessmentMethod>
-         <dictionaryOverridden>false</dictionaryOverridden>
-         <values>
-            <value reportingGroupId="d7e5">
-               <occurrences>0</occurrences>
-               <subjectsAffected>0</subjectsAffected>
-               <subjectsExposed>60</subjectsExposed>
-            </value>
-            <value reportingGroupId="d7e27">
-               <occurrences>1</occurrences>
-               <subjectsAffected>1</subjectsAffected>
-               <subjectsExposed>67</subjectsExposed>
-            </value>
-         </values>
-      </nonSeriousAdverseEvent>
-      <nonSeriousAdverseEvent>
-         <description/>
-         <term>Colostomy closure</term>
-         <organSystem>
-            <eutctId>100000004865</eutctId>
-            <version>19</version>
-         </organSystem>
-         <assessmentMethod>
-            <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
-         </assessmentMethod>
-         <dictionaryOverridden>false</dictionaryOverridden>
-         <values>
-            <value reportingGroupId="d7e5">
-               <occurrences>0</occurrences>
-               <subjectsAffected>0</subjectsAffected>
-               <subjectsExposed>60</subjectsExposed>
-            </value>
-            <value reportingGroupId="d7e27">
-               <occurrences>1</occurrences>
-               <subjectsAffected>1</subjectsAffected>
-               <subjectsExposed>67</subjectsExposed>
-            </value>
-         </values>
-      </nonSeriousAdverseEvent>
-      <nonSeriousAdverseEvent>
-         <description/>
-         <term>Aortic dissection</term>
-         <organSystem>
-            <eutctId>100000004866</eutctId>
-            <version>19</version>
-         </organSystem>
-         <assessmentMethod>
-            <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
-         </assessmentMethod>
-         <dictionaryOverridden>false</dictionaryOverridden>
-         <values>
-            <value reportingGroupId="d7e5">
-               <occurrences>0</occurrences>
-               <subjectsAffected>0</subjectsAffected>
-               <subjectsExposed>60</subjectsExposed>
-            </value>
-            <value reportingGroupId="d7e27">
-               <occurrences>1</occurrences>
-               <subjectsAffected>1</subjectsAffected>
-               <subjectsExposed>67</subjectsExposed>
-            </value>
-         </values>
-      </nonSeriousAdverseEvent>
-      <nonSeriousAdverseEvent>
-         <description/>
-         <term>Deep vein thrombosis</term>
-         <organSystem>
-            <eutctId>100000004866</eutctId>
-            <version>19</version>
-         </organSystem>
-         <assessmentMethod>
-            <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
-         </assessmentMethod>
-         <dictionaryOverridden>false</dictionaryOverridden>
-         <values>
-            <value reportingGroupId="d7e5">
-               <occurrences>0</occurrences>
-               <subjectsAffected>0</subjectsAffected>
-               <subjectsExposed>60</subjectsExposed>
-            </value>
-            <value reportingGroupId="d7e27">
-               <occurrences>1</occurrences>
-               <subjectsAffected>1</subjectsAffected>
                <subjectsExposed>67</subjectsExposed>
             </value>
          </values>
@@ -1033,7 +385,7 @@
          </assessmentMethod>
          <dictionaryOverridden>false</dictionaryOverridden>
          <values>
-            <value reportingGroupId="d7e5">
+            <value reportingGroupId="d27e5">
                <occurrences>1</occurrences>
                <subjectsAffected>1</subjectsAffected>
                <subjectsExposed>60</subjectsExposed>
@@ -1043,7 +395,7 @@
                   <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
                </fatalities>
             </value>
-            <value reportingGroupId="d7e27">
+            <value reportingGroupId="d27e27">
                <occurrences>0</occurrences>
                <subjectsAffected>0</subjectsAffected>
                <subjectsExposed>67</subjectsExposed>
@@ -1067,7 +419,7 @@
          </assessmentMethod>
          <dictionaryOverridden>false</dictionaryOverridden>
          <values>
-            <value reportingGroupId="d7e5">
+            <value reportingGroupId="d27e5">
                <occurrences>1</occurrences>
                <subjectsAffected>1</subjectsAffected>
                <subjectsExposed>60</subjectsExposed>
@@ -1077,7 +429,7 @@
                   <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
                </fatalities>
             </value>
-            <value reportingGroupId="d7e27">
+            <value reportingGroupId="d27e27">
                <occurrences>0</occurrences>
                <subjectsAffected>0</subjectsAffected>
                <subjectsExposed>67</subjectsExposed>
@@ -1101,7 +453,7 @@
          </assessmentMethod>
          <dictionaryOverridden>false</dictionaryOverridden>
          <values>
-            <value reportingGroupId="d7e5">
+            <value reportingGroupId="d27e5">
                <occurrences>0</occurrences>
                <subjectsAffected>0</subjectsAffected>
                <subjectsExposed>60</subjectsExposed>
@@ -1111,7 +463,7 @@
                   <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
                </fatalities>
             </value>
-            <value reportingGroupId="d7e27">
+            <value reportingGroupId="d27e27">
                <occurrences>1</occurrences>
                <subjectsAffected>1</subjectsAffected>
                <subjectsExposed>67</subjectsExposed>
@@ -1135,7 +487,7 @@
          </assessmentMethod>
          <dictionaryOverridden>false</dictionaryOverridden>
          <values>
-            <value reportingGroupId="d7e5">
+            <value reportingGroupId="d27e5">
                <occurrences>1</occurrences>
                <subjectsAffected>1</subjectsAffected>
                <subjectsExposed>60</subjectsExposed>
@@ -1145,7 +497,7 @@
                   <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
                </fatalities>
             </value>
-            <value reportingGroupId="d7e27">
+            <value reportingGroupId="d27e27">
                <occurrences>0</occurrences>
                <subjectsAffected>0</subjectsAffected>
                <subjectsExposed>67</subjectsExposed>
@@ -1169,7 +521,7 @@
          </assessmentMethod>
          <dictionaryOverridden>false</dictionaryOverridden>
          <values>
-            <value reportingGroupId="d7e5">
+            <value reportingGroupId="d27e5">
                <occurrences>0</occurrences>
                <subjectsAffected>0</subjectsAffected>
                <subjectsExposed>60</subjectsExposed>
@@ -1179,7 +531,7 @@
                   <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
                </fatalities>
             </value>
-            <value reportingGroupId="d7e27">
+            <value reportingGroupId="d27e27">
                <occurrences>1</occurrences>
                <subjectsAffected>1</subjectsAffected>
                <subjectsExposed>67</subjectsExposed>
@@ -1203,7 +555,7 @@
          </assessmentMethod>
          <dictionaryOverridden>false</dictionaryOverridden>
          <values>
-            <value reportingGroupId="d7e5">
+            <value reportingGroupId="d27e5">
                <occurrences>0</occurrences>
                <subjectsAffected>0</subjectsAffected>
                <subjectsExposed>60</subjectsExposed>
@@ -1213,7 +565,7 @@
                   <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
                </fatalities>
             </value>
-            <value reportingGroupId="d7e27">
+            <value reportingGroupId="d27e27">
                <occurrences>1</occurrences>
                <subjectsAffected>1</subjectsAffected>
                <subjectsExposed>67</subjectsExposed>
@@ -1237,7 +589,7 @@
          </assessmentMethod>
          <dictionaryOverridden>false</dictionaryOverridden>
          <values>
-            <value reportingGroupId="d7e5">
+            <value reportingGroupId="d27e5">
                <occurrences>0</occurrences>
                <subjectsAffected>0</subjectsAffected>
                <subjectsExposed>60</subjectsExposed>
@@ -1247,7 +599,7 @@
                   <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
                </fatalities>
             </value>
-            <value reportingGroupId="d7e27">
+            <value reportingGroupId="d27e27">
                <occurrences>1</occurrences>
                <subjectsAffected>1</subjectsAffected>
                <subjectsExposed>67</subjectsExposed>
@@ -1271,7 +623,7 @@
          </assessmentMethod>
          <dictionaryOverridden>false</dictionaryOverridden>
          <values>
-            <value reportingGroupId="d7e5">
+            <value reportingGroupId="d27e5">
                <occurrences>0</occurrences>
                <subjectsAffected>0</subjectsAffected>
                <subjectsExposed>60</subjectsExposed>
@@ -1281,7 +633,7 @@
                   <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
                </fatalities>
             </value>
-            <value reportingGroupId="d7e27">
+            <value reportingGroupId="d27e27">
                <occurrences>1</occurrences>
                <subjectsAffected>1</subjectsAffected>
                <subjectsExposed>67</subjectsExposed>
@@ -1305,7 +657,7 @@
          </assessmentMethod>
          <dictionaryOverridden>false</dictionaryOverridden>
          <values>
-            <value reportingGroupId="d7e5">
+            <value reportingGroupId="d27e5">
                <occurrences>0</occurrences>
                <subjectsAffected>0</subjectsAffected>
                <subjectsExposed>60</subjectsExposed>
@@ -1315,7 +667,7 @@
                   <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
                </fatalities>
             </value>
-            <value reportingGroupId="d7e27">
+            <value reportingGroupId="d27e27">
                <occurrences>1</occurrences>
                <subjectsAffected>1</subjectsAffected>
                <subjectsExposed>67</subjectsExposed>
@@ -1339,7 +691,7 @@
          </assessmentMethod>
          <dictionaryOverridden>false</dictionaryOverridden>
          <values>
-            <value reportingGroupId="d7e5">
+            <value reportingGroupId="d27e5">
                <occurrences>1</occurrences>
                <subjectsAffected>1</subjectsAffected>
                <subjectsExposed>60</subjectsExposed>
@@ -1349,7 +701,7 @@
                   <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
                </fatalities>
             </value>
-            <value reportingGroupId="d7e27">
+            <value reportingGroupId="d27e27">
                <occurrences>1</occurrences>
                <subjectsAffected>1</subjectsAffected>
                <subjectsExposed>67</subjectsExposed>
@@ -1373,7 +725,7 @@
          </assessmentMethod>
          <dictionaryOverridden>false</dictionaryOverridden>
          <values>
-            <value reportingGroupId="d7e5">
+            <value reportingGroupId="d27e5">
                <occurrences>1</occurrences>
                <subjectsAffected>1</subjectsAffected>
                <subjectsExposed>60</subjectsExposed>
@@ -1383,7 +735,7 @@
                   <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
                </fatalities>
             </value>
-            <value reportingGroupId="d7e27">
+            <value reportingGroupId="d27e27">
                <occurrences>0</occurrences>
                <subjectsAffected>0</subjectsAffected>
                <subjectsExposed>67</subjectsExposed>
@@ -1407,7 +759,7 @@
          </assessmentMethod>
          <dictionaryOverridden>false</dictionaryOverridden>
          <values>
-            <value reportingGroupId="d7e5">
+            <value reportingGroupId="d27e5">
                <occurrences>1</occurrences>
                <subjectsAffected>1</subjectsAffected>
                <subjectsExposed>60</subjectsExposed>
@@ -1417,7 +769,7 @@
                   <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
                </fatalities>
             </value>
-            <value reportingGroupId="d7e27">
+            <value reportingGroupId="d27e27">
                <occurrences>2</occurrences>
                <subjectsAffected>2</subjectsAffected>
                <subjectsExposed>67</subjectsExposed>
@@ -1441,7 +793,7 @@
          </assessmentMethod>
          <dictionaryOverridden>false</dictionaryOverridden>
          <values>
-            <value reportingGroupId="d7e5">
+            <value reportingGroupId="d27e5">
                <occurrences>0</occurrences>
                <subjectsAffected>0</subjectsAffected>
                <subjectsExposed>60</subjectsExposed>
@@ -1451,7 +803,7 @@
                   <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
                </fatalities>
             </value>
-            <value reportingGroupId="d7e27">
+            <value reportingGroupId="d27e27">
                <occurrences>1</occurrences>
                <subjectsAffected>1</subjectsAffected>
                <subjectsExposed>67</subjectsExposed>
@@ -1475,7 +827,7 @@
          </assessmentMethod>
          <dictionaryOverridden>false</dictionaryOverridden>
          <values>
-            <value reportingGroupId="d7e5">
+            <value reportingGroupId="d27e5">
                <occurrences>1</occurrences>
                <subjectsAffected>1</subjectsAffected>
                <subjectsExposed>60</subjectsExposed>
@@ -1485,7 +837,7 @@
                   <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
                </fatalities>
             </value>
-            <value reportingGroupId="d7e27">
+            <value reportingGroupId="d27e27">
                <occurrences>0</occurrences>
                <subjectsAffected>0</subjectsAffected>
                <subjectsExposed>67</subjectsExposed>
@@ -1509,7 +861,7 @@
          </assessmentMethod>
          <dictionaryOverridden>false</dictionaryOverridden>
          <values>
-            <value reportingGroupId="d7e5">
+            <value reportingGroupId="d27e5">
                <occurrences>0</occurrences>
                <subjectsAffected>0</subjectsAffected>
                <subjectsExposed>60</subjectsExposed>
@@ -1519,7 +871,7 @@
                   <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
                </fatalities>
             </value>
-            <value reportingGroupId="d7e27">
+            <value reportingGroupId="d27e27">
                <occurrences>1</occurrences>
                <subjectsAffected>1</subjectsAffected>
                <subjectsExposed>67</subjectsExposed>
@@ -1543,7 +895,7 @@
          </assessmentMethod>
          <dictionaryOverridden>false</dictionaryOverridden>
          <values>
-            <value reportingGroupId="d7e5">
+            <value reportingGroupId="d27e5">
                <occurrences>0</occurrences>
                <subjectsAffected>0</subjectsAffected>
                <subjectsExposed>60</subjectsExposed>
@@ -1553,7 +905,7 @@
                   <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
                </fatalities>
             </value>
-            <value reportingGroupId="d7e27">
+            <value reportingGroupId="d27e27">
                <occurrences>1</occurrences>
                <subjectsAffected>1</subjectsAffected>
                <subjectsExposed>67</subjectsExposed>
@@ -1577,7 +929,7 @@
          </assessmentMethod>
          <dictionaryOverridden>false</dictionaryOverridden>
          <values>
-            <value reportingGroupId="d7e5">
+            <value reportingGroupId="d27e5">
                <occurrences>1</occurrences>
                <subjectsAffected>1</subjectsAffected>
                <subjectsExposed>60</subjectsExposed>
@@ -1587,7 +939,7 @@
                   <deathsCausallyRelatedToTreatment>1</deathsCausallyRelatedToTreatment>
                </fatalities>
             </value>
-            <value reportingGroupId="d7e27">
+            <value reportingGroupId="d27e27">
                <occurrences>0</occurrences>
                <subjectsAffected>0</subjectsAffected>
                <subjectsExposed>67</subjectsExposed>
@@ -1611,7 +963,7 @@
          </assessmentMethod>
          <dictionaryOverridden>false</dictionaryOverridden>
          <values>
-            <value reportingGroupId="d7e5">
+            <value reportingGroupId="d27e5">
                <occurrences>0</occurrences>
                <subjectsAffected>0</subjectsAffected>
                <subjectsExposed>60</subjectsExposed>
@@ -1621,7 +973,7 @@
                   <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
                </fatalities>
             </value>
-            <value reportingGroupId="d7e27">
+            <value reportingGroupId="d27e27">
                <occurrences>3</occurrences>
                <subjectsAffected>3</subjectsAffected>
                <subjectsExposed>67</subjectsExposed>
@@ -1645,7 +997,7 @@
          </assessmentMethod>
          <dictionaryOverridden>false</dictionaryOverridden>
          <values>
-            <value reportingGroupId="d7e5">
+            <value reportingGroupId="d27e5">
                <occurrences>0</occurrences>
                <subjectsAffected>0</subjectsAffected>
                <subjectsExposed>60</subjectsExposed>
@@ -1655,7 +1007,7 @@
                   <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
                </fatalities>
             </value>
-            <value reportingGroupId="d7e27">
+            <value reportingGroupId="d27e27">
                <occurrences>2</occurrences>
                <subjectsAffected>2</subjectsAffected>
                <subjectsExposed>67</subjectsExposed>
@@ -1679,7 +1031,7 @@
          </assessmentMethod>
          <dictionaryOverridden>false</dictionaryOverridden>
          <values>
-            <value reportingGroupId="d7e5">
+            <value reportingGroupId="d27e5">
                <occurrences>0</occurrences>
                <subjectsAffected>0</subjectsAffected>
                <subjectsExposed>60</subjectsExposed>
@@ -1689,7 +1041,7 @@
                   <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
                </fatalities>
             </value>
-            <value reportingGroupId="d7e27">
+            <value reportingGroupId="d27e27">
                <occurrences>2</occurrences>
                <subjectsAffected>1</subjectsAffected>
                <subjectsExposed>67</subjectsExposed>
@@ -1713,7 +1065,7 @@
          </assessmentMethod>
          <dictionaryOverridden>false</dictionaryOverridden>
          <values>
-            <value reportingGroupId="d7e5">
+            <value reportingGroupId="d27e5">
                <occurrences>0</occurrences>
                <subjectsAffected>0</subjectsAffected>
                <subjectsExposed>60</subjectsExposed>
@@ -1723,7 +1075,7 @@
                   <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
                </fatalities>
             </value>
-            <value reportingGroupId="d7e27">
+            <value reportingGroupId="d27e27">
                <occurrences>1</occurrences>
                <subjectsAffected>1</subjectsAffected>
                <subjectsExposed>67</subjectsExposed>
@@ -1747,7 +1099,7 @@
          </assessmentMethod>
          <dictionaryOverridden>false</dictionaryOverridden>
          <values>
-            <value reportingGroupId="d7e5">
+            <value reportingGroupId="d27e5">
                <occurrences>0</occurrences>
                <subjectsAffected>0</subjectsAffected>
                <subjectsExposed>60</subjectsExposed>
@@ -1757,7 +1109,7 @@
                   <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
                </fatalities>
             </value>
-            <value reportingGroupId="d7e27">
+            <value reportingGroupId="d27e27">
                <occurrences>1</occurrences>
                <subjectsAffected>1</subjectsAffected>
                <subjectsExposed>67</subjectsExposed>
@@ -1781,7 +1133,7 @@
          </assessmentMethod>
          <dictionaryOverridden>false</dictionaryOverridden>
          <values>
-            <value reportingGroupId="d7e5">
+            <value reportingGroupId="d27e5">
                <occurrences>0</occurrences>
                <subjectsAffected>0</subjectsAffected>
                <subjectsExposed>60</subjectsExposed>
@@ -1791,7 +1143,7 @@
                   <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
                </fatalities>
             </value>
-            <value reportingGroupId="d7e27">
+            <value reportingGroupId="d27e27">
                <occurrences>1</occurrences>
                <subjectsAffected>1</subjectsAffected>
                <subjectsExposed>67</subjectsExposed>
@@ -1815,7 +1167,7 @@
          </assessmentMethod>
          <dictionaryOverridden>false</dictionaryOverridden>
          <values>
-            <value reportingGroupId="d7e5">
+            <value reportingGroupId="d27e5">
                <occurrences>1</occurrences>
                <subjectsAffected>1</subjectsAffected>
                <subjectsExposed>60</subjectsExposed>
@@ -1825,7 +1177,7 @@
                   <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
                </fatalities>
             </value>
-            <value reportingGroupId="d7e27">
+            <value reportingGroupId="d27e27">
                <occurrences>0</occurrences>
                <subjectsAffected>0</subjectsAffected>
                <subjectsExposed>67</subjectsExposed>
@@ -1849,7 +1201,7 @@
          </assessmentMethod>
          <dictionaryOverridden>false</dictionaryOverridden>
          <values>
-            <value reportingGroupId="d7e5">
+            <value reportingGroupId="d27e5">
                <occurrences>0</occurrences>
                <subjectsAffected>0</subjectsAffected>
                <subjectsExposed>60</subjectsExposed>
@@ -1859,7 +1211,7 @@
                   <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
                </fatalities>
             </value>
-            <value reportingGroupId="d7e27">
+            <value reportingGroupId="d27e27">
                <occurrences>1</occurrences>
                <subjectsAffected>1</subjectsAffected>
                <subjectsExposed>67</subjectsExposed>
@@ -1883,7 +1235,7 @@
          </assessmentMethod>
          <dictionaryOverridden>false</dictionaryOverridden>
          <values>
-            <value reportingGroupId="d7e5">
+            <value reportingGroupId="d27e5">
                <occurrences>0</occurrences>
                <subjectsAffected>0</subjectsAffected>
                <subjectsExposed>60</subjectsExposed>
@@ -1893,7 +1245,7 @@
                   <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
                </fatalities>
             </value>
-            <value reportingGroupId="d7e27">
+            <value reportingGroupId="d27e27">
                <occurrences>1</occurrences>
                <subjectsAffected>1</subjectsAffected>
                <subjectsExposed>67</subjectsExposed>
@@ -1917,7 +1269,7 @@
          </assessmentMethod>
          <dictionaryOverridden>false</dictionaryOverridden>
          <values>
-            <value reportingGroupId="d7e5">
+            <value reportingGroupId="d27e5">
                <occurrences>1</occurrences>
                <subjectsAffected>1</subjectsAffected>
                <subjectsExposed>60</subjectsExposed>
@@ -1927,7 +1279,7 @@
                   <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
                </fatalities>
             </value>
-            <value reportingGroupId="d7e27">
+            <value reportingGroupId="d27e27">
                <occurrences>0</occurrences>
                <subjectsAffected>0</subjectsAffected>
                <subjectsExposed>67</subjectsExposed>
@@ -1951,7 +1303,7 @@
          </assessmentMethod>
          <dictionaryOverridden>false</dictionaryOverridden>
          <values>
-            <value reportingGroupId="d7e5">
+            <value reportingGroupId="d27e5">
                <occurrences>1</occurrences>
                <subjectsAffected>1</subjectsAffected>
                <subjectsExposed>60</subjectsExposed>
@@ -1961,7 +1313,7 @@
                   <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
                </fatalities>
             </value>
-            <value reportingGroupId="d7e27">
+            <value reportingGroupId="d27e27">
                <occurrences>0</occurrences>
                <subjectsAffected>0</subjectsAffected>
                <subjectsExposed>67</subjectsExposed>
@@ -1985,7 +1337,7 @@
          </assessmentMethod>
          <dictionaryOverridden>false</dictionaryOverridden>
          <values>
-            <value reportingGroupId="d7e5">
+            <value reportingGroupId="d27e5">
                <occurrences>0</occurrences>
                <subjectsAffected>0</subjectsAffected>
                <subjectsExposed>60</subjectsExposed>
@@ -1995,7 +1347,7 @@
                   <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
                </fatalities>
             </value>
-            <value reportingGroupId="d7e27">
+            <value reportingGroupId="d27e27">
                <occurrences>1</occurrences>
                <subjectsAffected>1</subjectsAffected>
                <subjectsExposed>67</subjectsExposed>
@@ -2019,7 +1371,7 @@
          </assessmentMethod>
          <dictionaryOverridden>false</dictionaryOverridden>
          <values>
-            <value reportingGroupId="d7e5">
+            <value reportingGroupId="d27e5">
                <occurrences>0</occurrences>
                <subjectsAffected>0</subjectsAffected>
                <subjectsExposed>60</subjectsExposed>
@@ -2029,7 +1381,7 @@
                   <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
                </fatalities>
             </value>
-            <value reportingGroupId="d7e27">
+            <value reportingGroupId="d27e27">
                <occurrences>1</occurrences>
                <subjectsAffected>1</subjectsAffected>
                <subjectsExposed>67</subjectsExposed>
@@ -2053,7 +1405,7 @@
          </assessmentMethod>
          <dictionaryOverridden>false</dictionaryOverridden>
          <values>
-            <value reportingGroupId="d7e5">
+            <value reportingGroupId="d27e5">
                <occurrences>0</occurrences>
                <subjectsAffected>0</subjectsAffected>
                <subjectsExposed>60</subjectsExposed>
@@ -2063,7 +1415,7 @@
                   <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
                </fatalities>
             </value>
-            <value reportingGroupId="d7e27">
+            <value reportingGroupId="d27e27">
                <occurrences>4</occurrences>
                <subjectsAffected>2</subjectsAffected>
                <subjectsExposed>67</subjectsExposed>
@@ -2087,7 +1439,7 @@
          </assessmentMethod>
          <dictionaryOverridden>false</dictionaryOverridden>
          <values>
-            <value reportingGroupId="d7e5">
+            <value reportingGroupId="d27e5">
                <occurrences>0</occurrences>
                <subjectsAffected>0</subjectsAffected>
                <subjectsExposed>60</subjectsExposed>
@@ -2097,7 +1449,7 @@
                   <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
                </fatalities>
             </value>
-            <value reportingGroupId="d7e27">
+            <value reportingGroupId="d27e27">
                <occurrences>1</occurrences>
                <subjectsAffected>1</subjectsAffected>
                <subjectsExposed>67</subjectsExposed>
@@ -2121,7 +1473,7 @@
          </assessmentMethod>
          <dictionaryOverridden>false</dictionaryOverridden>
          <values>
-            <value reportingGroupId="d7e5">
+            <value reportingGroupId="d27e5">
                <occurrences>0</occurrences>
                <subjectsAffected>0</subjectsAffected>
                <subjectsExposed>60</subjectsExposed>
@@ -2131,7 +1483,7 @@
                   <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
                </fatalities>
             </value>
-            <value reportingGroupId="d7e27">
+            <value reportingGroupId="d27e27">
                <occurrences>1</occurrences>
                <subjectsAffected>1</subjectsAffected>
                <subjectsExposed>67</subjectsExposed>
@@ -2155,7 +1507,7 @@
          </assessmentMethod>
          <dictionaryOverridden>false</dictionaryOverridden>
          <values>
-            <value reportingGroupId="d7e5">
+            <value reportingGroupId="d27e5">
                <occurrences>0</occurrences>
                <subjectsAffected>0</subjectsAffected>
                <subjectsExposed>60</subjectsExposed>
@@ -2165,7 +1517,7 @@
                   <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
                </fatalities>
             </value>
-            <value reportingGroupId="d7e27">
+            <value reportingGroupId="d27e27">
                <occurrences>1</occurrences>
                <subjectsAffected>1</subjectsAffected>
                <subjectsExposed>67</subjectsExposed>
@@ -2189,7 +1541,7 @@
          </assessmentMethod>
          <dictionaryOverridden>false</dictionaryOverridden>
          <values>
-            <value reportingGroupId="d7e5">
+            <value reportingGroupId="d27e5">
                <occurrences>1</occurrences>
                <subjectsAffected>1</subjectsAffected>
                <subjectsExposed>60</subjectsExposed>
@@ -2199,7 +1551,7 @@
                   <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
                </fatalities>
             </value>
-            <value reportingGroupId="d7e27">
+            <value reportingGroupId="d27e27">
                <occurrences>0</occurrences>
                <subjectsAffected>0</subjectsAffected>
                <subjectsExposed>67</subjectsExposed>
@@ -2223,7 +1575,7 @@
          </assessmentMethod>
          <dictionaryOverridden>false</dictionaryOverridden>
          <values>
-            <value reportingGroupId="d7e5">
+            <value reportingGroupId="d27e5">
                <occurrences>0</occurrences>
                <subjectsAffected>0</subjectsAffected>
                <subjectsExposed>60</subjectsExposed>
@@ -2233,7 +1585,7 @@
                   <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
                </fatalities>
             </value>
-            <value reportingGroupId="d7e27">
+            <value reportingGroupId="d27e27">
                <occurrences>1</occurrences>
                <subjectsAffected>1</subjectsAffected>
                <subjectsExposed>67</subjectsExposed>
@@ -2257,7 +1609,7 @@
          </assessmentMethod>
          <dictionaryOverridden>false</dictionaryOverridden>
          <values>
-            <value reportingGroupId="d7e5">
+            <value reportingGroupId="d27e5">
                <occurrences>1</occurrences>
                <subjectsAffected>1</subjectsAffected>
                <subjectsExposed>60</subjectsExposed>
@@ -2267,7 +1619,7 @@
                   <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
                </fatalities>
             </value>
-            <value reportingGroupId="d7e27">
+            <value reportingGroupId="d27e27">
                <occurrences>0</occurrences>
                <subjectsAffected>0</subjectsAffected>
                <subjectsExposed>67</subjectsExposed>
@@ -2291,7 +1643,7 @@
          </assessmentMethod>
          <dictionaryOverridden>false</dictionaryOverridden>
          <values>
-            <value reportingGroupId="d7e5">
+            <value reportingGroupId="d27e5">
                <occurrences>0</occurrences>
                <subjectsAffected>0</subjectsAffected>
                <subjectsExposed>60</subjectsExposed>
@@ -2301,7 +1653,7 @@
                   <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
                </fatalities>
             </value>
-            <value reportingGroupId="d7e27">
+            <value reportingGroupId="d27e27">
                <occurrences>1</occurrences>
                <subjectsAffected>1</subjectsAffected>
                <subjectsExposed>67</subjectsExposed>
@@ -2325,7 +1677,7 @@
          </assessmentMethod>
          <dictionaryOverridden>false</dictionaryOverridden>
          <values>
-            <value reportingGroupId="d7e5">
+            <value reportingGroupId="d27e5">
                <occurrences>0</occurrences>
                <subjectsAffected>0</subjectsAffected>
                <subjectsExposed>60</subjectsExposed>
@@ -2335,7 +1687,7 @@
                   <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
                </fatalities>
             </value>
-            <value reportingGroupId="d7e27">
+            <value reportingGroupId="d27e27">
                <occurrences>1</occurrences>
                <subjectsAffected>1</subjectsAffected>
                <subjectsExposed>67</subjectsExposed>
@@ -2359,7 +1711,7 @@
          </assessmentMethod>
          <dictionaryOverridden>false</dictionaryOverridden>
          <values>
-            <value reportingGroupId="d7e5">
+            <value reportingGroupId="d27e5">
                <occurrences>1</occurrences>
                <subjectsAffected>1</subjectsAffected>
                <subjectsExposed>60</subjectsExposed>
@@ -2369,7 +1721,7 @@
                   <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
                </fatalities>
             </value>
-            <value reportingGroupId="d7e27">
+            <value reportingGroupId="d27e27">
                <occurrences>2</occurrences>
                <subjectsAffected>2</subjectsAffected>
                <subjectsExposed>67</subjectsExposed>
@@ -2393,7 +1745,7 @@
          </assessmentMethod>
          <dictionaryOverridden>false</dictionaryOverridden>
          <values>
-            <value reportingGroupId="d7e5">
+            <value reportingGroupId="d27e5">
                <occurrences>0</occurrences>
                <subjectsAffected>0</subjectsAffected>
                <subjectsExposed>60</subjectsExposed>
@@ -2403,7 +1755,7 @@
                   <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
                </fatalities>
             </value>
-            <value reportingGroupId="d7e27">
+            <value reportingGroupId="d27e27">
                <occurrences>1</occurrences>
                <subjectsAffected>1</subjectsAffected>
                <subjectsExposed>67</subjectsExposed>
@@ -2427,7 +1779,7 @@
          </assessmentMethod>
          <dictionaryOverridden>false</dictionaryOverridden>
          <values>
-            <value reportingGroupId="d7e5">
+            <value reportingGroupId="d27e5">
                <occurrences>1</occurrences>
                <subjectsAffected>1</subjectsAffected>
                <subjectsExposed>60</subjectsExposed>
@@ -2437,7 +1789,7 @@
                   <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
                </fatalities>
             </value>
-            <value reportingGroupId="d7e27">
+            <value reportingGroupId="d27e27">
                <occurrences>3</occurrences>
                <subjectsAffected>3</subjectsAffected>
                <subjectsExposed>67</subjectsExposed>
@@ -2461,7 +1813,7 @@
          </assessmentMethod>
          <dictionaryOverridden>false</dictionaryOverridden>
          <values>
-            <value reportingGroupId="d7e5">
+            <value reportingGroupId="d27e5">
                <occurrences>1</occurrences>
                <subjectsAffected>1</subjectsAffected>
                <subjectsExposed>60</subjectsExposed>
@@ -2471,7 +1823,7 @@
                   <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
                </fatalities>
             </value>
-            <value reportingGroupId="d7e27">
+            <value reportingGroupId="d27e27">
                <occurrences>1</occurrences>
                <subjectsAffected>1</subjectsAffected>
                <subjectsExposed>67</subjectsExposed>

@@ -32,11 +32,11 @@ safety_summary <- function(data, exposed, excess_deaths=0, freq_threshold=0, soc
   }
   data <- data[,name_check]
   # check if name and length of exposed matches
-  if( inherits(data$group, "factor") ){
-    group_names <- levels(data$group)
-  } else{
-    group_names <- sort(unique(data$group))
+  if( !inherits(data$group, "factor") ){
+    data$group <- factor(data$group)
+
   }
+  group_names <- levels(data$group)
   if( length(exposed)!=length(group_names)){
     stop("the argument 'exposed' needs to be the same length as the number of groups")
   }

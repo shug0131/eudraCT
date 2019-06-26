@@ -26,13 +26,19 @@ ghpath: "https://github.com/shug0131/eudraCT/blob/master"
 
 # Build settings
 markdown: kramdown
-theme: minima
+theme:  minima #"just-the-docs" #
+#remote_theme: pmarsceill/just-the-docs
+#color_scheme: "dark"
+#search_enabled: true
+
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
 header_pages:
   - index.md
   - downloads.md
   - feedback.md
+  - faq.md
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
