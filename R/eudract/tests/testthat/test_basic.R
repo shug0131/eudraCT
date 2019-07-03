@@ -32,8 +32,8 @@ test_that("convert to eudract",{
 
 test_that("trying to use Selenium",{
 
-skip_on_appveyor("not for testing yet")
-skip_on_travis("not for testing yet")
+skip_on_appveyor()
+skip_on_travis()
 
 library(RSelenium)
 #http://support.divio.com/articles/646695-how-to-use-a-directory-outside-c-users-with-docker-toolbox-docker-for-windows
