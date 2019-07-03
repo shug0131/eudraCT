@@ -34,7 +34,7 @@ r_binary_packages:
   - rcpp
 
 r_packages:
-
+  - RSelenium
 
 notifications:
   email:

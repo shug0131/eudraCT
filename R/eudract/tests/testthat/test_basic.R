@@ -29,9 +29,17 @@ test_that("convert to eudract",{
 }
 )
 
+
+test_that("trying to use Selenium",{
+
+skip_on_appveyor("not for testing yet")
+skip_on_travis("not for testing yet")
+
 library(RSelenium)
 #http://support.divio.com/articles/646695-how-to-use-a-directory-outside-c-users-with-docker-toolbox-docker-for-windows
-#docker run -d -p 4445:4444 -p 5901:5900 -v $(pwd):/home/statistics selenium/standalone-firefox-debug:2.53.0
+#docker run -d -p 4445:4444 -p 5901:5900 -v ${pwd}:/home/statistics selenium/standalone-firefox-debug:2.53.0
+# vnc viewer  password = secret
+
 remDr <- remoteDriver(
   remoteServerAddr = "192.168.99.100",
   port = 4445L,
@@ -74,10 +82,17 @@ remDr$getCurrentWindowHandle()
 
 remDr$sendKeysToAlert(list("boo"))
 
-add_file$sendKeysToElement(list("hello"))
+remDr$close()
+
+testCsv <- tempfile(fileext = ".csv")
+x <- data.frame(a = 1:4, b = 5:8, c = letters[1:4])
+write.csv(x, testCsv, row.names = FALSE)
+
+
+add_file2$sendKeysToElement(list(testCsv))
 
 add_file2$clickElement()
-
+add_file2$getElementText()
 
 
 remDr$screenshot(display=TRUE)
@@ -85,3 +100,5 @@ remDr$getTitle()
 
 
 shell("docker stop $(docker ps -q)")
+}
+)
