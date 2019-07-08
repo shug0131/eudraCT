@@ -18,12 +18,6 @@ Compressed folders with self-contained tools are available to download here:
 
 This web-page is simply a front-end to a [github repository](https://github.com/shug0131/eudraCT) . Hence the links below can be accessed via directory navigation. I've added further explanation as to the final objectives, but please be aware that this currently simply a partial  mirror of the local directory hosting the project with Cambridge CTU: No guarantees
 
-# Specification
-
-This is a document giving the specification for the project and will be used to perform testing against. It is finalised.
-
- * [Specification]( {{ site.ghpath }}/Specification/Eudract%20Tool%20Specification%20V0.3.docx?raw=true )
-
 # Software Tools
 
 The intention is for each of the major software packages ([R](https://cran.r-project.org/), [Stata](https://www.stata.com/), [SAS](https://www.sas.com/)) to have a set of code, libraries, macros, to be used semi-automatically. The format of the original safety data cannot be totally standardised, and depends on each individual clinical trial's database. It is assumed however that it is in the format of one line per event observed, as per the specifications.  
@@ -71,16 +65,3 @@ If the user can create the summary statistics inside stata, then there are now t
 
 The scripts used to effect XSLT transformations, with schema files and related data.
 [XSLT]( {{ site.ghpath }}/xml%20tools)
-
-
-# Manuals and Training
-
-A set of manuals will be produced.
-
-# Testing
-
-Formal unit testing will be provided. It is the intention that any end user will be able to replicate the tests described here, and also be able to compare their outputs to a set of reference outputs to be doucmented here.
-
-Preliminary outlines of testing are in the excel spreadsheet
-
-* [Testing specifications]( {{ site.ghpath }}/testing/Testing%20Script%20V0.1.xslx?raw=true )

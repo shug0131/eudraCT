@@ -37,8 +37,9 @@ plugins:
 header_pages:
   - index.md
   - downloads.md
-  - feedback.md
+  - documents.md
   - faq.md
+  - feedback.md
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
