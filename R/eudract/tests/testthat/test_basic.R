@@ -79,12 +79,7 @@ SERIOUS <- cbind(all_soc[rep(1:nrow(all_soc),n_arm ),],
                  occurrencesCausallyRelatedToTreatment=related,
                  deathsCausallyRelatedToTreatment=related_deaths
                  )
-wd <- getwd()
-if(!is_testing()){setwd("tests/testthat")}
-write.csv(GROUP, "GROUP.csv")
-write.csv(SERIOUS, "SERIOUS.csv")
-write.csv(NONSERIOUS, "NONSERIOUS.csv")
-setwd(wd)
+
 
 ### Now create individual patient-event level data.
 
@@ -168,6 +163,17 @@ for( rx_index in 1:nrow(GROUP)){
     events <- rbind(events, new_rows)
   }
 }
+
+
+wd <- getwd()
+if(!is_testing()){setwd("tests/testthat")}
+write.csv(GROUP, "GROUP.csv")
+write.csv(SERIOUS, "SERIOUS.csv")
+write.csv(NONSERIOUS, "NONSERIOUS.csv")
+write.csv(events, "events.csv")
+setwd(wd)
+
+
 
 result <- safety_summary(events, n_exposed, soc_index="soc_term")
 
