@@ -14,6 +14,8 @@ library(xml2)
 
 #create the answer data
 
+set.seed(1333)
+
 n_arm <- 3
 n_exposed <- c(20,22,18)
 r_bound <- function(n,upper=100,lower=0,mean=(upper+lower)/2){
@@ -25,7 +27,9 @@ title <- paste("Group", toupper(letters[1:n_arm]))
 ae_count <- r_bound(n_arm,n_exposed)
 sae_count <- r_bound(n_arm,n_exposed)
 all_death_count <- r_bound(n_arm,n_exposed)
-ae_death_count <- r_bound(n_arm, pmin(all_death_count,sae_count))
+ae_death_count <- r_bound(n_arm,
+                          lower=pmax(0, all_death_count+sae_count-n_exposed),
+                          upper= pmin(all_death_count,sae_count))
 GROUP <- data.frame(
   title=title,
   deathsResultingFromAdverseEvents=ae_death_count,
@@ -47,7 +51,14 @@ occurrences <- r_bound(n_term_long, lower=subjects, upper=ifelse(subjects==0,0,s
 NONSERIOUS <- cbind(all_soc[rep(1:nrow(all_soc),n_arm ),],
                     groupTitle=rep(title, rep(nrow(all_soc),n_arm)),
                     subjectsAffected=subjects,
-                    occurrences=occurrences)
+                    occurrences=occurrences, stringsAsFactors=FALSE)
+
+# Check that the sum across tersm, by group, of #subjects is > GROUP$subjects
+
+if( any(
+with(NONSERIOUS,tapply(subjectsAffected,groupTitle, sum))-GROUP$subjectsAffectedByNonSeriousAdverseEvents<0)
+){warning("This simulation may fail- not enough subjects in NONSERIOUS")}
+
 
 
 sae_long <- rep(GROUP$subjectsAffectedBySeriousAdverseEvents,rep(length(term),n_arm))
@@ -70,15 +81,19 @@ subjects <- r_bound(n_term_long,lower=deaths, upper=sae_long)
 occurrences <- r_bound(n_term_long, lower=subjects, upper=ifelse(subjects==0,0,subjects+10))
 related <- r_bound(n_term_long, upper=occurrences)
 
-related_deaths <- r_bound(n_term_long, upper=pmin(deaths, related))
+related_deaths <- r_bound(n_term_long, lower=pmax(0,related+deaths-occurrences), upper=pmin(deaths, related))
 SERIOUS <- cbind(all_soc[rep(1:nrow(all_soc),n_arm ),],
                  groupTitle=rep(title, rep(nrow(all_soc),n_arm)),
                  subjectsAffected=subjects,
                  occurrences=occurrences,
                  deaths=deaths,
                  occurrencesCausallyRelatedToTreatment=related,
-                 deathsCausallyRelatedToTreatment=related_deaths
+                 deathsCausallyRelatedToTreatment=related_deaths, stringsAsFactors=FALSE
                  )
+
+if( any(
+  with(SERIOUS,tapply(subjectsAffected,groupTitle, sum))-GROUP$subjectsAffectedBySeriousAdverseEvents<0)
+){warning("This simulation may fail- not enough subjects in SERIOUS")}
 
 
 ### Now create individual patient-event level data.
@@ -88,16 +103,38 @@ SERIOUS <- cbind(all_soc[rep(1:nrow(all_soc),n_arm ),],
 
 subjid <- 1:sum(n_exposed)
 rx <- rep(title, n_exposed)
-events <-data.frame( matrix(NA, nrow = 0, ncol=8))
+events <-data.frame( matrix(NA, nrow = 0, ncol=8), stringsAsFactors = FALSE)
 
 resample <- function(x, ...) x[sample.int(length(x), ...)]
 sample(2,3, replace=TRUE)
 resample(2,3,replace=TRUE)
 
+
+# function factory to keep looping round selecting from a vector, starting where you finished before
+# giving back a vector of the desired length. Call it once to create the function
+
+loop <- function(obj, start=1){
+  obj_length <- length(obj)
+ #start <- 1
+  function(n){
+    if(n>0){
+      index <- (start-1):(start+n-2) %% obj_length +1
+      start <<- index[n]+1
+      obj[index]
+    }
+  }
+}
+
+
+
+
 for( rx_index in 1:nrow(GROUP)){
   #NonSerious
   all_subjects <- resample(subset(subjid,rx==GROUP[rx_index,"title"]),
                          GROUP[rx_index,"subjectsAffectedByNonSeriousAdverseEvents"])
+  # To guarantee that they all will get used !!
+  subject_loop <- loop(all_subjects)
+
 
   # This doesn't guarantee that they all will get used !!
   ae_by_group <- subset(NONSERIOUS, groupTitle==GROUP[rx_index,"title"] & occurrences>0)
@@ -105,7 +142,8 @@ for( rx_index in 1:nrow(GROUP)){
   for( term_index in 1:nrow(ae_by_group)){
     n_subs <- ae_by_group[term_index,"subjectsAffected"]
     n_occurs <- ae_by_group[term_index,"occurrences"]
-    subjects <- resample(all_subjects,n_subs)
+    # To guarantee that they all will get used !!
+    subjects <- subject_loop(n_subs) #resample(all_subjects,n_subs)
     repeats <- resample(subjects,n_occurs-n_subs , replace=TRUE)
     occurs <- c(subjects, repeats)
     serious <- rep(0, n_occurs)
@@ -114,7 +152,7 @@ for( rx_index in 1:nrow(GROUP)){
     new_rows <- cbind(ae_by_group[term_index, c("soc","term")],
                       subjid=occurs,
                       serious, related, fatal,
-                      group=GROUP[rx_index,"title"]
+                      group=GROUP[rx_index,"title"],row.names=NULL
     )
     events <- rbind(events, new_rows)
   }
@@ -123,6 +161,9 @@ for( rx_index in 1:nrow(GROUP)){
   all_subjects <- resample(subset(subjid,rx==GROUP[rx_index,"title"]),
                          GROUP[rx_index,"subjectsAffectedBySeriousAdverseEvents"])
   not_yet_dead <- all_subjects
+  #to guarantee they all get uesed
+  subject_loop <- loop(not_yet_dead)
+
   sae_by_group <- subset(SERIOUS, groupTitle==GROUP[rx_index,"title"] & occurrences>0)
 
   for( term_index in 1:nrow(sae_by_group)){
@@ -138,7 +179,10 @@ for( rx_index in 1:nrow(GROUP)){
     n_occurs <- sae_by_group[term_index,"occurrences"]
     n_related <- sae_by_group[term_index,"occurrencesCausallyRelatedToTreatment"]
     n_fatal_related <- sae_by_group[term_index,"deathsCausallyRelatedToTreatment"]
-    subjects <- resample(the_rest, n_subs-n_fatal_occurs)
+    ###to guarantee they all get uesed
+    new_start <- environment(subject_loop)$start
+    subject_loop <- loop(the_rest, start=new_start)
+    subjects <- subject_loop(n_subs-n_fatal_occurs)#resample(the_rest, n_subs-n_fatal_occurs)
     repeats <- resample(c(fatal_occurs,subjects),n_occurs-n_subs , replace=TRUE)
     occurs <- c(fatal_occurs, subjects, repeats)
     serious <- rep(1, n_occurs)
@@ -158,9 +202,9 @@ for( rx_index in 1:nrow(GROUP)){
     new_rows <- cbind(sae_by_group[term_index, c("soc","term")],
                       subjid=occurs,
                       serious, related, fatal,
-                      group=GROUP[rx_index,"title"]
+                      group=GROUP[rx_index,"title"], row.names=NULL
     )
-    events <- rbind(events, new_rows)
+    events <- rbind(events, new_rows, stringsAsFactors=FALSE)
   }
 }
 
@@ -177,24 +221,44 @@ setwd(wd)
 
 result <- safety_summary(events, n_exposed, soc_index="soc_term")
 
-
-result$GROUP
-GROUP
+test_that("compare GROUP input and output",{
+expect_true(
+  all(result$GROUP$subjectsAffectedBySeriousAdverseEvents ==GROUP$subjectsAffectedBySeriousAdverseEvents)
+)
+  expect_true(
+    all(result$GROUP$subjectsAffectedByNonSeriousAdverseEvents ==GROUP$subjectsAffectedByNonSeriousAdverseEvents)
+  )
+  expect_true(
+    all(result$GROUP$subjectsExposed ==GROUP$subjectsExposed)
+  )
+  expect_true(
+    all(result$GROUP$deathsResultingFromAdverseEvents ==GROUP$deathsResultingFromAdverseEvents)
+  )
+}
+)
 
 
 
 compare <- dplyr::left_join(result$NON_SERIOUS, NONSERIOUS, by=c("groupTitle","term"))
-with(compare, as.numeric(subjectsAffected.x) - as.numeric(subjectsAffected.y))
-with(compare, as.numeric(occurrences.x) - as.numeric(occurrences.y))
+
+test_that("Nonserious",{
+  expect_true( all(with(compare, as.numeric(subjectsAffected.x) - as.numeric(subjectsAffected.y))==0))
+  expect_true( all(with(compare, as.numeric(occurrences.x) - as.numeric(occurrences.y))==0))
+}
+)
+
 
 
 compare <- dplyr::left_join(result$SERIOUS, SERIOUS, by=c("groupTitle","term"))
-with(compare, as.numeric(subjectsAffected.x) - as.numeric(subjectsAffected.y))
-with(compare, as.numeric(occurrences.x) - as.numeric(occurrences.y))
-with(compare, as.numeric(deaths.x) - as.numeric(deaths.y))
-with(compare, as.numeric(occurrencesCausallyRelatedToTreatment.x) - as.numeric(occurrencesCausallyRelatedToTreatment.y))
-with(compare, as.numeric(deathsCausallyRelatedToTreatment.x) - as.numeric(deathsCausallyRelatedToTreatment.y))
 
+test_that("Serious",{
+  expect_true(all(with(compare, as.numeric(subjectsAffected.x) - as.numeric(subjectsAffected.y))==0))
+  expect_true(all(with(compare, as.numeric(occurrences.x) - as.numeric(occurrences.y))==0))
+  expect_true(all(with(compare, as.numeric(deaths.x) - as.numeric(deaths.y))==0))
+  expect_true(all(with(compare, as.numeric(occurrencesCausallyRelatedToTreatment.x) - as.numeric(occurrencesCausallyRelatedToTreatment.y))==0))
+  expect_true(all(with(compare, as.numeric(deathsCausallyRelatedToTreatment.x) - as.numeric(deathsCausallyRelatedToTreatment.y))==0))
+}
+)
 
 safety_statistics <- safety_summary(safety, exposed=c("Experimental"=60,"Control"=67))
 
