@@ -1,0 +1,68 @@
+#Check the GROUP file contains exactely the following variables: title, deathsResultingFromAdverseEvents, subjectsAffectedBySeriousAdverseEvents, subjectsAffectedByNonSeriousAdverseEvents, subjectsExposed, deathsAllCauses
+setwd(file.path("V:", "STATISTICS", "NON STUDY FOLDER", "Academic Research", "Eudract Tool", "testing", "data"))
+getwd()
+
+test_groupdata <- read.csv(file="GROUP.csv")
+any(colnames(test_groupdata) == "title")
+any(colnames(test_groupdata) == "deathsResultingFromAdverseEvents")
+any(colnames(test_groupdata) == "subjectsAffectedBySeriousAdverseEvents")
+any(colnames(test_groupdata) == "subjectsAffectedByNonSeriousAdverseEvents")
+any(colnames(test_groupdata) == "subjectsExposed")
+any(colnames(test_groupdata) == "deathsAllCauses")
+
+#Check the NONSERIOUS file contains exactely the following variables: groupTitle, subjectsAffected, occurrences, term, eutctId
+
+test_nonseriousdata <- read.csv(file="NONSERIOUS.csv")
+any(colnames(test_nonseriousdata) == "groupTitle")
+any(colnames(test_nonseriousdata) == "subjectsAffected")
+any(colnames(test_nonseriousdata) == "occurrences")
+any(colnames(test_nonseriousdata) == "term")
+any(colnames(test_nonseriousdata) == "eutctId")
+
+
+#Check the SERIOUS file contains exactely the following variables: groupTitle, subjectsAffected, occurrences, term, eutctId, occurrencesCausallyRelatedToTreatment, deaths, deathsCausallyRelatedToTreatment
+
+test_seriousdata <- read.csv(file="SERIOUS.csv")
+any(colnames(test_seriousdata) == "groupTitle")
+any(colnames(test_seriousdata) == "subjectsAffected")
+any(colnames(test_seriousdata) == "occurrences")
+any(colnames(test_seriousdata) == "term")
+any(colnames(test_seriousdata) == "eutctId")
+any(colnames(test_seriousdata) == "occurrencesCausallyRelatedToTreatment")
+any(colnames(test_seriousdata) == "deaths")
+any(colnames(test_seriousdata) == "deathsCausallyRelatedToTreatment")
+
+#Check all soc in the serious file are contained in the valid soc list
+test_validsoc <- read.csv(file="all_soc.csv")
+serious_soc<-test_seriousdata$soc
+soclist<- test_validsoc$soc
+serious_soc %in% soclist
+
+#Check all terms in the serious file are contained in the valid soc term list
+test_validsoc <- read.csv(file="all_soc.csv")
+serious_term<-test_seriousdata$term
+termlist<- test_validsoc$term
+serious_term %in% termlist
+
+#Check all soc in the nonserious file are contained in the valid soc list
+test_validsoc <- read.csv(file="all_soc.csv")
+nonserious_soc<-test_nonseriousdata$soc
+soclist<- test_validsoc$soc
+nonserious_soc %in% soclist
+
+#Check all terms in the nonserious file are contained in the valid soc term list
+test_validsoc <- read.csv(file="all_soc.csv")
+nonserious_term<-test_nonseriousdata$term
+termlist<- test_validsoc$term
+nonserious_term %in% termlist
+
+#Check the presence of the minimal set of variables: subjid, term, soc, serious, related, fatal, group
+test_eventsdata <- read.csv(file="events.csv")
+any(colnames(test_seriousdata) == "subjid")
+any(colnames(test_seriousdata) == "term")
+any(colnames(test_seriousdata) == "soc")
+any(colnames(test_seriousdata) == "serious")
+any(colnames(test_seriousdata) == "related")
+any(colnames(test_seriousdata) == "fatal")
+any(colnames(test_seriousdata) == "group")
+
