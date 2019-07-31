@@ -58,11 +58,11 @@ nonserious_term %in% termlist
 
 #Check the presence of the minimal set of variables: subjid, term, soc, serious, related, fatal, group
 test_eventsdata <- read.csv(file="events.csv")
-any(colnames(test_seriousdata) == "subjid")
-any(colnames(test_seriousdata) == "term")
-any(colnames(test_seriousdata) == "soc")
-any(colnames(test_seriousdata) == "serious")
-any(colnames(test_seriousdata) == "related")
-any(colnames(test_seriousdata) == "fatal")
-any(colnames(test_seriousdata) == "group")
+any(colnames(test_eventsdata) == "subjid")
+any(colnames(test_eventsdata) == "term")
+any(colnames(test_eventsdata) == "soc")
+any(colnames(test_eventsdata) == "serious")
+any(colnames(test_eventsdata) == "related")
+any(colnames(test_eventsdata) == "fatal")
+any(colnames(test_eventsdata) == "group")
 
