@@ -30,6 +30,7 @@ safety_summary <- function(data, exposed, excess_deaths=0, freq_threshold=0, soc
     stop( paste("your input data are missing the following variables:",
                 paste(var_names[!name_check], collapse=", ")))
   }
+  name_check <-  names(data) %in% var_names
   data <- data[,name_check]
   # check if name and length of exposed matches
   if( !inherits(data$group, "factor") ){
