@@ -12,7 +12,7 @@ Compressed folders with self-contained tools are available to download here:
 * [R package source]({{ site.ghpath }}/R/eudract_0.2.0.tar.gz?raw=true)
 * [R package windows binary]({{ site.ghpath }}/R/eudract_0.2.0.zip?raw=true)
 * [SAS]({{ site.ghpath }}/SAS/SAS%20Eudract%20Tools.zip?raw=true)
-* Stata equivalent is in preparation see below for more details
+* [Stata]({{ site.ghpath }}/Stata/Stata%20Eudract%20Tools.zip?raw=true)
 
 #  Source Code
 
@@ -28,7 +28,7 @@ The statistical packages will be used to compute the summary statistics needed, 
 
 There is now an R package in development that can be installed directly from github using the R command.
 ~~~~
-devtools::install_github("shug0131/eudraCT/R/eudract")
+devtools::install_github("shug0131/eudraCT/R/eudract", build_vignettes = TRUE)
 ~~~~
 
 A worked example is given here
@@ -55,6 +55,8 @@ A limitation in SAS is that variable names cannot be more than 32 characters, bu
 [SAS Example]( {{ site.ghpath }}/SAS)
 
 ## Stata
+
+There is now a fully worked and self-sufficient example using Stata in the directory. Start with the file "safety_scriptv0.1.do" and see the comments and "README.txt" file.
 
 If the user can create the summary statistics inside stata, then there are now tools that can convert into xml for upload. Stata saves the internal data into xml format using an in-built command "xmlsave", and then we have provided xslt files that convert. Stata can call a shell command to effect these transformations.
 
