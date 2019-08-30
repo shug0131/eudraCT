@@ -1,11 +1,14 @@
 #' Calculate frequency tables from a rectangular data frame with one row per subject-event
 #'
-#' @param data a data set containing the following columns: \code{subjid, term, soc, serious, related, fatal, group}
+#' @param data a data set containing the following columns: \code{subjid, term, soc, serious, related, fatal, group}.
+#' See \code{\link{safety}} for more details.
 #' @param exposed a numeric vector giving the numbers of subjects exposed in each group.
+#' This needs to be supplied directly by the user, and cannot be inferred from the input \code{data}
+#' with one row per patient-event.
 #' To ensure the ordering is correct either, name the vector with names matching the values in \code{data$group}, or
 #' ensure that the data$group is an ordered factor, or relying on alphabetical ordering of the values in
 #' \code{data$group}
-#' @param excess_deaths a numeric vector giving the number of extra deaths not reporting within \code{data}. Defaults to 0.
+#' @param excess_deaths a numeric vector giving the number of extra deaths not reported within \code{data}. Defaults to 0.
 #' @param freq_threshold a value on a percentage scale at which to remove events if the incidence falls below. Defaults to 0
 #' @param soc_index a character vector either "meddra" or "soc_term", which is used to identify if the soc variable in data gives the numerical meddra code or the description in English.
 #' @return a list of three dataframes: GROUP, SERIOUS, NON_SERIOUS. Each contains the summary statistics required by EudraCT, and is suitable for export.
@@ -98,7 +101,7 @@ safety_summary <- function(data, exposed, excess_deaths=0, freq_threshold=0, soc
 
   # filter
   if( freq_threshold>0){
-    non_serious %<>% left_join(group, by=c("groupTitle"="group")) %>%
+    non_serious %<>% left_join(group, by=c("groupTitle"="title")) %>%
       mutate( rate=subjectsAffected/subjectsExposed*100) %>% group_by(term,eutctId) %>%
       dplyr::filter( max(rate)>=freq_threshold) %>% ungroup %>%
       select(groupTitle,subjectsAffected, occurrences,term,eutctId)
@@ -150,6 +153,7 @@ df_to_char <- function(df){
 #' @param x a safety_summary object
 #' @param ... extra arguments for the generic print method
 #' @export
+#' @keywords internal
 #' @importFrom utils head
 
 print.safety_summary <- function(x,...){
@@ -169,6 +173,7 @@ print.safety_summary <- function(x,...){
 #' @param non_serious a data frame that contains the non-serious term-group level statistics
 #' @param serious a data frame that containts the serious term-group level statistics
 #' @return  a safety_summary object
+#' @keywords internal
 #' @export
 
 create.safety_summary <- function(group,non_serious, serious){

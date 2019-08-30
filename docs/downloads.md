@@ -9,8 +9,8 @@ toc: true
 Compressed folders with self-contained tools are available to download here:
 
 
-* [R package source]({{ site.ghpath }}/R/eudract_0.1.0.tar.gz?raw=true)
-* [R package windows binary]({{ site.ghpath }}/R/eudract_0.1.0.zip?raw=true)
+* [R package source]({{ site.ghpath }}/R/eudract_0.2.0.tar.gz?raw=true)
+* [R package windows binary]({{ site.ghpath }}/R/eudract_0.2.0.zip?raw=true)
 * [SAS]({{ site.ghpath }}/SAS/SAS%20Eudract%20Tools.zip?raw=true)
 * Stata equivalent is in preparation see below for more details
 

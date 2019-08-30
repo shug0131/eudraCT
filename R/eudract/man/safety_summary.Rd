@@ -8,14 +8,17 @@ safety_summary(data, exposed, excess_deaths = 0, freq_threshold = 0,
   soc_index = c("meddra", "soc_term"))
 }
 \arguments{
-\item{data}{a data set containing the following columns: \code{subjid, term, soc, serious, related, fatal, group}}
+\item{data}{a data set containing the following columns: \code{subjid, term, soc, serious, related, fatal, group}.
+See \code{\link{safety}} for more details.}
 
 \item{exposed}{a numeric vector giving the numbers of subjects exposed in each group.
+This needs to be supplied directly by the user, and cannot be inferred from the input \code{data}
+with one row per patient-event.
 To ensure the ordering is correct either, name the vector with names matching the values in \code{data$group}, or
 ensure that the data$group is an ordered factor, or relying on alphabetical ordering of the values in
 \code{data$group}}
 
-\item{excess_deaths}{a numeric vector giving the number of extra deaths not reporting within \code{data}. Defaults to 0.}
+\item{excess_deaths}{a numeric vector giving the number of extra deaths not reported within \code{data}. Defaults to 0.}
 
 \item{freq_threshold}{a value on a percentage scale at which to remove events if the incidence falls below. Defaults to 0}
 

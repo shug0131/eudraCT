@@ -2,3 +2,7 @@
 ^\.Rproj\.user$
 ^README.Rmd$
 ^travis-tool.sh$
+^build_dashboard.R$
+
+^doc$
+^Meta$
