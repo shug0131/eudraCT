@@ -1,25 +1,15 @@
-Stata can save a rectangular file into xml format using a command like
+Start with the file safety_scriptV0.1.do 
 
-import delimited "$directory\xslt material\group.csv", clear
-save "group.dta", replace
-xmlsave "$directory\Stata\group", legible replace
+This uses the raw_data.csv as input and provides a worked example.
 
-The starting point is to create 3 such files corresponding to: group, serious, non_serious.
-See in the example sub-folder for a more detailed working.
+You coudl replace it with your own data, with the same variable names
+and edit some of the lines 5-11 to give the numbers exposed, and 
+experimental change line 7 to
 
-If the file names for these are: group.xml, serious.xml, non_serious.xml then
-proceed. Otherwise you will need to edit the short stata_statsfiles.xml to provide the
-corrected file names.
+global soc_index soc_term
 
-Apply the command in stata to convert the three xml files into one simple.xml file
+if you have recorded teh SOC using text rather than MedDRA code (untested)
 
-! msxsl.exe stata_statsfiles.xml stata_combine.xslt -o simple.xml
+With the inputs and subsidiary files provided it has generated a valid xml
+file that has been accepted by the EudraCT training environment.
 
-Then convert to eudraCT format
-
-! msxsl.exe simple.xml simpleToEudraCT.xslt -o table_eudract.xml
-
-the final output is the file "table_eudract.xml" which can be uploaded into eudraCT
-
-msxsl.exe is the Microsoft xslt processor downloaded from
-https://www.microsoft.com/en-us/download/details.aspx?id=21714

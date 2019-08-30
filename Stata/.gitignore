@@ -1,0 +1,4 @@
+*.dta
+.xml
+!stata_statsfiles.xml
+examples
