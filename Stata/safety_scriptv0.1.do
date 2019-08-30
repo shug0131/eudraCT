@@ -1,7 +1,4 @@
-
 * check if the termsoc definition works with soc_term as character
-
-
 *http://wlm.userweb.mwn.de/Stata/wstataddm.htm
 clear
 global freq_threshold 0
