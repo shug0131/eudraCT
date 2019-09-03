@@ -15,5 +15,7 @@ R/eudract/*.xml
 .Rproj.user
 documentation/ICTMC*
 testing/library/*
+testing/
+
 
 
