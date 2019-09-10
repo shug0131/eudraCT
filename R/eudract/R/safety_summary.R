@@ -41,13 +41,21 @@ safety_summary <- function(data, exposed, excess_deaths=0, freq_threshold=0, soc
 
   }
   group_names <- levels(data$group)
-  if( length(exposed)!=length(group_names)){
-    stop("the argument 'exposed' needs to be the same length as the number of groups")
+  if( length(exposed) < length(group_names)){
+    stop("the argument 'exposed' has fewer elements than the number of groups")
   }
-  if( !is.null(names(exposed)) && !all( names(exposed) %in% group_names)  ){
+  if( !is.null(names(exposed)) && !all( group_names %in% names(exposed))){
     stop("the names of 'exposed' do not match up to the values in 'data$group'")
   }
+  if( length(group_names)< length(exposed)){
+    warning("There are groups with no events")
+    if( is.null(names(exposed))){ stop("The 'exposed' argument needs to be a named vector")}
+    # this line should make rows with zeroes where needed.
+    group_names <- levels(data$group) <- names(exposed)
+  }
+
   if(is.null(names(exposed))){ names(exposed) <- group_names}
+
   # check length, value and names of excess_deaths
   if( length(excess_deaths)==1 && length(group_names)>1 && excess_deaths==0){
     excess_deaths <- rep(0, length(group_names))
@@ -76,6 +84,11 @@ safety_summary <- function(data, exposed, excess_deaths=0, freq_threshold=0, soc
       subjectsAffectedByNonSeriousAdverseEvents = sum(nonserious_any),
       deathsResultingFromAdverseEvents = sum(deaths)
     ) %>%
+    tidyr::complete(group, fill=list(
+      "subjectsAffectedBySeriousAdverseEvents"=0,
+      "subjectsAffectedByNonSeriousAdverseEvents"=0,
+      "deathsResultingFromAdverseEvents"=0
+    )) %>%
     left_join(data.frame(subjectsExposed=exposed, group=names(exposed)), by="group") %>%
     left_join(data.frame(excess_deaths, group=names(excess_deaths)), by="group" )%>%
     mutate(
@@ -86,56 +99,57 @@ safety_summary <- function(data, exposed, excess_deaths=0, freq_threshold=0, soc
     ) %>%
     rename("title"="group")
 
+  ans <- list(GROUP=as.data.frame(group))
 
   # Nonserious term-level statistics
-
-  non_serious <- data %>% dplyr::filter(!serious) %>%
-    group_by(term, soc, group) %>%
-    summarise(subjectsAffected=length(unique(subjid)),
-              occurrences=dplyr::n()
-    ) %>%
-    tidyr::complete(group, tidyr::nesting(term, soc), fill=list("subjectsAffected"=0, "occurrences"=0)) %>%
-    rename("groupTitle"="group") %>%
-    left_join(soc_code, by=c("soc"=soc_index)) %>% ungroup() %>%
-    select(groupTitle,subjectsAffected, occurrences,term,eutctId)
-
-  # filter
-  if( freq_threshold>0){
-    non_serious %<>% left_join(group, by=c("groupTitle"="title")) %>%
-      mutate( rate=subjectsAffected/subjectsExposed*100) %>% group_by(term,eutctId) %>%
-      dplyr::filter( max(rate)>=freq_threshold) %>% ungroup %>%
+  if( any(!data$serious)){
+    non_serious <- data %>% dplyr::filter(!serious) %>%
+      group_by(term, soc, group) %>%
+      summarise(subjectsAffected=length(unique(subjid)),
+                occurrences=dplyr::n()
+      ) %>%
+      tidyr::complete(group, tidyr::nesting(term, soc), fill=list("subjectsAffected"=0, "occurrences"=0)) %>%
+      rename("groupTitle"="group") %>%
+      left_join(soc_code, by=c("soc"=soc_index)) %>% ungroup() %>%
       select(groupTitle,subjectsAffected, occurrences,term,eutctId)
-  }
+
+    # filter
+    if( freq_threshold>0){
+      non_serious %<>% left_join(group, by=c("groupTitle"="title")) %>%
+        mutate( rate=subjectsAffected/subjectsExposed*100) %>% group_by(term,eutctId) %>%
+        dplyr::filter( max(rate)>=freq_threshold) %>% ungroup %>%
+        select(groupTitle,subjectsAffected, occurrences,term,eutctId)
+    }
+    ans <- c(ans, list( NON_SERIOUS=as.data.frame(non_serious)))
+  } else{ warning("There are no non-serious events")}
 
   # Serious term-level statistics.
-  serious <- data %>% dplyr::filter(as.logical(serious)) %>%
-    group_by(term, soc, group) %>%
-    summarise(subjectsAffected=length(unique(subjid)),
-              occurrences=dplyr::n(),
-              occurrencesCausallyRelatedToTreatment=sum(related),
-              deaths=sum(fatal),
-              deathsCausallyRelatedToTreatment=sum(fatal*related)
-    ) %>%
-    tidyr::complete(group, tidyr::nesting(term, soc),
-             fill=list("subjectsAffected"=0,
-                       "occurrences"=0,
-                       "occurrencesCausallyRelatedToTreatment"=0,
-                       "deaths"=0,
-                       "deathsCausallyRelatedToTreatment"=0
-             )
-    ) %>%
-    rename("groupTitle"="group") %>%
-    left_join(soc_code, by=c("soc"=soc_index)) %>% ungroup() %>%
-    select(groupTitle,subjectsAffected, occurrences,term,eutctId,
-           occurrencesCausallyRelatedToTreatment, deaths,
-           deathsCausallyRelatedToTreatment
-    )
+  if( any(data$serious)){
+    serious <- data %>% dplyr::filter(as.logical(serious)) %>%
+      group_by(term, soc, group) %>%
+      summarise(subjectsAffected=length(unique(subjid)),
+                occurrences=dplyr::n(),
+                occurrencesCausallyRelatedToTreatment=sum(related),
+                deaths=sum(fatal),
+                deathsCausallyRelatedToTreatment=sum(fatal*related)
+      ) %>%
+      tidyr::complete(group, tidyr::nesting(term, soc),
+                      fill=list("subjectsAffected"=0,
+                                "occurrences"=0,
+                                "occurrencesCausallyRelatedToTreatment"=0,
+                                "deaths"=0,
+                                "deathsCausallyRelatedToTreatment"=0
+                      )
+      ) %>%
+      rename("groupTitle"="group") %>%
+      left_join(soc_code, by=c("soc"=soc_index)) %>% ungroup() %>%
+      select(groupTitle,subjectsAffected, occurrences,term,eutctId,
+             occurrencesCausallyRelatedToTreatment, deaths,
+             deathsCausallyRelatedToTreatment
+      )
+    ans <- c(ans, list(SERIOUS=as.data.frame(serious)))
+  } else{ warning("There are no serious events")}
 
-  # return value
-  ans <- list(GROUP=as.data.frame(group),
-              NON_SERIOUS=as.data.frame(non_serious),
-              SERIOUS=as.data.frame(serious)
-  )
   ans <- lapply(ans, df_to_char)
   class(ans) <- "safety_summary"
   ans

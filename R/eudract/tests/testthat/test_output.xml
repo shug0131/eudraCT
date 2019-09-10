@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aev:adverseEvents xmlns:aev="http://eudract.ema.europa.eu/schema/clinical_trial_result/adverse_events" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <description>AE additional description</description>
+  <nonSeriousEventFrequencyThreshold>0.0</nonSeriousEventFrequencyThreshold>
+  <timeFrame>Timeframe for AE</timeFrame>
+  <assessmentMethod>
+    <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
+  </assessmentMethod>
+  <dictionary>
+    <otherName xsi:nil="true"/>
+    <version>19.0</version>
+    <name>
+      <value>ADV_EVT_DICTIONARY_NAME.meddra</value>
+    </name>
+  </dictionary>
+  <reportingGroups>
+    <reportingGroup id="idm1489540384">
+      <title>Experiment</title>
+      <description xsi:nil="true"/>
+      <subjectsAffectedByNonSeriousAdverseEvents>1</subjectsAffectedByNonSeriousAdverseEvents>
+      <subjectsAffectedBySeriousAdverseEvents>0</subjectsAffectedBySeriousAdverseEvents>
+      <subjectsExposed>10</subjectsExposed>
+      <deathsAllCauses>1</deathsAllCauses>
+      <deathsResultingFromAdverseEvents>1</deathsResultingFromAdverseEvents>
+    </reportingGroup>
+    <reportingGroup id="idm1489538336">
+      <title>Control</title>
+      <description xsi:nil="true"/>
+      <subjectsAffectedByNonSeriousAdverseEvents>0</subjectsAffectedByNonSeriousAdverseEvents>
+      <subjectsAffectedBySeriousAdverseEvents>0</subjectsAffectedBySeriousAdverseEvents>
+      <subjectsExposed>10</subjectsExposed>
+      <deathsAllCauses>0</deathsAllCauses>
+      <deathsResultingFromAdverseEvents>0</deathsResultingFromAdverseEvents>
+    </reportingGroup>
+  </reportingGroups>
+  <nonSeriousAdverseEvents>
+    <nonSeriousAdverseEvent>
+      <description>Acute coronary syndrome</description>
+      <term>Acute coronary syndrome</term>
+      <organSystem>
+        <eutctId>100000004849</eutctId>
+        <version>19</version>
+      </organSystem>
+      <assessmentMethod>
+        <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
+      </assessmentMethod>
+      <dictionaryOverridden>false</dictionaryOverridden>
+      <values>
+        <value reportingGroupId="idm1489540384">
+          <occurrences>1</occurrences>
+          <subjectsAffected>1</subjectsAffected>
+          <subjectsExposed>10</subjectsExposed>
+        </value>
+        <value reportingGroupId="idm1489538336">
+          <occurrences>0</occurrences>
+          <subjectsAffected>0</subjectsAffected>
+          <subjectsExposed>10</subjectsExposed>
+        </value>
+      </values>
+    </nonSeriousAdverseEvent>
+  </nonSeriousAdverseEvents>
+  <seriousAdverseEvents/>
+</aev:adverseEvents>

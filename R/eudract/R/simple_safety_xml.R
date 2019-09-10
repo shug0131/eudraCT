@@ -22,8 +22,8 @@ simple_safety_xml <- function(x, file){
   writeChar('<?xml version="1.0" encoding="UTF-8"?>',con=file_connection, eos=NULL)
   writeChar('\n<TABLE>',con=file_connection, eos=NULL)
   append_xml(GROUP, file_connection)
-  append_xml(NON_SERIOUS, file_connection)
-  append_xml(SERIOUS, file_connection)
+  if(!is.null(NON_SERIOUS)) append_xml(NON_SERIOUS, file_connection)
+  if(!is.null(SERIOUS)) append_xml(SERIOUS, file_connection)
   writeChar('\n</TABLE>',con=file_connection, eos=NULL)
   close(file_connection)
 }
