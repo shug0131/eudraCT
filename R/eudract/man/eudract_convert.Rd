@@ -6,8 +6,9 @@
 \usage{
 eudract_convert(input, output = "table_eudract.xml",
   xslt = system.file("extdata", "simpleToEudraCT.xslt", package =
-  "eudract"), schema_output = system.file("extdata", "adverseEvents.xsd",
-  package = "eudract"))
+  "eudract"), schema_input = system.file("extdata", "simple.xsd", package
+  = "eudract"), schema_output = system.file("extdata",
+  "adverseEvents.xsd", package = "eudract"))
 }
 \arguments{
 \item{input}{a character string giving the file path to the simple xml file}
@@ -15,6 +16,8 @@ eudract_convert(input, output = "table_eudract.xml",
 \item{output}{a character string naming the output file}
 
 \item{xslt}{a character string giving the file path to the xslt script. Defaults to the script provided in this package}
+
+\item{schema_input}{a character string giving the file path to the schema for the simple xml file. Defaults to the schema provided in this package}
 
 \item{schema_output}{a character string giving the file path to the schema. A copy was downloaded and is provided in this package as the default.}
 }

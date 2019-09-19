@@ -4,12 +4,15 @@
 \alias{simple_safety_xml}
 \title{creates a simple xml file from the input of a safety_summary object}
 \usage{
-simple_safety_xml(x, file)
+simple_safety_xml(x, file, schema = system.file("extdata", "simple.xsd",
+  package = "eudract"))
 }
 \arguments{
 \item{x}{an object of class \code{safety_summary}, as created by \code{\link{safety_summary}}.}
 
 \item{file}{a character string name the file to be created}
+
+\item{schema}{a character string giving the file path to the schema for the outputxml file. Defaults to the schema provided in this package.}
 }
 \value{
 no output is returned, but a file is created as a side-effect.

@@ -1,6 +1,11 @@
 
+rcmdcheck::rcmdcheck()
+
+
 devtools::build_vignettes(clean=FALSE)
 devtools::clean_vignettes()
+
+
 
 .libPaths("U:/My Documents/R/win-library/3.6")
 devtools::build_vignettes()

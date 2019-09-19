@@ -226,7 +226,9 @@ if(getRversion() >= "2.15.1"){
       "nonserious" ,"occurrences", "occurrencesCausallyRelatedToTreatment", "rate",
       "related" ,"soc", "soc_code" ,"subjectsAffected",
       "subjectsAffectedByNonSeriousAdverseEvents",
-      "subjectsAffectedBySeriousAdverseEvents", "subjectsExposed", "subjid", "term"))
+      "subjectsAffectedBySeriousAdverseEvents", "subjectsExposed", "subjid", "term",
+      "serious_any","nonserious_any"
+      ))
 }
 
 

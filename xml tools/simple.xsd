@@ -3,6 +3,8 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
 elementFormDefault="unqualified">
 
+
+
   <xs:complexType name="non_serious_type">
     <xs:all>
       <xs:element name="groupTitle">
@@ -176,6 +178,20 @@ elementFormDefault="unqualified">
         </xs:sequence>
       </xs:choice>
     </xs:complexType>
+
+    <xs:key name="ref_groups">
+            <xs:selector xpath="GROUP"/>
+            <xs:field xpath="title"/>
+    </xs:key>
+    <xs:keyref name="serious_group" refer="ref_groups">
+            <xs:selector xpath="SERIOUS"/>
+            <xs:field xpath="groupTitle"/>
+    </xs:keyref>
+    <xs:keyref name="non_serious_group" refer="ref_groups">
+            <xs:selector xpath="NON_SERIOUS"/>
+            <xs:field xpath="groupTitle"/>
+    </xs:keyref>
+
   </xs:element>
 
 </xs:schema>

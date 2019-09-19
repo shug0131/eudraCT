@@ -2,6 +2,7 @@
 #'
 #' @param x an object of class \code{safety_summary}, as created by \code{\link{safety_summary}}.
 #' @param file a character string name the file to be created
+#' @param schema a character string giving the file path to the schema for the outputxml file. Defaults to the schema provided in this package.
 #'
 #' @return no output is returned, but a file is created as a side-effect.
 #' @seealso \code{\link{eudract_convert}} \code{\link{safety_summary}}
@@ -13,7 +14,8 @@
 #' simple_safety_xml(safety_statistics, "simple.xml")
 #' eudract_convert(input="simple.xml", output="table_eudract.xml")
 
-simple_safety_xml <- function(x, file){
+simple_safety_xml <- function(x, file,
+                              schema=system.file("extdata","simple.xsd", package="eudract")){
   if(!inherits(x, "safety_summary")){stop(paste(deparse(substitute(x)), "is not a safety_summary object"))}
   GROUP <- x$GROUP
   NON_SERIOUS <- x$NON_SERIOUS
@@ -26,6 +28,13 @@ simple_safety_xml <- function(x, file){
   if(!is.null(SERIOUS)) append_xml(SERIOUS, file_connection)
   writeChar('\n</TABLE>',con=file_connection, eos=NULL)
   close(file_connection)
+  cat(paste0("'",file, "' is created or modified\n"))
+  # check the output against the schema
+  schema_output <- xml2::read_xml(schema)
+  output <- xml2::read_xml(file)
+  check_out <- xml2::xml_validate(output, schema_output)
+  if( !check_out){ warning(attr(check_out,"errors"))}
+  invisible(check_out)
 }
 
 

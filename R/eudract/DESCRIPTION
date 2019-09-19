@@ -16,6 +16,5 @@ Suggests:
     testthat,
     RSelenium,
     knitr,
-    rmarkdown,
-    xml2
+    rmarkdown
 VignetteBuilder: knitr
