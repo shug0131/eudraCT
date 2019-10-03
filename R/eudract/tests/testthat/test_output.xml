@@ -14,7 +14,7 @@
     </name>
   </dictionary>
   <reportingGroups>
-    <reportingGroup id="idm1492261408">
+    <reportingGroup id="idm1488493680">
       <title>Experiment</title>
       <description xsi:nil="true"/>
       <subjectsAffectedByNonSeriousAdverseEvents>1</subjectsAffectedByNonSeriousAdverseEvents>
@@ -23,7 +23,7 @@
       <deathsAllCauses>1</deathsAllCauses>
       <deathsResultingFromAdverseEvents>1</deathsResultingFromAdverseEvents>
     </reportingGroup>
-    <reportingGroup id="idm1492257056">
+    <reportingGroup id="idm1488492016">
       <title>Control</title>
       <description xsi:nil="true"/>
       <subjectsAffectedByNonSeriousAdverseEvents>0</subjectsAffectedByNonSeriousAdverseEvents>
@@ -46,12 +46,12 @@
       </assessmentMethod>
       <dictionaryOverridden>false</dictionaryOverridden>
       <values>
-        <value reportingGroupId="idm1492261408">
+        <value reportingGroupId="idm1488493680">
           <occurrences>1</occurrences>
           <subjectsAffected>1</subjectsAffected>
           <subjectsExposed>10</subjectsExposed>
         </value>
-        <value reportingGroupId="idm1492257056">
+        <value reportingGroupId="idm1488492016">
           <occurrences>0</occurrences>
           <subjectsAffected>0</subjectsAffected>
           <subjectsExposed>10</subjectsExposed>
