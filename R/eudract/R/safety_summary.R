@@ -27,6 +27,7 @@
 
 safety_summary <- function(data, exposed, excess_deaths=0, freq_threshold=0, soc_index=c("meddra","soc_term")){
   #check the names of data
+
   var_names <- c("subjid", "term", "soc", "serious", "related", "fatal", "group")
   name_check <- var_names %in% names(data)
   if( !all(name_check)){
@@ -36,11 +37,7 @@ safety_summary <- function(data, exposed, excess_deaths=0, freq_threshold=0, soc
   name_check <-  names(data) %in% var_names
   data <- data[,name_check]
   # check if name and length of exposed matches
-  if( !inherits(data$group, "factor") ){
-    data$group <- factor(data$group)
-
-  }
-  group_names <- levels(data$group)
+  group_names <- unique(as.character(data$group))
   if( length(exposed) < length(group_names)){
     stop("the argument 'exposed' has fewer elements than the number of groups")
   }
@@ -51,10 +48,18 @@ safety_summary <- function(data, exposed, excess_deaths=0, freq_threshold=0, soc
     warning("There are groups with no events")
     if( is.null(names(exposed))){ stop("The 'exposed' argument needs to be a named vector")}
     # this line should make rows with zeroes where needed.
-    group_names <- levels(data$group) <- names(exposed)
+    group_names  <- names(exposed)
   }
 
   if(is.null(names(exposed))){ names(exposed) <- group_names}
+  exposed_df <- data.frame(
+    subjectsExposed = exposed,
+    group = factor(names(exposed),levels=group_names)
+  )
+
+
+  data$group <- factor(as.character(data$group), levels=group_names)
+
 
   # check length, value and names of excess_deaths
   if( length(excess_deaths)==1 && length(group_names)>1 && excess_deaths==0){
@@ -67,6 +72,12 @@ safety_summary <- function(data, exposed, excess_deaths=0, freq_threshold=0, soc
     stop("the names of 'excess_deaths' do not match up to the values in 'data$group'")
   }
   if(is.null(names(excess_deaths))){ names(excess_deaths) <- group_names}
+  excess_deaths_df <- data.frame(
+    excess_deaths = excess_deaths,
+    group = factor(names(excess_deaths), levels=group_names)
+  )
+
+
   # check the soc_index
   soc_index <- match.arg(soc_index)
 
@@ -83,14 +94,19 @@ safety_summary <- function(data, exposed, excess_deaths=0, freq_threshold=0, soc
       subjectsAffectedBySeriousAdverseEvents = sum(serious_any),
       subjectsAffectedByNonSeriousAdverseEvents = sum(nonserious_any),
       deathsResultingFromAdverseEvents = sum(deaths)
-    ) %>%
+    )
+
+
+  group %<>%
     tidyr::complete(group, fill=list(
       "subjectsAffectedBySeriousAdverseEvents"=0,
       "subjectsAffectedByNonSeriousAdverseEvents"=0,
       "deathsResultingFromAdverseEvents"=0
-    )) %>%
-    left_join(data.frame(subjectsExposed=exposed, group=names(exposed)), by="group") %>%
-    left_join(data.frame(excess_deaths, group=names(excess_deaths)), by="group" )%>%
+    ))
+
+ group %<>%
+    left_join(exposed_df, by="group") %>%
+    left_join(excess_deaths_df, by="group" )%>%
     mutate(
       deathsAllCauses=deathsResultingFromAdverseEvents+excess_deaths
     ) %>%
