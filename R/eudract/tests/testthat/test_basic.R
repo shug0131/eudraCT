@@ -305,6 +305,7 @@ test_that("print the safety summary",{
 })
 
 test_that("create a safety summary by hand",{
+  safety_statistics <- safety_summary(safety, exposed=c("Experimental"=60,"Control"=67))
   safety_stats2 <- create.safety_summary(safety_statistics$GROUP,
                                          safety_statistics$NON_SERIOUS,
                                          safety_statistics$SERIOUS
