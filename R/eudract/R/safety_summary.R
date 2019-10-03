@@ -210,19 +210,19 @@ create.safety_summary <- function(group,non_serious, serious){
   group_names <- c("title","subjectsAffectedBySeriousAdverseEvents",
                    "subjectsAffectedByNonSeriousAdverseEvents", "deathsResultingFromAdverseEvents",
                    "subjectsExposed","deathsAllCauses")
-  name_check <- group_names %in% names(group) && ncol(group)==length(group_names)
-  if( !all(name_check)){
+  name_check <- all(group_names %in% names(group)) && ncol(group)==length(group_names)
+  if(! name_check){
     stop( "group data.frame does not have the correct variable names")
   }
   non_serious_names <- c("groupTitle","subjectsAffected" ,"occurrences","term", "eutctId" )
-  name_check <- non_serious_names %in% names(non_serious) && ncol(non_serious)==length(non_serious_names)
-  if( !all(name_check)){
+  name_check <- all(non_serious_names %in% names(non_serious)) && ncol(non_serious)==length(non_serious_names)
+  if( !name_check){
     stop( "non_serious data.frame does not have the correct variable names")
   }
   serious_names <- c(non_serious_names,  "occurrencesCausallyRelatedToTreatment",
                      "deaths","deathsCausallyRelatedToTreatment" )
-  name_check <- serious_names %in% names(serious) && ncol(serious)==length(serious_names)
-  if( !all(name_check)){
+  name_check <- all(serious_names %in% names(serious)) && ncol(serious)==length(serious_names)
+  if( !name_check){
     stop( "serious data.frame does not have the correct variable names")
   }
 
