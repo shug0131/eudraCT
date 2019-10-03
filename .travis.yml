@@ -32,6 +32,7 @@ r_binary_packages:
   - usethis
   - devtools
   - rcpp
+  - stringi
 
 r_packages:
   - RSelenium

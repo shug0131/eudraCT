@@ -1,1453 +1,1353 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TABLE>
 <GROUP>
-	<title>Control</title>
-	<subjectsAffectedBySeriousAdverseEvents>15</subjectsAffectedBySeriousAdverseEvents>
-	<subjectsAffectedByNonSeriousAdverseEvents>15</subjectsAffectedByNonSeriousAdverseEvents>
-	<deathsResultingFromAdverseEvents>9</deathsResultingFromAdverseEvents>
-	<subjectsExposed>67</subjectsExposed>
-	<deathsAllCauses>9</deathsAllCauses>
+	<title>Group A</title>
+	<subjectsAffectedBySeriousAdverseEvents>10</subjectsAffectedBySeriousAdverseEvents>
+	<subjectsAffectedByNonSeriousAdverseEvents>10</subjectsAffectedByNonSeriousAdverseEvents>
+	<deathsResultingFromAdverseEvents>3</deathsResultingFromAdverseEvents>
+	<subjectsExposed>700</subjectsExposed>
+	<deathsAllCauses>3</deathsAllCauses>
 </GROUP>
 <GROUP>
-	<title>Experimental</title>
-	<subjectsAffectedBySeriousAdverseEvents>33</subjectsAffectedBySeriousAdverseEvents>
-	<subjectsAffectedByNonSeriousAdverseEvents>24</subjectsAffectedByNonSeriousAdverseEvents>
-	<deathsResultingFromAdverseEvents>22</deathsResultingFromAdverseEvents>
-	<subjectsExposed>60</subjectsExposed>
-	<deathsAllCauses>22</deathsAllCauses>
+	<title>Group B</title>
+	<subjectsAffectedBySeriousAdverseEvents>13</subjectsAffectedBySeriousAdverseEvents>
+	<subjectsAffectedByNonSeriousAdverseEvents>14</subjectsAffectedByNonSeriousAdverseEvents>
+	<deathsResultingFromAdverseEvents>6</deathsResultingFromAdverseEvents>
+	<subjectsExposed>750</subjectsExposed>
+	<deathsAllCauses>6</deathsAllCauses>
+</GROUP>
+<GROUP>
+	<title>Group C</title>
+	<subjectsAffectedBySeriousAdverseEvents>9</subjectsAffectedBySeriousAdverseEvents>
+	<subjectsAffectedByNonSeriousAdverseEvents>11</subjectsAffectedByNonSeriousAdverseEvents>
+	<deathsResultingFromAdverseEvents>2</deathsResultingFromAdverseEvents>
+	<subjectsExposed>730</subjectsExposed>
+	<deathsAllCauses>2</deathsAllCauses>
 </GROUP>
 <NON_SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>Abdominal pain</term>
+	<groupTitle>Group A</groupTitle>
+	<subjectsAffected>7</subjectsAffected>
+	<occurrences>11</occurrences>
+	<term>Abdominal distension</term>
 	<eutctId>100000004856</eutctId>
 </NON_SERIOUS>
 <NON_SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Abdominal pain</term>
+	<groupTitle>Group B</groupTitle>
+	<subjectsAffected>8</subjectsAffected>
+	<occurrences>16</occurrences>
+	<term>Abdominal distension</term>
 	<eutctId>100000004856</eutctId>
 </NON_SERIOUS>
 <NON_SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
+	<groupTitle>Group C</groupTitle>
+	<subjectsAffected>7</subjectsAffected>
+	<occurrences>13</occurrences>
+	<term>Abdominal distension</term>
+	<eutctId>100000004856</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Group A</groupTitle>
+	<subjectsAffected>4</subjectsAffected>
+	<occurrences>9</occurrences>
+	<term>Abdominal infection</term>
+	<eutctId>100000004862</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Group B</groupTitle>
+	<subjectsAffected>4</subjectsAffected>
+	<occurrences>14</occurrences>
+	<term>Abdominal infection</term>
+	<eutctId>100000004862</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Group C</groupTitle>
+	<subjectsAffected>3</subjectsAffected>
+	<occurrences>4</occurrences>
+	<term>Abdominal infection</term>
+	<eutctId>100000004862</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Group A</groupTitle>
+	<subjectsAffected>4</subjectsAffected>
+	<occurrences>10</occurrences>
+	<term>Abdominal soft tissue necrosis</term>
+	<eutctId>100000004859</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Group B</groupTitle>
+	<subjectsAffected>3</subjectsAffected>
+	<occurrences>11</occurrences>
+	<term>Abdominal soft tissue necrosis</term>
+	<eutctId>100000004859</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Group C</groupTitle>
+	<subjectsAffected>9</subjectsAffected>
+	<occurrences>11</occurrences>
+	<term>Abdominal soft tissue necrosis</term>
+	<eutctId>100000004859</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Group A</groupTitle>
+	<subjectsAffected>7</subjectsAffected>
+	<occurrences>17</occurrences>
+	<term>Abducens nerve disorder</term>
+	<eutctId>100000004852</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Group B</groupTitle>
+	<subjectsAffected>8</subjectsAffected>
+	<occurrences>11</occurrences>
+	<term>Abducens nerve disorder</term>
+	<eutctId>100000004852</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Group C</groupTitle>
+	<subjectsAffected>8</subjectsAffected>
+	<occurrences>18</occurrences>
+	<term>Abducens nerve disorder</term>
+	<eutctId>100000004852</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Group A</groupTitle>
+	<subjectsAffected>6</subjectsAffected>
+	<occurrences>14</occurrences>
+	<term>Acidosis</term>
+	<eutctId>100000004861</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Group B</groupTitle>
+	<subjectsAffected>5</subjectsAffected>
+	<occurrences>8</occurrences>
+	<term>Acidosis</term>
+	<eutctId>100000004861</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Group C</groupTitle>
+	<subjectsAffected>11</subjectsAffected>
+	<occurrences>18</occurrences>
+	<term>Acidosis</term>
+	<eutctId>100000004861</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Group A</groupTitle>
+	<subjectsAffected>6</subjectsAffected>
+	<occurrences>8</occurrences>
+	<term>Activated partial thromboplastin time prolonged</term>
+	<eutctId>100000004848</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Group B</groupTitle>
+	<subjectsAffected>6</subjectsAffected>
+	<occurrences>14</occurrences>
+	<term>Activated partial thromboplastin time prolonged</term>
+	<eutctId>100000004848</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Group C</groupTitle>
+	<subjectsAffected>2</subjectsAffected>
+	<occurrences>7</occurrences>
+	<term>Activated partial thromboplastin time prolonged</term>
+	<eutctId>100000004848</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Group A</groupTitle>
+	<subjectsAffected>4</subjectsAffected>
+	<occurrences>12</occurrences>
 	<term>Acute coronary syndrome</term>
 	<eutctId>100000004849</eutctId>
 </NON_SERIOUS>
 <NON_SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
+	<groupTitle>Group B</groupTitle>
+	<subjectsAffected>11</subjectsAffected>
+	<occurrences>15</occurrences>
 	<term>Acute coronary syndrome</term>
 	<eutctId>100000004849</eutctId>
 </NON_SERIOUS>
 <NON_SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>Acute myocardial infarction</term>
+	<groupTitle>Group C</groupTitle>
+	<subjectsAffected>3</subjectsAffected>
+	<occurrences>6</occurrences>
+	<term>Acute coronary syndrome</term>
 	<eutctId>100000004849</eutctId>
 </NON_SERIOUS>
 <NON_SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Acute myocardial infarction</term>
-	<eutctId>100000004849</eutctId>
-</NON_SERIOUS>
-<NON_SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>Anal squamous cell carcinoma</term>
-	<eutctId>100000004864</eutctId>
-</NON_SERIOUS>
-<NON_SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Anal squamous cell carcinoma</term>
-	<eutctId>100000004864</eutctId>
-</NON_SERIOUS>
-<NON_SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>Angina pectoris</term>
-	<eutctId>100000004849</eutctId>
-</NON_SERIOUS>
-<NON_SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Angina pectoris</term>
-	<eutctId>100000004849</eutctId>
-</NON_SERIOUS>
-<NON_SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>Aortic dissection</term>
-	<eutctId>100000004866</eutctId>
-</NON_SERIOUS>
-<NON_SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Aortic dissection</term>
-	<eutctId>100000004866</eutctId>
-</NON_SERIOUS>
-<NON_SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>Atrial fibrillation</term>
-	<eutctId>100000004849</eutctId>
-</NON_SERIOUS>
-<NON_SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Atrial fibrillation</term>
-	<eutctId>100000004849</eutctId>
-</NON_SERIOUS>
-<NON_SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>Atrioventricular block complete</term>
-	<eutctId>100000004849</eutctId>
-</NON_SERIOUS>
-<NON_SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Atrioventricular block complete</term>
-	<eutctId>100000004849</eutctId>
-</NON_SERIOUS>
-<NON_SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>Bronchospasm</term>
-	<eutctId>100000004855</eutctId>
-</NON_SERIOUS>
-<NON_SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Bronchospasm</term>
-	<eutctId>100000004855</eutctId>
-</NON_SERIOUS>
-<NON_SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>Cholecystitis</term>
-	<eutctId>100000004871</eutctId>
-</NON_SERIOUS>
-<NON_SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Cholecystitis</term>
-	<eutctId>100000004871</eutctId>
-</NON_SERIOUS>
-<NON_SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>Colostomy closure</term>
-	<eutctId>100000004865</eutctId>
-</NON_SERIOUS>
-<NON_SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Colostomy closure</term>
-	<eutctId>100000004865</eutctId>
-</NON_SERIOUS>
-<NON_SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>Deep vein thrombosis</term>
-	<eutctId>100000004866</eutctId>
-</NON_SERIOUS>
-<NON_SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Deep vein thrombosis</term>
-	<eutctId>100000004866</eutctId>
-</NON_SERIOUS>
-<NON_SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>Dehydration</term>
-	<eutctId>100000004861</eutctId>
-</NON_SERIOUS>
-<NON_SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Dehydration</term>
-	<eutctId>100000004861</eutctId>
-</NON_SERIOUS>
-<NON_SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>Drug hypersensitivity</term>
-	<eutctId>100000004870</eutctId>
-</NON_SERIOUS>
-<NON_SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Drug hypersensitivity</term>
-	<eutctId>100000004870</eutctId>
-</NON_SERIOUS>
-<NON_SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>Duodenal ulcer</term>
-	<eutctId>100000004856</eutctId>
-</NON_SERIOUS>
-<NON_SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Duodenal ulcer</term>
-	<eutctId>100000004856</eutctId>
-</NON_SERIOUS>
-<NON_SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>Dyspnoea</term>
-	<eutctId>100000004855</eutctId>
-</NON_SERIOUS>
-<NON_SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Dyspnoea</term>
-	<eutctId>100000004855</eutctId>
-</NON_SERIOUS>
-<NON_SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>Enterovesical fistula</term>
-	<eutctId>100000004857</eutctId>
-</NON_SERIOUS>
-<NON_SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Enterovesical fistula</term>
-	<eutctId>100000004857</eutctId>
-</NON_SERIOUS>
-<NON_SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>Escherichia urinary tract infection</term>
-	<eutctId>100000004862</eutctId>
-</NON_SERIOUS>
-<NON_SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Escherichia urinary tract infection</term>
-	<eutctId>100000004862</eutctId>
-</NON_SERIOUS>
-<NON_SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>Hypersensitivity</term>
-	<eutctId>100000004870</eutctId>
-</NON_SERIOUS>
-<NON_SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Hypersensitivity</term>
-	<eutctId>100000004870</eutctId>
-</NON_SERIOUS>
-<NON_SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>Influenza</term>
-	<eutctId>100000004862</eutctId>
-</NON_SERIOUS>
-<NON_SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Influenza</term>
-	<eutctId>100000004862</eutctId>
-</NON_SERIOUS>
-<NON_SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Intestinal perforation</term>
-	<eutctId>100000004856</eutctId>
-</NON_SERIOUS>
-<NON_SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>Intestinal perforation</term>
-	<eutctId>100000004856</eutctId>
-</NON_SERIOUS>
-<NON_SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Laryngeal stenosis</term>
-	<eutctId>100000004855</eutctId>
-</NON_SERIOUS>
-<NON_SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Laryngeal stenosis</term>
-	<eutctId>100000004855</eutctId>
-</NON_SERIOUS>
-<NON_SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Lower respiratory tract infection</term>
-	<eutctId>100000004855</eutctId>
-</NON_SERIOUS>
-<NON_SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>Lower respiratory tract infection</term>
-	<eutctId>100000004855</eutctId>
-</NON_SERIOUS>
-<NON_SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Lung adenocarcinoma</term>
-	<eutctId>100000004855</eutctId>
-</NON_SERIOUS>
-<NON_SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>Lung adenocarcinoma</term>
-	<eutctId>100000004855</eutctId>
-</NON_SERIOUS>
-<NON_SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>Neutropenia</term>
-	<eutctId>100000004851</eutctId>
-</NON_SERIOUS>
-<NON_SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Neutropenia</term>
-	<eutctId>100000004851</eutctId>
-</NON_SERIOUS>
-<NON_SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>Osteoarthritis</term>
-	<eutctId>100000004859</eutctId>
-</NON_SERIOUS>
-<NON_SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Osteoarthritis</term>
-	<eutctId>100000004859</eutctId>
-</NON_SERIOUS>
-<NON_SERIOUS>
-	<groupTitle>Control</groupTitle>
+	<groupTitle>Group A</groupTitle>
 	<subjectsAffected>2</subjectsAffected>
-	<occurrences>2</occurrences>
-	<term>Pneumonia</term>
-	<eutctId>100000004862</eutctId>
-</NON_SERIOUS>
-<NON_SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>3</subjectsAffected>
-	<occurrences>4</occurrences>
-	<term>Pneumonia</term>
-	<eutctId>100000004862</eutctId>
-</NON_SERIOUS>
-<NON_SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Pneumonia</term>
-	<eutctId>100000004855</eutctId>
-</NON_SERIOUS>
-<NON_SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>Pneumonia</term>
-	<eutctId>100000004855</eutctId>
-</NON_SERIOUS>
-<NON_SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>Pneumonia pseudomonal</term>
-	<eutctId>100000004862</eutctId>
-</NON_SERIOUS>
-<NON_SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Pneumonia pseudomonal</term>
-	<eutctId>100000004862</eutctId>
-</NON_SERIOUS>
-<NON_SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>Pneumonia streptococcal</term>
-	<eutctId>100000004855</eutctId>
-</NON_SERIOUS>
-<NON_SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Pneumonia streptococcal</term>
-	<eutctId>100000004855</eutctId>
-</NON_SERIOUS>
-<NON_SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Pneumonitis</term>
-	<eutctId>100000004855</eutctId>
-</NON_SERIOUS>
-<NON_SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>Pneumonitis</term>
-	<eutctId>100000004855</eutctId>
-</NON_SERIOUS>
-<NON_SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Pyrexia</term>
-	<eutctId>100000004867</eutctId>
-</NON_SERIOUS>
-<NON_SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Pyrexia</term>
-	<eutctId>100000004867</eutctId>
-</NON_SERIOUS>
-<NON_SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Renal impairment</term>
+	<occurrences>7</occurrences>
+	<term>Acute kidney injury</term>
 	<eutctId>100000004857</eutctId>
 </NON_SERIOUS>
 <NON_SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>Renal impairment</term>
+	<groupTitle>Group B</groupTitle>
+	<subjectsAffected>11</subjectsAffected>
+	<occurrences>21</occurrences>
+	<term>Acute kidney injury</term>
 	<eutctId>100000004857</eutctId>
 </NON_SERIOUS>
 <NON_SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>Respiratory failure</term>
-	<eutctId>100000004855</eutctId>
+	<groupTitle>Group C</groupTitle>
+	<subjectsAffected>5</subjectsAffected>
+	<occurrences>11</occurrences>
+	<term>Acute kidney injury</term>
+	<eutctId>100000004857</eutctId>
 </NON_SERIOUS>
 <NON_SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Respiratory failure</term>
-	<eutctId>100000004855</eutctId>
+	<groupTitle>Group A</groupTitle>
+	<subjectsAffected>10</subjectsAffected>
+	<occurrences>18</occurrences>
+	<term>Adrenal insufficiency</term>
+	<eutctId>100000004860</eutctId>
 </NON_SERIOUS>
 <NON_SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>2</subjectsAffected>
-	<occurrences>2</occurrences>
-	<term>Respiratory tract infection</term>
-	<eutctId>100000004862</eutctId>
+	<groupTitle>Group B</groupTitle>
+	<subjectsAffected>5</subjectsAffected>
+	<occurrences>11</occurrences>
+	<term>Adrenal insufficiency</term>
+	<eutctId>100000004860</eutctId>
 </NON_SERIOUS>
 <NON_SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Respiratory tract infection</term>
-	<eutctId>100000004862</eutctId>
-</NON_SERIOUS>
-<NON_SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>Sinusitis</term>
-	<eutctId>100000004862</eutctId>
-</NON_SERIOUS>
-<NON_SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Sinusitis</term>
-	<eutctId>100000004862</eutctId>
-</NON_SERIOUS>
-<NON_SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>2</occurrences>
-	<term>Sleep apnoea syndrome</term>
-	<eutctId>100000004852</eutctId>
-</NON_SERIOUS>
-<NON_SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>Sleep apnoea syndrome</term>
-	<eutctId>100000004852</eutctId>
-</NON_SERIOUS>
-<NON_SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Squamous cell carcinoma</term>
-	<eutctId>100000004864</eutctId>
-</NON_SERIOUS>
-<NON_SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>Squamous cell carcinoma</term>
-	<eutctId>100000004864</eutctId>
-</NON_SERIOUS>
-<NON_SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>Urinary tract infection</term>
-	<eutctId>100000004862</eutctId>
-</NON_SERIOUS>
-<NON_SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Urinary tract infection</term>
-	<eutctId>100000004862</eutctId>
-</NON_SERIOUS>
-<NON_SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>3</subjectsAffected>
+	<groupTitle>Group C</groupTitle>
+	<subjectsAffected>4</subjectsAffected>
 	<occurrences>4</occurrences>
-	<term>Vasculitis</term>
-	<eutctId>100000004870</eutctId>
+	<term>Adrenal insufficiency</term>
+	<eutctId>100000004860</eutctId>
 </NON_SERIOUS>
 <NON_SERIOUS>
-	<groupTitle>Experimental</groupTitle>
+	<groupTitle>Group A</groupTitle>
+	<subjectsAffected>4</subjectsAffected>
+	<occurrences>7</occurrences>
+	<term>Adult respiratory distress syndrome</term>
+	<eutctId>100000004855</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Group B</groupTitle>
 	<subjectsAffected>3</subjectsAffected>
-	<occurrences>3</occurrences>
-	<term>Vasculitis</term>
-	<eutctId>100000004870</eutctId>
+	<occurrences>6</occurrences>
+	<term>Adult respiratory distress syndrome</term>
+	<eutctId>100000004855</eutctId>
 </NON_SERIOUS>
 <NON_SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>Wound dehiscence</term>
-	<eutctId>100000004863</eutctId>
+	<groupTitle>Group C</groupTitle>
+	<subjectsAffected>8</subjectsAffected>
+	<occurrences>14</occurrences>
+	<term>Adult respiratory distress syndrome</term>
+	<eutctId>100000004855</eutctId>
 </NON_SERIOUS>
 <NON_SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Wound dehiscence</term>
-	<eutctId>100000004863</eutctId>
-</NON_SERIOUS>
-<SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Abdominal pain</term>
-	<eutctId>100000004856</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
-	<deaths>0</deaths>
-	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
-</SERIOUS>
-<SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>Abdominal pain</term>
-	<eutctId>100000004856</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
-	<deaths>0</deaths>
-	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
-</SERIOUS>
-<SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Aortic valve replacement</term>
-	<eutctId>100000004865</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
-	<deaths>0</deaths>
-	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
-</SERIOUS>
-<SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>Aortic valve replacement</term>
-	<eutctId>100000004865</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
-	<deaths>0</deaths>
-	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
-</SERIOUS>
-<SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>B-cell lymphoma</term>
-	<eutctId>100000004851</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
-	<deaths>0</deaths>
-	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
-</SERIOUS>
-<SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>B-cell lymphoma</term>
-	<eutctId>100000004851</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
-	<deaths>0</deaths>
-	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
-</SERIOUS>
-<SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>Bladder papilloma</term>
-	<eutctId>100000004864</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
-	<deaths>0</deaths>
-	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
-</SERIOUS>
-<SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Bladder papilloma</term>
-	<eutctId>100000004864</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
-	<deaths>0</deaths>
-	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
-</SERIOUS>
-<SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Cardiac arrest</term>
-	<eutctId>100000004849</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
-	<deaths>1</deaths>
-	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
-</SERIOUS>
-<SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>Cardiac arrest</term>
-	<eutctId>100000004849</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
-	<deaths>0</deaths>
-	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
-</SERIOUS>
-<SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>Cardiac failure congestive</term>
-	<eutctId>100000004849</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
-	<deaths>0</deaths>
-	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
-</SERIOUS>
-<SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Cardiac failure congestive</term>
-	<eutctId>100000004849</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
-	<deaths>0</deaths>
-	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
-</SERIOUS>
-<SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>Cellulitis</term>
-	<eutctId>100000004862</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
-	<deaths>0</deaths>
-	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
-</SERIOUS>
-<SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Cellulitis</term>
-	<eutctId>100000004862</eutctId>
-	<occurrencesCausallyRelatedToTreatment>1</occurrencesCausallyRelatedToTreatment>
-	<deaths>1</deaths>
-	<deathsCausallyRelatedToTreatment>1</deathsCausallyRelatedToTreatment>
-</SERIOUS>
-<SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Cerebrovascular accident</term>
-	<eutctId>100000004852</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
-	<deaths>1</deaths>
-	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
-</SERIOUS>
-<SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>Cerebrovascular accident</term>
-	<eutctId>100000004852</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
-	<deaths>0</deaths>
-	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
-</SERIOUS>
-<SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>Chest pain</term>
-	<eutctId>100000004867</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
-	<deaths>0</deaths>
-	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
-</SERIOUS>
-<SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Chest pain</term>
-	<eutctId>100000004867</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
-	<deaths>0</deaths>
-	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
-</SERIOUS>
-<SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>Cholecystectomy</term>
-	<eutctId>100000004865</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
-	<deaths>0</deaths>
-	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
-</SERIOUS>
-<SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Cholecystectomy</term>
-	<eutctId>100000004865</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
-	<deaths>0</deaths>
-	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
-</SERIOUS>
-<SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Cholecystitis acute</term>
-	<eutctId>100000004871</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
-	<deaths>0</deaths>
-	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
-</SERIOUS>
-<SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Cholecystitis acute</term>
-	<eutctId>100000004871</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
-	<deaths>0</deaths>
-	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
-</SERIOUS>
-<SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>Conversion disorder</term>
+	<groupTitle>Group A</groupTitle>
+	<subjectsAffected>5</subjectsAffected>
+	<occurrences>5</occurrences>
+	<term>Agitation</term>
 	<eutctId>100000004873</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
-	<deaths>0</deaths>
-	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
-</SERIOUS>
-<SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Conversion disorder</term>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Group B</groupTitle>
+	<subjectsAffected>4</subjectsAffected>
+	<occurrences>7</occurrences>
+	<term>Agitation</term>
 	<eutctId>100000004873</eutctId>
-	<occurrencesCausallyRelatedToTreatment>1</occurrencesCausallyRelatedToTreatment>
-	<deaths>1</deaths>
-	<deathsCausallyRelatedToTreatment>1</deathsCausallyRelatedToTreatment>
-</SERIOUS>
-<SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>Dacryocystorhinostomy</term>
-	<eutctId>100000004865</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
-	<deaths>0</deaths>
-	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
-</SERIOUS>
-<SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Dacryocystorhinostomy</term>
-	<eutctId>100000004865</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
-	<deaths>0</deaths>
-	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
-</SERIOUS>
-<SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Deep vein thrombosis</term>
-	<eutctId>100000004866</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
-	<deaths>1</deaths>
-	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
-</SERIOUS>
-<SERIOUS>
-	<groupTitle>Experimental</groupTitle>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Group C</groupTitle>
+	<subjectsAffected>7</subjectsAffected>
+	<occurrences>8</occurrences>
+	<term>Agitation</term>
+	<eutctId>100000004873</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Group A</groupTitle>
+	<subjectsAffected>4</subjectsAffected>
+	<occurrences>5</occurrences>
+	<term>Allergic reaction</term>
+	<eutctId>100000004870</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Group B</groupTitle>
+	<subjectsAffected>9</subjectsAffected>
+	<occurrences>17</occurrences>
+	<term>Allergic reaction</term>
+	<eutctId>100000004870</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Group C</groupTitle>
 	<subjectsAffected>3</subjectsAffected>
-	<occurrences>3</occurrences>
-	<term>Deep vein thrombosis</term>
-	<eutctId>100000004866</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
-	<deaths>2</deaths>
-	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
-</SERIOUS>
-<SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Escherichia urinary tract infection</term>
-	<eutctId>100000004862</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
-	<deaths>1</deaths>
-	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
-</SERIOUS>
-<SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>Escherichia urinary tract infection</term>
-	<eutctId>100000004862</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
-	<deaths>0</deaths>
-	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
-</SERIOUS>
-<SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>Fall</term>
+	<occurrences>8</occurrences>
+	<term>Allergic reaction</term>
+	<eutctId>100000004870</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Group A</groupTitle>
+	<subjectsAffected>4</subjectsAffected>
+	<occurrences>5</occurrences>
+	<term>Alopecia</term>
+	<eutctId>100000004858</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Group B</groupTitle>
+	<subjectsAffected>5</subjectsAffected>
+	<occurrences>11</occurrences>
+	<term>Alopecia</term>
+	<eutctId>100000004858</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Group C</groupTitle>
+	<subjectsAffected>5</subjectsAffected>
+	<occurrences>15</occurrences>
+	<term>Alopecia</term>
+	<eutctId>100000004858</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Group A</groupTitle>
+	<subjectsAffected>3</subjectsAffected>
+	<occurrences>10</occurrences>
+	<term>Anemia</term>
+	<eutctId>100000004851</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Group B</groupTitle>
+	<subjectsAffected>6</subjectsAffected>
+	<occurrences>14</occurrences>
+	<term>Anemia</term>
+	<eutctId>100000004851</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Group C</groupTitle>
+	<subjectsAffected>5</subjectsAffected>
+	<occurrences>11</occurrences>
+	<term>Anemia</term>
+	<eutctId>100000004851</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Group A</groupTitle>
+	<subjectsAffected>5</subjectsAffected>
+	<occurrences>9</occurrences>
+	<term>Ankle fracture</term>
 	<eutctId>100000004863</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
-	<deaths>0</deaths>
-	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
-</SERIOUS>
-<SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Fall</term>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Group B</groupTitle>
+	<subjectsAffected>4</subjectsAffected>
+	<occurrences>14</occurrences>
+	<term>Ankle fracture</term>
 	<eutctId>100000004863</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
-	<deaths>0</deaths>
-	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
-</SERIOUS>
-<SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>Gastroenteritis Escherichia coli</term>
-	<eutctId>100000004862</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
-	<deaths>0</deaths>
-	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
-</SERIOUS>
-<SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Gastroenteritis Escherichia coli</term>
-	<eutctId>100000004862</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
-	<deaths>1</deaths>
-	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
-</SERIOUS>
-<SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>Gastroenteritis viral</term>
-	<eutctId>100000004856</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
-	<deaths>0</deaths>
-	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
-</SERIOUS>
-<SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Gastroenteritis viral</term>
-	<eutctId>100000004856</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
-	<deaths>1</deaths>
-	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
-</SERIOUS>
-<SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>Gastrointestinal haemorrhage</term>
-	<eutctId>100000004856</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
-	<deaths>0</deaths>
-	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
-</SERIOUS>
-<SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Gastrointestinal haemorrhage</term>
-	<eutctId>100000004856</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
-	<deaths>1</deaths>
-	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
-</SERIOUS>
-<SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Hip arthroplasty</term>
-	<eutctId>100000004865</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
-	<deaths>1</deaths>
-	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
-</SERIOUS>
-<SERIOUS>
-	<groupTitle>Experimental</groupTitle>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Group C</groupTitle>
+	<subjectsAffected>8</subjectsAffected>
+	<occurrences>17</occurrences>
+	<term>Ankle fracture</term>
+	<eutctId>100000004863</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Group A</groupTitle>
+	<subjectsAffected>8</subjectsAffected>
+	<occurrences>16</occurrences>
+	<term>Azoospermia</term>
+	<eutctId>100000004872</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Group B</groupTitle>
+	<subjectsAffected>6</subjectsAffected>
+	<occurrences>15</occurrences>
+	<term>Azoospermia</term>
+	<eutctId>100000004872</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Group C</groupTitle>
+	<subjectsAffected>6</subjectsAffected>
+	<occurrences>11</occurrences>
+	<term>Azoospermia</term>
+	<eutctId>100000004872</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Group A</groupTitle>
+	<subjectsAffected>4</subjectsAffected>
+	<occurrences>7</occurrences>
+	<term>Bile duct stenosis</term>
+	<eutctId>100000004871</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Group B</groupTitle>
+	<subjectsAffected>8</subjectsAffected>
+	<occurrences>16</occurrences>
+	<term>Bile duct stenosis</term>
+	<eutctId>100000004871</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Group C</groupTitle>
+	<subjectsAffected>3</subjectsAffected>
+	<occurrences>9</occurrences>
+	<term>Bile duct stenosis</term>
+	<eutctId>100000004871</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Group A</groupTitle>
 	<subjectsAffected>2</subjectsAffected>
-	<occurrences>2</occurrences>
-	<term>Hip arthroplasty</term>
-	<eutctId>100000004865</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
-	<deaths>2</deaths>
-	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
-</SERIOUS>
-<SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Hyperglycaemia</term>
-	<eutctId>100000004861</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
-	<deaths>1</deaths>
-	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
-</SERIOUS>
-<SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>Hyperglycaemia</term>
-	<eutctId>100000004861</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
-	<deaths>0</deaths>
-	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
-</SERIOUS>
-<SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>Hyperkalaemia</term>
-	<eutctId>100000004861</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
-	<deaths>0</deaths>
-	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
-</SERIOUS>
-<SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Hyperkalaemia</term>
-	<eutctId>100000004861</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
-	<deaths>0</deaths>
-	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
-</SERIOUS>
-<SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>Influenza</term>
-	<eutctId>100000004862</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
-	<deaths>0</deaths>
-	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
-</SERIOUS>
-<SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Influenza</term>
-	<eutctId>100000004862</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
-	<deaths>1</deaths>
-	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
-</SERIOUS>
-<SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>Laryngeal stenosis</term>
-	<eutctId>100000004855</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
-	<deaths>0</deaths>
-	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
-</SERIOUS>
-<SERIOUS>
-	<groupTitle>Experimental</groupTitle>
+	<occurrences>7</occurrences>
+	<term>Blurred vision</term>
+	<eutctId>100000004853</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Group B</groupTitle>
+	<subjectsAffected>6</subjectsAffected>
+	<occurrences>9</occurrences>
+	<term>Blurred vision</term>
+	<eutctId>100000004853</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Group C</groupTitle>
+	<subjectsAffected>8</subjectsAffected>
+	<occurrences>16</occurrences>
+	<term>Blurred vision</term>
+	<eutctId>100000004853</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Group A</groupTitle>
+	<subjectsAffected>2</subjectsAffected>
+	<occurrences>8</occurrences>
+	<term>Capillary leak syndrome</term>
+	<eutctId>100000004866</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Group B</groupTitle>
+	<subjectsAffected>5</subjectsAffected>
+	<occurrences>5</occurrences>
+	<term>Capillary leak syndrome</term>
+	<eutctId>100000004866</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Group C</groupTitle>
+	<subjectsAffected>7</subjectsAffected>
+	<occurrences>8</occurrences>
+	<term>Capillary leak syndrome</term>
+	<eutctId>100000004866</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Group A</groupTitle>
+	<subjectsAffected>3</subjectsAffected>
+	<occurrences>6</occurrences>
+	<term>Chills</term>
+	<eutctId>100000004867</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Group B</groupTitle>
+	<subjectsAffected>5</subjectsAffected>
+	<occurrences>8</occurrences>
+	<term>Chills</term>
+	<eutctId>100000004867</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Group C</groupTitle>
+	<subjectsAffected>10</subjectsAffected>
+	<occurrences>15</occurrences>
+	<term>Chills</term>
+	<eutctId>100000004867</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Group A</groupTitle>
 	<subjectsAffected>2</subjectsAffected>
 	<occurrences>4</occurrences>
-	<term>Laryngeal stenosis</term>
-	<eutctId>100000004855</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
-	<deaths>1</deaths>
-	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
-</SERIOUS>
-<SERIOUS>
-	<groupTitle>Control</groupTitle>
+	<term>Congenital, familial and genetic disorders - Other, specify</term>
+	<eutctId>100000004850</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Group B</groupTitle>
+	<subjectsAffected>6</subjectsAffected>
+	<occurrences>11</occurrences>
+	<term>Congenital, familial and genetic disorders - Other, specify</term>
+	<eutctId>100000004850</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Group C</groupTitle>
+	<subjectsAffected>7</subjectsAffected>
+	<occurrences>7</occurrences>
+	<term>Congenital, familial and genetic disorders - Other, specify</term>
+	<eutctId>100000004850</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Group A</groupTitle>
+	<subjectsAffected>8</subjectsAffected>
+	<occurrences>18</occurrences>
+	<term>Ear pain</term>
+	<eutctId>100000004854</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Group B</groupTitle>
+	<subjectsAffected>7</subjectsAffected>
+	<occurrences>16</occurrences>
+	<term>Ear pain</term>
+	<eutctId>100000004854</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Group C</groupTitle>
+	<subjectsAffected>5</subjectsAffected>
+	<occurrences>8</occurrences>
+	<term>Ear pain</term>
+	<eutctId>100000004854</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Group A</groupTitle>
+	<subjectsAffected>4</subjectsAffected>
+	<occurrences>7</occurrences>
+	<term>Fetal death</term>
+	<eutctId>100000004868</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Group B</groupTitle>
+	<subjectsAffected>14</subjectsAffected>
+	<occurrences>22</occurrences>
+	<term>Fetal death</term>
+	<eutctId>100000004868</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Group C</groupTitle>
+	<subjectsAffected>6</subjectsAffected>
+	<occurrences>7</occurrences>
+	<term>Fetal death</term>
+	<eutctId>100000004868</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Group A</groupTitle>
+	<subjectsAffected>4</subjectsAffected>
+	<occurrences>5</occurrences>
+	<term>Leukemia secondary to oncology chemotherapy</term>
+	<eutctId>100000004864</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Group B</groupTitle>
+	<subjectsAffected>4</subjectsAffected>
+	<occurrences>13</occurrences>
+	<term>Leukemia secondary to oncology chemotherapy</term>
+	<eutctId>100000004864</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Group C</groupTitle>
+	<subjectsAffected>5</subjectsAffected>
+	<occurrences>14</occurrences>
+	<term>Leukemia secondary to oncology chemotherapy</term>
+	<eutctId>100000004864</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Group A</groupTitle>
+	<subjectsAffected>8</subjectsAffected>
+	<occurrences>14</occurrences>
+	<term>Menopause</term>
+	<eutctId>100000004869</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Group B</groupTitle>
+	<subjectsAffected>7</subjectsAffected>
+	<occurrences>7</occurrences>
+	<term>Menopause</term>
+	<eutctId>100000004869</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Group C</groupTitle>
 	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Lower respiratory tract infection</term>
-	<eutctId>100000004862</eutctId>
-	<occurrencesCausallyRelatedToTreatment>1</occurrencesCausallyRelatedToTreatment>
-	<deaths>1</deaths>
-	<deathsCausallyRelatedToTreatment>1</deathsCausallyRelatedToTreatment>
-</SERIOUS>
-<SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>Lower respiratory tract infection</term>
-	<eutctId>100000004862</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
-	<deaths>0</deaths>
-	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
-</SERIOUS>
-<SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>Medical observation</term>
-	<eutctId>100000004848</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
-	<deaths>0</deaths>
-	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
-</SERIOUS>
-<SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Medical observation</term>
-	<eutctId>100000004848</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
-	<deaths>1</deaths>
-	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
-</SERIOUS>
-<SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>Oesophageal spasm</term>
-	<eutctId>100000004856</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
-	<deaths>0</deaths>
-	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
-</SERIOUS>
-<SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Oesophageal spasm</term>
-	<eutctId>100000004856</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
-	<deaths>1</deaths>
-	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
-</SERIOUS>
-<SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>Oesophagitis</term>
-	<eutctId>100000004856</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
-	<deaths>0</deaths>
-	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
-</SERIOUS>
-<SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Oesophagitis</term>
-	<eutctId>100000004856</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
-	<deaths>0</deaths>
-	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
-</SERIOUS>
-<SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>Pneumomediastinum</term>
-	<eutctId>100000004855</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
-	<deaths>0</deaths>
-	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
-</SERIOUS>
-<SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Pneumomediastinum</term>
-	<eutctId>100000004855</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
-	<deaths>0</deaths>
-	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
-</SERIOUS>
-<SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>Pneumonia</term>
-	<eutctId>100000004862</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
-	<deaths>0</deaths>
-	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
-</SERIOUS>
-<SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>3</subjectsAffected>
 	<occurrences>3</occurrences>
-	<term>Pneumonia</term>
+	<term>Menopause</term>
+	<eutctId>100000004869</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Group A</groupTitle>
+	<subjectsAffected>6</subjectsAffected>
+	<occurrences>15</occurrences>
+	<term>Surgical and medical procedures - Other, specify</term>
+	<eutctId>100000004865</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Group B</groupTitle>
+	<subjectsAffected>4</subjectsAffected>
+	<occurrences>10</occurrences>
+	<term>Surgical and medical procedures - Other, specify</term>
+	<eutctId>100000004865</eutctId>
+</NON_SERIOUS>
+<NON_SERIOUS>
+	<groupTitle>Group C</groupTitle>
+	<subjectsAffected>4</subjectsAffected>
+	<occurrences>14</occurrences>
+	<term>Surgical and medical procedures - Other, specify</term>
+	<eutctId>100000004865</eutctId>
+</NON_SERIOUS>
+<SERIOUS>
+	<groupTitle>Placebo</groupTitle>
+	<subjectsAffected>7</subjectsAffected>
+	<occurrences>8</occurrences>
+	<term>Abdominal distension</term>
+	<eutctId>100000004856</eutctId>
+	<occurrencesCausallyRelatedToTreatment>2</occurrencesCausallyRelatedToTreatment>
+	<deaths>1</deaths>
+	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+</SERIOUS>
+<SERIOUS>
+	<groupTitle>Group B</groupTitle>
+	<subjectsAffected>3</subjectsAffected>
+	<occurrences>4</occurrences>
+	<term>Abdominal distension</term>
+	<eutctId>100000004856</eutctId>
+	<occurrencesCausallyRelatedToTreatment>4</occurrencesCausallyRelatedToTreatment>
+	<deaths>0</deaths>
+	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+</SERIOUS>
+<SERIOUS>
+	<groupTitle>Group C</groupTitle>
+	<subjectsAffected>2</subjectsAffected>
+	<occurrences>8</occurrences>
+	<term>Abdominal distension</term>
+	<eutctId>100000004856</eutctId>
+	<occurrencesCausallyRelatedToTreatment>3</occurrencesCausallyRelatedToTreatment>
+	<deaths>0</deaths>
+	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+</SERIOUS>
+<SERIOUS>
+	<groupTitle>Placebo</groupTitle>
+	<subjectsAffected>3</subjectsAffected>
+	<occurrences>7</occurrences>
+	<term>Abdominal infection</term>
 	<eutctId>100000004862</eutctId>
 	<occurrencesCausallyRelatedToTreatment>3</occurrencesCausallyRelatedToTreatment>
-	<deaths>1</deaths>
-	<deathsCausallyRelatedToTreatment>1</deathsCausallyRelatedToTreatment>
-</SERIOUS>
-<SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>Pneumonia klebsiella</term>
-	<eutctId>100000004855</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
 	<deaths>0</deaths>
 	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
 </SERIOUS>
 <SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Pneumonia klebsiella</term>
-	<eutctId>100000004855</eutctId>
+	<groupTitle>Group B</groupTitle>
+	<subjectsAffected>5</subjectsAffected>
+	<occurrences>8</occurrences>
+	<term>Abdominal infection</term>
+	<eutctId>100000004862</eutctId>
 	<occurrencesCausallyRelatedToTreatment>1</occurrencesCausallyRelatedToTreatment>
+	<deaths>0</deaths>
+	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+</SERIOUS>
+<SERIOUS>
+	<groupTitle>Group C</groupTitle>
+	<subjectsAffected>4</subjectsAffected>
+	<occurrences>10</occurrences>
+	<term>Abdominal infection</term>
+	<eutctId>100000004862</eutctId>
+	<occurrencesCausallyRelatedToTreatment>4</occurrencesCausallyRelatedToTreatment>
+	<deaths>0</deaths>
+	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+</SERIOUS>
+<SERIOUS>
+	<groupTitle>Placebo</groupTitle>
+	<subjectsAffected>5</subjectsAffected>
+	<occurrences>12</occurrences>
+	<term>Abdominal soft tissue necrosis</term>
+	<eutctId>100000004859</eutctId>
+	<occurrencesCausallyRelatedToTreatment>4</occurrencesCausallyRelatedToTreatment>
+	<deaths>1</deaths>
+	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+</SERIOUS>
+<SERIOUS>
+	<groupTitle>Group B</groupTitle>
+	<subjectsAffected>4</subjectsAffected>
+	<occurrences>10</occurrences>
+	<term>Abdominal soft tissue necrosis</term>
+	<eutctId>100000004859</eutctId>
+	<occurrencesCausallyRelatedToTreatment>3</occurrencesCausallyRelatedToTreatment>
+	<deaths>0</deaths>
+	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+</SERIOUS>
+<SERIOUS>
+	<groupTitle>Group C</groupTitle>
+	<subjectsAffected>6</subjectsAffected>
+	<occurrences>9</occurrences>
+	<term>Abdominal soft tissue necrosis</term>
+	<eutctId>100000004859</eutctId>
+	<occurrencesCausallyRelatedToTreatment>4</occurrencesCausallyRelatedToTreatment>
+	<deaths>0</deaths>
+	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+</SERIOUS>
+<SERIOUS>
+	<groupTitle>Placebo</groupTitle>
+	<subjectsAffected>5</subjectsAffected>
+	<occurrences>8</occurrences>
+	<term>Abducens nerve disorder</term>
+	<eutctId>100000004852</eutctId>
+	<occurrencesCausallyRelatedToTreatment>5</occurrencesCausallyRelatedToTreatment>
+	<deaths>0</deaths>
+	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+</SERIOUS>
+<SERIOUS>
+	<groupTitle>Group B</groupTitle>
+	<subjectsAffected>6</subjectsAffected>
+	<occurrences>8</occurrences>
+	<term>Abducens nerve disorder</term>
+	<eutctId>100000004852</eutctId>
+	<occurrencesCausallyRelatedToTreatment>4</occurrencesCausallyRelatedToTreatment>
+	<deaths>0</deaths>
+	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+</SERIOUS>
+<SERIOUS>
+	<groupTitle>Group C</groupTitle>
+	<subjectsAffected>3</subjectsAffected>
+	<occurrences>7</occurrences>
+	<term>Abducens nerve disorder</term>
+	<eutctId>100000004852</eutctId>
+	<occurrencesCausallyRelatedToTreatment>4</occurrencesCausallyRelatedToTreatment>
+	<deaths>0</deaths>
+	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+</SERIOUS>
+<SERIOUS>
+	<groupTitle>Placebo</groupTitle>
+	<subjectsAffected>8</subjectsAffected>
+	<occurrences>10</occurrences>
+	<term>Acidosis</term>
+	<eutctId>100000004861</eutctId>
+	<occurrencesCausallyRelatedToTreatment>2</occurrencesCausallyRelatedToTreatment>
+	<deaths>0</deaths>
+	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+</SERIOUS>
+<SERIOUS>
+	<groupTitle>Group B</groupTitle>
+	<subjectsAffected>5</subjectsAffected>
+	<occurrences>15</occurrences>
+	<term>Acidosis</term>
+	<eutctId>100000004861</eutctId>
+	<occurrencesCausallyRelatedToTreatment>3</occurrencesCausallyRelatedToTreatment>
+	<deaths>2</deaths>
+	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+</SERIOUS>
+<SERIOUS>
+	<groupTitle>Group C</groupTitle>
+	<subjectsAffected>2</subjectsAffected>
+	<occurrences>9</occurrences>
+	<term>Acidosis</term>
+	<eutctId>100000004861</eutctId>
+	<occurrencesCausallyRelatedToTreatment>5</occurrencesCausallyRelatedToTreatment>
+	<deaths>0</deaths>
+	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+</SERIOUS>
+<SERIOUS>
+	<groupTitle>Placebo</groupTitle>
+	<subjectsAffected>4</subjectsAffected>
+	<occurrences>8</occurrences>
+	<term>Activated partial thromboplastin time prolonged</term>
+	<eutctId>100000004848</eutctId>
+	<occurrencesCausallyRelatedToTreatment>4</occurrencesCausallyRelatedToTreatment>
 	<deaths>1</deaths>
 	<deathsCausallyRelatedToTreatment>1</deathsCausallyRelatedToTreatment>
 </SERIOUS>
 <SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>Pneumonia staphylococcal</term>
-	<eutctId>100000004855</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
+	<groupTitle>Group B</groupTitle>
+	<subjectsAffected>6</subjectsAffected>
+	<occurrences>11</occurrences>
+	<term>Activated partial thromboplastin time prolonged</term>
+	<eutctId>100000004848</eutctId>
+	<occurrencesCausallyRelatedToTreatment>6</occurrencesCausallyRelatedToTreatment>
 	<deaths>0</deaths>
 	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
 </SERIOUS>
 <SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Pneumonia staphylococcal</term>
-	<eutctId>100000004855</eutctId>
-	<occurrencesCausallyRelatedToTreatment>1</occurrencesCausallyRelatedToTreatment>
-	<deaths>1</deaths>
-	<deathsCausallyRelatedToTreatment>1</deathsCausallyRelatedToTreatment>
-</SERIOUS>
-<SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Pneumonia viral</term>
-	<eutctId>100000004855</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
-	<deaths>1</deaths>
-	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
-</SERIOUS>
-<SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>Pneumonia viral</term>
-	<eutctId>100000004855</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
+	<groupTitle>Group C</groupTitle>
+	<subjectsAffected>5</subjectsAffected>
+	<occurrences>9</occurrences>
+	<term>Activated partial thromboplastin time prolonged</term>
+	<eutctId>100000004848</eutctId>
+	<occurrencesCausallyRelatedToTreatment>4</occurrencesCausallyRelatedToTreatment>
 	<deaths>0</deaths>
 	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
 </SERIOUS>
 <SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>Post procedural complication</term>
-	<eutctId>100000004863</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
+	<groupTitle>Placebo</groupTitle>
+	<subjectsAffected>3</subjectsAffected>
+	<occurrences>4</occurrences>
+	<term>Acute coronary syndrome</term>
+	<eutctId>100000004849</eutctId>
+	<occurrencesCausallyRelatedToTreatment>2</occurrencesCausallyRelatedToTreatment>
 	<deaths>0</deaths>
 	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
 </SERIOUS>
 <SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Post procedural complication</term>
-	<eutctId>100000004863</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
-	<deaths>1</deaths>
+	<groupTitle>Group B</groupTitle>
+	<subjectsAffected>4</subjectsAffected>
+	<occurrences>9</occurrences>
+	<term>Acute coronary syndrome</term>
+	<eutctId>100000004849</eutctId>
+	<occurrencesCausallyRelatedToTreatment>5</occurrencesCausallyRelatedToTreatment>
+	<deaths>0</deaths>
 	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
 </SERIOUS>
 <SERIOUS>
-	<groupTitle>Control</groupTitle>
+	<groupTitle>Group C</groupTitle>
+	<subjectsAffected>9</subjectsAffected>
+	<occurrences>15</occurrences>
+	<term>Acute coronary syndrome</term>
+	<eutctId>100000004849</eutctId>
+	<occurrencesCausallyRelatedToTreatment>10</occurrencesCausallyRelatedToTreatment>
+	<deaths>0</deaths>
+	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+</SERIOUS>
+<SERIOUS>
+	<groupTitle>Placebo</groupTitle>
+	<subjectsAffected>4</subjectsAffected>
+	<occurrences>5</occurrences>
+	<term>Acute kidney injury</term>
+	<eutctId>100000004857</eutctId>
+	<occurrencesCausallyRelatedToTreatment>3</occurrencesCausallyRelatedToTreatment>
+	<deaths>0</deaths>
+	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+</SERIOUS>
+<SERIOUS>
+	<groupTitle>Group B</groupTitle>
+	<subjectsAffected>5</subjectsAffected>
+	<occurrences>9</occurrences>
+	<term>Acute kidney injury</term>
+	<eutctId>100000004857</eutctId>
+	<occurrencesCausallyRelatedToTreatment>2</occurrencesCausallyRelatedToTreatment>
+	<deaths>0</deaths>
+	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+</SERIOUS>
+<SERIOUS>
+	<groupTitle>Group C</groupTitle>
 	<subjectsAffected>0</subjectsAffected>
 	<occurrences>0</occurrences>
-	<term>Proteinuria</term>
+	<term>Acute kidney injury</term>
 	<eutctId>100000004857</eutctId>
 	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
 	<deaths>0</deaths>
 	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
 </SERIOUS>
 <SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Proteinuria</term>
-	<eutctId>100000004857</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
+	<groupTitle>Placebo</groupTitle>
+	<subjectsAffected>5</subjectsAffected>
+	<occurrences>12</occurrences>
+	<term>Adrenal insufficiency</term>
+	<eutctId>100000004860</eutctId>
+	<occurrencesCausallyRelatedToTreatment>4</occurrencesCausallyRelatedToTreatment>
 	<deaths>0</deaths>
 	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
 </SERIOUS>
 <SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>Pulmonary embolism</term>
-	<eutctId>100000004855</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
-	<deaths>0</deaths>
-	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
-</SERIOUS>
-<SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Pulmonary embolism</term>
-	<eutctId>100000004855</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
-	<deaths>0</deaths>
-	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
-</SERIOUS>
-<SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Pulmonary embolism</term>
-	<eutctId>100000004866</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
-	<deaths>0</deaths>
-	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
-</SERIOUS>
-<SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Pulmonary embolism</term>
-	<eutctId>100000004866</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
+	<groupTitle>Group B</groupTitle>
+	<subjectsAffected>12</subjectsAffected>
+	<occurrences>17</occurrences>
+	<term>Adrenal insufficiency</term>
+	<eutctId>100000004860</eutctId>
+	<occurrencesCausallyRelatedToTreatment>10</occurrencesCausallyRelatedToTreatment>
 	<deaths>1</deaths>
 	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
 </SERIOUS>
 <SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Pulmonary vasculitis</term>
-	<eutctId>100000004870</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
+	<groupTitle>Group C</groupTitle>
+	<subjectsAffected>3</subjectsAffected>
+	<occurrences>8</occurrences>
+	<term>Adrenal insufficiency</term>
+	<eutctId>100000004860</eutctId>
+	<occurrencesCausallyRelatedToTreatment>2</occurrencesCausallyRelatedToTreatment>
 	<deaths>0</deaths>
 	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
 </SERIOUS>
 <SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>Pulmonary vasculitis</term>
-	<eutctId>100000004870</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
+	<groupTitle>Placebo</groupTitle>
+	<subjectsAffected>7</subjectsAffected>
+	<occurrences>17</occurrences>
+	<term>Adult respiratory distress syndrome</term>
+	<eutctId>100000004855</eutctId>
+	<occurrencesCausallyRelatedToTreatment>10</occurrencesCausallyRelatedToTreatment>
 	<deaths>0</deaths>
 	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
 </SERIOUS>
 <SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>Respiratory tract infection</term>
-	<eutctId>100000004862</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
+	<groupTitle>Group B</groupTitle>
+	<subjectsAffected>12</subjectsAffected>
+	<occurrences>22</occurrences>
+	<term>Adult respiratory distress syndrome</term>
+	<eutctId>100000004855</eutctId>
+	<occurrencesCausallyRelatedToTreatment>12</occurrencesCausallyRelatedToTreatment>
 	<deaths>0</deaths>
 	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
 </SERIOUS>
 <SERIOUS>
-	<groupTitle>Experimental</groupTitle>
+	<groupTitle>Group C</groupTitle>
+	<subjectsAffected>5</subjectsAffected>
+	<occurrences>12</occurrences>
+	<term>Adult respiratory distress syndrome</term>
+	<eutctId>100000004855</eutctId>
+	<occurrencesCausallyRelatedToTreatment>5</occurrencesCausallyRelatedToTreatment>
+	<deaths>0</deaths>
+	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+</SERIOUS>
+<SERIOUS>
+	<groupTitle>Placebo</groupTitle>
+	<subjectsAffected>6</subjectsAffected>
+	<occurrences>8</occurrences>
+	<term>Agitation</term>
+	<eutctId>100000004873</eutctId>
+	<occurrencesCausallyRelatedToTreatment>4</occurrencesCausallyRelatedToTreatment>
+	<deaths>0</deaths>
+	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+</SERIOUS>
+<SERIOUS>
+	<groupTitle>Group B</groupTitle>
+	<subjectsAffected>10</subjectsAffected>
+	<occurrences>15</occurrences>
+	<term>Agitation</term>
+	<eutctId>100000004873</eutctId>
+	<occurrencesCausallyRelatedToTreatment>9</occurrencesCausallyRelatedToTreatment>
+	<deaths>0</deaths>
+	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+</SERIOUS>
+<SERIOUS>
+	<groupTitle>Group C</groupTitle>
 	<subjectsAffected>2</subjectsAffected>
-	<occurrences>2</occurrences>
-	<term>Respiratory tract infection</term>
-	<eutctId>100000004862</eutctId>
+	<occurrences>12</occurrences>
+	<term>Agitation</term>
+	<eutctId>100000004873</eutctId>
+	<occurrencesCausallyRelatedToTreatment>6</occurrencesCausallyRelatedToTreatment>
+	<deaths>0</deaths>
+	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+</SERIOUS>
+<SERIOUS>
+	<groupTitle>Placebo</groupTitle>
+	<subjectsAffected>7</subjectsAffected>
+	<occurrences>10</occurrences>
+	<term>Allergic reaction</term>
+	<eutctId>100000004870</eutctId>
+	<occurrencesCausallyRelatedToTreatment>3</occurrencesCausallyRelatedToTreatment>
+	<deaths>0</deaths>
+	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+</SERIOUS>
+<SERIOUS>
+	<groupTitle>Group B</groupTitle>
+	<subjectsAffected>8</subjectsAffected>
+	<occurrences>13</occurrences>
+	<term>Allergic reaction</term>
+	<eutctId>100000004870</eutctId>
+	<occurrencesCausallyRelatedToTreatment>4</occurrencesCausallyRelatedToTreatment>
+	<deaths>0</deaths>
+	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+</SERIOUS>
+<SERIOUS>
+	<groupTitle>Group C</groupTitle>
+	<subjectsAffected>7</subjectsAffected>
+	<occurrences>11</occurrences>
+	<term>Allergic reaction</term>
+	<eutctId>100000004870</eutctId>
+	<occurrencesCausallyRelatedToTreatment>5</occurrencesCausallyRelatedToTreatment>
+	<deaths>0</deaths>
+	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+</SERIOUS>
+<SERIOUS>
+	<groupTitle>Placebo</groupTitle>
+	<subjectsAffected>3</subjectsAffected>
+	<occurrences>6</occurrences>
+	<term>Alopecia</term>
+	<eutctId>100000004858</eutctId>
+	<occurrencesCausallyRelatedToTreatment>2</occurrencesCausallyRelatedToTreatment>
+	<deaths>0</deaths>
+	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+</SERIOUS>
+<SERIOUS>
+	<groupTitle>Group B</groupTitle>
+	<subjectsAffected>8</subjectsAffected>
+	<occurrences>10</occurrences>
+	<term>Alopecia</term>
+	<eutctId>100000004858</eutctId>
+	<occurrencesCausallyRelatedToTreatment>6</occurrencesCausallyRelatedToTreatment>
+	<deaths>0</deaths>
+	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+</SERIOUS>
+<SERIOUS>
+	<groupTitle>Group C</groupTitle>
+	<subjectsAffected>2</subjectsAffected>
+	<occurrences>3</occurrences>
+	<term>Alopecia</term>
+	<eutctId>100000004858</eutctId>
+	<occurrencesCausallyRelatedToTreatment>3</occurrencesCausallyRelatedToTreatment>
+	<deaths>0</deaths>
+	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+</SERIOUS>
+<SERIOUS>
+	<groupTitle>Placebo</groupTitle>
+	<subjectsAffected>6</subjectsAffected>
+	<occurrences>6</occurrences>
+	<term>Anemia</term>
+	<eutctId>100000004851</eutctId>
+	<occurrencesCausallyRelatedToTreatment>2</occurrencesCausallyRelatedToTreatment>
+	<deaths>0</deaths>
+	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+</SERIOUS>
+<SERIOUS>
+	<groupTitle>Group B</groupTitle>
+	<subjectsAffected>7</subjectsAffected>
+	<occurrences>16</occurrences>
+	<term>Anemia</term>
+	<eutctId>100000004851</eutctId>
+	<occurrencesCausallyRelatedToTreatment>7</occurrencesCausallyRelatedToTreatment>
+	<deaths>0</deaths>
+	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+</SERIOUS>
+<SERIOUS>
+	<groupTitle>Group C</groupTitle>
+	<subjectsAffected>3</subjectsAffected>
+	<occurrences>13</occurrences>
+	<term>Anemia</term>
+	<eutctId>100000004851</eutctId>
 	<occurrencesCausallyRelatedToTreatment>1</occurrencesCausallyRelatedToTreatment>
-	<deaths>2</deaths>
+	<deaths>0</deaths>
+	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+</SERIOUS>
+<SERIOUS>
+	<groupTitle>Placebo</groupTitle>
+	<subjectsAffected>5</subjectsAffected>
+	<occurrences>6</occurrences>
+	<term>Ankle fracture</term>
+	<eutctId>100000004863</eutctId>
+	<occurrencesCausallyRelatedToTreatment>5</occurrencesCausallyRelatedToTreatment>
+	<deaths>0</deaths>
+	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+</SERIOUS>
+<SERIOUS>
+	<groupTitle>Group B</groupTitle>
+	<subjectsAffected>6</subjectsAffected>
+	<occurrences>9</occurrences>
+	<term>Ankle fracture</term>
+	<eutctId>100000004863</eutctId>
+	<occurrencesCausallyRelatedToTreatment>4</occurrencesCausallyRelatedToTreatment>
+	<deaths>0</deaths>
+	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+</SERIOUS>
+<SERIOUS>
+	<groupTitle>Group C</groupTitle>
+	<subjectsAffected>7</subjectsAffected>
+	<occurrences>14</occurrences>
+	<term>Ankle fracture</term>
+	<eutctId>100000004863</eutctId>
+	<occurrencesCausallyRelatedToTreatment>9</occurrencesCausallyRelatedToTreatment>
+	<deaths>0</deaths>
+	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+</SERIOUS>
+<SERIOUS>
+	<groupTitle>Placebo</groupTitle>
+	<subjectsAffected>5</subjectsAffected>
+	<occurrences>11</occurrences>
+	<term>Azoospermia</term>
+	<eutctId>100000004872</eutctId>
+	<occurrencesCausallyRelatedToTreatment>6</occurrencesCausallyRelatedToTreatment>
+	<deaths>0</deaths>
+	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+</SERIOUS>
+<SERIOUS>
+	<groupTitle>Group B</groupTitle>
+	<subjectsAffected>3</subjectsAffected>
+	<occurrences>5</occurrences>
+	<term>Azoospermia</term>
+	<eutctId>100000004872</eutctId>
+	<occurrencesCausallyRelatedToTreatment>2</occurrencesCausallyRelatedToTreatment>
+	<deaths>0</deaths>
+	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+</SERIOUS>
+<SERIOUS>
+	<groupTitle>Group C</groupTitle>
+	<subjectsAffected>4</subjectsAffected>
+	<occurrences>9</occurrences>
+	<term>Azoospermia</term>
+	<eutctId>100000004872</eutctId>
+	<occurrencesCausallyRelatedToTreatment>4</occurrencesCausallyRelatedToTreatment>
+	<deaths>0</deaths>
+	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+</SERIOUS>
+<SERIOUS>
+	<groupTitle>Placebo</groupTitle>
+	<subjectsAffected>5</subjectsAffected>
+	<occurrences>5</occurrences>
+	<term>Bile duct stenosis</term>
+	<eutctId>100000004871</eutctId>
+	<occurrencesCausallyRelatedToTreatment>1</occurrencesCausallyRelatedToTreatment>
+	<deaths>0</deaths>
+	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+</SERIOUS>
+<SERIOUS>
+	<groupTitle>Group B</groupTitle>
+	<subjectsAffected>9</subjectsAffected>
+	<occurrences>16</occurrences>
+	<term>Bile duct stenosis</term>
+	<eutctId>100000004871</eutctId>
+	<occurrencesCausallyRelatedToTreatment>8</occurrencesCausallyRelatedToTreatment>
+	<deaths>0</deaths>
+	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+</SERIOUS>
+<SERIOUS>
+	<groupTitle>Group C</groupTitle>
+	<subjectsAffected>1</subjectsAffected>
+	<occurrences>6</occurrences>
+	<term>Bile duct stenosis</term>
+	<eutctId>100000004871</eutctId>
+	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
+	<deaths>0</deaths>
+	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+</SERIOUS>
+<SERIOUS>
+	<groupTitle>Placebo</groupTitle>
+	<subjectsAffected>6</subjectsAffected>
+	<occurrences>16</occurrences>
+	<term>Blurred vision</term>
+	<eutctId>100000004853</eutctId>
+	<occurrencesCausallyRelatedToTreatment>4</occurrencesCausallyRelatedToTreatment>
+	<deaths>0</deaths>
+	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+</SERIOUS>
+<SERIOUS>
+	<groupTitle>Group B</groupTitle>
+	<subjectsAffected>3</subjectsAffected>
+	<occurrences>6</occurrences>
+	<term>Blurred vision</term>
+	<eutctId>100000004853</eutctId>
+	<occurrencesCausallyRelatedToTreatment>2</occurrencesCausallyRelatedToTreatment>
+	<deaths>0</deaths>
+	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+</SERIOUS>
+<SERIOUS>
+	<groupTitle>Group C</groupTitle>
+	<subjectsAffected>4</subjectsAffected>
+	<occurrences>7</occurrences>
+	<term>Blurred vision</term>
+	<eutctId>100000004853</eutctId>
+	<occurrencesCausallyRelatedToTreatment>1</occurrencesCausallyRelatedToTreatment>
+	<deaths>0</deaths>
+	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+</SERIOUS>
+<SERIOUS>
+	<groupTitle>Placebo</groupTitle>
+	<subjectsAffected>4</subjectsAffected>
+	<occurrences>12</occurrences>
+	<term>Capillary leak syndrome</term>
+	<eutctId>100000004866</eutctId>
+	<occurrencesCausallyRelatedToTreatment>8</occurrencesCausallyRelatedToTreatment>
+	<deaths>0</deaths>
+	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+</SERIOUS>
+<SERIOUS>
+	<groupTitle>Group B</groupTitle>
+	<subjectsAffected>6</subjectsAffected>
+	<occurrences>11</occurrences>
+	<term>Capillary leak syndrome</term>
+	<eutctId>100000004866</eutctId>
+	<occurrencesCausallyRelatedToTreatment>1</occurrencesCausallyRelatedToTreatment>
+	<deaths>1</deaths>
 	<deathsCausallyRelatedToTreatment>1</deathsCausallyRelatedToTreatment>
 </SERIOUS>
 <SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Sleep apnoea syndrome</term>
-	<eutctId>100000004852</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
+	<groupTitle>Group C</groupTitle>
+	<subjectsAffected>9</subjectsAffected>
+	<occurrences>16</occurrences>
+	<term>Capillary leak syndrome</term>
+	<eutctId>100000004866</eutctId>
+	<occurrencesCausallyRelatedToTreatment>10</occurrencesCausallyRelatedToTreatment>
 	<deaths>1</deaths>
 	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
 </SERIOUS>
 <SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>Sleep apnoea syndrome</term>
-	<eutctId>100000004852</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
+	<groupTitle>Placebo</groupTitle>
+	<subjectsAffected>10</subjectsAffected>
+	<occurrences>20</occurrences>
+	<term>Chills</term>
+	<eutctId>100000004867</eutctId>
+	<occurrencesCausallyRelatedToTreatment>12</occurrencesCausallyRelatedToTreatment>
 	<deaths>0</deaths>
 	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
 </SERIOUS>
 <SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>Small intestinal resection</term>
-	<eutctId>100000004865</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
+	<groupTitle>Group B</groupTitle>
+	<subjectsAffected>7</subjectsAffected>
+	<occurrences>17</occurrences>
+	<term>Chills</term>
+	<eutctId>100000004867</eutctId>
+	<occurrencesCausallyRelatedToTreatment>14</occurrencesCausallyRelatedToTreatment>
 	<deaths>0</deaths>
 	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
 </SERIOUS>
 <SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Small intestinal resection</term>
-	<eutctId>100000004865</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
-	<deaths>1</deaths>
-	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
-</SERIOUS>
-<SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>0</subjectsAffected>
-	<occurrences>0</occurrences>
-	<term>Urinary tract infection</term>
-	<eutctId>100000004862</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
+	<groupTitle>Group C</groupTitle>
+	<subjectsAffected>6</subjectsAffected>
+	<occurrences>14</occurrences>
+	<term>Chills</term>
+	<eutctId>100000004867</eutctId>
+	<occurrencesCausallyRelatedToTreatment>3</occurrencesCausallyRelatedToTreatment>
 	<deaths>0</deaths>
 	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
 </SERIOUS>
 <SERIOUS>
-	<groupTitle>Experimental</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>2</occurrences>
-	<term>Urinary tract infection</term>
-	<eutctId>100000004862</eutctId>
-	<occurrencesCausallyRelatedToTreatment>1</occurrencesCausallyRelatedToTreatment>
-	<deaths>1</deaths>
-	<deathsCausallyRelatedToTreatment>1</deathsCausallyRelatedToTreatment>
+	<groupTitle>Placebo</groupTitle>
+	<subjectsAffected>5</subjectsAffected>
+	<occurrences>5</occurrences>
+	<term>Congenital, familial and genetic disorders - Other, specify</term>
+	<eutctId>100000004850</eutctId>
+	<occurrencesCausallyRelatedToTreatment>4</occurrencesCausallyRelatedToTreatment>
+	<deaths>0</deaths>
+	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
 </SERIOUS>
 <SERIOUS>
-	<groupTitle>Control</groupTitle>
-	<subjectsAffected>1</subjectsAffected>
-	<occurrences>1</occurrences>
-	<term>Vasculitis</term>
-	<eutctId>100000004870</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
+	<groupTitle>Group B</groupTitle>
+	<subjectsAffected>4</subjectsAffected>
+	<occurrences>11</occurrences>
+	<term>Congenital, familial and genetic disorders - Other, specify</term>
+	<eutctId>100000004850</eutctId>
+	<occurrencesCausallyRelatedToTreatment>7</occurrencesCausallyRelatedToTreatment>
+	<deaths>0</deaths>
+	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+</SERIOUS>
+<SERIOUS>
+	<groupTitle>Group C</groupTitle>
+	<subjectsAffected>9</subjectsAffected>
+	<occurrences>14</occurrences>
+	<term>Congenital, familial and genetic disorders - Other, specify</term>
+	<eutctId>100000004850</eutctId>
+	<occurrencesCausallyRelatedToTreatment>9</occurrencesCausallyRelatedToTreatment>
 	<deaths>1</deaths>
 	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
 </SERIOUS>
 <SERIOUS>
-	<groupTitle>Experimental</groupTitle>
+	<groupTitle>Placebo</groupTitle>
 	<subjectsAffected>2</subjectsAffected>
-	<occurrences>2</occurrences>
-	<term>Vasculitis</term>
-	<eutctId>100000004870</eutctId>
-	<occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
+	<occurrences>9</occurrences>
+	<term>Ear pain</term>
+	<eutctId>100000004854</eutctId>
+	<occurrencesCausallyRelatedToTreatment>4</occurrencesCausallyRelatedToTreatment>
+	<deaths>0</deaths>
+	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+</SERIOUS>
+<SERIOUS>
+	<groupTitle>Group B</groupTitle>
+	<subjectsAffected>6</subjectsAffected>
+	<occurrences>9</occurrences>
+	<term>Ear pain</term>
+	<eutctId>100000004854</eutctId>
+	<occurrencesCausallyRelatedToTreatment>4</occurrencesCausallyRelatedToTreatment>
+	<deaths>0</deaths>
+	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+</SERIOUS>
+<SERIOUS>
+	<groupTitle>Group C</groupTitle>
+	<subjectsAffected>4</subjectsAffected>
+	<occurrences>10</occurrences>
+	<term>Ear pain</term>
+	<eutctId>100000004854</eutctId>
+	<occurrencesCausallyRelatedToTreatment>6</occurrencesCausallyRelatedToTreatment>
+	<deaths>0</deaths>
+	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+</SERIOUS>
+<SERIOUS>
+	<groupTitle>Placebo</groupTitle>
+	<subjectsAffected>3</subjectsAffected>
+	<occurrences>7</occurrences>
+	<term>Fetal death</term>
+	<eutctId>100000004868</eutctId>
+	<occurrencesCausallyRelatedToTreatment>4</occurrencesCausallyRelatedToTreatment>
+	<deaths>0</deaths>
+	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+</SERIOUS>
+<SERIOUS>
+	<groupTitle>Group B</groupTitle>
+	<subjectsAffected>5</subjectsAffected>
+	<occurrences>14</occurrences>
+	<term>Fetal death</term>
+	<eutctId>100000004868</eutctId>
+	<occurrencesCausallyRelatedToTreatment>11</occurrencesCausallyRelatedToTreatment>
+	<deaths>0</deaths>
+	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+</SERIOUS>
+<SERIOUS>
+	<groupTitle>Group C</groupTitle>
+	<subjectsAffected>4</subjectsAffected>
+	<occurrences>8</occurrences>
+	<term>Fetal death</term>
+	<eutctId>100000004868</eutctId>
+	<occurrencesCausallyRelatedToTreatment>2</occurrencesCausallyRelatedToTreatment>
+	<deaths>0</deaths>
+	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+</SERIOUS>
+<SERIOUS>
+	<groupTitle>Placebo</groupTitle>
+	<subjectsAffected>5</subjectsAffected>
+	<occurrences>8</occurrences>
+	<term>Leukemia secondary to oncology chemotherapy</term>
+	<eutctId>100000004864</eutctId>
+	<occurrencesCausallyRelatedToTreatment>5</occurrencesCausallyRelatedToTreatment>
+	<deaths>0</deaths>
+	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+</SERIOUS>
+<SERIOUS>
+	<groupTitle>Group B</groupTitle>
+	<subjectsAffected>4</subjectsAffected>
+	<occurrences>6</occurrences>
+	<term>Leukemia secondary to oncology chemotherapy</term>
+	<eutctId>100000004864</eutctId>
+	<occurrencesCausallyRelatedToTreatment>6</occurrencesCausallyRelatedToTreatment>
 	<deaths>2</deaths>
+	<deathsCausallyRelatedToTreatment>2</deathsCausallyRelatedToTreatment>
+</SERIOUS>
+<SERIOUS>
+	<groupTitle>Group C</groupTitle>
+	<subjectsAffected>8</subjectsAffected>
+	<occurrences>12</occurrences>
+	<term>Leukemia secondary to oncology chemotherapy</term>
+	<eutctId>100000004864</eutctId>
+	<occurrencesCausallyRelatedToTreatment>8</occurrencesCausallyRelatedToTreatment>
+	<deaths>0</deaths>
+	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+</SERIOUS>
+<SERIOUS>
+	<groupTitle>Placebo</groupTitle>
+	<subjectsAffected>8</subjectsAffected>
+	<occurrences>12</occurrences>
+	<term>Menopause</term>
+	<eutctId>100000004869</eutctId>
+	<occurrencesCausallyRelatedToTreatment>5</occurrencesCausallyRelatedToTreatment>
+	<deaths>0</deaths>
+	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+</SERIOUS>
+<SERIOUS>
+	<groupTitle>Group B</groupTitle>
+	<subjectsAffected>6</subjectsAffected>
+	<occurrences>12</occurrences>
+	<term>Menopause</term>
+	<eutctId>100000004869</eutctId>
+	<occurrencesCausallyRelatedToTreatment>5</occurrencesCausallyRelatedToTreatment>
+	<deaths>0</deaths>
+	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+</SERIOUS>
+<SERIOUS>
+	<groupTitle>Group C</groupTitle>
+	<subjectsAffected>6</subjectsAffected>
+	<occurrences>6</occurrences>
+	<term>Menopause</term>
+	<eutctId>100000004869</eutctId>
+	<occurrencesCausallyRelatedToTreatment>5</occurrencesCausallyRelatedToTreatment>
+	<deaths>0</deaths>
+	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+</SERIOUS>
+<SERIOUS>
+	<groupTitle>Placebo</groupTitle>
+	<subjectsAffected>5</subjectsAffected>
+	<occurrences>5</occurrences>
+	<term>Surgical and medical procedures - Other, specify</term>
+	<eutctId>100000004865</eutctId>
+	<occurrencesCausallyRelatedToTreatment>3</occurrencesCausallyRelatedToTreatment>
+	<deaths>0</deaths>
+	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+</SERIOUS>
+<SERIOUS>
+	<groupTitle>Group B</groupTitle>
+	<subjectsAffected>9</subjectsAffected>
+	<occurrences>16</occurrences>
+	<term>Surgical and medical procedures - Other, specify</term>
+	<eutctId>100000004865</eutctId>
+	<occurrencesCausallyRelatedToTreatment>9</occurrencesCausallyRelatedToTreatment>
+	<deaths>0</deaths>
+	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+</SERIOUS>
+<SERIOUS>
+	<groupTitle>Group C</groupTitle>
+	<subjectsAffected>3</subjectsAffected>
+	<occurrences>7</occurrences>
+	<term>Surgical and medical procedures - Other, specify</term>
+	<eutctId>100000004865</eutctId>
+	<occurrencesCausallyRelatedToTreatment>4</occurrencesCausallyRelatedToTreatment>
+	<deaths>0</deaths>
 	<deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
 </SERIOUS>
 </TABLE>

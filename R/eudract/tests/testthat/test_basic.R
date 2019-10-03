@@ -288,6 +288,36 @@ test_that("convert to eudract",{
 )
 
 
+
+test_that("works for a frequency threshold",
+          {
+            expect_is(
+              safety_summary(safety, exposed=c("Experimental"=60,"Control"=67), freq_threshold = 3),
+              "safety_summary"
+            )
+          }
+          )
+
+test_that("print the safety summary",{
+  x <- capture_output_lines( print(safety_statistics) )
+  expect_equal(x[1], "Group-Level Statistics")
+
+})
+
+test_that("create a safety summary by hand",{
+  safety_stats2 <- create.safety_summary(safety_statistics$GROUP,
+                                         safety_statistics$NON_SERIOUS,
+                                         safety_statistics$SERIOUS
+                                         )
+  expect_identical(safety_statistics, safety_stats2)
+
+})
+
+
+
+
+
+
 test_that("trying to use Selenium",{
 skip("for now")
 skip_on_appveyor()
