@@ -1,7 +1,7 @@
 Package: eudract
 Type: Package
 Title: Creates Safety Results Summary in XML to upload to EudraCT
-Date: 30-8-2019
+Date: 03-10-2019
 Version: 0.2.0
 Author: Simon Bond, Beatrice Pantaleo
 Maintainer: The package maintainer <simon.bond@addenbrookes.nhs.uk>
@@ -16,5 +16,6 @@ Suggests:
     testthat,
     RSelenium,
     knitr,
-    rmarkdown
+    rmarkdown,
+    stringi
 VignetteBuilder: knitr

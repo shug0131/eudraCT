@@ -9,7 +9,9 @@ devtools::clean_vignettes()
 
 .libPaths("U:/My Documents/R/win-library/3.6")
 devtools::build_vignettes()
+devtools::document(roclets = c('rd', 'collate', 'namespace'))
 devtools::build()
+
 install.packages("../eudract_0.2.0.tar.gz",
                  repos = NULL, type = "source")
 devtools::build("../eudract_0.2.0.tar.gz", binary=TRUE)
