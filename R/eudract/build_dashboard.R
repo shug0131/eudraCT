@@ -21,3 +21,13 @@ install.packages("V:/STATISTICS/NON STUDY FOLDER/Software/R/R Code Library/cctu_
                  repos = NULL, type="win.binary")
 
 #devtools::build( binary=TRUE)
+# modify news.md, cran-comments.md README.rmd
+devtools::check_win_release()
+devtools::check_win_devel()
+#check github is totally up to date
+devtools::release()
+# add a tag to github
+# do some publicity , edit the website news, CTU stats email list.
+#Add the .9000 suffix to the Version field in the DESCRIPTION to
+#indicate that this is a development version.
+#Create a new heading in NEWS.md and commit the changes.

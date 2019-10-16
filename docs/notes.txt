@@ -34,3 +34,9 @@ As for the Github/External website but
 run "bundle exec jekyll serve"
 browse at http://localhost:4000
 
+## Look at 
+
+https://search.google.com/search-console?resource_id=https%3A%2F%2Feudract-tool.medschl.cam.ac.uk%2F
+
+to see if it being picked up or even found...
+

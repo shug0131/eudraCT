@@ -9,22 +9,30 @@ Status](https://ci.appveyor.com/api/projects/status/github/shug0131/eudraCT?bran
 
 # eudract
 
-The goal of eudract is to provide tools to easily produce summaris of
+The goal of eudract is to provide tools to easily produce summaries of
 safety data from clinical trials that can easily be uploaded into
 eudraCT.
 
 ## Installation
 
-You can install the github version of eudract with:
+You can install from CRAN directly with
+
+``` r
+install.packages("eudract")
+```
+
+You can install the very latest version on github with:
 
 ``` r
 install.packages("devtools")
 devtools::install_github("shug0131/eudraCT/R/eudract")
 ```
 
-## Example
+## Documentation
 
-Go and read the help pages
+<https://eudract-tool.medschl.cam.ac.uk> provides full documentation
+
+Go and read the help pages within R
 
 ``` r
 ?eudract::safety_summary

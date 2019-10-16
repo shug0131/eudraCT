@@ -3,6 +3,6 @@
 ^README.Rmd$
 ^travis-tool.sh$
 ^build_dashboard.R$
-
+^cran-comments.md$
 ^doc$
 ^Meta$
