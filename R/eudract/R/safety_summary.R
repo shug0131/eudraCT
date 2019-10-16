@@ -211,7 +211,7 @@ print.safety_summary <- function(x,...){
 #' function that creates a safety_summary object from individual data.frames
 #' @param group a data frame that contains the group-level statistics
 #' @param non_serious a data frame that contains the non-serious term-group level statistics
-#' @param serious a data frame that containts the serious term-group level statistics
+#' @param serious a data frame that contains the serious term-group level statistics
 #' @return  a safety_summary object
 #' @keywords internal
 #' @export

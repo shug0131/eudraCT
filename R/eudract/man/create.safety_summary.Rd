@@ -11,7 +11,7 @@ create.safety_summary(group, non_serious, serious)
 
 \item{non_serious}{a data frame that contains the non-serious term-group level statistics}
 
-\item{serious}{a data frame that containts the serious term-group level statistics}
+\item{serious}{a data frame that contains the serious term-group level statistics}
 }
 \value{
 a safety_summary object

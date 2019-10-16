@@ -25,6 +25,7 @@ install.packages("V:/STATISTICS/NON STUDY FOLDER/Software/R/R Code Library/cctu_
 devtools::check_win_release()
 devtools::check_win_devel()
 #check github is totally up to date
+usethis::use_release_issue(version="0.9.0")
 devtools::release()
 # add a tag to github
 # do some publicity , edit the website news, CTU stats email list.
