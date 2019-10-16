@@ -1,7 +1,7 @@
 Package: eudract
 Type: Package
 Title: Creates Safety Results Summary in XML to Upload to EudraCT
-Date: 16-10-2019
+Date: 2019-10-16
 Version: 0.9.0
 Authors@R: c(
     person("Simon", "Bond", email="simon.bond@addenbrookes.nhs.uk", role="cre"),
@@ -18,7 +18,6 @@ Depends: R (>= 3.5.0)
 RoxygenNote: 6.1.1
 Suggests: 
     testthat,
-    RSelenium,
     knitr,
     rmarkdown,
     stringr
