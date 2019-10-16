@@ -34,5 +34,6 @@ eudract_convert <- function(input, output="table_eudract.xml",
   #check against the output schema
   check_out <- xml2::xml_validate(output_xml, schema_output)
   if( !check_out){ warning(attr(check_out,"errors"))}
+  cat("Please email cctu@addenbrookes.nhs.uk to tell us if you have successfully uploaded a study to EudraCT.\nThis is to allow us to measure the impact of this tool.")
   invisible(check_out)
 }

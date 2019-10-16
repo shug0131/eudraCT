@@ -4,6 +4,7 @@
 
 
 # want there to be no group at all for nonserious, and a warning
+context("testing error catching")
 
 if( is_testing()){path <- "."} else{ path <- "tests/testthat"}
 
@@ -58,12 +59,25 @@ test_that("missing variable",{
   expect_error(safety_summary(aes[,-2], exposed=c(700,750,730), soc_index = "soc_term"),"your input data are missing the following variables:")
 })
 
-test_that("exposed is too short",{
+test_that("exposed has too few elements",{
   aes <- read.csv(file.path(path,"data/events.csv"), stringsAsFactors = FALSE)
   expect_is(safety_summary(aes, exposed=c(700,750,730), soc_index = "soc_term"),"safety_summary")
   expect_error(safety_summary(aes, exposed=c(700,750), soc_index = "soc_term"),"the argument 'exposed' has fewer elements than the number of groups")
 
 })
+
+test_that(" numbers exposed to low",
+          {
+            expect_is( safety_summary(safety, exposed=c(15,33)), "safety_summary")
+
+            expect_error(safety_summary(safety, exposed=c(15,32)),
+                         "'exposed' argument has elements that are too small"
+            )
+          }
+)
+
+
+
 test_that("wrong lenght for excess deaths",{
   aes <- read.csv(file.path(path,"data/events.csv"), stringsAsFactors = FALSE)
   expect_is(safety_summary(aes, exposed=c(700,750,730), soc_index = "soc_term"),"safety_summary")
@@ -90,3 +104,43 @@ test_that("induced errors in the safety_summary output",
             expect_error(eudract_convert("simple.xml","eudract.xml"))
           }
           )
+
+
+test_that("wrong names for excess deaths",{
+  expect_error(safety_summary(safety, exposed=c(67,60),excess_deaths =c("Rx"=60,"Cx"=67)),
+               "the names of 'excess_deaths' do not match up to the values in 'data\\$group'"
+               )
+  })
+
+
+test_that("create.safety_summary name checks",
+          {
+            safety_stats <- safety_summary(safety, c(67,60))
+            expect_is( create.safety_summary(safety_stats$GROUP,
+                                             safety_stats$NON_SERIOUS,
+                                             safety_stats$SERIOUS), "safety_summary")
+            expect_error(
+              create.safety_summary(safety_stats$GROUP %>% select(-title),
+                                    safety_stats$NON_SERIOUS,
+                                    safety_stats$SERIOUS),
+            "group data.frame does not have the correct variable names"
+              )
+            expect_error(
+              create.safety_summary(safety_stats$GROUP,
+                                    safety_stats$NON_SERIOUS %>% select(-subjectsAffected),
+                                    safety_stats$SERIOUS),
+              "non_serious data.frame does not have the correct variable names"
+            )
+            expect_error(
+              create.safety_summary(safety_stats$GROUP ,
+                                    safety_stats$NON_SERIOUS,
+                                    safety_stats$SERIOUS%>% select(-deaths)),
+              "serious data.frame does not have the correct variable names"
+            )
+
+
+
+          }
+
+          )
+

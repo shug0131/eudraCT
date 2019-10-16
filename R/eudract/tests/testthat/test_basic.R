@@ -211,10 +211,10 @@ for( rx_index in 1:nrow(GROUP)){
 
 wd <- getwd()
 if(!is_testing()){setwd("tests/testthat")}
-write.csv(GROUP, "GROUP.csv")
-write.csv(SERIOUS, "SERIOUS.csv")
-write.csv(NONSERIOUS, "NONSERIOUS.csv")
-write.csv(events, "events.csv")
+write.csv(GROUP, "GROUP.csv",row.names = FALSE)
+write.csv(SERIOUS, "SERIOUS.csv",row.names = FALSE)
+write.csv(NONSERIOUS, "NONSERIOUS.csv",row.names = FALSE)
+write.csv(events, "events.csv",row.names = FALSE)
 setwd(wd)
 
 

@@ -199,3 +199,5 @@ rm EXPOSED.dta
 ! msxsl.exe stata_statsfiles.xml stata_combine.xslt -o simple.xml
 
 ! msxsl.exe simple.xml simpleToEudraCT.xslt -o table_eudract.xml
+
+display "Please email cctu@addenbrookes.nhs.uk to tell us if you have successfully uploaded a study to EudraCT.  This is to allow us to measure the impact of this tool."

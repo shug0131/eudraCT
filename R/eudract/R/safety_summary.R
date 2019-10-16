@@ -114,6 +114,16 @@ safety_summary <- function(data, exposed, excess_deaths=0, freq_threshold=0, soc
             deathsResultingFromAdverseEvents ,subjectsExposed,deathsAllCauses
     ) %>%
     rename("title"="group")
+ #check the validity of the exposed values
+ check <- group %>%
+   mutate(
+     check=subjectsExposed-pmax(subjectsAffectedBySeriousAdverseEvents,
+                                subjectsAffectedByNonSeriousAdverseEvents,
+                                deathsResultingFromAdverseEvents,
+                                deathsAllCauses)
+   ) %>%
+   summarise( check=any(check<0))
+ if( check$check){stop("'exposed' argument has elements that are too small")}
 
   ans <- list(GROUP=as.data.frame(group))
 

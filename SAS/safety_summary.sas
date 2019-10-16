@@ -270,3 +270,4 @@ proc xsl in="&PATH\simple0.xml" out="&PATH\simple.xml" xsl="&PATH\sas_xml_renami
 /*use xslt to transform into the format needed by EudraCT */
 proc xsl in="&PATH\simple.xml" out="&PATH\table_eudract.xml" xsl="&PATH\simpleToEudraCT.xslt";run;
 
+%put Please email cctu@addenbrookes.nhs.uk to tell us if you have successfully uploaded a study to EudraCT. This is to allow us to measure the impact of this tool.;
