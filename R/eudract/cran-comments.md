@@ -7,12 +7,32 @@
 ## R CMD check results
 There were no ERRORs or WARNINGs.
 
-There was 1 NOTE:
+There were 2 NOTES:
 
- Possibly mis-spelled words in DESCRIPTION:
-  EudraCT (3:59, 11:67, 11:910)
+---
+
+Found the following (possibly) invalid URLs:
+    URL: https://eudract.ema.europa.eu/
+      From: inst/doc/eudract.html
+      Status: Error
+      Message: libcurl error code 60:
+        	server certificate verification failed. CAfile: none CRLfile: none
+        	(Status without verification: OK)
+    URL: https://eudract.ema.europa.eu/docs/technical/schemas/clinicaltrial/results/adverseEvents.xsd
+      From: inst/doc/eudract.html
+      Status: Error
+      Message: libcurl error code 60:
+        	server certificate verification failed. CAfile: none CRLfile: none
+        	(Status without verification: OK)
   
-This is the correct spelling and case-mix of an acronym (European Union Drug Regulating Authorities Clinical Trials Database)
+  Found the following (possibly) invalid file URIs:
+    URI: medra
+      From: man/soc_code.Rd
+    URI: eutctid
+      From: man/soc_code.Rd
+---
+
+Both websites are outside of my control but give crucial documentation relevant to this package. The URLs are both in full working order. Hence this is a false positive.
 
 ## Downstream dependencies
 
