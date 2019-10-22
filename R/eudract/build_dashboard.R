@@ -23,7 +23,9 @@ install.packages("V:/STATISTICS/NON STUDY FOLDER/Software/R/R Code Library/cctu_
 #devtools::build( binary=TRUE)
 # modify news.md, cran-comments.md README.rmd
 devtools::check_win_release()
+rcmdcheck::rcmdcheck()
 devtools::check_win_devel()
+devtools::check_rhub()
 #check github is totally up to date
 devtools::release()
 # add a tag to github

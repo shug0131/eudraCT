@@ -128,7 +128,7 @@ safety_summary <- function(data, exposed, excess_deaths=0, freq_threshold=0, soc
   ans <- list(GROUP=as.data.frame(group))
 
   # Nonserious term-level statistics
-  if( any(!data$serious)){
+  if( any(!as.logical(data$serious))){
     non_serious <- data %>% dplyr::filter(!serious) %>%
       group_by(term, soc, group) %>%
       summarise(subjectsAffected=length(unique(subjid)),
@@ -150,7 +150,7 @@ safety_summary <- function(data, exposed, excess_deaths=0, freq_threshold=0, soc
   } else{ warning("There are no non-serious events")}
 
   # Serious term-level statistics.
-  if( any(data$serious)){
+  if( any(as.logical(data$serious))){
     serious <- data %>% dplyr::filter(as.logical(serious)) %>%
       group_by(term, soc, group) %>%
       summarise(subjectsAffected=length(unique(subjid)),
