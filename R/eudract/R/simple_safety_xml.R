@@ -9,10 +9,7 @@
 #'
 #' @export
 #'
-#' @examples
-#' safety_statistics <- safety_summary(safety, exposed=c("Experimental"=60,"Control"=67))
-#' simple_safety_xml(safety_statistics, "simple.xml")
-#' eudract_convert(input="simple.xml", output="table_eudract.xml")
+#' @example example/canonical.R
 
 simple_safety_xml <- function(x, file,
                               schema=system.file("extdata","simple.xsd", package="eudract")){

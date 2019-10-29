@@ -4,10 +4,23 @@
 * Windows Server 2012 R2 x64 (build 9600) on (appveyor), R3.6.1
 * check_win_release
 
+## Previous notes are now fixed:
+
+Found the following (possibly) invalid file URIs:
+     URI: medra
+       From: man/soc_code.Rd
+     URI: eutctid
+       From: man/soc_code.Rd
+Check: for non-standard things in the check directory, Result: NOTE
+   Found the following files/directories:
+     'simple.xml' 'table_eudract.xml'
+
+
+
 ## R CMD check results
 There were no ERRORs or WARNINGs.
 
-There were 2 NOTES:
+There is 1 NOTE:
 
 ---
 
@@ -24,13 +37,7 @@ Found the following (possibly) invalid URLs:
       Message: libcurl error code 60:
         	server certificate verification failed. CAfile: none CRLfile: none
         	(Status without verification: OK)
-  
-  Found the following (possibly) invalid file URIs:
-    URI: medra
-      From: man/soc_code.Rd
-    URI: eutctid
-      From: man/soc_code.Rd
----
+---  
 
 Both websites are outside of my control but give crucial documentation relevant to this package. The URLs are both in full working order. Hence this is a false positive.
 

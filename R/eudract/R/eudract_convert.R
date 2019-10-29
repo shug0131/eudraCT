@@ -10,10 +10,7 @@
 #' @seealso \code{\link{safety_summary}} \code{\link{simple_safety_xml}}
 #'
 #' @export
-#' @examples
-#' safety_statistics <- safety_summary(safety, exposed=c("Experimental"=60,"Control"=67))
-#' simple_safety_xml(safety_statistics, "simple.xml")
-#' eudract_convert(input="simple.xml", output="table_eudract.xml")
+#' @example example/canonical.R
 
 
 eudract_convert <- function(input, output="table_eudract.xml",

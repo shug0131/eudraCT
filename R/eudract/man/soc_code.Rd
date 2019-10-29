@@ -11,7 +11,7 @@
    \item{meddra}{the meddra code}
 }}
 \source{
-\url{medra}, \url{eutctid}
+\url{https://www.meddra.org/}, \url{https://spor.ema.europa.eu/rmswi/#/}
 }
 \usage{
 soc_code

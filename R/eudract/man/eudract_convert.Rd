@@ -28,9 +28,12 @@ the output from the validation against the schema. A new file is created as a si
 applies a conversion using xslt from a simple xml file to a eudract compatible file, and checks against the schema
 }
 \examples{
-safety_statistics <- safety_summary(safety, exposed=c("Experimental"=60,"Control"=67))
-simple_safety_xml(safety_statistics, "simple.xml")
-eudract_convert(input="simple.xml", output="table_eudract.xml")
+safety_statistics <- safety_summary(safety,
+                                    exposed=c("Experimental"=60,"Control"=67))
+simple_safety_xml(safety_statistics,
+                  file.path(tempdir(), "simple.xml"))
+eudract_convert(input=file.path(tempdir(), "simple.xml"),
+                output=file.path(tempdir(), "table_eudract.xml"))
 }
 \seealso{
 \code{\link{safety_summary}} \code{\link{simple_safety_xml}}

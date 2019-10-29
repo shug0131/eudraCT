@@ -9,6 +9,6 @@
 #'    \item{meddra}{the meddra code}
 #' }
 #'
-#' @source \url{medra}, \url{eutctid}
+#' @source \url{https://www.meddra.org/}, \url{https://spor.ema.europa.eu/rmswi/#/}
 #'
 "soc_code"

@@ -21,9 +21,12 @@ no output is returned, but a file is created as a side-effect.
 creates a simple xml file from the input of a safety_summary object
 }
 \examples{
-safety_statistics <- safety_summary(safety, exposed=c("Experimental"=60,"Control"=67))
-simple_safety_xml(safety_statistics, "simple.xml")
-eudract_convert(input="simple.xml", output="table_eudract.xml")
+safety_statistics <- safety_summary(safety,
+                                    exposed=c("Experimental"=60,"Control"=67))
+simple_safety_xml(safety_statistics,
+                  file.path(tempdir(), "simple.xml"))
+eudract_convert(input=file.path(tempdir(), "simple.xml"),
+                output=file.path(tempdir(), "table_eudract.xml"))
 }
 \seealso{
 \code{\link{eudract_convert}} \code{\link{safety_summary}}
