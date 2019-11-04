@@ -4,6 +4,18 @@
 * Windows Server 2012 R2 x64 (build 9600) on (appveyor), R3.6.1
 * check_win_release
 
+
+## Changes 04NOV2019
+
+* In DESCRIPTION the URL is now contained in <> brackets
+* capitals have been removed from the description line in DESCRIPTION
+* In the vignette the second URL https://eudract.ema.europa.eu/docs/technical/schemas/clinicaltrial/results/adverseEvents.xsd , is retained. Further comment is added to explain it is semi-readible data/code file rather than a webpage.
+* message() has replace cat or print in eudract_convert(), simple_safety_xml()
+* the on.exit(options()) line has been moved within print.safety_summary() to be immediately after the options() modification.
+* The examples, vignette, and testing file have been checked for writing files, and all cases have been modified to use tempdir() or tempfile().
+
+
+
 ## Previous notes are now fixed:
 
 Found the following (possibly) invalid file URIs:

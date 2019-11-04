@@ -4,11 +4,11 @@
 \alias{eudract_convert}
 \title{applies a conversion using xslt from a simple xml file to a eudract compatible file, and checks against the schema}
 \usage{
-eudract_convert(input, output = "table_eudract.xml",
-  xslt = system.file("extdata", "simpleToEudraCT.xslt", package =
-  "eudract"), schema_input = system.file("extdata", "simple.xsd", package
-  = "eudract"), schema_output = system.file("extdata",
-  "adverseEvents.xsd", package = "eudract"))
+eudract_convert(input, output, xslt = system.file("extdata",
+  "simpleToEudraCT.xslt", package = "eudract"),
+  schema_input = system.file("extdata", "simple.xsd", package =
+  "eudract"), schema_output = system.file("extdata", "adverseEvents.xsd",
+  package = "eudract"))
 }
 \arguments{
 \item{input}{a character string giving the file path to the simple xml file}
@@ -30,10 +30,11 @@ applies a conversion using xslt from a simple xml file to a eudract compatible f
 \examples{
 safety_statistics <- safety_summary(safety,
                                     exposed=c("Experimental"=60,"Control"=67))
-simple_safety_xml(safety_statistics,
-                  file.path(tempdir(), "simple.xml"))
-eudract_convert(input=file.path(tempdir(), "simple.xml"),
-                output=file.path(tempdir(), "table_eudract.xml"))
+simple <- tempfile(fileext = ".xml")
+eudract <- tempfile(fileext = ".xml")
+simple_safety_xml(safety_statistics, simple)
+eudract_convert(input=simple,
+                output=eudract)
 }
 \seealso{
 \code{\link{safety_summary}} \code{\link{simple_safety_xml}}

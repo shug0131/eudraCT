@@ -13,7 +13,7 @@
 #' @example example/canonical.R
 
 
-eudract_convert <- function(input, output="table_eudract.xml",
+eudract_convert <- function(input, output,
                             xslt=system.file("extdata","simpleToEudraCT.xslt", package="eudract"),
                             schema_input=system.file("extdata","simple.xsd", package="eudract"),
                             schema_output=system.file("extdata","adverseEvents.xsd", package="eudract")
@@ -27,10 +27,10 @@ eudract_convert <- function(input, output="table_eudract.xml",
   if( !check_in){ stop(attr(check_in,"errors"))}
   output_xml <- xslt::xml_xslt(doc, style)
   xml2::write_xml(output_xml, output)
-  cat(paste0("'",output, "' is created or modified\n"))
+  message(paste0("'",output, "' is created or modified\n"))
   #check against the output schema
   check_out <- xml2::xml_validate(output_xml, schema_output)
   if( !check_out){ warning(attr(check_out,"errors"))}
-  cat("Please email cctu@addenbrookes.nhs.uk to tell us if you have successfully uploaded a study to EudraCT.\nThis is to allow us to measure the impact of this tool.")
+  message("Please email cctu@addenbrookes.nhs.uk to tell us if you have successfully uploaded a study to EudraCT.\nThis is to allow us to measure the impact of this tool.")
   invisible(check_out)
 }

@@ -2,7 +2,7 @@ context("basic test")
 library(eudract)
 library(xml2)
 
-
+if( is_testing()){path <- tempdir()} else{ path <- "tests/testthat"}
 # See V:\STATISTICS\NON STUDY FOLDER\Academic Research\Eudract Tool\SAS\EudraCT_Upload_V1.0\EudraCT_Upload_V1.0\Validation\Notes & Reports
 
 
@@ -39,7 +39,7 @@ GROUP <- data.frame(
   deathsAllCauses=all_death_count
 )
 
-data_file <- "all_soc.csv"
+data_file <- "data/all_soc.csv"
 if(!is_testing()){data_file <- paste0("tests/testthat/",data_file)}
 
 all_soc <- read.csv(data_file, stringsAsFactors = FALSE)
@@ -209,13 +209,11 @@ for( rx_index in 1:nrow(GROUP)){
 }
 
 
-wd <- getwd()
-if(!is_testing()){setwd("tests/testthat")}
-write.csv(GROUP, "GROUP.csv",row.names = FALSE)
-write.csv(SERIOUS, "SERIOUS.csv",row.names = FALSE)
-write.csv(NONSERIOUS, "NONSERIOUS.csv",row.names = FALSE)
-write.csv(events, "events.csv",row.names = FALSE)
-setwd(wd)
+write.csv(GROUP, file.path(path,"GROUP.csv"),row.names = FALSE)
+write.csv(SERIOUS, file.path(path,"SERIOUS.csv"),row.names = FALSE)
+write.csv(NONSERIOUS, file.path(path,"NONSERIOUS.csv"),row.names = FALSE)
+write.csv(events, file.path(path,"events.csv"),row.names = FALSE)
+
 
 
 
@@ -270,18 +268,16 @@ expect_is(safety_statistics[[1]],"data.frame")
 )
 
 test_that("create simple xml",{
-file.remove("simple.xml")
-simple_safety_xml(safety_statistics, "simple.xml")
-new <- read_xml("simple.xml")
+simple_safety_xml(safety_statistics, file.path(path,"simple.xml"))
+new <- read_xml(file.path(path,"simple.xml"))
 ref <- read_xml("reference/simple.xml")
 expect_equal(new,ref)
   }
 )
 
 test_that("convert to eudract",{
-  file.remove("table_eudract.xml")
-  eudract_convert(input="simple.xml", output="table_eudract.xml")
-  new <- read_xml("table_eudract.xml")
+  eudract_convert(input=file.path(path,"simple.xml"), output=file.path(path,"table_eudract.xml"))
+  new <- read_xml(file.path(path,"table_eudract.xml"))
   ref <- read_xml("reference/table_eudract.xml")
   expect_equal(new,ref)
 }

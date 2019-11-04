@@ -14,8 +14,9 @@ test_that("no aes",
             no_aes <- read.csv(file.path(path,"data/no_aes.csv"), stringsAsFactors = FALSE)
             expect_warning(output <- safety_summary(no_aes, exposed=10, soc="soc_term"))
             expect_equal( names(output), c("GROUP", "SERIOUS"))
-            simple_safety_xml(output, "test_simple.xml")
-            expect_true(eudract_convert( "test_simple.xml","test_output.xml") )
+            simple_safety_xml(output, file.path(tempdir(),"test_simple.xml"))
+            expect_true(eudract_convert( file.path(tempdir(),"test_simple.xml"),
+                                         file.path(tempdir(),"test_output.xml")))
 
 
           }
@@ -26,8 +27,9 @@ test_that("no saes",
             no_saes <- read.csv(file.path(path,"data/no_saes.csv"), stringsAsFactors = FALSE)
             expect_warning(output <- safety_summary(no_saes, exposed=10, soc="soc_term"))
             expect_equal( names(output), c("GROUP", "NON_SERIOUS"))
-            simple_safety_xml(output, "test_simple.xml")
-            expect_true(eudract_convert( "test_simple.xml","test_output.xml") )
+            simple_safety_xml(output, file.path(tempdir(),"test_simple.xml"))
+            expect_true(eudract_convert( file.path(tempdir(),"test_simple.xml"),
+                                         file.path(tempdir(),"test_output.xml") ))
 
           }
 )
@@ -48,8 +50,9 @@ test_that("empty group",
                                        soc="soc_term")
             )
             expect_equal(nrow(output$GROUP),2)
-            simple_safety_xml(output, "test_simple.xml")
-            expect_true(eudract_convert( "test_simple.xml","test_output.xml") )
+            simple_safety_xml(output, file.path(tempdir(),"/test_simple.xml"))
+            expect_true(eudract_convert( file.path(tempdir(),"/test_simple.xml"),
+                                         file.path(tempdir(),"/test_output.xml") ))
             }
 )
 
@@ -89,7 +92,7 @@ test_that("wrong lenght for excess deaths",{
 })
 
 test_that("wrong class input to simple_safety_xml",
-          { expect_error(simple_safety_xml(1:10,"simple.xml"), "is not a safety_summary object")}
+          { expect_error(simple_safety_xml(1:10,file.path(tempdir(),"simple.xml")), "is not a safety_summary object")}
           )
 
 
@@ -100,8 +103,9 @@ test_that("induced errors in the safety_summary output",
             x <- safety_stats$SERIOUS$groupTitle
             x <- ifelse(x=="Group A", "Placebo",x)
             safety_stats$SERIOUS$groupTitle <- x
-            expect_warning( simple_safety_xml(safety_stats,"simple.xml") )
-            expect_error(eudract_convert("simple.xml","eudract.xml"))
+            expect_warning( simple_safety_xml(safety_stats,file.path(tempdir(),"simple.xml")) )
+            expect_error(eudract_convert(file.path(tempdir(),"simple.xml"),
+                                         file.path(tempdir(),"eudract.xml")))
           }
           )
 

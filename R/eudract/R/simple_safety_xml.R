@@ -25,7 +25,7 @@ simple_safety_xml <- function(x, file,
   if(!is.null(SERIOUS)) append_xml(SERIOUS, file_connection)
   writeChar('\n</TABLE>',con=file_connection, eos=NULL)
   close(file_connection)
-  cat(paste0("'",file, "' is created or modified\n"))
+  message(paste0("'",file, "' is created or modified\n"))
   # check the output against the schema
   schema_output <- xml2::read_xml(schema)
   output <- xml2::read_xml(file)

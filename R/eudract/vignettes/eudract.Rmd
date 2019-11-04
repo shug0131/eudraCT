@@ -64,28 +64,25 @@ If you have produced these statistics through separate coding, then you can use 
 First we export the `safety_statistics` to a XML document that is human readable "simple.xml". Then we convert to the EudraCT format.
 
 ```{r xml}
-simple_safety_xml(safety_statistics, "simple.xml")
-eudract_convert(input="simple.xml", output="safety_upload.xml")
+simple <- tempfile(fileext = ".xml")
+eudract_upload_file <- tempfile(fileext = ".xml")
+simple_safety_xml(safety_statistics, simple)
+eudract_convert(input=simple,
+                output=eudract_upload_file)
 ```
 
 # Output
 
-```{r,  include=FALSE}
-if(!dir.exists("../inst/doc")){dir.create("../inst/doc")}
-file.copy("simple.xml", "../inst/doc", overwrite=TRUE)
-file.copy("safety_upload.xml", "../inst/doc", overwrite=TRUE)
-```
 
 
+The key output is [safety_upload.xml](../extdata/safety_upload.xml).
 
-The key output is [safety_upload.xml](safety_upload.xml).
 
-
-We can validate the output against the XML schema provided by Eudract, although the call to `eudract_convert()` does also do this behind the scenes, returning the value `TRUE` if there are no errors against the schema validation. The [schema](https://eudract.ema.europa.eu/docs/technical/schemas/clinicaltrial/results/adverseEvents.xsd) was downloaded to this package on 15NOV2016.
+We can validate the output against the XML schema provided by Eudract, although the call to `eudract_convert()` does also do this behind the scenes, returning the value `TRUE` if there are no errors against the schema validation. The  [schema](https://eudract.ema.europa.eu/docs/technical/schemas/clinicaltrial/results/adverseEvents.xsd), was downloaded to this package on 15NOV2016 - note this is a semi-readible file of code/data rather than a standard web page.
 
 ```{r check_schema}
 myschema <- xml2::read_xml(system.file("extdata","adverseEvents.xsd", package="eudract"))
-aes <- xml2::read_xml("safety_upload.xml")
+aes <- xml2::read_xml(eudract_upload_file)
 check <- xml2::xml_validate(aes,myschema)
 if(check){print("Validation against the schema has passed!")}
 ```
