@@ -1,6 +1,6 @@
 library(testthat)
 library(eudract)
-if( is_testing()){path <- "."} else{ path <- "tests/testthat"}
+if( is_testing()){path <- tempdir()} else{ path <- "tests/testthat"}
 
 test_that("append_xml",{
   safety2 <- safety

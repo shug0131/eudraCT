@@ -195,6 +195,7 @@ df_to_char <- function(df){
 
 print.safety_summary <- function(x,...){
   old_scipen <- options("scipen")
+  on.exit( options(scipen=old_scipen))
   options(scipen=999)
   cat("Group-Level Statistics\n\n")
   print(x$GROUP)
@@ -202,7 +203,7 @@ print.safety_summary <- function(x,...){
   print(head(x$NON_SERIOUS))
   cat("\nSerious event-level statistics (intial rows)\n\n")
   print(head(x$SERIOUS))
-  on.exit( options(scipen=old_scipen))
+
 }
 
 #' function that creates a safety_summary object from individual data.frames
