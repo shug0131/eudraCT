@@ -5,6 +5,10 @@
 * check_win_release
 
 
+## Changes 04NOV2019 v2, DESCRIPTION file
+
+Angled brackets removed in the URL field, but a reference with <> is added within the Description field
+
 ## Changes 04NOV2019
 
 * In DESCRIPTION the URL is now contained in <> brackets

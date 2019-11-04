@@ -28,8 +28,9 @@ devtools::check_win_devel()
 devtools::check_rhub()
 #check github is totally up to date
 devtools::release()
-# add a tag to github
-# do some publicity , edit the website news, CTU stats email list.
+devtools::submit_cran()
+#add a tag to github
+#do some publicity , edit the website news, CTU stats email list.
 #Add the .9000 suffix to the Version field in the DESCRIPTION to
 #indicate that this is a development version.
 #Create a new heading in NEWS.md and commit the changes.
