@@ -5,6 +5,16 @@
 * check_win_release
 
 
+## Changes 06NOV2019
+
+Typos, punctuation corrected in the DESCRIPTIOn file
+
+* u  nits   -->  units
+* event;for  -->  event; for
+* package: prepares --> package prepares
+* EudraCT; formats -->  EudraCT and formats
+
+
 ## Changes 04NOV2019 v2, DESCRIPTION file
 
 Angled brackets removed in the URL field, but a reference with <> is added within the Description field
