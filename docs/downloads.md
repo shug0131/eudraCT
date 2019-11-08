@@ -9,8 +9,7 @@ toc: true
 Compressed folders with self-contained tools are available to download here:
 
 
-* [R package source]({{ site.ghpath }}/R/eudract_0.9.0.tar.gz?raw=true)
-* [R package windows binary]({{ site.ghpath }}/R/eudract_0.9.0.zip?raw=true)
+* [R CRAN](https://CRAN.R-project.org/package=eudract) or install within R using ```install.packages("eudract")```
 * [SAS]({{ site.ghpath }}/SAS/SAS%20Eudract%20Tools.zip?raw=true)
 * [Stata]({{ site.ghpath }}/Stata/Stata%20Eudract%20Tools.zip?raw=true)
 
@@ -26,7 +25,12 @@ The statistical packages will be used to compute the summary statistics needed, 
 
 ## R
 
-There is now an R package in development that can be installed directly from github using the R command.
+There is an officially release, with testing included, in [CRAN](https://CRAN.R-project.org/package=eudract)
+~~~
+install.packages("eudract")
+~~~
+
+The development version is available from github using the R command.
 ~~~~
 devtools::install_github("shug0131/eudraCT/R/eudract", build_vignettes = TRUE)
 ~~~~
@@ -41,10 +45,7 @@ eudract_convert(input="simple.xml", output="table_eudract.xml")
 ~~~
 and two files, simple.xml & table_eudract.xml will have been created, the latter being suitable to upload into EudraCT.
 
-In the long-term future after testing is completed a version will be placed on CRAN.
-~~~
-install.packages("eudract")
-~~~
+
 
 ## SAS
 

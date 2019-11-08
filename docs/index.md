@@ -12,7 +12,3 @@ The remit of the [European Clinical Trials Data Base (EudraCT)](https://eudract.
 An overview of the components to the tool is shown below.
 
 ![flowchart](img/flowchart.png)
-
-# Warning
-
-The project is under development and aims to be completed by autumn 2019. No guarantees for anything downloaded at present.
