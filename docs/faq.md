@@ -4,7 +4,7 @@ title: FAQ
 toc: true
 ---
 
-# What do the variables mean in the input data?
+## What do the variables mean in the input data?
 
 - **group**  this is commonly know as the treatment arm and needs to be at least four characters long.
 Even if you have a single arm study then you still need this to exist as a constant value.
@@ -17,19 +17,19 @@ we have _some_ flexibility here, and either a numerical medDRA code, or the corr
 - **related** a 0/1 value indicating if the AE was related to treatment.
 - **fatal** a 0/1 value indicating if the AE resulted in death.
 
-# Why do I need to enter the numbers exposed
+## Why do I need to enter the numbers exposed
 
 The input data is taken to be the set of adverse events _that have been observed_: one row of data per event.
 There may be subjects who did not experience any AEs if the intervention has a good safety profile.
 So to calculate incidence rates with a correct denominator we need this extra data; one number per group.
 
-# Excess Deaths?
+## Excess Deaths?
 
 The eudract system does allow the unusual scenario whereby not all fatalities are
 captured within the AE data. If there are any such fatalities then provide counts, per group.
 Generally, thought you can ignore this and use the default value of 0.
 
-# SOC coding in more detail
+## SOC coding in more detail
 
 If you use the eudraCT system manually to enter AE data, then for each event you can enter a _term_
 using free text, but must choose the _SOC_ from a drop-down list of 27 values.
@@ -45,7 +45,7 @@ Hence as part of the tools provided here, we include a data set that gives the E
 to link to your data. There is a choice to link via numerical code, or text, which is specified by the argument _soc_index_, and must be
 given a value of either _meddra_ for the numerical option, or _soc_term_ for the text option.
 
-# Cleaning free-text AE descriptions
+## Cleaning free-text AE descriptions
 
 Most trials have free text descriptions of AEs provided by a clinician as source data.
 Having variant spellings or descriptions of the same term in the data provided will
@@ -54,7 +54,7 @@ the eudraCT system will accept free text for terms. It up to the study team to
 convert and code free text into an AE dictionary or find an alternative means
 to clean the data.
 
-# Can I edit details after uploading
+## Can I edit details after uploading
 
 Yes, please do review and ammend by hand using the Eudract portal manually. You may want to confirm if study-wide default values
 (AE dictionary, version number, incidence threshold,...) are accurate.

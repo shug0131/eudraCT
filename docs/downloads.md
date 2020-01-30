@@ -4,7 +4,7 @@ title: Downloads
 toc: true
 ---
 
-# Grab and Go
+## Grab and Go
 
 Compressed folders with self-contained tools are available to download here:
 
@@ -13,17 +13,17 @@ Compressed folders with self-contained tools are available to download here:
 * [SAS]({{ site.ghpath }}/SAS/SAS%20Eudract%20Tools.zip?raw=true)
 * [Stata]({{ site.ghpath }}/Stata/Stata%20Eudract%20Tools.zip?raw=true)
 
-#  Source Code
+##  Source Code
 
 This web-page is simply a front-end to a [github repository](https://github.com/shug0131/eudraCT) . Hence the links below can be accessed via directory navigation. I've added further explanation as to the final objectives, but please be aware that this currently simply a partial  mirror of the local directory hosting the project with Cambridge CTU: No guarantees
 
-# Software Tools
+## Software Tools
 
 The intention is for each of the major software packages ([R](https://cran.r-project.org/), [Stata](https://www.stata.com/), [SAS](https://www.sas.com/)) to have a set of code, libraries, macros, to be used semi-automatically. The format of the original safety data cannot be totally standardised, and depends on each individual clinical trial's database. It is assumed however that it is in the format of one line per event observed, as per the specifications.  
 
 The statistical packages will be used to compute the summary statistics needed, and may indeed be replaced by code provided by the end-user if preferred.  The statistics must then be saved in a "simple" XML format and then the final steps are universal to reformat using [XSLT](https://www.w3.org/standards/xml/transformation) to meet the EudraCT requirements.
 
-## R
+### R
 
 There is an officially release, with testing included, in [CRAN](https://CRAN.R-project.org/package=eudract)
 ~~~
@@ -47,7 +47,7 @@ and two files, simple.xml & table_eudract.xml will have been created, the latter
 
 
 
-## SAS
+### SAS
 
 There is now a fully worked and self-sufficient example using SAS in the directory. Start with the file "safety_summary.SAS" and see the comments and "README.txt" file.
 
@@ -55,7 +55,7 @@ A limitation in SAS is that variable names cannot be more than 32 characters, bu
 
 [SAS Example]( {{ site.ghpath }}/SAS)
 
-## Stata
+### Stata
 
 There is now a fully worked and self-sufficient example using Stata in the directory. Start with the file "safety_scriptv0.1.do" and see the comments and "README.txt" file.
 
@@ -64,7 +64,7 @@ If the user can create the summary statistics inside stata, then there are now t
 [Stata]( {{ site.ghpath }}/Stata)
 
 
-# XSLT
+## XSLT
 
 The scripts used to effect XSLT transformations, with schema files and related data.
 [XSLT]( {{ site.ghpath }}/xml%20tools)

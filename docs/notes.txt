@@ -1,24 +1,15 @@
-For various objectives you need to edit the _config.yml line 20 or 21
+
 
 
 Github build (default)
 
-line 21 is active (not commented) with the github url. Line 20 is commented out
+
 commit to github and the site will be rebuilt at https://shug0131.github.io/eudraCT/
-
-
-External Webiste (not tested)
-
-line 21 is active (not commented) with the site url. Line 20 is commented out
-
-Command line, and got to the local folder V:\STATISTICS\NON STUDY FOLDER\Academic Research\Eudract Tool\docs
-run "bundle exec jekyll build"
-copy the folder _site to the required directory
 
 
 Local Files
 
-Line 20 is active, line 21 is commented out
+
 
 Command line, and got to the local folder V:\STATISTICS\NON STUDY FOLDER\Academic Research\Eudract Tool\docs
 run "bundle exec jekyll build"
@@ -38,5 +29,5 @@ browse at http://localhost:4000
 
 https://search.google.com/search-console?resource_id=https%3A%2F%2Feudract-tool.medschl.cam.ac.uk%2F
 
-to see if it being picked up or even found...
+to monitor its presence in search engines.
 

@@ -34,6 +34,11 @@ theme:  minima #"just-the-docs" #
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-toc
+
+toc:
+  min_level: 2
+
 header_pages:
   - index.md
   - downloads.md

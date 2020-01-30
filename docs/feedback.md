@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Feedback
+toc_only: false
 ---
 
 We would always welcome any feedback to help the project improve.
