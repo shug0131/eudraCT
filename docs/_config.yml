@@ -57,4 +57,5 @@ header_pages:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
-exclude:  ["notes.txt", "Gemfile", "Gemfile.lock"]
+exclude:  ["notes.txt"]
+#, "Gemfile", "Gemfile.lock"]
