@@ -4,10 +4,8 @@ title: Downloads
 toc: true
 ---
 
-
-* 
+* toc
 {:toc}
-
 
 ## Grab and Go
 

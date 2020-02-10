@@ -3,6 +3,9 @@ layout: page
 title: Testing
 ---
 
+* toc
+{:toc}
+
 # Introduction
 
 This test plan is designed to prescribe the scope, approach, resources and schedule

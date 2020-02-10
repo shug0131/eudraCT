@@ -4,6 +4,10 @@ title: FAQ
 toc: true
 ---
 
+* toc
+{:toc}
+
+
 ## What do the variables mean in the input data?
 
 - **group**  this is commonly know as the treatment arm and needs to be at least four characters long.
