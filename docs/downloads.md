@@ -4,6 +4,11 @@ title: Downloads
 toc: true
 ---
 
+
+* 
+{:toc}
+
+
 ## Grab and Go
 
 Compressed folders with self-contained tools are available to download here:

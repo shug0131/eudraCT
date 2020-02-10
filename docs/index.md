@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Introduction 1
+title: Introduction
 ---
 This is the home page of a [NIHR](https://www.nihr.ac.uk/)-funded project to provide tools that will prepare the required statistics needed by EudraCT and format them into the precise requirements to directly upload an XML file into the web portal, with no further data entry by hand. This tool was developed by Cambridge CTU, in collaboration with Birmingham, Glasgow, Leeds CTUs.
 
