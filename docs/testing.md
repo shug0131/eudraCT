@@ -11,6 +11,15 @@ title: Testing
 This test plan is designed to prescribe the scope, approach, resources and schedule
 of all testing activities of the EudraCT tool project.
 
+# Definitions
+
+###Positive testing 
+Testing performed on the system by providing the valid data as input.
+###Negative testing
+Testing performed on the system by providing the invalid data as input to ensure that can handle the unwanted input and user behaviour.
+###White-box testing
+Testing that tests internal structures or workings of an application.
+
 # Test strategy
 
 ## Scope of testing
