@@ -141,6 +141,7 @@ The minimum set of input files required should be the following:
 -	events.csv: file simulating the rectangular list of events (one-row per event). 
 Multiple versions of this file can be generated on the basis of the test to be performed 
 (e.g. file not responding to specs, in order to perform negative testing, etc)
+-	manually-created sample files for group.csv, serious.csv, nonserious.csv
 -	all_soc.csv: a list of soc and associated terms
 -	AdverseEvents.xml: schema file freshly downloaded from 
 [EudraCT AdverseEvents Schema](https://eudract.ema.europa.eu/docs/technical/schemas/clinicaltrial/results/adverseEvents.xsd)
@@ -152,8 +153,9 @@ The testing process is deemed terminated when all the items have been tested and
 
 ## Review and Approval
 
-A formal review of the completed Testing Outline and related outcomes is
- conducted jointly by the developer and tester. The review includes:
+A formal review of the completed Test Outline and related outcomes is
+ conducted jointly by the developer and tester. 
+ The review includes:
 *	Every failed  test;
 *	Remedial actions, including timeframes for their implementation or revision
 of test documents
