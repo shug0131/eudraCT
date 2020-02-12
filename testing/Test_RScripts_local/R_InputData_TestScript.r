@@ -1,5 +1,5 @@
 #Check the GROUP file contains exactely the following variables: title, deathsResultingFromAdverseEvents, subjectsAffectedBySeriousAdverseEvents, subjectsAffectedByNonSeriousAdverseEvents, subjectsExposed, deathsAllCauses
-setwd(file.path("V:", "STATISTICS", "NON STUDY FOLDER", "Academic Research", "Eudract Tool", "testing", "data", "input"))
+setwd(file.path("V:", "STATISTICS", "NON STUDY FOLDER", "Academic Research", "Eudract Tool", "testing", "data"))
 getwd()
 
 test_groupdata <- read.csv(file="GROUP.csv")

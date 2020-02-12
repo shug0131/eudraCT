@@ -4,6 +4,9 @@
 * Windows Server 2012 R2 x64 (build 9600) on (appveyor), R3.6.1
 * check_win_release
 
+## Change 12FEB2020
+
+Modified the  simpleToEudraCT.xslt file that conditionally sets the version to be 3 for this SOC, and 22 for all other SOC values. A bug was detected with the version number associated with SOC "Product issues", where the default value of 19 is not accepted by the EudraCT portal.
 
 ## Changes 06NOV2019
 
