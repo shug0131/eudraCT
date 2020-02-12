@@ -1,8 +1,8 @@
 Package: eudract
 Type: Package
 Title: Creates Safety Results Summary in XML to Upload to EudraCT
-Date: 2019-11-06
-Version: 0.9.0.90000
+Date: 2020-02-12
+Version: 0.9.1
 Authors@R: c(
     person("Simon", "Bond", email="simon.bond@addenbrookes.nhs.uk", role="cre"),
     person("Beatrice","Pantaleo", email="bp403@medschl.cam.ac.uk", role="aut"))

@@ -1,0 +1,811 @@
+NOTE: PROCEDURE PRINTTO used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+      
+
+28         
+29         
+30         /*name of the SAS data set used as input, which needs to comply with the specification requirements.*/
+31         %let ae_data=ae;
+32         /* The count of numbers exposed by group, in the order resulting from PROC SORT applied to the group, i.e. alphabetical
+32       ! */
+33         %let exposed=20 22 18;
+34         /* Numbers of deaths not included in the data set, by group. Default is to leave blank if none */
+35         %let excess_deaths= ;
+36         /* A threshold on the % scale for a minimum rate to include non-serious AEs in the output */
+37         %let freq_threshold=0;
+38         /* which variable in the soc_code data is used to link to the SOC code. value must either be: meddra  soc_term . */
+39         %let soc_index=soc_term;
+40         
+41         
+42         proc datasets library=WORK kill;
+NOTE: Deleting WORK.AE (memtype=DATA).
+NOTE: Deleting WORK.AE_BY_PATIENT (memtype=DATA).
+NOTE: Deleting WORK.ALLCOMBS (memtype=DATA).
+NOTE: Deleting WORK.FILTER (memtype=DATA).
+NOTE: Deleting WORK.GROUP (memtype=DATA).
+NOTE: Deleting WORK.GROUPVARS (memtype=DATA).
+NOTE: Deleting WORK.NON_SERIOUS (memtype=DATA).
+2                                                          The SAS System                          11:00 Wednesday, January 15, 2020
+
+NOTE: Deleting WORK.NON_SERIOUSVARS (memtype=DATA).
+NOTE: Deleting WORK.NON_SERIOUS_OCC (memtype=DATA).
+NOTE: Deleting WORK.NON_SERIOUS_SUBJ (memtype=DATA).
+NOTE: Deleting WORK.OCC (memtype=DATA).
+NOTE: Deleting WORK.RENAME (memtype=DATA).
+NOTE: Deleting WORK.SASGOPT (memtype=CATALOG).
+NOTE: File WORK.SASGOPT (memtype=CATALOG) cannot be deleted because it is in use.
+NOTE: Deleting WORK.SASMACR (memtype=CATALOG).
+NOTE: File WORK.SASMACR (memtype=CATALOG) cannot be deleted because it is in use.
+NOTE: Deleting WORK.SERIOUS (memtype=DATA).
+NOTE: Deleting WORK.SERIOUSVARS (memtype=DATA).
+NOTE: Deleting WORK.SERIOUS_OCC (memtype=DATA).
+NOTE: Deleting WORK.SERIOUS_SUBJ (memtype=DATA).
+NOTE: Deleting WORK.SER_OCC (memtype=DATA).
+NOTE: Deleting WORK.SER_SUBJ (memtype=DATA).
+NOTE: Deleting WORK.SUBJ (memtype=DATA).
+42       !                                  run;
+
+42       !                                       quit;
+
+NOTE: PROCEDURE DATASETS used (Total process time):
+      real time           0.07 seconds
+      cpu time            0.03 seconds
+      
+
+43         
+44         /* import or identify a dataset called ae with the variables:
+45         term soc subjid fatal related group serious */
+46         proc import file="&PATH\..\data\events.csv" out=ae dbms=csv replace;
+47         run;
+
+48          /**********************************************************************
+49          *   PRODUCT:   SAS
+50          *   VERSION:   9.4
+51          *   CREATOR:   External File Interface
+52          *   DATE:      15JAN20
+53          *   DESC:      Generated SAS Datastep Code
+54          *   TEMPLATE SOURCE:  (None Specified.)
+55          ***********************************************************************/
+56             data WORK.AE    ;
+57             %let _EFIERR_ = 0; /* set the ERROR detection macro variable */
+58             infile 'V:\STATISTICS\NON STUDY FOLDER\Academic Research\Eudract Tool\testing\SAS\..\data\events.csv' delimiter = ','
+58       !  MISSOVER DSD lrecl=32767 firstobs=2 ;
+59                informat soc $36. ;
+60                informat term $23. ;
+61                informat subjid best32. ;
+62                informat serious best32. ;
+63                informat related best32. ;
+64                informat fatal best32. ;
+65                informat group $7. ;
+66                format soc $36. ;
+67                format term $23. ;
+68                format subjid best12. ;
+69                format serious best12. ;
+70                format related best12. ;
+71                format fatal best12. ;
+72                format group $7. ;
+73             input
+3                                                          The SAS System                          11:00 Wednesday, January 15, 2020
+
+74                         soc $
+75                         term $
+76                         subjid
+77                         serious
+78                         related
+79                         fatal
+80                         group $
+81             ;
+82             if _ERROR_ then call symputx('_EFIERR_',1);  /* set ERROR detection macro variable */
+83             run;
+
+NOTE: The infile 'V:\STATISTICS\NON STUDY FOLDER\Academic Research\Eudract Tool\testing\SAS\..\data\events.csv' is:
+      Filename=V:\STATISTICS\NON STUDY FOLDER\Academic Research\Eudract Tool\testing\data\events.csv,
+      RECFM=V,LRECL=32767,File Size (bytes)=120209,
+      Last Modified=16 October 2019 13:23:46 o'clo,
+      Create Time=22 July 2019 13:33:43 o'clock
+
+NOTE: 1638 records were read from the infile 'V:\STATISTICS\NON STUDY FOLDER\Academic Research\Eudract 
+      Tool\testing\SAS\..\data\events.csv'.
+      The minimum record length was 44.
+      The maximum record length was 130.
+NOTE: The data set WORK.AE has 1638 observations and 7 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+1638 rows created in WORK.AE from V:\STATISTICS\NON STUDY FOLDER\Academic Research\Eudract Tool\testing\SAS\..\data\events.csv.
+  
+  
+  
+NOTE: WORK.AE data set was successfully created.
+NOTE: The data set WORK.AE has 1638 observations and 7 variables.
+NOTE: PROCEDURE IMPORT used (Total process time):
+      real time           0.19 seconds
+      cpu time            0.10 seconds
+      
+
+84         /* EDIT completed. No further changes needed below this line. */
+85         
+86         
+87         libname saswork "&PATH/SAS Eudract Tools";
+NOTE: Libref SASWORK was successfully assigned as follows: 
+      Engine:        V9 
+      Physical Name: V:\STATISTICS\NON STUDY FOLDER\Academic Research\Eudract Tool\testing\SAS\SAS Eudract Tools
+88         proc sort data=&ae_data out=ae;
+89         by group subjid;
+90         run;
+
+NOTE: There were 1638 observations read from the data set WORK.AE.
+NOTE: The data set WORK.AE has 1638 observations and 7 variables.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.02 seconds
+      cpu time            0.00 seconds
+      
+
+91         
+92         
+4                                                          The SAS System                          11:00 Wednesday, January 15, 2020
+
+93         data ae_by_patient; set ae;
+94         by group subjid;
+95         retain 	serious_any non_serious_any fatal_any;
+96         if first.subjid then do;
+97         	serious_any=0;
+98         	non_serious_any=0;
+99         	fatal_any=0;
+100        end;
+101        if serious=1 then serious_any=1;
+102        if serious=0 then non_serious_any=1;
+103        if fatal=1 then fatal_any=1;
+104        if last.subjid then output;
+105        run;
+
+NOTE: There were 1638 observations read from the data set WORK.AE.
+NOTE: The data set WORK.AE_BY_PATIENT has 48 observations and 10 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.00 seconds
+      
+
+106        
+107        proc tabulate data=ae_by_patient out=GROUP;
+108        class group;
+109        var serious_any non_serious_any fatal_any;
+110        table group, (serious_any non_serious_any fatal_any)*sum *f=10.0;
+111        run;
+
+NOTE: There were 48 observations read from the data set WORK.AE_BY_PATIENT.
+NOTE: The data set WORK.GROUP has 3 observations and 7 variables.
+NOTE: PROCEDURE TABULATE used (Total process time):
+      real time           0.10 seconds
+      cpu time            0.00 seconds
+      
+
+112        
+113        data GROUP; set GROUP;
+114        label
+115        	group=title
+116        	serious_any_Sum=subjectsAffectedBySeriousAdverseEvents
+117        	non_serious_any_Sum=subjectsAffectedByNonSeriousAdverseEvents
+118        	fatal_any_Sum=deathsResultingFromAdverseEvents
+119        	exposed=subjectsExposed
+120        	deathsAllCauses=deathsAllCauses;
+121        exposed=scan("&exposed", _N_)+0;
+122        excess_deaths=scan("&excess_deaths", _N_)+0;
+123        if( excess_deaths=.) then excess_deaths=0;
+124        deathsAllCauses=fatal_any_sum+excess_deaths;
+125        drop _TYPE_ _PAGE_ _TABLE_ excess_deaths;
+126        run;
+
+NOTE: Character values have been converted to numeric values at the places given by: (Line):(Column).
+      121:9    122:15   
+NOTE: Missing values were generated as a result of performing an operation on missing values.
+      Each place is given by: (Number of times) at (Line):(Column).
+      3 at 122:42   
+NOTE: There were 3 observations read from the data set WORK.GROUP.
+NOTE: The data set WORK.GROUP has 3 observations and 6 variables.
+5                                                          The SAS System                          11:00 Wednesday, January 15, 2020
+
+NOTE: DATA statement used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.01 seconds
+      
+
+127        
+128        
+129        
+130        /* Non serious */
+131        
+132        proc sort data=ae(where=(serious=0)) out=non_serious;
+133        by soc term group subjid;
+134        run;
+
+NOTE: There were 853 observations read from the data set WORK.AE.
+      WHERE serious=0;
+NOTE: The data set WORK.NON_SERIOUS has 853 observations and 7 variables.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+135        
+136        data non_serious_occ non_serious_subj; set non_serious;
+137        by soc term group subjid;
+138        if first.subjid then output non_serious_subj;
+139        output non_serious_occ;
+140        run;
+
+NOTE: There were 853 observations read from the data set WORK.NON_SERIOUS.
+NOTE: The data set WORK.NON_SERIOUS_OCC has 853 observations and 7 variables.
+NOTE: The data set WORK.NON_SERIOUS_SUBJ has 440 observations and 7 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.00 seconds
+      
+
+141        
+142        proc tabulate data=non_serious out=allcombs;
+143        class soc term group;
+144        table soc*term, all;
+145        run;
+
+NOTE: There were 853 observations read from the data set WORK.NON_SERIOUS.
+NOTE: The data set WORK.ALLCOMBS has 26 observations and 6 variables.
+NOTE: PROCEDURE TABULATE used (Total process time):
+      real time           0.06 seconds
+      cpu time            0.00 seconds
+      
+
+146        /*needed in case one group has no AEs for example*/
+147        proc sql;
+148        create table allcombs as
+149        select soc, term, group from allcombs, group;
+NOTE: The execution of this query involves performing one or more Cartesian product joins that can not be optimized.
+WARNING: This CREATE TABLE statement recursively references the target table. A consequence of this is a possible data integrity 
+         problem.
+NOTE: Table WORK.ALLCOMBS created, with 78 rows and 3 columns.
+6                                                          The SAS System                          11:00 Wednesday, January 15, 2020
+
+
+150        quit;
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.01 seconds
+      
+
+151        
+152        proc sort data=allcombs; by soc term group; run;
+
+NOTE: There were 78 observations read from the data set WORK.ALLCOMBS.
+NOTE: The data set WORK.ALLCOMBS has 78 observations and 3 variables.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+      
+
+153        
+154        title "Occurences";
+155        
+156        proc tabulate data=non_serious_occ out=occ  missing;
+157        class soc term group;
+158        table soc*term, group/  printmiss;
+159        run;
+
+NOTE: There were 853 observations read from the data set WORK.NON_SERIOUS_OCC.
+NOTE: The data set WORK.OCC has 2028 observations and 7 variables.
+NOTE: PROCEDURE TABULATE used (Total process time):
+      real time           0.24 seconds
+      cpu time            0.15 seconds
+      
+
+160        
+161        data occ; merge allcombs(in=_a keep=soc term group) occ;
+162        by soc term group;
+163        if N=. then N=0;
+164        if _a then output;
+165        drop _TYPE_ _PAGE_ _TABLE_;
+166        run;
+
+NOTE: There were 78 observations read from the data set WORK.ALLCOMBS.
+NOTE: There were 2028 observations read from the data set WORK.OCC.
+NOTE: The data set WORK.OCC has 78 observations and 4 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+167        
+168        title "Patient count";
+169        proc tabulate data=non_serious_subj out=subj;
+170        class soc term group;
+171        table soc*term, group/ printmiss;
+172        run;
+
+NOTE: There were 440 observations read from the data set WORK.NON_SERIOUS_SUBJ.
+NOTE: The data set WORK.SUBJ has 2028 observations and 7 variables.
+NOTE: PROCEDURE TABULATE used (Total process time):
+7                                                          The SAS System                          11:00 Wednesday, January 15, 2020
+
+      real time           0.09 seconds
+      cpu time            0.04 seconds
+      
+
+173        data subj; merge allcombs(in=_a keep=soc term group) subj;
+174        by soc term group;
+175        if N=. then N=0;
+176        if _a then output;
+177        drop _TYPE_ _PAGE_ _TABLE_;
+178        run;
+
+NOTE: There were 78 observations read from the data set WORK.ALLCOMBS.
+NOTE: There were 2028 observations read from the data set WORK.SUBJ.
+NOTE: The data set WORK.SUBJ has 78 observations and 4 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+      
+
+179        
+180        /* merge together occurrrences and subject counts */
+181        data non_serious; merge occ(rename=(N=occurrences)) subj(rename=(N=subjectsAffected));
+182        by soc term;
+183        run;
+
+NOTE: MERGE statement has more than one data set with repeats of BY values.
+NOTE: There were 78 observations read from the data set WORK.OCC.
+NOTE: There were 78 observations read from the data set WORK.SUBJ.
+NOTE: The data set WORK.NON_SERIOUS has 78 observations and 5 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.03 seconds
+      
+
+184        
+185        proc sort data=saswork.soc_code;
+186        by &soc_index;
+187        run;
+
+NOTE: Input data set is already sorted, no sorting done.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+188        
+189        data non_serious; merge non_serious(in=_a_) saswork.soc_code(rename=(&soc_index=soc));
+190        by soc;
+191        if _a_ then output;
+192        run;
+
+WARNING: Multiple lengths were specified for the BY variable soc by input data sets. This might cause unexpected results.
+NOTE: There were 78 observations read from the data set WORK.NON_SERIOUS.
+NOTE: There were 27 observations read from the data set SASWORK.SOC_CODE.
+NOTE: The data set WORK.NON_SERIOUS has 78 observations and 7 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+8                                                          The SAS System                          11:00 Wednesday, January 15, 2020
+
+      
+
+193        
+194        /* Filtering by rate */
+195        proc sort data=non_serious out=filter;
+196        by group;
+197        run;
+
+NOTE: There were 78 observations read from the data set WORK.NON_SERIOUS.
+NOTE: The data set WORK.FILTER has 78 observations and 7 variables.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+198        
+199        data filter;  merge filter group;
+200        by group;
+201        rate=subjectsAffected/exposed*100;
+202        run;
+
+NOTE: There were 78 observations read from the data set WORK.FILTER.
+NOTE: There were 3 observations read from the data set WORK.GROUP.
+NOTE: The data set WORK.FILTER has 78 observations and 13 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+203        proc tabulate data=filter out=filter;
+204        class soc term;
+205        var rate;
+206        table soc*term,rate*max;
+207        run;
+
+NOTE: There were 78 observations read from the data set WORK.FILTER.
+NOTE: The data set WORK.FILTER has 26 observations and 6 variables.
+NOTE: PROCEDURE TABULATE used (Total process time):
+      real time           0.05 seconds
+      cpu time            0.03 seconds
+      
+
+208        
+209        data non_serious; merge  non_serious filter;
+210        by soc term;
+211        if  &freq_threshold <= rate_max then output;
+212        drop _TYPE_ _PAGE_ _TABLE_ soc soc_term rate_max;
+213        rename group=groupTitle;
+214        run;
+
+WARNING: The variable soc_term in the DROP, KEEP, or RENAME list has never been referenced.
+NOTE: There were 78 observations read from the data set WORK.NON_SERIOUS.
+NOTE: There were 26 observations read from the data set WORK.FILTER.
+NOTE: The data set WORK.NON_SERIOUS has 78 observations and 6 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.03 seconds
+      
+9                                                          The SAS System                          11:00 Wednesday, January 15, 2020
+
+
+215        
+216        
+217        /* Serious */
+218        
+219        proc sort data=ae(where=(serious=1)) out=serious;
+220        by soc term group subjid;
+221        run;
+
+NOTE: There were 785 observations read from the data set WORK.AE.
+      WHERE serious=1;
+NOTE: The data set WORK.SERIOUS has 785 observations and 7 variables.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+      
+
+222        
+223        data serious_occ serious_subj; set serious;
+224        by soc term group subjid;
+225        if first.subjid then output serious_subj;
+226        output serious_occ;
+227        run;
+
+NOTE: There were 785 observations read from the data set WORK.SERIOUS.
+NOTE: The data set WORK.SERIOUS_OCC has 785 observations and 7 variables.
+NOTE: The data set WORK.SERIOUS_SUBJ has 417 observations and 7 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+228        
+229        proc tabulate data=serious_occ out=allcombs;
+230        class soc term group;
+231        table soc*term, all;
+232        run;
+
+NOTE: There were 785 observations read from the data set WORK.SERIOUS_OCC.
+NOTE: The data set WORK.ALLCOMBS has 26 observations and 6 variables.
+NOTE: PROCEDURE TABULATE used (Total process time):
+      real time           0.06 seconds
+      cpu time            0.00 seconds
+      
+
+233        
+234        /*needed in case one group has no SAEs for example*/
+235        proc sql;
+236        create table allcombs as
+237        select soc, term, group from allcombs, group;
+NOTE: The execution of this query involves performing one or more Cartesian product joins that can not be optimized.
+WARNING: This CREATE TABLE statement recursively references the target table. A consequence of this is a possible data integrity 
+         problem.
+NOTE: Table WORK.ALLCOMBS created, with 78 rows and 3 columns.
+
+238        quit;
+NOTE: PROCEDURE SQL used (Total process time):
+      real time           0.00 seconds
+10                                                         The SAS System                          11:00 Wednesday, January 15, 2020
+
+      cpu time            0.00 seconds
+      
+
+239        
+240        proc sort data=allcombs; by soc term group; run;
+
+NOTE: There were 78 observations read from the data set WORK.ALLCOMBS.
+NOTE: The data set WORK.ALLCOMBS has 78 observations and 3 variables.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+241        
+242        
+243        data serious_occ; set serious_occ;
+244        deaths_related=related*fatal;
+245        run;
+
+NOTE: There were 785 observations read from the data set WORK.SERIOUS_OCC.
+NOTE: The data set WORK.SERIOUS_OCC has 785 observations and 8 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+      
+
+246        
+247        
+248        proc tabulate data=serious_occ out=ser_occ  missing;
+249        class soc term group;
+250        var related fatal deaths_related;
+251        table soc*term*group, All related fatal deaths_related/  printmiss;
+252        run;
+
+NOTE: There were 785 observations read from the data set WORK.SERIOUS_OCC.
+NOTE: The data set WORK.SER_OCC has 2028 observations and 10 variables.
+NOTE: PROCEDURE TABULATE used (Total process time):
+      real time           0.26 seconds
+      cpu time            0.23 seconds
+      
+
+253        
+254        data ser_occ; merge allcombs(in=_a keep=soc term group) ser_occ;
+255        by soc term group;
+256        if N=. then do;
+257        	N=0;
+258        	related_sum=0;
+259        	fatal_sum=0;
+260        	deaths_related_sum=0;
+261        end;
+262        if _a then output;
+263        drop _TYPE_ _PAGE_ _TABLE_;
+264        run;
+
+NOTE: There were 78 observations read from the data set WORK.ALLCOMBS.
+NOTE: There were 2028 observations read from the data set WORK.SER_OCC.
+NOTE: The data set WORK.SER_OCC has 78 observations and 7 variables.
+NOTE: DATA statement used (Total process time):
+11                                                         The SAS System                          11:00 Wednesday, January 15, 2020
+
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+265        proc tabulate data=serious_subj out=ser_subj;
+266        class soc term group;
+267        table soc*term, group/ printmiss;
+268        run;
+
+NOTE: There were 417 observations read from the data set WORK.SERIOUS_SUBJ.
+NOTE: The data set WORK.SER_SUBJ has 2028 observations and 7 variables.
+NOTE: PROCEDURE TABULATE used (Total process time):
+      real time           0.08 seconds
+      cpu time            0.04 seconds
+      
+
+269        data ser_subj; merge allcombs(in=_a keep=soc term group) ser_subj;
+270        by soc term group;
+271        if N=. then N=0;
+272        if _a then output;
+273        drop _TYPE_ _PAGE_ _TABLE_;
+274        run;
+
+NOTE: There were 78 observations read from the data set WORK.ALLCOMBS.
+NOTE: There were 2028 observations read from the data set WORK.SER_SUBJ.
+NOTE: The data set WORK.SER_SUBJ has 78 observations and 4 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.01 seconds
+      cpu time            0.00 seconds
+      
+
+275        
+276        
+277        
+278        /* merge together occurrrences and subject counts */
+279        data serious; merge ser_occ(rename=(N=occurrences)) ser_subj(rename=(N=subjectsAffected));
+280        by soc term;
+281        rename group=groupTitle;
+282        run;
+
+NOTE: MERGE statement has more than one data set with repeats of BY values.
+NOTE: There were 78 observations read from the data set WORK.SER_OCC.
+NOTE: There were 78 observations read from the data set WORK.SER_SUBJ.
+NOTE: The data set WORK.SERIOUS has 78 observations and 8 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+283        
+284        proc sort data=saswork.soc_code;
+285        by &soc_index;
+286        run;
+
+NOTE: Input data set is already sorted, no sorting done.
+NOTE: PROCEDURE SORT used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+12                                                         The SAS System                          11:00 Wednesday, January 15, 2020
+
+      
+
+287        
+288        data serious; merge serious(in=_a_) saswork.soc_code(rename=(&soc_index=soc));
+289        label
+290        	related_Sum=occurrencesCausallyRelatedToTreatment
+291        	fatal_Sum=deaths
+292        	deaths_related_Sum=deathsCausallyRelatedToTreatment;
+293        by soc;
+294        if _a_ then output;
+295        drop soc soc_term;
+296        run;
+
+WARNING: Multiple lengths were specified for the BY variable soc by input data sets. This might cause unexpected results.
+WARNING: The variable soc_term in the DROP, KEEP, or RENAME list has never been referenced.
+NOTE: There were 78 observations read from the data set WORK.SERIOUS.
+NOTE: There were 27 observations read from the data set SASWORK.SOC_CODE.
+NOTE: The data set WORK.SERIOUS has 78 observations and 9 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+297        
+298        /* Provide a document to check by eye.*/
+299        ods pdf file="&PATH/output/Safety Data.pdf";
+WARNING: Unsupported device 'ACTIVEX' for PDF destination. Using device 'ACTXIMG'.
+NOTE: Writing ODS PDF output to DISK destination 
+      "V:\STATISTICS\NON STUDY FOLDER\Academic Research\Eudract Tool\testing\SAS\output\Safety Data.pdf", printer "PDF".
+300        title "Group level data";
+301        proc print data=group label ;
+302        run;
+
+NOTE: There were 3 observations read from the data set WORK.GROUP.
+NOTE: PROCEDURE PRINT used (Total process time):
+      real time           0.04 seconds
+      cpu time            0.01 seconds
+      
+
+303        title "Serious group-term level data";
+304        proc print data=serious label ;
+305        run;
+
+NOTE: There were 78 observations read from the data set WORK.SERIOUS.
+NOTE: PROCEDURE PRINT used (Total process time):
+      real time           0.09 seconds
+      cpu time            0.07 seconds
+      
+
+306        title "Non-serious group-term level data";
+307        proc print data=non_serious label ;
+308        run;
+
+NOTE: There were 78 observations read from the data set WORK.NON_SERIOUS.
+NOTE: PROCEDURE PRINT used (Total process time):
+      real time           0.05 seconds
+      cpu time            0.03 seconds
+      
+13                                                         The SAS System                          11:00 Wednesday, January 15, 2020
+
+
+309        ods pdf close;
+NOTE: ODS PDF printed 9 pages to V:\STATISTICS\NON STUDY FOLDER\Academic Research\Eudract Tool\testing\SAS\output\Safety Data.pdf.
+310        
+311        /* All three data sets produced. Now convert to XML */
+312        
+313        proc contents data=group noprint out=groupvars; run;
+
+NOTE: The data set WORK.GROUPVARS has 6 observations and 41 variables.
+NOTE: PROCEDURE CONTENTS used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+314        proc contents data=serious noprint out=seriousvars; run;
+
+NOTE: The data set WORK.SERIOUSVARS has 9 observations and 41 variables.
+NOTE: PROCEDURE CONTENTS used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.00 seconds
+      
+
+315        proc contents data=non_serious noprint out=non_seriousvars; run;
+
+NOTE: The data set WORK.NON_SERIOUSVARS has 6 observations and 41 variables.
+NOTE: PROCEDURE CONTENTS used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.01 seconds
+      
+
+316        
+317        data rename; set groupvars seriousvars non_seriousvars;
+318        if label^="" then output;
+319        keep name label;
+320        rename name=old label=new;
+321        run;
+
+NOTE: There were 6 observations read from the data set WORK.GROUPVARS.
+NOTE: There were 9 observations read from the data set WORK.SERIOUSVARS.
+NOTE: There were 6 observations read from the data set WORK.NON_SERIOUSVARS.
+NOTE: The data set WORK.RENAME has 11 observations and 2 variables.
+NOTE: DATA statement used (Total process time):
+      real time           0.00 seconds
+      cpu time            0.03 seconds
+      
+
+322        /* save pre-version of the simple xml */
+323        libname simple0 xml "&PATH\output\simple0.xml" ;
+NOTE: Libref SIMPLE0 was successfully assigned as follows: 
+      Engine:        XML 
+      Physical Name: V:\STATISTICS\NON STUDY FOLDER\Academic Research\Eudract Tool\testing\SAS\output\simple0.xml
+324        proc datasets nolist;
+325          copy in=work out=simple0;
+326            select group serious non_serious rename ;
+327          run;
+
+NOTE: Copying WORK.GROUP to SIMPLE0.GROUP (memtype=DATA).
+NOTE: SAS variable labels, formats, and lengths are not written to DBMS tables.
+14                                                         The SAS System                          11:00 Wednesday, January 15, 2020
+
+NOTE: There were 3 observations read from the data set WORK.GROUP.
+NOTE: The data set SIMPLE0.GROUP has 3 observations and 6 variables.
+NOTE: Copying WORK.SERIOUS to SIMPLE0.SERIOUS (memtype=DATA).
+NOTE: SAS variable labels, formats, and lengths are not written to DBMS tables.
+NOTE: There were 78 observations read from the data set WORK.SERIOUS.
+NOTE: The data set SIMPLE0.SERIOUS has 78 observations and 9 variables.
+NOTE: Copying WORK.NON_SERIOUS to SIMPLE0.NON_SERIOUS (memtype=DATA).
+NOTE: SAS variable labels, formats, and lengths are not written to DBMS tables.
+NOTE: There were 78 observations read from the data set WORK.NON_SERIOUS.
+NOTE: The data set SIMPLE0.NON_SERIOUS has 78 observations and 6 variables.
+NOTE: Copying WORK.RENAME to SIMPLE0.RENAME (memtype=DATA).
+NOTE: SAS variable labels, formats, and lengths are not written to DBMS tables.
+NOTE: There were 11 observations read from the data set WORK.RENAME.
+NOTE: The data set SIMPLE0.RENAME has 11 observations and 2 variables.
+328        quit;
+
+NOTE: PROCEDURE DATASETS used (Total process time):
+      real time           0.22 seconds
+      cpu time            0.07 seconds
+      
+
+329        /*use xslt to rename within simple xml to get the correct tag or variable names*/
+330        proc xsl in="&PATH\output\simple0.xml" out="&PATH\output\simple.xml" xsl="&PATH\SAS Eudract Tools\sas_xml_renaming.xslt";
+330      ! run;
+
+NOTE: PROCEDURE XSL used (Total process time):
+      real time           0.14 seconds
+      cpu time            0.00 seconds
+      
+
+331        
+332        /*use xslt to transform into the format needed by EudraCT */
+333        proc xsl in="&PATH\output\simple.xml" out="&PATH\output\table_eudract.xml" xsl="&PATH\SAS Eudract
+333      ! Tools\simpleToEudraCT.xslt";run;
+
+NOTE: PROCEDURE XSL used (Total process time):
+      real time           0.12 seconds
+      cpu time            0.00 seconds
+      
+
+334        
+335        %put Please email cctu@addenbrookes.nhs.uk to tell us if you have successfully uploaded a study to EudraCT. This is to
+335      ! allow us to measure the impact of this tool.;
+Please email cctu@addenbrookes.nhs.uk to tell us if you have successfully uploaded a study to EudraCT. This is to allow us to 
+measure the impact of this tool.
+336        
+337        
+338        GOPTIONS NOACCESSIBLE;
+339        %LET _CLIENTTASKLABEL=;
+340        %LET _CLIENTPROJECTPATH=;
+341        %LET _CLIENTPROJECTNAME=;
+342        %LET _SASPROGRAMFILE=;
+343        
+344        ;*';*";*/;quit;run;
+345        ODS _ALL_ CLOSE;
+346        
+347        
+348        QUIT; RUN;
+15                                                         The SAS System                          11:00 Wednesday, January 15, 2020
+
+349        

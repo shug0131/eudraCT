@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="US-ASCII" standalone="yes"?>
+<dta>
+	<header>
+		<ds_format>113</ds_format>
+		<byteorder>LOHI</byteorder>
+		<filetype>1</filetype>
+		<nvar>6</nvar>
+		<nobs>3</nobs>
+		<data_label></data_label>
+		<time_stamp>15 Jan 2020 14:34</time_stamp>
+	</header>
+	<descriptors>
+		<typelist>
+			<type varname='group'>str7</type>
+			<type varname='serious'>int</type>
+			<type varname='nonserious'>int</type>
+			<type varname='fatal'>int</type>
+			<type varname='exposed'>int</type>
+			<type varname='deathsAllCauses'>int</type>
+		</typelist>
+		<varlist>
+			<variable varname='group'/>
+			<variable varname='serious'/>
+			<variable varname='nonserious'/>
+			<variable varname='fatal'/>
+			<variable varname='exposed'/>
+			<variable varname='deathsAllCauses'/>
+		</varlist>
+		<srtlist>
+		</srtlist>
+		<fmtlist>
+			<fmt varname='group'>%9s</fmt>
+			<fmt varname='serious'>%8.0g</fmt>
+			<fmt varname='nonserious'>%9.0g</fmt>
+			<fmt varname='fatal'>%8.0g</fmt>
+			<fmt varname='exposed'>%9.0g</fmt>
+			<fmt varname='deathsAllCauses'>%9.0g</fmt>
+		</fmtlist>
+		<lbllist>
+			<lblname varname='group'></lblname>
+			<lblname varname='serious'></lblname>
+			<lblname varname='nonserious'></lblname>
+			<lblname varname='fatal'></lblname>
+			<lblname varname='exposed'></lblname>
+			<lblname varname='deathsAllCauses'></lblname>
+		</lbllist>
+	</descriptors>
+	<variable_labels>
+		<vlabel varname='group'>title</vlabel>
+		<vlabel varname='serious'>subjectsAffectedBySeriousAdverseEvents</vlabel>
+		<vlabel varname='nonserious'>subjectsAffectedByNonSeriousAdverseEvents</vlabel>
+		<vlabel varname='fatal'>deathsResultingFromAdverseEvents</vlabel>
+		<vlabel varname='exposed'>subjectsExposed</vlabel>
+		<vlabel varname='deathsAllCauses'>deathsAllCauses</vlabel>
+	</variable_labels>
+	<expansion>
+	</expansion>
+	<data>
+		<o num='1'>
+			<v varname='group'>Group A</v>
+			<v varname='serious'>10</v>
+			<v varname='nonserious'>10</v>
+			<v varname='fatal'>3</v>
+			<v varname='exposed'>20</v>
+			<v varname='deathsAllCauses'>5</v>
+		</o>
+		<o num='2'>
+			<v varname='group'>Group B</v>
+			<v varname='serious'>13</v>
+			<v varname='nonserious'>14</v>
+			<v varname='fatal'>6</v>
+			<v varname='exposed'>22</v>
+			<v varname='deathsAllCauses'>12</v>
+		</o>
+		<o num='3'>
+			<v varname='group'>Group C</v>
+			<v varname='serious'>9</v>
+			<v varname='nonserious'>11</v>
+			<v varname='fatal'>2</v>
+			<v varname='exposed'>18</v>
+			<v varname='deathsAllCauses'>6</v>
+		</o>
+	</data>
+	<value_labels>
+	</value_labels>
+</dta>

@@ -15,10 +15,10 @@ R/eudract/*.xml
 .Rproj.user
 documentation/ICTMC*
 testing/library/*
-testing/
+testing/.Rhistory
+testing/.Rprofile
+testing/.Rproj.user
+testing/examples
 docs/BingSiteAuth.xml
 docs/google1b1621e77e305a7e.html
 documentation/betterposter-template-portrait.pptx
-
-
-

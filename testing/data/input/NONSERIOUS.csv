@@ -1,0 +1,79 @@
+"","soc","term","groupTitle","subjectsAffected","occurrences"
+"1","Blood and lymphatic system disorders","Anemia","Group A",3,10
+"2","Cardiac disorders","Acute coronary syndrome","Group A",4,12
+"3","Congenital, familial and genetic disorders","Congenital, familial and genetic disorders - Other, specify","Group A",2,4
+"4","Ear and labyrinth disorders","Ear pain","Group A",8,18
+"5","Endocrine disorders","Adrenal insufficiency","Group A",10,18
+"6","Eye disorders","Blurred vision","Group A",2,7
+"7","Gastrointestinal disorders","Abdominal distension","Group A",7,11
+"8","General disorders and administration site conditions","Chills","Group A",3,6
+"9","Hepatobiliary disorders","Bile duct stenosis","Group A",4,7
+"10","Immune system disorders","Allergic reaction","Group A",4,5
+"11","Infections and infestations","Abdominal infection","Group A",4,9
+"12","Injury, poisoning and procedural complications","Ankle fracture","Group A",5,9
+"13","Investigations","Activated partial thromboplastin time prolonged","Group A",6,8
+"14","Metabolism and nutrition disorders","Acidosis","Group A",6,14
+"15","Musculoskeletal and connective tissue disorders","Abdominal soft tissue necrosis","Group A",4,10
+"16","Neoplasms benign, malignant and unspecified (incl cysts and polyps)","Leukemia secondary to oncology chemotherapy","Group A",4,5
+"17","Nervous system disorders","Abducens nerve disorder","Group A",7,17
+"18","Pregnancy, puerperium and perinatal conditions","Fetal death","Group A",4,7
+"19","Psychiatric disorders","Agitation","Group A",5,5
+"20","Renal and urinary disorders","Acute kidney injury","Group A",2,7
+"21","Reproductive system and breast disorders","Azoospermia","Group A",8,16
+"22","Respiratory, thoracic and mediastinal disorders","Adult respiratory distress syndrome","Group A",4,7
+"23","Skin and subcutaneous tissue disorders","Alopecia","Group A",4,5
+"24","Social circumstances","Menopause","Group A",8,14
+"25","Surgical and medical procedures","Surgical and medical procedures - Other, specify","Group A",6,15
+"26","Vascular disorders","Capillary leak syndrome","Group A",2,8
+"1.1","Blood and lymphatic system disorders","Anemia","Group B",6,14
+"2.1","Cardiac disorders","Acute coronary syndrome","Group B",11,15
+"3.1","Congenital, familial and genetic disorders","Congenital, familial and genetic disorders - Other, specify","Group B",6,11
+"4.1","Ear and labyrinth disorders","Ear pain","Group B",7,16
+"5.1","Endocrine disorders","Adrenal insufficiency","Group B",5,11
+"6.1","Eye disorders","Blurred vision","Group B",6,9
+"7.1","Gastrointestinal disorders","Abdominal distension","Group B",8,16
+"8.1","General disorders and administration site conditions","Chills","Group B",5,8
+"9.1","Hepatobiliary disorders","Bile duct stenosis","Group B",8,16
+"10.1","Immune system disorders","Allergic reaction","Group B",9,17
+"11.1","Infections and infestations","Abdominal infection","Group B",4,14
+"12.1","Injury, poisoning and procedural complications","Ankle fracture","Group B",4,14
+"13.1","Investigations","Activated partial thromboplastin time prolonged","Group B",6,14
+"14.1","Metabolism and nutrition disorders","Acidosis","Group B",5,8
+"15.1","Musculoskeletal and connective tissue disorders","Abdominal soft tissue necrosis","Group B",3,11
+"16.1","Neoplasms benign, malignant and unspecified (incl cysts and polyps)","Leukemia secondary to oncology chemotherapy","Group B",4,13
+"17.1","Nervous system disorders","Abducens nerve disorder","Group B",8,11
+"18.1","Pregnancy, puerperium and perinatal conditions","Fetal death","Group B",14,22
+"19.1","Psychiatric disorders","Agitation","Group B",4,7
+"20.1","Renal and urinary disorders","Acute kidney injury","Group B",11,21
+"21.1","Reproductive system and breast disorders","Azoospermia","Group B",6,15
+"22.1","Respiratory, thoracic and mediastinal disorders","Adult respiratory distress syndrome","Group B",3,6
+"23.1","Skin and subcutaneous tissue disorders","Alopecia","Group B",5,11
+"24.1","Social circumstances","Menopause","Group B",7,7
+"25.1","Surgical and medical procedures","Surgical and medical procedures - Other, specify","Group B",4,10
+"26.1","Vascular disorders","Capillary leak syndrome","Group B",5,5
+"1.2","Blood and lymphatic system disorders","Anemia","Group C",5,11
+"2.2","Cardiac disorders","Acute coronary syndrome","Group C",3,6
+"3.2","Congenital, familial and genetic disorders","Congenital, familial and genetic disorders - Other, specify","Group C",7,7
+"4.2","Ear and labyrinth disorders","Ear pain","Group C",5,8
+"5.2","Endocrine disorders","Adrenal insufficiency","Group C",4,4
+"6.2","Eye disorders","Blurred vision","Group C",8,16
+"7.2","Gastrointestinal disorders","Abdominal distension","Group C",7,13
+"8.2","General disorders and administration site conditions","Chills","Group C",10,15
+"9.2","Hepatobiliary disorders","Bile duct stenosis","Group C",3,9
+"10.2","Immune system disorders","Allergic reaction","Group C",3,8
+"11.2","Infections and infestations","Abdominal infection","Group C",3,4
+"12.2","Injury, poisoning and procedural complications","Ankle fracture","Group C",8,17
+"13.2","Investigations","Activated partial thromboplastin time prolonged","Group C",2,7
+"14.2","Metabolism and nutrition disorders","Acidosis","Group C",11,18
+"15.2","Musculoskeletal and connective tissue disorders","Abdominal soft tissue necrosis","Group C",9,11
+"16.2","Neoplasms benign, malignant and unspecified (incl cysts and polyps)","Leukemia secondary to oncology chemotherapy","Group C",5,14
+"17.2","Nervous system disorders","Abducens nerve disorder","Group C",8,18
+"18.2","Pregnancy, puerperium and perinatal conditions","Fetal death","Group C",6,7
+"19.2","Psychiatric disorders","Agitation","Group C",7,8
+"20.2","Renal and urinary disorders","Acute kidney injury","Group C",5,11
+"21.2","Reproductive system and breast disorders","Azoospermia","Group C",6,11
+"22.2","Respiratory, thoracic and mediastinal disorders","Adult respiratory distress syndrome","Group C",8,14
+"23.2","Skin and subcutaneous tissue disorders","Alopecia","Group C",5,15
+"24.2","Social circumstances","Menopause","Group C",1,3
+"25.2","Surgical and medical procedures","Surgical and medical procedures - Other, specify","Group C",4,14
+"26.2","Vascular disorders","Capillary leak syndrome","Group C",7,8

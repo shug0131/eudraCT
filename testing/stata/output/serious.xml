@@ -1,0 +1,859 @@
+<?xml version="1.0" encoding="US-ASCII" standalone="yes"?>
+<dta>
+	<header>
+		<ds_format>113</ds_format>
+		<byteorder>LOHI</byteorder>
+		<filetype>1</filetype>
+		<nvar>8</nvar>
+		<nobs>78</nobs>
+		<data_label></data_label>
+		<time_stamp>15 Jan 2020 14:34</time_stamp>
+	</header>
+	<descriptors>
+		<typelist>
+			<type varname='term'>str59</type>
+			<type varname='group'>str7</type>
+			<type varname='occurrences'>byte</type>
+			<type varname='subjectsAffected'>byte</type>
+			<type varname='related'>int</type>
+			<type varname='fatal'>int</type>
+			<type varname='relatedDeath'>int</type>
+			<type varname='eutctid'>str12</type>
+		</typelist>
+		<varlist>
+			<variable varname='term'/>
+			<variable varname='group'/>
+			<variable varname='occurrences'/>
+			<variable varname='subjectsAffected'/>
+			<variable varname='related'/>
+			<variable varname='fatal'/>
+			<variable varname='relatedDeath'/>
+			<variable varname='eutctid'/>
+		</varlist>
+		<srtlist>
+		</srtlist>
+		<fmtlist>
+			<fmt varname='term'>%59s</fmt>
+			<fmt varname='group'>%9s</fmt>
+			<fmt varname='occurrences'>%12.0g</fmt>
+			<fmt varname='subjectsAffected'>%12.0g</fmt>
+			<fmt varname='related'>%8.0g</fmt>
+			<fmt varname='fatal'>%8.0g</fmt>
+			<fmt varname='relatedDeath'>%9.0g</fmt>
+			<fmt varname='eutctid'>%12s</fmt>
+		</fmtlist>
+		<lbllist>
+			<lblname varname='term'></lblname>
+			<lblname varname='group'></lblname>
+			<lblname varname='occurrences'></lblname>
+			<lblname varname='subjectsAffected'></lblname>
+			<lblname varname='related'></lblname>
+			<lblname varname='fatal'></lblname>
+			<lblname varname='relatedDeath'></lblname>
+			<lblname varname='eutctid'></lblname>
+		</lbllist>
+	</descriptors>
+	<variable_labels>
+		<vlabel varname='term'>term</vlabel>
+		<vlabel varname='group'>groupTitle</vlabel>
+		<vlabel varname='occurrences'>occurrences</vlabel>
+		<vlabel varname='subjectsAffected'>subjectsAffected</vlabel>
+		<vlabel varname='related'>occurrencesCausallyRelatedToTreatment</vlabel>
+		<vlabel varname='fatal'>deaths</vlabel>
+		<vlabel varname='relatedDeath'>deathsCausallyRelatedToTreatment</vlabel>
+		<vlabel varname='eutctid'>eutctId</vlabel>
+	</variable_labels>
+	<expansion>
+	</expansion>
+	<data>
+		<o num='1'>
+			<v varname='term'>Anemia</v>
+			<v varname='group'>Group B</v>
+			<v varname='occurrences'>16</v>
+			<v varname='subjectsAffected'>7</v>
+			<v varname='related'>7</v>
+			<v varname='fatal'>0</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004851</v>
+		</o>
+		<o num='2'>
+			<v varname='term'>Anemia</v>
+			<v varname='group'>Group C</v>
+			<v varname='occurrences'>13</v>
+			<v varname='subjectsAffected'>3</v>
+			<v varname='related'>1</v>
+			<v varname='fatal'>0</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004851</v>
+		</o>
+		<o num='3'>
+			<v varname='term'>Anemia</v>
+			<v varname='group'>Group A</v>
+			<v varname='occurrences'>6</v>
+			<v varname='subjectsAffected'>6</v>
+			<v varname='related'>2</v>
+			<v varname='fatal'>0</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004851</v>
+		</o>
+		<o num='4'>
+			<v varname='term'>Acute coronary syndrome</v>
+			<v varname='group'>Group C</v>
+			<v varname='occurrences'>15</v>
+			<v varname='subjectsAffected'>9</v>
+			<v varname='related'>10</v>
+			<v varname='fatal'>0</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004849</v>
+		</o>
+		<o num='5'>
+			<v varname='term'>Acute coronary syndrome</v>
+			<v varname='group'>Group A</v>
+			<v varname='occurrences'>4</v>
+			<v varname='subjectsAffected'>3</v>
+			<v varname='related'>2</v>
+			<v varname='fatal'>0</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004849</v>
+		</o>
+		<o num='6'>
+			<v varname='term'>Acute coronary syndrome</v>
+			<v varname='group'>Group B</v>
+			<v varname='occurrences'>9</v>
+			<v varname='subjectsAffected'>4</v>
+			<v varname='related'>5</v>
+			<v varname='fatal'>0</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004849</v>
+		</o>
+		<o num='7'>
+			<v varname='term'>Congenital, familial and genetic disorders - Other, specify</v>
+			<v varname='group'>Group A</v>
+			<v varname='occurrences'>5</v>
+			<v varname='subjectsAffected'>5</v>
+			<v varname='related'>4</v>
+			<v varname='fatal'>0</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004850</v>
+		</o>
+		<o num='8'>
+			<v varname='term'>Congenital, familial and genetic disorders - Other, specify</v>
+			<v varname='group'>Group C</v>
+			<v varname='occurrences'>14</v>
+			<v varname='subjectsAffected'>9</v>
+			<v varname='related'>9</v>
+			<v varname='fatal'>1</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004850</v>
+		</o>
+		<o num='9'>
+			<v varname='term'>Congenital, familial and genetic disorders - Other, specify</v>
+			<v varname='group'>Group B</v>
+			<v varname='occurrences'>11</v>
+			<v varname='subjectsAffected'>4</v>
+			<v varname='related'>7</v>
+			<v varname='fatal'>0</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004850</v>
+		</o>
+		<o num='10'>
+			<v varname='term'>Ear pain</v>
+			<v varname='group'>Group A</v>
+			<v varname='occurrences'>9</v>
+			<v varname='subjectsAffected'>2</v>
+			<v varname='related'>4</v>
+			<v varname='fatal'>0</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004854</v>
+		</o>
+		<o num='11'>
+			<v varname='term'>Ear pain</v>
+			<v varname='group'>Group C</v>
+			<v varname='occurrences'>10</v>
+			<v varname='subjectsAffected'>4</v>
+			<v varname='related'>6</v>
+			<v varname='fatal'>0</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004854</v>
+		</o>
+		<o num='12'>
+			<v varname='term'>Ear pain</v>
+			<v varname='group'>Group B</v>
+			<v varname='occurrences'>9</v>
+			<v varname='subjectsAffected'>6</v>
+			<v varname='related'>4</v>
+			<v varname='fatal'>0</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004854</v>
+		</o>
+		<o num='13'>
+			<v varname='term'>Adrenal insufficiency</v>
+			<v varname='group'>Group A</v>
+			<v varname='occurrences'>12</v>
+			<v varname='subjectsAffected'>5</v>
+			<v varname='related'>4</v>
+			<v varname='fatal'>0</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004860</v>
+		</o>
+		<o num='14'>
+			<v varname='term'>Adrenal insufficiency</v>
+			<v varname='group'>Group C</v>
+			<v varname='occurrences'>8</v>
+			<v varname='subjectsAffected'>3</v>
+			<v varname='related'>2</v>
+			<v varname='fatal'>0</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004860</v>
+		</o>
+		<o num='15'>
+			<v varname='term'>Adrenal insufficiency</v>
+			<v varname='group'>Group B</v>
+			<v varname='occurrences'>17</v>
+			<v varname='subjectsAffected'>12</v>
+			<v varname='related'>10</v>
+			<v varname='fatal'>1</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004860</v>
+		</o>
+		<o num='16'>
+			<v varname='term'>Blurred vision</v>
+			<v varname='group'>Group B</v>
+			<v varname='occurrences'>6</v>
+			<v varname='subjectsAffected'>3</v>
+			<v varname='related'>2</v>
+			<v varname='fatal'>0</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004853</v>
+		</o>
+		<o num='17'>
+			<v varname='term'>Blurred vision</v>
+			<v varname='group'>Group A</v>
+			<v varname='occurrences'>16</v>
+			<v varname='subjectsAffected'>6</v>
+			<v varname='related'>4</v>
+			<v varname='fatal'>0</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004853</v>
+		</o>
+		<o num='18'>
+			<v varname='term'>Blurred vision</v>
+			<v varname='group'>Group C</v>
+			<v varname='occurrences'>7</v>
+			<v varname='subjectsAffected'>4</v>
+			<v varname='related'>1</v>
+			<v varname='fatal'>0</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004853</v>
+		</o>
+		<o num='19'>
+			<v varname='term'>Abdominal distension</v>
+			<v varname='group'>Group A</v>
+			<v varname='occurrences'>8</v>
+			<v varname='subjectsAffected'>7</v>
+			<v varname='related'>2</v>
+			<v varname='fatal'>1</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004856</v>
+		</o>
+		<o num='20'>
+			<v varname='term'>Abdominal distension</v>
+			<v varname='group'>Group C</v>
+			<v varname='occurrences'>8</v>
+			<v varname='subjectsAffected'>2</v>
+			<v varname='related'>3</v>
+			<v varname='fatal'>0</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004856</v>
+		</o>
+		<o num='21'>
+			<v varname='term'>Abdominal distension</v>
+			<v varname='group'>Group B</v>
+			<v varname='occurrences'>4</v>
+			<v varname='subjectsAffected'>3</v>
+			<v varname='related'>4</v>
+			<v varname='fatal'>0</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004856</v>
+		</o>
+		<o num='22'>
+			<v varname='term'>Chills</v>
+			<v varname='group'>Group A</v>
+			<v varname='occurrences'>20</v>
+			<v varname='subjectsAffected'>10</v>
+			<v varname='related'>12</v>
+			<v varname='fatal'>0</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004867</v>
+		</o>
+		<o num='23'>
+			<v varname='term'>Chills</v>
+			<v varname='group'>Group B</v>
+			<v varname='occurrences'>17</v>
+			<v varname='subjectsAffected'>7</v>
+			<v varname='related'>14</v>
+			<v varname='fatal'>0</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004867</v>
+		</o>
+		<o num='24'>
+			<v varname='term'>Chills</v>
+			<v varname='group'>Group C</v>
+			<v varname='occurrences'>14</v>
+			<v varname='subjectsAffected'>6</v>
+			<v varname='related'>3</v>
+			<v varname='fatal'>0</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004867</v>
+		</o>
+		<o num='25'>
+			<v varname='term'>Bile duct stenosis</v>
+			<v varname='group'>Group A</v>
+			<v varname='occurrences'>5</v>
+			<v varname='subjectsAffected'>5</v>
+			<v varname='related'>1</v>
+			<v varname='fatal'>0</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004871</v>
+		</o>
+		<o num='26'>
+			<v varname='term'>Bile duct stenosis</v>
+			<v varname='group'>Group C</v>
+			<v varname='occurrences'>6</v>
+			<v varname='subjectsAffected'>1</v>
+			<v varname='related'>0</v>
+			<v varname='fatal'>0</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004871</v>
+		</o>
+		<o num='27'>
+			<v varname='term'>Bile duct stenosis</v>
+			<v varname='group'>Group B</v>
+			<v varname='occurrences'>16</v>
+			<v varname='subjectsAffected'>9</v>
+			<v varname='related'>8</v>
+			<v varname='fatal'>0</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004871</v>
+		</o>
+		<o num='28'>
+			<v varname='term'>Allergic reaction</v>
+			<v varname='group'>Group B</v>
+			<v varname='occurrences'>13</v>
+			<v varname='subjectsAffected'>8</v>
+			<v varname='related'>4</v>
+			<v varname='fatal'>0</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004870</v>
+		</o>
+		<o num='29'>
+			<v varname='term'>Allergic reaction</v>
+			<v varname='group'>Group A</v>
+			<v varname='occurrences'>10</v>
+			<v varname='subjectsAffected'>7</v>
+			<v varname='related'>3</v>
+			<v varname='fatal'>0</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004870</v>
+		</o>
+		<o num='30'>
+			<v varname='term'>Allergic reaction</v>
+			<v varname='group'>Group C</v>
+			<v varname='occurrences'>11</v>
+			<v varname='subjectsAffected'>7</v>
+			<v varname='related'>5</v>
+			<v varname='fatal'>0</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004870</v>
+		</o>
+		<o num='31'>
+			<v varname='term'>Abdominal infection</v>
+			<v varname='group'>Group B</v>
+			<v varname='occurrences'>8</v>
+			<v varname='subjectsAffected'>5</v>
+			<v varname='related'>1</v>
+			<v varname='fatal'>0</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004862</v>
+		</o>
+		<o num='32'>
+			<v varname='term'>Abdominal infection</v>
+			<v varname='group'>Group C</v>
+			<v varname='occurrences'>10</v>
+			<v varname='subjectsAffected'>4</v>
+			<v varname='related'>4</v>
+			<v varname='fatal'>0</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004862</v>
+		</o>
+		<o num='33'>
+			<v varname='term'>Abdominal infection</v>
+			<v varname='group'>Group A</v>
+			<v varname='occurrences'>7</v>
+			<v varname='subjectsAffected'>3</v>
+			<v varname='related'>3</v>
+			<v varname='fatal'>0</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004862</v>
+		</o>
+		<o num='34'>
+			<v varname='term'>Ankle fracture</v>
+			<v varname='group'>Group B</v>
+			<v varname='occurrences'>9</v>
+			<v varname='subjectsAffected'>6</v>
+			<v varname='related'>4</v>
+			<v varname='fatal'>0</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004863</v>
+		</o>
+		<o num='35'>
+			<v varname='term'>Ankle fracture</v>
+			<v varname='group'>Group C</v>
+			<v varname='occurrences'>14</v>
+			<v varname='subjectsAffected'>7</v>
+			<v varname='related'>9</v>
+			<v varname='fatal'>0</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004863</v>
+		</o>
+		<o num='36'>
+			<v varname='term'>Ankle fracture</v>
+			<v varname='group'>Group A</v>
+			<v varname='occurrences'>6</v>
+			<v varname='subjectsAffected'>5</v>
+			<v varname='related'>5</v>
+			<v varname='fatal'>0</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004863</v>
+		</o>
+		<o num='37'>
+			<v varname='term'>Activated partial thromboplastin time prolonged</v>
+			<v varname='group'>Group C</v>
+			<v varname='occurrences'>9</v>
+			<v varname='subjectsAffected'>5</v>
+			<v varname='related'>4</v>
+			<v varname='fatal'>0</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004848</v>
+		</o>
+		<o num='38'>
+			<v varname='term'>Activated partial thromboplastin time prolonged</v>
+			<v varname='group'>Group A</v>
+			<v varname='occurrences'>8</v>
+			<v varname='subjectsAffected'>4</v>
+			<v varname='related'>4</v>
+			<v varname='fatal'>1</v>
+			<v varname='relatedDeath'>1</v>
+			<v varname='eutctid'>100000004848</v>
+		</o>
+		<o num='39'>
+			<v varname='term'>Activated partial thromboplastin time prolonged</v>
+			<v varname='group'>Group B</v>
+			<v varname='occurrences'>11</v>
+			<v varname='subjectsAffected'>6</v>
+			<v varname='related'>6</v>
+			<v varname='fatal'>0</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004848</v>
+		</o>
+		<o num='40'>
+			<v varname='term'>Acidosis</v>
+			<v varname='group'>Group B</v>
+			<v varname='occurrences'>15</v>
+			<v varname='subjectsAffected'>5</v>
+			<v varname='related'>3</v>
+			<v varname='fatal'>2</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004861</v>
+		</o>
+		<o num='41'>
+			<v varname='term'>Acidosis</v>
+			<v varname='group'>Group C</v>
+			<v varname='occurrences'>9</v>
+			<v varname='subjectsAffected'>2</v>
+			<v varname='related'>5</v>
+			<v varname='fatal'>0</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004861</v>
+		</o>
+		<o num='42'>
+			<v varname='term'>Acidosis</v>
+			<v varname='group'>Group A</v>
+			<v varname='occurrences'>10</v>
+			<v varname='subjectsAffected'>8</v>
+			<v varname='related'>2</v>
+			<v varname='fatal'>0</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004861</v>
+		</o>
+		<o num='43'>
+			<v varname='term'>Abdominal soft tissue necrosis</v>
+			<v varname='group'>Group C</v>
+			<v varname='occurrences'>9</v>
+			<v varname='subjectsAffected'>6</v>
+			<v varname='related'>4</v>
+			<v varname='fatal'>0</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004859</v>
+		</o>
+		<o num='44'>
+			<v varname='term'>Abdominal soft tissue necrosis</v>
+			<v varname='group'>Group B</v>
+			<v varname='occurrences'>10</v>
+			<v varname='subjectsAffected'>4</v>
+			<v varname='related'>3</v>
+			<v varname='fatal'>0</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004859</v>
+		</o>
+		<o num='45'>
+			<v varname='term'>Abdominal soft tissue necrosis</v>
+			<v varname='group'>Group A</v>
+			<v varname='occurrences'>12</v>
+			<v varname='subjectsAffected'>5</v>
+			<v varname='related'>4</v>
+			<v varname='fatal'>1</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004859</v>
+		</o>
+		<o num='46'>
+			<v varname='term'>Leukemia secondary to oncology chemotherapy</v>
+			<v varname='group'>Group C</v>
+			<v varname='occurrences'>12</v>
+			<v varname='subjectsAffected'>8</v>
+			<v varname='related'>8</v>
+			<v varname='fatal'>0</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004864</v>
+		</o>
+		<o num='47'>
+			<v varname='term'>Leukemia secondary to oncology chemotherapy</v>
+			<v varname='group'>Group A</v>
+			<v varname='occurrences'>8</v>
+			<v varname='subjectsAffected'>5</v>
+			<v varname='related'>5</v>
+			<v varname='fatal'>0</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004864</v>
+		</o>
+		<o num='48'>
+			<v varname='term'>Leukemia secondary to oncology chemotherapy</v>
+			<v varname='group'>Group B</v>
+			<v varname='occurrences'>6</v>
+			<v varname='subjectsAffected'>4</v>
+			<v varname='related'>6</v>
+			<v varname='fatal'>2</v>
+			<v varname='relatedDeath'>2</v>
+			<v varname='eutctid'>100000004864</v>
+		</o>
+		<o num='49'>
+			<v varname='term'>Abducens nerve disorder</v>
+			<v varname='group'>Group A</v>
+			<v varname='occurrences'>8</v>
+			<v varname='subjectsAffected'>5</v>
+			<v varname='related'>5</v>
+			<v varname='fatal'>0</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004852</v>
+		</o>
+		<o num='50'>
+			<v varname='term'>Abducens nerve disorder</v>
+			<v varname='group'>Group C</v>
+			<v varname='occurrences'>7</v>
+			<v varname='subjectsAffected'>3</v>
+			<v varname='related'>4</v>
+			<v varname='fatal'>0</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004852</v>
+		</o>
+		<o num='51'>
+			<v varname='term'>Abducens nerve disorder</v>
+			<v varname='group'>Group B</v>
+			<v varname='occurrences'>8</v>
+			<v varname='subjectsAffected'>6</v>
+			<v varname='related'>4</v>
+			<v varname='fatal'>0</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004852</v>
+		</o>
+		<o num='52'>
+			<v varname='term'>Fetal death</v>
+			<v varname='group'>Group B</v>
+			<v varname='occurrences'>14</v>
+			<v varname='subjectsAffected'>5</v>
+			<v varname='related'>11</v>
+			<v varname='fatal'>0</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004868</v>
+		</o>
+		<o num='53'>
+			<v varname='term'>Fetal death</v>
+			<v varname='group'>Group A</v>
+			<v varname='occurrences'>7</v>
+			<v varname='subjectsAffected'>3</v>
+			<v varname='related'>4</v>
+			<v varname='fatal'>0</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004868</v>
+		</o>
+		<o num='54'>
+			<v varname='term'>Fetal death</v>
+			<v varname='group'>Group C</v>
+			<v varname='occurrences'>8</v>
+			<v varname='subjectsAffected'>4</v>
+			<v varname='related'>2</v>
+			<v varname='fatal'>0</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004868</v>
+		</o>
+		<o num='55'>
+			<v varname='term'>Agitation</v>
+			<v varname='group'>Group C</v>
+			<v varname='occurrences'>12</v>
+			<v varname='subjectsAffected'>2</v>
+			<v varname='related'>6</v>
+			<v varname='fatal'>0</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004873</v>
+		</o>
+		<o num='56'>
+			<v varname='term'>Agitation</v>
+			<v varname='group'>Group A</v>
+			<v varname='occurrences'>8</v>
+			<v varname='subjectsAffected'>6</v>
+			<v varname='related'>4</v>
+			<v varname='fatal'>0</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004873</v>
+		</o>
+		<o num='57'>
+			<v varname='term'>Agitation</v>
+			<v varname='group'>Group B</v>
+			<v varname='occurrences'>15</v>
+			<v varname='subjectsAffected'>10</v>
+			<v varname='related'>9</v>
+			<v varname='fatal'>0</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004873</v>
+		</o>
+		<o num='58'>
+			<v varname='term'>Acute kidney injury</v>
+			<v varname='group'>Group C</v>
+			<v varname='occurrences'>0</v>
+			<v varname='subjectsAffected'>0</v>
+			<v varname='related'>0</v>
+			<v varname='fatal'>0</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004857</v>
+		</o>
+		<o num='59'>
+			<v varname='term'>Acute kidney injury</v>
+			<v varname='group'>Group A</v>
+			<v varname='occurrences'>5</v>
+			<v varname='subjectsAffected'>4</v>
+			<v varname='related'>3</v>
+			<v varname='fatal'>0</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004857</v>
+		</o>
+		<o num='60'>
+			<v varname='term'>Acute kidney injury</v>
+			<v varname='group'>Group B</v>
+			<v varname='occurrences'>9</v>
+			<v varname='subjectsAffected'>5</v>
+			<v varname='related'>2</v>
+			<v varname='fatal'>0</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004857</v>
+		</o>
+		<o num='61'>
+			<v varname='term'>Azoospermia</v>
+			<v varname='group'>Group C</v>
+			<v varname='occurrences'>9</v>
+			<v varname='subjectsAffected'>4</v>
+			<v varname='related'>4</v>
+			<v varname='fatal'>0</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004872</v>
+		</o>
+		<o num='62'>
+			<v varname='term'>Azoospermia</v>
+			<v varname='group'>Group B</v>
+			<v varname='occurrences'>5</v>
+			<v varname='subjectsAffected'>3</v>
+			<v varname='related'>2</v>
+			<v varname='fatal'>0</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004872</v>
+		</o>
+		<o num='63'>
+			<v varname='term'>Azoospermia</v>
+			<v varname='group'>Group A</v>
+			<v varname='occurrences'>11</v>
+			<v varname='subjectsAffected'>5</v>
+			<v varname='related'>6</v>
+			<v varname='fatal'>0</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004872</v>
+		</o>
+		<o num='64'>
+			<v varname='term'>Adult respiratory distress syndrome</v>
+			<v varname='group'>Group A</v>
+			<v varname='occurrences'>17</v>
+			<v varname='subjectsAffected'>7</v>
+			<v varname='related'>10</v>
+			<v varname='fatal'>0</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004855</v>
+		</o>
+		<o num='65'>
+			<v varname='term'>Adult respiratory distress syndrome</v>
+			<v varname='group'>Group C</v>
+			<v varname='occurrences'>12</v>
+			<v varname='subjectsAffected'>5</v>
+			<v varname='related'>5</v>
+			<v varname='fatal'>0</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004855</v>
+		</o>
+		<o num='66'>
+			<v varname='term'>Adult respiratory distress syndrome</v>
+			<v varname='group'>Group B</v>
+			<v varname='occurrences'>22</v>
+			<v varname='subjectsAffected'>12</v>
+			<v varname='related'>12</v>
+			<v varname='fatal'>0</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004855</v>
+		</o>
+		<o num='67'>
+			<v varname='term'>Alopecia</v>
+			<v varname='group'>Group C</v>
+			<v varname='occurrences'>3</v>
+			<v varname='subjectsAffected'>2</v>
+			<v varname='related'>3</v>
+			<v varname='fatal'>0</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004858</v>
+		</o>
+		<o num='68'>
+			<v varname='term'>Alopecia</v>
+			<v varname='group'>Group B</v>
+			<v varname='occurrences'>10</v>
+			<v varname='subjectsAffected'>8</v>
+			<v varname='related'>6</v>
+			<v varname='fatal'>0</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004858</v>
+		</o>
+		<o num='69'>
+			<v varname='term'>Alopecia</v>
+			<v varname='group'>Group A</v>
+			<v varname='occurrences'>6</v>
+			<v varname='subjectsAffected'>3</v>
+			<v varname='related'>2</v>
+			<v varname='fatal'>0</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004858</v>
+		</o>
+		<o num='70'>
+			<v varname='term'>Menopause</v>
+			<v varname='group'>Group B</v>
+			<v varname='occurrences'>12</v>
+			<v varname='subjectsAffected'>6</v>
+			<v varname='related'>5</v>
+			<v varname='fatal'>0</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004869</v>
+		</o>
+		<o num='71'>
+			<v varname='term'>Menopause</v>
+			<v varname='group'>Group A</v>
+			<v varname='occurrences'>12</v>
+			<v varname='subjectsAffected'>8</v>
+			<v varname='related'>5</v>
+			<v varname='fatal'>0</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004869</v>
+		</o>
+		<o num='72'>
+			<v varname='term'>Menopause</v>
+			<v varname='group'>Group C</v>
+			<v varname='occurrences'>6</v>
+			<v varname='subjectsAffected'>6</v>
+			<v varname='related'>5</v>
+			<v varname='fatal'>0</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004869</v>
+		</o>
+		<o num='73'>
+			<v varname='term'>Surgical and medical procedures - Other, specify</v>
+			<v varname='group'>Group B</v>
+			<v varname='occurrences'>16</v>
+			<v varname='subjectsAffected'>9</v>
+			<v varname='related'>9</v>
+			<v varname='fatal'>0</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004865</v>
+		</o>
+		<o num='74'>
+			<v varname='term'>Surgical and medical procedures - Other, specify</v>
+			<v varname='group'>Group C</v>
+			<v varname='occurrences'>7</v>
+			<v varname='subjectsAffected'>3</v>
+			<v varname='related'>4</v>
+			<v varname='fatal'>0</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004865</v>
+		</o>
+		<o num='75'>
+			<v varname='term'>Surgical and medical procedures - Other, specify</v>
+			<v varname='group'>Group A</v>
+			<v varname='occurrences'>5</v>
+			<v varname='subjectsAffected'>5</v>
+			<v varname='related'>3</v>
+			<v varname='fatal'>0</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004865</v>
+		</o>
+		<o num='76'>
+			<v varname='term'>Capillary leak syndrome</v>
+			<v varname='group'>Group B</v>
+			<v varname='occurrences'>11</v>
+			<v varname='subjectsAffected'>6</v>
+			<v varname='related'>1</v>
+			<v varname='fatal'>1</v>
+			<v varname='relatedDeath'>1</v>
+			<v varname='eutctid'>100000004866</v>
+		</o>
+		<o num='77'>
+			<v varname='term'>Capillary leak syndrome</v>
+			<v varname='group'>Group A</v>
+			<v varname='occurrences'>12</v>
+			<v varname='subjectsAffected'>4</v>
+			<v varname='related'>8</v>
+			<v varname='fatal'>0</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004866</v>
+		</o>
+		<o num='78'>
+			<v varname='term'>Capillary leak syndrome</v>
+			<v varname='group'>Group C</v>
+			<v varname='occurrences'>16</v>
+			<v varname='subjectsAffected'>9</v>
+			<v varname='related'>10</v>
+			<v varname='fatal'>1</v>
+			<v varname='relatedDeath'>0</v>
+			<v varname='eutctid'>100000004866</v>
+		</o>
+	</data>
+	<value_labels>
+		<vallab name='_merge'>
+			<label value='1'>master only (1)</label>
+			<label value='2'>using only (2)</label>
+			<label value='3'>matched (3)</label>
+			<label value='4'>missing updated (4)</label>
+			<label value='5'>nonmissing conflict (5)</label>
+		</vallab>
+	</value_labels>
+</dta>

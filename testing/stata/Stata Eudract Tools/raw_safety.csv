@@ -1,0 +1,117 @@
+soc,subjid,fatal,serious,group,term,related
+10005329,SW2-003,0,0,Experimental,Neutropenia,0
+10005329,US7-006,0,1,Control,B-cell lymphoma,0
+10007541,US3-002,0,0,Experimental,Acute myocardial infarction,1
+10007541,N01-008,0,0,Experimental,Atrial fibrillation,0
+10007541,US5-001,0,1,Experimental,Cardiac failure congestive,0
+10007541,N01-018,0,0,Experimental,Atrioventricular block complete,0
+10007541,US6-012,0,0,Experimental,Angina pectoris,0
+10007541,N14-004,0,0,Control,Acute coronary syndrome,0
+10007541,AS1-006,1,1,Control,Cardiac arrest,0
+10017947,US6-006,0,1,Control,Abdominal pain,0
+10017947,N04-006,0,0,Experimental,Abdominal pain,0
+10017947,US6-002,1,1,Experimental,Gastroenteritis viral,0
+10017947,CN2-008,1,1,Experimental,Gastrointestinal haemorrhage,0
+10017947,AS1-006,0,0,Control,Intestinal perforation,0
+10017947,N04-008,1,1,Experimental,Oesophageal spasm,0
+10017947,US7-005,0,0,Experimental,Duodenal ulcer,0
+10017947,US6-012,0,1,Experimental,Oesophagitis,0
+10018065,N01-018,0,1,Experimental,Chest pain,0
+10018065,NR-NZ-001,0,0,Control,Pyrexia,0
+10018065,AS2-001,0,0,Experimental,Pyrexia,0
+10019805,US9-002,0,1,Experimental,Cholecystitis acute,0
+10019805,N04-006,0,0,Experimental,Cholecystitis,0
+10019805,US4-002,0,1,Control,Cholecystitis acute,0
+10021428,N01-009,1,1,Control,Vasculitis,0
+10021428,AS2-002,0,0,Experimental,Hypersensitivity,1
+10021428,N01-016,0,0,Experimental,Vasculitis,1
+10021428,US7-006,0,0,Control,Vasculitis,0
+10021428,N04-005,0,1,Control,Pulmonary vasculitis,0
+10021428,US9-001,0,0,Experimental,Vasculitis,0
+10021428,US9-002,1,1,Experimental,Vasculitis,0
+10021428,US6-004,0,0,Control,Vasculitis,0
+10021428,JP2-001,0,0,Control,Vasculitis,0
+10021428,US4-005,0,0,Experimental,Vasculitis,0
+10021428,CN1-003,1,1,Experimental,Vasculitis,0
+10021428,US7-002,0,0,Experimental,Drug hypersensitivity,1
+10021428,US7-006,0,0,Control,Vasculitis,0
+10021881,AS1-005,1,1,Experimental,Gastroenteritis Escherichia coli,0
+10021881,US3-002,0,0,Experimental,Pneumonia,1
+10021881,AS1-006,1,1,Control,Escherichia urinary tract infecti,0
+10021881,N12-002,1,1,Control,Lower respiratory tract infection,1
+10021881,N01-011,0,0,Experimental,Pneumonia,1
+10021881,N01-018,0,0,Experimental,Pneumonia,1
+10021881,CN1-002,0,0,Control,Pneumonia,1
+10021881,US3-002,0,1,Experimental,Pneumonia,1
+10021881,N12-001,0,0,Experimental,Urinary tract infection,0
+10021881,US7-002,1,1,Experimental,Cellulitis,1
+10021881,AS1-005,0,0,Experimental,Escherichia urinary tract infecti,0
+10021881,N01-011,0,0,Experimental,Respiratory tract infection,1
+10021881,N01-024,1,1,Experimental,Pneumonia,1
+10021881,US3-002,0,0,Experimental,Pneumonia,1
+10021881,US3-002,0,0,Experimental,Pneumonia pseudomonal,1
+10021881,AS2-001,0,0,Experimental,Sinusitis,1
+10021881,N01-011,1,1,Experimental,Respiratory tract infection,0
+10021881,N14-004,0,0,Control,Respiratory tract infection,0
+10021881,US6-009,0,1,Experimental,Pneumonia,1
+10021881,AS1-005,0,1,Experimental,Urinary tract infection,0
+10021881,US4-003,0,0,Control,Respiratory tract infection,1
+10021881,NO4-002,1,1,Experimental,Influenza,0
+10021881,JP2-001,0,0,Control,Pneumonia,0
+10021881,AS1-005,1,1,Experimental,Urinary tract infection,1
+10021881,AS2-001,0,0,Experimental,Influenza,1
+10021881,N01-035,1,1,Experimental,Respiratory tract infection,1
+10022117,US8-002,0,1,Experimental,Fall,0
+10022117,US9-002,1,1,Experimental,Post procedural complication,0
+10022117,US8-001,0,0,Experimental,Wound dehiscence,0
+10022891,N04-003,1,1,Experimental,Medical observation,0
+10027433,US9-001,0,0,Experimental,Dehydration,0
+10027433,US3-002,0,1,Experimental,Hyperkalaemia,0
+10027433,N01-001,1,1,Control,Hyperglycaemia,0
+10028395,N04-008,0,0,Experimental,Osteoarthritis,0
+10029104,CN1-006,0,1,Experimental,Bladder papilloma,0
+10029104,N01-013,0,0,Control,Squamous cell carcinoma,0
+10029104,N01-005,0,0,Experimental,Anal squamous cell carcinoma,1
+10029205,N14-004,1,1,Control,Cerebrovascular accident,0
+10029205,N01-030,1,1,Control,Sleep apnoea syndrome,0
+10029205,N01-030,0,0,Control,Sleep apnoea syndrome,0
+10029205,N01-030,0,0,Control,Sleep apnoea syndrome,0
+10037175,N15-001,1,1,Experimental,Conversion disorder,1
+10038359,US8-001,0,0,Experimental,Enterovesical fistula,0
+10038359,N01-030,0,0,Control,Renal impairment,0
+10038359,N04-004,0,1,Experimental,Proteinuria,0
+10038738,US6-004,1,1,Control,Pneumonia viral,0
+10038738,CN1-005,0,1,Experimental,Laryngeal stenosis,0
+10038738,US6-009,0,0,Experimental,Bronchospasm,0
+10038738,US3-002,0,0,Experimental,Pneumonia streptococcal,1
+10038738,N50-002,0,1,Experimental,Pulmonary embolism,0
+10038738,N01-037,1,1,Experimental,Laryngeal stenosis,0
+10038738,AS1-004,0,0,Control,Laryngeal stenosis,0
+10038738,CN1-005,0,1,Experimental,Laryngeal stenosis,0
+10038738,CN2-009,0,0,Control,Lung adenocarcinoma,0
+10038738,N01-016,0,0,Experimental,Dyspnoea,1
+10038738,US3-002,1,1,Experimental,Pneumonia staphylococcal,1
+10038738,US6-007,0,0,Control,Pneumonitis,0
+10038738,JP2-003,0,0,Control,Pneumonia,1
+10038738,CN1-005,0,0,Experimental,Laryngeal stenosis,0
+10038738,N01-032,0,0,Control,Lower respiratory tract infection,1
+10038738,CN1-005,0,1,Experimental,Laryngeal stenosis,0
+10038738,NR-N01-001,0,0,Experimental,Respiratory failure,0
+10038738,US8-001,1,1,Experimental,Pneumonia klebsiella,1
+10038738,N04-002,0,1,Experimental,Pneumomediastinum,0
+10042613,N04-004,1,1,Experimental,Hip arthroplasty,0
+10042613,N01-007,0,1,Experimental,Dacryocystorhinostomy,0
+10042613,N01-010,1,1,Control,Hip arthroplasty,0
+10042613,N01-015,1,1,Experimental,Small intestinal resection,0
+10042613,US4-001,1,1,Experimental,Hip arthroplasty,0
+10042613,US8-006,0,1,Control,Aortic valve replacement,0
+10042613,N01-005,0,0,Experimental,Colostomy closure,0
+10042613,US9-002,0,1,Experimental,Cholecystectomy,0
+10047065,US6-007,1,1,Control,Deep vein thrombosis,0
+10047065,JP2-002,0,0,Experimental,Deep vein thrombosis,0
+10047065,US5-001,0,0,Experimental,Aortic dissection,0
+10047065,JP2-003,0,1,Control,Pulmonary embolism,0
+10047065,US6-003,0,1,Experimental,Deep vein thrombosis,0
+10047065,N50-001,1,1,Experimental,Deep vein thrombosis,0
+10047065,N50-002,1,1,Experimental,Pulmonary embolism,0
+10047065,US4-006,1,1,Experimental,Deep vein thrombosis,0

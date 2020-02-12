@@ -39,7 +39,7 @@ GROUP <- data.frame(
   deathsAllCauses=all_death_count
 )
 
-data_file <- "data/all_soc.csv"
+data_file <- "data/all_soc_v2.csv"
 if(!is_testing()){data_file <- paste0("tests/testthat/",data_file)}
 
 all_soc <- read.csv(data_file, stringsAsFactors = FALSE)
@@ -257,6 +257,9 @@ test_that("Serious",{
   expect_true(all(with(compare, as.numeric(deathsCausallyRelatedToTreatment.x) - as.numeric(deathsCausallyRelatedToTreatment.y))==0))
 }
 )
+
+#simple_safety_xml(result, "simple.xml")
+#eudract_convert("simple.xml","eudract.xml")
 
 safety_statistics <- safety_summary(safety, exposed=c("Experimental"=60,"Control"=67))
 

@@ -58,7 +58,14 @@
       <eutctId>
         <xsl:value-of select ="eutctId"/>
       </eutctId>
-      <version>19</version>
+      <xsl:choose>
+        <xsl:when test="eutctId = 100000167503">
+          <version>3</version>
+        </xsl:when>
+        <xsl:otherwise>
+           <version>22</version>
+        </xsl:otherwise>
+      </xsl:choose>
     </organSystem>
     <assessmentMethod>
       <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>

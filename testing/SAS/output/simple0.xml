@@ -1,0 +1,1553 @@
+<?xml version="1.0" encoding="windows-1252" ?>
+<TABLE>
+   <GROUP>
+      <group> Group A </group>
+      <serious_any_Sum> 10 </serious_any_Sum>
+      <non_serious_any_Sum> 10 </non_serious_any_Sum>
+      <fatal_any_Sum> 3 </fatal_any_Sum>
+      <exposed> 20 </exposed>
+      <deathsAllCauses> 3 </deathsAllCauses>
+   </GROUP>
+   <GROUP>
+      <group> Group B </group>
+      <serious_any_Sum> 13 </serious_any_Sum>
+      <non_serious_any_Sum> 14 </non_serious_any_Sum>
+      <fatal_any_Sum> 6 </fatal_any_Sum>
+      <exposed> 22 </exposed>
+      <deathsAllCauses> 6 </deathsAllCauses>
+   </GROUP>
+   <GROUP>
+      <group> Group C </group>
+      <serious_any_Sum> 9 </serious_any_Sum>
+      <non_serious_any_Sum> 11 </non_serious_any_Sum>
+      <fatal_any_Sum> 2 </fatal_any_Sum>
+      <exposed> 18 </exposed>
+      <deathsAllCauses> 2 </deathsAllCauses>
+   </GROUP>
+   <SERIOUS>
+      <term> Anemia </term>
+      <groupTitle> Group A </groupTitle>
+      <occurrences> 6 </occurrences>
+      <related_Sum> 2 </related_Sum>
+      <fatal_Sum> 0 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 6 </subjectsAffected>
+      <eutctId> 100000004851 </eutctId>
+      <meddra> 10005329 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Anemia </term>
+      <groupTitle> Group B </groupTitle>
+      <occurrences> 16 </occurrences>
+      <related_Sum> 7 </related_Sum>
+      <fatal_Sum> 0 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 7 </subjectsAffected>
+      <eutctId> 100000004851 </eutctId>
+      <meddra> 10005329 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Anemia </term>
+      <groupTitle> Group C </groupTitle>
+      <occurrences> 13 </occurrences>
+      <related_Sum> 1 </related_Sum>
+      <fatal_Sum> 0 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 3 </subjectsAffected>
+      <eutctId> 100000004851 </eutctId>
+      <meddra> 10005329 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Acute coronary syndrome </term>
+      <groupTitle> Group A </groupTitle>
+      <occurrences> 4 </occurrences>
+      <related_Sum> 2 </related_Sum>
+      <fatal_Sum> 0 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 3 </subjectsAffected>
+      <eutctId> 100000004849 </eutctId>
+      <meddra> 10007541 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Acute coronary syndrome </term>
+      <groupTitle> Group B </groupTitle>
+      <occurrences> 9 </occurrences>
+      <related_Sum> 5 </related_Sum>
+      <fatal_Sum> 0 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 4 </subjectsAffected>
+      <eutctId> 100000004849 </eutctId>
+      <meddra> 10007541 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Acute coronary syndrome </term>
+      <groupTitle> Group C </groupTitle>
+      <occurrences> 15 </occurrences>
+      <related_Sum> 10 </related_Sum>
+      <fatal_Sum> 0 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 9 </subjectsAffected>
+      <eutctId> 100000004849 </eutctId>
+      <meddra> 10007541 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Congenital, familial an </term>
+      <groupTitle> Group A </groupTitle>
+      <occurrences> 5 </occurrences>
+      <related_Sum> 4 </related_Sum>
+      <fatal_Sum> 0 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 5 </subjectsAffected>
+      <eutctId> 100000004850 </eutctId>
+      <meddra> 10010331 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Congenital, familial an </term>
+      <groupTitle> Group B </groupTitle>
+      <occurrences> 11 </occurrences>
+      <related_Sum> 7 </related_Sum>
+      <fatal_Sum> 0 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 4 </subjectsAffected>
+      <eutctId> 100000004850 </eutctId>
+      <meddra> 10010331 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Congenital, familial an </term>
+      <groupTitle> Group C </groupTitle>
+      <occurrences> 14 </occurrences>
+      <related_Sum> 9 </related_Sum>
+      <fatal_Sum> 1 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 9 </subjectsAffected>
+      <eutctId> 100000004850 </eutctId>
+      <meddra> 10010331 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Ear pain </term>
+      <groupTitle> Group A </groupTitle>
+      <occurrences> 9 </occurrences>
+      <related_Sum> 4 </related_Sum>
+      <fatal_Sum> 0 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 2 </subjectsAffected>
+      <eutctId> 100000004854 </eutctId>
+      <meddra> 10013993 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Ear pain </term>
+      <groupTitle> Group B </groupTitle>
+      <occurrences> 9 </occurrences>
+      <related_Sum> 4 </related_Sum>
+      <fatal_Sum> 0 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 6 </subjectsAffected>
+      <eutctId> 100000004854 </eutctId>
+      <meddra> 10013993 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Ear pain </term>
+      <groupTitle> Group C </groupTitle>
+      <occurrences> 10 </occurrences>
+      <related_Sum> 6 </related_Sum>
+      <fatal_Sum> 0 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 4 </subjectsAffected>
+      <eutctId> 100000004854 </eutctId>
+      <meddra> 10013993 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Adrenal insufficiency </term>
+      <groupTitle> Group A </groupTitle>
+      <occurrences> 12 </occurrences>
+      <related_Sum> 4 </related_Sum>
+      <fatal_Sum> 0 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 5 </subjectsAffected>
+      <eutctId> 100000004860 </eutctId>
+      <meddra> 10014698 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Adrenal insufficiency </term>
+      <groupTitle> Group B </groupTitle>
+      <occurrences> 17 </occurrences>
+      <related_Sum> 10 </related_Sum>
+      <fatal_Sum> 1 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 12 </subjectsAffected>
+      <eutctId> 100000004860 </eutctId>
+      <meddra> 10014698 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Adrenal insufficiency </term>
+      <groupTitle> Group C </groupTitle>
+      <occurrences> 8 </occurrences>
+      <related_Sum> 2 </related_Sum>
+      <fatal_Sum> 0 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 3 </subjectsAffected>
+      <eutctId> 100000004860 </eutctId>
+      <meddra> 10014698 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Blurred vision </term>
+      <groupTitle> Group A </groupTitle>
+      <occurrences> 16 </occurrences>
+      <related_Sum> 4 </related_Sum>
+      <fatal_Sum> 0 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 6 </subjectsAffected>
+      <eutctId> 100000004853 </eutctId>
+      <meddra> 10015919 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Blurred vision </term>
+      <groupTitle> Group B </groupTitle>
+      <occurrences> 6 </occurrences>
+      <related_Sum> 2 </related_Sum>
+      <fatal_Sum> 0 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 3 </subjectsAffected>
+      <eutctId> 100000004853 </eutctId>
+      <meddra> 10015919 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Blurred vision </term>
+      <groupTitle> Group C </groupTitle>
+      <occurrences> 7 </occurrences>
+      <related_Sum> 1 </related_Sum>
+      <fatal_Sum> 0 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 4 </subjectsAffected>
+      <eutctId> 100000004853 </eutctId>
+      <meddra> 10015919 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Abdominal distension </term>
+      <groupTitle> Group A </groupTitle>
+      <occurrences> 8 </occurrences>
+      <related_Sum> 2 </related_Sum>
+      <fatal_Sum> 1 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 7 </subjectsAffected>
+      <eutctId> 100000004856 </eutctId>
+      <meddra> 10017947 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Abdominal distension </term>
+      <groupTitle> Group B </groupTitle>
+      <occurrences> 4 </occurrences>
+      <related_Sum> 4 </related_Sum>
+      <fatal_Sum> 0 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 3 </subjectsAffected>
+      <eutctId> 100000004856 </eutctId>
+      <meddra> 10017947 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Abdominal distension </term>
+      <groupTitle> Group C </groupTitle>
+      <occurrences> 8 </occurrences>
+      <related_Sum> 3 </related_Sum>
+      <fatal_Sum> 0 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 2 </subjectsAffected>
+      <eutctId> 100000004856 </eutctId>
+      <meddra> 10017947 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Chills </term>
+      <groupTitle> Group A </groupTitle>
+      <occurrences> 20 </occurrences>
+      <related_Sum> 12 </related_Sum>
+      <fatal_Sum> 0 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 10 </subjectsAffected>
+      <eutctId> 100000004867 </eutctId>
+      <meddra> 10018065 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Chills </term>
+      <groupTitle> Group B </groupTitle>
+      <occurrences> 17 </occurrences>
+      <related_Sum> 14 </related_Sum>
+      <fatal_Sum> 0 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 7 </subjectsAffected>
+      <eutctId> 100000004867 </eutctId>
+      <meddra> 10018065 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Chills </term>
+      <groupTitle> Group C </groupTitle>
+      <occurrences> 14 </occurrences>
+      <related_Sum> 3 </related_Sum>
+      <fatal_Sum> 0 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 6 </subjectsAffected>
+      <eutctId> 100000004867 </eutctId>
+      <meddra> 10018065 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Bile duct stenosis </term>
+      <groupTitle> Group A </groupTitle>
+      <occurrences> 5 </occurrences>
+      <related_Sum> 1 </related_Sum>
+      <fatal_Sum> 0 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 5 </subjectsAffected>
+      <eutctId> 100000004871 </eutctId>
+      <meddra> 10019805 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Bile duct stenosis </term>
+      <groupTitle> Group B </groupTitle>
+      <occurrences> 16 </occurrences>
+      <related_Sum> 8 </related_Sum>
+      <fatal_Sum> 0 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 9 </subjectsAffected>
+      <eutctId> 100000004871 </eutctId>
+      <meddra> 10019805 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Bile duct stenosis </term>
+      <groupTitle> Group C </groupTitle>
+      <occurrences> 6 </occurrences>
+      <related_Sum> 0 </related_Sum>
+      <fatal_Sum> 0 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 1 </subjectsAffected>
+      <eutctId> 100000004871 </eutctId>
+      <meddra> 10019805 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Allergic reaction </term>
+      <groupTitle> Group A </groupTitle>
+      <occurrences> 10 </occurrences>
+      <related_Sum> 3 </related_Sum>
+      <fatal_Sum> 0 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 7 </subjectsAffected>
+      <eutctId> 100000004870 </eutctId>
+      <meddra> 10021428 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Allergic reaction </term>
+      <groupTitle> Group B </groupTitle>
+      <occurrences> 13 </occurrences>
+      <related_Sum> 4 </related_Sum>
+      <fatal_Sum> 0 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 8 </subjectsAffected>
+      <eutctId> 100000004870 </eutctId>
+      <meddra> 10021428 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Allergic reaction </term>
+      <groupTitle> Group C </groupTitle>
+      <occurrences> 11 </occurrences>
+      <related_Sum> 5 </related_Sum>
+      <fatal_Sum> 0 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 7 </subjectsAffected>
+      <eutctId> 100000004870 </eutctId>
+      <meddra> 10021428 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Abdominal infection </term>
+      <groupTitle> Group A </groupTitle>
+      <occurrences> 7 </occurrences>
+      <related_Sum> 3 </related_Sum>
+      <fatal_Sum> 0 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 3 </subjectsAffected>
+      <eutctId> 100000004862 </eutctId>
+      <meddra> 10021881 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Abdominal infection </term>
+      <groupTitle> Group B </groupTitle>
+      <occurrences> 8 </occurrences>
+      <related_Sum> 1 </related_Sum>
+      <fatal_Sum> 0 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 5 </subjectsAffected>
+      <eutctId> 100000004862 </eutctId>
+      <meddra> 10021881 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Abdominal infection </term>
+      <groupTitle> Group C </groupTitle>
+      <occurrences> 10 </occurrences>
+      <related_Sum> 4 </related_Sum>
+      <fatal_Sum> 0 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 4 </subjectsAffected>
+      <eutctId> 100000004862 </eutctId>
+      <meddra> 10021881 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Ankle fracture </term>
+      <groupTitle> Group A </groupTitle>
+      <occurrences> 6 </occurrences>
+      <related_Sum> 5 </related_Sum>
+      <fatal_Sum> 0 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 5 </subjectsAffected>
+      <eutctId> 100000004863 </eutctId>
+      <meddra> 10022117 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Ankle fracture </term>
+      <groupTitle> Group B </groupTitle>
+      <occurrences> 9 </occurrences>
+      <related_Sum> 4 </related_Sum>
+      <fatal_Sum> 0 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 6 </subjectsAffected>
+      <eutctId> 100000004863 </eutctId>
+      <meddra> 10022117 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Ankle fracture </term>
+      <groupTitle> Group C </groupTitle>
+      <occurrences> 14 </occurrences>
+      <related_Sum> 9 </related_Sum>
+      <fatal_Sum> 0 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 7 </subjectsAffected>
+      <eutctId> 100000004863 </eutctId>
+      <meddra> 10022117 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Activated partial throm </term>
+      <groupTitle> Group A </groupTitle>
+      <occurrences> 8 </occurrences>
+      <related_Sum> 4 </related_Sum>
+      <fatal_Sum> 1 </fatal_Sum>
+      <deaths_related_Sum> 1 </deaths_related_Sum>
+      <subjectsAffected> 4 </subjectsAffected>
+      <eutctId> 100000004848 </eutctId>
+      <meddra> 10022891 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Activated partial throm </term>
+      <groupTitle> Group B </groupTitle>
+      <occurrences> 11 </occurrences>
+      <related_Sum> 6 </related_Sum>
+      <fatal_Sum> 0 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 6 </subjectsAffected>
+      <eutctId> 100000004848 </eutctId>
+      <meddra> 10022891 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Activated partial throm </term>
+      <groupTitle> Group C </groupTitle>
+      <occurrences> 9 </occurrences>
+      <related_Sum> 4 </related_Sum>
+      <fatal_Sum> 0 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 5 </subjectsAffected>
+      <eutctId> 100000004848 </eutctId>
+      <meddra> 10022891 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Acidosis </term>
+      <groupTitle> Group A </groupTitle>
+      <occurrences> 10 </occurrences>
+      <related_Sum> 2 </related_Sum>
+      <fatal_Sum> 0 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 8 </subjectsAffected>
+      <eutctId> 100000004861 </eutctId>
+      <meddra> 10027433 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Acidosis </term>
+      <groupTitle> Group B </groupTitle>
+      <occurrences> 15 </occurrences>
+      <related_Sum> 3 </related_Sum>
+      <fatal_Sum> 2 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 5 </subjectsAffected>
+      <eutctId> 100000004861 </eutctId>
+      <meddra> 10027433 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Acidosis </term>
+      <groupTitle> Group C </groupTitle>
+      <occurrences> 9 </occurrences>
+      <related_Sum> 5 </related_Sum>
+      <fatal_Sum> 0 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 2 </subjectsAffected>
+      <eutctId> 100000004861 </eutctId>
+      <meddra> 10027433 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Abdominal soft tissue n </term>
+      <groupTitle> Group A </groupTitle>
+      <occurrences> 12 </occurrences>
+      <related_Sum> 4 </related_Sum>
+      <fatal_Sum> 1 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 5 </subjectsAffected>
+      <eutctId> 100000004859 </eutctId>
+      <meddra> 10028395 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Abdominal soft tissue n </term>
+      <groupTitle> Group B </groupTitle>
+      <occurrences> 10 </occurrences>
+      <related_Sum> 3 </related_Sum>
+      <fatal_Sum> 0 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 4 </subjectsAffected>
+      <eutctId> 100000004859 </eutctId>
+      <meddra> 10028395 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Abdominal soft tissue n </term>
+      <groupTitle> Group C </groupTitle>
+      <occurrences> 9 </occurrences>
+      <related_Sum> 4 </related_Sum>
+      <fatal_Sum> 0 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 6 </subjectsAffected>
+      <eutctId> 100000004859 </eutctId>
+      <meddra> 10028395 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Leukemia secondary to o </term>
+      <groupTitle> Group A </groupTitle>
+      <occurrences> 8 </occurrences>
+      <related_Sum> 5 </related_Sum>
+      <fatal_Sum> 0 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 5 </subjectsAffected>
+      <eutctId> 100000004864 </eutctId>
+      <meddra> 10029104 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Leukemia secondary to o </term>
+      <groupTitle> Group B </groupTitle>
+      <occurrences> 6 </occurrences>
+      <related_Sum> 6 </related_Sum>
+      <fatal_Sum> 2 </fatal_Sum>
+      <deaths_related_Sum> 2 </deaths_related_Sum>
+      <subjectsAffected> 4 </subjectsAffected>
+      <eutctId> 100000004864 </eutctId>
+      <meddra> 10029104 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Leukemia secondary to o </term>
+      <groupTitle> Group C </groupTitle>
+      <occurrences> 12 </occurrences>
+      <related_Sum> 8 </related_Sum>
+      <fatal_Sum> 0 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 8 </subjectsAffected>
+      <eutctId> 100000004864 </eutctId>
+      <meddra> 10029104 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Abducens nerve disorder </term>
+      <groupTitle> Group A </groupTitle>
+      <occurrences> 8 </occurrences>
+      <related_Sum> 5 </related_Sum>
+      <fatal_Sum> 0 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 5 </subjectsAffected>
+      <eutctId> 100000004852 </eutctId>
+      <meddra> 10029205 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Abducens nerve disorder </term>
+      <groupTitle> Group B </groupTitle>
+      <occurrences> 8 </occurrences>
+      <related_Sum> 4 </related_Sum>
+      <fatal_Sum> 0 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 6 </subjectsAffected>
+      <eutctId> 100000004852 </eutctId>
+      <meddra> 10029205 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Abducens nerve disorder </term>
+      <groupTitle> Group C </groupTitle>
+      <occurrences> 7 </occurrences>
+      <related_Sum> 4 </related_Sum>
+      <fatal_Sum> 0 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 3 </subjectsAffected>
+      <eutctId> 100000004852 </eutctId>
+      <meddra> 10029205 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Fetal death </term>
+      <groupTitle> Group A </groupTitle>
+      <occurrences> 7 </occurrences>
+      <related_Sum> 4 </related_Sum>
+      <fatal_Sum> 0 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 3 </subjectsAffected>
+      <eutctId> 100000004868 </eutctId>
+      <meddra> 10036585 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Fetal death </term>
+      <groupTitle> Group B </groupTitle>
+      <occurrences> 14 </occurrences>
+      <related_Sum> 11 </related_Sum>
+      <fatal_Sum> 0 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 5 </subjectsAffected>
+      <eutctId> 100000004868 </eutctId>
+      <meddra> 10036585 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Fetal death </term>
+      <groupTitle> Group C </groupTitle>
+      <occurrences> 8 </occurrences>
+      <related_Sum> 2 </related_Sum>
+      <fatal_Sum> 0 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 4 </subjectsAffected>
+      <eutctId> 100000004868 </eutctId>
+      <meddra> 10036585 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Agitation </term>
+      <groupTitle> Group A </groupTitle>
+      <occurrences> 8 </occurrences>
+      <related_Sum> 4 </related_Sum>
+      <fatal_Sum> 0 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 6 </subjectsAffected>
+      <eutctId> 100000004873 </eutctId>
+      <meddra> 10037175 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Agitation </term>
+      <groupTitle> Group B </groupTitle>
+      <occurrences> 15 </occurrences>
+      <related_Sum> 9 </related_Sum>
+      <fatal_Sum> 0 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 10 </subjectsAffected>
+      <eutctId> 100000004873 </eutctId>
+      <meddra> 10037175 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Agitation </term>
+      <groupTitle> Group C </groupTitle>
+      <occurrences> 12 </occurrences>
+      <related_Sum> 6 </related_Sum>
+      <fatal_Sum> 0 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 2 </subjectsAffected>
+      <eutctId> 100000004873 </eutctId>
+      <meddra> 10037175 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Acute kidney injury </term>
+      <groupTitle> Group A </groupTitle>
+      <occurrences> 5 </occurrences>
+      <related_Sum> 3 </related_Sum>
+      <fatal_Sum> 0 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 4 </subjectsAffected>
+      <eutctId> 100000004857 </eutctId>
+      <meddra> 10038359 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Acute kidney injury </term>
+      <groupTitle> Group B </groupTitle>
+      <occurrences> 9 </occurrences>
+      <related_Sum> 2 </related_Sum>
+      <fatal_Sum> 0 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 5 </subjectsAffected>
+      <eutctId> 100000004857 </eutctId>
+      <meddra> 10038359 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Acute kidney injury </term>
+      <groupTitle> Group C </groupTitle>
+      <occurrences> 0 </occurrences>
+      <related_Sum> 0 </related_Sum>
+      <fatal_Sum> 0 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 0 </subjectsAffected>
+      <eutctId> 100000004857 </eutctId>
+      <meddra> 10038359 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Azoospermia </term>
+      <groupTitle> Group A </groupTitle>
+      <occurrences> 11 </occurrences>
+      <related_Sum> 6 </related_Sum>
+      <fatal_Sum> 0 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 5 </subjectsAffected>
+      <eutctId> 100000004872 </eutctId>
+      <meddra> 10038604 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Azoospermia </term>
+      <groupTitle> Group B </groupTitle>
+      <occurrences> 5 </occurrences>
+      <related_Sum> 2 </related_Sum>
+      <fatal_Sum> 0 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 3 </subjectsAffected>
+      <eutctId> 100000004872 </eutctId>
+      <meddra> 10038604 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Azoospermia </term>
+      <groupTitle> Group C </groupTitle>
+      <occurrences> 9 </occurrences>
+      <related_Sum> 4 </related_Sum>
+      <fatal_Sum> 0 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 4 </subjectsAffected>
+      <eutctId> 100000004872 </eutctId>
+      <meddra> 10038604 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Adult respiratory distr </term>
+      <groupTitle> Group A </groupTitle>
+      <occurrences> 17 </occurrences>
+      <related_Sum> 10 </related_Sum>
+      <fatal_Sum> 0 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 7 </subjectsAffected>
+      <eutctId> 100000004855 </eutctId>
+      <meddra> 10038738 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Adult respiratory distr </term>
+      <groupTitle> Group B </groupTitle>
+      <occurrences> 22 </occurrences>
+      <related_Sum> 12 </related_Sum>
+      <fatal_Sum> 0 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 12 </subjectsAffected>
+      <eutctId> 100000004855 </eutctId>
+      <meddra> 10038738 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Adult respiratory distr </term>
+      <groupTitle> Group C </groupTitle>
+      <occurrences> 12 </occurrences>
+      <related_Sum> 5 </related_Sum>
+      <fatal_Sum> 0 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 5 </subjectsAffected>
+      <eutctId> 100000004855 </eutctId>
+      <meddra> 10038738 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Alopecia </term>
+      <groupTitle> Group A </groupTitle>
+      <occurrences> 6 </occurrences>
+      <related_Sum> 2 </related_Sum>
+      <fatal_Sum> 0 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 3 </subjectsAffected>
+      <eutctId> 100000004858 </eutctId>
+      <meddra> 10040785 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Alopecia </term>
+      <groupTitle> Group B </groupTitle>
+      <occurrences> 10 </occurrences>
+      <related_Sum> 6 </related_Sum>
+      <fatal_Sum> 0 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 8 </subjectsAffected>
+      <eutctId> 100000004858 </eutctId>
+      <meddra> 10040785 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Alopecia </term>
+      <groupTitle> Group C </groupTitle>
+      <occurrences> 3 </occurrences>
+      <related_Sum> 3 </related_Sum>
+      <fatal_Sum> 0 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 2 </subjectsAffected>
+      <eutctId> 100000004858 </eutctId>
+      <meddra> 10040785 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Menopause </term>
+      <groupTitle> Group A </groupTitle>
+      <occurrences> 12 </occurrences>
+      <related_Sum> 5 </related_Sum>
+      <fatal_Sum> 0 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 8 </subjectsAffected>
+      <eutctId> 100000004869 </eutctId>
+      <meddra> 10041244 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Menopause </term>
+      <groupTitle> Group B </groupTitle>
+      <occurrences> 12 </occurrences>
+      <related_Sum> 5 </related_Sum>
+      <fatal_Sum> 0 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 6 </subjectsAffected>
+      <eutctId> 100000004869 </eutctId>
+      <meddra> 10041244 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Menopause </term>
+      <groupTitle> Group C </groupTitle>
+      <occurrences> 6 </occurrences>
+      <related_Sum> 5 </related_Sum>
+      <fatal_Sum> 0 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 6 </subjectsAffected>
+      <eutctId> 100000004869 </eutctId>
+      <meddra> 10041244 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Surgical and medical pr </term>
+      <groupTitle> Group A </groupTitle>
+      <occurrences> 5 </occurrences>
+      <related_Sum> 3 </related_Sum>
+      <fatal_Sum> 0 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 5 </subjectsAffected>
+      <eutctId> 100000004865 </eutctId>
+      <meddra> 10042613 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Surgical and medical pr </term>
+      <groupTitle> Group B </groupTitle>
+      <occurrences> 16 </occurrences>
+      <related_Sum> 9 </related_Sum>
+      <fatal_Sum> 0 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 9 </subjectsAffected>
+      <eutctId> 100000004865 </eutctId>
+      <meddra> 10042613 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Surgical and medical pr </term>
+      <groupTitle> Group C </groupTitle>
+      <occurrences> 7 </occurrences>
+      <related_Sum> 4 </related_Sum>
+      <fatal_Sum> 0 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 3 </subjectsAffected>
+      <eutctId> 100000004865 </eutctId>
+      <meddra> 10042613 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Capillary leak syndrome </term>
+      <groupTitle> Group A </groupTitle>
+      <occurrences> 12 </occurrences>
+      <related_Sum> 8 </related_Sum>
+      <fatal_Sum> 0 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 4 </subjectsAffected>
+      <eutctId> 100000004866 </eutctId>
+      <meddra> 10047065 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Capillary leak syndrome </term>
+      <groupTitle> Group B </groupTitle>
+      <occurrences> 11 </occurrences>
+      <related_Sum> 1 </related_Sum>
+      <fatal_Sum> 1 </fatal_Sum>
+      <deaths_related_Sum> 1 </deaths_related_Sum>
+      <subjectsAffected> 6 </subjectsAffected>
+      <eutctId> 100000004866 </eutctId>
+      <meddra> 10047065 </meddra>
+   </SERIOUS>
+   <SERIOUS>
+      <term> Capillary leak syndrome </term>
+      <groupTitle> Group C </groupTitle>
+      <occurrences> 16 </occurrences>
+      <related_Sum> 10 </related_Sum>
+      <fatal_Sum> 1 </fatal_Sum>
+      <deaths_related_Sum> 0 </deaths_related_Sum>
+      <subjectsAffected> 9 </subjectsAffected>
+      <eutctId> 100000004866 </eutctId>
+      <meddra> 10047065 </meddra>
+   </SERIOUS>
+   <NON_SERIOUS>
+      <term> Anemia </term>
+      <groupTitle> Group A </groupTitle>
+      <occurrences> 10 </occurrences>
+      <subjectsAffected> 3 </subjectsAffected>
+      <eutctId> 100000004851 </eutctId>
+      <meddra> 10005329 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Anemia </term>
+      <groupTitle> Group B </groupTitle>
+      <occurrences> 14 </occurrences>
+      <subjectsAffected> 6 </subjectsAffected>
+      <eutctId> 100000004851 </eutctId>
+      <meddra> 10005329 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Anemia </term>
+      <groupTitle> Group C </groupTitle>
+      <occurrences> 11 </occurrences>
+      <subjectsAffected> 5 </subjectsAffected>
+      <eutctId> 100000004851 </eutctId>
+      <meddra> 10005329 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Acute coronary syndrome </term>
+      <groupTitle> Group A </groupTitle>
+      <occurrences> 12 </occurrences>
+      <subjectsAffected> 4 </subjectsAffected>
+      <eutctId> 100000004849 </eutctId>
+      <meddra> 10007541 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Acute coronary syndrome </term>
+      <groupTitle> Group B </groupTitle>
+      <occurrences> 15 </occurrences>
+      <subjectsAffected> 11 </subjectsAffected>
+      <eutctId> 100000004849 </eutctId>
+      <meddra> 10007541 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Acute coronary syndrome </term>
+      <groupTitle> Group C </groupTitle>
+      <occurrences> 6 </occurrences>
+      <subjectsAffected> 3 </subjectsAffected>
+      <eutctId> 100000004849 </eutctId>
+      <meddra> 10007541 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Congenital, familial an </term>
+      <groupTitle> Group A </groupTitle>
+      <occurrences> 4 </occurrences>
+      <subjectsAffected> 2 </subjectsAffected>
+      <eutctId> 100000004850 </eutctId>
+      <meddra> 10010331 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Congenital, familial an </term>
+      <groupTitle> Group B </groupTitle>
+      <occurrences> 11 </occurrences>
+      <subjectsAffected> 6 </subjectsAffected>
+      <eutctId> 100000004850 </eutctId>
+      <meddra> 10010331 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Congenital, familial an </term>
+      <groupTitle> Group C </groupTitle>
+      <occurrences> 7 </occurrences>
+      <subjectsAffected> 7 </subjectsAffected>
+      <eutctId> 100000004850 </eutctId>
+      <meddra> 10010331 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Ear pain </term>
+      <groupTitle> Group A </groupTitle>
+      <occurrences> 18 </occurrences>
+      <subjectsAffected> 8 </subjectsAffected>
+      <eutctId> 100000004854 </eutctId>
+      <meddra> 10013993 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Ear pain </term>
+      <groupTitle> Group B </groupTitle>
+      <occurrences> 16 </occurrences>
+      <subjectsAffected> 7 </subjectsAffected>
+      <eutctId> 100000004854 </eutctId>
+      <meddra> 10013993 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Ear pain </term>
+      <groupTitle> Group C </groupTitle>
+      <occurrences> 8 </occurrences>
+      <subjectsAffected> 5 </subjectsAffected>
+      <eutctId> 100000004854 </eutctId>
+      <meddra> 10013993 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Adrenal insufficiency </term>
+      <groupTitle> Group A </groupTitle>
+      <occurrences> 18 </occurrences>
+      <subjectsAffected> 10 </subjectsAffected>
+      <eutctId> 100000004860 </eutctId>
+      <meddra> 10014698 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Adrenal insufficiency </term>
+      <groupTitle> Group B </groupTitle>
+      <occurrences> 11 </occurrences>
+      <subjectsAffected> 5 </subjectsAffected>
+      <eutctId> 100000004860 </eutctId>
+      <meddra> 10014698 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Adrenal insufficiency </term>
+      <groupTitle> Group C </groupTitle>
+      <occurrences> 4 </occurrences>
+      <subjectsAffected> 4 </subjectsAffected>
+      <eutctId> 100000004860 </eutctId>
+      <meddra> 10014698 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Blurred vision </term>
+      <groupTitle> Group A </groupTitle>
+      <occurrences> 7 </occurrences>
+      <subjectsAffected> 2 </subjectsAffected>
+      <eutctId> 100000004853 </eutctId>
+      <meddra> 10015919 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Blurred vision </term>
+      <groupTitle> Group B </groupTitle>
+      <occurrences> 9 </occurrences>
+      <subjectsAffected> 6 </subjectsAffected>
+      <eutctId> 100000004853 </eutctId>
+      <meddra> 10015919 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Blurred vision </term>
+      <groupTitle> Group C </groupTitle>
+      <occurrences> 16 </occurrences>
+      <subjectsAffected> 8 </subjectsAffected>
+      <eutctId> 100000004853 </eutctId>
+      <meddra> 10015919 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Abdominal distension </term>
+      <groupTitle> Group A </groupTitle>
+      <occurrences> 11 </occurrences>
+      <subjectsAffected> 7 </subjectsAffected>
+      <eutctId> 100000004856 </eutctId>
+      <meddra> 10017947 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Abdominal distension </term>
+      <groupTitle> Group B </groupTitle>
+      <occurrences> 16 </occurrences>
+      <subjectsAffected> 8 </subjectsAffected>
+      <eutctId> 100000004856 </eutctId>
+      <meddra> 10017947 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Abdominal distension </term>
+      <groupTitle> Group C </groupTitle>
+      <occurrences> 13 </occurrences>
+      <subjectsAffected> 7 </subjectsAffected>
+      <eutctId> 100000004856 </eutctId>
+      <meddra> 10017947 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Chills </term>
+      <groupTitle> Group A </groupTitle>
+      <occurrences> 6 </occurrences>
+      <subjectsAffected> 3 </subjectsAffected>
+      <eutctId> 100000004867 </eutctId>
+      <meddra> 10018065 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Chills </term>
+      <groupTitle> Group B </groupTitle>
+      <occurrences> 8 </occurrences>
+      <subjectsAffected> 5 </subjectsAffected>
+      <eutctId> 100000004867 </eutctId>
+      <meddra> 10018065 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Chills </term>
+      <groupTitle> Group C </groupTitle>
+      <occurrences> 15 </occurrences>
+      <subjectsAffected> 10 </subjectsAffected>
+      <eutctId> 100000004867 </eutctId>
+      <meddra> 10018065 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Bile duct stenosis </term>
+      <groupTitle> Group A </groupTitle>
+      <occurrences> 7 </occurrences>
+      <subjectsAffected> 4 </subjectsAffected>
+      <eutctId> 100000004871 </eutctId>
+      <meddra> 10019805 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Bile duct stenosis </term>
+      <groupTitle> Group B </groupTitle>
+      <occurrences> 16 </occurrences>
+      <subjectsAffected> 8 </subjectsAffected>
+      <eutctId> 100000004871 </eutctId>
+      <meddra> 10019805 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Bile duct stenosis </term>
+      <groupTitle> Group C </groupTitle>
+      <occurrences> 9 </occurrences>
+      <subjectsAffected> 3 </subjectsAffected>
+      <eutctId> 100000004871 </eutctId>
+      <meddra> 10019805 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Allergic reaction </term>
+      <groupTitle> Group A </groupTitle>
+      <occurrences> 5 </occurrences>
+      <subjectsAffected> 4 </subjectsAffected>
+      <eutctId> 100000004870 </eutctId>
+      <meddra> 10021428 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Allergic reaction </term>
+      <groupTitle> Group B </groupTitle>
+      <occurrences> 17 </occurrences>
+      <subjectsAffected> 9 </subjectsAffected>
+      <eutctId> 100000004870 </eutctId>
+      <meddra> 10021428 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Allergic reaction </term>
+      <groupTitle> Group C </groupTitle>
+      <occurrences> 8 </occurrences>
+      <subjectsAffected> 3 </subjectsAffected>
+      <eutctId> 100000004870 </eutctId>
+      <meddra> 10021428 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Abdominal infection </term>
+      <groupTitle> Group A </groupTitle>
+      <occurrences> 9 </occurrences>
+      <subjectsAffected> 4 </subjectsAffected>
+      <eutctId> 100000004862 </eutctId>
+      <meddra> 10021881 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Abdominal infection </term>
+      <groupTitle> Group B </groupTitle>
+      <occurrences> 14 </occurrences>
+      <subjectsAffected> 4 </subjectsAffected>
+      <eutctId> 100000004862 </eutctId>
+      <meddra> 10021881 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Abdominal infection </term>
+      <groupTitle> Group C </groupTitle>
+      <occurrences> 4 </occurrences>
+      <subjectsAffected> 3 </subjectsAffected>
+      <eutctId> 100000004862 </eutctId>
+      <meddra> 10021881 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Ankle fracture </term>
+      <groupTitle> Group A </groupTitle>
+      <occurrences> 9 </occurrences>
+      <subjectsAffected> 5 </subjectsAffected>
+      <eutctId> 100000004863 </eutctId>
+      <meddra> 10022117 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Ankle fracture </term>
+      <groupTitle> Group B </groupTitle>
+      <occurrences> 14 </occurrences>
+      <subjectsAffected> 4 </subjectsAffected>
+      <eutctId> 100000004863 </eutctId>
+      <meddra> 10022117 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Ankle fracture </term>
+      <groupTitle> Group C </groupTitle>
+      <occurrences> 17 </occurrences>
+      <subjectsAffected> 8 </subjectsAffected>
+      <eutctId> 100000004863 </eutctId>
+      <meddra> 10022117 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Activated partial throm </term>
+      <groupTitle> Group A </groupTitle>
+      <occurrences> 8 </occurrences>
+      <subjectsAffected> 6 </subjectsAffected>
+      <eutctId> 100000004848 </eutctId>
+      <meddra> 10022891 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Activated partial throm </term>
+      <groupTitle> Group B </groupTitle>
+      <occurrences> 14 </occurrences>
+      <subjectsAffected> 6 </subjectsAffected>
+      <eutctId> 100000004848 </eutctId>
+      <meddra> 10022891 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Activated partial throm </term>
+      <groupTitle> Group C </groupTitle>
+      <occurrences> 7 </occurrences>
+      <subjectsAffected> 2 </subjectsAffected>
+      <eutctId> 100000004848 </eutctId>
+      <meddra> 10022891 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Acidosis </term>
+      <groupTitle> Group A </groupTitle>
+      <occurrences> 14 </occurrences>
+      <subjectsAffected> 6 </subjectsAffected>
+      <eutctId> 100000004861 </eutctId>
+      <meddra> 10027433 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Acidosis </term>
+      <groupTitle> Group B </groupTitle>
+      <occurrences> 8 </occurrences>
+      <subjectsAffected> 5 </subjectsAffected>
+      <eutctId> 100000004861 </eutctId>
+      <meddra> 10027433 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Acidosis </term>
+      <groupTitle> Group C </groupTitle>
+      <occurrences> 18 </occurrences>
+      <subjectsAffected> 11 </subjectsAffected>
+      <eutctId> 100000004861 </eutctId>
+      <meddra> 10027433 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Abdominal soft tissue n </term>
+      <groupTitle> Group A </groupTitle>
+      <occurrences> 10 </occurrences>
+      <subjectsAffected> 4 </subjectsAffected>
+      <eutctId> 100000004859 </eutctId>
+      <meddra> 10028395 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Abdominal soft tissue n </term>
+      <groupTitle> Group B </groupTitle>
+      <occurrences> 11 </occurrences>
+      <subjectsAffected> 3 </subjectsAffected>
+      <eutctId> 100000004859 </eutctId>
+      <meddra> 10028395 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Abdominal soft tissue n </term>
+      <groupTitle> Group C </groupTitle>
+      <occurrences> 11 </occurrences>
+      <subjectsAffected> 9 </subjectsAffected>
+      <eutctId> 100000004859 </eutctId>
+      <meddra> 10028395 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Leukemia secondary to o </term>
+      <groupTitle> Group A </groupTitle>
+      <occurrences> 5 </occurrences>
+      <subjectsAffected> 4 </subjectsAffected>
+      <eutctId> 100000004864 </eutctId>
+      <meddra> 10029104 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Leukemia secondary to o </term>
+      <groupTitle> Group B </groupTitle>
+      <occurrences> 13 </occurrences>
+      <subjectsAffected> 4 </subjectsAffected>
+      <eutctId> 100000004864 </eutctId>
+      <meddra> 10029104 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Leukemia secondary to o </term>
+      <groupTitle> Group C </groupTitle>
+      <occurrences> 14 </occurrences>
+      <subjectsAffected> 5 </subjectsAffected>
+      <eutctId> 100000004864 </eutctId>
+      <meddra> 10029104 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Abducens nerve disorder </term>
+      <groupTitle> Group A </groupTitle>
+      <occurrences> 17 </occurrences>
+      <subjectsAffected> 7 </subjectsAffected>
+      <eutctId> 100000004852 </eutctId>
+      <meddra> 10029205 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Abducens nerve disorder </term>
+      <groupTitle> Group B </groupTitle>
+      <occurrences> 11 </occurrences>
+      <subjectsAffected> 8 </subjectsAffected>
+      <eutctId> 100000004852 </eutctId>
+      <meddra> 10029205 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Abducens nerve disorder </term>
+      <groupTitle> Group C </groupTitle>
+      <occurrences> 18 </occurrences>
+      <subjectsAffected> 8 </subjectsAffected>
+      <eutctId> 100000004852 </eutctId>
+      <meddra> 10029205 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Fetal death </term>
+      <groupTitle> Group A </groupTitle>
+      <occurrences> 7 </occurrences>
+      <subjectsAffected> 4 </subjectsAffected>
+      <eutctId> 100000004868 </eutctId>
+      <meddra> 10036585 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Fetal death </term>
+      <groupTitle> Group B </groupTitle>
+      <occurrences> 22 </occurrences>
+      <subjectsAffected> 14 </subjectsAffected>
+      <eutctId> 100000004868 </eutctId>
+      <meddra> 10036585 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Fetal death </term>
+      <groupTitle> Group C </groupTitle>
+      <occurrences> 7 </occurrences>
+      <subjectsAffected> 6 </subjectsAffected>
+      <eutctId> 100000004868 </eutctId>
+      <meddra> 10036585 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Agitation </term>
+      <groupTitle> Group A </groupTitle>
+      <occurrences> 5 </occurrences>
+      <subjectsAffected> 5 </subjectsAffected>
+      <eutctId> 100000004873 </eutctId>
+      <meddra> 10037175 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Agitation </term>
+      <groupTitle> Group B </groupTitle>
+      <occurrences> 7 </occurrences>
+      <subjectsAffected> 4 </subjectsAffected>
+      <eutctId> 100000004873 </eutctId>
+      <meddra> 10037175 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Agitation </term>
+      <groupTitle> Group C </groupTitle>
+      <occurrences> 8 </occurrences>
+      <subjectsAffected> 7 </subjectsAffected>
+      <eutctId> 100000004873 </eutctId>
+      <meddra> 10037175 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Acute kidney injury </term>
+      <groupTitle> Group A </groupTitle>
+      <occurrences> 7 </occurrences>
+      <subjectsAffected> 2 </subjectsAffected>
+      <eutctId> 100000004857 </eutctId>
+      <meddra> 10038359 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Acute kidney injury </term>
+      <groupTitle> Group B </groupTitle>
+      <occurrences> 21 </occurrences>
+      <subjectsAffected> 11 </subjectsAffected>
+      <eutctId> 100000004857 </eutctId>
+      <meddra> 10038359 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Acute kidney injury </term>
+      <groupTitle> Group C </groupTitle>
+      <occurrences> 11 </occurrences>
+      <subjectsAffected> 5 </subjectsAffected>
+      <eutctId> 100000004857 </eutctId>
+      <meddra> 10038359 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Azoospermia </term>
+      <groupTitle> Group A </groupTitle>
+      <occurrences> 16 </occurrences>
+      <subjectsAffected> 8 </subjectsAffected>
+      <eutctId> 100000004872 </eutctId>
+      <meddra> 10038604 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Azoospermia </term>
+      <groupTitle> Group B </groupTitle>
+      <occurrences> 15 </occurrences>
+      <subjectsAffected> 6 </subjectsAffected>
+      <eutctId> 100000004872 </eutctId>
+      <meddra> 10038604 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Azoospermia </term>
+      <groupTitle> Group C </groupTitle>
+      <occurrences> 11 </occurrences>
+      <subjectsAffected> 6 </subjectsAffected>
+      <eutctId> 100000004872 </eutctId>
+      <meddra> 10038604 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Adult respiratory distr </term>
+      <groupTitle> Group A </groupTitle>
+      <occurrences> 7 </occurrences>
+      <subjectsAffected> 4 </subjectsAffected>
+      <eutctId> 100000004855 </eutctId>
+      <meddra> 10038738 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Adult respiratory distr </term>
+      <groupTitle> Group B </groupTitle>
+      <occurrences> 6 </occurrences>
+      <subjectsAffected> 3 </subjectsAffected>
+      <eutctId> 100000004855 </eutctId>
+      <meddra> 10038738 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Adult respiratory distr </term>
+      <groupTitle> Group C </groupTitle>
+      <occurrences> 14 </occurrences>
+      <subjectsAffected> 8 </subjectsAffected>
+      <eutctId> 100000004855 </eutctId>
+      <meddra> 10038738 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Alopecia </term>
+      <groupTitle> Group A </groupTitle>
+      <occurrences> 5 </occurrences>
+      <subjectsAffected> 4 </subjectsAffected>
+      <eutctId> 100000004858 </eutctId>
+      <meddra> 10040785 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Alopecia </term>
+      <groupTitle> Group B </groupTitle>
+      <occurrences> 11 </occurrences>
+      <subjectsAffected> 5 </subjectsAffected>
+      <eutctId> 100000004858 </eutctId>
+      <meddra> 10040785 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Alopecia </term>
+      <groupTitle> Group C </groupTitle>
+      <occurrences> 15 </occurrences>
+      <subjectsAffected> 5 </subjectsAffected>
+      <eutctId> 100000004858 </eutctId>
+      <meddra> 10040785 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Menopause </term>
+      <groupTitle> Group A </groupTitle>
+      <occurrences> 14 </occurrences>
+      <subjectsAffected> 8 </subjectsAffected>
+      <eutctId> 100000004869 </eutctId>
+      <meddra> 10041244 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Menopause </term>
+      <groupTitle> Group B </groupTitle>
+      <occurrences> 7 </occurrences>
+      <subjectsAffected> 7 </subjectsAffected>
+      <eutctId> 100000004869 </eutctId>
+      <meddra> 10041244 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Menopause </term>
+      <groupTitle> Group C </groupTitle>
+      <occurrences> 3 </occurrences>
+      <subjectsAffected> 1 </subjectsAffected>
+      <eutctId> 100000004869 </eutctId>
+      <meddra> 10041244 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Surgical and medical pr </term>
+      <groupTitle> Group A </groupTitle>
+      <occurrences> 15 </occurrences>
+      <subjectsAffected> 6 </subjectsAffected>
+      <eutctId> 100000004865 </eutctId>
+      <meddra> 10042613 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Surgical and medical pr </term>
+      <groupTitle> Group B </groupTitle>
+      <occurrences> 10 </occurrences>
+      <subjectsAffected> 4 </subjectsAffected>
+      <eutctId> 100000004865 </eutctId>
+      <meddra> 10042613 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Surgical and medical pr </term>
+      <groupTitle> Group C </groupTitle>
+      <occurrences> 14 </occurrences>
+      <subjectsAffected> 4 </subjectsAffected>
+      <eutctId> 100000004865 </eutctId>
+      <meddra> 10042613 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Capillary leak syndrome </term>
+      <groupTitle> Group A </groupTitle>
+      <occurrences> 8 </occurrences>
+      <subjectsAffected> 2 </subjectsAffected>
+      <eutctId> 100000004866 </eutctId>
+      <meddra> 10047065 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Capillary leak syndrome </term>
+      <groupTitle> Group B </groupTitle>
+      <occurrences> 5 </occurrences>
+      <subjectsAffected> 5 </subjectsAffected>
+      <eutctId> 100000004866 </eutctId>
+      <meddra> 10047065 </meddra>
+   </NON_SERIOUS>
+   <NON_SERIOUS>
+      <term> Capillary leak syndrome </term>
+      <groupTitle> Group C </groupTitle>
+      <occurrences> 8 </occurrences>
+      <subjectsAffected> 7 </subjectsAffected>
+      <eutctId> 100000004866 </eutctId>
+      <meddra> 10047065 </meddra>
+   </NON_SERIOUS>
+   <RENAME>
+      <old> deathsAllCauses </old>
+      <new> deathsAllCauses </new>
+   </RENAME>
+   <RENAME>
+      <old> exposed </old>
+      <new> subjectsExposed </new>
+   </RENAME>
+   <RENAME>
+      <old> fatal_any_Sum </old>
+      <new> deathsResultingFromAdverseEvents </new>
+   </RENAME>
+   <RENAME>
+      <old> group </old>
+      <new> title </new>
+   </RENAME>
+   <RENAME>
+      <old> non_serious_any_Sum </old>
+      <new> subjectsAffectedByNonSeriousAdverseEvents </new>
+   </RENAME>
+   <RENAME>
+      <old> serious_any_Sum </old>
+      <new> subjectsAffectedBySeriousAdverseEvents </new>
+   </RENAME>
+   <RENAME>
+      <old> deaths_related_Sum </old>
+      <new> deathsCausallyRelatedToTreatment </new>
+   </RENAME>
+   <RENAME>
+      <old> fatal_Sum </old>
+      <new> deaths </new>
+   </RENAME>
+   <RENAME>
+      <old> groupTitle </old>
+      <new> title </new>
+   </RENAME>
+   <RENAME>
+      <old> related_Sum </old>
+      <new> occurrencesCausallyRelatedToTreatment </new>
+   </RENAME>
+   <RENAME>
+      <old> groupTitle </old>
+      <new> title </new>
+   </RENAME>
+</TABLE>

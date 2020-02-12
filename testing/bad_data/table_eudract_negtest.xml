@@ -1,0 +1,1947 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aev:adverseEvents xmlns:aev="http://eudract.ema.europa.eu/schema/clinical_trial_result/adverse_events" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <description>AE additional description</description>
+  <nonSeriousEventFrequencyThreshold>0.0</nonSeriousEventFrequencyThreshold>
+  <timeFrame>Timeframe for AE</timeFrame>
+  <assessmentMethod>
+    <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
+  </assessmentMethod>
+  <dictionary>
+    <otherName xsi:nil="true"/>
+    <version>19.0</version>
+    <name>
+      <value>ADV_EVT_DICTIONARY_NAME.meddra</value>
+    </name>
+  </dictionary>
+  <reportingGroups>
+    <reportingGroup id="idm1353107824">
+      <title>Group A</title>
+      <description xsi:nil="true"/>
+      <subjectsAffectedByNonSeriousAdverseEvents>10</subjectsAffectedByNonSeriousAdverseEvents>
+      <subjectsAffectedBySeriousAdverseEvents>10</subjectsAffectedBySeriousAdverseEvents>
+      <subjectsExposed>20</subjectsExposed>
+      <deathsAllCauses>3</deathsAllCauses>
+      <deathsResultingFromAdverseEvents>3</deathsResultingFromAdverseEvents>
+    </reportingGroup>
+    <reportingGroup id="idm1353106160">
+      <titles>Group B</titles>
+      <description xsi:nil="true"/>
+      <subjectsAffectedByNonSeriousAdverseEvents>14</subjectsAffectedByNonSeriousAdverseEvents>
+      <subjectsAffectedBySeriousAdverseEvents>13</subjectsAffectedBySeriousAdverseEvents>
+      <subjectsExposed>22</subjectsExposed>
+      <deathsAllCauses>6</deathsAllCauses>
+      <deathsResultingFromAdverseEvents>6</deathsResultingFromAdverseEvents>
+    </reportingGroup>
+    <reportingGroup id="idm1353104496">
+      <title>Group C</title>
+      <description xsi:nil="true"/>
+      <subjectsAffectedByNonSeriousAdverseEvents>11</subjectsAffectedByNonSeriousAdverseEvents>
+      <subjectsAffectedBySeriousAdverseEvents>9</subjectsAffectedBySeriousAdverseEvents>
+      <subjectsExposed>18</subjectsExposed>
+      <deathsAllCauses>2</deathsAllCauses>
+      <deathsResultingFromAdverseEvent>2</deathsResultingFromAdverseEvent>
+    </reportingGroup>
+  </reportingGroups>
+  <nonSeriousAdverseEvents>
+    <nonSeriousAdverseEvent>
+      <description>Abdominal distension</description>
+      <term>Abdominal distension</term>
+      <organSystem>
+        <eutctId>100000004856</eutctId>
+        <version>19</version>
+      </organSystem>
+      <assessmentMethod>
+        <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
+      </assessmentMethod>
+      <dictionaryOverridden>false</dictionaryOverridden>
+      <values>
+        <value reportingGroupId="idm1353107824">
+          <occurrences>11</occurrences>
+          <subjectsAffected>7</subjectsAffected>
+          <subjectsExposed>20</subjectsExposed>
+        </value>
+        <value reportingGroupId="idm1353106160">
+          <occurrences>16</occurrences>
+          <subjectsAffected>8</subjectsAffected>
+          <subjectsExposed>22</subjectsExposed>
+        </value>
+        <value reportingGroupId="idm1353104496">
+          <occurrences>13</occurrences>
+          <subjectsAffected>7</subjectsAffected>
+          <subjectsExposed>18</subjectsExposed>
+        </value>
+      </values>
+    </nonSeriousAdverseEvent>
+    <nonSeriousAdverseEvent>
+      <description>Abdominal infection</description>
+      <term>Abdominal infection</term>
+      <organSystem>
+        <eutctId>100000004862</eutctId>
+        <version>19</version>
+      </organSystem>
+      <assessmentMethod>
+        <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
+      </assessmentMethod>
+      <dictionaryOverridden>false</dictionaryOverridden>
+      <values>
+        <value reportingGroupId="idm1353107824">
+          <occurrences>9</occurrences>
+          <subjectsAffected>4</subjectsAffected>
+          <subjectsExposed>20</subjectsExposed>
+        </value>
+        <value reportingGroupId="idm1353106160">
+          <occurrences>14</occurrences>
+          <subjectsAffected>4</subjectsAffected>
+          <subjectsExposed>22</subjectsExposed>
+        </value>
+        <value reportingGroupId="idm1353104496">
+          <occurrences>4</occurrences>
+          <subjectsAffected>3</subjectsAffected>
+          <subjectsExposed>18</subjectsExposed>
+        </value>
+      </values>
+    </nonSeriousAdverseEvent>
+    <nonSeriousAdverseEvent>
+      <description>Abdominal soft tissue necrosis</description>
+      <term>Abdominal soft tissue necrosis</term>
+      <organSystem>
+        <eutctId>100000004859</eutctId>
+        <version>19</version>
+      </organSystem>
+      <assessmentMethod>
+        <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
+      </assessmentMethod>
+      <dictionaryOverridden>false</dictionaryOverridden>
+      <values>
+        <value reportingGroupId="idm1353107824">
+          <occurrences>10</occurrences>
+          <subjectsAffected>4</subjectsAffected>
+          <subjectsExposed>20</subjectsExposed>
+        </value>
+        <value reportingGroupId="idm1353106160">
+          <occurrences>11</occurrences>
+          <subjectsAffected>3</subjectsAffected>
+          <subjectsExposed>22</subjectsExposed>
+        </value>
+        <value reportingGroupId="idm1353104496">
+          <occurrences>11</occurrences>
+          <subjectsAffected>9</subjectsAffected>
+          <subjectsExposed>18</subjectsExposed>
+        </value>
+      </values>
+    </nonSeriousAdverseEvent>
+    <nonSeriousAdverseEvent>
+      <description>Abducens nerve disorder</description>
+      <term>Abducens nerve disorder</term>
+      <organSystem>
+        <eutctId>100000004852</eutctId>
+        <version>19</version>
+      </organSystem>
+      <assessmentMethod>
+        <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
+      </assessmentMethod>
+      <dictionaryOverridden>false</dictionaryOverridden>
+      <values>
+        <value reportingGroupId="idm1353107824">
+          <occurrences>17</occurrences>
+          <subjectsAffected>7</subjectsAffected>
+          <subjectsExposed>20</subjectsExposed>
+        </value>
+        <value reportingGroupId="idm1353106160">
+          <occurrences>11</occurrences>
+          <subjectsAffected>8</subjectsAffected>
+          <subjectsExposed>22</subjectsExposed>
+        </value>
+        <value reportingGroupId="idm1353104496">
+          <occurrences>18</occurrences>
+          <subjectsAffected>8</subjectsAffected>
+          <subjectsExposed>18</subjectsExposed>
+        </value>
+      </values>
+    </nonSeriousAdverseEvent>
+    <nonSeriousAdverseEvent>
+      <description>Acidosis</description>
+      <term>Acidosis</term>
+      <organSystem>
+        <eutctId>100000004861</eutctId>
+        <version>19</version>
+      </organSystem>
+      <assessmentMethod>
+        <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
+      </assessmentMethod>
+      <dictionaryOverridden>false</dictionaryOverridden>
+      <values>
+        <value reportingGroupId="idm1353107824">
+          <occurrences>14</occurrences>
+          <subjectsAffected>6</subjectsAffected>
+          <subjectsExposed>20</subjectsExposed>
+        </value>
+        <value reportingGroupId="idm1353106160">
+          <occurrences>8</occurrences>
+          <subjectsAffected>5</subjectsAffected>
+          <subjectsExposed>22</subjectsExposed>
+        </value>
+        <value reportingGroupId="idm1353104496">
+          <occurrences>18</occurrences>
+          <subjectsAffected>11</subjectsAffected>
+          <subjectsExposed>18</subjectsExposed>
+        </value>
+      </values>
+    </nonSeriousAdverseEvent>
+    <nonSeriousAdverseEvent>
+      <description>Activated partial thromboplastin time prolonged</description>
+      <term>Activated partial thromboplastin time prolonged</term>
+      <organSystem>
+        <eutctId>100000004848</eutctId>
+        <version>19</version>
+      </organSystem>
+      <assessmentMethod>
+        <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
+      </assessmentMethod>
+      <dictionaryOverridden>false</dictionaryOverridden>
+      <values>
+        <value reportingGroupId="idm1353107824">
+          <occurrences>8</occurrences>
+          <subjectsAffected>6</subjectsAffected>
+          <subjectsExposed>20</subjectsExposed>
+        </value>
+        <value reportingGroupId="idm1353106160">
+          <occurrences>14</occurrences>
+          <subjectsAffected>6</subjectsAffected>
+          <subjectsExposed>22</subjectsExposed>
+        </value>
+        <value reportingGroupId="idm1353104496">
+          <occurrences>7</occurrences>
+          <subjectsAffected>2</subjectsAffected>
+          <subjectsExposed>18</subjectsExposed>
+        </value>
+      </values>
+    </nonSeriousAdverseEvent>
+    <nonSeriousAdverseEvent>
+      <description>Acute coronary syndrome</description>
+      <term>Acute coronary syndrome</term>
+      <organSystem>
+        <eutctId>100000004849</eutctId>
+        <version>19</version>
+      </organSystem>
+      <assessmentMethod>
+        <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
+      </assessmentMethod>
+      <dictionaryOverridden>false</dictionaryOverridden>
+      <values>
+        <value reportingGroupId="idm1353107824">
+          <occurrences>12</occurrences>
+          <subjectsAffected>4</subjectsAffected>
+          <subjectsExposed>20</subjectsExposed>
+        </value>
+        <value reportingGroupId="idm1353106160">
+          <occurrences>15</occurrences>
+          <subjectsAffected>11</subjectsAffected>
+          <subjectsExposed>22</subjectsExposed>
+        </value>
+        <value reportingGroupId="idm1353104496">
+          <occurrences>6</occurrences>
+          <subjectsAffected>3</subjectsAffected>
+          <subjectsExposed>18</subjectsExposed>
+        </value>
+      </values>
+    </nonSeriousAdverseEvent>
+    <nonSeriousAdverseEvent>
+      <description>Acute kidney injury</description>
+      <term>Acute kidney injury</term>
+      <organSystem>
+        <eutctId>100000004857</eutctId>
+        <version>19</version>
+      </organSystem>
+      <assessmentMethod>
+        <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
+      </assessmentMethod>
+      <dictionaryOverridden>false</dictionaryOverridden>
+      <values>
+        <value reportingGroupId="idm1353107824">
+          <occurrences>7</occurrences>
+          <subjectsAffected>2</subjectsAffected>
+          <subjectsExposed>20</subjectsExposed>
+        </value>
+        <value reportingGroupId="idm1353106160">
+          <occurrences>21</occurrences>
+          <subjectsAffected>11</subjectsAffected>
+          <subjectsExposed>22</subjectsExposed>
+        </value>
+        <value reportingGroupId="idm1353104496">
+          <occurrences>11</occurrences>
+          <subjectsAffected>5</subjectsAffected>
+          <subjectsExposed>18</subjectsExposed>
+        </value>
+      </values>
+    </nonSeriousAdverseEvent>
+    <nonSeriousAdverseEvent>
+      <description>Adrenal insufficiency</description>
+      <term>Adrenal insufficiency</term>
+      <organSystem>
+        <eutctId>100000004860</eutctId>
+        <version>19</version>
+      </organSystem>
+      <assessmentMethod>
+        <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
+      </assessmentMethod>
+      <dictionaryOverridden>false</dictionaryOverridden>
+      <values>
+        <value reportingGroupId="idm1353107824">
+          <occurrences>18</occurrences>
+          <subjectsAffected>10</subjectsAffected>
+          <subjectsExposed>20</subjectsExposed>
+        </value>
+        <value reportingGroupId="idm1353106160">
+          <occurrences>11</occurrences>
+          <subjectsAffected>5</subjectsAffected>
+          <subjectsExposed>22</subjectsExposed>
+        </value>
+        <value reportingGroupId="idm1353104496">
+          <occurrences>4</occurrences>
+          <subjectsAffected>4</subjectsAffected>
+          <subjectsExposed>18</subjectsExposed>
+        </value>
+      </values>
+    </nonSeriousAdverseEvent>
+    <nonSeriousAdverseEvent>
+      <description>Adult respiratory distress syndrome</description>
+      <term>Adult respiratory distress syndrome</term>
+      <organSystem>
+        <eutctId>100000004855</eutctId>
+        <version>19</version>
+      </organSystem>
+      <assessmentMethod>
+        <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
+      </assessmentMethod>
+      <dictionaryOverridden>false</dictionaryOverridden>
+      <values>
+        <value reportingGroupId="idm1353107824">
+          <occurrences>7</occurrences>
+          <subjectsAffected>4</subjectsAffected>
+          <subjectsExposed>20</subjectsExposed>
+        </value>
+        <value reportingGroupId="idm1353106160">
+          <occurrences>6</occurrences>
+          <subjectsAffected>3</subjectsAffected>
+          <subjectsExposed>22</subjectsExposed>
+        </value>
+        <value reportingGroupId="idm1353104496">
+          <occurrences>14</occurrences>
+          <subjectsAffected>8</subjectsAffected>
+          <subjectsExposed>18</subjectsExposed>
+        </value>
+      </values>
+    </nonSeriousAdverseEvent>
+    <nonSeriousAdverseEvent>
+      <description>Agitation</description>
+      <term>Agitation</term>
+      <organSystem>
+        <eutctId>100000004873</eutctId>
+        <version>19</version>
+      </organSystem>
+      <assessmentMethod>
+        <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
+      </assessmentMethod>
+      <dictionaryOverridden>false</dictionaryOverridden>
+      <values>
+        <value reportingGroupId="idm1353107824">
+          <occurrences>5</occurrences>
+          <subjectsAffected>5</subjectsAffected>
+          <subjectsExposed>20</subjectsExposed>
+        </value>
+        <value reportingGroupId="idm1353106160">
+          <occurrences>7</occurrences>
+          <subjectsAffected>4</subjectsAffected>
+          <subjectsExposed>22</subjectsExposed>
+        </value>
+        <value reportingGroupId="idm1353104496">
+          <occurrences>8</occurrences>
+          <subjectsAffected>7</subjectsAffected>
+          <subjectsExposed>18</subjectsExposed>
+        </value>
+      </values>
+    </nonSeriousAdverseEvent>
+    <nonSeriousAdverseEvent>
+      <description>Allergic reaction</description>
+      <term>Allergic reaction</term>
+      <organSystem>
+        <eutctId>100000004870</eutctId>
+        <version>19</version>
+      </organSystem>
+      <assessmentMethod>
+        <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
+      </assessmentMethod>
+      <dictionaryOverridden>false</dictionaryOverridden>
+      <values>
+        <value reportingGroupId="idm1353107824">
+          <occurrences>5</occurrences>
+          <subjectsAffected>4</subjectsAffected>
+          <subjectsExposed>20</subjectsExposed>
+        </value>
+        <value reportingGroupId="idm1353106160">
+          <occurrences>17</occurrences>
+          <subjectsAffected>9</subjectsAffected>
+          <subjectsExposed>22</subjectsExposed>
+        </value>
+        <value reportingGroupId="idm1353104496">
+          <occurrences>8</occurrences>
+          <subjectsAffected>3</subjectsAffected>
+          <subjectsExposed>18</subjectsExposed>
+        </value>
+      </values>
+    </nonSeriousAdverseEvent>
+    <nonSeriousAdverseEvent>
+      <description>Alopecia</description>
+      <term>Alopecia</term>
+      <organSystem>
+        <eutctId>100000004858</eutctId>
+        <version>19</version>
+      </organSystem>
+      <assessmentMethod>
+        <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
+      </assessmentMethod>
+      <dictionaryOverridden>false</dictionaryOverridden>
+      <values>
+        <value reportingGroupId="idm1353107824">
+          <occurrences>5</occurrences>
+          <subjectsAffected>4</subjectsAffected>
+          <subjectsExposed>20</subjectsExposed>
+        </value>
+        <value reportingGroupId="idm1353106160">
+          <occurrences>11</occurrences>
+          <subjectsAffected>5</subjectsAffected>
+          <subjectsExposed>22</subjectsExposed>
+        </value>
+        <value reportingGroupId="idm1353104496">
+          <occurrences>15</occurrences>
+          <subjectsAffected>5</subjectsAffected>
+          <subjectsExposed>18</subjectsExposed>
+        </value>
+      </values>
+    </nonSeriousAdverseEvent>
+    <nonSeriousAdverseEvent>
+      <description>Anemia</description>
+      <term>Anemia</term>
+      <organSystem>
+        <eutctId>100000004851</eutctId>
+        <version>19</version>
+      </organSystem>
+      <assessmentMethod>
+        <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
+      </assessmentMethod>
+      <dictionaryOverridden>false</dictionaryOverridden>
+      <values>
+        <value reportingGroupId="idm1353107824">
+          <occurrences>10</occurrences>
+          <subjectsAffected>3</subjectsAffected>
+          <subjectsExposed>20</subjectsExposed>
+        </value>
+        <value reportingGroupId="idm1353106160">
+          <occurrences>14</occurrences>
+          <subjectsAffected>6</subjectsAffected>
+          <subjectsExposed>22</subjectsExposed>
+        </value>
+        <value reportingGroupId="idm1353104496">
+          <occurrences>11</occurrences>
+          <subjectsAffected>5</subjectsAffected>
+          <subjectsExposed>18</subjectsExposed>
+        </value>
+      </values>
+    </nonSeriousAdverseEvent>
+    <nonSeriousAdverseEvent>
+      <description>Ankle fracture</description>
+      <term>Ankle fracture</term>
+      <organSystem>
+        <eutctId>100000004863</eutctId>
+        <version>19</version>
+      </organSystem>
+      <assessmentMethod>
+        <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
+      </assessmentMethod>
+      <dictionaryOverridden>false</dictionaryOverridden>
+      <values>
+        <value reportingGroupId="idm1353107824">
+          <occurrences>9</occurrences>
+          <subjectsAffected>5</subjectsAffected>
+          <subjectsExposed>20</subjectsExposed>
+        </value>
+        <value reportingGroupId="idm1353106160">
+          <occurrences>14</occurrences>
+          <subjectsAffected>4</subjectsAffected>
+          <subjectsExposed>22</subjectsExposed>
+        </value>
+        <value reportingGroupId="idm1353104496">
+          <occurrences>17</occurrences>
+          <subjectsAffected>8</subjectsAffected>
+          <subjectsExposed>18</subjectsExposed>
+        </value>
+      </values>
+    </nonSeriousAdverseEvent>
+    <nonSeriousAdverseEvent>
+      <description>Azoospermia</description>
+      <term>Azoospermia</term>
+      <organSystem>
+        <eutctId>100000004872</eutctId>
+        <version>19</version>
+      </organSystem>
+      <assessmentMethod>
+        <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
+      </assessmentMethod>
+      <dictionaryOverridden>false</dictionaryOverridden>
+      <values>
+        <value reportingGroupId="idm1353107824">
+          <occurrences>16</occurrences>
+          <subjectsAffected>8</subjectsAffected>
+          <subjectsExposed>20</subjectsExposed>
+        </value>
+        <value reportingGroupId="idm1353106160">
+          <occurrences>15</occurrences>
+          <subjectsAffected>6</subjectsAffected>
+          <subjectsExposed>22</subjectsExposed>
+        </value>
+        <value reportingGroupId="idm1353104496">
+          <occurrences>11</occurrences>
+          <subjectsAffected>6</subjectsAffected>
+          <subjectsExposed>18</subjectsExposed>
+        </value>
+      </values>
+    </nonSeriousAdverseEvent>
+    <nonSeriousAdverseEvent>
+      <description>Bile duct stenosis</description>
+      <term>Bile duct stenosis</term>
+      <organSystem>
+        <eutctId>100000004871</eutctId>
+        <version>19</version>
+      </organSystem>
+      <assessmentMethod>
+        <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
+      </assessmentMethod>
+      <dictionaryOverridden>false</dictionaryOverridden>
+      <values>
+        <value reportingGroupId="idm1353107824">
+          <occurrences>7</occurrences>
+          <subjectsAffected>4</subjectsAffected>
+          <subjectsExposed>20</subjectsExposed>
+        </value>
+        <value reportingGroupId="idm1353106160">
+          <occurrences>16</occurrences>
+          <subjectsAffected>8</subjectsAffected>
+          <subjectsExposed>22</subjectsExposed>
+        </value>
+        <value reportingGroupId="idm1353104496">
+          <occurrences>9</occurrences>
+          <subjectsAffected>3</subjectsAffected>
+          <subjectsExposed>18</subjectsExposed>
+        </value>
+      </values>
+    </nonSeriousAdverseEvent>
+    <nonSeriousAdverseEvent>
+      <description>Blurred vision</description>
+      <term>Blurred vision</term>
+      <organSystem>
+        <eutctId>100000004853</eutctId>
+        <version>19</version>
+      </organSystem>
+      <assessmentMethod>
+        <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
+      </assessmentMethod>
+      <dictionaryOverridden>false</dictionaryOverridden>
+      <values>
+        <value reportingGroupId="idm1353107824">
+          <occurrences>7</occurrences>
+          <subjectsAffected>2</subjectsAffected>
+          <subjectsExposed>20</subjectsExposed>
+        </value>
+        <value reportingGroupId="idm1353106160">
+          <occurrences>9</occurrences>
+          <subjectsAffected>6</subjectsAffected>
+          <subjectsExposed>22</subjectsExposed>
+        </value>
+        <value reportingGroupId="idm1353104496">
+          <occurrences>16</occurrences>
+          <subjectsAffected>8</subjectsAffected>
+          <subjectsExposed>18</subjectsExposed>
+        </value>
+      </values>
+    </nonSeriousAdverseEvent>
+    <nonSeriousAdverseEvent>
+      <description>Capillary leak syndrome</description>
+      <term>Capillary leak syndrome</term>
+      <organSystem>
+        <eutctId>100000004866</eutctId>
+        <version>19</version>
+      </organSystem>
+      <assessmentMethod>
+        <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
+      </assessmentMethod>
+      <dictionaryOverridden>false</dictionaryOverridden>
+      <values>
+        <value reportingGroupId="idm1353107824">
+          <occurrences>8</occurrences>
+          <subjectsAffected>2</subjectsAffected>
+          <subjectsExposed>20</subjectsExposed>
+        </value>
+        <value reportingGroupId="idm1353106160">
+          <occurrences>5</occurrences>
+          <subjectsAffected>5</subjectsAffected>
+          <subjectsExposed>22</subjectsExposed>
+        </value>
+        <value reportingGroupId="idm1353104496">
+          <occurrences>8</occurrences>
+          <subjectsAffected>7</subjectsAffected>
+          <subjectsExposed>18</subjectsExposed>
+        </value>
+      </values>
+    </nonSeriousAdverseEvent>
+    <nonSeriousAdverseEvent>
+      <description>Chills</description>
+      <term>Chills</term>
+      <organSystem>
+        <eutctId>100000004867</eutctId>
+        <version>19</version>
+      </organSystem>
+      <assessmentMethod>
+        <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
+      </assessmentMethod>
+      <dictionaryOverridden>false</dictionaryOverridden>
+      <values>
+        <value reportingGroupId="idm1353107824">
+          <occurrences>6</occurrences>
+          <subjectsAffected>3</subjectsAffected>
+          <subjectsExposed>20</subjectsExposed>
+        </value>
+        <value reportingGroupId="idm1353106160">
+          <occurrences>8</occurrences>
+          <subjectsAffected>5</subjectsAffected>
+          <subjectsExposed>22</subjectsExposed>
+        </value>
+        <value reportingGroupId="idm1353104496">
+          <occurrences>15</occurrences>
+          <subjectsAffected>10</subjectsAffected>
+          <subjectsExposed>18</subjectsExposed>
+        </value>
+      </values>
+    </nonSeriousAdverseEvent>
+    <nonSeriousAdverseEvent>
+      <description>Congenital, familial and genetic disorders - Other, specify</description>
+      <term>Congenital, familial and genetic disorders - Other, specify</term>
+      <organSystem>
+        <eutctId>100000004850</eutctId>
+        <version>19</version>
+      </organSystem>
+      <assessmentMethod>
+        <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
+      </assessmentMethod>
+      <dictionaryOverridden>false</dictionaryOverridden>
+      <values>
+        <value reportingGroupId="idm1353107824">
+          <occurrences>4</occurrences>
+          <subjectsAffected>2</subjectsAffected>
+          <subjectsExposed>20</subjectsExposed>
+        </value>
+        <value reportingGroupId="idm1353106160">
+          <occurrences>11</occurrences>
+          <subjectsAffected>6</subjectsAffected>
+          <subjectsExposed>22</subjectsExposed>
+        </value>
+        <value reportingGroupId="idm1353104496">
+          <occurrences>7</occurrences>
+          <subjectsAffected>7</subjectsAffected>
+          <subjectsExposed>18</subjectsExposed>
+        </value>
+      </values>
+    </nonSeriousAdverseEvent>
+    <nonSeriousAdverseEvent>
+      <description>Ear pain</description>
+      <term>Ear pain</term>
+      <organSystem>
+        <eutctId>100000004854</eutctId>
+        <version>19</version>
+      </organSystem>
+      <assessmentMethod>
+        <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
+      </assessmentMethod>
+      <dictionaryOverridden>false</dictionaryOverridden>
+      <values>
+        <value reportingGroupId="idm1353107824">
+          <occurrences>18</occurrences>
+          <subjectsAffected>8</subjectsAffected>
+          <subjectsExposed>20</subjectsExposed>
+        </value>
+        <value reportingGroupId="idm1353106160">
+          <occurrences>16</occurrences>
+          <subjectsAffected>7</subjectsAffected>
+          <subjectsExposed>22</subjectsExposed>
+        </value>
+        <value reportingGroupId="idm1353104496">
+          <occurrences>8</occurrences>
+          <subjectsAffected>5</subjectsAffected>
+          <subjectsExposed>18</subjectsExposed>
+        </value>
+      </values>
+    </nonSeriousAdverseEvent>
+    <nonSeriousAdverseEvent>
+      <description>Fetal death</description>
+      <term>Fetal death</term>
+      <organSystem>
+        <eutctId>100000004868</eutctId>
+        <version>19</version>
+      </organSystem>
+      <assessmentMethod>
+        <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
+      </assessmentMethod>
+      <dictionaryOverridden>false</dictionaryOverridden>
+      <values>
+        <value reportingGroupId="idm1353107824">
+          <occurrences>7</occurrences>
+          <subjectsAffected>4</subjectsAffected>
+          <subjectsExposed>20</subjectsExposed>
+        </value>
+        <value reportingGroupId="idm1353106160">
+          <occurrences>22</occurrences>
+          <subjectsAffected>14</subjectsAffected>
+          <subjectsExposed>22</subjectsExposed>
+        </value>
+        <value reportingGroupId="idm1353104496">
+          <occurrences>7</occurrences>
+          <subjectsAffected>6</subjectsAffected>
+          <subjectsExposed>18</subjectsExposed>
+        </value>
+      </values>
+    </nonSeriousAdverseEvent>
+    <nonSeriousAdverseEvent>
+      <description>Leukemia secondary to oncology chemotherapy</description>
+      <term>Leukemia secondary to oncology chemotherapy</term>
+      <organSystem>
+        <eutctId>100000004864</eutctId>
+        <version>19</version>
+      </organSystem>
+      <assessmentMethod>
+        <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
+      </assessmentMethod>
+      <dictionaryOverridden>false</dictionaryOverridden>
+      <values>
+        <value reportingGroupId="idm1353107824">
+          <occurrences>5</occurrences>
+          <subjectsAffected>4</subjectsAffected>
+          <subjectsExposed>20</subjectsExposed>
+        </value>
+        <value reportingGroupId="idm1353106160">
+          <occurrences>13</occurrences>
+          <subjectsAffected>4</subjectsAffected>
+          <subjectsExposed>22</subjectsExposed>
+        </value>
+        <value reportingGroupId="idm1353104496">
+          <occurrences>14</occurrences>
+          <subjectsAffected>5</subjectsAffected>
+          <subjectsExposed>18</subjectsExposed>
+        </value>
+      </values>
+    </nonSeriousAdverseEvent>
+    <nonSeriousAdverseEvent>
+      <description>Menopause</description>
+      <term>Menopause</term>
+      <organSystem>
+        <eutctId>100000004869</eutctId>
+        <version>19</version>
+      </organSystem>
+      <assessmentMethod>
+        <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
+      </assessmentMethod>
+      <dictionaryOverridden>false</dictionaryOverridden>
+      <values>
+        <value reportingGroupId="idm1353107824">
+          <occurrences>14</occurrences>
+          <subjectsAffected>8</subjectsAffected>
+          <subjectsExposed>20</subjectsExposed>
+        </value>
+        <value reportingGroupId="idm1353106160">
+          <occurrences>7</occurrences>
+          <subjectsAffected>7</subjectsAffected>
+          <subjectsExposed>22</subjectsExposed>
+        </value>
+        <value reportingGroupId="idm1353104496">
+          <occurrences>3</occurrences>
+          <subjectsAffected>1</subjectsAffected>
+          <subjectsExposed>18</subjectsExposed>
+        </value>
+      </values>
+    </nonSeriousAdverseEvent>
+    <nonSeriousAdverseEvent>
+      <description>Surgical and medical procedures - Other, specify</description>
+      <term>Surgical and medical procedures - Other, specify</term>
+      <organSystem>
+        <eutctId>100000004865</eutctId>
+        <version>19</version>
+      </organSystem>
+      <assessmentMethod>
+        <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
+      </assessmentMethod>
+      <dictionaryOverridden>false</dictionaryOverridden>
+      <values>
+        <value reportingGroupId="idm1353107824">
+          <occurrences>15</occurrences>
+          <subjectsAffected>6</subjectsAffected>
+          <subjectsExposed>20</subjectsExposed>
+        </value>
+        <value reportingGroupId="idm1353106160">
+          <occurrences>10</occurrences>
+          <subjectsAffected>4</subjectsAffected>
+          <subjectsExposed>22</subjectsExposed>
+        </value>
+        <value reportingGroupId="idm1353104496">
+          <occurrences>14</occurrences>
+          <subjectsAffected>4</subjectsAffected>
+          <subjectsExposed>18</subjectsExposed>
+        </value>
+      </values>
+    </nonSeriousAdverseEvent>
+  </nonSeriousAdverseEvents>
+  <seriousAdverseEvents>
+    <seriousAdverseEvent>
+      <description>Abdominal distension</description>
+      <term>Abdominal distension</term>
+      <organSystem>
+        <eutctId>100000004856</eutctId>
+        <version>19</version>
+      </organSystem>
+      <assessmentMethod>
+        <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
+      </assessmentMethod>
+      <dictionaryOverridden>false</dictionaryOverridden>
+      <values>
+        <value reportingGroupId="idm1353107824">
+          <occurrences>8</occurrences>
+          <subjectsAffected>7</subjectsAffected>
+          <subjectsExposed>20</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>2</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>1</deaths>
+            <deathsCausallyRelatedToTreatment>NA</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+        <value reportingGroupId="idm1353106160">
+          <occurrences>4</occurrences>
+          <subjectsAffected>3</subjectsAffected>
+          <subjectsExposed>22</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>4</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>0</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+        <value reportingGroupId="idm1353104496">
+          <occurrences>8</occurrences>
+          <subjectsAffected>2</subjectsAffected>
+          <subjectsExposed>18</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>3</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>0</deaths>
+            <deathsCausallyRelatedToTreatment></deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+      </values>
+    </seriousAdverseEvent>
+    <seriousAdverseEvent>
+      <description>Abdominal infection</description>
+      <term>Abdominal infection</term>
+      <organSystem>
+        <eutctId>100000004862</eutctId>
+        <version>19</version>
+      </organSystem>
+      <assessmentMethod>
+        <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
+      </assessmentMethod>
+      <dictionaryOverridden>false</dictionaryOverridden>
+      <values>
+        <value reportingGroupId="idm1353107824">
+          <occurrences>7</occurrences>
+          <subjectsAffected>3</subjectsAffected>
+          <subjectsExposed>20</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>3</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>0</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+        <value reportingGroupId="idm1353106160">
+          <occurrences>8</occurrences>
+          <subjectsAffected>5</subjectsAffected>
+          <subjectsExposed>22</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>1</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>0</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+        <value reportingGroupId="idm1353104496">
+          <occurrences>10</occurrences>
+          <subjectsAffected>4</subjectsAffected>
+          <subjectsExposed>18</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>4</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>0</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+      </values>
+    </seriousAdverseEvent>
+    <seriousAdverseEvent>
+      <description>Abdominal soft tissue necrosis</description>
+      <term>Abdominal soft tissue necrosis</term>
+      <organSystem>
+        <eutctId>100000004859</eutctId>
+        <version>19</version>
+      </organSystem>
+      <assessmentMethod>
+        <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
+      </assessmentMethod>
+      <dictionaryOverridden>false</dictionaryOverridden>
+      <values>
+        <value reportingGroupId="idm1353107824">
+          <occurrences>12</occurrences>
+          <subjectsAffected>5</subjectsAffected>
+          <subjectsExposed>20</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>4</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>1</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+        <value reportingGroupId="idm1353106160">
+          <occurrences>10</occurrences>
+          <subjectsAffected>4</subjectsAffected>
+          <subjectsExposed>22</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>3</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>0</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+        <value reportingGroupId="idm1353104496">
+          <occurrences>9</occurrences>
+          <subjectsAffected>6</subjectsAffected>
+          <subjectsExposed>18</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>4</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>0</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+      </values>
+    </seriousAdverseEvent>
+    <seriousAdverseEvent>
+      <description>Abducens nerve disorder</description>
+      <term>Abducens nerve disorder</term>
+      <organSystem>
+        <eutctId>100000004852</eutctId>
+        <version>19</version>
+      </organSystem>
+      <assessmentMethod>
+        <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
+      </assessmentMethod>
+      <dictionaryOverridden>false</dictionaryOverridden>
+      <values>
+        <value reportingGroupId="idm1353107824">
+          <occurrences>8</occurrences>
+          <subjectsAffected>5</subjectsAffected>
+          <subjectsExposed>20</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>5</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>0</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+        <value reportingGroupId="idm1353106160">
+          <occurrences>8</occurrences>
+          <subjectsAffected>6</subjectsAffected>
+          <subjectsExposed>22</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>4</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>0</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+        <value reportingGroupId="idm1353104496">
+          <occurrences>7</occurrences>
+          <subjectsAffected>3</subjectsAffected>
+          <subjectsExposed>18</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>4</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>0</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+      </values>
+    </seriousAdverseEvent>
+    <seriousAdverseEvent>
+      <description>Acidosis</description>
+      <term>Acidosis</term>
+      <organSystem>
+        <eutctId>100000004861</eutctId>
+        <version>19</version>
+      </organSystem>
+      <assessmentMethod>
+        <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
+      </assessmentMethod>
+      <dictionaryOverridden>false</dictionaryOverridden>
+      <values>
+        <value reportingGroupId="idm1353107824">
+          <occurrences>10</occurrences>
+          <subjectsAffected>8</subjectsAffected>
+          <subjectsExposed>20</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>2</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>0</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+        <value reportingGroupId="idm1353106160">
+          <occurrences>15</occurrences>
+          <subjectsAffected>5</subjectsAffected>
+          <subjectsExposed>22</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>3</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>2</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+        <value reportingGroupId="idm1353104496">
+          <occurrences>9</occurrences>
+          <subjectsAffected>2</subjectsAffected>
+          <subjectsExposed>18</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>5</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>0</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+      </values>
+    </seriousAdverseEvent>
+    <seriousAdverseEvent>
+      <description>Activated partial thromboplastin time prolonged</description>
+      <term>Activated partial thromboplastin time prolonged</term>
+      <organSystem>
+        <eutctId>100000004848</eutctId>
+        <version>19</version>
+      </organSystem>
+      <assessmentMethod>
+        <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
+      </assessmentMethod>
+      <dictionaryOverridden>false</dictionaryOverridden>
+      <values>
+        <value reportingGroupId="idm1353107824">
+          <occurrences>8</occurrences>
+          <subjectsAffected>4</subjectsAffected>
+          <subjectsExposed>20</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>4</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>1</deaths>
+            <deathsCausallyRelatedToTreatment>1</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+        <value reportingGroupId="idm1353106160">
+          <occurrences>11</occurrences>
+          <subjectsAffected>6</subjectsAffected>
+          <subjectsExposed>22</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>6</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>0</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+        <value reportingGroupId="idm1353104496">
+          <occurrences>9</occurrences>
+          <subjectsAffected>5</subjectsAffected>
+          <subjectsExposed>18</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>4</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>0</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+      </values>
+    </seriousAdverseEvent>
+    <seriousAdverseEvent>
+      <description>Acute coronary syndrome</description>
+      <term>Acute coronary syndrome</term>
+      <organSystem>
+        <eutctId>100000004849</eutctId>
+        <version>19</version>
+      </organSystem>
+      <assessmentMethod>
+        <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
+      </assessmentMethod>
+      <dictionaryOverridden>false</dictionaryOverridden>
+      <values>
+        <value reportingGroupId="idm1353107824">
+          <occurrences>4</occurrences>
+          <subjectsAffected>3</subjectsAffected>
+          <subjectsExposed>20</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>2</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>0</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+        <value reportingGroupId="idm1353106160">
+          <occurrences>9</occurrences>
+          <subjectsAffected>4</subjectsAffected>
+          <subjectsExposed>22</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>5</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>0</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+        <value reportingGroupId="idm1353104496">
+          <occurrences>15</occurrences>
+          <subjectsAffected>9</subjectsAffected>
+          <subjectsExposed>18</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>10</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>0</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+      </values>
+    </seriousAdverseEvent>
+    <seriousAdverseEvent>
+      <description>Acute kidney injury</description>
+      <term>Acute kidney injury</term>
+      <organSystem>
+        <eutctId>100000004857</eutctId>
+        <version>19</version>
+      </organSystem>
+      <assessmentMethod>
+        <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
+      </assessmentMethod>
+      <dictionaryOverridden>false</dictionaryOverridden>
+      <values>
+        <value reportingGroupId="idm1353107824">
+          <occurrences>5</occurrences>
+          <subjectsAffected>4</subjectsAffected>
+          <subjectsExposed>20</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>3</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>0</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+        <value reportingGroupId="idm1353106160">
+          <occurrences>9</occurrences>
+          <subjectsAffected>5</subjectsAffected>
+          <subjectsExposed>22</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>2</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>0</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+        <value reportingGroupId="idm1353104496">
+          <occurrences>0</occurrences>
+          <subjectsAffected>0</subjectsAffected>
+          <subjectsExposed>18</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>0</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+      </values>
+    </seriousAdverseEvent>
+    <seriousAdverseEvent>
+      <description>Adrenal insufficiency</description>
+      <term>Adrenal insufficiency</term>
+      <organSystem>
+        <eutctId>100000004860</eutctId>
+        <version>19</version>
+      </organSystem>
+      <assessmentMethod>
+        <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
+      </assessmentMethod>
+      <dictionaryOverridden>false</dictionaryOverridden>
+      <values>
+        <value reportingGroupId="idm1353107824">
+          <occurrences>12</occurrences>
+          <subjectsAffected>5</subjectsAffected>
+          <subjectsExposed>20</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>4</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>0</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+        <value reportingGroupId="idm1353106160">
+          <occurrences>17</occurrences>
+          <subjectsAffected>12</subjectsAffected>
+          <subjectsExposed>22</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>10</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>1</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+        <value reportingGroupId="idm1353104496">
+          <occurrences>8</occurrences>
+          <subjectsAffected>3</subjectsAffected>
+          <subjectsExposed>18</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>2</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>0</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+      </values>
+    </seriousAdverseEvent>
+    <seriousAdverseEvent>
+      <description>Adult respiratory distress syndrome</description>
+      <term>Adult respiratory distress syndrome</term>
+      <organSystem>
+        <eutctId>100000004855</eutctId>
+        <version>19</version>
+      </organSystem>
+      <assessmentMethod>
+        <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
+      </assessmentMethod>
+      <dictionaryOverridden>false</dictionaryOverridden>
+      <values>
+        <value reportingGroupId="idm1353107824">
+          <occurrences>17</occurrences>
+          <subjectsAffected>7</subjectsAffected>
+          <subjectsExposed>20</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>10</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>0</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+        <value reportingGroupId="idm1353106160">
+          <occurrences>22</occurrences>
+          <subjectsAffected>12</subjectsAffected>
+          <subjectsExposed>22</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>12</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>0</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+        <value reportingGroupId="idm1353104496">
+          <occurrences>12</occurrences>
+          <subjectsAffected>5</subjectsAffected>
+          <subjectsExposed>18</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>5</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>0</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+      </values>
+    </seriousAdverseEvent>
+    <seriousAdverseEvent>
+      <description>Agitation</description>
+      <term>Agitation</term>
+      <organSystem>
+        <eutctId>100000004873</eutctId>
+        <version>19</version>
+      </organSystem>
+      <assessmentMethod>
+        <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
+      </assessmentMethod>
+      <dictionaryOverridden>false</dictionaryOverridden>
+      <values>
+        <value reportingGroupId="idm1353107824">
+          <occurrences>8</occurrences>
+          <subjectsAffected>6</subjectsAffected>
+          <subjectsExposed>20</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>4</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>0</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+        <value reportingGroupId="idm1353106160">
+          <occurrences>15</occurrences>
+          <subjectsAffected>10</subjectsAffected>
+          <subjectsExposed>22</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>9</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>0</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+        <value reportingGroupId="idm1353104496">
+          <occurrences>12</occurrences>
+          <subjectsAffected>2</subjectsAffected>
+          <subjectsExposed>18</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>6</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>0</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+      </values>
+    </seriousAdverseEvent>
+    <seriousAdverseEvent>
+      <description>Allergic reaction</description>
+      <term>Allergic reaction</term>
+      <organSystem>
+        <eutctId>100000004870</eutctId>
+        <version>19</version>
+      </organSystem>
+      <assessmentMethod>
+        <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
+      </assessmentMethod>
+      <dictionaryOverridden>false</dictionaryOverridden>
+      <values>
+        <value reportingGroupId="idm1353107824">
+          <occurrences>10</occurrences>
+          <subjectsAffected>7</subjectsAffected>
+          <subjectsExposed>20</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>3</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>0</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+        <value reportingGroupId="idm1353106160">
+          <occurrences>13</occurrences>
+          <subjectsAffected>8</subjectsAffected>
+          <subjectsExposed>22</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>4</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>0</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+        <value reportingGroupId="idm1353104496">
+          <occurrences>11</occurrences>
+          <subjectsAffected>7</subjectsAffected>
+          <subjectsExposed>18</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>5</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>0</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+      </values>
+    </seriousAdverseEvent>
+    <seriousAdverseEvent>
+      <description>Alopecia</description>
+      <term>Alopecia</term>
+      <organSystem>
+        <eutctId>100000004858</eutctId>
+        <version>19</version>
+      </organSystem>
+      <assessmentMethod>
+        <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
+      </assessmentMethod>
+      <dictionaryOverridden>false</dictionaryOverridden>
+      <values>
+        <value reportingGroupId="idm1353107824">
+          <occurrences>6</occurrences>
+          <subjectsAffected>3</subjectsAffected>
+          <subjectsExposed>20</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>2</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>0</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+        <value reportingGroupId="idm1353106160">
+          <occurrences>10</occurrences>
+          <subjectsAffected>8</subjectsAffected>
+          <subjectsExposed>22</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>6</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>0</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+        <value reportingGroupId="idm1353104496">
+          <occurrences>3</occurrences>
+          <subjectsAffected>2</subjectsAffected>
+          <subjectsExposed>18</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>3</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>0</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+      </values>
+    </seriousAdverseEvent>
+    <seriousAdverseEvent>
+      <description>Anemia</description>
+      <term>Anemia</term>
+      <organSystem>
+        <eutctId>100000004851</eutctId>
+        <version>19</version>
+      </organSystem>
+      <assessmentMethod>
+        <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
+      </assessmentMethod>
+      <dictionaryOverridden>false</dictionaryOverridden>
+      <values>
+        <value reportingGroupId="idm1353107824">
+          <occurrences>6</occurrences>
+          <subjectsAffected>6</subjectsAffected>
+          <subjectsExposed>20</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>2</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>0</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+        <value reportingGroupId="idm1353106160">
+          <occurrences>16</occurrences>
+          <subjectsAffected>7</subjectsAffected>
+          <subjectsExposed>22</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>7</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>0</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+        <value reportingGroupId="idm1353104496">
+          <occurrences>13</occurrences>
+          <subjectsAffected>3</subjectsAffected>
+          <subjectsExposed>18</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>1</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>0</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+      </values>
+    </seriousAdverseEvent>
+    <seriousAdverseEvent>
+      <description>Ankle fracture</description>
+      <term>Ankle fracture</term>
+      <organSystem>
+        <eutctId>100000004863</eutctId>
+        <version>19</version>
+      </organSystem>
+      <assessmentMethod>
+        <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
+      </assessmentMethod>
+      <dictionaryOverridden>false</dictionaryOverridden>
+      <values>
+        <value reportingGroupId="idm1353107824">
+          <occurrences>6</occurrences>
+          <subjectsAffected>5</subjectsAffected>
+          <subjectsExposed>20</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>5</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>0</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+        <value reportingGroupId="idm1353106160">
+          <occurrences>9</occurrences>
+          <subjectsAffected>6</subjectsAffected>
+          <subjectsExposed>22</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>4</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>0</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+        <value reportingGroupId="idm1353104496">
+          <occurrences>14</occurrences>
+          <subjectsAffected>7</subjectsAffected>
+          <subjectsExposed>18</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>9</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>0</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+      </values>
+    </seriousAdverseEvent>
+    <seriousAdverseEvent>
+      <description>Azoospermia</description>
+      <term>Azoospermia</term>
+      <organSystem>
+        <eutctId>100000004872</eutctId>
+        <version>19</version>
+      </organSystem>
+      <assessmentMethod>
+        <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
+      </assessmentMethod>
+      <dictionaryOverridden>false</dictionaryOverridden>
+      <values>
+        <value reportingGroupId="idm1353107824">
+          <occurrences>11</occurrences>
+          <subjectsAffected>5</subjectsAffected>
+          <subjectsExposed>20</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>6</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>0</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+        <value reportingGroupId="idm1353106160">
+          <occurrences>5</occurrences>
+          <subjectsAffected>3</subjectsAffected>
+          <subjectsExposed>22</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>2</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>0</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+        <value reportingGroupId="idm1353104496">
+          <occurrences>9</occurrences>
+          <subjectsAffected>4</subjectsAffected>
+          <subjectsExposed>18</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>4</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>0</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+      </values>
+    </seriousAdverseEvent>
+    <seriousAdverseEvent>
+      <description>Bile duct stenosis</description>
+      <term>Bile duct stenosis</term>
+      <organSystem>
+        <eutctId>100000004871</eutctId>
+        <version>19</version>
+      </organSystem>
+      <assessmentMethod>
+        <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
+      </assessmentMethod>
+      <dictionaryOverridden>false</dictionaryOverridden>
+      <values>
+        <value reportingGroupId="idm1353107824">
+          <occurrences>5</occurrences>
+          <subjectsAffected>5</subjectsAffected>
+          <subjectsExposed>20</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>1</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>0</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+        <value reportingGroupId="idm1353106160">
+          <occurrences>16</occurrences>
+          <subjectsAffected>9</subjectsAffected>
+          <subjectsExposed>22</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>8</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>0</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+        <value reportingGroupId="idm1353104496">
+          <occurrences>6</occurrences>
+          <subjectsAffected>1</subjectsAffected>
+          <subjectsExposed>18</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>0</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>0</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+      </values>
+    </seriousAdverseEvent>
+    <seriousAdverseEvent>
+      <description>Blurred vision</description>
+      <term>Blurred vision</term>
+      <organSystem>
+        <eutctId>100000004853</eutctId>
+        <version>19</version>
+      </organSystem>
+      <assessmentMethod>
+        <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
+      </assessmentMethod>
+      <dictionaryOverridden>false</dictionaryOverridden>
+      <values>
+        <value reportingGroupId="idm1353107824">
+          <occurrences>16</occurrences>
+          <subjectsAffected>6</subjectsAffected>
+          <subjectsExposed>20</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>4</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>0</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+        <value reportingGroupId="idm1353106160">
+          <occurrences>6</occurrences>
+          <subjectsAffected>3</subjectsAffected>
+          <subjectsExposed>22</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>2</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>0</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+        <value reportingGroupId="idm1353104496">
+          <occurrences>7</occurrences>
+          <subjectsAffected>4</subjectsAffected>
+          <subjectsExposed>18</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>1</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>0</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+      </values>
+    </seriousAdverseEvent>
+    <seriousAdverseEvent>
+      <description>Capillary leak syndrome</description>
+      <term>Capillary leak syndrome</term>
+      <organSystem>
+        <eutctId>100000004866</eutctId>
+        <version>19</version>
+      </organSystem>
+      <assessmentMethod>
+        <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
+      </assessmentMethod>
+      <dictionaryOverridden>false</dictionaryOverridden>
+      <values>
+        <value reportingGroupId="idm1353107824">
+          <occurrences>12</occurrences>
+          <subjectsAffected>4</subjectsAffected>
+          <subjectsExposed>20</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>8</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>0</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+        <value reportingGroupId="idm1353106160">
+          <occurrences>11</occurrences>
+          <subjectsAffected>6</subjectsAffected>
+          <subjectsExposed>22</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>1</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>1</deaths>
+            <deathsCausallyRelatedToTreatment>1</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+        <value reportingGroupId="idm1353104496">
+          <occurrences>16</occurrences>
+          <subjectsAffected>9</subjectsAffected>
+          <subjectsExposed>18</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>10</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>1</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+      </values>
+    </seriousAdverseEvent>
+    <seriousAdverseEvent>
+      <description>Chills</description>
+      <term>Chills</term>
+      <organSystem>
+        <eutctId>100000004867</eutctId>
+        <version>19</version>
+      </organSystem>
+      <assessmentMethod>
+        <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
+      </assessmentMethod>
+      <dictionaryOverridden>false</dictionaryOverridden>
+      <values>
+        <value reportingGroupId="idm1353107824">
+          <occurrences>20</occurrences>
+          <subjectsAffected>10</subjectsAffected>
+          <subjectsExposed>20</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>12</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>0</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+        <value reportingGroupId="idm1353106160">
+          <occurrences>17</occurrences>
+          <subjectsAffected>7</subjectsAffected>
+          <subjectsExposed>22</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>14</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>0</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+        <value reportingGroupId="idm1353104496">
+          <occurrences>14</occurrences>
+          <subjectsAffected>6</subjectsAffected>
+          <subjectsExposed>18</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>3</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>0</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+      </values>
+    </seriousAdverseEvent>
+    <seriousAdverseEvent>
+      <description>Congenital, familial and genetic disorders - Other, specify</description>
+      <term>Congenital, familial and genetic disorders - Other, specify</term>
+      <organSystem>
+        <eutctId>100000004850</eutctId>
+        <version>19</version>
+      </organSystem>
+      <assessmentMethod>
+        <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
+      </assessmentMethod>
+      <dictionaryOverridden>false</dictionaryOverridden>
+      <values>
+        <value reportingGroupId="idm1353107824">
+          <occurrences>5</occurrences>
+          <subjectsAffected>5</subjectsAffected>
+          <subjectsExposed>20</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>4</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>0</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+        <value reportingGroupId="idm1353106160">
+          <occurrences>11</occurrences>
+          <subjectsAffected>4</subjectsAffected>
+          <subjectsExposed>22</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>7</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>0</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+        <value reportingGroupId="idm1353104496">
+          <occurrences>14</occurrences>
+          <subjectsAffected>9</subjectsAffected>
+          <subjectsExposed>18</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>9</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>1</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+      </values>
+    </seriousAdverseEvent>
+    <seriousAdverseEvent>
+      <description>Ear pain</description>
+      <term>Ear pain</term>
+      <organSystem>
+        <eutctId>100000004854</eutctId>
+        <version>19</version>
+      </organSystem>
+      <assessmentMethod>
+        <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
+      </assessmentMethod>
+      <dictionaryOverridden>false</dictionaryOverridden>
+      <values>
+        <value reportingGroupId="idm1353107824">
+          <occurrences>9</occurrences>
+          <subjectsAffected>2</subjectsAffected>
+          <subjectsExposed>20</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>4</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>0</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+        <value reportingGroupId="idm1353106160">
+          <occurrences>9</occurrences>
+          <subjectsAffected>6</subjectsAffected>
+          <subjectsExposed>22</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>4</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>0</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+        <value reportingGroupId="idm1353104496">
+          <occurrences>10</occurrences>
+          <subjectsAffected>4</subjectsAffected>
+          <subjectsExposed>18</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>6</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>0</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+      </values>
+    </seriousAdverseEvent>
+    <seriousAdverseEvent>
+      <description>Fetal death</description>
+      <term>Fetal death</term>
+      <organSystem>
+        <eutctId>100000004868</eutctId>
+        <version>19</version>
+      </organSystem>
+      <assessmentMethod>
+        <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
+      </assessmentMethod>
+      <dictionaryOverridden>false</dictionaryOverridden>
+      <values>
+        <value reportingGroupId="idm1353107824">
+          <occurrences>7</occurrences>
+          <subjectsAffected>3</subjectsAffected>
+          <subjectsExposed>20</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>4</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>0</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+        <value reportingGroupId="idm1353106160">
+          <occurrences>14</occurrences>
+          <subjectsAffected>5</subjectsAffected>
+          <subjectsExposed>22</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>11</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>0</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+        <value reportingGroupId="idm1353104496">
+          <occurrences>8</occurrences>
+          <subjectsAffected>4</subjectsAffected>
+          <subjectsExposed>18</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>2</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>0</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+      </values>
+    </seriousAdverseEvent>
+    <seriousAdverseEvent>
+      <description>Leukemia secondary to oncology chemotherapy</description>
+      <term>Leukemia secondary to oncology chemotherapy</term>
+      <organSystem>
+        <eutctId>100000004864</eutctId>
+        <version>19</version>
+      </organSystem>
+      <assessmentMethod>
+        <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
+      </assessmentMethod>
+      <dictionaryOverridden>false</dictionaryOverridden>
+      <values>
+        <value reportingGroupId="idm1353107824">
+          <occurrences>8</occurrences>
+          <subjectsAffected>5</subjectsAffected>
+          <subjectsExposed>20</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>5</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>0</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+        <value reportingGroupId="idm1353106160">
+          <occurrences>6</occurrences>
+          <subjectsAffected>4</subjectsAffected>
+          <subjectsExposed>22</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>6</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>2</deaths>
+            <deathsCausallyRelatedToTreatment>2</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+        <value reportingGroupId="idm1353104496">
+          <occurrences>12</occurrences>
+          <subjectsAffected>8</subjectsAffected>
+          <subjectsExposed>18</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>8</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>0</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+      </values>
+    </seriousAdverseEvent>
+    <seriousAdverseEvent>
+      <description>Menopause</description>
+      <term>Menopause</term>
+      <organSystem>
+        <eutctId>100000004869</eutctId>
+        <version>19</version>
+      </organSystem>
+      <assessmentMethod>
+        <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
+      </assessmentMethod>
+      <dictionaryOverridden>false</dictionaryOverridden>
+      <values>
+        <value reportingGroupId="idm1353107824">
+          <occurrences>12</occurrences>
+          <subjectsAffected>8</subjectsAffected>
+          <subjectsExposed>20</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>5</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>0</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+        <value reportingGroupId="idm1353106160">
+          <occurrences>12</occurrences>
+          <subjectsAffected>6</subjectsAffected>
+          <subjectsExposed>22</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>5</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>0</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+        <value reportingGroupId="idm1353104496">
+          <occurrences>6</occurrences>
+          <subjectsAffected>6</subjectsAffected>
+          <subjectsExposed>18</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>5</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>0</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+      </values>
+    </seriousAdverseEvent>
+    <seriousAdverseEvent>
+      <description>Surgical and medical procedures - Other, specify</description>
+      <term>Surgical and medical procedures - Other, specify</term>
+      <organSystem>
+        <eutctId>100000004865</eutctId>
+        <version>19</version>
+      </organSystem>
+      <assessmentMethod>
+        <value>ADV_EVT_ASSESS_TYPE.non_systematic</value>
+      </assessmentMethod>
+      <dictionaryOverridden>false</dictionaryOverridden>
+      <values>
+        <value reportingGroupId="idm1353107824">
+          <occurrences>5</occurrences>
+          <subjectsAffected>5</subjectsAffected>
+          <subjectsExposed>20</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>3</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>0</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+        <value reportingGroupId="idm1353106160">
+          <occurrences>16</occurrences>
+          <subjectsAffected>9</subjectsAffected>
+          <subjectsExposed>22</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>9</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>0</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+        <value reportingGroupId="idm1353104496">
+          <occurrences>7</occurrences>
+          <subjectsAffected>3</subjectsAffected>
+          <subjectsExposed>18</subjectsExposed>
+          <occurrencesCausallyRelatedToTreatment>4</occurrencesCausallyRelatedToTreatment>
+          <fatalities>
+            <deaths>0</deaths>
+            <deathsCausallyRelatedToTreatment>0</deathsCausallyRelatedToTreatment>
+          </fatalities>
+        </value>
+      </values>
+    </seriousAdverseEvent>
+  </seriousAdverseEvents>
+</aev:adverseEvents>
