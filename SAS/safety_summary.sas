@@ -48,6 +48,7 @@ var serious_any non_serious_any fatal_any;
 table group, (serious_any non_serious_any fatal_any)*sum *f=10.0;
 run;
 
+
 data GROUP; set GROUP;
 label 
 	group=title
@@ -64,9 +65,8 @@ drop _TYPE_ _PAGE_ _TABLE_ excess_deaths;
 run;
 
 
-
 /* Non serious */
-
+%macro non_serious;
 proc sort data=ae(where=(serious=0)) out=non_serious;
 by soc term group subjid;
 run;
@@ -150,10 +150,10 @@ if  &freq_threshold <= rate_max then output;
 drop _TYPE_ _PAGE_ _TABLE_ soc soc_term rate_max;
 rename group=groupTitle;
 run;
-
+%mend;
 
 /* Serious */
-
+%macro serious;
 proc sort data=ae(where=(serious=1)) out=serious;
 by soc term group subjid;
 run;
@@ -232,6 +232,29 @@ by soc;
 if _a_ then output;
 drop soc soc_term;
 run;
+%mend;
+
+/* Conditional Logic to deal with cases where there are no SAEs or no AEs */
+/* create blank data sets first */
+
+data non_serious; set saswork.non_serious_blank;
+run;
+data serious; set saswork.serious_blank;
+run;
+
+
+data NULL; set group end=eof;
+retain any_serious any_non_serious 0;
+any_serious = max( any_serious, serious_any_sum);
+any_non_serious = max( any_non_serious, non_serious_any_sum);
+if eof then do;
+	if any_serious >0 	  then call execute('%serious');
+	if any_non_serious >0 then call execute('%non_serious');
+end;
+run;
+
+
+
 
 /* Provide a document to check by eye.*/
 ods pdf file="&PATH/Safety Data.pdf";
