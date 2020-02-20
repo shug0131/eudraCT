@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Stata code corrected for scenario with no SAEs or AEs at all in a study.
-date: 2020-02-14
+date: 2020-02-20
 ---
 
 If the study data contained no SAEs at all, or if there were no non-serious AEs at all,
