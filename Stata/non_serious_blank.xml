@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="US-ASCII" standalone="yes"?>
+<dta>
+	<header>
+		<ds_format>113</ds_format>
+		<byteorder>LOHI</byteorder>
+		<filetype>1</filetype>
+		<nvar>5</nvar>
+		<nobs>0</nobs>
+		<data_label></data_label>
+		<time_stamp>20 Feb 2020 12:11</time_stamp>
+	</header>
+	<descriptors>
+		<typelist>
+			<type varname='term'>str33</type>
+			<type varname='group'>str12</type>
+			<type varname='subjectsAffected'>byte</type>
+			<type varname='occurrences'>byte</type>
+			<type varname='eutctid'>str12</type>
+		</typelist>
+		<varlist>
+			<variable varname='term'/>
+			<variable varname='group'/>
+			<variable varname='subjectsAffected'/>
+			<variable varname='occurrences'/>
+			<variable varname='eutctid'/>
+		</varlist>
+		<srtlist>
+		</srtlist>
+		<fmtlist>
+			<fmt varname='term'>%33s</fmt>
+			<fmt varname='group'>%12s</fmt>
+			<fmt varname='subjectsAffected'>%12.0g</fmt>
+			<fmt varname='occurrences'>%12.0g</fmt>
+			<fmt varname='eutctid'>%12s</fmt>
+		</fmtlist>
+		<lbllist>
+			<lblname varname='term'></lblname>
+			<lblname varname='group'></lblname>
+			<lblname varname='subjectsAffected'></lblname>
+			<lblname varname='occurrences'></lblname>
+			<lblname varname='eutctid'></lblname>
+		</lbllist>
+	</descriptors>
+	<variable_labels>
+		<vlabel varname='term'>term</vlabel>
+		<vlabel varname='group'>groupTitle</vlabel>
+		<vlabel varname='subjectsAffected'>subjectsAffected</vlabel>
+		<vlabel varname='occurrences'>occurrences</vlabel>
+		<vlabel varname='eutctid'>eutctId</vlabel>
+	</variable_labels>
+	<expansion>
+	</expansion>
+	<data>
+	</data>
+	<value_labels>
+		<vallab name='_merge'>
+			<label value='1'>master only (1)</label>
+			<label value='2'>using only (2)</label>
+			<label value='3'>matched (3)</label>
+			<label value='4'>missing updated (4)</label>
+			<label value='5'>nonmissing conflict (5)</label>
+		</vallab>
+	</value_labels>
+</dta>

@@ -60,7 +60,7 @@ A limitation in SAS is that variable names cannot be more than 32 characters, bu
 
 ### Stata
 
-There is now a fully worked and self-sufficient example using Stata in the directory. Start with the file "safety_scriptv0.1.do" and see the comments and "README.txt" file.
+There is now a fully worked and self-sufficient example using Stata in the directory. Start with the file "safety_scriptv0.2.do" and see the comments and "README.txt" file.
 
 If the user can create the summary statistics inside stata, then there are now tools that can convert into xml for upload. Stata saves the internal data into xml format using an in-built command "xmlsave", and then we have provided xslt files that convert. Stata can call a shell command to effect these transformations.
 

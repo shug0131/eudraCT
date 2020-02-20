@@ -1,4 +1,4 @@
-Start with the file safety_scriptV0.1.do 
+Start with the file safety_scriptV0.2.do 
 
 This uses the raw_data.csv as input and provides a worked example.
 

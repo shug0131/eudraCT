@@ -1,4 +1,6 @@
 *.dta
 *.xml
 !stata_statsfiles.xml
+!serious_blank.xml
+!non_serious_blank.xml
 examples
