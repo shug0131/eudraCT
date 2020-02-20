@@ -62,3 +62,73 @@ to clean the data.
 
 Yes, please do review and ammend by hand using the Eudract portal manually. You may want to confirm if study-wide default values
 (AE dictionary, version number, incidence threshold,...) are accurate.
+
+## I want to use my own code to calculate the summary statistics
+
+As described in the [Specification]( {{ site.ghpath }}/Specification/Eudract%20Tool%20Specification%20V0.3.docx?raw=true ) this is
+entirely possible. You can use your own code to produce the counts and statistics as needed, and then use the latter part of the tool
+to convert them into xml files needed by the EudraCT portal.
+
+You will need to manipulate your outputs into three data sets for: Group-level, serious event-group , non serious event- group.
+
+The variable names within those data sets need to be as follows:
+
+#### Group
+
+* title
+*	deathsResultingFromAdverseEvents
+*	subjectsAffectedBySeriousAdverseEvents
+*	subjectsAffectedByNonSeriousAdverseEvents
+*	subjectsExposed
+*	deathsAllCauses
+
+#### Non Serious
+
+*	groupTitle
+*	subjectsAffected
+*	occurrences
+*	term
+*	eutctId
+
+
+#### Serious
+*	groupTitle
+*	subjectsAffected
+*	occurrences
+*	term
+*	eutctId
+*	occurrencesCausallyRelatedToTreatment
+*	deaths
+*	deathsCausallyRelatedToTreatment
+
+### R
+You would then use the internal function `create.safety_summary`
+~~~
+create.safety_summary(GROUP, NONSERIOUS, SERIOUS)
+simple_safety_xml(safety_statistics, file="simple.xml")
+eudract_convert(input="simple.xml", output="table_eudract.xml")
+~~~
+
+Where the inputs `GROUP, NONSERIOUS, SERIOUS`, are the data provided by your own code.
+
+### SAS
+
+You would need to start from around line 272 of the [script]({{ site.ghpath }}/SAS/safety_summary.sas) .
+An issue is that SAS cannot have variable names as long as those described above. A solution
+is to provide _labels_ to such variables that match the names above. There exist pre-saved versions
+of SAS data, with no rows, but valid column names/labels [non serious template]({{ site.ghpath }}/SAS/non_serious_blank.sas7bdat),
+[serious template]({{ site.ghpath }}/SAS/serious_blank.sas7bdat) for reference.
+
+### Stata
+
+You would need to save the data sets using `xmlsave`,
+
+~~~
+use non_serious
+xmlsave "non_serious", legible replace
+~~~
+for example and then use the last few lines from line 224 of the  [script]({{ site.ghpath }}/Stata/safety_scriptv0.2.do) .
+Similar to SAS there is a limit of 32 characters to variable names, but _labels_ can be used instead, e.g.
+~~~
+la var related "occurrencesCausallyRelatedToTreatment"
+~~~
