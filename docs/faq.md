@@ -101,6 +101,8 @@ The variable names within those data sets need to be as follows:
 *	deaths
 *	deathsCausallyRelatedToTreatment
 
+See [term](faq.html#what-do-the-variables-mean-in-the-input-data)  and [eutctId](faq.html#soc-coding-in-more-detail) for further details on the meaning of these variables.
+
 ### R
 You would then use the internal function `create.safety_summary`
 ~~~
