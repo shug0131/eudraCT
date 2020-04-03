@@ -7,8 +7,7 @@ library(stringr)
 context("Bea's testing")
 
 if( is_testing()){path <- tempdir()} else{ path <- "tests/testthat"}
-old <- options("stringsAsFactors")
-options(stringsAsFactors = FALSE)
+oldop <- options(stringsAsFactors = FALSE)
 test_that("presence of the minimal set of variables in the events.csv file", {
   test_eventsdata <- read.csv(file=file.path(path,"events.csv"))
   expect_named(test_eventsdata, c("subjid", "term","soc","serious","related","fatal","group"), ignore.order = TRUE)})
@@ -34,6 +33,5 @@ test_that("Check the variable title in the GROUP file is a string >=4 digits lon
   expect_gte(group_title, 4)
 })
 
-options(stringsAsFactors = old)
-rm(old)
-
+options(oldop)
+rm(oldop)

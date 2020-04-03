@@ -4,8 +4,11 @@
 \alias{simple_safety_xml}
 \title{creates a simple xml file from the input of a safety_summary object}
 \usage{
-simple_safety_xml(x, file, schema = system.file("extdata", "simple.xsd",
-  package = "eudract"))
+simple_safety_xml(
+  x,
+  file,
+  schema = system.file("extdata", "simple.xsd", package = "eudract")
+)
 }
 \arguments{
 \item{x}{an object of class \code{safety_summary}, as created by \code{\link{safety_summary}}.}

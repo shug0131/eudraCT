@@ -4,8 +4,13 @@
 \alias{safety_summary}
 \title{Calculate frequency tables from a rectangular data frame with one row per subject-event}
 \usage{
-safety_summary(data, exposed, excess_deaths = 0, freq_threshold = 0,
-  soc_index = c("meddra", "soc_term"))
+safety_summary(
+  data,
+  exposed,
+  excess_deaths = 0,
+  freq_threshold = 0,
+  soc_index = c("meddra", "soc_term")
+)
 }
 \arguments{
 \item{data}{a data set containing the following columns: \code{subjid, term, soc, serious, related, fatal, group}.

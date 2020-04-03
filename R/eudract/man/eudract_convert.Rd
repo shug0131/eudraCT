@@ -4,11 +4,13 @@
 \alias{eudract_convert}
 \title{applies a conversion using xslt from a simple xml file to a eudract compatible file, and checks against the schema}
 \usage{
-eudract_convert(input, output, xslt = system.file("extdata",
-  "simpleToEudraCT.xslt", package = "eudract"),
-  schema_input = system.file("extdata", "simple.xsd", package =
-  "eudract"), schema_output = system.file("extdata", "adverseEvents.xsd",
-  package = "eudract"))
+eudract_convert(
+  input,
+  output,
+  xslt = system.file("extdata", "simpleToEudraCT.xslt", package = "eudract"),
+  schema_input = system.file("extdata", "simple.xsd", package = "eudract"),
+  schema_output = system.file("extdata", "adverseEvents.xsd", package = "eudract")
+)
 }
 \arguments{
 \item{input}{a character string giving the file path to the simple xml file}

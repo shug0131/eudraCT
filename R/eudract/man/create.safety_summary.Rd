@@ -19,4 +19,3 @@ a safety_summary object
 \description{
 function that creates a safety_summary object from individual data.frames
 }
-\keyword{internal}
