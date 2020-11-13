@@ -1,3 +1,8 @@
+# eudract v0.9.3
+
+Placeholder for the next version
+
+
 # eudract v 0.9.2
 
 Minor bug fix in the test scripts
