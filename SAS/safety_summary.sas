@@ -16,13 +16,22 @@
 proc datasets library=WORK kill; run; quit;
 
 /* import or identify a dataset called ae with the variables:
-term soc subjid fatal related group serious */
-proc import file="&PATH\raw_safety.csv" out=ae dbms=csv replace; 
+term soc subjid fatal related group serious.  group must have values at least 4 characters long */
+proc import file="&PATH\raw_safety.csv" out=&ae_data dbms=csv replace; 
 run;
 /* EDIT completed. No further changes needed below this line. */
 
 
 libname saswork "&PATH";
+
+data soc_code; set saswork.soc_code;
+soc= &soc_index;
+run;
+proc sort data=soc_code;
+by soc;
+run;
+
+
 proc sort data=&ae_data out=ae;
 by group subjid;
 run;
@@ -120,11 +129,8 @@ data non_serious; merge occ(rename=(N=occurrences)) subj(rename=(N=subjectsAffec
 by soc term;
 run;
 
-proc sort data=saswork.soc_code;
-by &soc_index;
-run;
 
-data non_serious; merge non_serious(in=_a_) saswork.soc_code(rename=(&soc_index=soc));
+data non_serious; merge non_serious(in=_a_) soc_code; *saswork.soc_code(rename=(&soc_index=soc));
 by soc;
 if _a_ then output;
 run;
@@ -147,7 +153,7 @@ run;
 data non_serious; merge  non_serious filter;
 by soc term;
 if  &freq_threshold <= rate_max then output;
-drop _TYPE_ _PAGE_ _TABLE_ soc soc_term rate_max;
+drop _TYPE_ _PAGE_ _TABLE_ soc soc_term meddra rate_max;
 rename group=groupTitle;
 run;
 %mend;
@@ -219,18 +225,15 @@ by soc term;
 rename group=groupTitle;
 run;
 
-proc sort data=saswork.soc_code;
-by &soc_index;
-run;
 
-data serious; merge serious(in=_a_) saswork.soc_code(rename=(&soc_index=soc));
+data serious; merge serious(in=_a_) soc_code; *saswork.soc_code(rename=(&soc_index=soc));
 label 
 	related_Sum=occurrencesCausallyRelatedToTreatment
 	fatal_Sum=deaths
 	deaths_related_Sum=deathsCausallyRelatedToTreatment;
 by soc;
 if _a_ then output;
-drop soc soc_term;
+drop soc soc_term meddra;
 run;
 %mend;
 

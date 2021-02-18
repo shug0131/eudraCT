@@ -51,7 +51,7 @@ collapse (sum) nonserious
 if 0 < nonserious {
 clear
 
-use raw if serious==1
+use raw if serious==0
 capture confirm numeric variable soc
 if _rc==0 {
 	gen termsoc = term + string(soc,"%12.0g")

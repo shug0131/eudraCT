@@ -1,0 +1,117 @@
+subjid,fatal,serious,group,term,related,soc
+US7-006,0,1,Control,B-cell lymphoma,0,Blood and lymphatic system disorders
+SW2-003,0,0,Experimental,Neutropenia,0,Blood and lymphatic system disorders
+AS1-006,1,1,Control,Cardiac arrest,0,Cardiac disorders
+N14-004,0,0,Control,Acute coronary syndrome,0,Cardiac disorders
+N01-008,0,0,Experimental,Atrial fibrillation,0,Cardiac disorders
+N01-018,0,0,Experimental,Atrioventricular block complete,0,Cardiac disorders
+US3-002,0,0,Experimental,Acute myocardial infarction,1,Cardiac disorders
+US5-001,0,1,Experimental,Cardiac failure congestive,0,Cardiac disorders
+US6-012,0,0,Experimental,Angina pectoris,0,Cardiac disorders
+AS1-006,0,0,Control,Intestinal perforation,0,Gastrointestinal disorders
+US6-006,0,1,Control,Abdominal pain,0,Gastrointestinal disorders
+CN2-008,1,1,Experimental,Gastrointestinal haemorrhage,0,Gastrointestinal disorders
+N04-006,0,0,Experimental,Abdominal pain,0,Gastrointestinal disorders
+N04-008,1,1,Experimental,Oesophageal spasm,0,Gastrointestinal disorders
+US6-002,1,1,Experimental,Gastroenteritis viral,0,Gastrointestinal disorders
+US6-012,0,1,Experimental,Oesophagitis,0,Gastrointestinal disorders
+US7-005,0,0,Experimental,Duodenal ulcer,0,Gastrointestinal disorders
+NR-NZ-001,0,0,Control,Pyrexia,0,General disorders and administration site conditions
+AS2-001,0,0,Experimental,Pyrexia,0,General disorders and administration site conditions
+N01-018,0,1,Experimental,Chest pain,0,General disorders and administration site conditions
+US4-002,0,1,Control,Cholecystitis acute,0,Hepatobiliary disorders
+N04-006,0,0,Experimental,Cholecystitis,0,Hepatobiliary disorders
+US9-002,0,1,Experimental,Cholecystitis acute,0,Hepatobiliary disorders
+JP2-001,0,0,Control,Vasculitis,0,Immune system disorders
+N01-009,1,1,Control,Vasculitis,0,Immune system disorders
+N04-005,0,1,Control,Pulmonary vasculitis,0,Immune system disorders
+US6-004,0,0,Control,Vasculitis,0,Immune system disorders
+US7-006,0,0,Control,Vasculitis,0,Immune system disorders
+US7-006,0,0,Control,Vasculitis,0,Immune system disorders
+AS2-002,0,0,Experimental,Hypersensitivity,1,Immune system disorders
+CN1-003,1,1,Experimental,Vasculitis,0,Immune system disorders
+N01-016,0,0,Experimental,Vasculitis,1,Immune system disorders
+US4-005,0,0,Experimental,Vasculitis,0,Immune system disorders
+US7-002,0,0,Experimental,Drug hypersensitivity,1,Immune system disorders
+US9-001,0,0,Experimental,Vasculitis,0,Immune system disorders
+US9-002,1,1,Experimental,Vasculitis,0,Immune system disorders
+AS1-006,1,1,Control,Escherichia urinary tract infec,0,Infections and infestations
+CN1-002,0,0,Control,Pneumonia,1,Infections and infestations
+JP2-001,0,0,Control,Pneumonia,0,Infections and infestations
+N12-002,1,1,Control,Lower respiratory tract infecti,1,Infections and infestations
+N14-004,0,0,Control,Respiratory tract infection,0,Infections and infestations
+US4-003,0,0,Control,Respiratory tract infection,1,Infections and infestations
+AS1-005,1,1,Experimental,Gastroenteritis Escherichia col,0,Infections and infestations
+AS1-005,0,0,Experimental,Escherichia urinary tract infec,0,Infections and infestations
+AS1-005,0,1,Experimental,Urinary tract infection,0,Infections and infestations
+AS1-005,1,1,Experimental,Urinary tract infection,1,Infections and infestations
+AS2-001,0,0,Experimental,Sinusitis,1,Infections and infestations
+AS2-001,0,0,Experimental,Influenza,1,Infections and infestations
+N01-011,0,0,Experimental,Pneumonia,1,Infections and infestations
+N01-011,0,0,Experimental,Respiratory tract infection,1,Infections and infestations
+N01-011,1,1,Experimental,Respiratory tract infection,0,Infections and infestations
+N01-018,0,0,Experimental,Pneumonia,1,Infections and infestations
+N01-024,1,1,Experimental,Pneumonia,1,Infections and infestations
+N01-035,1,1,Experimental,Respiratory tract infection,1,Infections and infestations
+N12-001,0,0,Experimental,Urinary tract infection,0,Infections and infestations
+NO4-002,1,1,Experimental,Influenza,0,Infections and infestations
+US3-002,0,0,Experimental,Pneumonia,1,Infections and infestations
+US3-002,0,1,Experimental,Pneumonia,1,Infections and infestations
+US3-002,0,0,Experimental,Pneumonia,1,Infections and infestations
+US3-002,0,0,Experimental,Pneumonia pseudomonal,1,Infections and infestations
+US6-009,0,1,Experimental,Pneumonia,1,Infections and infestations
+US7-002,1,1,Experimental,Cellulitis,1,Infections and infestations
+US8-001,0,0,Experimental,Wound dehiscence,0,"Injury, poisoning and procedural complications"
+US8-002,0,1,Experimental,Fall,0,"Injury, poisoning and procedural complications"
+US9-002,1,1,Experimental,Post procedural complication,0,"Injury, poisoning and procedural complications"
+N04-003,1,1,Experimental,Medical observation,0,Investigations
+N01-001,1,1,Control,Hyperglycaemia,0,Metabolism and nutrition disorders
+US3-002,0,1,Experimental,Hyperkalaemia,0,Metabolism and nutrition disorders
+US9-001,0,0,Experimental,Dehydration,0,Metabolism and nutrition disorders
+N04-008,0,0,Experimental,Osteoarthritis,0,Musculoskeletal and connective tissue disorders
+N01-013,0,0,Control,Squamous cell carcinoma,0,"Neoplasms benign, malignant and unspecified (incl cysts and polyps)"
+CN1-006,0,1,Experimental,Bladder papilloma,0,"Neoplasms benign, malignant and unspecified (incl cysts and polyps)"
+N01-005,0,0,Experimental,Anal squamous cell carcinoma,1,"Neoplasms benign, malignant and unspecified (incl cysts and polyps)"
+N01-030,1,1,Control,Sleep apnoea syndrome,0,Nervous system disorders
+N01-030,0,0,Control,Sleep apnoea syndrome,0,Nervous system disorders
+N01-030,0,0,Control,Sleep apnoea syndrome,0,Nervous system disorders
+N14-004,1,1,Control,Cerebrovascular accident,0,Nervous system disorders
+N15-001,1,1,Experimental,Conversion disorder,1,Psychiatric disorders
+N01-030,0,0,Control,Renal impairment,0,Renal and urinary disorders
+N04-004,0,1,Experimental,Proteinuria,0,Renal and urinary disorders
+US8-001,0,0,Experimental,Enterovesical fistula,0,Renal and urinary disorders
+AS1-004,0,0,Control,Laryngeal stenosis,0,"Respiratory, thoracic and mediastinal disorders"
+CN2-009,0,0,Control,Lung adenocarcinoma,0,"Respiratory, thoracic and mediastinal disorders"
+JP2-003,0,0,Control,Pneumonia,1,"Respiratory, thoracic and mediastinal disorders"
+N01-032,0,0,Control,Lower respiratory tract infecti,1,"Respiratory, thoracic and mediastinal disorders"
+US6-004,1,1,Control,Pneumonia viral,0,"Respiratory, thoracic and mediastinal disorders"
+US6-007,0,0,Control,Pneumonitis,0,"Respiratory, thoracic and mediastinal disorders"
+CN1-005,0,1,Experimental,Laryngeal stenosis,0,"Respiratory, thoracic and mediastinal disorders"
+CN1-005,0,1,Experimental,Laryngeal stenosis,0,"Respiratory, thoracic and mediastinal disorders"
+CN1-005,0,0,Experimental,Laryngeal stenosis,0,"Respiratory, thoracic and mediastinal disorders"
+CN1-005,0,1,Experimental,Laryngeal stenosis,0,"Respiratory, thoracic and mediastinal disorders"
+N01-016,0,0,Experimental,Dyspnoea,1,"Respiratory, thoracic and mediastinal disorders"
+N01-037,1,1,Experimental,Laryngeal stenosis,0,"Respiratory, thoracic and mediastinal disorders"
+N04-002,0,1,Experimental,Pneumomediastinum,0,"Respiratory, thoracic and mediastinal disorders"
+N50-002,0,1,Experimental,Pulmonary embolism,0,"Respiratory, thoracic and mediastinal disorders"
+NR-N01-00,0,0,Experimental,Respiratory failure,0,"Respiratory, thoracic and mediastinal disorders"
+US3-002,0,0,Experimental,Pneumonia streptococcal,1,"Respiratory, thoracic and mediastinal disorders"
+US3-002,1,1,Experimental,Pneumonia staphylococcal,1,"Respiratory, thoracic and mediastinal disorders"
+US6-009,0,0,Experimental,Bronchospasm,0,"Respiratory, thoracic and mediastinal disorders"
+US8-001,1,1,Experimental,Pneumonia klebsiella,1,"Respiratory, thoracic and mediastinal disorders"
+N01-010,1,1,Control,Hip arthroplasty,0,Surgical and medical procedures
+US8-006,0,1,Control,Aortic valve replacement,0,Surgical and medical procedures
+N01-005,0,0,Experimental,Colostomy closure,0,Surgical and medical procedures
+N01-007,0,1,Experimental,Dacryocystorhinostomy,0,Surgical and medical procedures
+N01-015,1,1,Experimental,Small intestinal resection,0,Surgical and medical procedures
+N04-004,1,1,Experimental,Hip arthroplasty,0,Surgical and medical procedures
+US4-001,1,1,Experimental,Hip arthroplasty,0,Surgical and medical procedures
+US9-002,0,1,Experimental,Cholecystectomy,0,Surgical and medical procedures
+JP2-003,0,1,Control,Pulmonary embolism,0,Vascular disorders
+US6-007,1,1,Control,Deep vein thrombosis,0,Vascular disorders
+JP2-002,0,0,Experimental,Deep vein thrombosis,0,Vascular disorders
+N50-001,1,1,Experimental,Deep vein thrombosis,0,Vascular disorders
+N50-002,1,1,Experimental,Pulmonary embolism,0,Vascular disorders
+US4-006,1,1,Experimental,Deep vein thrombosis,0,Vascular disorders
+US5-001,0,0,Experimental,Aortic dissection,0,Vascular disorders
+US6-003,0,1,Experimental,Deep vein thrombosis,0,Vascular disorders
