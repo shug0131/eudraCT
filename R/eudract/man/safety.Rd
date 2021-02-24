@@ -4,7 +4,8 @@
 \name{safety}
 \alias{safety}
 \title{Example of safety data}
-\format{a data frame with 8 columns and 16 rows
+\format{
+a data frame with 8 columns and 16 rows
 \describe{
    \item{pt}{meddra preferred term code}
    \item{subjid}{a unique subject identifier}
@@ -14,7 +15,8 @@
    \item{serious}{a numerical 0/1 to indicate if the event was serious}
    \item{group}{the treatment group for the subject}
    \item{term}{a text description of the event. Needs to be matching 1-1 with the pt code}
-}}
+}
+}
 \usage{
 safety
 }

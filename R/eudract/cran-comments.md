@@ -4,6 +4,11 @@
 * Windows Server 2012 R2 x64 (build 9600) on (appveyor), R3.6.1
 * check_win_release
 
+## Change 24FEB2021
+
+an error is created if input fails the check of group names being at least 4 characters in length.
+
+
 ## Change 03APR2020
 
 Minor corrections to test code, setting a resetting options(StringsAsFactors).

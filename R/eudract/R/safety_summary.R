@@ -57,6 +57,8 @@ safety_summary <- function(data, exposed, excess_deaths=0, freq_threshold=0, soc
 
   data$group <- factor(as.character(data$group), levels=group_names)
 
+  #Check length of group name text
+  if( min(nchar(group_names))<4){stop("Group names must be at least 4 characters in length.")}
 
   # check length, value and names of excess_deaths
   if( length(excess_deaths)==1 && length(group_names)>1 && excess_deaths==0){

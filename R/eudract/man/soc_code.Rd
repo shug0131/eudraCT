@@ -4,12 +4,14 @@
 \name{soc_code}
 \alias{soc_code}
 \title{System Organ Class coding}
-\format{a data frame with 3 columns and 27 rows
+\format{
+a data frame with 3 columns and 27 rows
 \describe{
    \item{soc_term}{a text description}
    \item{eutctId}{the eudraCT coding}
    \item{meddra}{the meddra code}
-}}
+}
+}
 \source{
 \url{https://www.meddra.org/}, \url{https://spor.ema.europa.eu/rmswi/#/}
 }

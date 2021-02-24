@@ -4,7 +4,7 @@ author: "Simon Bond"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{eudract}
+  %\VignetteIndexEntry{Eudract Safety XML}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---

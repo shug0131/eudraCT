@@ -63,6 +63,24 @@ to clean the data.
 Yes, please do review and ammend by hand using the Eudract portal manually. You may want to confirm if study-wide default values
 (AE dictionary, version number, incidence threshold,...) are accurate.
 
+## Systematic vs Non-Systematic reporting
+
+The majority of studies use non-systematic reporting, whereby a patient is asked what AEs happened to them.
+The alternative is where a specific list of AEs is provided and the incidence of each AE is explicitly determined.
+
+The default in the tool is to assume that non-systematic reporting was used.
+To change this manually inside the EudraCT portal would require it to be done for each AE in the list,
+which may be too many changes to be practical.  
+
+An automated alternative, _at the user's risk_, is to edit the final xslt file
+[simpleToEudraCT.xlst]( {{ site.ghpath }}/xml%20tools/simpleToEudraCT.xslt)
+in lines 15 and 71.
+
+In the R package, this new xslt file would need to be saved locally and the filepath
+used as an argument to the `xslt=` argument within `eudract_convert()` .
+In SAS, line 297 in the script would need to be edited to use the revised xslt file.
+In Stata, line 226 would need to be edited to use the revised xslt file.
+
 ## I want to use my own code to calculate the summary statistics
 
 As described in the [Specification]( {{ site.ghpath }}/Specification/Eudract%20Tool%20Specification%20V0.3.docx?raw=true ) this is

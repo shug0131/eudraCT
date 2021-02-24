@@ -20,7 +20,7 @@ save soc_code, replace
 
 import delimited using ${datafile} , varnames(1) clear
 save raw, replace
-
+* The length of the group names must be 4 characters or longer
 
 
 gen nonserious=1-serious

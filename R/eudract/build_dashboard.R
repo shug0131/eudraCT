@@ -13,11 +13,11 @@ devtools::document(roclets = c('rd', 'collate', 'namespace'))
 devtools::build()
 
 #Check you've got the right version number
-install.packages("../eudract_0.9.2.tar.gz",
+install.packages("../eudract_0.9.3.tar.gz",
                  repos = NULL, type = "source")
-devtools::build("../eudract_0.9.2.tar.gz", binary=TRUE)
+devtools::build("../eudract_0.9.3.tar.gz", binary=TRUE)
 
-install.packages("V:/STATISTICS/NON STUDY FOLDER/Software/R/R Code Library/cctu_0.9.2.zip",
+install.packages("V:/STATISTICS/NON STUDY FOLDER/Software/R/R Code Library/eudract_0.9.3.zip",
                  repos = NULL, type="win.binary")
 
 #devtools::build( binary=TRUE)

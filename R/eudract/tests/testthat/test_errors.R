@@ -62,6 +62,17 @@ test_that("missing variable",{
   expect_error(safety_summary(aes[,-2], exposed=c(700,750,730), soc_index = "soc_term"),"your input data are missing the following variables:")
 })
 
+
+test_that("Too short group names",{
+
+  aes <- read.csv(file.path(path,"data/events.csv"), stringsAsFactors = FALSE)
+  aes$group <- ifelse(aes$group=="Group A", "A", aes$group)
+  expect_error(safety_summary(aes, exposed=c(700,750,730), soc_index = "soc_term"),
+               "Group names must be at least 4 characters in length.")
+
+})
+
+
 test_that("exposed has too few elements",{
   aes <- read.csv(file.path(path,"data/events.csv"), stringsAsFactors = FALSE)
   expect_is(safety_summary(aes, exposed=c(700,750,730), soc_index = "soc_term"),"safety_summary")
