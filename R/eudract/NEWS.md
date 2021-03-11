@@ -1,3 +1,8 @@
+# eudract v0.9.4
+
+This is a placeholder for the next version
+
+
 # eudract v0.9.3
 
 Error is caused if any of the group names are less than 4 characters in length, as EudraCT will reject this.

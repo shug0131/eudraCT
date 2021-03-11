@@ -78,7 +78,7 @@ eudract_convert(input=simple,
 The key output is [safety_upload.xml](../extdata/safety_upload.xml).
 
 
-We can validate the output against the XML schema provided by Eudract, although the call to `eudract_convert()` does also do this behind the scenes, returning the value `TRUE` if there are no errors against the schema validation. The  [schema](https://eudract.ema.europa.eu/docs/technical/schemas/clinicaltrial/results/adverseEvents.xsd), was downloaded to this package on 15NOV2016 - note this is a semi-readible file of code/data rather than a standard web page.
+We can validate the output against the XML schema provided by Eudract, although the call to `eudract_convert()` does also do this behind the scenes, returning the value `TRUE` if there are no errors against the schema validation. The  [schema](https://eudract.ema.europa.eu/docs/technical/schemas/clinicaltrial/results/adverseEvents.xsd), was downloaded to this package on 15NOV2016 - note this is a semi-readable file of code/data rather than a standard web page.
 
 ```{r check_schema}
 myschema <- xml2::read_xml(system.file("extdata","adverseEvents.xsd", package="eudract"))
