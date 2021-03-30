@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<soc_table>
+  <soc>
+    <soc_term>Blood and lymphatic system disorders</soc_term>
+    <eutctId>100000004851</eutctId>
+    <meddra>10005329</meddra>
+  </soc>
+  <soc>
+    <soc_term>Cardiac disorders</soc_term>
+    <eutctId>100000004849</eutctId>
+    <meddra>10007541</meddra>
+  </soc>
+  <soc>
+    <soc_term>Congenital, familial and genetic disorders</soc_term>
+    <eutctId>100000004850</eutctId>
+    <meddra>10010331</meddra>
+  </soc>
+  <soc>
+    <soc_term>Ear and labyrinth disorders</soc_term>
+    <eutctId>100000004854</eutctId>
+    <meddra>10013993</meddra>
+  </soc>
+  <soc>
+    <soc_term>Endocrine disorders</soc_term>
+    <eutctId>100000004860</eutctId>
+    <meddra>10014698</meddra>
+  </soc>
+  <soc>
+    <soc_term>Eye disorders</soc_term>
+    <eutctId>100000004853</eutctId>
+    <meddra>10015919</meddra>
+  </soc>
+  <soc>
+    <soc_term>Gastrointestinal disorders</soc_term>
+    <eutctId>100000004856</eutctId>
+    <meddra>10017947</meddra>
+  </soc>
+  <soc>
+    <soc_term>General disorders and administration site conditions</soc_term>
+    <eutctId>100000004867</eutctId>
+    <meddra>10018065</meddra>
+  </soc>
+  <soc>
+    <soc_term>Hepatobiliary disorders</soc_term>
+    <eutctId>100000004871</eutctId>
+    <meddra>10019805</meddra>
+  </soc>
+  <soc>
+    <soc_term>Immune system disorders</soc_term>
+    <eutctId>100000004870</eutctId>
+    <meddra>10021428</meddra>
+  </soc>
+  <soc>
+    <soc_term>Infections and infestations</soc_term>
+    <eutctId>100000004862</eutctId>
+    <meddra>10021881</meddra>
+  </soc>
+  <soc>
+    <soc_term>Injury, poisoning and procedural complications</soc_term>
+    <eutctId>100000004863</eutctId>
+    <meddra>10022117</meddra>
+  </soc>
+  <soc>
+    <soc_term>Investigations</soc_term>
+    <eutctId>100000004848</eutctId>
+    <meddra>10022891</meddra>
+  </soc>
+  <soc>
+    <soc_term>Metabolism and nutrition disorders</soc_term>
+    <eutctId>100000004861</eutctId>
+    <meddra>10027433</meddra>
+  </soc>
+  <soc>
+    <soc_term>Musculoskeletal and connective tissue disorders</soc_term>
+    <eutctId>100000004859</eutctId>
+    <meddra>10028395</meddra>
+  </soc>
+  <soc>
+    <soc_term>Neoplasms benign, malignant and unspecified (incl cysts and polyps)</soc_term>
+    <eutctId>100000004864</eutctId>
+    <meddra>10029104</meddra>
+  </soc>
+  <soc>
+    <soc_term>Nervous system disorders</soc_term>
+    <eutctId>100000004852</eutctId>
+    <meddra>10029205</meddra>
+  </soc>
+  <soc>
+    <soc_term>Pregnancy, puerperium and perinatal conditions</soc_term>
+    <eutctId>100000004868</eutctId>
+    <meddra>10036585</meddra>
+  </soc>
+  <soc>
+    <soc_term>Product issues</soc_term>
+    <eutctId>100000167503</eutctId>
+    <meddra>10077536</meddra>
+  </soc>
+  <soc>
+    <soc_term>Psychiatric disorders</soc_term>
+    <eutctId>100000004873</eutctId>
+    <meddra>10037175</meddra>
+  </soc>
+  <soc>
+    <soc_term>Renal and urinary disorders</soc_term>
+    <eutctId>100000004857</eutctId>
+    <meddra>10038359</meddra>
+  </soc>
+  <soc>
+    <soc_term>Reproductive system and breast disorders</soc_term>
+    <eutctId>100000004872</eutctId>
+    <meddra>10038604</meddra>
+  </soc>
+  <soc>
+    <soc_term>Respiratory, thoracic and mediastinal disorders</soc_term>
+    <eutctId>100000004855</eutctId>
+    <meddra>10038738</meddra>
+  </soc>
+  <soc>
+    <soc_term>Skin and subcutaneous tissue disorders</soc_term>
+    <eutctId>100000004858</eutctId>
+    <meddra>10040785</meddra>
+  </soc>
+  <soc>
+    <soc_term>Social circumstances</soc_term>
+    <eutctId>100000004869</eutctId>
+    <meddra>10041244</meddra>
+  </soc>
+  <soc>
+    <soc_term>Surgical and medical procedures</soc_term>
+    <eutctId>100000004865</eutctId>
+    <meddra>10042613</meddra>
+  </soc>
+  <soc>
+    <soc_term>Vascular disorders</soc_term>
+    <eutctId>100000004866</eutctId>
+    <meddra>10047065</meddra>
+  </soc>
+</soc_table>
