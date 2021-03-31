@@ -117,6 +117,9 @@ test_that("induced errors in the safety_summary output",
             expect_warning( simple_safety_xml(safety_stats,file.path(tempdir(),"simple.xml")) )
             expect_error(eudract_convert(file.path(tempdir(),"simple.xml"),
                                          file.path(tempdir(),"eudract.xml")))
+            expect_error(clintrials_gov_convert(file.path(tempdir(),"simple.xml"),
+                                         file.path(tempdir(),"ct.xml")))
+
           }
           )
 
