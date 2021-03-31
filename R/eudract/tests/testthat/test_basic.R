@@ -287,6 +287,15 @@ test_that("convert to eudract",{
 )
 
 
+test_that("convert to ClinicalTrials.Gov",{
+  clintrials_gov_convert(input=file.path(path,"simple.xml"), output=file.path(path,"table_ct.xml"))
+  new <- read_xml(file.path(path,"table_ct.xml"))
+  ref <- read_xml("reference/table_ct.xml")
+  expect_equal(new,ref)
+}
+)
+
+
 
 test_that("works for a frequency threshold",
           {

@@ -37,6 +37,21 @@ Key component here will be to develop an alternative xslt file that produces
 the same content as Eudract but in the slightly different schema. Examination of the
 papers, with an example suggest this will be acheivable.
 
+
+Now have within R a working xslt file, the relevant schema (which is passing),
+and the required soc.xml (as CT.gov uses words rather than magic codes). See
+[link to folder](R/eudract/tests/testhat).
+
+Need to obtain a ClinicalTrials.gov account to test.  Is there a training portal?
+Will it accept just partial results for safety only?
+What about the <outcomeMeasures/> which is included
+at the moment to pass the schema?
+
+Need to update with doucmentation 
+* website 
+
+Also equivalent steps for SAS and stata scripts, as for R package update.
+
 Need to obtain a ClinicalTrials.gov account to test.  Or obtain downloads of
 finished submissions, plus input data.
 
