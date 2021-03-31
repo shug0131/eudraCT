@@ -1,17 +1,21 @@
 ---
-title: "Eudract Safety XML"
+title: "Eudract and CT.gov Safety XML"
 author: "Simon Bond"
 date: "`r Sys.Date()`"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{Eudract Safety XML}
+  %\VignetteIndexEntry{Eudract and CT.gov Safety XML}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
 
 # Introduction
 
-The European Clinical Trials Database [Eudract](https://eudract.ema.europa.eu/) is run by the European Medicines Agency. All studies that are officially registered clinical trials have to enter the results of the final analysis into the website to be made public. There is a large amount of documentation online that will not be repeated here.
+The European Clinical Trials Database [Eudract](https://eudract.ema.europa.eu/) is run by the European Medicines Agency. All studies that are officially registered clinical trials have to enter the results of the final analysis into the website to be made public. 
+
+An equivalent database hosted by the U.S. government is [CT.gov](https://clinicaltrials.gov/). 
+
+There is a large amount of documentation online that will not be repeated here.
 
 The detailed entering of safety information is an onerous task if it is to be done by hand. However we do have the facility to upload an XML file to automate this step. This R package seeks to enable the production of an XML file from a standard structure of Safety data that is recorded on a patient-level. 
 
@@ -61,33 +65,57 @@ safety_statistics
 
 If you have produced these statistics through separate coding, then you can use the `eudract:::create.summary_statistics()` function to put them into the correct internal format and start the conversion to XML directly.
 
-First we export the `safety_statistics` to a XML document that is human readable "simple.xml". Then we convert to the EudraCT format.
+First we export the `safety_statistics` to a XML document that is human readable "simple.xml". Then we convert to the EudraCT and CT.gove formats.
 
 ```{r xml}
 simple <- tempfile(fileext = ".xml")
 eudract_upload_file <- tempfile(fileext = ".xml")
+ct_upload_file <- tempfile(fileext = ".xml")
 simple_safety_xml(safety_statistics, simple)
 eudract_convert(input=simple,
                 output=eudract_upload_file)
+clintrials_gov_convert(input=simple,
+                output=ct_upload_file)
+
+
 ```
 
 # Output
 
 
 
-The key output is [safety_upload.xml](../extdata/safety_upload.xml).
+The key outputs are 
+
+* [safety_upload.xml](../extdata/safety_upload.xml), for eudraCT 
+* [ct_safety_upload.xml](../extdata/ct_safety_upload.xml) for CT.gov
 
 
-We can validate the output against the XML schema provided by Eudract, although the call to `eudract_convert()` does also do this behind the scenes, returning the value `TRUE` if there are no errors against the schema validation. The  [schema](https://eudract.ema.europa.eu/docs/technical/schemas/clinicaltrial/results/adverseEvents.xsd), was downloaded to this package on 15NOV2016 - note this is a semi-readable file of code/data rather than a standard web page.
+We can validate the output against the XML schemas provided by EudraCT and CT.gov, although the calls to 
+`eudract_convert()` and `clintrials_gov_convert()` also do this behind the scenes, returning the value `TRUE` if there are no errors against the schema validation. 
+
+* [eudract schema](https://eudract.ema.europa.eu/docs/technical/schemas/clinicaltrial/results/adverseEvents.xsd), was downloaded to this package on 15NOV2016
+* [CT.gov schema](https://prsinfo.clinicaltrials.gov/RRSUploadSchema.xsd), was downloaded to this package on 31MAR2021
+
+
+note these  are semi-readable files of code/data rather than a standard web page.
+
 
 ```{r check_schema}
 myschema <- xml2::read_xml(system.file("extdata","adverseEvents.xsd", package="eudract"))
 aes <- xml2::read_xml(eudract_upload_file)
 check <- xml2::xml_validate(aes,myschema)
-if(check){print("Validation against the schema has passed!")}
+if(check){print("Validation against eudraCT schema has passed!")}
+
+
+myschema <- xml2::read_xml(system.file("extdata","RRSUploadSchema.xsd", package="eudract"))
+aes <- xml2::read_xml(ct_upload_file)
+check <- xml2::xml_validate(aes,myschema)
+if(check){print("Validation against CT.gov schema has passed!")}
 ```
 
 # Upload
 
-To use the resulting xml file navigate and log in online to the study specific area of the Eudract site. On the top banner is a link "Upload XML" which you follow. Choose the option "Adverse Events" rather than "Full data set", and select the file xml you have produced. The resulting information can be viewed in the browser interactively or with a static [pdf file](../extdata/ct_result_0004-000245-38.pdf) (note this is a fictitious study and fictitious data). This is not the only step in completing the Eudract report, as the description of the study, baseline characteristics and efficacy analysis will all need to be added. That is not the remit of this package though.
+To use the resulting eudraCT xml file navigate and log in online to the study specific area of the Eudract site. On the top banner is a link "Upload XML" which you follow. Choose the option "Adverse Events" rather than "Full data set", and select the file xml you have produced. The resulting information can be viewed in the browser interactively or with a static [pdf file](../extdata/ct_result_0004-000245-38.pdf) (note this is a fictitious study and fictitious data). This is not the only step in completing the Eudract report, as the description of the study, baseline characteristics and efficacy analysis will all need to be added. That is not the remit of this package though.
+
+The equivalent steps for the CT.gov site have not yet been determined, as this is an experimental feature.
 

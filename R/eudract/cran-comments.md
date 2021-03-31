@@ -4,6 +4,11 @@
 * Windows Server 2012 R2 x64 (build 9600) on (appveyor), R3.6.1
 * check_win_release
 
+## Change April2021
+
+Adding new function and underlying xslt to facilitate uploads to ClinicalTrials.gov as well as EudraCT .
+
+
 ## Change 24FEB2021
 
 an error is created if input fails the check of group names being at least 4 characters in length.

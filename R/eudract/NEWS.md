@@ -1,6 +1,10 @@
-# eudract v0.9.4
 
-This is a placeholder for the next version
+
+
+
+# eudract v0.10.0
+
+Major version change to include uploads of the equivalent information to ClinicalTrials.gov.
 
 
 # eudract v0.9.3
