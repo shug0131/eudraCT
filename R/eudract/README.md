@@ -11,7 +11,7 @@ Status](https://ci.appveyor.com/api/projects/status/github/shug0131/eudraCT?bran
 
 The goal of eudract is to provide tools to easily produce summaries of
 safety data from clinical trials that can easily be uploaded into
-eudraCT.
+eudraCT or ClinTrials.gov .
 
 ## Installation
 

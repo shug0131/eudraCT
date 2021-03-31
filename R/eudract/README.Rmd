@@ -20,7 +20,7 @@ knitr::opts_chunk$set(
 ```
 # eudract
 
-The goal of eudract is to provide tools to easily produce summaries of safety data from clinical trials that can easily be uploaded into eudraCT. 
+The goal of eudract is to provide tools to easily produce summaries of safety data from clinical trials that can easily be uploaded into eudraCT or ClinTrials.gov . 
 
 
 
