@@ -43,9 +43,20 @@ and the required soc.xml (as CT.gov uses words rather than magic codes). See
 [link to folder](R/eudract/tests/testhat).
 
 Need to obtain a ClinicalTrials.gov account to test.  Is there a training portal?
-Will it accept just partial results for safety only?
-What about the <outcomeMeasures/> which is included
-at the moment to pass the schema?
+Will it accept just partial results for safety only?  NO
+What about the <outcomeMeasures/> which is included?
+at the moment to pass the schema? Not sure
+
+* Hae now a test account within https://prstest.clinicaltrials.gov/
+* Set up a basic study, then downloaded the XML record overall
+* edited the file to add in the safety data.
+* Uploaded ( Home>Records > Upload Record)  and it worked
+* What to use to check against schema ??
+
+* Tool to to accept a framwork XML download and edit wtih teh new safety data
+* maybe API upload from within R is a possibility ?? Warnings about overwriting safety data
+
+
 
 Need to update with doucmentation 
 * website 

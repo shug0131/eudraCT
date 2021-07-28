@@ -2,11 +2,11 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   <xsl:output method="xml" indent="yes"/>
 
-
+<xsl:strip-space elements="*"/>
 
   <xsl:key name="group_id" match="GROUP/title" use="."/>
   <xsl:key name="term" match="SERIOUS | NON_SERIOUS" use="concat(term, eutctId, name())"/>
-
+  <xsl:key name="soc" match="soc" use="eutctId"/>
 
   <xsl:template match="/">
       <tns:result partialUpload="true" 	xmlns:tns="http://clinicaltrials.gov/rrs"
@@ -60,9 +60,12 @@
     <assessmentType>Non-Systematic Assessment</assessmentType>
     <notes> <xsl:value-of select ="term"/> </notes>
     <xsl:variable name="localEutctId" select="eutctId" />
+
     <organSystemName>
-      <xsl:value-of select="document($soc_xml_file_path)/soc_table/soc[eutctId=$localEutctId]/soc_term"/>
-    </organSystemName>
+            <xsl:for-each select="document($soc_xml_file_path)">
+      <xsl:value-of select="key('soc', $localEutctId)/soc_term" />
+        </xsl:for-each>
+             </organSystemName>
     <sourceVocabulary>MedDRA 22.0</sourceVocabulary>
     <term> <xsl:value-of select ="term"/> </term>
   </xsl:template>

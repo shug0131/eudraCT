@@ -27,6 +27,7 @@ clintrials_gov_convert <- function(input, output,
   # check against the input schema
   check_in <- xml2::xml_validate(doc, schema_input)
   if( !check_in){ stop(attr(check_in,"errors"))}
+  soc <- gsub("\\s","%20", soc) # As the xslt document() function needs this
   output_xml <- xslt::xml_xslt(doc, style,params=list(soc_xml_file_path=soc))
   xml2::write_xml(output_xml, output)
   message(paste0("'",output, "' is created or modified\n"))
