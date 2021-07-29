@@ -28,7 +28,8 @@ file produced by code, re upload.
 Details of the xml file are given
 
 * [prose dscription](https://prsinfo.clinicaltrials.gov/results_definitions.html)
-* [xml schema](https://prsinfo.clinicaltrials.gov/RRSUploadSchema.xsd)
+* [overall xml schema](https://prsinfo.clinicaltrials.gov/ProtocolRecordSchema.xsd)
+* [results xml schema](https://prsinfo.clinicaltrials.gov/RRSUploadSchema.xsd)
 * [user guide](https://prsinfo.clinicaltrials.gov/prs-users-guide.html#section9)
 
 ## Outline Plan

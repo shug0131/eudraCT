@@ -13,12 +13,8 @@ License: GPL-2
 Language: en-GB
 Encoding: UTF-8
 LazyData: true
-Imports: tidyr, xslt, dplyr, xml2, utils, magrittr
+Imports: tidyr, xslt, dplyr, xml2, utils, magrittr, httr
 Depends: R (>= 3.5.0)
-RoxygenNote: 7.1.0
-Suggests: 
-    testthat,
-    knitr,
-    rmarkdown,
-    stringr
+RoxygenNote: 7.1.1
+Suggests: testthat, knitr, rmarkdown, stringr
 VignetteBuilder: knitr

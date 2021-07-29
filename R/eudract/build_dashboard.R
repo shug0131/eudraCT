@@ -1,13 +1,13 @@
 
 rcmdcheck::rcmdcheck()
-
+devtools::load_all()
 
 devtools::build_vignettes(clean=FALSE)
 devtools::clean_vignettes()
 
 
 
-.libPaths("U:/My Documents/R/win-library/3.6")
+.libPaths("U:/My Documents/R/win-library/4.0")
 devtools::build_vignettes()
 devtools::document(roclets = c('rd', 'collate', 'namespace'))
 devtools::build()

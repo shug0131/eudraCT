@@ -65,7 +65,7 @@ safety_statistics
 
 If you have produced these statistics through separate coding, then you can use the `eudract:::create.summary_statistics()` function to put them into the correct internal format and start the conversion to XML directly.
 
-First we export the `safety_statistics` to a XML document that is human readable "simple.xml". Then we convert to the EudraCT and CT.gove formats.
+First we export the `safety_statistics` to a XML document that is human readable "simple.xml". Then we convert to the EudraCT and CT.gov formats.
 
 ```{r xml}
 simple <- tempfile(fileext = ".xml")
@@ -75,10 +75,29 @@ simple_safety_xml(safety_statistics, simple)
 eudract_convert(input=simple,
                 output=eudract_upload_file)
 clintrials_gov_convert(input=simple,
+                       original=system.file("extdata", "1234.xml", package ="eudract"),
                 output=ct_upload_file)
 
 
 ```
+
+Note that for the ClinicalTrials.gov, there must first be a study set-up within website, and then a download of the XML taken. This is the \code{original} argument. Then the original file has the safety events data over-written, and can be manually uploaded back into ClinicalTrials.gov
+
+Alternatively, if you have a user account within CT.gov, then the intial study needs to be set up wtihin there, but we can use the API to directly upload without needing to manually interact with the site.
+
+```{r upload, eval=FALSE}
+clintrials_gov_upload(
+    input=simple,
+    orgname="CTU",
+    username="Student",
+    password="Guinness",
+    studyid="1234"
+    )
+
+```
+
+
+
 
 # Output
 
@@ -94,7 +113,8 @@ We can validate the output against the XML schemas provided by EudraCT and CT.go
 `eudract_convert()` and `clintrials_gov_convert()` also do this behind the scenes, returning the value `TRUE` if there are no errors against the schema validation. 
 
 * [eudract schema](https://eudract.ema.europa.eu/docs/technical/schemas/clinicaltrial/results/adverseEvents.xsd), was downloaded to this package on 15NOV2016
-* [CT.gov schema](https://prsinfo.clinicaltrials.gov/RRSUploadSchema.xsd), was downloaded to this package on 31MAR2021
+* [CT.gov overall xml schema](https://prsinfo.clinicaltrials.gov/ProtocolRecordSchema.xsd)
+* [CT.gov results xml schema](https://prsinfo.clinicaltrials.gov/RRSUploadSchema.xsd), was downloaded to this package on 31MAR2021
 
 
 note these  are semi-readable files of code/data rather than a standard web page.
@@ -107,15 +127,16 @@ check <- xml2::xml_validate(aes,myschema)
 if(check){print("Validation against eudraCT schema has passed!")}
 
 
-myschema <- xml2::read_xml(system.file("extdata","RRSUploadSchema.xsd", package="eudract"))
+myschema <- xml2::read_xml(system.file("extdata","ProtocolRecordSchema.xsd", package="eudract"))
 aes <- xml2::read_xml(ct_upload_file)
 check <- xml2::xml_validate(aes,myschema)
 if(check){print("Validation against CT.gov schema has passed!")}
 ```
 
-# Upload
+# Manual Upload
 
 To use the resulting eudraCT xml file navigate and log in online to the study specific area of the Eudract site. On the top banner is a link "Upload XML" which you follow. Choose the option "Adverse Events" rather than "Full data set", and select the file xml you have produced. The resulting information can be viewed in the browser interactively or with a static [pdf file](../extdata/ct_result_0004-000245-38.pdf) (note this is a fictitious study and fictitious data). This is not the only step in completing the Eudract report, as the description of the study, baseline characteristics and efficacy analysis will all need to be added. That is not the remit of this package though.
 
-The equivalent steps for the CT.gov site have not yet been determined, as this is an experimental feature.
+For the ClinicalTRials.gov, once logged in, there is a button titled "Records", near the top. From ther select "Upload Record (XML)". On the new page, use teh "Choose File" button to select the newly created XML file, and click "Upload".
 
+To extract the original study record for over-writing, you need to go into the specific study record from teh home page. In there beneath the initial section titled "Record Status", there is a link "Download XML", which will enable you to save locally the required file. 
