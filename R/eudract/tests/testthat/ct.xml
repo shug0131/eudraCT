@@ -9,19 +9,19 @@
       <frequentEvent>
         <adverseEventStats>
           <eventStats>
-            <reportingGroupId>idm690646304</reportingGroupId>
+            <reportingGroupId>idm3</reportingGroupId>
             <numEvents>11</numEvents>
             <numSubjectsAffected>7</numSubjectsAffected>
             <numSubjects>20</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690641696</reportingGroupId>
+            <reportingGroupId>idm10</reportingGroupId>
             <numEvents>16</numEvents>
             <numSubjectsAffected>8</numSubjectsAffected>
             <numSubjects>22</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690638112</reportingGroupId>
+            <reportingGroupId>idm17</reportingGroupId>
             <numEvents>13</numEvents>
             <numSubjectsAffected>7</numSubjectsAffected>
             <numSubjects>18</numSubjects>
@@ -36,19 +36,19 @@
       <frequentEvent>
         <adverseEventStats>
           <eventStats>
-            <reportingGroupId>idm690646304</reportingGroupId>
+            <reportingGroupId>idm3</reportingGroupId>
             <numEvents>9</numEvents>
             <numSubjectsAffected>4</numSubjectsAffected>
             <numSubjects>20</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690641696</reportingGroupId>
+            <reportingGroupId>idm10</reportingGroupId>
             <numEvents>14</numEvents>
             <numSubjectsAffected>4</numSubjectsAffected>
             <numSubjects>22</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690638112</reportingGroupId>
+            <reportingGroupId>idm17</reportingGroupId>
             <numEvents>4</numEvents>
             <numSubjectsAffected>3</numSubjectsAffected>
             <numSubjects>18</numSubjects>
@@ -63,19 +63,19 @@
       <frequentEvent>
         <adverseEventStats>
           <eventStats>
-            <reportingGroupId>idm690646304</reportingGroupId>
+            <reportingGroupId>idm3</reportingGroupId>
             <numEvents>10</numEvents>
             <numSubjectsAffected>4</numSubjectsAffected>
             <numSubjects>20</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690641696</reportingGroupId>
+            <reportingGroupId>idm10</reportingGroupId>
             <numEvents>11</numEvents>
             <numSubjectsAffected>3</numSubjectsAffected>
             <numSubjects>22</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690638112</reportingGroupId>
+            <reportingGroupId>idm17</reportingGroupId>
             <numEvents>11</numEvents>
             <numSubjectsAffected>9</numSubjectsAffected>
             <numSubjects>18</numSubjects>
@@ -90,19 +90,19 @@
       <frequentEvent>
         <adverseEventStats>
           <eventStats>
-            <reportingGroupId>idm690646304</reportingGroupId>
+            <reportingGroupId>idm3</reportingGroupId>
             <numEvents>17</numEvents>
             <numSubjectsAffected>7</numSubjectsAffected>
             <numSubjects>20</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690641696</reportingGroupId>
+            <reportingGroupId>idm10</reportingGroupId>
             <numEvents>11</numEvents>
             <numSubjectsAffected>8</numSubjectsAffected>
             <numSubjects>22</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690638112</reportingGroupId>
+            <reportingGroupId>idm17</reportingGroupId>
             <numEvents>18</numEvents>
             <numSubjectsAffected>8</numSubjectsAffected>
             <numSubjects>18</numSubjects>
@@ -117,19 +117,19 @@
       <frequentEvent>
         <adverseEventStats>
           <eventStats>
-            <reportingGroupId>idm690646304</reportingGroupId>
+            <reportingGroupId>idm3</reportingGroupId>
             <numEvents>14</numEvents>
             <numSubjectsAffected>6</numSubjectsAffected>
             <numSubjects>20</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690641696</reportingGroupId>
+            <reportingGroupId>idm10</reportingGroupId>
             <numEvents>8</numEvents>
             <numSubjectsAffected>5</numSubjectsAffected>
             <numSubjects>22</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690638112</reportingGroupId>
+            <reportingGroupId>idm17</reportingGroupId>
             <numEvents>18</numEvents>
             <numSubjectsAffected>11</numSubjectsAffected>
             <numSubjects>18</numSubjects>
@@ -144,19 +144,19 @@
       <frequentEvent>
         <adverseEventStats>
           <eventStats>
-            <reportingGroupId>idm690646304</reportingGroupId>
+            <reportingGroupId>idm3</reportingGroupId>
             <numEvents>8</numEvents>
             <numSubjectsAffected>6</numSubjectsAffected>
             <numSubjects>20</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690641696</reportingGroupId>
+            <reportingGroupId>idm10</reportingGroupId>
             <numEvents>14</numEvents>
             <numSubjectsAffected>6</numSubjectsAffected>
             <numSubjects>22</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690638112</reportingGroupId>
+            <reportingGroupId>idm17</reportingGroupId>
             <numEvents>7</numEvents>
             <numSubjectsAffected>2</numSubjectsAffected>
             <numSubjects>18</numSubjects>
@@ -171,19 +171,19 @@
       <frequentEvent>
         <adverseEventStats>
           <eventStats>
-            <reportingGroupId>idm690646304</reportingGroupId>
+            <reportingGroupId>idm3</reportingGroupId>
             <numEvents>12</numEvents>
             <numSubjectsAffected>4</numSubjectsAffected>
             <numSubjects>20</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690641696</reportingGroupId>
+            <reportingGroupId>idm10</reportingGroupId>
             <numEvents>15</numEvents>
             <numSubjectsAffected>11</numSubjectsAffected>
             <numSubjects>22</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690638112</reportingGroupId>
+            <reportingGroupId>idm17</reportingGroupId>
             <numEvents>6</numEvents>
             <numSubjectsAffected>3</numSubjectsAffected>
             <numSubjects>18</numSubjects>
@@ -198,19 +198,19 @@
       <frequentEvent>
         <adverseEventStats>
           <eventStats>
-            <reportingGroupId>idm690646304</reportingGroupId>
+            <reportingGroupId>idm3</reportingGroupId>
             <numEvents>7</numEvents>
             <numSubjectsAffected>2</numSubjectsAffected>
             <numSubjects>20</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690641696</reportingGroupId>
+            <reportingGroupId>idm10</reportingGroupId>
             <numEvents>21</numEvents>
             <numSubjectsAffected>11</numSubjectsAffected>
             <numSubjects>22</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690638112</reportingGroupId>
+            <reportingGroupId>idm17</reportingGroupId>
             <numEvents>11</numEvents>
             <numSubjectsAffected>5</numSubjectsAffected>
             <numSubjects>18</numSubjects>
@@ -225,19 +225,19 @@
       <frequentEvent>
         <adverseEventStats>
           <eventStats>
-            <reportingGroupId>idm690646304</reportingGroupId>
+            <reportingGroupId>idm3</reportingGroupId>
             <numEvents>18</numEvents>
             <numSubjectsAffected>10</numSubjectsAffected>
             <numSubjects>20</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690641696</reportingGroupId>
+            <reportingGroupId>idm10</reportingGroupId>
             <numEvents>11</numEvents>
             <numSubjectsAffected>5</numSubjectsAffected>
             <numSubjects>22</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690638112</reportingGroupId>
+            <reportingGroupId>idm17</reportingGroupId>
             <numEvents>4</numEvents>
             <numSubjectsAffected>4</numSubjectsAffected>
             <numSubjects>18</numSubjects>
@@ -252,19 +252,19 @@
       <frequentEvent>
         <adverseEventStats>
           <eventStats>
-            <reportingGroupId>idm690646304</reportingGroupId>
+            <reportingGroupId>idm3</reportingGroupId>
             <numEvents>7</numEvents>
             <numSubjectsAffected>4</numSubjectsAffected>
             <numSubjects>20</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690641696</reportingGroupId>
+            <reportingGroupId>idm10</reportingGroupId>
             <numEvents>6</numEvents>
             <numSubjectsAffected>3</numSubjectsAffected>
             <numSubjects>22</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690638112</reportingGroupId>
+            <reportingGroupId>idm17</reportingGroupId>
             <numEvents>14</numEvents>
             <numSubjectsAffected>8</numSubjectsAffected>
             <numSubjects>18</numSubjects>
@@ -279,19 +279,19 @@
       <frequentEvent>
         <adverseEventStats>
           <eventStats>
-            <reportingGroupId>idm690646304</reportingGroupId>
+            <reportingGroupId>idm3</reportingGroupId>
             <numEvents>5</numEvents>
             <numSubjectsAffected>5</numSubjectsAffected>
             <numSubjects>20</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690641696</reportingGroupId>
+            <reportingGroupId>idm10</reportingGroupId>
             <numEvents>7</numEvents>
             <numSubjectsAffected>4</numSubjectsAffected>
             <numSubjects>22</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690638112</reportingGroupId>
+            <reportingGroupId>idm17</reportingGroupId>
             <numEvents>8</numEvents>
             <numSubjectsAffected>7</numSubjectsAffected>
             <numSubjects>18</numSubjects>
@@ -306,19 +306,19 @@
       <frequentEvent>
         <adverseEventStats>
           <eventStats>
-            <reportingGroupId>idm690646304</reportingGroupId>
+            <reportingGroupId>idm3</reportingGroupId>
             <numEvents>5</numEvents>
             <numSubjectsAffected>4</numSubjectsAffected>
             <numSubjects>20</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690641696</reportingGroupId>
+            <reportingGroupId>idm10</reportingGroupId>
             <numEvents>17</numEvents>
             <numSubjectsAffected>9</numSubjectsAffected>
             <numSubjects>22</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690638112</reportingGroupId>
+            <reportingGroupId>idm17</reportingGroupId>
             <numEvents>8</numEvents>
             <numSubjectsAffected>3</numSubjectsAffected>
             <numSubjects>18</numSubjects>
@@ -333,19 +333,19 @@
       <frequentEvent>
         <adverseEventStats>
           <eventStats>
-            <reportingGroupId>idm690646304</reportingGroupId>
+            <reportingGroupId>idm3</reportingGroupId>
             <numEvents>5</numEvents>
             <numSubjectsAffected>4</numSubjectsAffected>
             <numSubjects>20</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690641696</reportingGroupId>
+            <reportingGroupId>idm10</reportingGroupId>
             <numEvents>11</numEvents>
             <numSubjectsAffected>5</numSubjectsAffected>
             <numSubjects>22</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690638112</reportingGroupId>
+            <reportingGroupId>idm17</reportingGroupId>
             <numEvents>15</numEvents>
             <numSubjectsAffected>5</numSubjectsAffected>
             <numSubjects>18</numSubjects>
@@ -360,19 +360,19 @@
       <frequentEvent>
         <adverseEventStats>
           <eventStats>
-            <reportingGroupId>idm690646304</reportingGroupId>
+            <reportingGroupId>idm3</reportingGroupId>
             <numEvents>10</numEvents>
             <numSubjectsAffected>3</numSubjectsAffected>
             <numSubjects>20</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690641696</reportingGroupId>
+            <reportingGroupId>idm10</reportingGroupId>
             <numEvents>14</numEvents>
             <numSubjectsAffected>6</numSubjectsAffected>
             <numSubjects>22</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690638112</reportingGroupId>
+            <reportingGroupId>idm17</reportingGroupId>
             <numEvents>11</numEvents>
             <numSubjectsAffected>5</numSubjectsAffected>
             <numSubjects>18</numSubjects>
@@ -387,19 +387,19 @@
       <frequentEvent>
         <adverseEventStats>
           <eventStats>
-            <reportingGroupId>idm690646304</reportingGroupId>
+            <reportingGroupId>idm3</reportingGroupId>
             <numEvents>9</numEvents>
             <numSubjectsAffected>5</numSubjectsAffected>
             <numSubjects>20</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690641696</reportingGroupId>
+            <reportingGroupId>idm10</reportingGroupId>
             <numEvents>14</numEvents>
             <numSubjectsAffected>4</numSubjectsAffected>
             <numSubjects>22</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690638112</reportingGroupId>
+            <reportingGroupId>idm17</reportingGroupId>
             <numEvents>17</numEvents>
             <numSubjectsAffected>8</numSubjectsAffected>
             <numSubjects>18</numSubjects>
@@ -414,19 +414,19 @@
       <frequentEvent>
         <adverseEventStats>
           <eventStats>
-            <reportingGroupId>idm690646304</reportingGroupId>
+            <reportingGroupId>idm3</reportingGroupId>
             <numEvents>16</numEvents>
             <numSubjectsAffected>8</numSubjectsAffected>
             <numSubjects>20</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690641696</reportingGroupId>
+            <reportingGroupId>idm10</reportingGroupId>
             <numEvents>15</numEvents>
             <numSubjectsAffected>6</numSubjectsAffected>
             <numSubjects>22</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690638112</reportingGroupId>
+            <reportingGroupId>idm17</reportingGroupId>
             <numEvents>11</numEvents>
             <numSubjectsAffected>6</numSubjectsAffected>
             <numSubjects>18</numSubjects>
@@ -441,19 +441,19 @@
       <frequentEvent>
         <adverseEventStats>
           <eventStats>
-            <reportingGroupId>idm690646304</reportingGroupId>
+            <reportingGroupId>idm3</reportingGroupId>
             <numEvents>7</numEvents>
             <numSubjectsAffected>4</numSubjectsAffected>
             <numSubjects>20</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690641696</reportingGroupId>
+            <reportingGroupId>idm10</reportingGroupId>
             <numEvents>16</numEvents>
             <numSubjectsAffected>8</numSubjectsAffected>
             <numSubjects>22</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690638112</reportingGroupId>
+            <reportingGroupId>idm17</reportingGroupId>
             <numEvents>9</numEvents>
             <numSubjectsAffected>3</numSubjectsAffected>
             <numSubjects>18</numSubjects>
@@ -468,19 +468,19 @@
       <frequentEvent>
         <adverseEventStats>
           <eventStats>
-            <reportingGroupId>idm690646304</reportingGroupId>
+            <reportingGroupId>idm3</reportingGroupId>
             <numEvents>7</numEvents>
             <numSubjectsAffected>2</numSubjectsAffected>
             <numSubjects>20</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690641696</reportingGroupId>
+            <reportingGroupId>idm10</reportingGroupId>
             <numEvents>9</numEvents>
             <numSubjectsAffected>6</numSubjectsAffected>
             <numSubjects>22</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690638112</reportingGroupId>
+            <reportingGroupId>idm17</reportingGroupId>
             <numEvents>16</numEvents>
             <numSubjectsAffected>8</numSubjectsAffected>
             <numSubjects>18</numSubjects>
@@ -495,19 +495,19 @@
       <frequentEvent>
         <adverseEventStats>
           <eventStats>
-            <reportingGroupId>idm690646304</reportingGroupId>
+            <reportingGroupId>idm3</reportingGroupId>
             <numEvents>8</numEvents>
             <numSubjectsAffected>2</numSubjectsAffected>
             <numSubjects>20</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690641696</reportingGroupId>
+            <reportingGroupId>idm10</reportingGroupId>
             <numEvents>5</numEvents>
             <numSubjectsAffected>5</numSubjectsAffected>
             <numSubjects>22</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690638112</reportingGroupId>
+            <reportingGroupId>idm17</reportingGroupId>
             <numEvents>8</numEvents>
             <numSubjectsAffected>7</numSubjectsAffected>
             <numSubjects>18</numSubjects>
@@ -522,19 +522,19 @@
       <frequentEvent>
         <adverseEventStats>
           <eventStats>
-            <reportingGroupId>idm690646304</reportingGroupId>
+            <reportingGroupId>idm3</reportingGroupId>
             <numEvents>6</numEvents>
             <numSubjectsAffected>3</numSubjectsAffected>
             <numSubjects>20</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690641696</reportingGroupId>
+            <reportingGroupId>idm10</reportingGroupId>
             <numEvents>8</numEvents>
             <numSubjectsAffected>5</numSubjectsAffected>
             <numSubjects>22</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690638112</reportingGroupId>
+            <reportingGroupId>idm17</reportingGroupId>
             <numEvents>15</numEvents>
             <numSubjectsAffected>10</numSubjectsAffected>
             <numSubjects>18</numSubjects>
@@ -549,19 +549,19 @@
       <frequentEvent>
         <adverseEventStats>
           <eventStats>
-            <reportingGroupId>idm690646304</reportingGroupId>
+            <reportingGroupId>idm3</reportingGroupId>
             <numEvents>4</numEvents>
             <numSubjectsAffected>2</numSubjectsAffected>
             <numSubjects>20</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690641696</reportingGroupId>
+            <reportingGroupId>idm10</reportingGroupId>
             <numEvents>11</numEvents>
             <numSubjectsAffected>6</numSubjectsAffected>
             <numSubjects>22</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690638112</reportingGroupId>
+            <reportingGroupId>idm17</reportingGroupId>
             <numEvents>7</numEvents>
             <numSubjectsAffected>7</numSubjectsAffected>
             <numSubjects>18</numSubjects>
@@ -576,19 +576,19 @@
       <frequentEvent>
         <adverseEventStats>
           <eventStats>
-            <reportingGroupId>idm690646304</reportingGroupId>
+            <reportingGroupId>idm3</reportingGroupId>
             <numEvents>18</numEvents>
             <numSubjectsAffected>8</numSubjectsAffected>
             <numSubjects>20</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690641696</reportingGroupId>
+            <reportingGroupId>idm10</reportingGroupId>
             <numEvents>16</numEvents>
             <numSubjectsAffected>7</numSubjectsAffected>
             <numSubjects>22</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690638112</reportingGroupId>
+            <reportingGroupId>idm17</reportingGroupId>
             <numEvents>8</numEvents>
             <numSubjectsAffected>5</numSubjectsAffected>
             <numSubjects>18</numSubjects>
@@ -603,19 +603,19 @@
       <frequentEvent>
         <adverseEventStats>
           <eventStats>
-            <reportingGroupId>idm690646304</reportingGroupId>
+            <reportingGroupId>idm3</reportingGroupId>
             <numEvents>7</numEvents>
             <numSubjectsAffected>4</numSubjectsAffected>
             <numSubjects>20</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690641696</reportingGroupId>
+            <reportingGroupId>idm10</reportingGroupId>
             <numEvents>22</numEvents>
             <numSubjectsAffected>14</numSubjectsAffected>
             <numSubjects>22</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690638112</reportingGroupId>
+            <reportingGroupId>idm17</reportingGroupId>
             <numEvents>7</numEvents>
             <numSubjectsAffected>6</numSubjectsAffected>
             <numSubjects>18</numSubjects>
@@ -630,19 +630,19 @@
       <frequentEvent>
         <adverseEventStats>
           <eventStats>
-            <reportingGroupId>idm690646304</reportingGroupId>
+            <reportingGroupId>idm3</reportingGroupId>
             <numEvents>5</numEvents>
             <numSubjectsAffected>4</numSubjectsAffected>
             <numSubjects>20</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690641696</reportingGroupId>
+            <reportingGroupId>idm10</reportingGroupId>
             <numEvents>13</numEvents>
             <numSubjectsAffected>4</numSubjectsAffected>
             <numSubjects>22</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690638112</reportingGroupId>
+            <reportingGroupId>idm17</reportingGroupId>
             <numEvents>14</numEvents>
             <numSubjectsAffected>5</numSubjectsAffected>
             <numSubjects>18</numSubjects>
@@ -657,19 +657,19 @@
       <frequentEvent>
         <adverseEventStats>
           <eventStats>
-            <reportingGroupId>idm690646304</reportingGroupId>
+            <reportingGroupId>idm3</reportingGroupId>
             <numEvents>14</numEvents>
             <numSubjectsAffected>8</numSubjectsAffected>
             <numSubjects>20</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690641696</reportingGroupId>
+            <reportingGroupId>idm10</reportingGroupId>
             <numEvents>7</numEvents>
             <numSubjectsAffected>7</numSubjectsAffected>
             <numSubjects>22</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690638112</reportingGroupId>
+            <reportingGroupId>idm17</reportingGroupId>
             <numEvents>3</numEvents>
             <numSubjectsAffected>1</numSubjectsAffected>
             <numSubjects>18</numSubjects>
@@ -684,19 +684,19 @@
       <frequentEvent>
         <adverseEventStats>
           <eventStats>
-            <reportingGroupId>idm690646304</reportingGroupId>
+            <reportingGroupId>idm3</reportingGroupId>
             <numEvents>15</numEvents>
             <numSubjectsAffected>6</numSubjectsAffected>
             <numSubjects>20</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690641696</reportingGroupId>
+            <reportingGroupId>idm10</reportingGroupId>
             <numEvents>10</numEvents>
             <numSubjectsAffected>4</numSubjectsAffected>
             <numSubjects>22</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690638112</reportingGroupId>
+            <reportingGroupId>idm17</reportingGroupId>
             <numEvents>14</numEvents>
             <numSubjectsAffected>4</numSubjectsAffected>
             <numSubjects>18</numSubjects>
@@ -710,7 +710,7 @@
       </frequentEvent>
     </frequentAdverseEvents>
     <interventionGroups>
-      <interventionGroup id="idm690646304">
+      <interventionGroup id="idm3">
         <description>Group A</description>
         <numDeaths>3</numDeaths>
         <numSubjectsFrequentEvents>10</numSubjectsFrequentEvents>
@@ -720,7 +720,7 @@
         <partAtRiskSeriousEvents>20</partAtRiskSeriousEvents>
         <title>Group A</title>
       </interventionGroup>
-      <interventionGroup id="idm690641696">
+      <interventionGroup id="idm10">
         <description>Group B</description>
         <numDeaths>6</numDeaths>
         <numSubjectsFrequentEvents>14</numSubjectsFrequentEvents>
@@ -730,7 +730,7 @@
         <partAtRiskSeriousEvents>22</partAtRiskSeriousEvents>
         <title>Group B</title>
       </interventionGroup>
-      <interventionGroup id="idm690638112">
+      <interventionGroup id="idm17">
         <description>Group C</description>
         <numDeaths>2</numDeaths>
         <numSubjectsFrequentEvents>11</numSubjectsFrequentEvents>
@@ -746,19 +746,19 @@
       <seriousEvent>
         <adverseEventStats>
           <eventStats>
-            <reportingGroupId>idm690646304</reportingGroupId>
+            <reportingGroupId>idm3</reportingGroupId>
             <numEvents>8</numEvents>
             <numSubjectsAffected>7</numSubjectsAffected>
             <numSubjects>20</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690641696</reportingGroupId>
+            <reportingGroupId>idm10</reportingGroupId>
             <numEvents>4</numEvents>
             <numSubjectsAffected>3</numSubjectsAffected>
             <numSubjects>22</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690638112</reportingGroupId>
+            <reportingGroupId>idm17</reportingGroupId>
             <numEvents>8</numEvents>
             <numSubjectsAffected>2</numSubjectsAffected>
             <numSubjects>18</numSubjects>
@@ -773,19 +773,19 @@
       <seriousEvent>
         <adverseEventStats>
           <eventStats>
-            <reportingGroupId>idm690646304</reportingGroupId>
+            <reportingGroupId>idm3</reportingGroupId>
             <numEvents>7</numEvents>
             <numSubjectsAffected>3</numSubjectsAffected>
             <numSubjects>20</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690641696</reportingGroupId>
+            <reportingGroupId>idm10</reportingGroupId>
             <numEvents>8</numEvents>
             <numSubjectsAffected>5</numSubjectsAffected>
             <numSubjects>22</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690638112</reportingGroupId>
+            <reportingGroupId>idm17</reportingGroupId>
             <numEvents>10</numEvents>
             <numSubjectsAffected>4</numSubjectsAffected>
             <numSubjects>18</numSubjects>
@@ -800,19 +800,19 @@
       <seriousEvent>
         <adverseEventStats>
           <eventStats>
-            <reportingGroupId>idm690646304</reportingGroupId>
+            <reportingGroupId>idm3</reportingGroupId>
             <numEvents>12</numEvents>
             <numSubjectsAffected>5</numSubjectsAffected>
             <numSubjects>20</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690641696</reportingGroupId>
+            <reportingGroupId>idm10</reportingGroupId>
             <numEvents>10</numEvents>
             <numSubjectsAffected>4</numSubjectsAffected>
             <numSubjects>22</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690638112</reportingGroupId>
+            <reportingGroupId>idm17</reportingGroupId>
             <numEvents>9</numEvents>
             <numSubjectsAffected>6</numSubjectsAffected>
             <numSubjects>18</numSubjects>
@@ -827,19 +827,19 @@
       <seriousEvent>
         <adverseEventStats>
           <eventStats>
-            <reportingGroupId>idm690646304</reportingGroupId>
+            <reportingGroupId>idm3</reportingGroupId>
             <numEvents>8</numEvents>
             <numSubjectsAffected>5</numSubjectsAffected>
             <numSubjects>20</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690641696</reportingGroupId>
+            <reportingGroupId>idm10</reportingGroupId>
             <numEvents>8</numEvents>
             <numSubjectsAffected>6</numSubjectsAffected>
             <numSubjects>22</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690638112</reportingGroupId>
+            <reportingGroupId>idm17</reportingGroupId>
             <numEvents>7</numEvents>
             <numSubjectsAffected>3</numSubjectsAffected>
             <numSubjects>18</numSubjects>
@@ -854,19 +854,19 @@
       <seriousEvent>
         <adverseEventStats>
           <eventStats>
-            <reportingGroupId>idm690646304</reportingGroupId>
+            <reportingGroupId>idm3</reportingGroupId>
             <numEvents>10</numEvents>
             <numSubjectsAffected>8</numSubjectsAffected>
             <numSubjects>20</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690641696</reportingGroupId>
+            <reportingGroupId>idm10</reportingGroupId>
             <numEvents>15</numEvents>
             <numSubjectsAffected>5</numSubjectsAffected>
             <numSubjects>22</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690638112</reportingGroupId>
+            <reportingGroupId>idm17</reportingGroupId>
             <numEvents>9</numEvents>
             <numSubjectsAffected>2</numSubjectsAffected>
             <numSubjects>18</numSubjects>
@@ -881,19 +881,19 @@
       <seriousEvent>
         <adverseEventStats>
           <eventStats>
-            <reportingGroupId>idm690646304</reportingGroupId>
+            <reportingGroupId>idm3</reportingGroupId>
             <numEvents>8</numEvents>
             <numSubjectsAffected>4</numSubjectsAffected>
             <numSubjects>20</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690641696</reportingGroupId>
+            <reportingGroupId>idm10</reportingGroupId>
             <numEvents>11</numEvents>
             <numSubjectsAffected>6</numSubjectsAffected>
             <numSubjects>22</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690638112</reportingGroupId>
+            <reportingGroupId>idm17</reportingGroupId>
             <numEvents>9</numEvents>
             <numSubjectsAffected>5</numSubjectsAffected>
             <numSubjects>18</numSubjects>
@@ -908,19 +908,19 @@
       <seriousEvent>
         <adverseEventStats>
           <eventStats>
-            <reportingGroupId>idm690646304</reportingGroupId>
+            <reportingGroupId>idm3</reportingGroupId>
             <numEvents>4</numEvents>
             <numSubjectsAffected>3</numSubjectsAffected>
             <numSubjects>20</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690641696</reportingGroupId>
+            <reportingGroupId>idm10</reportingGroupId>
             <numEvents>9</numEvents>
             <numSubjectsAffected>4</numSubjectsAffected>
             <numSubjects>22</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690638112</reportingGroupId>
+            <reportingGroupId>idm17</reportingGroupId>
             <numEvents>15</numEvents>
             <numSubjectsAffected>9</numSubjectsAffected>
             <numSubjects>18</numSubjects>
@@ -935,19 +935,19 @@
       <seriousEvent>
         <adverseEventStats>
           <eventStats>
-            <reportingGroupId>idm690646304</reportingGroupId>
+            <reportingGroupId>idm3</reportingGroupId>
             <numEvents>5</numEvents>
             <numSubjectsAffected>4</numSubjectsAffected>
             <numSubjects>20</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690641696</reportingGroupId>
+            <reportingGroupId>idm10</reportingGroupId>
             <numEvents>9</numEvents>
             <numSubjectsAffected>5</numSubjectsAffected>
             <numSubjects>22</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690638112</reportingGroupId>
+            <reportingGroupId>idm17</reportingGroupId>
             <numEvents>0</numEvents>
             <numSubjectsAffected>0</numSubjectsAffected>
             <numSubjects>18</numSubjects>
@@ -962,19 +962,19 @@
       <seriousEvent>
         <adverseEventStats>
           <eventStats>
-            <reportingGroupId>idm690646304</reportingGroupId>
+            <reportingGroupId>idm3</reportingGroupId>
             <numEvents>12</numEvents>
             <numSubjectsAffected>5</numSubjectsAffected>
             <numSubjects>20</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690641696</reportingGroupId>
+            <reportingGroupId>idm10</reportingGroupId>
             <numEvents>17</numEvents>
             <numSubjectsAffected>12</numSubjectsAffected>
             <numSubjects>22</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690638112</reportingGroupId>
+            <reportingGroupId>idm17</reportingGroupId>
             <numEvents>8</numEvents>
             <numSubjectsAffected>3</numSubjectsAffected>
             <numSubjects>18</numSubjects>
@@ -989,19 +989,19 @@
       <seriousEvent>
         <adverseEventStats>
           <eventStats>
-            <reportingGroupId>idm690646304</reportingGroupId>
+            <reportingGroupId>idm3</reportingGroupId>
             <numEvents>17</numEvents>
             <numSubjectsAffected>7</numSubjectsAffected>
             <numSubjects>20</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690641696</reportingGroupId>
+            <reportingGroupId>idm10</reportingGroupId>
             <numEvents>22</numEvents>
             <numSubjectsAffected>12</numSubjectsAffected>
             <numSubjects>22</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690638112</reportingGroupId>
+            <reportingGroupId>idm17</reportingGroupId>
             <numEvents>12</numEvents>
             <numSubjectsAffected>5</numSubjectsAffected>
             <numSubjects>18</numSubjects>
@@ -1016,19 +1016,19 @@
       <seriousEvent>
         <adverseEventStats>
           <eventStats>
-            <reportingGroupId>idm690646304</reportingGroupId>
+            <reportingGroupId>idm3</reportingGroupId>
             <numEvents>8</numEvents>
             <numSubjectsAffected>6</numSubjectsAffected>
             <numSubjects>20</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690641696</reportingGroupId>
+            <reportingGroupId>idm10</reportingGroupId>
             <numEvents>15</numEvents>
             <numSubjectsAffected>10</numSubjectsAffected>
             <numSubjects>22</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690638112</reportingGroupId>
+            <reportingGroupId>idm17</reportingGroupId>
             <numEvents>12</numEvents>
             <numSubjectsAffected>2</numSubjectsAffected>
             <numSubjects>18</numSubjects>
@@ -1043,19 +1043,19 @@
       <seriousEvent>
         <adverseEventStats>
           <eventStats>
-            <reportingGroupId>idm690646304</reportingGroupId>
+            <reportingGroupId>idm3</reportingGroupId>
             <numEvents>10</numEvents>
             <numSubjectsAffected>7</numSubjectsAffected>
             <numSubjects>20</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690641696</reportingGroupId>
+            <reportingGroupId>idm10</reportingGroupId>
             <numEvents>13</numEvents>
             <numSubjectsAffected>8</numSubjectsAffected>
             <numSubjects>22</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690638112</reportingGroupId>
+            <reportingGroupId>idm17</reportingGroupId>
             <numEvents>11</numEvents>
             <numSubjectsAffected>7</numSubjectsAffected>
             <numSubjects>18</numSubjects>
@@ -1070,19 +1070,19 @@
       <seriousEvent>
         <adverseEventStats>
           <eventStats>
-            <reportingGroupId>idm690646304</reportingGroupId>
+            <reportingGroupId>idm3</reportingGroupId>
             <numEvents>6</numEvents>
             <numSubjectsAffected>3</numSubjectsAffected>
             <numSubjects>20</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690641696</reportingGroupId>
+            <reportingGroupId>idm10</reportingGroupId>
             <numEvents>10</numEvents>
             <numSubjectsAffected>8</numSubjectsAffected>
             <numSubjects>22</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690638112</reportingGroupId>
+            <reportingGroupId>idm17</reportingGroupId>
             <numEvents>3</numEvents>
             <numSubjectsAffected>2</numSubjectsAffected>
             <numSubjects>18</numSubjects>
@@ -1097,19 +1097,19 @@
       <seriousEvent>
         <adverseEventStats>
           <eventStats>
-            <reportingGroupId>idm690646304</reportingGroupId>
+            <reportingGroupId>idm3</reportingGroupId>
             <numEvents>6</numEvents>
             <numSubjectsAffected>6</numSubjectsAffected>
             <numSubjects>20</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690641696</reportingGroupId>
+            <reportingGroupId>idm10</reportingGroupId>
             <numEvents>16</numEvents>
             <numSubjectsAffected>7</numSubjectsAffected>
             <numSubjects>22</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690638112</reportingGroupId>
+            <reportingGroupId>idm17</reportingGroupId>
             <numEvents>13</numEvents>
             <numSubjectsAffected>3</numSubjectsAffected>
             <numSubjects>18</numSubjects>
@@ -1124,19 +1124,19 @@
       <seriousEvent>
         <adverseEventStats>
           <eventStats>
-            <reportingGroupId>idm690646304</reportingGroupId>
+            <reportingGroupId>idm3</reportingGroupId>
             <numEvents>6</numEvents>
             <numSubjectsAffected>5</numSubjectsAffected>
             <numSubjects>20</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690641696</reportingGroupId>
+            <reportingGroupId>idm10</reportingGroupId>
             <numEvents>9</numEvents>
             <numSubjectsAffected>6</numSubjectsAffected>
             <numSubjects>22</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690638112</reportingGroupId>
+            <reportingGroupId>idm17</reportingGroupId>
             <numEvents>14</numEvents>
             <numSubjectsAffected>7</numSubjectsAffected>
             <numSubjects>18</numSubjects>
@@ -1151,19 +1151,19 @@
       <seriousEvent>
         <adverseEventStats>
           <eventStats>
-            <reportingGroupId>idm690646304</reportingGroupId>
+            <reportingGroupId>idm3</reportingGroupId>
             <numEvents>11</numEvents>
             <numSubjectsAffected>5</numSubjectsAffected>
             <numSubjects>20</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690641696</reportingGroupId>
+            <reportingGroupId>idm10</reportingGroupId>
             <numEvents>5</numEvents>
             <numSubjectsAffected>3</numSubjectsAffected>
             <numSubjects>22</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690638112</reportingGroupId>
+            <reportingGroupId>idm17</reportingGroupId>
             <numEvents>9</numEvents>
             <numSubjectsAffected>4</numSubjectsAffected>
             <numSubjects>18</numSubjects>
@@ -1178,19 +1178,19 @@
       <seriousEvent>
         <adverseEventStats>
           <eventStats>
-            <reportingGroupId>idm690646304</reportingGroupId>
+            <reportingGroupId>idm3</reportingGroupId>
             <numEvents>5</numEvents>
             <numSubjectsAffected>5</numSubjectsAffected>
             <numSubjects>20</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690641696</reportingGroupId>
+            <reportingGroupId>idm10</reportingGroupId>
             <numEvents>16</numEvents>
             <numSubjectsAffected>9</numSubjectsAffected>
             <numSubjects>22</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690638112</reportingGroupId>
+            <reportingGroupId>idm17</reportingGroupId>
             <numEvents>6</numEvents>
             <numSubjectsAffected>1</numSubjectsAffected>
             <numSubjects>18</numSubjects>
@@ -1205,19 +1205,19 @@
       <seriousEvent>
         <adverseEventStats>
           <eventStats>
-            <reportingGroupId>idm690646304</reportingGroupId>
+            <reportingGroupId>idm3</reportingGroupId>
             <numEvents>16</numEvents>
             <numSubjectsAffected>6</numSubjectsAffected>
             <numSubjects>20</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690641696</reportingGroupId>
+            <reportingGroupId>idm10</reportingGroupId>
             <numEvents>6</numEvents>
             <numSubjectsAffected>3</numSubjectsAffected>
             <numSubjects>22</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690638112</reportingGroupId>
+            <reportingGroupId>idm17</reportingGroupId>
             <numEvents>7</numEvents>
             <numSubjectsAffected>4</numSubjectsAffected>
             <numSubjects>18</numSubjects>
@@ -1232,19 +1232,19 @@
       <seriousEvent>
         <adverseEventStats>
           <eventStats>
-            <reportingGroupId>idm690646304</reportingGroupId>
+            <reportingGroupId>idm3</reportingGroupId>
             <numEvents>12</numEvents>
             <numSubjectsAffected>4</numSubjectsAffected>
             <numSubjects>20</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690641696</reportingGroupId>
+            <reportingGroupId>idm10</reportingGroupId>
             <numEvents>11</numEvents>
             <numSubjectsAffected>6</numSubjectsAffected>
             <numSubjects>22</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690638112</reportingGroupId>
+            <reportingGroupId>idm17</reportingGroupId>
             <numEvents>16</numEvents>
             <numSubjectsAffected>9</numSubjectsAffected>
             <numSubjects>18</numSubjects>
@@ -1259,19 +1259,19 @@
       <seriousEvent>
         <adverseEventStats>
           <eventStats>
-            <reportingGroupId>idm690646304</reportingGroupId>
+            <reportingGroupId>idm3</reportingGroupId>
             <numEvents>20</numEvents>
             <numSubjectsAffected>10</numSubjectsAffected>
             <numSubjects>20</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690641696</reportingGroupId>
+            <reportingGroupId>idm10</reportingGroupId>
             <numEvents>17</numEvents>
             <numSubjectsAffected>7</numSubjectsAffected>
             <numSubjects>22</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690638112</reportingGroupId>
+            <reportingGroupId>idm17</reportingGroupId>
             <numEvents>14</numEvents>
             <numSubjectsAffected>6</numSubjectsAffected>
             <numSubjects>18</numSubjects>
@@ -1286,19 +1286,19 @@
       <seriousEvent>
         <adverseEventStats>
           <eventStats>
-            <reportingGroupId>idm690646304</reportingGroupId>
+            <reportingGroupId>idm3</reportingGroupId>
             <numEvents>5</numEvents>
             <numSubjectsAffected>5</numSubjectsAffected>
             <numSubjects>20</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690641696</reportingGroupId>
+            <reportingGroupId>idm10</reportingGroupId>
             <numEvents>11</numEvents>
             <numSubjectsAffected>4</numSubjectsAffected>
             <numSubjects>22</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690638112</reportingGroupId>
+            <reportingGroupId>idm17</reportingGroupId>
             <numEvents>14</numEvents>
             <numSubjectsAffected>9</numSubjectsAffected>
             <numSubjects>18</numSubjects>
@@ -1313,19 +1313,19 @@
       <seriousEvent>
         <adverseEventStats>
           <eventStats>
-            <reportingGroupId>idm690646304</reportingGroupId>
+            <reportingGroupId>idm3</reportingGroupId>
             <numEvents>9</numEvents>
             <numSubjectsAffected>2</numSubjectsAffected>
             <numSubjects>20</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690641696</reportingGroupId>
+            <reportingGroupId>idm10</reportingGroupId>
             <numEvents>9</numEvents>
             <numSubjectsAffected>6</numSubjectsAffected>
             <numSubjects>22</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690638112</reportingGroupId>
+            <reportingGroupId>idm17</reportingGroupId>
             <numEvents>10</numEvents>
             <numSubjectsAffected>4</numSubjectsAffected>
             <numSubjects>18</numSubjects>
@@ -1340,19 +1340,19 @@
       <seriousEvent>
         <adverseEventStats>
           <eventStats>
-            <reportingGroupId>idm690646304</reportingGroupId>
+            <reportingGroupId>idm3</reportingGroupId>
             <numEvents>7</numEvents>
             <numSubjectsAffected>3</numSubjectsAffected>
             <numSubjects>20</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690641696</reportingGroupId>
+            <reportingGroupId>idm10</reportingGroupId>
             <numEvents>14</numEvents>
             <numSubjectsAffected>5</numSubjectsAffected>
             <numSubjects>22</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690638112</reportingGroupId>
+            <reportingGroupId>idm17</reportingGroupId>
             <numEvents>8</numEvents>
             <numSubjectsAffected>4</numSubjectsAffected>
             <numSubjects>18</numSubjects>
@@ -1367,19 +1367,19 @@
       <seriousEvent>
         <adverseEventStats>
           <eventStats>
-            <reportingGroupId>idm690646304</reportingGroupId>
+            <reportingGroupId>idm3</reportingGroupId>
             <numEvents>8</numEvents>
             <numSubjectsAffected>5</numSubjectsAffected>
             <numSubjects>20</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690641696</reportingGroupId>
+            <reportingGroupId>idm10</reportingGroupId>
             <numEvents>6</numEvents>
             <numSubjectsAffected>4</numSubjectsAffected>
             <numSubjects>22</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690638112</reportingGroupId>
+            <reportingGroupId>idm17</reportingGroupId>
             <numEvents>12</numEvents>
             <numSubjectsAffected>8</numSubjectsAffected>
             <numSubjects>18</numSubjects>
@@ -1394,19 +1394,19 @@
       <seriousEvent>
         <adverseEventStats>
           <eventStats>
-            <reportingGroupId>idm690646304</reportingGroupId>
+            <reportingGroupId>idm3</reportingGroupId>
             <numEvents>12</numEvents>
             <numSubjectsAffected>8</numSubjectsAffected>
             <numSubjects>20</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690641696</reportingGroupId>
+            <reportingGroupId>idm10</reportingGroupId>
             <numEvents>12</numEvents>
             <numSubjectsAffected>6</numSubjectsAffected>
             <numSubjects>22</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690638112</reportingGroupId>
+            <reportingGroupId>idm17</reportingGroupId>
             <numEvents>6</numEvents>
             <numSubjectsAffected>6</numSubjectsAffected>
             <numSubjects>18</numSubjects>
@@ -1421,19 +1421,19 @@
       <seriousEvent>
         <adverseEventStats>
           <eventStats>
-            <reportingGroupId>idm690646304</reportingGroupId>
+            <reportingGroupId>idm3</reportingGroupId>
             <numEvents>5</numEvents>
             <numSubjectsAffected>5</numSubjectsAffected>
             <numSubjects>20</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690641696</reportingGroupId>
+            <reportingGroupId>idm10</reportingGroupId>
             <numEvents>16</numEvents>
             <numSubjectsAffected>9</numSubjectsAffected>
             <numSubjects>22</numSubjects>
           </eventStats>
           <eventStats>
-            <reportingGroupId>idm690638112</reportingGroupId>
+            <reportingGroupId>idm17</reportingGroupId>
             <numEvents>7</numEvents>
             <numSubjectsAffected>3</numSubjectsAffected>
             <numSubjects>18</numSubjects>
