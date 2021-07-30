@@ -2,7 +2,7 @@ Package: eudract
 Type: Package
 Title: Creates Safety Results Summary in XML to Upload to EudraCT, or ClinicalTrials.gov
 Date: 2021-03-31
-Version: 0.10.0.9000
+Version: 0.11.0
 Authors@R: c(
     person("Simon", "Bond", email="simon.bond@addenbrookes.nhs.uk", role="cre"),
     person("Beatrice","Pantaleo", email="bp403@medschl.cam.ac.uk", role="aut"))

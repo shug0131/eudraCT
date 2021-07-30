@@ -1,2 +1,2 @@
-.libPaths("U:/My Documents/R/win-library/3.6")
+.libPaths("U:/My Documents/R/win-library/4.0")
 

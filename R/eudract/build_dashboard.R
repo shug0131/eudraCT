@@ -4,21 +4,20 @@ devtools::load_all()
 
 devtools::build_vignettes(clean=FALSE)
 devtools::clean_vignettes()
-
+devtools::check()
 
 
 .libPaths("U:/My Documents/R/win-library/4.0")
 devtools::build_vignettes()
 devtools::document(roclets = c('rd', 'collate', 'namespace'))
 devtools::build()
+devtools::test()
 
 #Check you've got the right version number
-install.packages("../eudract_0.9.3.tar.gz",
+install.packages("../eudract_0.11.0.tar.gz",
                  repos = NULL, type = "source")
-devtools::build("../eudract_0.9.3.tar.gz", binary=TRUE)
+devtools::build("../eudract_0.11.0.tar.gz", binary=TRUE)
 
-install.packages("V:/STATISTICS/NON STUDY FOLDER/Software/R/R Code Library/eudract_0.9.3.zip",
-                 repos = NULL, type="win.binary")
 
 #devtools::build( binary=TRUE)
 # modify news.md, cran-comments.md README.rmd

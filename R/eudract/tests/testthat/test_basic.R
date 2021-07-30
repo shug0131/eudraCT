@@ -269,11 +269,12 @@ expect_equal(length(safety_statistics),3)
 expect_is(safety_statistics[[1]],"data.frame")
 }
 )
-
+if(is_testing()){reference_path <- "./reference"}else{reference_path <- "tests/testthat/reference"}
 test_that("create simple xml",{
 simple_safety_xml(safety_statistics, file.path(path,"simple.xml"))
 new <- read_xml(file.path(path,"simple.xml"))
-ref <- read_xml("reference/simple.xml")
+
+ref <- read_xml(file.path(reference_path,"simple.xml"))
 expect_equal(new,ref)
   }
 )
@@ -281,16 +282,22 @@ expect_equal(new,ref)
 test_that("convert to eudract",{
   eudract_convert(input=file.path(path,"simple.xml"), output=file.path(path,"table_eudract.xml"))
   new <- read_xml(file.path(path,"table_eudract.xml"))
-  ref <- read_xml("reference/table_eudract.xml")
+  ref <- read_xml(file.path(reference_path,"table_eudract.xml"))
   expect_equal(new,ref)
 }
 )
 
-
+if(is_testing()){original_path <- "."}else{original_path <- "tests/testthat"}
 test_that("convert to ClinicalTrials.Gov",{
-  clintrials_gov_convert(input=file.path(path,"simple.xml"), output=file.path(path,"table_ct.xml"))
+  
+  clintrials_gov_convert(input=file.path(path,"simple.xml"),
+                         original=file.path(original_path, "1234.xml"),
+                         output=file.path(path,"table_ct.xml")
+                        # schema_results = system.file("extdata","ProtocolRecordSchema.xsd", package="eudract")
+                         
+                         )
   new <- read_xml(file.path(path,"table_ct.xml"))
-  ref <- read_xml("reference/table_ct.xml")
+  ref <- read_xml(file.path(reference_path,"table_ct.xml"))
   expect_equal(new,ref)
 }
 )

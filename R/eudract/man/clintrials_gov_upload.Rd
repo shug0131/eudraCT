@@ -52,7 +52,7 @@ clintrials_gov_upload(
 \item{soc}{a character string giving an xml file that contains the System Organ Class look-up table going from EudraCT numbers to ClinicalTrials words.}
 }
 \value{
-Invisibly returns the results from the two API with the portal.  A new file is created as a side-effect, which is uploaded into ClinicalTrials.gov. This over-writes the original safety data online with the additional safety events. A backup copy of the original data is also saved.
+Invisibly returns the results from the two API with the portal \code{\link[httr]{response}}, \code{\link[httr]{POST}}  .  A new file is created as a side-effect, which is uploaded into ClinicalTrials.gov. This over-writes the original safety data online with the additional safety events. A backup copy of the original data is also saved.
 }
 \description{
 applies a conversion using xslt from a simple xml file to a ClinicalTrials.gov compatible file, merges into a study record from the portal, and uploads the result.
@@ -82,5 +82,5 @@ clintrials_gov_convert(input=simple,
 }
 }
 \seealso{
-\code{\link{safety_summary}} \code{\link{simple_safety_xml}}
+\code{\link{safety_summary}} \code{\link{simple_safety_xml}} [ClinicalTrials.gov manual](https://prsinfo.clinicaltrials.gov/prs-users-guide.html#section10)
 }
