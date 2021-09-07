@@ -46,8 +46,13 @@ API upload from within R is built as well
 
 
 
-Need to update with doucmentation 
+* Need to update with doucmentation 
 * website 
+* sort out environment variables on Travis etc, for testing with passwords on CT.gov
+* Do Stata code
+* R testing ?
 
-Also equivalent steps for SAS and stata scripts, as for R package update.
+* CRAn
+* Furthe dissemination
+
 
