@@ -12,6 +12,10 @@
 /* which variable in the soc_code data is used to link to the SOC code. value must either be: meddra  soc_term . */
 %let soc_index=meddra;
 
+/* a file name within &PATH that has the xml download from ClinicalTrials.gov to be edited with safety data
+comment the line out if you don't want the output for ClinicalTrials.gov */
+%let ct_original=1234.xml;
+
 
 proc datasets library=WORK kill; run; quit;
 
@@ -296,4 +300,94 @@ proc xsl in="&PATH\simple0.xml" out="&PATH\simple.xml" xsl="&PATH\sas_xml_renami
 /*use xslt to transform into the format needed by EudraCT */
 proc xsl in="&PATH\simple.xml" out="&PATH\table_eudract.xml" xsl="&PATH\simpleToEudraCT.xslt";run;
 
-%put Please email cctu@addenbrookes.nhs.uk to tell us if you have successfully uploaded a study to EudraCT. This is to allow us to measure the impact of this tool.;
+
+/* option macro to create the output for upload to ClinicalTrials.gov. Needs an original file created already on the website 
+for the specific trial, to be edited with the safety data.  Edit or comment out line 17 above */
+
+%macro ct_gov;
+%let soc_file=%SYSFUNC(prxchange(s/\s/%20/,-1, "&PATH\soc.xml"));
+%let soc_file=%SYSFUNC(prxchange(s/\\/\//, -1, &soc_file));
+/*inside the simpleToCtGov.xslt is a document() call , which is very fussy about the filepath format */
+
+proc xsl in="&PATH\simple.xml" out="&PATH\table_ct_gov.xml" xsl="&PATH\simpleToCtGov.xslt";
+parameter 'soc_xml_file_path'=&soc_file;
+run;
+
+/*insert the safety xml file into the original file &ct_original, specifically swapping the content of <reportedEvents>.
+ read in as text files, use find() to work out if before or after to edit the two input files into
+preamble, safety, epilogue .  Then glue back together. */
+
+data preamble;
+infile "&PATH\&ct_original" dlmstr="nodlmstr";
+format line $2000.;
+input;
+retain my_keep 1;
+line = _infile_;
+pos=find(line, "<reportedEvents");
+if 0< pos then do;
+	line= substr(line,1,pos-1);
+	output;
+	my_keep=0;
+end;
+if my_keep=1 then output;
+keep line;
+run;
+
+data epilogue;
+infile "&PATH\&ct_original" dlmstr="nodlmstr";
+format line $2000.;
+input;
+retain my_keep 0;
+line = _infile_;
+pos=find(line, "<reportedEvents/>");
+if 0< pos then do;
+	line= substr(line,pos+17);
+	my_keep=1;
+end;
+pos=find(line, "</reportedEvents>");
+if 0< pos then do;
+	line= substr(line,pos+17);
+	my_keep=1;
+end;
+if my_keep=1 then output;
+keep line;
+run;
+
+
+
+data content;
+infile "&PATH\table_ct_gov.xml" dlmstr="nodlmstr";
+format line $2000.;
+input;
+retain my_keep 0;
+line = _infile_;
+pos=find(line, "<reportedEvents>");
+if 0< pos then do;
+	line= substr(line,pos);
+	my_keep=1;
+end;
+pos=find(line, "</reportedEvents>");
+if 0< pos then do;
+	line= substr(line,1, pos+16);
+	output;
+	my_keep=0;
+end;
+if my_keep=1 then output;
+keep line;
+run;
+
+
+data _null_; 
+set preamble content epilogue;
+file "&PATH\table_ct_gov.xml" ;
+put line ;
+run;
+
+%mend;
+
+data _null_;
+if symexist("ct_original") then call execute('%ct_gov');
+run;
+
+
+%put Please email cctu@addenbrookes.nhs.uk to tell us if you have successfully uploaded a study to EudraCT or ClinicalTrials.gov . This is to allow us to measure the impact of this tool.;

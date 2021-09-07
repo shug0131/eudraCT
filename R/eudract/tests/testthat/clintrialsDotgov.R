@@ -15,8 +15,8 @@ clintrials_gov_convert(input=file.path(path, "simple.xml"),
 output <- clintrials_gov_upload(
   input=file.path(path, "simple.xml"),
   orgname="AddenbrookesH",
-  username="SBond",
-  password="Baginton1",
+  username=Sys.getenv("ct_user"),
+  password=Sys.getenv("ct_pass"),
   studyid="1234",
   url="https://prstest.clinicaltrials.gov/"
 
@@ -59,8 +59,8 @@ library(httr)
 tmp <-  POST(url="https://prstest.clinicaltrials.gov/prs/app/action/ExternalDownload/",
      body=list(
        orgName="AddenbrookesH",
-       userName="SBond",
-       passWord="Baginton1",
+       username=Sys.getenv("ct_user"),
+       password=Sys.getenv("ct_pass"),
        orgStudyId="1234"
      ),
      encode="form"
@@ -75,8 +75,8 @@ myfile <- paste(myfile, collapse="\n")
 tmp2 <-  POST(url="https://prstest.clinicaltrials.gov/prs/app/action/ExternalUpload",
              body=list(
                orgName="AddenbrookesH",
-               userName="SBond",
-               passWord="Baginton1",
+               username=Sys.getenv("ct_user"),
+               password=Sys.getenv("ct_pass"),
                uploadXML=myfile,
                autoRelease="false"
              ),
@@ -87,8 +87,8 @@ content(tmp2)
 POST(url="https://prstest.clinicaltrials.gov/prs/app/action/RecordInfoDownload",
      body=list(
        orgName="AddenbrookesH",
-       userName="SBond",
-       passWord="Baginton1"
+       username=Sys.getenv("ct_user"),
+       password=Sys.getenv("ct_pass"),
             ),
      encode="form"
      )
