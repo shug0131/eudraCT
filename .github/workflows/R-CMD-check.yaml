@@ -31,7 +31,7 @@ jobs:
     steps:
       - name: change directory
         run: |
-        cd R/eudract
+          cd R/eudract
         
     
       - uses: actions/checkout@v2
