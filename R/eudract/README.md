@@ -1,9 +1,13 @@
 
+<!-- badges: start -->
+
+[![R-CMD-check](https://github.com/shug0131/eudraCT/workflows/R-CMD-check/badge.svg)](https://github.com/shug0131/eudraCT/actions)
 [![Travis-CI Build
 Status](https://travis-ci.com/shug0131/eudraCT.svg?branch=master)](https://travis-ci.com/shug0131/eudraCT)
 [![codecov](https://codecov.io/github/shug0131/eudraCT/branch/master/graphs/badge.svg)](https://codecov.io/github/shug0131/eudraCT)
 [![AppVeyor Build
 Status](https://ci.appveyor.com/api/projects/status/github/shug0131/eudraCT?branch=master&svg=true)](https://ci.appveyor.com/project/shug0131/eudraCT)
+<!-- badges: end -->
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 

@@ -9,3 +9,4 @@
 ^tests\testthat\not_test_selenium.R$
 ^example$
 ^tests\testthat\archive$
+^\.github$
