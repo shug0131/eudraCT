@@ -10,7 +10,7 @@ name: R-CMD-check
 
 defaults:
   run:
-    working-directory: ./R/eudract
+    working-directory: R/eudract
 
 
 
