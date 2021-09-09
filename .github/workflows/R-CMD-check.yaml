@@ -8,6 +8,12 @@ on:
 
 name: R-CMD-check
 
+defaults:
+  run:
+    working-directory: ./R/eudract
+
+
+
 jobs:
   R-CMD-check:
     runs-on: ${{ matrix.config.os }}
@@ -44,7 +50,7 @@ jobs:
       - uses: r-lib/actions/setup-r-dependencies@v1
         with:
           extra-packages: rcmdcheck
-        working-directory: R/eudract
+        
         
       - name: Check
         env:
@@ -53,7 +59,7 @@ jobs:
           options(crayon.enabled = TRUE)
           rcmdcheck::rcmdcheck(args = c("--no-manual", "--as-cran"), error_on = "warning", check_dir = "check")
         shell: Rscript {0}
-        working-directory: R/eudract
+        
         
       - name: Show testthat output
         if: always()
