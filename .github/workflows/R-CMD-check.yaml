@@ -30,8 +30,9 @@ jobs:
 
     steps:
       - name: change directory
-        run: cd ~/R/eudract
-        shell: bash
+        run: |
+        cd R/eudract
+        
     
       - uses: actions/checkout@v2
 
