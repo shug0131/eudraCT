@@ -29,10 +29,7 @@ jobs:
       R_KEEP_PKG_SOURCE: yes
 
     steps:
-      - name: change directory
-        run: |
-          cd R/eudract
-        
+      
     
       - uses: actions/checkout@v2
 
@@ -55,11 +52,13 @@ jobs:
           options(crayon.enabled = TRUE)
           rcmdcheck::rcmdcheck(args = c("--no-manual", "--as-cran"), error_on = "warning", check_dir = "check")
         shell: Rscript {0}
-
+        working-directory: R/eudract
+        
       - name: Show testthat output
         if: always()
         run: find check -name 'testthat.Rout*' -exec cat '{}' \; || true
         shell: bash
+        working-directory: R/eudract
 
       - name: Upload check results
         if: failure()
@@ -67,3 +66,4 @@ jobs:
         with:
           name: ${{ runner.os }}-r${{ matrix.config.r }}-results
           path: check
+        
