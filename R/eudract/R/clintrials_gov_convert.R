@@ -35,7 +35,7 @@ clintrials_gov_convert <- function(input, original, output,
   check_in <- xml2::xml_validate(original, schema_output)
   if( !check_in){ stop("original study file is invalid \n", attr(check_in,"errors"))}
 
-
+  soc <- normalizePath(soc, winslash = "/")
   soc <- gsub("\\s","%20", soc) # As the xslt document() function needs this
   safety <- xslt::xml_xslt(doc, style,params=list(soc_xml_file_path=soc))
   xml2::xml_replace(
@@ -43,9 +43,22 @@ clintrials_gov_convert <- function(input, original, output,
     xml2::xml_find_first(safety, "//reportedEvents"),
     .copy=TRUE
   )
-
-
+  
+  
+# alternative xslt way to do this, used in SAS and Stata code is
+  
+  # find_replace <- xml2::read_xml(system.file("extdata","find_replace.xslt", package="eudract"))
+  # xml2::write_xml(safety, output) 
+  # replace <- normalizePath(output, winslash = "/")
+  # replace <- gsub("\\s","%20", replace)
+  # using the original safety data not running line 41
+  # original <- xslt::xml_xslt(original, find_replace, params=list(replace_file_path=replace))
+  
+  
+  
+  
   xml2::write_xml(original, output)
+  
   message(paste0("'",output, "' is created or modified\n"))
   #check against the output schema
   check_out <- xml2::xml_validate(safety, schema_results)

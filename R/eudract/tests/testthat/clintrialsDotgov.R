@@ -52,7 +52,16 @@ xml_replace(
   xml_find_first(safety, "//reportedEvents"),
   .copy=TRUE
 )
-write_xml(original, file=file.path(path, "trial.xml"))
+write_xml(original, file="trial.xml")
+
+original <- read_xml("tests/testthat/1234.xml")
+find_replace <- read_xml(system.file("extdata","find_replace.xslt", package="eudract"))
+replace <- normalizePath("tests/testthat/ct.xml", winslash = "/")
+replace <- gsub("\\s","%20", replace)
+output <- xslt::xml_xslt(original, find_replace, params=list(replace_file_path=replace))
+xml2::write_xml(output, "output.xml")
+
+
 
 library(httr)
 
