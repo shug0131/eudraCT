@@ -309,80 +309,20 @@ for the specific trial, to be edited with the safety data.  Edit or comment out 
 %let soc_file=%SYSFUNC(prxchange(s/\\/\//, -1, &soc_file));
 /*inside the simpleToCtGov.xslt is a document() call , which is very fussy about the filepath format */
 
-proc xsl in="&PATH\simple.xml" out="&PATH\table_ct_gov.xml" xsl="&PATH\simpleToCtGov.xslt";
+proc xsl in="&PATH\simple.xml" out="&PATH\table_ct_gov_safety.xml" xsl="&PATH\simpleToCtGov.xslt";
 parameter 'soc_xml_file_path'=&soc_file;
 run;
 
 /*insert the safety xml file into the original file &ct_original, specifically swapping the content of <reportedEvents>.
- read in as text files, use find() to work out if before or after to edit the two input files into
-preamble, safety, epilogue .  Then glue back together. */
+*/
 
-data preamble;
-infile "&PATH\&ct_original" dlmstr="nodlmstr";
-format line $2000.;
-input;
-retain my_keep 1;
-line = _infile_;
-pos=find(line, "<reportedEvents");
-if 0< pos then do;
-	line= substr(line,1,pos-1);
-	output;
-	my_keep=0;
-end;
-if my_keep=1 then output;
-keep line;
+%let replace= %SYSFUNC(prxchange(s/\s/%20/,-1, "&PATH\table_ct_gov_safety.xml"));
+%let replace= %SYSFUNC(prxchange(s/\\/\//, -1, &replace));
+proc xsl in="&PATH\&ct_original" out="&PATH\table_ct_gov.xml" xsl="&PATH\find_replace.xslt";
+parameter 'replace_file_path'=&replace;
 run;
 
-data epilogue;
-infile "&PATH\&ct_original" dlmstr="nodlmstr";
-format line $2000.;
-input;
-retain my_keep 0;
-line = _infile_;
-pos=find(line, "<reportedEvents/>");
-if 0< pos then do;
-	line= substr(line,pos+17);
-	my_keep=1;
-end;
-pos=find(line, "</reportedEvents>");
-if 0< pos then do;
-	line= substr(line,pos+17);
-	my_keep=1;
-end;
-if my_keep=1 then output;
-keep line;
-run;
-
-
-
-data content;
-infile "&PATH\table_ct_gov.xml" dlmstr="nodlmstr";
-format line $2000.;
-input;
-retain my_keep 0;
-line = _infile_;
-pos=find(line, "<reportedEvents>");
-if 0< pos then do;
-	line= substr(line,pos);
-	my_keep=1;
-end;
-pos=find(line, "</reportedEvents>");
-if 0< pos then do;
-	line= substr(line,1, pos+16);
-	output;
-	my_keep=0;
-end;
-if my_keep=1 then output;
-keep line;
-run;
-
-
-data _null_; 
-set preamble content epilogue;
-file "&PATH\table_ct_gov.xml" ;
-put line ;
-run;
-
+%put table_ct_gov.xml is suitable for upload into clinicaltrials.gov.  table_ct_gov_safety.xml is just the safety results and generated as a side-effect.
 %mend;
 
 data _null_;

@@ -5,11 +5,17 @@ global freq_threshold 0
 cd  "V:\STATISTICS\NON STUDY FOLDER\Academic Research\Eudract Tool\Stata"
 global datafile "raw_safety.csv"
 global soc_index meddra
+
 input exposed excessdeaths
 60 0
 67 0
 end
 save EXPOSED, replace
+
+*If you have a download from clinicaltrial.gov to be edited 
+*then provide the file name here
+global ct_original 1234.xml
+
 
 import delimited using "soc_code.csv", varnames(1) clear
 rename ${soc_index} soc
@@ -225,4 +231,12 @@ copy serious_blank.xml serious.xml , replace
 
 ! msxsl.exe simple.xml simpleToEudraCT.xslt -o table_eudract.xml
 
-display "Please email cctu@addenbrookes.nhs.uk to tell us if you have successfully uploaded a study to EudraCT.  This is to allow us to measure the impact of this tool."
+* these two lines below create table_ct_gov_safety.xml (basic safety xml file for clinicaltrials.gov)
+* and table_ct_gov.xml, if you provide the original download into 1234.xml, which has the safety results 
+* section edited and is suitable for upload into clinicaltrials.gov
+
+! msxsl.exe simple.xml simpleToCtGov.xslt -o table_ct_gov_safety.xml soc_xml_file_path='soc.xml'
+
+! msxsl.exe $ct_original find_replace.xslt -o table_ct_gov.xml replace_file_path='table_ct_gov_safety.xml'
+
+display "Please email cctu@addenbrookes.nhs.uk to tell us if you have successfully uploaded a study to EudraCT or ClinicalTrials.gov.  This is to allow us to measure the impact of this tool."

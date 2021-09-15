@@ -44,14 +44,13 @@ Have  a ClinicalTrials.gov account to test and it is working.
 
 API upload from within R is built as well
 
+SAS and stata code is now set up.
 
 
 * Need to update with doucmentation 
-* website 
+* website / update notes
 * sort out environment variables on Travis etc, for testing with passwords on CT.gov
-* Do Stata code
 * R testing ?
-
 * CRAn
 * Furthe dissemination
 
