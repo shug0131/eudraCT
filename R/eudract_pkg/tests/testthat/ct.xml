@@ -1,0 +1,1658 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prs:study_collection xmlns:prs="http://clinicaltrials.gov/prs">
+  <clinical_study>
+    <id_info>
+      <provider_name>NLM_DES</provider_name>
+      <provider_study_id>S0006HWA</provider_study_id>
+      <org_name>AddenbrookesH</org_name>
+      <org_study_id>1234</org_study_id>
+    </id_info>
+    <is_fda_regulated>No</is_fda_regulated>
+    <is_section_801>None</is_section_801>
+    <delayed_posting>None</delayed_posting>
+    <is_ind_study>No</is_ind_study>
+    <brief_title>Test Study for my tool</brief_title>
+    <acronym>TEST</acronym>
+    <official_title>Test Study for my tool</official_title>
+    <sponsors>
+      <lead_sponsor>
+        <agency>Cambridge University Hospitals NHS Foundation Trust</agency>
+      </lead_sponsor>
+      <resp_party>
+        <resp_party_type>Principal Investigator</resp_party_type>
+        <investigator_username>djayne</investigator_username>
+        <investigator_title>Dr</investigator_title>
+        <investigator_affiliation>Cambridge University Hospitals NHS Foundation Trust</investigator_affiliation>
+        <name_title/>
+        <organization/>
+        <phone/>
+        <phone_ext/>
+        <email/>
+      </resp_party>
+    </sponsors>
+    <oversight_info>
+      <irb_info>
+        <approval_status>Exempt</approval_status>
+      </irb_info>
+      <has_dmc>No</has_dmc>
+      <fda_regulated_drug>No</fda_regulated_drug>
+      <fda_regulated_device>No</fda_regulated_device>
+      <post_prior_to_approval>None</post_prior_to_approval>
+    </oversight_info>
+    <brief_summary>
+      <textblock>Test Trial </textblock>
+    </brief_summary>
+    <detailed_description>
+      <textblock/>
+    </detailed_description>
+    <overall_status>Completed</overall_status>
+    <why_stopped/>
+    <verification_date>2021-07</verification_date>
+    <start_date>2020-01-01</start_date>
+    <start_date_type>Actual</start_date_type>
+    <end_date/>
+    <last_follow_up_date>2021-02-01</last_follow_up_date>
+    <last_follow_up_date_type>Actual</last_follow_up_date_type>
+    <primary_compl_date>2021-01-01</primary_compl_date>
+    <primary_compl_date_type>Actual</primary_compl_date_type>
+    <study_design>
+      <study_type>Interventional</study_type>
+      <interventional_design>
+        <interventional_subtype>Treatment</interventional_subtype>
+        <phase>Phase 2</phase>
+        <assignment>Parallel Assignment</assignment>
+        <model_description>
+          <textblock/>
+        </model_description>
+        <allocation>Randomized</allocation>
+        <masking/>
+        <no_masking>true</no_masking>
+        <masked_subject>false</masked_subject>
+        <masked_caregiver>false</masked_caregiver>
+        <masked_investigator>false</masked_investigator>
+        <masked_assessor>false</masked_assessor>
+        <masking_description>
+          <textblock/>
+        </masking_description>
+        <control/>
+        <number_of_arms>2</number_of_arms>
+      </interventional_design>
+    </study_design>
+    <enrollment>400</enrollment>
+    <enrollment_type>Actual</enrollment_type>
+    <condition>Vasculitis</condition>
+    <arm_group>
+      <arm_group_label>Control</arm_group_label>
+      <arm_type>No Intervention</arm_type>
+      <arm_group_description>
+        <textblock/>
+      </arm_group_description>
+    </arm_group>
+    <arm_group>
+      <arm_group_label>Ritazarem</arm_group_label>
+      <arm_type>Experimental</arm_type>
+      <arm_group_description>
+        <textblock/>
+      </arm_group_description>
+    </arm_group>
+    <intervention>
+      <intervention_type>Drug</intervention_type>
+      <intervention_name>ritazarem</intervention_name>
+      <intervention_description>
+        <textblock>A drug that we want to look at</textblock>
+      </intervention_description>
+      <arm_group_label>Ritazarem</arm_group_label>
+    </intervention>
+    <eligibility>
+      <study_population>
+        <textblock/>
+      </study_population>
+      <sampling_method/>
+      <criteria>
+        <textblock>Inclusion Criteria:&#13;
+  - Vasculitis&#13;
+&#13;
+Exclusion Criteria:&#13;
+  - </textblock>
+      </criteria>
+      <healthy_volunteers>No</healthy_volunteers>
+      <gender>All</gender>
+      <gender_based>No</gender_based>
+      <gender_description>
+        <textblock/>
+      </gender_description>
+      <minimum_age>18 Years</minimum_age>
+      <maximum_age> N/A</maximum_age>
+    </eligibility>
+    <overall_contact>
+      <first_name>Simon</first_name>
+      <middle_name/>
+      <last_name>Bond</last_name>
+      <degrees/>
+      <phone>+441223596475</phone>
+      <phone_ext/>
+      <email>simon.bond@addenbrookes.nhs.uk</email>
+    </overall_contact>
+    <overall_contact_backup>
+      <first_name/>
+      <middle_name/>
+      <last_name/>
+      <degrees/>
+      <phone/>
+      <phone_ext/>
+      <email/>
+    </overall_contact_backup>
+    <location>
+      <facility>
+        <name>Cambridge Clinical Trials Unit</name>
+        <address>
+          <city>Cambridge</city>
+          <state/>
+          <country>United Kingdom</country>
+          <zip>cb20qq</zip>
+        </address>
+      </facility>
+      <status>Completed</status>
+      <contact>
+        <first_name>Simon</first_name>
+        <middle_name/>
+        <last_name>Bond</last_name>
+        <degrees/>
+        <phone>01223596475</phone>
+        <phone_ext/>
+        <email>simon.bond@addenbrookes.nhs.uk</email>
+      </contact>
+      <contact_backup>
+        <first_name/>
+        <middle_name/>
+        <last_name/>
+        <degrees/>
+        <phone/>
+        <phone_ext/>
+        <email/>
+      </contact_backup>
+    </location>
+    <ipd_sharing_statement>
+      <sharing_ipd>No</sharing_ipd>
+      <ipd_description>
+        <textblock/>
+      </ipd_description>
+      <ipd_info_type_protocol>false</ipd_info_type_protocol>
+      <ipd_info_type_sap>false</ipd_info_type_sap>
+      <ipd_info_type_icf>false</ipd_info_type_icf>
+      <ipd_info_type_csr>false</ipd_info_type_csr>
+      <ipd_info_type_analytic_code>false</ipd_info_type_analytic_code>
+      <ipd_time_frame>
+        <textblock/>
+      </ipd_time_frame>
+      <ipd_access_criteria>
+        <textblock/>
+      </ipd_access_criteria>
+      <ipd_url>http://</ipd_url>
+    </ipd_sharing_statement>
+    <rrs:result xmlns:rrs="http://clinicaltrials.gov/rrs">
+      <certainAgreement/>
+      <outcomeMeasures>
+        <outcomeMeasure>
+          <measureRows/>
+          <measureDescription/>
+          <timeFrame/>
+          <title>Time to relapse</title>
+          <anticipatedResultPostingDate/>
+          <measureType>Primary</measureType>
+          <outcomeMeasureAnalyses/>
+          <outcomeReportingGroups/>
+        </outcomeMeasure>
+      </outcomeMeasures>
+      <pointOfContact/>
+      <reportedEvents>
+        <allCauseMortComment>all-cause mortality</allCauseMortComment>
+        <assessmentType>Non-Systematic Assessment</assessmentType>
+        <frequencyReportingThreshold>0.0</frequencyReportingThreshold>
+        <frequentAdverseEvents>
+          <frequentEvent>
+            <adverseEventStats>
+              <eventStats>
+                <reportingGroupId>idp924706384</reportingGroupId>
+                <numEvents>11</numEvents>
+                <numSubjectsAffected>7</numSubjectsAffected>
+                <numSubjects>20</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924707536</reportingGroupId>
+                <numEvents>16</numEvents>
+                <numSubjectsAffected>8</numSubjectsAffected>
+                <numSubjects>22</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924708688</reportingGroupId>
+                <numEvents>13</numEvents>
+                <numSubjectsAffected>7</numSubjectsAffected>
+                <numSubjects>18</numSubjects>
+              </eventStats>
+            </adverseEventStats>
+            <assessmentType>Non-Systematic Assessment</assessmentType>
+            <notes>Abdominal distension</notes>
+            <organSystemName>Gastrointestinal disorders</organSystemName>
+            <sourceVocabulary>MedDRA 22.0</sourceVocabulary>
+            <term>Abdominal distension</term>
+          </frequentEvent>
+          <frequentEvent>
+            <adverseEventStats>
+              <eventStats>
+                <reportingGroupId>idp924706384</reportingGroupId>
+                <numEvents>9</numEvents>
+                <numSubjectsAffected>4</numSubjectsAffected>
+                <numSubjects>20</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924707536</reportingGroupId>
+                <numEvents>14</numEvents>
+                <numSubjectsAffected>4</numSubjectsAffected>
+                <numSubjects>22</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924708688</reportingGroupId>
+                <numEvents>4</numEvents>
+                <numSubjectsAffected>3</numSubjectsAffected>
+                <numSubjects>18</numSubjects>
+              </eventStats>
+            </adverseEventStats>
+            <assessmentType>Non-Systematic Assessment</assessmentType>
+            <notes>Abdominal infection</notes>
+            <organSystemName>Infections and infestations</organSystemName>
+            <sourceVocabulary>MedDRA 22.0</sourceVocabulary>
+            <term>Abdominal infection</term>
+          </frequentEvent>
+          <frequentEvent>
+            <adverseEventStats>
+              <eventStats>
+                <reportingGroupId>idp924706384</reportingGroupId>
+                <numEvents>10</numEvents>
+                <numSubjectsAffected>4</numSubjectsAffected>
+                <numSubjects>20</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924707536</reportingGroupId>
+                <numEvents>11</numEvents>
+                <numSubjectsAffected>3</numSubjectsAffected>
+                <numSubjects>22</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924708688</reportingGroupId>
+                <numEvents>11</numEvents>
+                <numSubjectsAffected>9</numSubjectsAffected>
+                <numSubjects>18</numSubjects>
+              </eventStats>
+            </adverseEventStats>
+            <assessmentType>Non-Systematic Assessment</assessmentType>
+            <notes>Abdominal soft tissue necrosis</notes>
+            <organSystemName>Musculoskeletal and connective tissue disorders</organSystemName>
+            <sourceVocabulary>MedDRA 22.0</sourceVocabulary>
+            <term>Abdominal soft tissue necrosis</term>
+          </frequentEvent>
+          <frequentEvent>
+            <adverseEventStats>
+              <eventStats>
+                <reportingGroupId>idp924706384</reportingGroupId>
+                <numEvents>17</numEvents>
+                <numSubjectsAffected>7</numSubjectsAffected>
+                <numSubjects>20</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924707536</reportingGroupId>
+                <numEvents>11</numEvents>
+                <numSubjectsAffected>8</numSubjectsAffected>
+                <numSubjects>22</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924708688</reportingGroupId>
+                <numEvents>18</numEvents>
+                <numSubjectsAffected>8</numSubjectsAffected>
+                <numSubjects>18</numSubjects>
+              </eventStats>
+            </adverseEventStats>
+            <assessmentType>Non-Systematic Assessment</assessmentType>
+            <notes>Abducens nerve disorder</notes>
+            <organSystemName>Nervous system disorders</organSystemName>
+            <sourceVocabulary>MedDRA 22.0</sourceVocabulary>
+            <term>Abducens nerve disorder</term>
+          </frequentEvent>
+          <frequentEvent>
+            <adverseEventStats>
+              <eventStats>
+                <reportingGroupId>idp924706384</reportingGroupId>
+                <numEvents>14</numEvents>
+                <numSubjectsAffected>6</numSubjectsAffected>
+                <numSubjects>20</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924707536</reportingGroupId>
+                <numEvents>8</numEvents>
+                <numSubjectsAffected>5</numSubjectsAffected>
+                <numSubjects>22</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924708688</reportingGroupId>
+                <numEvents>18</numEvents>
+                <numSubjectsAffected>11</numSubjectsAffected>
+                <numSubjects>18</numSubjects>
+              </eventStats>
+            </adverseEventStats>
+            <assessmentType>Non-Systematic Assessment</assessmentType>
+            <notes>Acidosis</notes>
+            <organSystemName>Metabolism and nutrition disorders</organSystemName>
+            <sourceVocabulary>MedDRA 22.0</sourceVocabulary>
+            <term>Acidosis</term>
+          </frequentEvent>
+          <frequentEvent>
+            <adverseEventStats>
+              <eventStats>
+                <reportingGroupId>idp924706384</reportingGroupId>
+                <numEvents>8</numEvents>
+                <numSubjectsAffected>6</numSubjectsAffected>
+                <numSubjects>20</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924707536</reportingGroupId>
+                <numEvents>14</numEvents>
+                <numSubjectsAffected>6</numSubjectsAffected>
+                <numSubjects>22</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924708688</reportingGroupId>
+                <numEvents>7</numEvents>
+                <numSubjectsAffected>2</numSubjectsAffected>
+                <numSubjects>18</numSubjects>
+              </eventStats>
+            </adverseEventStats>
+            <assessmentType>Non-Systematic Assessment</assessmentType>
+            <notes>Activated partial thromboplastin time prolonged</notes>
+            <organSystemName>Investigations</organSystemName>
+            <sourceVocabulary>MedDRA 22.0</sourceVocabulary>
+            <term>Activated partial thromboplastin time prolonged</term>
+          </frequentEvent>
+          <frequentEvent>
+            <adverseEventStats>
+              <eventStats>
+                <reportingGroupId>idp924706384</reportingGroupId>
+                <numEvents>12</numEvents>
+                <numSubjectsAffected>4</numSubjectsAffected>
+                <numSubjects>20</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924707536</reportingGroupId>
+                <numEvents>15</numEvents>
+                <numSubjectsAffected>11</numSubjectsAffected>
+                <numSubjects>22</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924708688</reportingGroupId>
+                <numEvents>6</numEvents>
+                <numSubjectsAffected>3</numSubjectsAffected>
+                <numSubjects>18</numSubjects>
+              </eventStats>
+            </adverseEventStats>
+            <assessmentType>Non-Systematic Assessment</assessmentType>
+            <notes>Acute coronary syndrome</notes>
+            <organSystemName>Cardiac disorders</organSystemName>
+            <sourceVocabulary>MedDRA 22.0</sourceVocabulary>
+            <term>Acute coronary syndrome</term>
+          </frequentEvent>
+          <frequentEvent>
+            <adverseEventStats>
+              <eventStats>
+                <reportingGroupId>idp924706384</reportingGroupId>
+                <numEvents>7</numEvents>
+                <numSubjectsAffected>2</numSubjectsAffected>
+                <numSubjects>20</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924707536</reportingGroupId>
+                <numEvents>21</numEvents>
+                <numSubjectsAffected>11</numSubjectsAffected>
+                <numSubjects>22</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924708688</reportingGroupId>
+                <numEvents>11</numEvents>
+                <numSubjectsAffected>5</numSubjectsAffected>
+                <numSubjects>18</numSubjects>
+              </eventStats>
+            </adverseEventStats>
+            <assessmentType>Non-Systematic Assessment</assessmentType>
+            <notes>Acute kidney injury</notes>
+            <organSystemName>Renal and urinary disorders</organSystemName>
+            <sourceVocabulary>MedDRA 22.0</sourceVocabulary>
+            <term>Acute kidney injury</term>
+          </frequentEvent>
+          <frequentEvent>
+            <adverseEventStats>
+              <eventStats>
+                <reportingGroupId>idp924706384</reportingGroupId>
+                <numEvents>18</numEvents>
+                <numSubjectsAffected>10</numSubjectsAffected>
+                <numSubjects>20</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924707536</reportingGroupId>
+                <numEvents>11</numEvents>
+                <numSubjectsAffected>5</numSubjectsAffected>
+                <numSubjects>22</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924708688</reportingGroupId>
+                <numEvents>4</numEvents>
+                <numSubjectsAffected>4</numSubjectsAffected>
+                <numSubjects>18</numSubjects>
+              </eventStats>
+            </adverseEventStats>
+            <assessmentType>Non-Systematic Assessment</assessmentType>
+            <notes>Adrenal insufficiency</notes>
+            <organSystemName>Endocrine disorders</organSystemName>
+            <sourceVocabulary>MedDRA 22.0</sourceVocabulary>
+            <term>Adrenal insufficiency</term>
+          </frequentEvent>
+          <frequentEvent>
+            <adverseEventStats>
+              <eventStats>
+                <reportingGroupId>idp924706384</reportingGroupId>
+                <numEvents>7</numEvents>
+                <numSubjectsAffected>4</numSubjectsAffected>
+                <numSubjects>20</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924707536</reportingGroupId>
+                <numEvents>6</numEvents>
+                <numSubjectsAffected>3</numSubjectsAffected>
+                <numSubjects>22</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924708688</reportingGroupId>
+                <numEvents>14</numEvents>
+                <numSubjectsAffected>8</numSubjectsAffected>
+                <numSubjects>18</numSubjects>
+              </eventStats>
+            </adverseEventStats>
+            <assessmentType>Non-Systematic Assessment</assessmentType>
+            <notes>Adult respiratory distress syndrome</notes>
+            <organSystemName>Respiratory, thoracic and mediastinal disorders</organSystemName>
+            <sourceVocabulary>MedDRA 22.0</sourceVocabulary>
+            <term>Adult respiratory distress syndrome</term>
+          </frequentEvent>
+          <frequentEvent>
+            <adverseEventStats>
+              <eventStats>
+                <reportingGroupId>idp924706384</reportingGroupId>
+                <numEvents>5</numEvents>
+                <numSubjectsAffected>5</numSubjectsAffected>
+                <numSubjects>20</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924707536</reportingGroupId>
+                <numEvents>7</numEvents>
+                <numSubjectsAffected>4</numSubjectsAffected>
+                <numSubjects>22</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924708688</reportingGroupId>
+                <numEvents>8</numEvents>
+                <numSubjectsAffected>7</numSubjectsAffected>
+                <numSubjects>18</numSubjects>
+              </eventStats>
+            </adverseEventStats>
+            <assessmentType>Non-Systematic Assessment</assessmentType>
+            <notes>Agitation</notes>
+            <organSystemName>Psychiatric disorders</organSystemName>
+            <sourceVocabulary>MedDRA 22.0</sourceVocabulary>
+            <term>Agitation</term>
+          </frequentEvent>
+          <frequentEvent>
+            <adverseEventStats>
+              <eventStats>
+                <reportingGroupId>idp924706384</reportingGroupId>
+                <numEvents>5</numEvents>
+                <numSubjectsAffected>4</numSubjectsAffected>
+                <numSubjects>20</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924707536</reportingGroupId>
+                <numEvents>17</numEvents>
+                <numSubjectsAffected>9</numSubjectsAffected>
+                <numSubjects>22</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924708688</reportingGroupId>
+                <numEvents>8</numEvents>
+                <numSubjectsAffected>3</numSubjectsAffected>
+                <numSubjects>18</numSubjects>
+              </eventStats>
+            </adverseEventStats>
+            <assessmentType>Non-Systematic Assessment</assessmentType>
+            <notes>Allergic reaction</notes>
+            <organSystemName>Immune system disorders</organSystemName>
+            <sourceVocabulary>MedDRA 22.0</sourceVocabulary>
+            <term>Allergic reaction</term>
+          </frequentEvent>
+          <frequentEvent>
+            <adverseEventStats>
+              <eventStats>
+                <reportingGroupId>idp924706384</reportingGroupId>
+                <numEvents>5</numEvents>
+                <numSubjectsAffected>4</numSubjectsAffected>
+                <numSubjects>20</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924707536</reportingGroupId>
+                <numEvents>11</numEvents>
+                <numSubjectsAffected>5</numSubjectsAffected>
+                <numSubjects>22</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924708688</reportingGroupId>
+                <numEvents>15</numEvents>
+                <numSubjectsAffected>5</numSubjectsAffected>
+                <numSubjects>18</numSubjects>
+              </eventStats>
+            </adverseEventStats>
+            <assessmentType>Non-Systematic Assessment</assessmentType>
+            <notes>Alopecia</notes>
+            <organSystemName>Skin and subcutaneous tissue disorders</organSystemName>
+            <sourceVocabulary>MedDRA 22.0</sourceVocabulary>
+            <term>Alopecia</term>
+          </frequentEvent>
+          <frequentEvent>
+            <adverseEventStats>
+              <eventStats>
+                <reportingGroupId>idp924706384</reportingGroupId>
+                <numEvents>10</numEvents>
+                <numSubjectsAffected>3</numSubjectsAffected>
+                <numSubjects>20</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924707536</reportingGroupId>
+                <numEvents>14</numEvents>
+                <numSubjectsAffected>6</numSubjectsAffected>
+                <numSubjects>22</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924708688</reportingGroupId>
+                <numEvents>11</numEvents>
+                <numSubjectsAffected>5</numSubjectsAffected>
+                <numSubjects>18</numSubjects>
+              </eventStats>
+            </adverseEventStats>
+            <assessmentType>Non-Systematic Assessment</assessmentType>
+            <notes>Anemia</notes>
+            <organSystemName>Blood and lymphatic system disorders</organSystemName>
+            <sourceVocabulary>MedDRA 22.0</sourceVocabulary>
+            <term>Anemia</term>
+          </frequentEvent>
+          <frequentEvent>
+            <adverseEventStats>
+              <eventStats>
+                <reportingGroupId>idp924706384</reportingGroupId>
+                <numEvents>9</numEvents>
+                <numSubjectsAffected>5</numSubjectsAffected>
+                <numSubjects>20</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924707536</reportingGroupId>
+                <numEvents>14</numEvents>
+                <numSubjectsAffected>4</numSubjectsAffected>
+                <numSubjects>22</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924708688</reportingGroupId>
+                <numEvents>17</numEvents>
+                <numSubjectsAffected>8</numSubjectsAffected>
+                <numSubjects>18</numSubjects>
+              </eventStats>
+            </adverseEventStats>
+            <assessmentType>Non-Systematic Assessment</assessmentType>
+            <notes>Ankle fracture</notes>
+            <organSystemName>Injury, poisoning and procedural complications</organSystemName>
+            <sourceVocabulary>MedDRA 22.0</sourceVocabulary>
+            <term>Ankle fracture</term>
+          </frequentEvent>
+          <frequentEvent>
+            <adverseEventStats>
+              <eventStats>
+                <reportingGroupId>idp924706384</reportingGroupId>
+                <numEvents>16</numEvents>
+                <numSubjectsAffected>8</numSubjectsAffected>
+                <numSubjects>20</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924707536</reportingGroupId>
+                <numEvents>15</numEvents>
+                <numSubjectsAffected>6</numSubjectsAffected>
+                <numSubjects>22</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924708688</reportingGroupId>
+                <numEvents>11</numEvents>
+                <numSubjectsAffected>6</numSubjectsAffected>
+                <numSubjects>18</numSubjects>
+              </eventStats>
+            </adverseEventStats>
+            <assessmentType>Non-Systematic Assessment</assessmentType>
+            <notes>Azoospermia</notes>
+            <organSystemName>Reproductive system and breast disorders</organSystemName>
+            <sourceVocabulary>MedDRA 22.0</sourceVocabulary>
+            <term>Azoospermia</term>
+          </frequentEvent>
+          <frequentEvent>
+            <adverseEventStats>
+              <eventStats>
+                <reportingGroupId>idp924706384</reportingGroupId>
+                <numEvents>7</numEvents>
+                <numSubjectsAffected>4</numSubjectsAffected>
+                <numSubjects>20</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924707536</reportingGroupId>
+                <numEvents>16</numEvents>
+                <numSubjectsAffected>8</numSubjectsAffected>
+                <numSubjects>22</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924708688</reportingGroupId>
+                <numEvents>9</numEvents>
+                <numSubjectsAffected>3</numSubjectsAffected>
+                <numSubjects>18</numSubjects>
+              </eventStats>
+            </adverseEventStats>
+            <assessmentType>Non-Systematic Assessment</assessmentType>
+            <notes>Bile duct stenosis</notes>
+            <organSystemName>Hepatobiliary disorders</organSystemName>
+            <sourceVocabulary>MedDRA 22.0</sourceVocabulary>
+            <term>Bile duct stenosis</term>
+          </frequentEvent>
+          <frequentEvent>
+            <adverseEventStats>
+              <eventStats>
+                <reportingGroupId>idp924706384</reportingGroupId>
+                <numEvents>7</numEvents>
+                <numSubjectsAffected>2</numSubjectsAffected>
+                <numSubjects>20</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924707536</reportingGroupId>
+                <numEvents>9</numEvents>
+                <numSubjectsAffected>6</numSubjectsAffected>
+                <numSubjects>22</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924708688</reportingGroupId>
+                <numEvents>16</numEvents>
+                <numSubjectsAffected>8</numSubjectsAffected>
+                <numSubjects>18</numSubjects>
+              </eventStats>
+            </adverseEventStats>
+            <assessmentType>Non-Systematic Assessment</assessmentType>
+            <notes>Blurred vision</notes>
+            <organSystemName>Eye disorders</organSystemName>
+            <sourceVocabulary>MedDRA 22.0</sourceVocabulary>
+            <term>Blurred vision</term>
+          </frequentEvent>
+          <frequentEvent>
+            <adverseEventStats>
+              <eventStats>
+                <reportingGroupId>idp924706384</reportingGroupId>
+                <numEvents>8</numEvents>
+                <numSubjectsAffected>2</numSubjectsAffected>
+                <numSubjects>20</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924707536</reportingGroupId>
+                <numEvents>5</numEvents>
+                <numSubjectsAffected>5</numSubjectsAffected>
+                <numSubjects>22</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924708688</reportingGroupId>
+                <numEvents>8</numEvents>
+                <numSubjectsAffected>7</numSubjectsAffected>
+                <numSubjects>18</numSubjects>
+              </eventStats>
+            </adverseEventStats>
+            <assessmentType>Non-Systematic Assessment</assessmentType>
+            <notes>Capillary leak syndrome</notes>
+            <organSystemName>Vascular disorders</organSystemName>
+            <sourceVocabulary>MedDRA 22.0</sourceVocabulary>
+            <term>Capillary leak syndrome</term>
+          </frequentEvent>
+          <frequentEvent>
+            <adverseEventStats>
+              <eventStats>
+                <reportingGroupId>idp924706384</reportingGroupId>
+                <numEvents>6</numEvents>
+                <numSubjectsAffected>3</numSubjectsAffected>
+                <numSubjects>20</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924707536</reportingGroupId>
+                <numEvents>8</numEvents>
+                <numSubjectsAffected>5</numSubjectsAffected>
+                <numSubjects>22</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924708688</reportingGroupId>
+                <numEvents>15</numEvents>
+                <numSubjectsAffected>10</numSubjectsAffected>
+                <numSubjects>18</numSubjects>
+              </eventStats>
+            </adverseEventStats>
+            <assessmentType>Non-Systematic Assessment</assessmentType>
+            <notes>Chills</notes>
+            <organSystemName>General disorders and administration site conditions</organSystemName>
+            <sourceVocabulary>MedDRA 22.0</sourceVocabulary>
+            <term>Chills</term>
+          </frequentEvent>
+          <frequentEvent>
+            <adverseEventStats>
+              <eventStats>
+                <reportingGroupId>idp924706384</reportingGroupId>
+                <numEvents>4</numEvents>
+                <numSubjectsAffected>2</numSubjectsAffected>
+                <numSubjects>20</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924707536</reportingGroupId>
+                <numEvents>11</numEvents>
+                <numSubjectsAffected>6</numSubjectsAffected>
+                <numSubjects>22</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924708688</reportingGroupId>
+                <numEvents>7</numEvents>
+                <numSubjectsAffected>7</numSubjectsAffected>
+                <numSubjects>18</numSubjects>
+              </eventStats>
+            </adverseEventStats>
+            <assessmentType>Non-Systematic Assessment</assessmentType>
+            <notes>Congenital, familial and genetic disorders - Other, specify</notes>
+            <organSystemName>Congenital, familial and genetic disorders</organSystemName>
+            <sourceVocabulary>MedDRA 22.0</sourceVocabulary>
+            <term>Congenital, familial and genetic disorders - Other, specify</term>
+          </frequentEvent>
+          <frequentEvent>
+            <adverseEventStats>
+              <eventStats>
+                <reportingGroupId>idp924706384</reportingGroupId>
+                <numEvents>18</numEvents>
+                <numSubjectsAffected>8</numSubjectsAffected>
+                <numSubjects>20</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924707536</reportingGroupId>
+                <numEvents>16</numEvents>
+                <numSubjectsAffected>7</numSubjectsAffected>
+                <numSubjects>22</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924708688</reportingGroupId>
+                <numEvents>8</numEvents>
+                <numSubjectsAffected>5</numSubjectsAffected>
+                <numSubjects>18</numSubjects>
+              </eventStats>
+            </adverseEventStats>
+            <assessmentType>Non-Systematic Assessment</assessmentType>
+            <notes>Ear pain</notes>
+            <organSystemName>Ear and labyrinth disorders</organSystemName>
+            <sourceVocabulary>MedDRA 22.0</sourceVocabulary>
+            <term>Ear pain</term>
+          </frequentEvent>
+          <frequentEvent>
+            <adverseEventStats>
+              <eventStats>
+                <reportingGroupId>idp924706384</reportingGroupId>
+                <numEvents>7</numEvents>
+                <numSubjectsAffected>4</numSubjectsAffected>
+                <numSubjects>20</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924707536</reportingGroupId>
+                <numEvents>22</numEvents>
+                <numSubjectsAffected>14</numSubjectsAffected>
+                <numSubjects>22</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924708688</reportingGroupId>
+                <numEvents>7</numEvents>
+                <numSubjectsAffected>6</numSubjectsAffected>
+                <numSubjects>18</numSubjects>
+              </eventStats>
+            </adverseEventStats>
+            <assessmentType>Non-Systematic Assessment</assessmentType>
+            <notes>Fetal death</notes>
+            <organSystemName>Pregnancy, puerperium and perinatal conditions</organSystemName>
+            <sourceVocabulary>MedDRA 22.0</sourceVocabulary>
+            <term>Fetal death</term>
+          </frequentEvent>
+          <frequentEvent>
+            <adverseEventStats>
+              <eventStats>
+                <reportingGroupId>idp924706384</reportingGroupId>
+                <numEvents>5</numEvents>
+                <numSubjectsAffected>4</numSubjectsAffected>
+                <numSubjects>20</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924707536</reportingGroupId>
+                <numEvents>13</numEvents>
+                <numSubjectsAffected>4</numSubjectsAffected>
+                <numSubjects>22</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924708688</reportingGroupId>
+                <numEvents>14</numEvents>
+                <numSubjectsAffected>5</numSubjectsAffected>
+                <numSubjects>18</numSubjects>
+              </eventStats>
+            </adverseEventStats>
+            <assessmentType>Non-Systematic Assessment</assessmentType>
+            <notes>Leukemia secondary to oncology chemotherapy</notes>
+            <organSystemName>Neoplasms benign, malignant and unspecified (incl cysts and polyps)</organSystemName>
+            <sourceVocabulary>MedDRA 22.0</sourceVocabulary>
+            <term>Leukemia secondary to oncology chemotherapy</term>
+          </frequentEvent>
+          <frequentEvent>
+            <adverseEventStats>
+              <eventStats>
+                <reportingGroupId>idp924706384</reportingGroupId>
+                <numEvents>14</numEvents>
+                <numSubjectsAffected>8</numSubjectsAffected>
+                <numSubjects>20</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924707536</reportingGroupId>
+                <numEvents>7</numEvents>
+                <numSubjectsAffected>7</numSubjectsAffected>
+                <numSubjects>22</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924708688</reportingGroupId>
+                <numEvents>3</numEvents>
+                <numSubjectsAffected>1</numSubjectsAffected>
+                <numSubjects>18</numSubjects>
+              </eventStats>
+            </adverseEventStats>
+            <assessmentType>Non-Systematic Assessment</assessmentType>
+            <notes>Menopause</notes>
+            <organSystemName>Social circumstances</organSystemName>
+            <sourceVocabulary>MedDRA 22.0</sourceVocabulary>
+            <term>Menopause</term>
+          </frequentEvent>
+          <frequentEvent>
+            <adverseEventStats>
+              <eventStats>
+                <reportingGroupId>idp924706384</reportingGroupId>
+                <numEvents>15</numEvents>
+                <numSubjectsAffected>6</numSubjectsAffected>
+                <numSubjects>20</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924707536</reportingGroupId>
+                <numEvents>10</numEvents>
+                <numSubjectsAffected>4</numSubjectsAffected>
+                <numSubjects>22</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924708688</reportingGroupId>
+                <numEvents>14</numEvents>
+                <numSubjectsAffected>4</numSubjectsAffected>
+                <numSubjects>18</numSubjects>
+              </eventStats>
+            </adverseEventStats>
+            <assessmentType>Non-Systematic Assessment</assessmentType>
+            <notes>Surgical and medical procedures - Other, specify</notes>
+            <organSystemName>Surgical and medical procedures</organSystemName>
+            <sourceVocabulary>MedDRA 22.0</sourceVocabulary>
+            <term>Surgical and medical procedures - Other, specify</term>
+          </frequentEvent>
+        </frequentAdverseEvents>
+        <interventionGroups>
+          <interventionGroup id="idp924706384">
+            <description>Group A</description>
+            <numDeaths>3</numDeaths>
+            <numSubjectsFrequentEvents>10</numSubjectsFrequentEvents>
+            <numSubjectsSeriousEvents>10</numSubjectsSeriousEvents>
+            <partAtRiskAllCauseMort>20</partAtRiskAllCauseMort>
+            <partAtRiskFrequentEvents>20</partAtRiskFrequentEvents>
+            <partAtRiskSeriousEvents>20</partAtRiskSeriousEvents>
+            <title>Group A</title>
+          </interventionGroup>
+          <interventionGroup id="idp924707536">
+            <description>Group B</description>
+            <numDeaths>6</numDeaths>
+            <numSubjectsFrequentEvents>14</numSubjectsFrequentEvents>
+            <numSubjectsSeriousEvents>13</numSubjectsSeriousEvents>
+            <partAtRiskAllCauseMort>22</partAtRiskAllCauseMort>
+            <partAtRiskFrequentEvents>22</partAtRiskFrequentEvents>
+            <partAtRiskSeriousEvents>22</partAtRiskSeriousEvents>
+            <title>Group B</title>
+          </interventionGroup>
+          <interventionGroup id="idp924708688">
+            <description>Group C</description>
+            <numDeaths>2</numDeaths>
+            <numSubjectsFrequentEvents>11</numSubjectsFrequentEvents>
+            <numSubjectsSeriousEvents>9</numSubjectsSeriousEvents>
+            <partAtRiskAllCauseMort>18</partAtRiskAllCauseMort>
+            <partAtRiskFrequentEvents>18</partAtRiskFrequentEvents>
+            <partAtRiskSeriousEvents>18</partAtRiskSeriousEvents>
+            <title>Group C</title>
+          </interventionGroup>
+        </interventionGroups>
+        <notes/>
+        <seriousAdverseEvents>
+          <seriousEvent>
+            <adverseEventStats>
+              <eventStats>
+                <reportingGroupId>idp924706384</reportingGroupId>
+                <numEvents>8</numEvents>
+                <numSubjectsAffected>7</numSubjectsAffected>
+                <numSubjects>20</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924707536</reportingGroupId>
+                <numEvents>4</numEvents>
+                <numSubjectsAffected>3</numSubjectsAffected>
+                <numSubjects>22</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924708688</reportingGroupId>
+                <numEvents>8</numEvents>
+                <numSubjectsAffected>2</numSubjectsAffected>
+                <numSubjects>18</numSubjects>
+              </eventStats>
+            </adverseEventStats>
+            <assessmentType>Non-Systematic Assessment</assessmentType>
+            <notes>Abdominal distension</notes>
+            <organSystemName>Gastrointestinal disorders</organSystemName>
+            <sourceVocabulary>MedDRA 22.0</sourceVocabulary>
+            <term>Abdominal distension</term>
+          </seriousEvent>
+          <seriousEvent>
+            <adverseEventStats>
+              <eventStats>
+                <reportingGroupId>idp924706384</reportingGroupId>
+                <numEvents>7</numEvents>
+                <numSubjectsAffected>3</numSubjectsAffected>
+                <numSubjects>20</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924707536</reportingGroupId>
+                <numEvents>8</numEvents>
+                <numSubjectsAffected>5</numSubjectsAffected>
+                <numSubjects>22</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924708688</reportingGroupId>
+                <numEvents>10</numEvents>
+                <numSubjectsAffected>4</numSubjectsAffected>
+                <numSubjects>18</numSubjects>
+              </eventStats>
+            </adverseEventStats>
+            <assessmentType>Non-Systematic Assessment</assessmentType>
+            <notes>Abdominal infection</notes>
+            <organSystemName>Infections and infestations</organSystemName>
+            <sourceVocabulary>MedDRA 22.0</sourceVocabulary>
+            <term>Abdominal infection</term>
+          </seriousEvent>
+          <seriousEvent>
+            <adverseEventStats>
+              <eventStats>
+                <reportingGroupId>idp924706384</reportingGroupId>
+                <numEvents>12</numEvents>
+                <numSubjectsAffected>5</numSubjectsAffected>
+                <numSubjects>20</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924707536</reportingGroupId>
+                <numEvents>10</numEvents>
+                <numSubjectsAffected>4</numSubjectsAffected>
+                <numSubjects>22</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924708688</reportingGroupId>
+                <numEvents>9</numEvents>
+                <numSubjectsAffected>6</numSubjectsAffected>
+                <numSubjects>18</numSubjects>
+              </eventStats>
+            </adverseEventStats>
+            <assessmentType>Non-Systematic Assessment</assessmentType>
+            <notes>Abdominal soft tissue necrosis</notes>
+            <organSystemName>Musculoskeletal and connective tissue disorders</organSystemName>
+            <sourceVocabulary>MedDRA 22.0</sourceVocabulary>
+            <term>Abdominal soft tissue necrosis</term>
+          </seriousEvent>
+          <seriousEvent>
+            <adverseEventStats>
+              <eventStats>
+                <reportingGroupId>idp924706384</reportingGroupId>
+                <numEvents>8</numEvents>
+                <numSubjectsAffected>5</numSubjectsAffected>
+                <numSubjects>20</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924707536</reportingGroupId>
+                <numEvents>8</numEvents>
+                <numSubjectsAffected>6</numSubjectsAffected>
+                <numSubjects>22</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924708688</reportingGroupId>
+                <numEvents>7</numEvents>
+                <numSubjectsAffected>3</numSubjectsAffected>
+                <numSubjects>18</numSubjects>
+              </eventStats>
+            </adverseEventStats>
+            <assessmentType>Non-Systematic Assessment</assessmentType>
+            <notes>Abducens nerve disorder</notes>
+            <organSystemName>Nervous system disorders</organSystemName>
+            <sourceVocabulary>MedDRA 22.0</sourceVocabulary>
+            <term>Abducens nerve disorder</term>
+          </seriousEvent>
+          <seriousEvent>
+            <adverseEventStats>
+              <eventStats>
+                <reportingGroupId>idp924706384</reportingGroupId>
+                <numEvents>10</numEvents>
+                <numSubjectsAffected>8</numSubjectsAffected>
+                <numSubjects>20</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924707536</reportingGroupId>
+                <numEvents>15</numEvents>
+                <numSubjectsAffected>5</numSubjectsAffected>
+                <numSubjects>22</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924708688</reportingGroupId>
+                <numEvents>9</numEvents>
+                <numSubjectsAffected>2</numSubjectsAffected>
+                <numSubjects>18</numSubjects>
+              </eventStats>
+            </adverseEventStats>
+            <assessmentType>Non-Systematic Assessment</assessmentType>
+            <notes>Acidosis</notes>
+            <organSystemName>Metabolism and nutrition disorders</organSystemName>
+            <sourceVocabulary>MedDRA 22.0</sourceVocabulary>
+            <term>Acidosis</term>
+          </seriousEvent>
+          <seriousEvent>
+            <adverseEventStats>
+              <eventStats>
+                <reportingGroupId>idp924706384</reportingGroupId>
+                <numEvents>8</numEvents>
+                <numSubjectsAffected>4</numSubjectsAffected>
+                <numSubjects>20</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924707536</reportingGroupId>
+                <numEvents>11</numEvents>
+                <numSubjectsAffected>6</numSubjectsAffected>
+                <numSubjects>22</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924708688</reportingGroupId>
+                <numEvents>9</numEvents>
+                <numSubjectsAffected>5</numSubjectsAffected>
+                <numSubjects>18</numSubjects>
+              </eventStats>
+            </adverseEventStats>
+            <assessmentType>Non-Systematic Assessment</assessmentType>
+            <notes>Activated partial thromboplastin time prolonged</notes>
+            <organSystemName>Investigations</organSystemName>
+            <sourceVocabulary>MedDRA 22.0</sourceVocabulary>
+            <term>Activated partial thromboplastin time prolonged</term>
+          </seriousEvent>
+          <seriousEvent>
+            <adverseEventStats>
+              <eventStats>
+                <reportingGroupId>idp924706384</reportingGroupId>
+                <numEvents>4</numEvents>
+                <numSubjectsAffected>3</numSubjectsAffected>
+                <numSubjects>20</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924707536</reportingGroupId>
+                <numEvents>9</numEvents>
+                <numSubjectsAffected>4</numSubjectsAffected>
+                <numSubjects>22</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924708688</reportingGroupId>
+                <numEvents>15</numEvents>
+                <numSubjectsAffected>9</numSubjectsAffected>
+                <numSubjects>18</numSubjects>
+              </eventStats>
+            </adverseEventStats>
+            <assessmentType>Non-Systematic Assessment</assessmentType>
+            <notes>Acute coronary syndrome</notes>
+            <organSystemName>Cardiac disorders</organSystemName>
+            <sourceVocabulary>MedDRA 22.0</sourceVocabulary>
+            <term>Acute coronary syndrome</term>
+          </seriousEvent>
+          <seriousEvent>
+            <adverseEventStats>
+              <eventStats>
+                <reportingGroupId>idp924706384</reportingGroupId>
+                <numEvents>5</numEvents>
+                <numSubjectsAffected>4</numSubjectsAffected>
+                <numSubjects>20</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924707536</reportingGroupId>
+                <numEvents>9</numEvents>
+                <numSubjectsAffected>5</numSubjectsAffected>
+                <numSubjects>22</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924708688</reportingGroupId>
+                <numEvents>0</numEvents>
+                <numSubjectsAffected>0</numSubjectsAffected>
+                <numSubjects>18</numSubjects>
+              </eventStats>
+            </adverseEventStats>
+            <assessmentType>Non-Systematic Assessment</assessmentType>
+            <notes>Acute kidney injury</notes>
+            <organSystemName>Renal and urinary disorders</organSystemName>
+            <sourceVocabulary>MedDRA 22.0</sourceVocabulary>
+            <term>Acute kidney injury</term>
+          </seriousEvent>
+          <seriousEvent>
+            <adverseEventStats>
+              <eventStats>
+                <reportingGroupId>idp924706384</reportingGroupId>
+                <numEvents>12</numEvents>
+                <numSubjectsAffected>5</numSubjectsAffected>
+                <numSubjects>20</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924707536</reportingGroupId>
+                <numEvents>17</numEvents>
+                <numSubjectsAffected>12</numSubjectsAffected>
+                <numSubjects>22</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924708688</reportingGroupId>
+                <numEvents>8</numEvents>
+                <numSubjectsAffected>3</numSubjectsAffected>
+                <numSubjects>18</numSubjects>
+              </eventStats>
+            </adverseEventStats>
+            <assessmentType>Non-Systematic Assessment</assessmentType>
+            <notes>Adrenal insufficiency</notes>
+            <organSystemName>Endocrine disorders</organSystemName>
+            <sourceVocabulary>MedDRA 22.0</sourceVocabulary>
+            <term>Adrenal insufficiency</term>
+          </seriousEvent>
+          <seriousEvent>
+            <adverseEventStats>
+              <eventStats>
+                <reportingGroupId>idp924706384</reportingGroupId>
+                <numEvents>17</numEvents>
+                <numSubjectsAffected>7</numSubjectsAffected>
+                <numSubjects>20</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924707536</reportingGroupId>
+                <numEvents>22</numEvents>
+                <numSubjectsAffected>12</numSubjectsAffected>
+                <numSubjects>22</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924708688</reportingGroupId>
+                <numEvents>12</numEvents>
+                <numSubjectsAffected>5</numSubjectsAffected>
+                <numSubjects>18</numSubjects>
+              </eventStats>
+            </adverseEventStats>
+            <assessmentType>Non-Systematic Assessment</assessmentType>
+            <notes>Adult respiratory distress syndrome</notes>
+            <organSystemName>Respiratory, thoracic and mediastinal disorders</organSystemName>
+            <sourceVocabulary>MedDRA 22.0</sourceVocabulary>
+            <term>Adult respiratory distress syndrome</term>
+          </seriousEvent>
+          <seriousEvent>
+            <adverseEventStats>
+              <eventStats>
+                <reportingGroupId>idp924706384</reportingGroupId>
+                <numEvents>8</numEvents>
+                <numSubjectsAffected>6</numSubjectsAffected>
+                <numSubjects>20</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924707536</reportingGroupId>
+                <numEvents>15</numEvents>
+                <numSubjectsAffected>10</numSubjectsAffected>
+                <numSubjects>22</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924708688</reportingGroupId>
+                <numEvents>12</numEvents>
+                <numSubjectsAffected>2</numSubjectsAffected>
+                <numSubjects>18</numSubjects>
+              </eventStats>
+            </adverseEventStats>
+            <assessmentType>Non-Systematic Assessment</assessmentType>
+            <notes>Agitation</notes>
+            <organSystemName>Psychiatric disorders</organSystemName>
+            <sourceVocabulary>MedDRA 22.0</sourceVocabulary>
+            <term>Agitation</term>
+          </seriousEvent>
+          <seriousEvent>
+            <adverseEventStats>
+              <eventStats>
+                <reportingGroupId>idp924706384</reportingGroupId>
+                <numEvents>10</numEvents>
+                <numSubjectsAffected>7</numSubjectsAffected>
+                <numSubjects>20</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924707536</reportingGroupId>
+                <numEvents>13</numEvents>
+                <numSubjectsAffected>8</numSubjectsAffected>
+                <numSubjects>22</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924708688</reportingGroupId>
+                <numEvents>11</numEvents>
+                <numSubjectsAffected>7</numSubjectsAffected>
+                <numSubjects>18</numSubjects>
+              </eventStats>
+            </adverseEventStats>
+            <assessmentType>Non-Systematic Assessment</assessmentType>
+            <notes>Allergic reaction</notes>
+            <organSystemName>Immune system disorders</organSystemName>
+            <sourceVocabulary>MedDRA 22.0</sourceVocabulary>
+            <term>Allergic reaction</term>
+          </seriousEvent>
+          <seriousEvent>
+            <adverseEventStats>
+              <eventStats>
+                <reportingGroupId>idp924706384</reportingGroupId>
+                <numEvents>6</numEvents>
+                <numSubjectsAffected>3</numSubjectsAffected>
+                <numSubjects>20</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924707536</reportingGroupId>
+                <numEvents>10</numEvents>
+                <numSubjectsAffected>8</numSubjectsAffected>
+                <numSubjects>22</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924708688</reportingGroupId>
+                <numEvents>3</numEvents>
+                <numSubjectsAffected>2</numSubjectsAffected>
+                <numSubjects>18</numSubjects>
+              </eventStats>
+            </adverseEventStats>
+            <assessmentType>Non-Systematic Assessment</assessmentType>
+            <notes>Alopecia</notes>
+            <organSystemName>Skin and subcutaneous tissue disorders</organSystemName>
+            <sourceVocabulary>MedDRA 22.0</sourceVocabulary>
+            <term>Alopecia</term>
+          </seriousEvent>
+          <seriousEvent>
+            <adverseEventStats>
+              <eventStats>
+                <reportingGroupId>idp924706384</reportingGroupId>
+                <numEvents>6</numEvents>
+                <numSubjectsAffected>6</numSubjectsAffected>
+                <numSubjects>20</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924707536</reportingGroupId>
+                <numEvents>16</numEvents>
+                <numSubjectsAffected>7</numSubjectsAffected>
+                <numSubjects>22</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924708688</reportingGroupId>
+                <numEvents>13</numEvents>
+                <numSubjectsAffected>3</numSubjectsAffected>
+                <numSubjects>18</numSubjects>
+              </eventStats>
+            </adverseEventStats>
+            <assessmentType>Non-Systematic Assessment</assessmentType>
+            <notes>Anemia</notes>
+            <organSystemName>Blood and lymphatic system disorders</organSystemName>
+            <sourceVocabulary>MedDRA 22.0</sourceVocabulary>
+            <term>Anemia</term>
+          </seriousEvent>
+          <seriousEvent>
+            <adverseEventStats>
+              <eventStats>
+                <reportingGroupId>idp924706384</reportingGroupId>
+                <numEvents>6</numEvents>
+                <numSubjectsAffected>5</numSubjectsAffected>
+                <numSubjects>20</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924707536</reportingGroupId>
+                <numEvents>9</numEvents>
+                <numSubjectsAffected>6</numSubjectsAffected>
+                <numSubjects>22</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924708688</reportingGroupId>
+                <numEvents>14</numEvents>
+                <numSubjectsAffected>7</numSubjectsAffected>
+                <numSubjects>18</numSubjects>
+              </eventStats>
+            </adverseEventStats>
+            <assessmentType>Non-Systematic Assessment</assessmentType>
+            <notes>Ankle fracture</notes>
+            <organSystemName>Injury, poisoning and procedural complications</organSystemName>
+            <sourceVocabulary>MedDRA 22.0</sourceVocabulary>
+            <term>Ankle fracture</term>
+          </seriousEvent>
+          <seriousEvent>
+            <adverseEventStats>
+              <eventStats>
+                <reportingGroupId>idp924706384</reportingGroupId>
+                <numEvents>11</numEvents>
+                <numSubjectsAffected>5</numSubjectsAffected>
+                <numSubjects>20</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924707536</reportingGroupId>
+                <numEvents>5</numEvents>
+                <numSubjectsAffected>3</numSubjectsAffected>
+                <numSubjects>22</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924708688</reportingGroupId>
+                <numEvents>9</numEvents>
+                <numSubjectsAffected>4</numSubjectsAffected>
+                <numSubjects>18</numSubjects>
+              </eventStats>
+            </adverseEventStats>
+            <assessmentType>Non-Systematic Assessment</assessmentType>
+            <notes>Azoospermia</notes>
+            <organSystemName>Reproductive system and breast disorders</organSystemName>
+            <sourceVocabulary>MedDRA 22.0</sourceVocabulary>
+            <term>Azoospermia</term>
+          </seriousEvent>
+          <seriousEvent>
+            <adverseEventStats>
+              <eventStats>
+                <reportingGroupId>idp924706384</reportingGroupId>
+                <numEvents>5</numEvents>
+                <numSubjectsAffected>5</numSubjectsAffected>
+                <numSubjects>20</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924707536</reportingGroupId>
+                <numEvents>16</numEvents>
+                <numSubjectsAffected>9</numSubjectsAffected>
+                <numSubjects>22</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924708688</reportingGroupId>
+                <numEvents>6</numEvents>
+                <numSubjectsAffected>1</numSubjectsAffected>
+                <numSubjects>18</numSubjects>
+              </eventStats>
+            </adverseEventStats>
+            <assessmentType>Non-Systematic Assessment</assessmentType>
+            <notes>Bile duct stenosis</notes>
+            <organSystemName>Hepatobiliary disorders</organSystemName>
+            <sourceVocabulary>MedDRA 22.0</sourceVocabulary>
+            <term>Bile duct stenosis</term>
+          </seriousEvent>
+          <seriousEvent>
+            <adverseEventStats>
+              <eventStats>
+                <reportingGroupId>idp924706384</reportingGroupId>
+                <numEvents>16</numEvents>
+                <numSubjectsAffected>6</numSubjectsAffected>
+                <numSubjects>20</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924707536</reportingGroupId>
+                <numEvents>6</numEvents>
+                <numSubjectsAffected>3</numSubjectsAffected>
+                <numSubjects>22</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924708688</reportingGroupId>
+                <numEvents>7</numEvents>
+                <numSubjectsAffected>4</numSubjectsAffected>
+                <numSubjects>18</numSubjects>
+              </eventStats>
+            </adverseEventStats>
+            <assessmentType>Non-Systematic Assessment</assessmentType>
+            <notes>Blurred vision</notes>
+            <organSystemName>Eye disorders</organSystemName>
+            <sourceVocabulary>MedDRA 22.0</sourceVocabulary>
+            <term>Blurred vision</term>
+          </seriousEvent>
+          <seriousEvent>
+            <adverseEventStats>
+              <eventStats>
+                <reportingGroupId>idp924706384</reportingGroupId>
+                <numEvents>12</numEvents>
+                <numSubjectsAffected>4</numSubjectsAffected>
+                <numSubjects>20</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924707536</reportingGroupId>
+                <numEvents>11</numEvents>
+                <numSubjectsAffected>6</numSubjectsAffected>
+                <numSubjects>22</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924708688</reportingGroupId>
+                <numEvents>16</numEvents>
+                <numSubjectsAffected>9</numSubjectsAffected>
+                <numSubjects>18</numSubjects>
+              </eventStats>
+            </adverseEventStats>
+            <assessmentType>Non-Systematic Assessment</assessmentType>
+            <notes>Capillary leak syndrome</notes>
+            <organSystemName>Vascular disorders</organSystemName>
+            <sourceVocabulary>MedDRA 22.0</sourceVocabulary>
+            <term>Capillary leak syndrome</term>
+          </seriousEvent>
+          <seriousEvent>
+            <adverseEventStats>
+              <eventStats>
+                <reportingGroupId>idp924706384</reportingGroupId>
+                <numEvents>20</numEvents>
+                <numSubjectsAffected>10</numSubjectsAffected>
+                <numSubjects>20</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924707536</reportingGroupId>
+                <numEvents>17</numEvents>
+                <numSubjectsAffected>7</numSubjectsAffected>
+                <numSubjects>22</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924708688</reportingGroupId>
+                <numEvents>14</numEvents>
+                <numSubjectsAffected>6</numSubjectsAffected>
+                <numSubjects>18</numSubjects>
+              </eventStats>
+            </adverseEventStats>
+            <assessmentType>Non-Systematic Assessment</assessmentType>
+            <notes>Chills</notes>
+            <organSystemName>General disorders and administration site conditions</organSystemName>
+            <sourceVocabulary>MedDRA 22.0</sourceVocabulary>
+            <term>Chills</term>
+          </seriousEvent>
+          <seriousEvent>
+            <adverseEventStats>
+              <eventStats>
+                <reportingGroupId>idp924706384</reportingGroupId>
+                <numEvents>5</numEvents>
+                <numSubjectsAffected>5</numSubjectsAffected>
+                <numSubjects>20</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924707536</reportingGroupId>
+                <numEvents>11</numEvents>
+                <numSubjectsAffected>4</numSubjectsAffected>
+                <numSubjects>22</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924708688</reportingGroupId>
+                <numEvents>14</numEvents>
+                <numSubjectsAffected>9</numSubjectsAffected>
+                <numSubjects>18</numSubjects>
+              </eventStats>
+            </adverseEventStats>
+            <assessmentType>Non-Systematic Assessment</assessmentType>
+            <notes>Congenital, familial and genetic disorders - Other, specify</notes>
+            <organSystemName>Congenital, familial and genetic disorders</organSystemName>
+            <sourceVocabulary>MedDRA 22.0</sourceVocabulary>
+            <term>Congenital, familial and genetic disorders - Other, specify</term>
+          </seriousEvent>
+          <seriousEvent>
+            <adverseEventStats>
+              <eventStats>
+                <reportingGroupId>idp924706384</reportingGroupId>
+                <numEvents>9</numEvents>
+                <numSubjectsAffected>2</numSubjectsAffected>
+                <numSubjects>20</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924707536</reportingGroupId>
+                <numEvents>9</numEvents>
+                <numSubjectsAffected>6</numSubjectsAffected>
+                <numSubjects>22</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924708688</reportingGroupId>
+                <numEvents>10</numEvents>
+                <numSubjectsAffected>4</numSubjectsAffected>
+                <numSubjects>18</numSubjects>
+              </eventStats>
+            </adverseEventStats>
+            <assessmentType>Non-Systematic Assessment</assessmentType>
+            <notes>Ear pain</notes>
+            <organSystemName>Ear and labyrinth disorders</organSystemName>
+            <sourceVocabulary>MedDRA 22.0</sourceVocabulary>
+            <term>Ear pain</term>
+          </seriousEvent>
+          <seriousEvent>
+            <adverseEventStats>
+              <eventStats>
+                <reportingGroupId>idp924706384</reportingGroupId>
+                <numEvents>7</numEvents>
+                <numSubjectsAffected>3</numSubjectsAffected>
+                <numSubjects>20</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924707536</reportingGroupId>
+                <numEvents>14</numEvents>
+                <numSubjectsAffected>5</numSubjectsAffected>
+                <numSubjects>22</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924708688</reportingGroupId>
+                <numEvents>8</numEvents>
+                <numSubjectsAffected>4</numSubjectsAffected>
+                <numSubjects>18</numSubjects>
+              </eventStats>
+            </adverseEventStats>
+            <assessmentType>Non-Systematic Assessment</assessmentType>
+            <notes>Fetal death</notes>
+            <organSystemName>Pregnancy, puerperium and perinatal conditions</organSystemName>
+            <sourceVocabulary>MedDRA 22.0</sourceVocabulary>
+            <term>Fetal death</term>
+          </seriousEvent>
+          <seriousEvent>
+            <adverseEventStats>
+              <eventStats>
+                <reportingGroupId>idp924706384</reportingGroupId>
+                <numEvents>8</numEvents>
+                <numSubjectsAffected>5</numSubjectsAffected>
+                <numSubjects>20</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924707536</reportingGroupId>
+                <numEvents>6</numEvents>
+                <numSubjectsAffected>4</numSubjectsAffected>
+                <numSubjects>22</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924708688</reportingGroupId>
+                <numEvents>12</numEvents>
+                <numSubjectsAffected>8</numSubjectsAffected>
+                <numSubjects>18</numSubjects>
+              </eventStats>
+            </adverseEventStats>
+            <assessmentType>Non-Systematic Assessment</assessmentType>
+            <notes>Leukemia secondary to oncology chemotherapy</notes>
+            <organSystemName>Neoplasms benign, malignant and unspecified (incl cysts and polyps)</organSystemName>
+            <sourceVocabulary>MedDRA 22.0</sourceVocabulary>
+            <term>Leukemia secondary to oncology chemotherapy</term>
+          </seriousEvent>
+          <seriousEvent>
+            <adverseEventStats>
+              <eventStats>
+                <reportingGroupId>idp924706384</reportingGroupId>
+                <numEvents>12</numEvents>
+                <numSubjectsAffected>8</numSubjectsAffected>
+                <numSubjects>20</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924707536</reportingGroupId>
+                <numEvents>12</numEvents>
+                <numSubjectsAffected>6</numSubjectsAffected>
+                <numSubjects>22</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924708688</reportingGroupId>
+                <numEvents>6</numEvents>
+                <numSubjectsAffected>6</numSubjectsAffected>
+                <numSubjects>18</numSubjects>
+              </eventStats>
+            </adverseEventStats>
+            <assessmentType>Non-Systematic Assessment</assessmentType>
+            <notes>Menopause</notes>
+            <organSystemName>Social circumstances</organSystemName>
+            <sourceVocabulary>MedDRA 22.0</sourceVocabulary>
+            <term>Menopause</term>
+          </seriousEvent>
+          <seriousEvent>
+            <adverseEventStats>
+              <eventStats>
+                <reportingGroupId>idp924706384</reportingGroupId>
+                <numEvents>5</numEvents>
+                <numSubjectsAffected>5</numSubjectsAffected>
+                <numSubjects>20</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924707536</reportingGroupId>
+                <numEvents>16</numEvents>
+                <numSubjectsAffected>9</numSubjectsAffected>
+                <numSubjects>22</numSubjects>
+              </eventStats>
+              <eventStats>
+                <reportingGroupId>idp924708688</reportingGroupId>
+                <numEvents>7</numEvents>
+                <numSubjectsAffected>3</numSubjectsAffected>
+                <numSubjects>18</numSubjects>
+              </eventStats>
+            </adverseEventStats>
+            <assessmentType>Non-Systematic Assessment</assessmentType>
+            <notes>Surgical and medical procedures - Other, specify</notes>
+            <organSystemName>Surgical and medical procedures</organSystemName>
+            <sourceVocabulary>MedDRA 22.0</sourceVocabulary>
+            <term>Surgical and medical procedures - Other, specify</term>
+          </seriousEvent>
+        </seriousAdverseEvents>
+        <sourceVocabulary>MedDRA 22.0</sourceVocabulary>
+        <timeFrame>Timeframe for AE</timeFrame>
+      </reportedEvents>
+    </rrs:result>
+  </clinical_study>
+</prs:study_collection>
