@@ -35,7 +35,7 @@ install.packages("eudract")
 
 The development version is available from github using the R command.
 ~~~~
-devtools::install_github("shug0131/eudraCT/R/eudract", build_vignettes = TRUE)
+devtools::install_github("shug0131/eudract_pkg", build_vignettes = TRUE)
 ~~~~
 
 A worked example is given here

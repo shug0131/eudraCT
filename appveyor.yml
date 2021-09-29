@@ -17,8 +17,8 @@ environment:
    USE_RTOOLS: true
 
 before_build:
-  - cp ..\travis-tool.sh R\eudract\travis-tool.sh
-  - cp travis-tool.sh.cmd R\eudract\travis-tool.sh.cmd
+  - cp ..\travis-tool.sh R\eudract_pkg\travis-tool.sh
+  - cp travis-tool.sh.cmd R\eudract_pkg\travis-tool.sh.cmd
   - cd R\eudract_pkg
   - bash -c "echo '^travis-tool\.sh\.cmd$' >> .Rbuildignore"
 
