@@ -5,7 +5,7 @@
 
 language: R
 before_install:
-  - cd R/eudract
+  - cd R/eudract_pkg
 sudo: required
 cache: packages
 
