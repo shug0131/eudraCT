@@ -1,3 +1,3 @@
-[submodule "R\\eudract_pkg"]
-	path = R\\eudract_pkg
+[submodule "R/eudract_pkg"]
+	path = R/eudract_pkg
 	url = https://github.com/shug0131/eudract_pkg
