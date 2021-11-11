@@ -152,3 +152,19 @@ Similar to SAS there is a limit of 32 characters to variable names, but _labels_
 ~~~
 la var related "occurrencesCausallyRelatedToTreatment"
 ~~~
+
+## Can you please provide a detailed workflow?
+
+### R
+1. Create a dataset with the appropriately named columns: **group** , **subjid**, **term**, **soc**, **serious**, **related** and **fatal** (see **safety**-example)
+2. Run the following code:
+~~~
+safety_statistics <- safety_summary(safety,
+                                    exposed=c("Experimental"=60,"Control"=67))
+simple <- tempfile(fileext = ".xml")
+eudract <- tempfile(fileext = ".xml")
+simple_safety_xml(safety_statistics, simple)
+eudract_convert(input=simple,
+                output=eudract)
+~~~
+3. Locate the resulting ".xml" file, and upload to the EudraCT database.
