@@ -7,6 +7,33 @@ toc: true
 * toc
 {:toc}
 
+## Worked Example
+
+The [vignette](https://cran.r-project.org/web/packages/eudract/vignettes/eudract.html) from the R package gives a fully worked example. The canonical example given in the R package's help pages gives the key commands to create XML files suitable for upload to either EudraCT or ClinicalTrials (note the final `clintrials_gov_upload` command is based on a fictitious user account and will not work).
+
+~~~
+safety_statistics <- safety_summary(safety,
+                                    exposed=c("Experimental"=60,"Control"=67))
+simple <- tempfile(fileext = ".xml")
+eudract <- tempfile(fileext = ".xml")
+ct <- tempfile(fileext = ".xml")
+simple_safety_xml(safety_statistics, simple)
+eudract_convert(input=simple,
+                output=eudract)
+clintrials_gov_convert(input=simple,
+                       original=system.file("extdata", "1234.xml", package ="eudract"),
+                output=ct)
+# This needs a real user account to work
+clintrials_gov_upload(
+    input=simple,
+    orgname="CTU",
+    username="Student",
+    password="Guinness",
+    studyid="1234"
+)
+~~~
+
+For SAS and Stata, the example script is the starting point that should work and allow you to adapt to your needs.
 
 ## What do the variables mean in the input data?
 
