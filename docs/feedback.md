@@ -9,7 +9,7 @@ We would always welcome any feedback to help the project improve.
 # Email
 
 Email is a simple means to contact me informally:
-[Simon Bond](mailto:simon.bond@addenbrookes.nhs.uk)
+[Simon Bond](mailto:simon.bond7@nhs.net)
 
 # GitHub
 
