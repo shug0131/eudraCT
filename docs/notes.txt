@@ -12,7 +12,7 @@ Local Files
 
 
 Command line, and got to the local folder V:\STATISTICS\NON STUDY FOLDER\Academic Research\Eudract Tool\docs
-run "bundle exec jekyll build"
+run "bundle exec jekyll build  --incremental --watch"
 open the html files within _site
 
 
