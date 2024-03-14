@@ -14,7 +14,9 @@ This is a document giving the specification for the project and will be used to 
 ## Manuals and Training
 
 * Within the R package a [reference manual](https://cran.r-project.org/web/packages/eudract/eudract.pdf) is included that documents all the functions and data.
-* Background, explanation and a worked example is provided in a [vignette](https://cran.r-project.org/web/packages/eudract/vignettes/eudract.html) to compliment the reference manual.
+* Background, explanation and a worked example is provided in several vignettes to compliment the reference manual.
+    + [XML files for upload](https://cran.r-project.org/web/packages/eudract/vignettes/eudract.html)
+    + [Standard tables and figures](https://cran.r-project.org/web/packages/eudract/vignettes/standard_reporting.html)
 * The [FAQ](faq.html) section of the website is another piece of training material.
 
 ## Testing

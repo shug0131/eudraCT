@@ -45,8 +45,13 @@ safety_statistics <- safety_summary(safety, exposed=c("Experimental"=60,"Control
 safety_statistics
 simple_safety_xml(safety_statistics, file="simple.xml")
 eudract_convert(input="simple.xml", output="table_eudract.xml")
+clintrials_gov_convert(input="simple.xml",
+                       original=system.file("extdata", "1234.xml", package ="eudract"),
+                output="ct_upload_file.xml")
 ~~~
-and two files, simple.xml & table_eudract.xml will have been created, the latter being suitable to upload into EudraCT.
+and the files, simple.xml, table_eudract.xml, ct_upload_file.xml will have been created, the last two being suitable to upload into EudraCT and ClinicalTrials.gov respectively. 
+
+Note that the example for ClinicalTrials there must first be a study set-up within website, and then a download of the XML taken. This is the original argument. Then the original file has the safety events data over-written, and can be manually uploaded back into ClinicalTrials.gov
 
 
 
@@ -65,6 +70,18 @@ There is now a fully worked and self-sufficient example using Stata in the direc
 If the user can create the summary statistics inside stata, then there are now tools that can convert into xml for upload. Stata saves the internal data into xml format using an in-built command "xmlsave", and then we have provided xslt files that convert. Stata can call a shell command to effect these transformations.
 
 [Stata]( {{ site.ghpath }}/Stata)
+
+### Standard Safety Reporting (R only)
+
+To produce tables and figures suitable for reporting documents, the following code is a worked example
+
+~~~
+library(eudract)
+safety_statistics <- safety_summary(safety, exposed=c("Experimental"=60,"Control"=67))
+incidence_table(safety_statistics, type="serious")
+relative_risk_table(safety_statistics, type="non_serious")
+dot_plot(safety_statistics, type="non_serious", base=4)
+~~~
 
 
 ## XSLT
