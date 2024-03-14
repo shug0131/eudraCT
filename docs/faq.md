@@ -7,7 +7,9 @@ toc: true
 * toc
 {:toc}
 
-## Worked Example
+## Worked Examples
+
+### XML Files for upload
 
 The [vignette](https://cran.r-project.org/web/packages/eudract/vignettes/eudract.html) from the R package gives a fully worked example. The canonical example given in the R package's help pages gives the key commands to create XML files suitable for upload to either EudraCT or ClinicalTrials (note the final `clintrials_gov_upload` command is based on a fictitious user account and will not work).
 
@@ -34,6 +36,19 @@ clintrials_gov_upload(
 ~~~
 
 For SAS and Stata, the example script is the starting point that should work and allow you to adapt to your needs.
+
+### Standard Reporting
+
+To produce incidence rates, relative risks and a dot plot the following R functions can be used. There are no equivalents provided for SAS or Stata.
+
+~~~
+safety_statistics <- safety_summary(safety,
+                                    exposed=c("Control"=99, "Experimental"=101))
+safety_statistics$GROUP
+incidence_table(safety_statistics, type="serious") 
+relative_risk_table(safety_statistics, type="serious") 
+dot_plot(safety_statistics, type="serious", base=4) 
+~~~
 
 ## What do the variables mean in the input data?
 
