@@ -6,6 +6,7 @@ SOPs/
 EudractAEs.lnk
 .Rhistory
 docs/_site
+R/eudract/
 R/eudract.Rcheck/
 R/eudract/.Rproj.user
 R/eudract/.Rhistory
@@ -28,3 +29,4 @@ R/...bfg-report/2021-09-06/15-39-02/deleted-files.txt
 R/...bfg-report/2021-09-06/15-39-02/cache-stats.txt
 R/eudract/tests/testthat/bfg-1.14.0.jar
 R/...bfg-report/2021-09-06/15-39-02/protected-dirt/0813c0a7-HEAD.csv
+ClinicalTrialsDotGov/
