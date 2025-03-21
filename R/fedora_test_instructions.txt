@@ -1,0 +1,10 @@
+docker compose -f compose_fedora_r_devel.yml run web sh
+cd /home/rstudio/work
+
+sudo yum install openssl-devel libxml2-devel fontconfig-devel fribidi-devel freetype-devel libpng-devel libtiff-devel libjpeg-devel libxslt-devel
+
+R
+install.packages("devtools")
+remotes::install_deps(dependencies=TRUE)
+devtools::load_all()
+devtools::test()

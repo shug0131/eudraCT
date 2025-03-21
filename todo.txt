@@ -1,0 +1,17 @@
+
+#Check if ready for V1.0.0
+
+
+
+#upload to CRAN
+
+#merge reporting into master for eudract_pkg add tag
+
+#check up on dependabot tkinfo  pulls...
+
+#update the submodule  in eudract 
+#>  git submodule update --remote
+
+update the website with local files -> Tan on server
+
+

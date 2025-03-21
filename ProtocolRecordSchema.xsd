@@ -1,0 +1,727 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!-- 
+  ************************************************************************
+  ProtocolRecordSchema.xsd - XML Schema for electronic transfer of 
+  protocol information into the ClinicalTrials.gov Protocol Registration 
+  System.
+     
+  ClinicalTrials.gov
+  National Library of Medicine, National Institutes of Health
+  Schema Version: 2018.05.08
+     
+  This schema is subject to change without notice.
+    
+  DEVELOPER NOTES: 
+      Only XML conforming to PRS specifications may be uploaded. 
+      Other file types, such as Microsoft Word documents or other types  
+      of XML, cannot be uploaded to the PRS. 
+
+      Before attempting to use the PRS XML Upload capability, developers
+      should gain a throrough understanding of ClinicalTrials.gov data
+      elements, as documented in the Data Element Definitions document.
+
+      Tip: The PRS web interface provides a Download XML function
+      (from the Edit Protocol or Select Protocol screens) which
+      can be used to obtain examples of valid XML.
+
+      ClinicalTrials.gov makes a test system available to PRS account 
+      holders, which many sponsors use to "practice" uploading.  To 
+      request an account, contact us at register@clinicaltrials.gov.
+       
+      In some cases, tag names differ from the labels shown in 
+      the PRS web interface and Data Element Definitions.
+      Comments are included herein to help correlate names in those
+      cases.
+     
+      As the system has evolved, some tags have been removed.
+      While we continue to support most of those tags, it is 
+      recommended that sponsors modify their systems to comply
+      with the current version of this XML Schema.
+
+  CHANGES:
+      03/24/2010: Initial release; replaces clinical_study.dtd
+      04/26/2010: Minor corrections
+      05/18/2010: Added tag for Expanded Access record NCT number
+      07/15/2010: Correction: allow multiple overall (study) officials
+      12/21/2010: Added comments on delayed results (resultDisposition)
+      08/18/2011: Responsible Party changes
+      07/17/2012: Other Pre-Specified Outcome Measures added
+      11/29/2012: Patient Registry changes
+      12/01/2015: Added "data sharing" data elements
+      10/22/2016: Changed "xs:squence" to "xs:all" where possible
+      01/18/2017: FDAAA 801 Final Rule changes
+      06/29/2017: Added IPD Sharing Statement
+      05/08/2018: Correction: irb_info details not always required
+
+  ************************************************************************
+
+  PARTIAL UPLOAD OPTION:
+
+  In a normal XML upload, record(s) are completely replaced by the content
+  in the XML file.  A partial upload allows a limited merging capability,
+  uploading some data elements while retaining other data elements from
+  the previous version of the record.
+
+  *** CAUTION: Partial upload poses a significant risk of accidental
+  *** loss of data and thus should only be used if absolutely required, 
+  *** completely understood and thoroughly tested on the PRS Test System.
+
+  To perform a partial upload, add the attribute partial_upload="true" to 
+  the clinical_study tag.  The XML for each study must include
+  the minimum identifying information (org_name and org_study_id).
+
+  In a partial upload, the following tags may either be included in 
+  their entirety (along with subtags and content) or ommitted.
+	    secondary_id 
+	    is_fda_regulated 
+	    is_section_801 
+	    delayed_posting 
+	    is_ind_study 
+	    ind_info 
+	    brief_title 
+	    official_title 
+	    sponsors 
+	    oversight_info 
+	    brief_summary 
+	    detailed_description 
+	    overall_status 
+	    why_stopped 
+	    expanded_access_status 
+	    start_date 
+	    start_date_type
+	    last_follow_up_date 
+	    last_follow_up_date_type 
+	    primary_compl_date 
+	    primary_compl_date_type 
+	    study_type 
+	    interventional_design 
+	    observational_design 
+	    primary_outcome 
+	    secondary_outcome 
+	    other_outcome 
+	    enrollment 
+	    enrollment_type 
+	    condition 
+	    keyword 
+	    arm_group 
+	    intervention 
+	    eligibility 
+	    overall_official 
+	    overall_contact 
+	    overall_contact_backup 
+	    location 
+	    ipd_sharing_statement
+	    link 
+	    reference 
+	    study_document
+	    verification_date 
+
+  If one of these tags is included in a partial upload, its content 
+  completely replaces the corresponding data elements in the record.
+  If a tag is either ommitted or empty, the corresponding data elements 
+  remain unchanged.  Lists (e.g., location, condition, reference) are
+  replaced completely when included in a partial upload.
+
+  In order to delete content from a data element (rather than copying 
+  from the previous version), include an otherwise empty tag in the XML
+  with the attribute delete="true" as indicated below.  For lists,
+  specifying a single tag with delete="true" deletes the entire list.
+
+  *** IMPORTANT: Failure to include partial_upload="true" may result in
+  *** permanent loss of data, which may or may not be immediately
+  *** apparent.
+
+  The resultDisposition tag, documented in detail in RRSUploadSchema.xsd,
+  holds information about Delayed Results Posting.  Once the results
+  section has been established in a record, resultDisposition cannot
+  be modified.  If it is included in an XML upload in such a case,
+  a warning will be included in the Batch Summary Report, indicating
+  that Delayed Results Posting information has not been modified.
+
+  If a record has Delayed Results Posting information, that information
+  must be released, reviewed and published on ClinicalTrials.gov before
+  results information can be added to the record.  This also applies
+  to changes made after initial publication.
+
+  ************************************************************************
+
+-->
+
+<xs:schema  
+	targetNamespace="http://clinicaltrials.gov/prs" 
+	xmlns:prs="http://clinicaltrials.gov/prs" 
+	xmlns:rrs="http://clinicaltrials.gov/rrs"
+	xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- *** Results Section Details (specified separately) *** -->
+
+  <xs:import 
+     namespace="http://clinicaltrials.gov/rrs"
+     schemaLocation="RRSUploadSchema.xsd"
+  />
+
+  <!-- *** Record Collection *** -->
+
+  <xs:element name="study_collection" type="prs:StudyCollection"/>
+
+  <xs:complexType name="StudyCollection">
+    <xs:sequence>
+      <xs:element name="clinical_study" type="prs:ClinicalStudy" minOccurs="1" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+
+
+  <!-- *** Overall Record *** -->
+
+  <xs:complexType name="ClinicalStudy">
+    <xs:sequence>
+
+      <!-- *** Protocol Section *** -->
+
+      <xs:element name="id_info" type="prs:IdInfo" />
+
+      <xs:element name="is_fda_regulated" type="prs:TopLevelString" minOccurs="0" />  <!-- DEPRECATED:  yes | no -->
+      <xs:element name="is_section_801" type="prs:TopLevelString" minOccurs="0" />    <!-- DEPRECATED:  yes | no -->
+      <xs:element name="delayed_posting" type="prs:TopLevelString" minOccurs="0" />   <!-- Unapproved Device?  yes | no -->
+		
+      <xs:element name="is_ind_study" type="prs:TopLevelString" minOccurs="0" />  <!-- US FDA IND/IDE Study?  yes | no -->
+      <xs:element name="ind_info" type="prs:IndInfo" minOccurs="0" />
+		
+      <xs:element name="brief_title" type="prs:TopLevelString" minOccurs="0" />  <!-- required except in partial upload -->
+      <xs:element name="acronym" type="xs:string" minOccurs="0" />
+      <xs:element name="official_title" type="prs:TopLevelString" minOccurs="0" />
+
+      <xs:element name="sponsors" type="prs:Sponsors" minOccurs="0" />
+
+      <xs:element name="oversight_info" type="prs:OversightInfo" minOccurs="0" />
+
+      <xs:element name="brief_summary" type="prs:TopLevelTextBlock" minOccurs="0" />
+      <xs:element name="detailed_description" type="prs:TopLevelTextBlock" minOccurs="0" />
+
+      <xs:element name="overall_status" type="prs:TopLevelString" minOccurs="0" />  <!-- overall recruitment status:
+                                                                                         Not yet recruiting | Recruiting |
+										         Active, not recruiting | 
+											 Enrolling by invitation | Completed | 
+											 Suspended | Terminated | Withdrawn -->
+      <xs:element name="why_stopped" type="prs:TopLevelString" minOccurs="0" />
+      <xs:element name="expanded_access_status" type="prs:TopLevelString" minOccurs="0" />  <!-- Available | No longer available |
+												 Temporarily not available | 
+												 Approved for marketing -->
+      <xs:element name="verification_date" type="xs:string" minOccurs="0" />                <!-- record verification date: YYYY-MM  -->
+
+      <xs:element name="start_date" type="prs:TopLevelString" minOccurs="0" />  <!-- study start date: YYYY-MM -->
+      <xs:element name="start_date_type" type="prs:TopLevelString" minOccurs="0" />  <!-- study start date: YYYY-MM -->
+
+      <xs:element name="end_date" type="xs:string" minOccurs="0" />             <!-- DEPRECATED: use last_follow_up_date instead  -->
+
+      <xs:element name="last_follow_up_date" type="prs:TopLevelString" minOccurs="0" />       <!-- study completion date: YYYY-MM -->
+      <xs:element name="last_follow_up_date_type" type="prs:TopLevelString" minOccurs="0" />  <!-- Anticipated | Actual -->
+
+      <xs:element name="primary_compl_date" type="prs:TopLevelString" minOccurs="0" />        <!-- primary completion date: YYYY-MM -->
+      <xs:element name="primary_compl_date_type" type="prs:TopLevelString" minOccurs="0" />   <!-- Anticipated | Actual -->
+
+
+      <xs:element name="study_design" type="prs:StudyDesign" minOccurs="0" />
+
+      <xs:element name="primary_outcome" type="prs:Outcome" minOccurs="0" maxOccurs="unbounded" />
+      <xs:element name="secondary_outcome" type="prs:Outcome" minOccurs="0" maxOccurs="unbounded" />
+      <xs:element name="other_outcome" type="prs:Outcome" minOccurs="0" maxOccurs="unbounded" />  <!-- other pre-specified outcome measure -->
+
+      <xs:element name="enrollment" type="prs:TopLevelString" minOccurs="0" />  <!-- number of subjects -->
+      <xs:element name="enrollment_type" type="prs:TopLevelString" minOccurs="0" />  	<!-- Anticipated | Actual -->
+	
+      <xs:element name="condition" type="prs:TopLevelString" minOccurs="0" maxOccurs="unbounded" />
+      <xs:element name="keyword" type="prs:TopLevelString" minOccurs="0" maxOccurs="unbounded" />
+	
+      <xs:element name="arm_group" type="prs:ArmGroup" minOccurs="0" maxOccurs="unbounded" />	
+      <xs:element name="intervention" type="prs:Intervention" minOccurs="0" maxOccurs="unbounded" />
+	
+      <xs:element name="eligibility" type="prs:Eligibility" minOccurs="0" />	
+	
+      <xs:element name="overall_official" type="prs:OverallOfficial" minOccurs="0" maxOccurs="unbounded" />  <!-- study officials -->
+      <xs:element name="overall_contact" type="prs:OverallContact" minOccurs="0" />                          <!-- central contact person -->
+      <xs:element name="overall_contact_backup" type="prs:OverallContact" minOccurs="0" />
+
+      <xs:element name="location" type="prs:Location" minOccurs="0" maxOccurs="unbounded" />
+
+      <xs:element name="ipd_sharing_statement" type="prs:IPDSharingStatement" minOccurs="0" />	
+
+      <xs:element name="link" type="prs:Link" minOccurs="0" maxOccurs="unbounded" />
+      <xs:element name="reference" type="prs:Reference" minOccurs="0" maxOccurs="unbounded" />  <!-- citations -->
+      <xs:element name="study_document" type="prs:StudyDocument" minOccurs="0" maxOccurs="unbounded" />
+          <!-- available study data/document -->
+
+
+      <!-- *** Results Section (details specified separately via import, above) *** -->
+
+      <xs:element ref="rrs:result" minOccurs="0" />
+      <xs:element ref="rrs:resultDisposition" minOccurs="0" />
+
+    </xs:sequence>
+
+    <xs:attribute name="partial_upload" type="xs:boolean" default="false"/>  <!-- see comments above -->
+
+  </xs:complexType>
+
+
+  <!-- *** Protocol Section Details *** -->
+
+  <xs:complexType name="TopLevelString">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute name="delete" type="xs:boolean" default="false" />  <!-- specify only if partial_upload=true 
+									   in clinical_study tag -->
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
+
+  <xs:complexType name="TextBlock">
+    <xs:all>
+      <xs:element name="textblock" type="xs:string" />  <!-- supports formatting as documented in PRS web interface -->
+    </xs:all>
+  </xs:complexType>
+
+  <xs:complexType name="TopLevelTextBlock">
+    <xs:complexContent>
+      <xs:extension base="prs:TextBlock">
+        <xs:attribute name="delete" type="xs:boolean" default="false" />  <!-- specify only if partial_upload=true 
+									   in clinical_study tag -->
+      </xs:extension>
+    </xs:complexContent>
+  </xs:complexType>
+
+  <xs:complexType name="IdInfo">
+    <xs:sequence>
+      <xs:element name="provider_name" type="xs:string" minOccurs="0" />      <!-- PRS INTERNAL USE ONLY 
+										   (may be ommitted or left blank) -->
+      <xs:element name="provider_study_id" type="xs:string" minOccurs="0" />  <!-- PRS INTERNAL USE ONLY 
+										   (may be ommitted or left blank) -->
+
+      <xs:element name="org_name" type="xs:string" />      <!-- short org name used to login to PRS -->
+      <xs:element name="org_study_id" type="xs:string" />  <!-- unique protocol id -->
+
+      <xs:element name="secondary_id" type="prs:SecondaryId" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="SecondaryId">
+    <xs:all>
+      <xs:element name="id" type="xs:string" />
+      <xs:element name="id_type" type="xs:string" minOccurs="0" />  <!-- NIH Grant Number | Other Grant/Funding Number | 
+									 Registry Identifier | EU Trial (CTIS) Number | EudraCT Number | 
+									 Other Identifier -->
+      <xs:element name="id_domain" type="xs:string" minOccurs="0" />  <!-- usage depends on id_type:
+									   NIH Grant Number: not used
+									   Other Grant/Funding Number: grantor name
+									   Registry Identifier: registry name
+									   EU Trial (CTIS) Number: not used
+									   EudraCT Number: not used
+									   Other Identifier: description -->
+    </xs:all>
+
+    <xs:attribute name="delete" type="xs:boolean" default="false" />  <!-- specify only if partial_upload=true 
+									   in clinical_study tag -->
+  </xs:complexType>
+
+  <xs:complexType name="IndInfo">
+    <xs:all>
+      <xs:element name="ind_grantor" type="xs:string" />               <!-- FDA Center:  CDER | CBER | CDRH -->
+      <xs:element name="ind_number" type="xs:string" />                <!-- IND/IDE Number -->
+      <xs:element name="ind_serial_number" type="xs:string" minOccurs="0" />
+
+      <xs:element name="has_expanded_access" type="xs:string"  minOccurs="0" />  <!-- availability:  yes | no | unknown -->
+      <xs:element name="expanded_access_nct_id" type="xs:string"  minOccurs="0" />  <!-- expanded access record -->
+    </xs:all>
+
+    <xs:attribute name="delete" type="xs:boolean" default="false" />  <!-- specify only if partial_upload=true 
+									   in clinical_study tag -->
+  </xs:complexType>
+
+  <xs:complexType name="Sponsors">
+    <xs:sequence>
+      <xs:element name="lead_sponsor" type="prs:Agency" />
+      <xs:element name="collaborator" type="prs:Agency" minOccurs="0" maxOccurs="unbounded" />
+      <xs:element name="resp_party" type="prs:ResponsibleParty"  minOccurs="0" />
+    </xs:sequence>
+
+    <xs:attribute name="delete" type="xs:boolean" default="false" />  <!-- specify only if partial_upload=true 
+									   in clinical_study tag -->
+  </xs:complexType>
+
+  <xs:complexType name="Agency">
+    <xs:all>
+      <xs:element name="agency" type="xs:string" />
+    </xs:all>
+  </xs:complexType>
+
+  <xs:complexType name="ResponsibleParty">
+    <xs:all>
+      <xs:element name="resp_party_type" type="xs:string" />  <!-- Sponsor | Principal Investigator | Sponsor-Investigator -->
+
+      <!-- investigator_* elements are only used when RP type is one of the 'investigator' options -->
+      <xs:element name="investigator_username" type="xs:string" minOccurs="0" />
+      <xs:element name="investigator_title" type="xs:string" minOccurs="0" />
+      <xs:element name="investigator_affiliation" type="xs:string" minOccurs="0" />
+
+      <xs:element name="name_title" type="xs:string" minOccurs="0" />    <!-- DEPRECATED: use above RP subelements instead  -->
+      <xs:element name="organization" type="xs:string" minOccurs="0" />  <!-- DEPRECATED: use above RP subelements instead  -->
+      <xs:element name="phone" type="xs:string" minOccurs="0" />         <!-- DEPRECATED: use above RP subelements instead  -->
+      <xs:element name="phone_ext" type="xs:string" minOccurs="0" />     <!-- DEPRECATED: use above RP subelements instead  -->
+      <xs:element name="email" type="xs:string" minOccurs="0" />         <!-- DEPRECATED: use above RP subelements instead  -->
+    </xs:all>
+  </xs:complexType>
+
+  <xs:complexType name="OversightInfo">
+    <xs:sequence>
+      <xs:element name="regulatory_authority" type="xs:string" minOccurs="0" maxOccurs="unbounded" />  <!-- DEPRECATED: no longer used
+                                                                                                            oversight authority -->
+      <xs:element name="irb_info" type="prs:IrbInfo" minOccurs="0" />
+      <xs:element name="has_dmc" type="xs:string" minOccurs="0" />                 <!-- yes | no -->
+      <xs:element name="fda_regulated_drug" type="xs:string" minOccurs="0" />      <!-- yes | no -->
+      <xs:element name="fda_regulated_device" type="xs:string" minOccurs="0" />    <!-- yes | no -->
+      <xs:element name="post_prior_to_approval" type="xs:string" minOccurs="0" />  <!-- yes | no -->
+      <xs:element name="exported_from_us" type="xs:string" minOccurs="0" />        <!-- yes | no -->
+      <xs:element name="ped_postmarket_surv" type="xs:string" minOccurs="0" />     <!-- yes | no -->
+    </xs:sequence>
+
+    <xs:attribute name="delete" type="xs:boolean" default="false" />  <!-- specify only if partial_upload=true 
+									   in clinical_study tag -->
+  </xs:complexType>
+
+  <xs:complexType name="IrbInfo">
+    <xs:all>
+      <xs:element name="approval_status" type="xs:string" />  <!-- Approved | Pending | Exempt | Denied |
+								   Not required | Not yet submitted -->
+      <xs:element name="approval_number" type="xs:string" minOccurs="0" />  <!-- board approval number -->
+
+      <xs:element name="name" type="xs:string" minOccurs="0" />          <!-- board name, board affiliation, ... -->
+      <xs:element name="affiliation" type="xs:string" minOccurs="0"  />
+      <xs:element name="phone" type="xs:string" minOccurs="0" /> 
+      <xs:element name="phone_ext" type="xs:string" minOccurs="0" /> 
+      <xs:element name="email" type="xs:string" minOccurs="0" /> 
+      <xs:element name="full_address" type="xs:string" minOccurs="0" />
+    </xs:all>
+  </xs:complexType>
+
+  <xs:complexType name="StudyDesign">
+    <xs:all>
+      <xs:element name="study_type" type="prs:TopLevelString" />  <!-- Interventional | Observational | Expanded Access -->
+
+      <xs:element name="interventional_design" type="prs:InterventionalDesign" minOccurs="0" />
+          <!-- include iff type==interventional -->
+
+      <xs:element name="observational_design" type="prs:ObservationalDesign" minOccurs="0" />
+          <!-- include iff type==observational -->
+
+      <xs:element name="no_exp_acc_type" type="xs:string" minOccurs="0" />              <!-- yes | no   - if yes, exp_acc_type_* should all be no -->
+      <xs:element name="exp_acc_type_individual" type="xs:string" minOccurs="0" />      <!-- yes | no -->
+      <xs:element name="exp_acc_type_intermediate" type="xs:string" minOccurs="0" />    <!-- yes | no -->
+      <xs:element name="exp_acc_type_treatment" type="xs:string" minOccurs="0" />       <!-- yes | no -->
+
+    </xs:all>
+  </xs:complexType>
+
+
+  <xs:complexType name="InterventionalDesign">
+    <xs:all>
+      <xs:element name="interventional_subtype" type="xs:string" />  <!-- primary purpose: 
+									    Treatment | Prevention | 
+									    Diagnostic | Basic Science | 
+									    Supportive Care | Screening | 
+									    Health Services Research | 
+									    Device Feasibility | Other -->
+
+      <xs:element name="phase" type="xs:string" />  <!-- Early Phase 1 | Phase [1,1/2,2,2/3,3,4] | N/A 
+                                                           Phase 0 == Early Phase 1 -->
+		
+      <xs:element name="assignment" type="xs:string" minOccurs="0" />  <!-- study design, interventional study model:
+									      Single Group Assignment | Parallel Assignment |
+									      Crossover Assignment | Factorial Assignment 
+									      Sequential Assignment -->
+      <xs:element name="model_description" type="prs:TextBlock" minOccurs="0" />   
+
+      <xs:element name="allocation" type="xs:string" />  <!-- Randomized | Non-randomized | N/A -->
+		
+      <xs:element name="masking" type="xs:string" minOccurs="0" />             <!-- DEPRECATED: use no_masking or masked_* instead -->
+
+      <xs:element name="no_masking" type="xs:string" minOccurs="0" />           <!-- yes | no   - if yes, masked_* should all be no -->
+      <xs:element name="masked_subject" type="xs:string" minOccurs="0" />       <!-- yes | no   - participant == subject-->
+      <xs:element name="masked_caregiver" type="xs:string" minOccurs="0" />     <!-- yes | no   - care provider == caregiver-->
+      <xs:element name="masked_investigator" type="xs:string" minOccurs="0" />  <!-- yes | no -->
+      <xs:element name="masked_assessor" type="xs:string" minOccurs="0" />      <!-- yes | no -->
+      <xs:element name="masking_description" type="prs:TextBlock" minOccurs="0" />   
+
+      <xs:element name="control" type="xs:string" minOccurs="0" />  <!-- DEPRECATED: no longer used  -->
+
+      <xs:element name="endpoint" type="xs:string" minOccurs="0" />  <!-- DEPRECATED: no longer used  
+                                                                          study [endpoint] classification -->
+
+      <xs:element name="number_of_arms" type="xs:string" minOccurs="0" />  <!-- 1 for single-arm study -->	
+    </xs:all>
+
+    <xs:attribute name="delete" type="xs:boolean" default="false" />  <!-- specify only if partial_upload=true 
+									   in clinical_study tag -->
+  </xs:complexType>
+
+
+  <xs:complexType name="ObservationalDesign">
+    <xs:all>
+      <xs:element name="observational_study_design" type="xs:string" /> <!-- observational study model:
+									       Cohort | Case-Control | Case-Only | Case-Crossover |
+									       Ecologic or Community | Family-Based | Other -->
+
+      <xs:element name="biospecimen_retention" type="xs:string" />  <!-- None Retained | Samples With DNA | Samples Without DNA -->
+
+      <xs:element name="biospecimen_description" type="prs:TextBlock" minOccurs="0" />   
+          <!-- specify iff biospecimens are being retained -->
+
+      <xs:element name="timing" type="xs:string" />  <!-- time perspective:
+							    Retrospective | Prospective | Cross-Sectional | Other -->
+
+      <xs:element name="number_of_groups" type="xs:string" />  <!-- number of groups/cohorts: 
+							            1 for single-group/cohort study -->
+
+      <xs:element name="patient_registry" type="xs:string" minOccurs="0" />          <!-- yes | no | true | false
+                                                                                          specify target_duration_* if yes -->	
+      <xs:element name="target_duration_quantity" type="xs:string" minOccurs="0" />  <!-- Whole number > 0 -->	
+      <xs:element name="target_duration_units" type="xs:string" minOccurs="0" />     <!-- Years | Months | Weeks | Days -->	
+    </xs:all>
+
+    <xs:attribute name="delete" type="xs:boolean" default="false" />  <!-- specify only if partial_upload=true 
+									   in clinical_study tag -->
+  </xs:complexType>
+
+  <xs:complexType name="Outcome">
+    <xs:all>
+      <xs:element name="outcome_measure" type="xs:string" />                     <!-- outcome measure title -->
+      <xs:element name="outcome_time_frame" type="xs:string" minOccurs="0" />
+      <xs:element name="outcome_description" type="prs:TextBlock" minOccurs="0" />
+      <xs:element name="outcome_safety_issue" type="xs:string" minOccurs="0" />  <!-- DEPRECATED: no longer used  -->
+    </xs:all>
+
+    <xs:attribute name="delete" type="xs:boolean" default="false" />  <!-- specify only if partial_upload=true 
+									   in clinical_study tag -->
+  </xs:complexType>
+
+
+  <xs:complexType name="ArmGroup">
+    <xs:all>
+      <xs:element name="arm_group_label" type="xs:string" />           <!-- arm title or group/cohort label -->
+
+      <xs:element name="arm_type" type="xs:string" minOccurs="0" />    <!-- specify iff study_type == interventional:
+									    Experimental | Active Comparator | 
+									    Placebo Comparator | Sham Comparator | 
+									    No Intervention | Other -->
+
+      <xs:element name="arm_group_description" type="prs:TextBlock" minOccurs="0" />
+    </xs:all>
+
+    <xs:attribute name="delete" type="xs:boolean" default="false" />  <!-- specify only if partial_upload=true 
+									   in clinical_study tag -->
+  </xs:complexType>
+
+
+  <xs:complexType name="Intervention">
+    <xs:sequence>
+      <xs:element name="intervention_type" type="xs:string" minOccurs="0" />  <!-- Drug | Device | Biological/Vaccine | 
+								                   Procedure/Surgery | Radiation | Behavioral | 
+								                   Genetic | Dietary Supplement | Other -->
+      <xs:element name="intervention_name" type="xs:string" />
+      <xs:element name="intervention_description" type="prs:TextBlock" minOccurs="0" />
+      <xs:element name="arm_group_label" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+      <xs:element name="intervention_other_name" type="xs:string" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+
+    <xs:attribute name="delete" type="xs:boolean" default="false" />  <!-- specify only if partial_upload=true 
+									   in clinical_study tag -->
+  </xs:complexType>
+
+
+  <xs:complexType name="Eligibility">
+    <xs:all>
+      <xs:element name="study_population" type="prs:TextBlock" minOccurs="0" />  <!-- specify iff study_type ==  observational -->
+
+      <xs:element name="sampling_method" type="xs:string" minOccurs="0" />  <!-- specify iff study_type ==  observational:
+										   Probability Sample | Non-Probability Sample -->
+
+      <xs:element name="criteria" type="prs:TextBlock" />
+  
+      <xs:element name="healthy_volunteers" type="xs:string"  minOccurs="0" />  <!-- yes | no -->
+
+      <xs:element name="gender" type="xs:string" />  <!-- sex:  All | Female | Male 
+                                                            Both == All -->
+      <xs:element name="gender_based" type="xs:string"  minOccurs="0" />  <!-- yes | no -->
+      <xs:element name="gender_description" type="prs:TextBlock"  minOccurs="0" />
+
+
+      <!-- Min/max ages include a whole number followed by units: e.g., "12 Years"
+	   Units may be one of: years, months, weeks, days, hours, minutes 
+           For no limit, specify "N/A" -->
+      <xs:element name="minimum_age" type="xs:string" />
+      <xs:element name="maximum_age" type="xs:string" />
+    </xs:all>
+
+    <xs:attribute name="delete" type="xs:boolean" default="false" />  <!-- specify only if partial_upload=true 
+									   in clinical_study tag -->
+  </xs:complexType>
+
+
+  <xs:complexType name="OverallOfficial">
+    <xs:all>
+      <xs:element name="first_name" type="xs:string" minOccurs="0" />
+      <xs:element name="middle_name" type="xs:string" minOccurs="0" />
+      <xs:element name="last_name" type="xs:string" />
+      <xs:element name="degrees" type="xs:string" minOccurs="0" />		
+      <xs:element name="role" type="xs:string" minOccurs="0" />  <!-- Principal Investigator | 
+								      Study Chair | 
+								      Study Director -->
+      <xs:element name="affiliation" type="xs:string" minOccurs="0" />
+    </xs:all>
+
+    <xs:attribute name="delete" type="xs:boolean" default="false" />  <!-- specify only if partial_upload=true 
+									   in clinical_study tag -->
+  </xs:complexType>
+
+  <xs:complexType name="OverallContact">
+    <xs:all>
+      <xs:element name="first_name" type="xs:string" minOccurs="0" />
+      <xs:element name="middle_name" type="xs:string" minOccurs="0" />
+      <xs:element name="last_name" type="xs:string" />
+      <xs:element name="degrees" type="xs:string" minOccurs="0" />
+		
+      <xs:element name="phone" type="xs:string" minOccurs="0" />
+      <xs:element name="phone_ext" type="xs:string" minOccurs="0" />
+      <xs:element name="email" type="xs:string" minOccurs="0" />
+    </xs:all>
+
+    <xs:attribute name="delete" type="xs:boolean" default="false" />  <!-- specify only if partial_upload=true 
+									   in clinical_study tag -->
+  </xs:complexType>
+
+
+  <xs:complexType name="Location">
+    <xs:sequence>
+      <xs:element name="facility" type="prs:Facility" />
+      <xs:element name="status" type="xs:string" minOccurs="0" />  <!-- site recruitment status:
+                                                                        Not yet recruiting | Recruiting | 
+									No longer recruiting | Active, not recruiting | 
+									Enrolling by invitation | Completed | 
+									Suspended | Terminated | Withdrawn -->
+
+      <xs:element name="contact" type="prs:LocationContact" minOccurs="0" />
+      <xs:element name="contact_backup" type="prs:LocationContact" minOccurs="0" />
+
+      <xs:element name="investigator" type="prs:LocationInvestigator" minOccurs="0" maxOccurs="unbounded" />
+    </xs:sequence>
+
+    <xs:attribute name="delete" type="xs:boolean" default="false" />  <!-- specify only if partial_upload=true 
+									   in clinical_study tag -->
+  </xs:complexType>
+
+  <xs:complexType name="Facility">
+    <xs:all>
+      <xs:element name="name" type="xs:string" />
+      <xs:element name="address" type="prs:Address" />
+    </xs:all>
+  </xs:complexType>
+
+  <xs:complexType name="Address">
+    <xs:all>
+      <xs:element name="city" type="xs:string" minOccurs="0" />     <!-- use English spelling -->
+      <xs:element name="state" type="xs:string" minOccurs="0" />    <!-- required if country is USA; 
+								         use 2 character abbreviation or full spelling -->
+      <xs:element name="country" type="xs:string" minOccurs="0" />  <!-- use English spelling; 
+								         abbreviations recognized: USA, UK, CAN -->
+      <xs:element name="zip" type="xs:string" minOccurs="0" />      <!-- zip/postal code -->
+    </xs:all>
+  </xs:complexType>
+
+  <xs:complexType name="LocationContact">
+    <xs:all>
+      <xs:element name="first_name" type="xs:string" minOccurs="0" />
+      <xs:element name="middle_name" type="xs:string" minOccurs="0" />
+      <xs:element name="last_name" type="xs:string" minOccurs="0" />
+      <xs:element name="degrees" type="xs:string" minOccurs="0" />
+		
+      <xs:element name="phone" type="xs:string" minOccurs="0" />
+      <xs:element name="phone_ext" type="xs:string" minOccurs="0" />
+      <xs:element name="email" type="xs:string" minOccurs="0" />
+    </xs:all>
+  </xs:complexType>
+
+  <xs:complexType name="LocationInvestigator">
+    <xs:all>
+      <xs:element name="first_name" type="xs:string" minOccurs="0" />
+      <xs:element name="middle_name" type="xs:string" minOccurs="0" />
+      <xs:element name="last_name" type="xs:string" minOccurs="0" />
+      <xs:element name="degrees" type="xs:string" minOccurs="0" />
+
+      <xs:element name="role" type="xs:string" minOccurs="0" />  <!-- Principal Investigator | 
+							              Sub-Investigator -->
+    </xs:all>
+  </xs:complexType>
+
+
+  <xs:complexType name="IPDSharingStatement">
+    <xs:sequence>
+      <xs:element name="sharing_ipd" type="xs:string" minOccurs="0" />             <!-- yes | no | undecided
+                                                                                        plan to share IPD
+											formerly under oversight_info -->
+      <xs:element name="ipd_description" type="prs:TextBlock" minOccurs="0" />     <!-- specify only if sharing_ipd is specified
+                                                                                        plan description
+											formerly under oversight_info -->
+      <!-- following subelements only apply if sharing_ipd = yes  -->
+      <xs:element name="ipd_info_type_protocol" type="xs:string" minOccurs="0" />  <!-- yes | no -->
+      <xs:element name="ipd_info_type_sap" type="xs:string" minOccurs="0" />       <!-- yes | no -->
+      <xs:element name="ipd_info_type_icf" type="xs:string" minOccurs="0" />       <!-- yes | no -->
+      <xs:element name="ipd_info_type_csr" type="xs:string" minOccurs="0" />       <!-- yes | no -->
+      <xs:element name="ipd_info_type_analytic_code" type="xs:string" minOccurs="0" />  <!-- yes | no -->
+      <xs:element name="ipd_time_frame" type="prs:TextBlock" minOccurs="0" />
+      <xs:element name="ipd_access_criteria" type="prs:TextBlock" minOccurs="0" />
+      <xs:element name="ipd_url" type="xs:string" minOccurs="0" />
+    </xs:sequence>
+
+    <xs:attribute name="delete" type="xs:boolean" default="false" />  <!-- specify only if partial_upload=true 
+									   in clinical_study tag -->
+  </xs:complexType>
+
+
+  <xs:complexType name="Link">
+    <xs:all>
+      <xs:element name="url" type="xs:string" />
+      <xs:element name="description" type="xs:string" />
+    </xs:all>
+
+    <xs:attribute name="delete" type="xs:boolean" default="false" />  <!-- specify only if partial_upload=true 
+									   in clinical_study tag -->
+  </xs:complexType>
+
+
+  <xs:complexType name="Reference">
+    <xs:all>
+      <xs:element name="citation" type="xs:string"  minOccurs="0" />        <!-- full bibliographic citation -->
+      <xs:element name="pubmed_id" type="xs:string"  minOccurs="0" />       <!-- PubMed (MEDLINE) identifier -->
+      <xs:element name="is_results_ref" type="xs:string" minOccurs="0" />   <!-- yes | no -->
+    </xs:all>
+
+    <xs:attribute name="delete" type="xs:boolean" default="false" />  <!-- specify only if partial_upload=true 
+									   in clinical_study tag -->
+  </xs:complexType>
+
+  <xs:complexType name="StudyDocument">    <!-- IPD and supporting information; fka available study data/document -->
+    <xs:all>
+      <xs:element name="study_document_type" type="xs:string" />  
+          <!-- Individual Participant Data Set | Study Protocol | Statistical Analysis Plan | Informed Consent Form |
+	       Clinical Study Report | Analytic Code | Other -->
+      <xs:element name="study_document_other_type" type="xs:string" minOccurs="0" />  <!-- specify only if study_document_type = Other -->
+      <xs:element name="url" type="xs:string" minOccurs="0" />
+      <xs:element name="study_document_identifier" type="xs:string" minOccurs="0" />
+      <xs:element name="study_document_comments" type="prs:TextBlock" minOccurs="0" />
+    </xs:all>
+
+    <xs:attribute name="delete" type="xs:boolean" default="false" />  <!-- specify only if partial_upload=true 
+									   in clinical_study tag -->
+  </xs:complexType>
+
+</xs:schema>
