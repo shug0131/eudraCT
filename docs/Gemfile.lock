@@ -47,6 +47,7 @@ GEM
       net-http (>= 0.5.0)
     ffi (1.17.1-x64-mingw-ucrt)
     ffi (1.17.1-x86_64-linux-gnu)
+    fiddle (1.1.8)
     forwardable-extended (2.6.0)
     gemoji (4.1.0)
     github-pages (232)
@@ -282,6 +283,7 @@ GEM
       tzinfo (>= 1.0.0)
     unicode-display_width (1.8.0)
     uri (1.0.4)
+    wdm (0.2.0)
     webrick (1.9.1)
 
 PLATFORMS
@@ -290,6 +292,7 @@ PLATFORMS
 
 DEPENDENCIES
   activesupport (>= 4.1.11)
+  fiddle
   github-pages
   jekyll-feed (~> 0.6)
   jekyll-seo-tag
@@ -298,6 +301,7 @@ DEPENDENCIES
   kramdown (>= 2.3.1)
   minima (~> 2.0)
   tzinfo-data
+  wdm (>= 0.1.0)
 
 BUNDLED WITH
    2.6.3
