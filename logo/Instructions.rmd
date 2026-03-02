@@ -28,22 +28,28 @@ This is a package with the aim
  It suggest that we need a logo to represent the package . 
  
  
-# Logo Design
-
-We've had numerous interations and design proposed. So now we want to see with some fresh eyes what is the best log.
-
-`STATISTICS/NON STUDY FOLDER/Academic Research/Eudract Tool/logo/images`
 
 
-# A/B Test
+# Logo A/B Test - Instructions
 
-We want to ask you to run through a sequence of pairs of logos to choose which is the better one in your opinion. This is like a sports knock-out competition.  
+You will be shown a series of pairs of logos. For each pair, please select the logo you think is
+better. The process works like a knock-out tournament.
 
-You need to run the shiny app that has been created. Inside R, you simply need to run the one command
+### Step 1 - Launch the Shiny app in R
 
+* Open R (Or Rstudio)
+* Run the following command:
 `shiny::runApp("~/STATISTICS/NON STUDY FOLDER/Academic Research/Eudract Tool/logo")`
 
+### Step 2 - Complete the A/B Choices
 
-When all the pairs are finished, you can see a "Download button".  Please click on this, and save the file with your name in the filename into the folder
+* The app will display two logos at a time.
+* Click the radio button to say which logo you prefer. Hit "Submit" to move to the next pair
+* Continue until all pairs are completed
 
+### Step 3 - Download and save your results
+
+* When finished, click the "Download" button
+* Save the downloaded file with your name/initials in the filename
+* Save it into the folder
 `STATISTICS/NON STUDY FOLDER/Academic Research/Eudract Tool/logo/results`

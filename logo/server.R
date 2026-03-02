@@ -2,7 +2,7 @@
 server <- function(input, output) {
   path <- "~/STATISTICS/NON STUDY FOLDER/Academic Research/Eudract Tool/logo/images/"
   logo_files <- list.files(path) |> grep(".*\\.png$", x = _, value = TRUE)
-  next_round <- df <- data.frame(id = 1:length(logo_files), filename = logo_files, score = 0)
+   df <- data.frame(id = 1:length(logo_files), filename = logo_files, score = 0)
 
   draw <- function(df) {
     # random order
@@ -18,14 +18,19 @@ server <- function(input, output) {
     list(home = home, away = away, bye = bye)
   }
 
-  teams <- draw(next_round)
-  match <- 1
-  n <- nrow(teams$home)
-  next_round <- teams$bye
-  final <- FALSE
+  state <- reactiveValues()
+  state$teams <- draw(df)
+  state$match <- 1
+  state$final <- FALSE
+  observe({
+    state$n <- nrow(state$teams$home)
+    state$next_round <- state$teams$bye
+
+  })
+
 
   final_event <- reactive({
-    final
+    state$final
   }) |>
     bindEvent(input$submit)
 
@@ -33,24 +38,32 @@ server <- function(input, output) {
   observe({
     updateActionButton(
       inputId = "submit",
-      disabled = input$result == "" | final
+      disabled = input$result == "" | state$final
     )
   })
 
-  observe({
-    result <- ifelse(input$result == "A", teams$home[match, "id"], teams$away[match, "id"])
-    df[df$id == result, "score"] <<- 1 + df[df$id == result, "score"]
-    next_round <<- rbind(next_round, df[df$id == result, ])
-    match <<- match + 1
-    updateRadioButtons(inputId = "result", selected = character(0))
-    if (match == n + 1) {
-      final <<- nrow(next_round) == 1
-      match <<- 1
-      teams <<- draw(next_round)
-      n <<- nrow(teams$home)
-      next_round <<- teams$bye
+  observeEvent(input$submit, {
+    if( !state$final) {
+      result <- ifelse(input$result == "A",
+                       state$teams$home[state$match, "id"],
+                       state$teams$away[state$match, "id"])
+      df[df$id == result, "score"] <<- 1 + df[df$id == result, "score"]
+      state$next_round <- rbind(state$next_round, df[df$id == result, ])
+      state$match <- state$match + 1
+      updateRadioButtons(inputId = "result", selected = character(0))
     }
-  }) |> bindEvent(input$submit)
+    if (state$match == state$n + 1) {
+      # need to give byes a score increment as well.
+      # Otherwise  A team with max byes winning the final gets less than
+      # a losing finalist who played all the rounds.
+      df[df$id==state$teams$bye[,"id"], "score" ] <<- 1+ df[df$id==state$teams$bye[,"id"], "score" ]
+      state$final <- nrow(state$next_round) == 1
+      state$match <- 1
+      state$teams <- draw(state$next_round)
+      state$n <- nrow(state$teams$home)
+      state$next_round <- state$teams$bye
+    }
+  })
 
 
   # still need to handle moving to next round, and stopping when have a winner
@@ -58,8 +71,8 @@ server <- function(input, output) {
 
   output$imageA <- renderImage(
     {
-      input$submit
-      file <- teams$home[match, "filename"]
+      #input$submit
+      file <- state$teams$home[state$match, "filename"]
       list(src = file.path("images", file), width = "100%")
     },
     deleteFile = FALSE
@@ -67,12 +80,13 @@ server <- function(input, output) {
 
   output$imageB <- renderImage(
     {
-      input$submit
-      file <- teams$away[match, "filename"]
+     # input$submit
+      file <- state$teams$away[state$match, "filename"]
       list(src = file.path("images", file), width = "100%")
     },
     deleteFile = FALSE
   )
+
 
   output$download <- renderUI({
     input$submit
