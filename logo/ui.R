@@ -17,7 +17,8 @@ ui <- page_sidebar(
       inputId = "submit", label = "Submit",
       disabled = TRUE
     ),
-    uiOutput("download")
+    uiOutput("download"),
+    uiOutput("end")
   ),
   # Output: Images
   layout_columns(

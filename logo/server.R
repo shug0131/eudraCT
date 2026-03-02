@@ -90,4 +90,13 @@ server <- function(input, output) {
       write.csv(df, file, row.names = FALSE)
     }
   )
+
+
+  output$end <- renderUI({
+    input$submit
+    if (final_event()) {
+      helpText("The winner is shown now. Please download and save to `STATISTICS/NON STUDY FOLDER/Academic Research/Eudract Tool/logo/results` with your initials in the filename")
+    }
+  })
+
 }
