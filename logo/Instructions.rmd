@@ -1,0 +1,49 @@
+---
+title: "Logo A-B Test"
+author: "Simon Bond"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+
+
+# Eudract R Package
+
+This is a package with the aim 
+
+ * tools that will prepare the required statistics needed by EudraCT or ClinicalTrials.gov and format them into the precise requirements to directly upload an XML file into the web portal, with no further data entry by hand.
+ * It also outputs standard frequency tables and dot-plot figures for standard safety reporting
+ 
+ * [Eudract Home Page](https://eudract-tool.medschl.cam.ac.uk/)
+ * [CRAN Package](https://cran.r-project.org/web/packages/eudract/index.html)
+ 
+# R package verse
+ 
+ It has recently been accepted into the Pharmaverse suite of validated packages, as it can now also accept input data
+ in the ADaM/CDISC format
+ 
+ [Pharmaverse](https://pharmaverse.org/e2eclinical/tlg/)
+ 
+ 
+ It suggest that we need a logo to represent the package . 
+ 
+ 
+# Logo Design
+
+We've had numerous interations and design proposed. So now we want to see with some fresh eyes what is the best log.
+
+`STATISTICS/NON STUDY FOLDER/Academic Research/Eudract Tool/logo/images`
+
+
+# A/B Test
+
+We want to ask you to run through a sequence of pairs of logos to choose which is the better one in your opinion. This is like a sports knock-out competition.  
+
+You need to run the shiny app that has been created. Inside R, you simply need to run the one command
+
+`shiny::runApp("~/STATISTICS/NON STUDY FOLDER/Academic Research/Eudract Tool/logo")`
+
+
+When all the pairs are finished, you can see a "Download button".  Please click on this, and save the file with your name in the filename into the folder
+
+`STATISTICS/NON STUDY FOLDER/Academic Research/Eudract Tool/logo/results`
