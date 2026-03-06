@@ -1,0 +1,56 @@
+---
+title: "Voting report"
+author: "Simon Bond"
+date: "`r Sys.Date()`"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+library(knitr)
+library(kableExtra)
+result_path <- "~/STATISTICS/NON STUDY FOLDER/Academic Research/Eudract Tool/logo/results/"
+images <- "~/STATISTICS/NON STUDY FOLDER/Academic Research/Eudract Tool/logo/images/"
+```
+
+
+# Results
+
+This shows the total score for each of the image files. So far we have results from 
+`r list.files(result_path, full.names = TRUE)|>grep(".*\\.csv$",x=_, value=TRUE)  |> length()` people.
+
+```{r ranking, echo=FALSE}
+
+total_score <-list.files(result_path, full.names = TRUE) |> 
+  grep(".*\\.csv$",x=_, value=TRUE) |> 
+  lapply(read.csv) |> 
+  bind_rows() |> 
+  group_by(filename) |> 
+  summarise(score=sum(score)) |> 
+  arrange(-score) |> 
+  mutate( filename=paste0('<img src="images/', filename, '" width="150"/>'))
+
+kable(total_score, escape = FALSE, format="html") |> 
+  kable_styling()
+  
+```
+
+Showing the table of winners, and how often they came top
+
+```{r winners, echo= FALSE}
+list.files(result_path, full.names = TRUE) |> 
+  grep(".*\\.csv$",x=_, value=TRUE) |> 
+  lapply(read.csv) |> 
+  bind_rows() |> 
+  filter(score==4) |> 
+  group_by(filename) |> 
+  summarise(freq=n()) |> 
+  arrange(-freq) |> 
+  mutate( filename=paste0('<img src="images/', filename, '" width="150"/>')) |> 
+  kable(escape = FALSE, format="html") |> 
+  kable_styling()
+
+```
+
+
