@@ -26,7 +26,7 @@ The intention is for each of the major software packages ([R](https://cran.r-pro
 
 The statistical packages will be used to compute the summary statistics needed, and may indeed be replaced by code provided by the end-user if preferred [see here](faq.html#i-want-to-use-my-own-code-to-calculate-the-summary-statistics).  The statistics must then be saved in a "simple" XML format and then the final steps are universal to reformat using [XSLT](https://www.w3.org/standards/xml/transformation) to meet the EudraCT requirements.
 
-### R
+### R <img src="img/logo.png" align="right" height="120" alt="" />
 
 There is an officially release, with testing included, in [CRAN](https://CRAN.R-project.org/package=eudract)
 ~~~
